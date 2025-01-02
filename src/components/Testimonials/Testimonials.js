@@ -108,13 +108,13 @@ const Testimonials = () => {
             <div key={index} className="px-3">
               <div className="testi-box bg-smoke shadow-none">
                 <div className="testi-box_content">
-                  <div className="testi-box_img">
+                  {/* <div className="testi-box_img">
                     <img
                       src={testimonial.img}
                       alt="Avatar"
                       className="img-fluid rounded-circle"
                     />
-                  </div>
+                  </div> */}
                   <p className="testi-box_text">{testimonial.text}</p>
                 </div>
                 <div className="testi-box_bottom d-flex justify-content-between align-items-center">

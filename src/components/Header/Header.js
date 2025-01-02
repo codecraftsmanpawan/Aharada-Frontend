@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import ProgramsModal from "./ProgramsModal";
 import { Link } from "react-router-dom";
-
 import ApplyForm from "../ApplyForm/ApplyForm";
-
+// import "./Header.css";
 Modal.setAppElement("#root");
 
 function Header() {
   const [isAcademicsModalOpen, setIsAcademicsModalOpen] = useState(false);
   const [isApplyFormOpen, setIsApplyFormOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   // Function to open the Programs modal
   const openAcademicsModal = (e) => {
@@ -37,6 +38,28 @@ function Header() {
   const closeApplyForm = () => {
     setIsApplyFormOpen(false);
   };
+
+  // Toggle mobile menu visibility
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  // Sticky Menu effect on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -95,10 +118,10 @@ function Header() {
                         </a>
                         <a href="https://www.twitter.com/">
                           <i className="fab fa-twitter" />
-                        </a>{" "}
+                        </a>
                         <a href="https://www.linkedin.com/in/aharadaeducation/">
                           <i className="fab fa-linkedin-in" />
-                        </a>{" "}
+                        </a>
                         <a href="https://www.youtube.com/@aharadaeducation498">
                           <i className="fab fa-youtube" />
                         </a>
@@ -112,7 +135,7 @@ function Header() {
         </div>
 
         {/* Menu Area */}
-        <div className="sticky-wrapper">
+        <div className={`sticky-wrapper ${isSticky ? "sticky" : ""}`}>
           <div className="menu-area">
             <div className="container">
               <div className="row align-items-center justify-content-between">
@@ -130,29 +153,34 @@ function Header() {
                 <div className="col-auto">
                   <div className="row">
                     <div className="col-auto">
-                      <nav className="main-menu d-none d-lg-inline-block">
-                        <ul>
+                      <nav
+                        className={`main-menu ${
+                          isMobileMenuOpen
+                            ? "mobile-open"
+                            : "d-none d-lg-inline-block"
+                        }`}
+                      >
+                        <ul className="menu-list">
                           <li className="active">
-                            <a href="/">Home</a>
+                            <Link to="/">Home</Link>
                           </li>
-
                           <li className="menu-item-has-children">
                             <a href="#">About us</a>
                             <ul className="sub-menu">
                               <li>
-                                <a href="/about">About us</a>
+                                <Link to="/about">About us</Link>
                               </li>
                               <li>
-                                <a href="/faculty">Our Faculty</a>
+                                <Link to="/faculty">Our Faculty</Link>
                               </li>
                               <li>
-                                <a href="/placementTeam">Placement </a>
+                                <Link to="/placementTeam">Placement</Link>
                               </li>
                               <li>
-                                <a href="/events">Events</a>
+                                <Link to="/events">Events</Link>
                               </li>
                               <li>
-                                <a href="/gallery">gallery</a>
+                                <Link to="/gallery">Gallery</Link>
                               </li>
                             </ul>
                           </li>
@@ -165,38 +193,39 @@ function Header() {
                             <a href="#">Students</a>
                             <ul className="sub-menu">
                               <li>
-                                <a href="/noticeBoard">Notice</a>
+                                <Link to="/noticeBoard">Notice</Link>
                               </li>
                               <li>
-                                <a href="/internship">Internship</a>
+                                <Link to="/internship">Internship</Link>
                               </li>
                               <li>
-                                <a href="/alumni">Alumni</a>
+                                <Link to="/alumni">Alumni</Link>
                               </li>
                               <li>
-                                <a href="/governance">Governance</a>
+                                <Link to="/governance">Governance</Link>
                               </li>
                             </ul>
                           </li>
-
                           <li>
-                            <a href="/blogs">Blog</a>
+                            <Link to="/blogs">Blog</Link>
                           </li>
                           <li>
-                            <a href="/contact">Contact</a>
+                            <Link to="/contact">Contact</Link>
                           </li>
                         </ul>
                       </nav>
                       <button
                         type="button"
                         className="th-menu-toggle d-block d-lg-none"
+                        onClick={toggleMobileMenu} // Toggle mobile menu visibility
                       >
                         <i className="far fa-bars"></i>
                       </button>
                     </div>
                     <div className="col-auto d-none d-xl-block">
                       <div className="header-button">
-                        <a
+                        <Link
+                          to="/apply" // Use Link for navigation
                           className={`th-btn style1 sideMenuToggler ${
                             isLoading ? "loading" : ""
                           }`}
@@ -204,7 +233,7 @@ function Header() {
                             cursor: isLoading ? "not-allowed" : "pointer",
                             opacity: isLoading ? 0.7 : 1,
                           }}
-                          onClick={isLoading ? null : openApplyForm}
+                          onClick={isLoading ? null : openApplyForm} // Open the Apply form modal
                         >
                           {isLoading ? (
                             <>
@@ -217,7 +246,7 @@ function Header() {
                               <i className="fas fa-arrow-right ms-2"></i>
                             </>
                           )}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

@@ -26,25 +26,25 @@ const AwardsSection = () => {
               <div className="col-md-6">
                 <div className="feature-card style2">
                   <div className="feature-card_icon">
-                    <img src="assets/01.png" alt="icon" />
+                    <img src="./assets/img/Certificate.jpg" alt="icon" />
                   </div>
-                  {/* <h3 className="feature-card_title">Global Certificate</h3> */}
-                  <p className="feature-card_text">
+                  {/* <h3 className="feature-card_title"> Certificate</h3> */}
+                  {/* <p className="feature-card_text">
                     Innovative markets without extensive coordinate stand alone
                     catalysts for change before bricks
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="feature-card style2">
                   <div className="feature-card_icon">
-                    <img src="assets/01.png" alt="icon" />
+                    <img src="./assets/img/Certificate.jpg" alt="icon" />
                   </div>
                   {/* <h3 className="feature-card_title">Educational Support</h3> */}
-                  <p className="feature-card_text">
+                  {/* <p className="feature-card_text">
                     Innovative markets without extensive coordinate stand alone
                     catalysts for change before bricks
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -52,9 +52,9 @@ const AwardsSection = () => {
           <div className="col-xl-6">
             <div className="ps-xxl-5 ms-xl-2">
               <div className="video-box2">
-                <img src="assets/img/update1/normal/video_4.jpg" alt="video" />{" "}
+                <img src="./assets/img/about-us.webp" alt="video" />{" "}
                 <a
-                  href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+                  href="https://youtu.be/AYVMWDkMyxY?si=HD0kFjuoZTW4_IbZ"
                   className="play-btn style3 popup-video"
                 >
                   <i className="fas fa-play" />

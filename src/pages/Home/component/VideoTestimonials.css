@@ -4,6 +4,7 @@
     background-color: #f9f9f9;
 }
 
+/* Section title styling */
 .section-title {
     font-size: 24px;
     font-weight: bold;
@@ -28,7 +29,7 @@
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 12px;
-    width: 48%;
+    width: 32%;
     /* Adjust this to control how many cards per row */
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -77,8 +78,6 @@
     width: 100%;
     object-fit: contain;
     /* Keeps the video aspect ratio intact */
-    overflow-y: auto;
-    /* Enable scrolling if the video is too large */
 }
 
 /* Media queries for responsiveness */
@@ -92,6 +91,11 @@
         width: 90%;
         /* Full width for mobile */
     }
+
+    .video-container {
+        height: 250px;
+        /* Slightly reduced height for smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
@@ -102,5 +106,10 @@
     .testimonial-card {
         width: 100%;
         /* One card per row */
+    }
+
+    .video-container {
+        height: 220px;
+        /* Further reduced height for mobile devices */
     }
 }

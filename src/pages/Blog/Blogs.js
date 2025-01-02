@@ -1,16 +1,13 @@
 import React, { useEffect } from "react";
-import Preloader from "../../components/Preloader";
-import Header from "../../components/Header/Header";
+
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
-import Footer from "../../components/Footer/Footer";
+
 function Blogs() {
   useEffect(() => {
     document.title = "Blogs - Aharada Education";
   }, []);
   return (
     <div>
-      {/* <Preloader /> */}
-      <Header />
       <main>
         <Breadcrumbs />
         <section className="th-blog-wrapper space-top space-extra2-bottom">
@@ -295,7 +292,6 @@ function Blogs() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

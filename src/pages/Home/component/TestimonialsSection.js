@@ -8,19 +8,19 @@ const VideoTestimonials = () => {
     {
       id: 1,
       name: "John Doe",
-      videoUrl: "https://www.example.com/video1.mp4", // Replace with your video URL
+      videoUrl: "https://www.example.com/video1.mp4",
       testimonial: "This app has changed my life! I highly recommend it.",
     },
     {
       id: 2,
       name: "Jane Smith",
-      videoUrl: "https://www.example.com/video2.mp4", // Replace with your video URL
+      videoUrl: "https://www.example.com/video2.mp4",
       testimonial: "The experience is seamless and the service is excellent.",
     },
     {
       id: 3,
       name: "Mike Johnson",
-      videoUrl: "https://www.example.com/video3.mp4", // Replace with your video URL
+      videoUrl: "https://www.example.com/video3.mp4",
       testimonial: "I use this app every day. It’s fantastic!",
     },
   ];

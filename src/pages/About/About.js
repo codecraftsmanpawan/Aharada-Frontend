@@ -37,7 +37,7 @@ function About() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-xl-6">
-                <div className="img-box1 mb-40 mb-xl-0" data-aos="fade-right">
+                <div className="img-box1 mb-40 mb-xl-0">
                   <div className="img1">
                     <img
                       className="tilt-active"
@@ -107,11 +107,7 @@ function About() {
         </div>
 
         <div className="why-area-1 space overflow-hidden">
-          <div
-            className="shape-mockup why-shape-1 jump"
-            data-top="10%"
-            data-left="7%"
-          >
+          <div className="shape-mockup why-shape-1 jump">
             <img src="assets/img/normal/about_1_shape1.png" alt="img" />
           </div>
           <div

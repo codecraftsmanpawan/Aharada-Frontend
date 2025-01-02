@@ -7,15 +7,24 @@ const VideoTestimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "John Doe",
-      videoUrl: "https://www.example.com/video1.mp4", // Replace with your video URL
-      testimonial: "This app has changed my life! I highly recommend it.",
+      name: "Aerospace Engineering - Student Feedback - Aharada Education",
+      videoUrl: "https://youtu.be/zSdtQw75hek?si=FwPEez8w5dqdBCTM",
+      testimonial:
+        "Aerospace Engineering - Student Feedback - Aharada Education..",
     },
     {
       id: 2,
-      name: "Jane Smith",
-      videoUrl: "https://www.example.com/video2.mp4", // Replace with your video URL
-      testimonial: "The experience is seamless and the service is excellent.",
+      name: "Aerospace Engineering - Student Feedback - Aharada Education",
+      videoUrl: "https://youtu.be/zSdtQw75hek?si=FwPEez8w5dqdBCTM",
+      testimonial:
+        "Aerospace Engineering - Student Feedback - Aharada Education..",
+    },
+    {
+      id: 3,
+      name: "Aerospace Engineering - Student Feedback - Aharada Education",
+      videoUrl: "https://youtu.be/zSdtQw75hek?si=FwPEez8w5dqdBCTM",
+      testimonial:
+        "Aerospace Engineering - Student Feedback - Aharada Education.",
     },
   ];
 
@@ -31,7 +40,7 @@ const VideoTestimonials = () => {
               .toLowerCase()}`}
           >
             <h3 className="name">{testimonial.name}</h3>
-            <p className="testimonial-text">{testimonial.testimonial}</p>
+            {/* <p className="testimonial-text">{testimonial.testimonial}</p> */}
             <div className="video-container">
               <ReactPlayer
                 url={testimonial.videoUrl}
