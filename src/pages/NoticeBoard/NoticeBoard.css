@@ -1,0 +1,214 @@
+/* NoticeBoard.css */
+
+/* General Styles */
+.notice-board {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.notice-board .title {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.notice-board p {
+    color: #555555;
+    line-height: 1.6;
+}
+
+/* Search Bar */
+.notice-board .search-bar {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.notice-board .search-bar input {
+    padding: 12px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.notice-board .search-bar input:focus {
+    outline: none;
+    border-color: #061f3b;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Notice Card */
+.notice-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #ffffff;
+}
+
+.notice-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.notice-card .card-title {
+    font-size: 1.25rem;
+    color: #021f3c;
+}
+
+.notice-card .card-subtitle {
+    font-size: 0.9rem;
+    color: #888888;
+}
+
+.notice-card .card-text {
+    font-size: 1rem;
+    color: #555555;
+}
+
+.notice-card .btn-view-details {
+    background-color: #0a315a;
+    border: none;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.notice-card .btn-view-details:hover {
+    background-color: #0d3056;
+}
+
+/* Modal Styles */
+.notice-modal {
+    /* Ensures the modal covers the entire viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    /* Higher than Bootstrap's default */
+}
+
+.notice-modal .modal-content {
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.notice-modal .modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.notice-modal .modal-title {
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.notice-modal .close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #aaaaaa;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.notice-modal .close:hover {
+    color: #ff0000;
+}
+
+.notice-modal .modal-body {
+    margin-top: 10px;
+    color: #555555;
+}
+
+.notice-modal .modal-footer {
+    border-top: none;
+    padding-top: 0;
+}
+
+.notice-modal .btn-close-modal {
+    background-color: #6c757d;
+    border: none;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.notice-modal .btn-close-modal:hover {
+    background-color: #5a6268;
+}
+
+/* Sidebar (Upcoming Events) */
+.upcoming-events {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upcoming-events h5 {
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.upcoming-events ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.upcoming-events ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+.upcoming-events ul li i {
+    color: #092c52;
+    margin-right: 10px;
+    min-width: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .notice-board .container {
+        padding: 0 15px;
+    }
+
+    .notice-modal .modal-dialog {
+        max-width: 90%;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .notice-card .card-title {
+        font-size: 1.1rem;
+    }
+
+    .notice-card .card-text {
+        font-size: 0.95rem;
+    }
+
+    .notice-card .btn-view-details {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .upcoming-events h5 {
+        font-size: 1.25rem;
+    }
+
+    .upcoming-events ul li {
+        font-size: 0.9rem;
+    }
+}

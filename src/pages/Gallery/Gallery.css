@@ -1,0 +1,126 @@
+/* src/pages/Gallery/Gallery.css */
+
+/* Gallery Image Hover Effect */
+.gallery-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery Button */
+.gallery-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 8px;
+    border-radius: 50%;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.gallery-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Custom Modal Overlay */
+.custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure the modal is on top */
+}
+
+/* Custom Modal Content */
+.custom-modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Custom Modal Image */
+.custom-modal-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Custom Close Button */
+.custom-modal-close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.custom-modal-close:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .custom-modal-content {
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    .custom-modal-close {
+        top: -5px;
+        right: -5px;
+        font-size: 20px;
+        padding: 4px 8px;
+    }
+}
+/* Add to Gallery.css */
+
+/* Modal Animation */
+.custom-modal-overlay {
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+.custom-modal-content {
+    transform: scale(0.8);
+    animation: scaleIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    to {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,155 @@
+/* General Styling */
+.courseoffer {
+    background: linear-gradient(to bottom, #f4ebdd, #f4ebdd);
+    padding: 40px 0;
+}
+
+.courseoffer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+
+.courseoffer-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.courseoffer-header .courseoffer-title span {
+    font-size: 20px;
+    color: #100e0e;
+}
+
+.courseoffer-header h2 {
+    color: #c88c32;
+    font-weight: bold;
+    font-size: 33px;
+    margin-top: 10px;
+}
+
+/* Filter Buttons */
+.courseoffer-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background-color: #f4ebdd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #c88c32;
+    color: white;
+    border-color: #c88c32;
+}
+
+/* Course List and Card Styles */
+.courseoffer-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.courseoffer-item {
+    flex: 1 1 calc(33.333% - 20px);
+    /* 3 columns */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.courseoffer-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.courseoffer-item-content {
+    text-align: center;
+}
+
+.courseoffer-item-title {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.courseoffer-item-categories {
+    font-size: 14px;
+    color: #777;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    .courseoffer-header h2 {
+        font-size: 28px;
+    }
+
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .courseoffer-item {
+        flex: 1 1 calc(50% - 20px);
+        /* 2 columns */
+    }
+
+    .courseoffer-item-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .courseoffer-header h2 {
+        font-size: 24px;
+    }
+
+    .courseoffer-item {
+        flex: 1 1 calc(100% - 20px);
+        /* 1 column */
+    }
+
+    .courseoffer-item-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .courseoffer-container {
+        padding: 20px;
+    }
+
+    .courseoffer-header h2 {
+        font-size: 20px;
+    }
+
+    .filter-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .courseoffer-item {
+        padding: 15px;
+    }
+
+    .courseoffer-item-title {
+        font-size: 14px;
+    }
+}

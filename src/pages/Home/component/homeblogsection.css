@@ -1,0 +1,205 @@
+/* General Styles for the Section */
+.homeblogsection {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Title Section Styles */
+.homeblogsection .title-area {
+    margin-bottom: 35px;
+}
+
+.homeblogsection .title-area .sub-title {
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.homeblogsection .title-area .sub-title i {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.homeblogsection .sec-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Button Styles */
+.homeblogsection .th-btn {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+}
+
+.homeblogsection .th-btn i {
+    margin-left: 8px;
+}
+
+.homeblogsection .th-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Carousel Styles */
+.homeblogsection .th-carousel {
+    margin-top: 40px;
+}
+
+/* Slick Slider Styles */
+.homeblogsection .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+
+}
+
+.homeblogsection .slick-slide {
+    transition: transform 0.3s ease;
+}
+
+/* Slick Navigation Arrows */
+.homeblogsection .slick-prev,
+.homeblogsection .slick-next {
+    background-color: #007bff;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    z-index: 1;
+}
+
+.homeblogsection .slick-prev {
+    left: -50px;
+}
+
+.homeblogsection .slick-next {
+    right: -50px;
+}
+
+.homeblogsection .slick-prev:hover,
+.homeblogsection .slick-next:hover {
+    background-color: #0056b3;
+}
+
+/* Blog Card Styles */
+.homeblogsection .th-blog {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.homeblogsection .th-blog:hover {
+    transform: translateY(-10px);
+}
+
+.homeblogsection .blog-img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.homeblogsection .blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.homeblogsection .th-blog:hover .blog-img img {
+    transform: scale(1.1);
+}
+
+.homeblogsection .blog-content {
+    padding: 20px;
+}
+
+.homeblogsection .blog-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #888;
+}
+
+.homeblogsection .blog-meta a {
+    text-decoration: none;
+    color: #555;
+}
+
+.homeblogsection .blog-meta a:hover {
+    color: #007bff;
+}
+
+.homeblogsection .box-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 15px 0;
+}
+
+.homeblogsection .box-title a {
+    text-decoration: none;
+    color: #333;
+}
+
+.homeblogsection .box-title a:hover {
+    color: #007bff;
+}
+
+.homeblogsection .link-btn {
+    font-size: 14px;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.homeblogsection .link-btn:hover {
+    color: #0056b3;
+}
+
+.homeblogsection .link-btn i {
+    margin-left: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .homeblogsection .slick-slide {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .homeblogsection .sec-title {
+        font-size: 28px;
+    }
+
+    .homeblogsection .slick-prev,
+    .homeblogsection .slick-next {
+        font-size: 12px;
+    }
+
+    .homeblogsection .slick-prev {
+        left: -35px;
+    }
+
+    .homeblogsection .slick-next {
+        right: -35px;
+    }
+}

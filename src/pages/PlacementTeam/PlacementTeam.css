@@ -1,0 +1,45 @@
+.team-section .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-section .card {
+    transition: transform 0.2s;
+}
+
+.team-section .card:hover {
+    transform: scale(1.05);
+}
+.placement-team .card {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.placement-team .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.placement-team .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.placement-team .card-text {
+    color: #6c757d;
+}
+
+.placement-team .team-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.placement-team .team-section {
+    background-color: #f9f9f9;
+    padding: 3rem 1rem;
+}
+
+.placement-team .team-section .container {
+    max-width: 1200px;
+}

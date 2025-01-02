@@ -1,0 +1,336 @@
+/* Keyframe for fading in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframe for sliding in */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframe for fading out */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* Keyframe for sliding out */
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* Modal Overlay */
+.programs-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    /* Start hidden */
+    animation: fadeIn 0.3s forwards;
+    /* Fade in on open */
+}
+
+/* Modal Content */
+.programs-modal {
+    position: relative;
+    margin-top: 60px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-sizing: border-box;
+    transform: translateY(-20px);
+    /* Start slightly above */
+    opacity: 0;
+    /* Start hidden */
+    animation: slideIn 0.3s forwards;
+    /* Slide in on open */
+}
+
+/* Closing Animations */
+.programs-modal-overlay.closing {
+    animation: fadeOut 0.3s forwards;
+    /* Fade out on close */
+}
+
+.programs-modal.closing {
+    animation: slideOut 0.3s forwards;
+    /* Slide out on close */
+}
+
+/* Modal Close Button */
+.modal-close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    z-index: 1001;
+    transition: color 0.3s;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+    color: #000;
+    outline: none;
+}
+
+/* Modal Content Container */
+.modal-content-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 1.5rem;
+    overflow: hidden;
+}
+.header-programs-modal {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-programs-modal h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+/* Left Side - Image Styling */
+.modal-left {
+    flex: 1;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+}
+
+.modal-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    max-height: 100%;
+    display: block;
+}
+
+/* Right Side - Program List Styling */
+.modal-right {
+    flex: 1;
+    padding: 1.25rem;
+    overflow-y: auto;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    box-sizing: border-box;
+    position: relative;
+    /* Position relative for positioning the button */
+}
+
+/* Container for the Apply Now button */
+.apply-now-container {
+    margin-top: auto;
+    /* Pushes the button to the bottom */
+    display: flex;
+    justify-content: center;
+    /* Center the button */
+    margin-top: 20px;
+    /* Adjust the margin if needed */
+}
+
+/* Styling the Apply Now button */
+.apply-now-button {
+    background-color: #091c31;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    /* Max width for button */
+}
+
+.apply-now-button:hover {
+    background-color: #193553;
+}
+
+/* Program List Styling */
+.programs-modal ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.programs-modal li {
+    padding: 0.6rem 0;
+    font-size: 1.1rem;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.programs-modal li:last-child {
+    border-bottom: none;
+}
+
+.programs-modal li:hover,
+.programs-modal li:focus {
+    background-color: #f7f7f7;
+    outline: none;
+}
+
+/* Responsive Design */
+
+/* Tablets and small desktops */
+@media (max-width: 992px) {
+    .programs-modal {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    .header-programs-modal h2 {
+        font-size: 1rem;
+    }
+
+    .programs-modal li {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+}
+
+/* Tablets and large mobiles */
+@media (max-width: 768px) {
+    .programs-modal {
+        flex-direction: column;
+        max-height: 95vh;
+        padding: 1rem;
+    }
+
+    .modal-content-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .modal-left,
+    .modal-right {
+        width: 100%;
+    }
+
+    /* Hide the image on mobile */
+    .modal-left {
+        display: none;
+    }
+
+    .header-programs-modal h2 {
+        font-size: 1.2rem;
+    }
+
+    .programs-modal li {
+        font-size: 0.95rem;
+        padding: 0.45rem 0;
+    }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .modal-close-button {
+        font-size: 1.5rem;
+        top: 0.75rem;
+        right: 0.75rem;
+    }
+
+    .modal-left img {
+        height: auto;
+        width: 100%;
+    }
+
+    .programs-modal {
+        padding: 0.75rem;
+    }
+
+    .header-programs-modal h2 {
+        font-size: 1.1rem;
+    }
+
+    .programs-modal li {
+        font-size: 0.9rem;
+        padding: 0.4rem 0;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 320px) {
+    .programs-modal {
+        padding: 0.5rem;
+    }
+
+    .modal-close-button {
+        font-size: 1.25rem;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .header-programs-modal h2 {
+        font-size: 1rem;
+    }
+
+    .programs-modal li {
+        font-size: 0.85rem;
+        padding: 0.3rem 0;
+    }
+}
