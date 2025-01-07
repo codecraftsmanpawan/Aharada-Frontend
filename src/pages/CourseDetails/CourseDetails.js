@@ -4,6 +4,7 @@ import Slider from "react-slick"; // Import Slider
 import "slick-carousel/slick/slick.css"; // Import Slick CSS
 import "slick-carousel/slick/slick-theme.css"; // Import Slick Theme CSS
 import "./CourseDetails.css";
+import Head from "../../components/Head/Head";
 
 function CourseDetails() {
   const { title } = useParams();
@@ -104,56 +105,60 @@ function CourseDetails() {
   };
 
   return (
-    <div
-      className="course-details"
-      style={{
-        background: "linear-gradient(to bottom, #fdfbf9, #f4ebdd)",
-      }}
-    >
-      <main>
-        {/* Placement Section */}
-        <section className="course-details__placement">
-          <div className="course-details__sidebar">
-            <span>MBA/PGDM</span>
-          </div>
-          <div className="course-details__placement-content">
-            <h2 className="maincourse-details__heading">
-              Audited & Verified Placement Report
-            </h2>
-            <div className="course-details__placement-stats">
-              <div>{placementData.highestSalary}</div>
-              <div>{placementData.offers}</div>
-              <div>{placementData.opportunities}</div>
-              <div>{placementData.roi}</div>
-              <div>{placementData.multipleOffers}</div>
-              <div>{placementData.companies}</div>
+    <>
+      <Head />
+      <div
+        className="course-details"
+        style={{
+          background: "linear-gradient(to bottom, #fdfbf9, #f4ebdd)",
+        }}
+      >
+        <main>
+          {/* Placement Section */}
+          <section className="course-details__placement">
+            <div className="course-details__sidebar">
+              <span>MBA/PGDM</span>
             </div>
-            <p className="course-details__note">
-              These placement statistics are audited and verified by B2K
-              Analytics.
-            </p>
-          </div>
-        </section>
-
-        {/* Course Highlights */}
-        <section className="course-details__highlights">
-          <h2 className="course-details__heading">{title} Course Highlights</h2>
-          <p className="course-details__intro">
-            Develop leadership and managerial skills with a holistic view of
-            business in marketing, finance, or operations.
-          </p>
-          <div className="course-details__grid">
-            {courseHighlights.map((highlight, index) => (
-              <div key={index} className="course-details__highlight-card">
-                <h3>{highlight.value}</h3>
-                <p>{highlight.label}</p>
+            <div className="course-details__placement-content">
+              <h2 className="maincourse-details__heading">
+                Audited & Verified Placement Report
+              </h2>
+              <div className="course-details__placement-stats">
+                <div>{placementData.highestSalary}</div>
+                <div>{placementData.offers}</div>
+                <div>{placementData.opportunities}</div>
+                <div>{placementData.roi}</div>
+                <div>{placementData.multipleOffers}</div>
+                <div>{placementData.companies}</div>
               </div>
-            ))}
-          </div>
-        </section>
+              <p className="course-details__note">
+                These placement statistics are audited and verified by B2K
+                Analytics.
+              </p>
+            </div>
+          </section>
 
-        {/* Additional Details */}
-        {/* <section className="course-details__additional">
+          {/* Course Highlights */}
+          <section className="course-details__highlights">
+            <h2 className="course-details__heading">
+              {title} Course Highlights
+            </h2>
+            <p className="course-details__intro">
+              Develop leadership and managerial skills with a holistic view of
+              business in marketing, finance, or operations.
+            </p>
+            <div className="course-details__grid">
+              {courseHighlights.map((highlight, index) => (
+                <div key={index} className="course-details__highlight-card">
+                  <h3>{highlight.value}</h3>
+                  <p>{highlight.label}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Additional Details */}
+          {/* <section className="course-details__additional">
           <h2 className="course-details__heading">Additional Information</h2>
           <div className="course-details__info">
             <div className="course-details__info-block">
@@ -175,36 +180,40 @@ function CourseDetails() {
           </div>
         </section> */}
 
-        {/* Partner Campuses Section */}
-        <section className="course-details__partner-campuses">
-          <h2 className="course-details__heading">Partner Campuses</h2>
-          <p className="course-details__intro">
-            Choose from 5+ campuses across India for a world-class learning
-            experience.
-          </p>
-          <Slider {...sliderSettings} className="course-details__campus-slider">
-            {partnerCampuses.map((campus, index) => (
-              <div key={index} className="course-details__campus-card">
-                <div
-                  className="course-details__campus-image"
-                  style={{ backgroundImage: `url(${campus.image})` }}
-                ></div>
-                <div className="course-details__campus-content">
-                  <h3>{campus.name}</h3>
-                  <p>{campus.program}</p>
-                  <p>{campus.specializations}</p>
-                  <p>{campus.certifications}</p>
-                  <p className="course-details__fees">{campus.fees}</p>
-                  <button className="book-tour-button">
-                    Book College Tour
-                  </button>
+          {/* Partner Campuses Section */}
+          <section className="course-details__partner-campuses">
+            <h2 className="course-details__heading">Partner Campuses</h2>
+            <p className="course-details__intro">
+              Choose from 5+ campuses across India for a world-class learning
+              experience.
+            </p>
+            <Slider
+              {...sliderSettings}
+              className="course-details__campus-slider"
+            >
+              {partnerCampuses.map((campus, index) => (
+                <div key={index} className="course-details__campus-card">
+                  <div
+                    className="course-details__campus-image"
+                    style={{ backgroundImage: `url(${campus.image})` }}
+                  ></div>
+                  <div className="course-details__campus-content">
+                    <h3>{campus.name}</h3>
+                    <p>{campus.program}</p>
+                    <p>{campus.specializations}</p>
+                    <p>{campus.certifications}</p>
+                    <p className="course-details__fees">{campus.fees}</p>
+                    <button className="book-tour-button">
+                      Book College Tour
+                    </button>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
-        </section>
-      </main>
-    </div>
+              ))}
+            </Slider>
+          </section>
+        </main>
+      </div>
+    </>
   );
 }
 

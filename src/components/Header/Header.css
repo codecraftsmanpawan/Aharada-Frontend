@@ -73,3 +73,68 @@
     background-color: #f7f7f7;
     cursor: pointer;
 }
+.header-top {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-social a {
+    margin-right: 10px;
+}
+
+.header-social span {
+    font-size: 14px;
+    margin-right: 10px;
+}
+/* Header.css */
+
+/* Hide the menu by default on mobile */
+.main-menu.desktop-menu {
+    display: none;
+}
+
+@media (min-width: 992px) {
+
+    /* Assuming lg breakpoint is 992px */
+    .main-menu.desktop-menu {
+        display: block !important;
+    }
+}
+
+/* Display the menu when mobile-open is active */
+.main-menu.mobile-open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #145f8b;
+    /* Match header background or desired color */
+    z-index: 9999;
+}
+
+/* Style adjustments for mobile menu */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    padding: 10px 20px;
+}
+
+.menu-list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-list li a:hover {
+    color: #ddd;
+}

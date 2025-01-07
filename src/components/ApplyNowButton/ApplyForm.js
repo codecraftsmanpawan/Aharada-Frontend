@@ -4,7 +4,7 @@ import { CSSTransition } from "react-transition-group";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./ApplyFrom.css";
+// import "./ApplyForm.css";
 import config from "../../config";
 
 const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
@@ -581,17 +581,14 @@ const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
     <CSSTransition
       in={inProp}
       timeout={500}
-      classNames="slide"
+      classNames=""
       unmountOnExit
       onExited={closeApplyForm}
     >
-      <form
-        className={`apply-form ${className}`}
-        onSubmit={handleSubmit(onFormSubmit)}
-      >
+      <form className={` ${className}`} onSubmit={handleSubmit(onFormSubmit)}>
         <button
           type="button"
-          className="close-icon"
+          className="ApplynowForm-close-icon"
           onClick={() => setInProp(false)}
           aria-label="Close Form"
         >
@@ -599,18 +596,20 @@ const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
         </button>
 
         {/* Name */}
-        <div className="form-group">
+        <div className="ApplynowForm-form-group">
           <label htmlFor="apply-name">Name:</label>
           <input
             id="apply-name"
             {...register("name", { required: "Name is required" })}
             placeholder="Your Name"
           />
-          {errors.name && <span className="error">{errors.name.message}</span>}
+          {errors.name && (
+            <span className="ApplynowForm-error">{errors.name.message}</span>
+          )}
         </div>
 
         {/* Phone */}
-        <div className="form-group">
+        <div className="ApplynowForm-form-group">
           <label htmlFor="apply-phone">Phone:</label>
           <input
             id="apply-phone"
@@ -625,12 +624,12 @@ const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
             placeholder="Your Phone Number"
           />
           {errors.phone && (
-            <span className="error">{errors.phone.message}</span>
+            <span className="ApplynowForm-error">{errors.phone.message}</span>
           )}
         </div>
 
         {/* Email */}
-        <div className="form-group">
+        <div className="ApplynowForm-form-group">
           <label htmlFor="apply-email">Email:</label>
           <input
             id="apply-email"
@@ -645,12 +644,12 @@ const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
             placeholder="Your Email"
           />
           {errors.email && (
-            <span className="error">{errors.email.message}</span>
+            <span className="ApplynowForm-error">{errors.email.message}</span>
           )}
         </div>
 
         {/* State */}
-        <div className="form-group">
+        <div className="ApplynowForm-form-group">
           <label htmlFor="apply-state">State:</label>
           <select
             id="apply-state"
@@ -665,12 +664,12 @@ const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
             ))}
           </select>
           {errors.state && (
-            <span className="error">{errors.state.message}</span>
+            <span className="ApplynowForm-error">{errors.state.message}</span>
           )}
         </div>
 
         {/* District */}
-        <div className="form-group">
+        <div className="ApplynowForm-form-group">
           <label htmlFor="apply-district">District:</label>
           <select
             id="apply-district"
@@ -684,12 +683,14 @@ const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
             ))}
           </select>
           {errors.district && (
-            <span className="error">{errors.district.message}</span>
+            <span className="ApplynowForm-error">
+              {errors.district.message}
+            </span>
           )}
         </div>
 
         {/* University */}
-        <div className="form-group">
+        <div className="ApplynowForm-form-group">
           <label htmlFor="apply-university">University:</label>
           <select
             id="apply-university"
@@ -704,12 +705,14 @@ const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
             ))}
           </select>
           {errors.university && (
-            <span className="error">{errors.university.message}</span>
+            <span className="ApplynowForm-error">
+              {errors.university.message}
+            </span>
           )}
         </div>
 
         {/* Program */}
-        <div className="form-group">
+        <div className="ApplynowForm-form-group">
           <label htmlFor="apply-program">Program:</label>
           <select
             id="apply-program"
@@ -724,12 +727,12 @@ const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
             ))}
           </select>
           {errors.program && (
-            <span className="error">{errors.program.message}</span>
+            <span className="ApplynowForm-error">{errors.program.message}</span>
           )}
         </div>
 
         {/* Branch */}
-        <div className="form-group">
+        <div className="ApplynowForm-form-group">
           <label htmlFor="apply-branch">Branch:</label>
           <select
             id="apply-branch"
@@ -743,12 +746,16 @@ const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
             ))}
           </select>
           {errors.branch && (
-            <span className="error">{errors.branch.message}</span>
+            <span className="ApplynowForm-error">{errors.branch.message}</span>
           )}
         </div>
 
         {/* Submit Button */}
-        <button type="submit" className="submit-btn" disabled={isSubmitting}>
+        <button
+          type="submit"
+          className="ApplynowForm-submit-btn"
+          disabled={isSubmitting}
+        >
           {isSubmitting ? "Submitting..." : "Submit"}
         </button>
       </form>

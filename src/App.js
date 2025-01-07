@@ -1,3 +1,4 @@
+// src/App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
@@ -11,17 +12,23 @@ import Internship from "./pages/Internship/Internship";
 import Blogs from "./pages/Blog/Blogs";
 import BlogDetails from "./pages/Blog/BlogDetails";
 import Contact from "./pages/Contact/Contact";
-import Governance from "./pages/Governance/Governance";
+import Grievance from "./pages/Governance/Grievance";
 import PlacementTeam from "./pages/PlacementTeam/PlacementTeam";
 import NoticeBoard from "./pages/NoticeBoard/NoticeBoard";
 import Gallery from "./pages/Gallery/Gallery";
 import CourseDetails from "./pages/CourseDetails/CourseDetails";
+import Programs from "./pages/Programs/Programs";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import "./App.css";
-
+// import "./assets/css/app.min.css";
+// import "./assets/css/bootstrap.rtl.min.css";
+// import "./assets/css/fontawesome.min.css";
+// import "./assets/css/style.css";
 function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* Include the component here */}
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -34,10 +41,11 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogDetails" element={<BlogDetails />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/governance" element={<Governance />} />
+        <Route path="/grievance" element={<Grievance />} />
         <Route path="/placementTeam" element={<PlacementTeam />} />
         <Route path="/noticeBoard" element={<NoticeBoard />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/programs" element={<Programs />} />
         <Route path="/course-details/:title" element={<CourseDetails />} />
       </Routes>
       <Footer />

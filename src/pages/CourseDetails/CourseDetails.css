@@ -3,11 +3,13 @@
     font-family: "Arial", sans-serif;
     background-color: #f8f9fa;
     padding: 40px 20px;
+   
 }
 
 .course-details main {
-    max-width: 100%;
+    max-width: 90%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 /* Shared Styles */

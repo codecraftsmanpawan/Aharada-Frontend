@@ -2,34 +2,41 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import "./courseoffer.css";
+import config from "../../../config";
+
 function CoursebyUniversity() {
   const [selectedCategory, setSelectedCategory] = useState("*");
+  const [courses, setCourses] = useState([]);
+  const [categories, setCategories] = useState([]);
   const navigate = useNavigate();
-
-  const courses = [
-    { id: 2, title: "Aviation and Airport Management", categories: ["BBA"] },
-    { id: 3, title: "Aviation and Travel", categories: ["BBA"] },
-    { id: 4, title: "Entrepreneurship and Innovation", categories: ["BBA"] },
-    {
-      id: 5,
-      title: "Data Analytics and Artificial Intelligence",
-      categories: ["BBA"],
-    },
-    { id: 6, title: "Aviation Management", categories: ["MBA"] },
-    { id: 7, title: "HR & Aviation", categories: ["MBA"] },
-    { id: 8, title: "Aerospace Engineering", categories: ["B.Tech"] },
-    { id: 9, title: "Defence Technology", categories: ["M.Tech"] },
-    { id: 10, title: "Bachelor of Fine Art", categories: ["Arts"] },
-    { id: 11, title: "Bachelor of Fashion Designing", categories: ["Arts"] },
-    { id: 12, title: "Aeronautical Science", categories: ["BSC"] },
-  ];
 
   useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
     });
+
+    // Fetch data from the API
+    const fetchCourses = async () => {
+      try {
+        const response = await axios.get(
+          `${config.apiBaseUrl}/api/programs-branches`
+        );
+        setCourses(response.data.data);
+
+        // Extract unique categories from the fetched courses
+        const uniqueCategories = [
+          ...new Set(response.data.data.flatMap((course) => course.categories)),
+        ];
+        setCategories(uniqueCategories);
+      } catch (error) {
+        // console.error("Error fetching courses:", error);
+      }
+    };
+
+    fetchCourses();
   }, []);
 
   const handleCategoryChange = (category) => {
@@ -65,54 +72,17 @@ function CoursebyUniversity() {
           >
             All Program
           </button>
-          <button
-            className={`filter-btn ${
-              selectedCategory === "BBA" ? "active" : ""
-            }`}
-            onClick={() => handleCategoryChange("BBA")}
-          >
-            BBA
-          </button>
-          <button
-            className={`filter-btn ${
-              selectedCategory === "MBA" ? "active" : ""
-            }`}
-            onClick={() => handleCategoryChange("MBA")}
-          >
-            MBA
-          </button>
-          <button
-            className={`filter-btn ${
-              selectedCategory === "B.Tech" ? "active" : ""
-            }`}
-            onClick={() => handleCategoryChange("B.Tech")}
-          >
-            B.Tech
-          </button>
-          <button
-            className={`filter-btn ${
-              selectedCategory === "M.Tech" ? "active" : ""
-            }`}
-            onClick={() => handleCategoryChange("M.Tech")}
-          >
-            M.Tech
-          </button>
-          <button
-            className={`filter-btn ${
-              selectedCategory === "BSC" ? "active" : ""
-            }`}
-            onClick={() => handleCategoryChange("BSC")}
-          >
-            BSC
-          </button>
-          <button
-            className={`filter-btn ${
-              selectedCategory === "Arts" ? "active" : ""
-            }`}
-            onClick={() => handleCategoryChange("Arts")}
-          >
-            Arts
-          </button>
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={`filter-btn ${
+                selectedCategory === category ? "active" : ""
+              }`}
+              onClick={() => handleCategoryChange(category)}
+            >
+              {category}
+            </button>
+          ))}
         </div>
         <div className="courseoffer-list">
           {filteredCourses.map((course) => (

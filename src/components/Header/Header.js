@@ -1,47 +1,39 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
-import ProgramsModal from "./ProgramsModal";
-import { Link } from "react-router-dom";
+
 import ApplyForm from "../ApplyForm/ApplyForm";
+import { Link } from "react-router-dom";
+import SocialIcon from "./SocialIcon";
 // import "./Header.css";
 Modal.setAppElement("#root");
 
 function Header() {
   const [isAcademicsModalOpen, setIsAcademicsModalOpen] = useState(false);
-  const [isApplyFormOpen, setIsApplyFormOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
+  // New state for ApplyForm visibility
+  const [isFormVisible, setIsFormVisible] = useState(false);
+
   // Function to open the Programs modal
-  const openAcademicsModal = (e) => {
-    e.preventDefault();
-    setIsAcademicsModalOpen(true);
-  };
 
   // Function to close the Programs modal
   const closeAcademicsModal = () => {
     setIsAcademicsModalOpen(false);
   };
 
-  // Function to open the Apply Form modal
-  const openApplyForm = (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsApplyFormOpen(true);
-      setIsLoading(false);
-    }, 300);
-  };
-
-  // Function to close the Apply Form modal
-  const closeApplyForm = () => {
-    setIsApplyFormOpen(false);
-  };
-
   // Toggle mobile menu visibility
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  // Functions to handle ApplyForm visibility
+  const toggleFormVisibility = () => {
+    setIsFormVisible(!isFormVisible);
+  };
+
+  const closeApplyForm = () => {
+    setIsFormVisible(false);
   };
 
   // Sticky Menu effect on scroll
@@ -78,25 +70,19 @@ function Header() {
                   <ul>
                     <li>
                       <i className="far fa-phone" />
-                      <a href="tel:+917303381359">
-                        IIMT University +91-7303381359
-                      </a>
+                      <a href="tel:+917303381359">IIMT University</a>
                     </li>
                     <li>
                       <i className="far fa-phone" />
-                      <a href="tel:+917303381359">
-                        SAGE University +91-7303381359
-                      </a>
+                      <a href="tel:+917303381359">SAGE University</a>
                     </li>
                     <li>
                       <i className="far fa-phone" />
-                      <a href="tel:+917303381359">
-                        Subharti University +91-7303381359
-                      </a>
+                      <a href="tel:+917303381359">Subharti University</a>
                     </li>
                     <li>
                       <i className="far fa-phone" />
-                      <a href="tel:+917303381359">DBUU +91-7303381359</a>
+                      <a href="tel:+917303381359">DBUU</a>
                     </li>
                   </ul>
                 </div>
@@ -105,26 +91,68 @@ function Header() {
                 <div className="header-links header-right">
                   <ul>
                     <li>
-                      <div className="header-social">
-                        <a href="mailto:info@aharadaedu.in">
-                          <i className="far fa-envelope" />
+                      <div
+                        className="header-social"
+                        style={{ display: "flex", alignItems: "center" }}
+                      >
+                        {/* Email Icon */}
+                        <a
+                          href="mailto:info@aharadaedu.in"
+                          aria-label="Email"
+                          onMouseEnter={(e) =>
+                            (e.currentTarget.style.color = "#4B5563")
+                          }
+                          onMouseLeave={(e) =>
+                            (e.currentTarget.style.color = "#6B7280")
+                          }
+                          style={{
+                            color: "#3b5998",
+                            transition: "color 0.3s ease",
+                            marginRight: "1rem",
+                            fontSize: "1.25rem",
+                            cursor: "pointer",
+                            textDecoration: "none",
+                          }}
+                        >
+                          <i className="far fa-envelope"></i>
                         </a>
-                        <span className="social-title">Follow Us:</span>
-                        <a href="https://www.facebook.com/aharadaeducation/">
-                          <i className="fab fa-facebook-f" />
-                        </a>
-                        <a href="https://www.instagram.com/aharadaeducation/">
-                          <i className="fab fa-instagram" />
-                        </a>
-                        <a href="https://www.twitter.com/">
-                          <i className="fab fa-twitter" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/aharadaeducation/">
-                          <i className="fab fa-linkedin-in" />
-                        </a>
-                        <a href="https://www.youtube.com/@aharadaeducation498">
-                          <i className="fab fa-youtube" />
-                        </a>
+
+                        {/* Follow Us Text */}
+                        <span className="social-title inline mr-4 text-gray-700">
+                          Follow Us:
+                        </span>
+
+                        {/* Social Icons */}
+                        <SocialIcon
+                          href="https://www.facebook.com/aharadaeducation/"
+                          iconClass="fab fa-facebook-f"
+                          hoverColor="#3b5998" // Facebook Blue
+                          label="Facebook"
+                        />
+                        <SocialIcon
+                          href="https://www.instagram.com/aharadaeducation/"
+                          iconClass="fab fa-instagram"
+                          hoverColor="#E1306C" // Instagram Pink
+                          label="Instagram"
+                        />
+                        <SocialIcon
+                          href="https://www.twitter.com/"
+                          iconClass="fab fa-twitter"
+                          hoverColor="#1DA1F2" // Twitter Blue
+                          label="Twitter"
+                        />
+                        <SocialIcon
+                          href="https://www.linkedin.com/in/aharadaeducation/"
+                          iconClass="fab fa-linkedin-in"
+                          hoverColor="#0077B5" // LinkedIn Blue
+                          label="LinkedIn"
+                        />
+                        <SocialIcon
+                          href="https://www.youtube.com/@aharadaeducation498"
+                          iconClass="fab fa-youtube"
+                          hoverColor="#FF0000" // YouTube Red
+                          label="YouTube"
+                        />
                       </div>
                     </li>
                   </ul>
@@ -185,9 +213,7 @@ function Header() {
                             </ul>
                           </li>
                           <li>
-                            <a href="#" onClick={openAcademicsModal}>
-                              Programs
-                            </a>
+                            <a href="/programs">Programs</a>
                           </li>
                           <li className="menu-item-has-children">
                             <a href="#">Students</a>
@@ -202,7 +228,7 @@ function Header() {
                                 <Link to="/alumni">Alumni</Link>
                               </li>
                               <li>
-                                <Link to="/governance">Governance</Link>
+                                <Link to="/grievance">Grievance</Link>
                               </li>
                             </ul>
                           </li>
@@ -217,7 +243,7 @@ function Header() {
                       <button
                         type="button"
                         className="th-menu-toggle d-block d-lg-none"
-                        onClick={toggleMobileMenu} // Toggle mobile menu visibility
+                        onClick={toggleMobileMenu}
                       >
                         <i className="far fa-bars"></i>
                       </button>
@@ -225,27 +251,10 @@ function Header() {
                     <div className="col-auto d-none d-xl-block">
                       <div className="header-button">
                         <Link
-                          to="/apply" // Use Link for navigation
-                          className={`th-btn style1 sideMenuToggler ${
-                            isLoading ? "loading" : ""
-                          }`}
-                          style={{
-                            cursor: isLoading ? "not-allowed" : "pointer",
-                            opacity: isLoading ? 0.7 : 1,
-                          }}
-                          onClick={isLoading ? null : openApplyForm} // Open the Apply form modal
+                          onClick={toggleFormVisibility}
+                          className={"th-btn style1 sideMenuToggler"}
                         >
-                          {isLoading ? (
-                            <>
-                              <i className="fas fa-spinner fa-spin"></i>{" "}
-                              Loading...
-                            </>
-                          ) : (
-                            <>
-                              Apply Now{" "}
-                              <i className="fas fa-arrow-right ms-2"></i>
-                            </>
-                          )}
+                          Apply Now
                         </Link>
                       </div>
                     </div>
@@ -255,32 +264,25 @@ function Header() {
             </div>
           </div>
         </div>
-      </header>
 
-      {/* Programs Modal */}
-      <ProgramsModal
-        isOpen={isAcademicsModalOpen}
-        closeModal={closeAcademicsModal}
-      />
+        {/* Apply Now Button and ApplyForm */}
+        <div
+          className="apply-now-container"
+          style={{ textAlign: "center", marginTop: "20px" }}
+        >
+          {!isFormVisible && (
+            <button
+              className="apply-now-button red"
+              onClick={toggleFormVisibility}
+            >
+              Apply Now
+            </button>
+          )}
 
-      {/* Modal for Apply Form */}
-      <Modal
-        isOpen={isApplyFormOpen}
-        onRequestClose={closeApplyForm}
-        contentLabel="Apply Now Form"
-        className="apply-form-modal"
-        overlayClassName="apply-form-modal-overlay"
-        shouldCloseOnOverlayClick={true}
-      >
-        <div className="modal-content-container">
-          <div className="modal-right">
-            <ApplyForm
-              onSubmit={closeApplyForm}
-              closeApplyForm={closeApplyForm}
-            />
-          </div>
+          {/* Conditionally Render the Form */}
+          {isFormVisible && <ApplyForm closeApplyForm={closeApplyForm} />}
         </div>
-      </Modal>
+      </header>
     </>
   );
 }

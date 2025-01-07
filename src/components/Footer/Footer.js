@@ -1,7 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import config from "../../config";
 function Footer() {
+  const [universities, setUniversities] = useState([]);
+
+  useEffect(() => {
+    // Fetch the universities data from the API
+    axios
+      .get(`${config.apiBaseUrl}/api/universities`)
+      .then((response) => {
+        // Set the fetched universities data into the state
+        setUniversities(response.data.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching universities:", error);
+      });
+  }, []);
+
   return (
     <div>
       <footer
@@ -17,7 +32,7 @@ function Footer() {
                 </div>
                 <div className="media-body">
                   <p className="footer-contact_text">Call us any time:</p>
-                  <a href="tel%2b11234567890" className="footer-contact_link">
+                  <a href="tel:+917303381359" className="footer-contact_link">
                     +91-7303381359
                   </a>
                 </div>
@@ -99,23 +114,26 @@ function Footer() {
                     <h3 className="widget_title">Our Campus</h3>
                     <div className="menu-all-pages-container">
                       <ul className="menu">
-                        <li>
-                          <a href="#">IIMT University, Meerut</a>
-                        </li>
-                        <li>
-                          <a href="#">SAGE University Indore</a>
-                        </li>
-
-                        <li>
-                          <a href="#">Subharti University, Meerut</a>
-                        </li>
-                        <li>
-                          <a href="#">Dev Bhoomi Uttarakhand University</a>
-                        </li>
+                        {universities.length > 0 ? (
+                          universities.map((university) => (
+                            <li key={university._id}>
+                              <a
+                                href={`/university/${university.name
+                                  .toLowerCase()
+                                  .replace(/\s+/g, "-")}`}
+                              >
+                                {university.name}
+                              </a>
+                            </li>
+                          ))
+                        ) : (
+                          <li>No Campus Found</li>
+                        )}
                       </ul>
                     </div>
                   </div>
                 </div>
+
                 <div className="col-md-6 col-xl-auto">
                   <div className="widget widget_nav_menu footer-widget">
                     <h3 className="widget_title">Academics</h3>
@@ -229,7 +247,7 @@ function Footer() {
             width: 60px !important;
             height: 60px;
             bottom: 40px;
-            right: 40px;
+            right: 20px;
             background-color: rgba(0, 200, 0, 1);
             color: white;
             border-radius: 50px;

@@ -1,38 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import axios from "axios";
 import "./ProgramsModal.css";
-
+import config from "../../config";
 Modal.setAppElement("#root");
 
 const ProgramsModal = ({ isOpen, closeModal }) => {
-  const [activeProgramId, setActiveProgramId] = useState(null);
-  const programs = [
-    {
-      id: 1,
-      name: "School of Management",
-      courses: ["MBA", "BBA"],
-    },
-    {
-      id: 2,
-      name: "School of Technology",
-      courses: ["M.Tech", "B.Tech"],
-    },
-    {
-      id: 3,
-      name: "School of Science",
-      courses: ["BSC"],
-    },
-    {
-      id: 4,
-      name: "School of Arts",
-      courses: ["Arts"],
-    },
-  ];
+  const [activeUniversityId, setActiveUniversityId] = useState(null);
+  const [universities, setUniversities] = useState([]);
 
-  // Handle the program click
-  const toggleCourses = (programId) => {
-    setActiveProgramId(activeProgramId === programId ? null : programId);
+  // Fetch universities and programs data from API
+  useEffect(() => {
+    const fetchUniversities = async () => {
+      try {
+        const response = await axios.get(
+          `${config.apiBaseUrl}/api/universities/with-programs`
+        ); // Replace with your API URL
+        setUniversities(response.data.data);
+      } catch (error) {
+        console.error("Error fetching universities:", error);
+      }
+    };
+
+    fetchUniversities();
+  }, []);
+
+  // Handle university click to toggle the programs list
+  const togglePrograms = (universityId) => {
+    setActiveUniversityId(
+      activeUniversityId === universityId ? null : universityId
+    );
   };
 
   return (
@@ -61,19 +59,19 @@ const ProgramsModal = ({ isOpen, closeModal }) => {
           />
         </div>
 
-        {/* Right side - Program List */}
+        {/* Right side - University & Program List */}
         <div className="modal-right">
           <h4>Programs</h4>
-          {programs.map((program) => (
-            <div key={program.id} className="program-section">
+          {universities.map((university) => (
+            <div key={university.id} className="program-section">
               <div className="header-programs-modal">
                 <h2
-                  onClick={() => toggleCourses(program.id)}
+                  onClick={() => togglePrograms(university.id)}
                   style={{ cursor: "pointer" }}
                 >
-                  {program.name}
+                  {university.name}
                   {/* Icon for toggling */}
-                  {activeProgramId === program.id ? (
+                  {activeUniversityId === university.id ? (
                     <FaChevronUp
                       className="toggle-icon"
                       style={{ marginLeft: "5px" }}
@@ -87,19 +85,25 @@ const ProgramsModal = ({ isOpen, closeModal }) => {
                 </h2>
               </div>
 
-              {/* Show courses list if the program is active with animation */}
+              {/* Show programs list if the university is active */}
               <div
                 className={`courses-list-container ${
-                  activeProgramId === program.id ? "show" : ""
+                  activeUniversityId === university.id ? "show" : ""
                 }`}
               >
-                {activeProgramId === program.id && (
+                {activeUniversityId === university.id && (
                   <ul>
-                    {program.courses.map((course, index) => (
-                      <li key={index}>
-                        <a href="#">{course}</a>
-                      </li>
-                    ))}
+                    {university.programs.length > 0 ? (
+                      university.programs.map((program) => (
+                        <li key={program.id}>
+                          <a href="#">
+                            {program.shortname} - {program.name}
+                          </a>
+                        </li>
+                      ))
+                    ) : (
+                      <li>No programs available</li>
+                    )}
                   </ul>
                 )}
               </div>

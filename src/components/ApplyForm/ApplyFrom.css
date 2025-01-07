@@ -48,10 +48,10 @@
 
 /* Form Styling */
 .apply-form {
-    position: fixed;
+    position: static;
+    margin-left: 30px;
     top: 50%;
     right: 0;
-    transform: translateY(-50%);
     width: 400px;
     background-color: #fff;
     border-radius: 10px;
@@ -91,16 +91,18 @@
     margin-bottom: 20px;
 }
 
-label {
+.apply-form label {
     display: block;
     font-size: 14px;
     font-weight: 600;
+    text-align: left;
+    align-items: start;
     color: #333;
     margin-bottom: 8px;
 }
 
-input,
-select {
+.apply-form input,
+.apply-form select {
     height: 40px;
     width: 100%;
     padding: 10px;
@@ -111,8 +113,8 @@ select {
     background-color: #f7f7f7;
 }
 
-input:focus,
-select:focus {
+.apply-form input:focus,
+.apply-form select:focus {
     border-color: #0f2239;
     outline: none;
     box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);

@@ -11,13 +11,15 @@ import CouseOffer from "./component/CouseOffer";
 import videoTestimonialsSection from "./component/VideoTestimonials";
 import Universities from "./component/Universities";
 import RecentBlog from "./component/RecentBlog";
-
+import ApplyNowButton from "../../components/ApplyNowButton/ApplyNowButton";
+import Head from "../../components/Head/Head";
 function Home() {
   useEffect(() => {
     document.title = "Home - Aharada Education";
   }, []);
   return (
     <div>
+      <Head />
       <main>
         <HeroSection />
         {/* <WhyChooseSection /> */}

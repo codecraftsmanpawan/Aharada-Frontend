@@ -31,9 +31,7 @@ function HeroSection() {
             data-aos="fade-right"
           >
             <div className="hero-style2">
-              <span className="hero-subtitle">
-                Educate, Empower, Excel &amp; Shape Your Future
-              </span>
+              <span className="hero-subtitle">Educate, Empower, Excel</span>
 
               <h1 className="hero-title text-theme">Aharada Education</h1>
               <h1 className="hero-title">
