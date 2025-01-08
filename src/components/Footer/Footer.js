@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import config from "../../config";
+import { Link } from "react-router-dom";
 function Footer() {
   const [universities, setUniversities] = useState([]);
 
@@ -117,13 +118,13 @@ function Footer() {
                         {universities.length > 0 ? (
                           universities.map((university) => (
                             <li key={university._id}>
-                              <a
-                                href={`/university/${university.name
+                              <Link
+                                to={`/university/${university.name
                                   .toLowerCase()
                                   .replace(/\s+/g, "-")}`}
                               >
                                 {university.name}
-                              </a>
+                              </Link>
                             </li>
                           ))
                         ) : (

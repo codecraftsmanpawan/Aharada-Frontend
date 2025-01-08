@@ -1,14 +1,61 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import axios from "axios";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import config from "../../../config";
 
 function CollaboratorsSection() {
+  const [collaborators, setCollaborators] = useState([]);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
     });
+
+    axios
+      .get(`${config.apiBaseUrl}/api/collaborators`)
+      .then((response) => {
+        setCollaborators(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching collaborators:", error);
+      });
   }, []);
+
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div
@@ -39,88 +86,37 @@ function CollaboratorsSection() {
           </div>
           <div className="col-lg-6" data-aos="fade-left" data-aos-delay="400">
             <div className="client-wrap text-lg-end text-center">
-              <div className="row gy-40">
-                <div className="col-3">
-                  <a href="#" className="client-thumb">
-                    <img
-                      src="assets/img/client/iimtlogo.png"
-                      alt="IIMT University"
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                    />
-                  </a>
-                </div>
-                <div className="col-3">
-                  <a href="#" className="client-thumb">
-                    <img
-                      src="assets/img/client/Dev-Bhoomi-Logo.png"
-                      alt="Dev Bhoomi University"
-                      data-aos="zoom-in"
-                      data-aos-delay="200"
-                    />
-                  </a>
-                </div>
-                <div className="col-3">
-                  <a href="#" className="client-thumb">
-                    <img
-                      src="assets/img/client/subharti.jpg"
-                      alt="Subharti University"
-                      data-aos="zoom-in"
-                      data-aos-delay="300"
-                    />
-                  </a>
-                </div>
-                <div className="col-3">
-                  <a href="#" className="client-thumb">
-                    <img
-                      src="assets/img/client/sagelogo.png"
-                      alt="Sage University"
-                      data-aos="zoom-in"
-                      data-aos-delay="400"
-                    />
-                  </a>
-                </div>
-                <div className="col-3">
-                  <a href="#" className="client-thumb">
-                    <img
-                      src="assets/img/client/sagelogo.png"
-                      alt="Sage University"
-                      data-aos="zoom-in"
-                      data-aos-delay="500"
-                    />
-                  </a>
-                </div>
-                <div className="col-3">
-                  <a href="#" className="client-thumb">
-                    <img
-                      src="assets/img/client/subharti.jpg"
-                      alt="Subharti University"
-                      data-aos="zoom-in"
-                      data-aos-delay="600"
-                    />
-                  </a>
-                </div>
-                <div className="col-3">
-                  <a href="#" className="client-thumb">
-                    <img
-                      src="assets/img/client/Dev-Bhoomi-Logo.png"
-                      alt="Dev Bhoomi University"
-                      data-aos="zoom-in"
-                      data-aos-delay="700"
-                    />
-                  </a>
-                </div>
-                <div className="col-3">
-                  <a href="#" className="client-thumb">
-                    <img
-                      src="assets/img/client/iimtlogo.png"
-                      alt="IIMT University"
-                      data-aos="zoom-in"
-                      data-aos-delay="800"
-                    />
-                  </a>
-                </div>
-              </div>
+              <Slider {...sliderSettings}>
+                {collaborators.map((collaborator, index) => (
+                  <div
+                    className="p-2"
+                    key={collaborator._id}
+                    style={{ marginRight: "15px" }}
+                  >
+                    <a
+                      href={collaborator.website}
+                      className="client-thumb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: "block",
+                        transition: "color 0.3s ease",
+                      }}
+                    >
+                      <img
+                        src={`${config.apiBaseUrl}${collaborator.logo}`}
+                        alt={collaborator.name}
+                        style={{
+                          width: "100%",
+                          height: "150px",
+                          objectFit: "contain",
+                          transition: "opacity 0.3s ease",
+                        }}
+                      />
+                    </a>
+                  </div>
+                ))}
+              </Slider>
             </div>
           </div>
         </div>

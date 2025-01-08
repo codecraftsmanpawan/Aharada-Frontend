@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Faculty from "./pages/Faculty/Faculty";
 import FacultyDetails from "./pages/Faculty/FacultyDetails";
+import JoinasInstructor from "./pages/Faculty/JoinasInstructor";
 import Alumni from "./pages/Alumni/Alumni";
 import Event from "./pages/Event/Events";
 import Internship from "./pages/Internship/Internship";
@@ -34,7 +35,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/faculty" element={<Faculty />} />
-        <Route path="/facultyDetails" element={<FacultyDetails />} />
+        <Route path="/facultyDetails/:facultyId" element={<FacultyDetails />} />
+        <Route path="/joinasInstructor" element={<JoinasInstructor />} />
         <Route path="/alumni" element={<Alumni />} />
         <Route path="/events" element={<Event />} />
         <Route path="/internship" element={<Internship />} />

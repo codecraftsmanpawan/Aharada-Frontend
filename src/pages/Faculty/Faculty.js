@@ -1,191 +1,100 @@
-import React, { useEffect } from "react";
-
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
-
+import { Link } from "react-router-dom";
+import Head from "../../components/Head/Head";
+import config from "../../config";
 function Faculty() {
+  const [facultyData, setFacultyData] = useState([]);
+
+  // Fetch data when the component mounts
   useEffect(() => {
     document.title = "Faculty - Aharada Education";
+
+    const fetchFaculty = async () => {
+      try {
+        const response = await axios.get(
+          `${config.apiBaseUrl}/api/faculty/main`
+        );
+        setFacultyData(response.data);
+      } catch (error) {
+        console.error("Error fetching faculty data:", error);
+      }
+    };
+
+    fetchFaculty();
   }, []);
 
   return (
     <div>
+      <Head />
       <Breadcrumbs />
       <main>
         <div>
           <div className="team-area overflow-hidden space">
             <div className="container">
               <div className="row align-items-center gy-4">
-                <div className="col-sm-6 col-lg-4 col-xl-3">
-                  <div className="team-card style3">
-                    <div className="team-img-wrap">
-                      <div className="team-img">
-                        <img src="assets/img/team/team_1_2.jpg" alt="Team" />
-                      </div>
-                    </div>
-                    <div className="team-hover-wrap">
-                      <div className="team-social">
-                        <a href="#" className="icon-btn">
-                          <i className="far fa-plus" />
-                        </a>
-                        <div className="th-social">
-                          <a target="_blank" href="https://linkedin.com/">
-                            <i className="fab fa-linkedin-in" />
-                          </a>
-                          <a href="mailto:lily.michelle@example.com">
-                            <i className="fas fa-envelope" />
-                          </a>
+                {/* Iterate through the fetched faculty data */}
+                {facultyData.map((faculty, index) => (
+                  <div key={index} className="col-sm-6 col-lg-4 col-xl-3">
+                    <div className="team-card style3">
+                      <div className="team-img-wrap">
+                        <div className="team-img">
+                          <img
+                            src={`${config.apiBaseUrl}${faculty.imageUrl}`}
+                            alt="Faculty"
+                          />
                         </div>
                       </div>
-                      <div className="team-content">
-                        <h3 className="team-title">
-                          <a href="/facultyDetails">Lily Michelle</a>
-                        </h3>
-                        <span className="team-desig">Senior Instructor</span>
-                      </div>
-                      <div className="team-info">
-                        <span>
-                          <i className="fal fa-file-check" />
-                          28 years+ Experience
-                        </span>
-                      </div>{" "}
-                      <div className="team-info">
-                        <span>
-                          <i className="fa-light fa-chalkboard-teacher" />
-                          25+ Workshops
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                      <div className="team-hover-wrap">
+                        <div className="team-social">
+                          <a href="#" className="icon-btn">
+                            <i className="far fa-plus" />
+                          </a>
+                          <div className="th-social">
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href={faculty.socialLinks.linkedin}
+                            >
+                              <i className="fab fa-linkedin-in" />
+                            </a>
+                            <a href={`mailto:${faculty.socialLinks.email}`}>
+                              <i className="fas fa-envelope" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="team-content">
+                          <h3 className="team-title">
+                            <Link
+                              to={`/facultyDetails/${encodeURIComponent(
+                                faculty._id.toString()
+                              )}`}
+                            >
+                              {faculty.facultyName}
+                            </Link>
+                          </h3>
 
-                <div className="col-sm-6 col-lg-4 col-xl-3">
-                  <div className="team-card style3">
-                    <div className="team-img-wrap">
-                      <div className="team-img">
-                        <img src="assets/img/team/team_1_2.jpg" alt="Team" />
-                      </div>
-                    </div>
-                    <div className="team-hover-wrap">
-                      <div className="team-social">
-                        <a href="#" className="icon-btn">
-                          <i className="far fa-plus" />
-                        </a>
-                        <div className="th-social">
-                          <a target="_blank" href="https://linkedin.com/">
-                            <i className="fab fa-linkedin-in" />
-                          </a>
-                          <a href="mailto:lily.michelle@example.com">
-                            <i className="fas fa-envelope" />
-                          </a>
+                          <span className="team-desig">
+                            {faculty.designation}
+                          </span>
                         </div>
-                      </div>
-                      <div className="team-content">
-                        <h3 className="team-title">
-                          <a href="/facultyDetails">Lily Michelle</a>
-                        </h3>
-                        <span className="team-desig">Senior Instructor</span>
-                      </div>
-                      <div className="team-info">
-                        <span>
-                          <i className="fal fa-file-check" />
-                          28 years+ Experience
-                        </span>
-                      </div>{" "}
-                      <div className="team-info">
-                        <span>
-                          <i className="fa-light fa-chalkboard-teacher" />
-                          25+ Workshops
-                        </span>
+                        <div className="team-info">
+                          <span>
+                            <i className="fal fa-file-check" />
+                            {faculty.yearsOfExperience} years Experience
+                          </span>
+                        </div>
+                        <div className="team-info">
+                          <span>
+                            <i className="fa-light fa-chalkboard-teacher" />
+                            {faculty.workshopsConducted}
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-
-                <div className="col-sm-6 col-lg-4 col-xl-3">
-                  <div className="team-card style3">
-                    <div className="team-img-wrap">
-                      <div className="team-img">
-                        <img src="assets/img/team/team_1_2.jpg" alt="Team" />
-                      </div>
-                    </div>
-                    <div className="team-hover-wrap">
-                      <div className="team-social">
-                        <a href="#" className="icon-btn">
-                          <i className="far fa-plus" />
-                        </a>
-                        <div className="th-social">
-                          <a target="_blank" href="https://linkedin.com/">
-                            <i className="fab fa-linkedin-in" />
-                          </a>
-                          <a href="mailto:lily.michelle@example.com">
-                            <i className="fas fa-envelope" />
-                          </a>
-                        </div>
-                      </div>
-                      <div className="team-content">
-                        <h3 className="team-title">
-                          <a href="/facultyDetails">Lily Michelle</a>
-                        </h3>
-                        <span className="team-desig">Senior Instructor</span>
-                      </div>
-                      <div className="team-info">
-                        <span>
-                          <i className="fal fa-file-check" />
-                          28 years+ Experience
-                        </span>
-                      </div>{" "}
-                      <div className="team-info">
-                        <span>
-                          <i className="fa-light fa-chalkboard-teacher" />
-                          25+ Workshops
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-sm-6 col-lg-4 col-xl-3">
-                  <div className="team-card style3">
-                    <div className="team-img-wrap">
-                      <div className="team-img">
-                        <img src="assets/img/team/team_1_2.jpg" alt="Team" />
-                      </div>
-                    </div>
-                    <div className="team-hover-wrap">
-                      <div className="team-social">
-                        <a href="#" className="icon-btn">
-                          <i className="far fa-plus" />
-                        </a>
-                        <div className="th-social">
-                          <a target="_blank" href="https://linkedin.com/">
-                            <i className="fab fa-linkedin-in" />
-                          </a>
-                          <a href="mailto:lily.michelle@example.com">
-                            <i className="fas fa-envelope" />
-                          </a>
-                        </div>
-                      </div>
-                      <div className="team-content">
-                        <h3 className="team-title">
-                          <a href="/facultyDetails">Lily Michelle</a>
-                        </h3>
-                        <span className="team-desig">Senior Instructor</span>
-                      </div>
-                      <div className="team-info">
-                        <span>
-                          <i className="fal fa-file-check" />
-                          28 years+ Experience
-                        </span>
-                      </div>{" "}
-                      <div className="team-info">
-                        <span>
-                          <i className="fa-light fa-chalkboard-teacher" />
-                          25+ Workshops
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -220,41 +129,47 @@ function Faculty() {
                 <div className="col-xl-6 order-xl-1">
                   <div className="title-area mb-30">
                     <span className="sub-title">
-                      <i className="fal fa-book me-1" />
-                      Instructor
+                      <i className="fal fa-chalkboard-teacher me-1" />
+                      College Instructor
                     </span>
-                    <h2 className="sec-title">Become an Instructor.</h2>
+                    <h2 className="sec-title">Become an College Instructor.</h2>
                   </div>
                   <div className="row gy-4">
                     <div className="col-sm-6">
                       <div className="become-instructor-wrap">
-                        <i className="fa-solid fa-badge-check" />
-                        <h4 className="box-title">Teach your way</h4>
+                        <i className="fa-solid fa-book-open-reader" />
+                        <h4 className="box-title">
+                          Design Your Course Syllabus
+                        </h4>
                       </div>
                     </div>
                     <div className="col-sm-6">
                       <div className="become-instructor-wrap">
-                        <i className="fa-solid fa-badge-check" />
-                        <h4 className="box-title">Plan your curriculum</h4>
+                        <i className="fa-solid fa-chalkboard" />
+                        <h4 className="box-title">
+                          Prepare Classroom Materials
+                        </h4>
                       </div>
                     </div>
                     <div className="col-sm-6">
                       <div className="become-instructor-wrap">
-                        <i className="fa-solid fa-badge-check" />
-                        <h4 className="box-title">Record your video</h4>
+                        <i className="fa-solid fa-users" />
+                        <h4 className="box-title">Engage with Students</h4>
                       </div>
                     </div>
                     <div className="col-sm-6">
                       <div className="become-instructor-wrap">
-                        <i className="fa-solid fa-badge-check" />
-                        <h4 className="box-title">Launch your course</h4>
+                        <i className="fa-solid fa-clipboard-check" />
+                        <h4 className="box-title">
+                          Evaluate and Grade Assignments
+                        </h4>
                       </div>
                     </div>
                   </div>
-                  <a href="about.html" className="th-btn mt-40">
-                    Get Instructor{" "}
+                  <Link to="/joinasInstructor" className="th-btn mt-40">
+                    Join as Instructor
                     <i className="fa-regular fa-arrow-right ms-1" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,0 +1,37 @@
+.video-testimonials-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.testimonial-card {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 5px;
+    /* Add margin to create a gap of 10px between cards (5px on each side) */
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    height: 50px;
+    /* Fixed height for consistent text alignment */
+    overflow: hidden;
+    /* Hide overflow if text is too long */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    /* Fixed height for the video player */
+}

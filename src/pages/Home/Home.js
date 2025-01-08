@@ -8,8 +8,7 @@ import FetauredEventsSection from "./component/FetauredEventsSection";
 import AwardsSection from "./component/AwardsSection";
 import TestimonialsSection from "../../components/Testimonials/Testimonials";
 import CouseOffer from "./component/CouseOffer";
-import videoTestimonialsSection from "./component/VideoTestimonials";
-import Universities from "./component/Universities";
+import Feedback from "./component/Feedback";
 import RecentBlog from "./component/RecentBlog";
 import ApplyNowButton from "../../components/ApplyNowButton/ApplyNowButton";
 import Head from "../../components/Head/Head";
@@ -30,7 +29,7 @@ function Home() {
 
         <AwardsSection />
         {/* <FetauredEventsSection /> */}
-        <Universities />
+        <Feedback />
         <TestimonialsSection />
 
         {/* <videoTestimonialsSection /> */}

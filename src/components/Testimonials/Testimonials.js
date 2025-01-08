@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Testimonials.css";
-
+import axios from "axios";
+import config from "../../config";
 const NextArrow = (props) => {
   const { onClick } = props;
   return (
@@ -23,16 +24,33 @@ const PrevArrow = (props) => {
 };
 
 const Testimonials = () => {
+  const [testimonialsData, setTestimonialsData] = useState([]);
+
+  // Fetch data from API when the component is mounted
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      try {
+        const response = await axios.get(
+          `${config.apiBaseUrl}/api/testimonials`
+        );
+        setTestimonialsData(response.data);
+      } catch (error) {
+        console.error("Error fetching testimonials:", error);
+      }
+    };
+
+    fetchTestimonials();
+  }, []); // Empty dependency array ensures it only runs once on component mount
+
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    arrows: false,
     appendDots: (dots) => (
       <div>
         <ul style={{ margin: "0px" }}> {dots} </ul>
@@ -69,28 +87,6 @@ const Testimonials = () => {
     ],
   };
 
-  const testimonialsData = [
-    {
-      img: "assets/img/update1/testimonial/testi_2_1.jpg",
-      text: "“As a B.Tech Aerospace student, I’ve had an amazing experience with supportive teachers and a good mix of theory and practical learning. If you want a strong start in aerospace engineering, this is the right choice!”",
-      name: "Isha Verma",
-      designation: "B.Tech Student",
-    },
-    {
-      img: "assets/img/update1/testimonial/testi_2_2.jpg",
-      text: "“There is no other university like it on the planet. The undergrad experience is fantastic--Aharada Education really makes sure to integrate first year students into campus life. And the plus point is that they provide us a proper practical training , because practical training is very much important in now a days”",
-      name: "Naman Panchal",
-      designation: "B.Tech Student",
-    },
-    {
-      img: "assets/img/update1/testimonial/testi_2_3.jpg",
-      text: "“Aharada is an excellent institute.They provide good atmosphere, practical  training and facilities to learn good experience. Avation field is the best field to fulfill your dreams.”",
-      name: "Chetna Kumari",
-      designation: "MBA Student",
-    },
-    // Add more testimonials as needed
-  ];
-
   return (
     <section
       className="overflow-hidden bg-white space"
@@ -108,13 +104,14 @@ const Testimonials = () => {
             <div key={index} className="px-3">
               <div className="testi-box bg-smoke shadow-none">
                 <div className="testi-box_content">
-                  {/* <div className="testi-box_img">
+                  <div className="testi-box_img">
                     <img
-                      src={testimonial.img}
+                      src={`${config.apiBaseUrl}/uploads/${testimonial.img}`}
                       alt="Avatar"
+                      width={100}
                       className="img-fluid rounded-circle"
                     />
-                  </div> */}
+                  </div>
                   <p className="testi-box_text">{testimonial.text}</p>
                 </div>
                 <div className="testi-box_bottom d-flex justify-content-between align-items-center">
@@ -125,11 +122,14 @@ const Testimonials = () => {
                     </span>
                   </div>
                   <div className="testi-box_review">
-                    <i className="fa-solid fa-star-sharp text-warning"></i>
-                    <i className="fa-solid fa-star-sharp text-warning"></i>
-                    <i className="fa-solid fa-star-sharp text-warning"></i>
-                    <i className="fa-solid fa-star-sharp text-warning"></i>
-                    <i className="fa-solid fa-star-sharp text-warning"></i>
+                    {[...Array(5)].map((_, idx) => (
+                      <i
+                        key={idx}
+                        className={`fa-solid fa-star-sharp ${
+                          idx < testimonial.rating ? "text-warning" : ""
+                        }`}
+                      ></i>
+                    ))}
                   </div>
                 </div>
               </div>
