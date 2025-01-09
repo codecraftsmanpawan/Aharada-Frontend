@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import config from "../../config";
+import config from "../../config"; // Ensure this path is correct
+
 const InstructorApplication = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -19,6 +20,7 @@ const InstructorApplication = () => {
 
   // Fetch universities from the API on component mount
   useEffect(() => {
+    console.log("Config:", config);
     axios
       .get(`${config.apiBaseUrl}/api/universities`)
       .then((response) => {
@@ -60,7 +62,7 @@ const InstructorApplication = () => {
 
     const data = JSON.stringify(formData);
 
-    const config = {
+    const axiosConfig = {
       method: "post",
       maxBodyLength: Infinity,
       url: `${config.apiBaseUrl}/api/applied-instructors`,
@@ -71,16 +73,16 @@ const InstructorApplication = () => {
     };
 
     axios
-      .request(config)
+      .request(axiosConfig)
       .then((response) => {
         toast.success("Application submitted successfully!");
-        // Reload the page after successful submission
         setTimeout(() => {
           window.location.reload();
         }, 2000);
       })
       .catch((error) => {
         toast.error("An error occurred while submitting the application.");
+        console.error(error);
       });
   };
 

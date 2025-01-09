@@ -30,7 +30,11 @@ function Faculty() {
       <Head />
       <Breadcrumbs />
       <main>
-        <div>
+        <div
+          style={{
+            background: "linear-gradient(to bottom, #fdfbf9, #f4ebdd)",
+          }}
+        >
           <div className="team-area overflow-hidden space">
             <div className="container">
               <div className="row align-items-center gy-4">
@@ -38,14 +42,37 @@ function Faculty() {
                 {facultyData.map((faculty, index) => (
                   <div key={index} className="col-sm-6 col-lg-4 col-xl-3">
                     <div className="team-card style3">
-                      <div className="team-img-wrap">
-                        <div className="team-img">
+                      <div
+                        className="team-img-wrap"
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          height: "100%",
+                          paddingTop: "15px",
+                        }}
+                      >
+                        <div
+                          className="team-img"
+                          style={{
+                            width: "130px",
+                            height: "130px",
+                            borderRadius: "50%",
+                            overflow: "hidden",
+                          }}
+                        >
                           <img
                             src={`${config.apiBaseUrl}${faculty.imageUrl}`}
                             alt="Faculty"
+                            style={{
+                              width: "100%",
+                              height: "100%",
+                              objectFit: "cover",
+                            }}
                           />
                         </div>
                       </div>
+
                       <div className="team-hover-wrap">
                         <div className="team-social">
                           <a href="#" className="icon-btn">

@@ -1,58 +1,242 @@
-// src/App.jsx
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header/Header";
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Faculty from "./pages/Faculty/Faculty";
-import FacultyDetails from "./pages/Faculty/FacultyDetails";
-import JoinasInstructor from "./pages/Faculty/JoinasInstructor";
-import Alumni from "./pages/Alumni/Alumni";
-import Event from "./pages/Event/Events";
-import Internship from "./pages/Internship/Internship";
-import Blogs from "./pages/Blog/Blogs";
-import BlogDetails from "./pages/Blog/BlogDetails";
-import Contact from "./pages/Contact/Contact";
-import Grievance from "./pages/Governance/Grievance";
-import PlacementTeam from "./pages/PlacementTeam/PlacementTeam";
-import NoticeBoard from "./pages/NoticeBoard/NoticeBoard";
-import Gallery from "./pages/Gallery/Gallery";
-import CourseDetails from "./pages/CourseDetails/CourseDetails";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import AdminLayout from "./layouts/AdminLayout";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import AdmissionLeads from "./pages/AdmissionLeads/AdmissionLeads";
+import Enquiries from "./pages/Enquiries/Enquiries";
+import Complaints from "./pages/Complaints/Complaints";
+import AppliedInstructors from "./pages/AppliedInstructors/AppliedInstructors";
+import UniversityList from "./pages/AddUniversity/UniversityList";
 import Programs from "./pages/Programs/Programs";
-import Footer from "./components/Footer/Footer";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
-import "./App.css";
-// import "./assets/css/app.min.css";
-// import "./assets/css/bootstrap.rtl.min.css";
-// import "./assets/css/fontawesome.min.css";
-// import "./assets/css/style.css";
-function App() {
+import PrgramsBranch from "./pages/ProdramsBranch/ProdramsBranch";
+import VideoFeedbackForm from "./pages/Videofeedbacks/Vdeofeedbacks";
+import TestimonialForm from "./pages/Testimonials/Testimonials";
+import CollaboratorsList from "./pages/Collaborators/Collaborators";
+import FacultyMembers from "./pages/Faculty/FacultyMembers";
+import FacultyMembersDetails from "./pages/Faculty/FacultyMembersDetails";
+import AddFacultyMembers from "./pages/Faculty/AddFacultyMembers";
+import PlacementTeams from "./pages/PlacementTeams/PlacementTeams";
+import PlacedStudent from "./pages/PlacedStudent/PlacedStudent";
+import TeamMember from "./pages/TeamMember/TeamMember";
+
+import UniversityLogin from "./pagesuniversity/Login";
+import UniversityDashboard from "./pagesuniversity/Dashboard";
+import UniversityEnquiries from "./pagesuniversity/Enquiries";
+import UniversityAdmissionLeads from "./pagesuniversity/Admissionleads";
+
+// Mock authentication function
+const isAuthenticated = () => {
+  return localStorage.getItem("AharadaadminauthToken") !== null;
+};
+
+// Protected Route Component
+const ProtectedRoute = ({ children }) => {
+  return isAuthenticated() ? children : <Navigate to="/" />;
+};
+
+const App = () => {
   return (
     <Router>
-      <ScrollToTop /> {/* Include the component here */}
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/faculty" element={<Faculty />} />
-        <Route path="/facultyDetails/:facultyId" element={<FacultyDetails />} />
-        <Route path="/joinasInstructor" element={<JoinasInstructor />} />
-        <Route path="/alumni" element={<Alumni />} />
-        <Route path="/events" element={<Event />} />
-        <Route path="/internship" element={<Internship />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/blogDetails" element={<BlogDetails />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/grievance" element={<Grievance />} />
-        <Route path="/placementTeam" element={<PlacementTeam />} />
-        <Route path="/noticeBoard" element={<NoticeBoard />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/programs" element={<Programs />} />
-        <Route path="/course-details/:title" element={<CourseDetails />} />
+        {/* Public Route */}
+        <Route path="/" element={<LoginPage />} />
+
+        {/* Protected Routes */}
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <Dashboard />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Add Route for Admission Leads */}
+        <Route
+          path="/admin/admission-leads"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <AdmissionLeads />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/enquiries"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <Enquiries />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/complaints"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <Complaints />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/applied-instructors"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <AppliedInstructors />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/admin/list-university"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <UniversityList />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/list-Programs/:universityId"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <Programs />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/program/:programId"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <PrgramsBranch />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/video/feedback"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <VideoFeedbackForm />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/testimonial"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <TestimonialForm />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/collaboratorslist"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <CollaboratorsList />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/facultymembers"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <FacultyMembers />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/faculty/:facultyId"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <FacultyMembersDetails />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/addfaculty"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <AddFacultyMembers />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/placementteams"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <PlacementTeams />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/placedstudent"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <PlacedStudent />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/teammember"
+          element={
+            <ProtectedRoute>
+              <AdminLayout>
+                <TeamMember />
+              </AdminLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route path="/university/login/admin" element={<UniversityLogin />} />
+        <Route
+          path="/university/dashboard/admin"
+          element={<UniversityDashboard />}
+        />
+        <Route
+          path="/university/enquiries/admin"
+          element={<UniversityEnquiries />}
+        />
+        <Route
+          path="/university/admissionleads/admin"
+          element={<UniversityAdmissionLeads />}
+        />
       </Routes>
-      <Footer />
     </Router>
   );
-}
+};
 
 export default App;

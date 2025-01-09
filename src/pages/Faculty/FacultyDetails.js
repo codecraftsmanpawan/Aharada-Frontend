@@ -36,7 +36,7 @@ function FacultyDetails() {
       <main>
         <section className="space">
           <div className="container">
-            <div className="team-details-about-info">
+            <div className="team-details-about-info mb-8">
               <div className="row gx-40">
                 <div className="col-lg-4 position-relative">
                   <div className="team-details-thumb">
@@ -90,32 +90,51 @@ function FacultyDetails() {
               </div>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8" style={{ marginTop: "50px" }}>
               <div className="row">
                 <div className="col-lg-8">
-                  <h3 className="title h4 fw-semibold mt-n1">
-                    Education Qualification
-                  </h3>
-                  <p>{facultyData.aboutResearchInterests}</p>
+                  {facultyData.aboutResearchInterests && (
+                    <>
+                      <h3 className="title h4 fw-semibold mt-n1">
+                        Education Qualification
+                      </h3>
+                      <p>{facultyData.aboutResearchInterests}</p>
+                    </>
+                  )}
 
-                  <h3 className="title h4 fw-semibold mt-n1">Courses Taught</h3>
-                  <ul>
-                    {facultyData.coursesTaught.map((course) => (
-                      <li key={course._id}>
-                        {course.courseName} ({course.semester} {course.year})
-                      </li>
-                    ))}
-                  </ul>
+                  {facultyData.coursesTaught &&
+                    facultyData.coursesTaught.length > 0 && (
+                      <>
+                        <h3 className="title h4 fw-semibold mt-n1">
+                          Courses Taught
+                        </h3>
+                        <ul>
+                          {facultyData.coursesTaught.map((course) => (
+                            <li key={course._id}>
+                              {course.courseName} ({course.semester}{" "}
+                              {course.year})
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
 
-                  <h3 className="title h4 fw-semibold mt-n1">Publications</h3>
-                  <ul>
-                    {facultyData.publications.map((pub) => (
-                      <li key={pub._id}>
-                        <a href={pub.link || "#"}>{pub.title}</a> ({pub.journal}
-                        , {pub.year})
-                      </li>
-                    ))}
-                  </ul>
+                  {facultyData.publications &&
+                    facultyData.publications.length > 0 && (
+                      <>
+                        <h3 className="title h4 fw-semibold mt-n1">
+                          Publications
+                        </h3>
+                        <ul>
+                          {facultyData.publications.map((pub) => (
+                            <li key={pub._id}>
+                              <a href={pub.link || "#"}>{pub.title}</a> (
+                              {pub.journal}, {pub.year})
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
                 </div>
               </div>
             </div>
