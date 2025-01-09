@@ -25,14 +25,14 @@ const InstructorApplication = () => {
       .get(`${config.apiBaseUrl}/api/universities`)
       .then((response) => {
         if (response.data.success) {
-          setUniversities(response.data.data); // Store universities data
+          setUniversities(response.data.data);
         } else {
-          toast.error("Failed to fetch universities.");
+          // toast.error("Failed to fetch universities.");
         }
       })
       .catch((error) => {
-        toast.error("An error occurred while fetching universities.");
-        console.log(error);
+        // toast.error("An error occurred while fetching universities.");
+        // console.log(error);
       });
   }, []);
 
@@ -81,8 +81,8 @@ const InstructorApplication = () => {
         }, 2000);
       })
       .catch((error) => {
-        toast.error("An error occurred while submitting the application.");
-        console.error(error);
+        // toast.error("An error occurred while submitting the application.");
+        // console.error(error);
       });
   };
 

@@ -202,7 +202,7 @@ function Header() {
                                 <Link to="/faculty">Our Faculty</Link>
                               </li>
                               <li>
-                                <Link to="/placementTeam">Placement</Link>
+                                <Link to="/placement">Placement</Link>
                               </li>
                               <li>
                                 <Link to="/events">Events</Link>

@@ -9,52 +9,11 @@ function PlacementTeam() {
     document.title = "Placement Team - Aharada Education";
   }, []);
 
-  const teamMembers = [
-    {
-      name: "Jennifer Tilly",
-      role: "Placement Officer",
-      imgSrc:
-        "https://i.postimg.cc/zG5c7T02/168-1685371-corporate-headshot-pic-png-transparent-png.png",
-    },
-    {
-      name: "John Doe",
-      role: "Coordinator",
-      imgSrc:
-        "http://gocheckers.com/images/roster/josh_wesley_headshot_1718.png",
-    },
-    {
-      name: "Sara Khan",
-      role: "UI Designer",
-      imgSrc:
-        "https://i.postimg.cc/50n49xjb/888-8883444-headshot-no-background-scarf.png",
-    },
-  ];
-
   return (
     <div className="placement-team">
       <main>
         <Breadcrumbs />
-        {/* <section className="team-section py-5">
-          <div className="container">
-            <div className="row">
-              {teamMembers.map((member, index) => (
-                <div key={index} className="col-md-6 mb-4">
-                  <div className="card shadow-sm">
-                    <img
-                      src={member.imgSrc}
-                      className="card-img-top"
-                      alt={`${member.name} - ${member.role}`}
-                    />
-                    <div className="card-body text-center">
-                      <h5 className="card-title">{member.name}</h5>
-                      <p className="card-text">{member.role}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section> */}
+
         <section
           className="space"
           style={{
@@ -69,24 +28,23 @@ function PlacementTeam() {
                     <img
                       src="assets/img/update1/team/team_2_1.jpg"
                       alt="Team"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
                     />
                   </div>
-                  <div className="team-social">
+                  <div className="team-social" style={{ marginBottom: "50px" }}>
                     <button className="icon-btn">
                       <i className="fa-solid fa-plus" />
                     </button>
                     <div className="th-social">
-                      <a target="_blank" href="https://facebook.com/">
-                        <i className="fab fa-facebook-f" />
-                      </a>{" "}
-                      <a target="_blank" href="https://twitter.com/">
-                        <i className="fab fa-twitter" />
-                      </a>{" "}
-                      <a target="_blank" href="https://instagram.com/">
-                        <i className="fab fa-instagram" />
-                      </a>{" "}
-                      <a target="_blank" href="https://linkedin.com/">
+                      <a target="_blank" rel="noopener noreferrer" href="">
                         <i className="fab fa-linkedin-in" />
+                      </a>
+                      <a href="">
+                        <i className="fas fa-envelope" />
                       </a>
                     </div>
                   </div>
@@ -94,7 +52,7 @@ function PlacementTeam() {
                     <h3 className="team-title">
                       <a href="team-details.html">Lilar Dikeoa</a>
                     </h3>
-                    <span className="team-desig">BBA - 3nd Year</span>
+                    <span className="team-desig">BBA - 3nd Year BBA</span>
                   </div>
                   <div className="team-info">
                     <span>
@@ -117,17 +75,11 @@ function PlacementTeam() {
                       <i className="fa-solid fa-plus" />
                     </button>
                     <div className="th-social">
-                      <a target="_blank" href="https://facebook.com/">
-                        <i className="fab fa-facebook-f" />
-                      </a>{" "}
-                      <a target="_blank" href="https://twitter.com/">
-                        <i className="fab fa-twitter" />
-                      </a>{" "}
-                      <a target="_blank" href="https://instagram.com/">
-                        <i className="fab fa-instagram" />
-                      </a>{" "}
-                      <a target="_blank" href="https://linkedin.com/">
+                      <a target="_blank" rel="noopener noreferrer" href="">
                         <i className="fab fa-linkedin-in" />
+                      </a>
+                      <a href="">
+                        <i className="fas fa-envelope" />
                       </a>
                     </div>
                   </div>
@@ -158,17 +110,11 @@ function PlacementTeam() {
                       <i className="fa-solid fa-plus" />
                     </button>
                     <div className="th-social">
-                      <a target="_blank" href="https://facebook.com/">
-                        <i className="fab fa-facebook-f" />
-                      </a>{" "}
-                      <a target="_blank" href="https://twitter.com/">
-                        <i className="fab fa-twitter" />
-                      </a>{" "}
-                      <a target="_blank" href="https://instagram.com/">
-                        <i className="fab fa-instagram" />
-                      </a>{" "}
-                      <a target="_blank" href="https://linkedin.com/">
+                      <a target="_blank" rel="noopener noreferrer" href="">
                         <i className="fab fa-linkedin-in" />
+                      </a>
+                      <a href="">
+                        <i className="fas fa-envelope" />
                       </a>
                     </div>
                   </div>
@@ -199,17 +145,11 @@ function PlacementTeam() {
                       <i className="fa-solid fa-plus" />
                     </button>
                     <div className="th-social">
-                      <a target="_blank" href="https://facebook.com/">
-                        <i className="fab fa-facebook-f" />
-                      </a>{" "}
-                      <a target="_blank" href="https://twitter.com/">
-                        <i className="fab fa-twitter" />
-                      </a>{" "}
-                      <a target="_blank" href="https://instagram.com/">
-                        <i className="fab fa-instagram" />
-                      </a>{" "}
-                      <a target="_blank" href="https://linkedin.com/">
+                      <a target="_blank" rel="noopener noreferrer" href="">
                         <i className="fab fa-linkedin-in" />
+                      </a>
+                      <a href="">
+                        <i className="fas fa-envelope" />
                       </a>
                     </div>
                   </div>
