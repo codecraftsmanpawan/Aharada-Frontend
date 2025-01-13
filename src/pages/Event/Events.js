@@ -1,13 +1,39 @@
-import React, { useEffect } from "react";
-
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
+import Head from "../../components/Head/Head";
 
 function Event() {
+  const [events, setEvents] = useState([]);
+  const navigate = useNavigate(); // Initialize the navigate function
+
   useEffect(() => {
     document.title = "Event - Aharada Education";
+
+    // Fetch events data from the API
+    axios
+      .get("https://backend.aharadaedu.in/api/events")
+      .then((response) => {
+        // Set the events data to state
+        setEvents(response.data.events);
+      })
+      .catch((error) => {
+        console.error("Error fetching events:", error);
+      });
   }, []);
+
+  const handleEventClick = (title) => {
+    navigate(`/event-details/${title}`);
+  };
+
+  const handleViewEventClick = (title) => {
+    navigate(`/event-details/${title}`);
+  };
+
   return (
     <div>
+      <Head />
       <main>
         <Breadcrumbs />
         <section
@@ -26,121 +52,72 @@ function Event() {
           </div>
           <div className="container">
             <div className="title-area text-left">
-              {/* <span className="sub-title">
-                <i className="fal fa-book me-2" /> Fetaured Events
-              </span> */}
+              <span className="sub-title">
+                <i className="fal fa-book me-2" /> Featured Events
+              </span>
               <h2 className="sec-title">2025 Events</h2>
             </div>
-            <div className="event-grid">
-              <div className="event-img">
-                <img src="assets/img/event/event_img-2-1.png" alt="course" />
-              </div>
-              <div className="event-content">
+
+            {/* Map through the fetched events */}
+            {events.map((event) => (
+              <div className="event-grid" key={event.title}>
                 <div
-                  className="event-bg-shape"
-                  data-mask-src="assets/img/event/event_shape2.png"
-                />
-                <div className="media-left">
-                  <h3 className="event-title">
-                    <a href="event-details.html">
-                      What Soul Can Tech Us About Web Design
+                  className="event-img"
+                  style={{
+                    width: "500px",
+                    height: "250px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <img
+                    src={`https://backend.aharadaedu.in${event.image}`}
+                    alt={event.title}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
+                <div className="event-content">
+                  <div
+                    className="event-bg-shape"
+                    data-mask-src="assets/img/event/event_shape2.png"
+                  />
+                  <div className="media-left">
+                    <h3
+                      className="event-title"
+                      onClick={() => handleEventClick(event.title)}
+                    >
+                      {event.title}
+                    </h3>
+                    <div className="event-meta">
+                      <p>
+                        <i className="fal fa-calendar" />
+                        {new Date(event.date).toLocaleDateString()}
+                      </p>
+                      <p>
+                        <i className="far fa-clock" />
+                        {event.time}
+                      </p>
+                      <p>
+                        <i className="far fa-location-dot" />
+                        {event.location}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="media-body">
+                    <a
+                      style={{ cursor: "pointer" }}
+                      className="th-btn"
+                      onClick={() => handleViewEventClick(event.title)}
+                    >
+                      VIEW EVENT <i className="far fa-arrow-right" />
                     </a>
-                  </h3>
-                  <div className="event-meta">
-                    <p>
-                      <i className="fal fa-calendar" />
-                      19th Jun, 2023
-                    </p>
-                    <p>
-                      <i className="far fa-clock" />8 am - 10 am
-                    </p>
-                    <p>
-                      <i className="far fa-location-dot" />
-                      259 Hilton, NewYork,
-                    </p>
                   </div>
                 </div>
-                <div className="media-body">
-                  <a className="th-btn" href="event-details.html">
-                    VIEW EVENTS <i className="far fa-arrow-right" />
-                  </a>
-                </div>
               </div>
-            </div>
-            <div className="event-grid">
-              <div className="event-img">
-                <img src="assets/img/event/event_img-2-2.png" alt="course" />
-              </div>
-              <div className="event-content">
-                <div
-                  className="event-bg-shape"
-                  data-mask-src="assets/img/event/event_shape2.png"
-                />
-                <div className="media-left">
-                  <h3 className="event-title">
-                    <a href="event-details.html">
-                      Embrace the world of online education
-                    </a>
-                  </h3>
-                  <div className="event-meta">
-                    <p>
-                      <i className="fal fa-calendar" />
-                      20th Jun, 2023
-                    </p>
-                    <p>
-                      <i className="far fa-clock" />
-                      10 am - 11 am
-                    </p>
-                    <p>
-                      <i className="far fa-location-dot" />
-                      Hilton Street, NewYork,
-                    </p>
-                  </div>
-                </div>
-                <div className="media-body">
-                  <a className="th-btn" href="event-details.html">
-                    VIEW EVENTS <i className="far fa-arrow-right" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="event-grid">
-              <div className="event-img">
-                <img src="assets/img/event/event_img-2-3.png" alt="course" />
-              </div>
-              <div className="event-content">
-                <div
-                  className="event-bg-shape"
-                  data-mask-src="assets/img/event/event_shape2.png"
-                />
-                <div className="media-left">
-                  <h3 className="event-title">
-                    <a href="event-details.html">
-                      Gain insights into how parents can support
-                    </a>
-                  </h3>
-                  <div className="event-meta">
-                    <p>
-                      <i className="fal fa-calendar" />
-                      22th Jul, 2023
-                    </p>
-                    <p>
-                      <i className="far fa-clock" />
-                      11 am - 12 pm
-                    </p>
-                    <p>
-                      <i className="far fa-location-dot" />
-                      259 Hilton, NewYork,
-                    </p>
-                  </div>
-                </div>
-                <div className="media-body">
-                  <a className="th-btn" href="event-details.html">
-                    VIEW EVENTS <i className="far fa-arrow-right" />
-                  </a>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
       </main>

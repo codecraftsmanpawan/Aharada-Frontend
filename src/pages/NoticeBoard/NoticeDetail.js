@@ -1,5 +1,3 @@
-// src/components/NoticeDetail.jsx
-
 import React from "react";
 import "./NoticeBoard.css";
 
@@ -22,8 +20,14 @@ const NoticeDetail = ({ notice, onClose }) => {
           </div>
           <div className="modal-body">
             <h6 className="text-muted">{formattedDate}</h6>
-            <p style={{ whiteSpace: "pre-line" }}>{notice.content}</p>
-            {/* Add images or attachments here if needed */}
+            {/* Provide the download link */}
+            <a
+              href={notice.content} // The URL to the PDF or image
+              download // This attribute will trigger the download
+              className="btn btn-download-file"
+            >
+              Download Notice <i className="fas fa-download ms-2"></i>
+            </a>
           </div>
           <div className="modal-footer">
             <button className="btn btn-close-modal" onClick={onClose}>

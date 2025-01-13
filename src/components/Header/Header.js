@@ -199,10 +199,13 @@ function Header() {
                                 <Link to="/about">About us</Link>
                               </li>
                               <li>
+                                <Link to="/team-members">Our Team</Link>
+                              </li>
+                              <li>
                                 <Link to="/faculty">Our Faculty</Link>
                               </li>
                               <li>
-                                <Link to="/placement">Placement</Link>
+                                <Link to="/placement-team">Placement Team</Link>
                               </li>
                               <li>
                                 <Link to="/events">Events</Link>
@@ -223,6 +226,11 @@ function Header() {
                               </li>
                               <li>
                                 <Link to="/internship">Internship</Link>
+                              </li>
+                              <li>
+                                <Link to="/placed-students">
+                                  Placed Students
+                                </Link>
                               </li>
                               <li>
                                 <Link to="/alumni">Alumni</Link>

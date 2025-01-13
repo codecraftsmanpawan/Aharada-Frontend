@@ -1,11 +1,92 @@
-import React, { useEffect } from "react";
-
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function StudentComplaints() {
+  const [studentName, setStudentName] = useState("");
+  const [campus, setCampus] = useState("");
+  const [admissionNumber, setAdmissionNumber] = useState("");
+  const [complaintType, setComplaintType] = useState("");
+  const [description, setDescription] = useState("");
+  const [attachments, setAttachments] = useState(null);
+  const [universities, setUniversities] = useState([]);
+
   useEffect(() => {
     document.title = "Complaints - Aharada Education";
+
+    // Fetch universities data
+    const fetchUniversities = async () => {
+      try {
+        const response = await axios.get(
+          "https://backend.aharadaedu.in/api/universities"
+        );
+        if (response.data.success) {
+          setUniversities(response.data.data);
+        }
+      } catch (error) {
+        console.error("Error fetching universities:", error);
+        toast.error("Failed to load universities. Please try again.");
+      }
+    };
+
+    fetchUniversities();
   }, []);
+
+  const handleFileChange = (event) => {
+    setAttachments(event.target.files[0]);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData();
+    formData.append("studentName", studentName);
+    formData.append("campus", campus);
+    formData.append("admissionNumber", admissionNumber);
+    formData.append("complaintType", complaintType);
+    formData.append("description", description);
+    if (attachments) {
+      formData.append("attachments", attachments);
+    }
+
+    try {
+      const response = await axios.post(
+        "https://backend.aharadaedu.in/api/complaints",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+
+      toast.success("Complaint submitted successfully!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+
+      console.log(response.data); // Handle the response as needed
+
+      // Reload the page after submission
+      window.location.reload();
+    } catch (error) {
+      toast.error("Error submitting complaint. Please try again.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+      console.error(error); // Handle the error as needed
+    }
+  };
+
   return (
     <div>
       <main>
@@ -70,7 +151,7 @@ function StudentComplaints() {
               {/* Complaint Form Section */}
               <div className="col-lg-4">
                 <form
-                  action=""
+                  onSubmit={handleSubmit}
                   method="POST"
                   className="th-team-form bg-smoke ajax-contact mt-50 mt-lg-0"
                 >
@@ -87,6 +168,8 @@ function StudentComplaints() {
                           placeholder="Your Name"
                           className="form-control style-white"
                           required
+                          value={studentName}
+                          onChange={(e) => setStudentName(e.target.value)}
                         />
                         <i className="fa fa-user position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
                       </div>
@@ -99,19 +182,24 @@ function StudentComplaints() {
                         id="campus"
                         className="form-select style-white single-select nice-select"
                         required
+                        value={campus}
+                        onChange={(e) => setCampus(e.target.value)}
                       >
-                        <option value="" disabled selected hidden>
+                        <option value="" disabled hidden>
                           Select Campus
                         </option>
-                        <option value="meerut">IIMT University, Meerut</option>
-                        <option value="indore">SAGE University, Indore</option>
-                        <option value="subharti">
-                          Subharti University, Meerut
-                        </option>
-                        <option value="dev-bhoomi">
-                          Dev Bhoomi Uttarakhand University
-                        </option>
-                        {/* Add more campuses as needed */}
+                        {universities.length > 0 ? (
+                          universities.map((university) => (
+                            <option
+                              key={university._id}
+                              value={university.name}
+                            >
+                              {university.name}
+                            </option>
+                          ))
+                        ) : (
+                          <option disabled>Loading universities...</option>
+                        )}
                       </select>
                     </div>
 
@@ -124,6 +212,8 @@ function StudentComplaints() {
                           placeholder="Admission Number"
                           className="form-control style-white"
                           required
+                          value={admissionNumber}
+                          onChange={(e) => setAdmissionNumber(e.target.value)}
                         />
                         <i className="fa fa-id-card position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
                       </div>
@@ -136,16 +226,20 @@ function StudentComplaints() {
                         id="complaintType"
                         className="form-select style-white single-select nice-select"
                         required
+                        value={complaintType}
+                        onChange={(e) => setComplaintType(e.target.value)}
                       >
-                        <option value="" disabled selected hidden>
-                          Type of Complaint
+                        <option value="" disabled hidden>
+                          Select Type of Complaint
                         </option>
-                        <option value="faculty_conduct">Faculty Conduct</option>
-                        <option value="academic_integrity">
+                        <option value="Faculty Conduct">Faculty Conduct</option>
+                        <option value="Academic Integrity">
                           Academic Integrity
                         </option>
-                        <option value="facility">Campus Facilities</option>
-                        <option value="harassment">
+                        <option value="Campus Facilities">
+                          Campus Facilities
+                        </option>
+                        <option value=" Discrimination/Harassment">
                           Discrimination/Harassment
                         </option>
                         <option value="other">Other</option>
@@ -161,6 +255,8 @@ function StudentComplaints() {
                           className="form-control style-white"
                           rows="5"
                           required
+                          value={description}
+                          onChange={(e) => setDescription(e.target.value)}
                         ></textarea>
                         <i className="fa fa-pencil-alt position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
                       </div>
@@ -174,6 +270,7 @@ function StudentComplaints() {
                           name="attachments"
                           className="form-control style-white"
                           accept=".pdf, .doc, .docx, .jpg, .png"
+                          onChange={handleFileChange}
                         />
                         <i className="fa fa-paperclip position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
                       </div>
@@ -196,6 +293,16 @@ function StudentComplaints() {
           </div>
         </section>
       </main>
+
+      {/* Toast Container */}
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+      />
     </div>
   );
 }

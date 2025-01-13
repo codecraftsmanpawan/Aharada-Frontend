@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Slider from "react-slick";
-// import "./homeblogsection.css";
+
 const BlogSection = () => {
+  const [blogs, setBlogs] = useState([]);
+
+  // Fetch blog posts on component mount
+  useEffect(() => {
+    axios
+      .get("https://backend.aharadaedu.in/api/blogs")
+      .then((response) => {
+        setBlogs(response.data.blogPosts); // Set blog posts from the response
+      })
+      .catch((error) => {
+        console.error("Error fetching blog posts:", error);
+      });
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    autoplay: true, // Enable auto-scrolling
-    autoplaySpeed: 3000, // Set auto-scroll speed (3 seconds per slide)
+    autoplay: true,
+    autoplaySpeed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -52,95 +67,59 @@ const BlogSection = () => {
           {...settings}
           className="slider-shadow th-carousel blog-slider-1"
         >
-          {/* Blog Card 1 - Aharada Blog */}
-          <div className="col-md-6 col-xl-4">
-            <div className="th-blog blog-single style2">
-              <div className="blog-img">
-                <a href="#">
-                  <img src="assets/img/blog/01.jpeg" alt="Aharada Blog Image" />
-                </a>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <a className="author" href="blog.html">
-                    <i className="fa-light fa-user"></i>by Aharada Team
-                  </a>
-                  <a href="blog.html">
-                    <i className="fa-light fa-clock"></i>10 Jan, 2025
+          {blogs.slice(0, 5).map((blog) => (
+            <div className="col-md-6 col-xl-4" key={blog._id}>
+              <div className="th-blog blog-single style2">
+                <div className="blog-img">
+                  <a href="#">
+                    <img
+                      src={`https://backend.aharadaedu.in${blog.image}`}
+                      alt={blog.title}
+                      style={{
+                        width: "100%",
+                        height: "220px",
+                        objectFit: "cover",
+                      }}
+                    />
                   </a>
                 </div>
-                <h4 className="box-title">
-                  <a href="#">
-                    The Future of Education: How Technology is Shaping Learning
-                  </a>
-                </h4>
-                <a href="#" className="link-btn">
-                  Read More Details
-                  <i className="fas fa-arrow-right ms-2"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Blog Card 2 - Aharada Blog */}
-          <div className="col-md-6 p-2 col-xl-4">
-            <div className="th-blog blog-single style2">
-              <div className="blog-img">
-                <a href="#">
-                  <img src="assets/img/blog/01.jpeg" alt="Aharada Blog Image" />
-                </a>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <a className="author" href="blog.html">
-                    <i className="fa-light fa-user"></i>by Aharada Team
-                  </a>
-                  <a href="blog.html">
-                    <i className="fa-light fa-clock"></i>15 Jan, 2025
-                  </a>
-                </div>
-                <h4 className="box-title">
-                  <a href="#">
-                    Innovative Approaches in Educational Technology for 2025
-                  </a>
-                </h4>
-                <a href="#" className="link-btn">
-                  Read More Details
-                  <i className="fas fa-arrow-right ms-2"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Blog Card 3 - Aharada Blog */}
-          <div className="col-md-6 p-2 col-xl-4">
-            <div className="th-blog blog-single style2">
-              <div className="blog-img">
-                <a href="#">
-                  <img src="assets/img/blog/01.jpeg" alt="Aharada Blog Image" />
-                </a>
-              </div>
-              <div className="blog-content">
-                <div className="blog-meta">
-                  <a className="author" href="blog.html">
-                    <i className="fa-light fa-user"></i>by Aharada Team
-                  </a>
-                  <a href="blog.html">
-                    <i className="fa-light fa-clock"></i>20 Jan, 2025
+                <div
+                  className="blog-content"
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                    height: "100%",
+                  }}
+                >
+                  <div className="blog-meta">
+                    <a href="blog.html">
+                      <i className="fa-light fa-clock"></i>
+                      {new Date(blog.publishedDate).toLocaleDateString()}
+                    </a>
+                  </div>
+                  <h4
+                    className="box-title"
+                    style={{
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                      whiteSpace: "normal",
+                      display: "-webkit-box",
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: "vertical",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    <a href="#">{blog.title}</a>
+                  </h4>
+                  <a href="#" className="link-btn">
+                    Read More Details
+                    <i className="fas fa-arrow-right ms-2"></i>
                   </a>
                 </div>
-                <h4 className="box-title">
-                  <a href="#">
-                    The Role of AI in Transforming Education Systems
-                  </a>
-                </h4>
-                <a href="#" className="link-btn">
-                  Read More Details
-                  <i className="fas fa-arrow-right ms-2"></i>
-                </a>
               </div>
             </div>
-          </div>
+          ))}
         </Slider>
       </div>
     </section>

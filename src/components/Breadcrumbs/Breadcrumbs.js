@@ -5,7 +5,7 @@ function Breadcrumbs() {
   const location = useLocation();
   const pathnames = location.pathname.split("/").filter(Boolean);
 
-  const title = pathnames[pathnames.length - 1] || "Home";
+  const title = pathnames[pathnames.length - 1]?.replace(/%20/g, " ") || "Home";
   const pageTitle = title.charAt(0).toUpperCase() + title.slice(1);
 
   return (
@@ -29,11 +29,19 @@ function Breadcrumbs() {
             </li>
             {pathnames.map((segment, index) => {
               const to = `/${pathnames.slice(0, index + 1).join("/")}`;
+              const isLast = index === pathnames.length - 1;
+
               return (
                 <li key={to}>
-                  <Link to={to}>
-                    {segment.charAt(0).toUpperCase() + segment.slice(1)}
-                  </Link>
+                  {!isLast ? (
+                    <Link to={to}>
+                      {decodeURIComponent(segment.replace(/-/g, " "))}
+                    </Link>
+                  ) : (
+                    <span>
+                      {decodeURIComponent(segment.replace(/-/g, " "))}
+                    </span>
+                  )}
                 </li>
               );
             })}

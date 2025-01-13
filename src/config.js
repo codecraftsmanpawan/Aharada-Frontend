@@ -1,7 +1,7 @@
 // src/config.js
 
 const config = {
-  apiBaseUrl: "http://localhost:5000",
+  apiBaseUrl: "https://backend.aharadaedu.in",
 };
 
 export default config;

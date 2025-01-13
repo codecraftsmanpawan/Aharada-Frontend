@@ -1,0 +1,136 @@
+/* Container for the entire blog details */
+.blog-details {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for blog content */
+.blog-details .container {
+    width: 100%;
+   
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Title Styling */
+.blog-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Blog Meta Data */
+.blog-meta {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.blog-meta .publish-date {
+    margin-right: 20px;
+}
+
+.blog-meta .category {
+    background-color: #f0f0f0;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* Blog Image Styling */
+.blog-image {
+    margin-bottom: 30px;
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Blog Content Styling */
+.blog-content {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.blog-content ul,
+.blog-content ol {
+    margin-left: 20px;
+}
+
+.blog-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+}
+
+.blog-content p {
+    margin-bottom: 20px;
+}
+
+.blog-content li {
+    margin-bottom: 10px;
+}
+
+.blog-content a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.blog-content a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Share Section */
+.social-share {
+    margin-top: 40px;
+    text-align: center;
+    /* Center-align the share section */
+}
+
+.social-share h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Container for social media buttons */
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    /* Center the buttons horizontally */
+    align-items: center;
+}
+
+/* Styling individual buttons */
+.social-buttons .react-share__ShareButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.social-buttons .react-share__ShareButton:hover {
+    opacity: 0.8;
+}
+
+.react-share__ShareButton:focus {
+    outline: none;
+}
+
+/* Styling for each icon */
+.react-share__Icon {
+    transition: transform 0.3s ease;
+}
+
+.react-share__ShareButton:hover .react-share__Icon {
+    transform: scale(1.1);
+    /* Slight zoom effect when hovered */
+}

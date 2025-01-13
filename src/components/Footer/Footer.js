@@ -115,14 +115,10 @@ function Footer() {
                     <h3 className="widget_title">Our Campus</h3>
                     <div className="menu-all-pages-container">
                       <ul className="menu">
-                        {universities.length > 0 ? (
+                        {universities && universities.length > 0 ? (
                           universities.map((university) => (
                             <li key={university._id}>
-                              <Link
-                                to={`/university/${university.name
-                                  .toLowerCase()
-                                  .replace(/\s+/g, "-")}`}
-                              >
+                              <Link to={`/university/${university.name}`}>
                                 {university.name}
                               </Link>
                             </li>

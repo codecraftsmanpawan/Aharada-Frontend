@@ -1,88 +1,24 @@
 import React, { useEffect, useState } from "react";
-
+import axios from "axios";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
-
 import "./Alumni.css";
 
 function Alumni() {
   const [alumniData, setAlumniData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const fetchAlumniData = () => {
-    const data = [
-      {
-        name: "John Doe",
-        year: " 2018 - 2001",
-        course: "Computer Science",
-        email: "john.doe@example.com",
-        profilePhoto: "assets/img/team/team_1_2.jpg",
-        placementCompany: "Google",
-        jobTitle: "Software Engineer",
-      },
-      {
-        name: "Jane Smith",
-        year: " 2018 - 2001",
-        course: "Mechanical Engineering",
-        email: "jane.smith@example.com",
-        profilePhoto: "assets/img/team/team_1_2.jpg",
-        placementCompany: "Tesla",
-        jobTitle: "Mechanical Engineer",
-      },
-      {
-        name: "Sarah Lee",
-        year: " 2018 - 2001",
-        course: "Electrical Engineering",
-        email: "sarah.lee@example.com",
-        profilePhoto: "assets/img/team/team_1_2.jpg",
-        placementCompany: "Microsoft",
-        jobTitle: "Electrical Engineer",
-      },
-      {
-        name: "Sarah Lee",
-        year: " 2018 - 2001",
-        course: "Electrical Engineering",
-        email: "sarah.lee@example.com",
-        profilePhoto: "assets/img/team/team_1_2.jpg",
-        placementCompany: "Microsoft",
-        jobTitle: "Electrical Engineer",
-      },
-      {
-        name: "Sarah Lee",
-        year: " 2018 - 2001",
-        course: "Electrical Engineering",
-        email: "sarah.lee@example.com",
-        profilePhoto: "assets/img/team/team_1_2.jpg",
-        placementCompany: "Microsoft",
-        jobTitle: "Electrical Engineer",
-      },
-      {
-        name: "Sarah Lee",
-        year: " 2018 - 2001",
-        course: "Electrical Engineering",
-        email: "sarah.lee@example.com",
-        profilePhoto: "assets/img/team/team_1_2.jpg",
-        placementCompany: "Microsoft",
-        jobTitle: "Electrical Engineer",
-      },
-      {
-        name: "Sarah Lee",
-        year: " 2018 - 2001",
-        course: "Electrical Engineering",
-        email: "sarah.lee@example.com",
-        profilePhoto: "assets/img/team/team_1_2.jpg",
-        placementCompany: "Microsoft",
-        jobTitle: "Electrical Engineer",
-      },
-      {
-        name: "Sarah Lee",
-        year: " 2018 - 2001",
-        course: "Electrical Engineering",
-        email: "sarah.lee@example.com",
-        profilePhoto: "assets/img/team/team_1_2.jpg",
-        placementCompany: "Microsoft",
-        jobTitle: "Electrical Engineer",
-      },
-    ];
-    setAlumniData(data);
+    axios
+      .get("https://backend.aharadaedu.in/api/alumni")
+      .then((response) => {
+        setAlumniData(response.data.alumni);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError("Error fetching alumni data");
+        setLoading(false);
+      });
   };
 
   useEffect(() => {
@@ -90,9 +26,16 @@ function Alumni() {
     fetchAlumniData(); // Fetch data on page load
   }, []);
 
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
+
   return (
     <div className="alumni-container">
-      {/* <Preloader /> */}
       <div className="alumni-header" />
       <main>
         <Breadcrumbs />
@@ -111,7 +54,18 @@ function Alumni() {
                     <div className="team-card style3">
                       <div className="team-img-wrap">
                         <div className="team-img">
-                          <img src={alumni.profilePhoto} alt={alumni.name} />
+                          <img
+                            src={`https://backend.aharadaedu.in${alumni.profilePhoto}`}
+                            alt={alumni.name || "Alumni Profile"}
+                            style={{
+                              width: "100%",
+                              height: "250px",
+                              objectFit: "cover",
+                            }}
+                            onError={(e) =>
+                              (e.target.src = "fallback_image_url.jpg")
+                            } // Fallback in case the image is broken
+                          />
                         </div>
                       </div>
                       <div className="team-hover-wrap">
@@ -122,39 +76,25 @@ function Alumni() {
                           <div className="th-social">
                             <a
                               target="_blank"
-                              href="https://vimeo.com/"
+                              href={`mailto:${alumni.email}`}
                               rel="noopener noreferrer"
                             >
-                              <i className="fab fa-vimeo-v"></i>
+                              <i className="fa-solid fa-envelope" />
                             </a>
                             <a
                               target="_blank"
-                              href="https://linkedin.com/"
+                              href={alumni.linkedin}
                               rel="noopener noreferrer"
                             >
                               <i className="fab fa-linkedin-in"></i>
                             </a>
-                            <a
-                              target="_blank"
-                              href="https://twitter.com/"
-                              rel="noopener noreferrer"
-                            >
-                              <i className="fab fa-twitter"></i>
-                            </a>
-                            <a
-                              target="_blank"
-                              href="https://facebook.com/"
-                              rel="noopener noreferrer"
-                            >
-                              <i className="fab fa-facebook-f"></i>
-                            </a>
                           </div>
                         </div>
                         <div className="team-content">
-                          <h3 className="team-title">
-                            <a href="/facultyDetails">{alumni.name}</a>
-                          </h3>
-                          <span className="team-desig">{alumni.jobTitle}</span>
+                          <h3 className="team-title">{alumni.name}</h3>
+                          <span className="team-desig">
+                            {alumni.jobTitle}, {alumni.placementCompany}
+                          </span>
                         </div>
                         <div className="team-info">
                           <span>
@@ -166,14 +106,6 @@ function Alumni() {
                           <span>
                             <i className="fa-light fa-chalkboard-teacher" />
                             {alumni.course}
-                          </span>
-                        </div>
-                        <div className="team-info">
-                          <span>
-                            <i className="fab fa-linkedin-in" />
-                            <a href={`mailto:${alumni.email}`}>
-                              {alumni.email}
-                            </a>
                           </span>
                         </div>
                       </div>

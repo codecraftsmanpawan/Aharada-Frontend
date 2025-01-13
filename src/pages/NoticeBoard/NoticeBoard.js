@@ -1,66 +1,34 @@
 import React, { useEffect, useState } from "react";
-
+import axios from "axios"; // Import axios
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
-
 import NoticeItem from "./NoticeItem";
 import NoticeDetail from "./NoticeDetail";
 import "./NoticeBoard.css";
 
 const NoticeBoard = () => {
-  useEffect(() => {
-    document.title = "Notices - Aharada Education";
-  }, []);
-
-  const notices = [
-    {
-      id: 1,
-      title: "Semester Exams Schedule Released",
-      date: "2024-05-10",
-      description:
-        "The schedule for the upcoming semester exams has been released. Please check the official website for detailed information.",
-      content:
-        "Dear Students,\n\nWe are pleased to announce that the semester exams schedule has been finalized. The exams will commence from June 1st and conclude by June 15th. Detailed timetables for each department are available on the university portal. Please ensure you are well-prepared and adhere to the exam guidelines.\n\nBest regards,\nAdministration",
-    },
-    {
-      id: 2,
-      title: "Holiday Announcement for Labor Day",
-      date: "2024-04-25",
-      description:
-        "The university will observe a holiday on May 1st for Labor Day. All classes and examinations scheduled on this day will be rescheduled.",
-      content:
-        "Dear Students and Faculty,\n\nIn observance of Labor Day, the university will remain closed on May 1st. Any classes or examinations planned for this day will be rescheduled accordingly. Please stay tuned for further updates on the university portal.\n\nEnjoy the holiday!\nAdministration",
-    },
-    {
-      id: 3,
-      title: "New Library Resources Available",
-      date: "2024-06-01",
-      description:
-        "The university library has acquired new books and digital resources. Visit the library to explore the latest additions.",
-      content:
-        "Dear Students,\n\nWe are excited to inform you that the university library has expanded its collection with numerous new books across various disciplines. Additionally, several new digital resources and journals have been made available online. We encourage you to take advantage of these resources to support your academic endeavors.\n\nHappy Reading!\nLibrary Team",
-    },
-    {
-      id: 4,
-      title: "Annual Sports Meet Scheduled",
-      date: "2024-07-15",
-      description:
-        "The Annual Sports Meet will be held on August 20th. Students are encouraged to participate and showcase their talents.",
-      content:
-        "Dear Students,\n\nMark your calendars for the Annual Sports Meet scheduled for August 20th. This event is a fantastic opportunity to engage in healthy competition and demonstrate your athletic skills. Various sports categories will be available, and both individual and team events are open for participation.\n\nLooking forward to your enthusiastic participation!\nSports Committee",
-    },
-    {
-      id: 5,
-      title: "Guest Lecture on Artificial Intelligence",
-      date: "2024-08-05",
-      description:
-        "A renowned expert in Artificial Intelligence will deliver a guest lecture on August 10th. All students are welcome to attend.",
-      content:
-        "Dear Students and Faculty,\n\nWe are honored to host Dr. Jane Smith, a leading expert in Artificial Intelligence, for a guest lecture on August 10th at 3 PM in the main auditorium. The lecture will cover the latest advancements in AI and its applications across various industries. This is a great opportunity to gain insights from a distinguished professional in the field.\n\nDon't miss out!\nAcademic Affairs",
-    },
-  ];
-
+  const [notices, setNotices] = useState([]); // State to store fetched notices
   const [selectedNotice, setSelectedNotice] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
+
+  useEffect(() => {
+    document.title = "Notices - Aharada Education";
+
+    // Fetch notices from the API
+    axios
+      .get("https://backend.aharadaedu.in/api/notices")
+      .then((response) => {
+        if (response.data.message === "Notices fetched successfully") {
+          // Sort notices by date in descending order
+          const sortedNotices = response.data.notices.sort(
+            (a, b) => new Date(b.date) - new Date(a.date)
+          );
+          setNotices(sortedNotices); // Set sorted notices to state
+        }
+      })
+      .catch((error) => {
+        console.error("There was an error fetching the notices:", error);
+      });
+  }, []);
 
   // Filter notices based on search term
   const filteredNotices = notices.filter(
@@ -100,7 +68,7 @@ const NoticeBoard = () => {
                 {filteredNotices.length > 0 ? (
                   filteredNotices.map((notice) => (
                     <NoticeItem
-                      key={notice.id}
+                      key={notice._id} // Use _id from API
                       notice={notice}
                       onSelect={setSelectedNotice}
                     />
@@ -112,23 +80,27 @@ const NoticeBoard = () => {
 
               {/* Sidebar with Upcoming Events */}
               <div className="col-lg-4">
-                <div className="upcoming-events">
-                  <h5>Upcoming Events</h5>
-                  <ul>
-                    <li>
-                      <i className="fas fa-calendar-alt"></i>
-                      Orientation Day - September 1, 2024
-                    </li>
-                    <li>
-                      <i className="fas fa-calendar-alt"></i>
-                      Tech Fest - October 15, 2024
-                    </li>
-                    <li>
-                      <i className="fas fa-calendar-alt"></i>
-                      Alumni Meet - November 20, 2024
-                    </li>
-                    {/* Add more events as needed */}
-                  </ul>
+                <div
+                  className="widget widget_banner"
+                  data-overlay="theme"
+                  data-opacity={9}
+                  // data-bg-src="../assets/img/university/2025.png"
+                >
+                  <div className="widget-banner">
+                    <h4 className="title text-white">
+                      Need Help? We Are Here To Help You
+                    </h4>
+                    <div className="">
+                      <img src="../assets/img/university/02.jpg" alt="img" />
+                    </div>
+                    <h5 className="subtitle mt-4">You Get Admission</h5>
+                    <a href="tel:+91-7303381359" className="link">
+                      +91-7303381359
+                    </a>{" "}
+                    <a href="/contact" className="th-btn style7">
+                      Apply Now <i className="far fa-arrow-right ms-1" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
