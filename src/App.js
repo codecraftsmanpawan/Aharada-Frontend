@@ -23,18 +23,24 @@ import TeamMembers from "./pages/TeamMembers/TeamMembers";
 import PlacedStudents from "./pages/PlacedStudents/PlacedStudents";
 import EventDetails from "./pages/Event/EventDetails";
 import UniversityDetails from "./pages/UniversityDetails/UniversityDetails";
+import OurCampus from "./pages/UniversityDetails/OurCampus";
+import TechnicalClub from "./pages/TechnicalClub/TechnicalClub";
+import NewsMedia from "./pages/NewsMedia/NewsMedia";
+import NewsMediaDetails from "./pages/NewsMedia/NewsMediaDetails";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import "./App.css";
-// import "./assets/css/app.min.css";
-// import "./assets/css/bootstrap.rtl.min.css";
-// import "./assets/css/fontawesome.min.css";
-// import "./assets/css/style.css";
+import "./assets/css/app.min.css";
+import "./assets/css/bootstrap.rtl.min.css";
+import "./assets/css/fontawesome.min.css";
+import "./assets/css/style.css";
+import AdmissionCard from "./components/AdmissionCard/AdmissionCard";
 function App() {
   return (
     <Router>
       <ScrollToTop /> {/* Include the component here */}
       <Header />
+      <AdmissionCard />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -57,6 +63,10 @@ function App() {
         <Route path="/event-details/:title" element={<EventDetails />} />
         <Route path="/course-details/:title" element={<CourseDetails />} />
         <Route path="/university/:name" element={<UniversityDetails />} />
+        <Route path="/ourcampus" element={<OurCampus />} />
+        <Route path="/technicalclub" element={<TechnicalClub />} />
+        <Route path="/news-media" element={<NewsMedia />} />
+        <Route path="/news-media/:id" element={<NewsMediaDetails />} />
       </Routes>
       <Footer />
     </Router>

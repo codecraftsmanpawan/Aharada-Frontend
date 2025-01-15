@@ -137,7 +137,7 @@ function Footer() {
                     <div className="menu-all-pages-container">
                       <ul className="menu">
                         <li>
-                          <a href="#">Our Campus</a>
+                          <Link to="/ourcampus">Our Campus</Link>
                         </li>
                         <li>
                           <a href="#">Library</a>

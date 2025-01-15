@@ -1,0 +1,105 @@
+/* Overlay background to cover the entire screen */
+.admission-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+    z-index: 9999;
+}
+
+/* When the 'show' class is added, the overlay becomes visible */
+.admission-overlay.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+
+/* Default styles for the admission card */
+.admission-open-card {
+    width: 520px;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.8s ease, transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 10000;
+}
+
+/* When the 'show' class is added, animate the card */
+.admission-open-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Close button styles */
+.admission-open-card-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 10001;
+}
+
+.admission-open-card-close:hover {
+    color: #ff0000;
+}
+
+/* Video container styles */
+.admission-video-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #f1eeee;
+    cursor: pointer;
+}
+
+/* Video element styling */
+.admission-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+
+    /* Reduce the size of the admission card for mobile */
+    .admission-open-card {
+        width: 90%;
+        /* Ensure the card takes up less space */
+        height: auto;
+    }
+
+    /* Adjust the video container for mobile */
+    .admission-video-container {
+        height: 180px;
+        /* Smaller height for mobile view */
+    }
+
+    .admission-video {
+        object-fit: contain;
+        /* Ensure video is not cropped */
+    }
+}

@@ -70,19 +70,19 @@ function Header() {
                   <ul>
                     <li>
                       <i className="far fa-phone" />
-                      <a href="tel:+917303381359">IIMT University</a>
+                      <Link to="tel:+917303381359">IIMT University </Link>
                     </li>
                     <li>
                       <i className="far fa-phone" />
-                      <a href="tel:+917303381359">SAGE University</a>
+                      <Link to="tel:+917303381359">SAGE University </Link>
                     </li>
                     <li>
                       <i className="far fa-phone" />
-                      <a href="tel:+917303381359">Subharti University</a>
+                      <Link to="tel:+917303381359">Subharti University </Link>
                     </li>
                     <li>
                       <i className="far fa-phone" />
-                      <a href="tel:+917303381359">DBUU</a>
+                      <Link to="tel:+917303381359">DBUU </Link>
                     </li>
                   </ul>
                 </div>
@@ -96,8 +96,8 @@ function Header() {
                         style={{ display: "flex", alignItems: "center" }}
                       >
                         {/* Email Icon */}
-                        <a
-                          href="mailto:info@aharadaedu.in"
+                        <Link
+                          to="mailto:info@aharadaedu.in"
                           aria-label="Email"
                           onMouseEnter={(e) =>
                             (e.currentTarget.style.color = "#4B5563")
@@ -115,7 +115,7 @@ function Header() {
                           }}
                         >
                           <i className="far fa-envelope"></i>
-                        </a>
+                        </Link>
 
                         {/* Follow Us Text */}
                         <span className="social-title inline mr-4 text-gray-700">
@@ -124,31 +124,31 @@ function Header() {
 
                         {/* Social Icons */}
                         <SocialIcon
-                          href="https://www.facebook.com/aharadaeducation/"
+                          to="https://www.facebook.com/aharadaeducation/"
                           iconClass="fab fa-facebook-f"
                           hoverColor="#3b5998" // Facebook Blue
                           label="Facebook"
                         />
                         <SocialIcon
-                          href="https://www.instagram.com/aharadaeducation/"
+                          to="https://www.instagram.com/aharadaeducation/"
                           iconClass="fab fa-instagram"
                           hoverColor="#E1306C" // Instagram Pink
                           label="Instagram"
                         />
                         <SocialIcon
-                          href="https://www.twitter.com/"
+                          to="https://www.twitter.com/"
                           iconClass="fab fa-twitter"
                           hoverColor="#1DA1F2" // Twitter Blue
                           label="Twitter"
                         />
                         <SocialIcon
-                          href="https://www.linkedin.com/in/aharadaeducation/"
+                          to="https://www.linkedin.com/in/aharadaeducation/"
                           iconClass="fab fa-linkedin-in"
                           hoverColor="#0077B5" // LinkedIn Blue
                           label="LinkedIn"
                         />
                         <SocialIcon
-                          href="https://www.youtube.com/@aharadaeducation498"
+                          to="https://www.youtube.com/@aharadaeducation498"
                           iconClass="fab fa-youtube"
                           hoverColor="#FF0000" // YouTube Red
                           label="YouTube"
@@ -169,13 +169,13 @@ function Header() {
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
                   <div className="header-logo">
-                    <a href="/">
+                    <Link to="/">
                       <img
                         src="../assets/logo.png"
                         width="160px"
                         alt="Aharadaedu"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-auto">
@@ -193,7 +193,7 @@ function Header() {
                             <Link to="/">Home</Link>
                           </li>
                           <li className="menu-item-has-children">
-                            <a href="#">About us</a>
+                            <Link to="#">About us </Link>
                             <ul className="sub-menu">
                               <li>
                                 <Link to="/about">About us</Link>
@@ -216,10 +216,10 @@ function Header() {
                             </ul>
                           </li>
                           <li>
-                            <a href="/programs">Programs</a>
+                            <Link to="/programs">Programs </Link>
                           </li>
                           <li className="menu-item-has-children">
-                            <a href="#">Students</a>
+                            <Link to="#">Students </Link>
                             <ul className="sub-menu">
                               <li>
                                 <Link to="/noticeBoard">Notice</Link>
@@ -237,6 +237,9 @@ function Header() {
                               </li>
                               <li>
                                 <Link to="/grievance">Grievance</Link>
+                              </li>
+                              <li>
+                                <Link to="/technicalclub">Technical Club</Link>
                               </li>
                             </ul>
                           </li>
@@ -279,12 +282,14 @@ function Header() {
           style={{ textAlign: "center", marginTop: "20px" }}
         >
           {!isFormVisible && (
-            <button
-              className="apply-now-button red"
-              onClick={toggleFormVisibility}
-            >
-              Apply Now
-            </button>
+            <>
+              <button
+                className="apply-now-button red"
+                onClick={toggleFormVisibility}
+              >
+                Apply Now
+              </button>
+            </>
           )}
 
           {/* Conditionally Render the Form */}

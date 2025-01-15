@@ -3,18 +3,18 @@ import axios from "axios";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 
-const BlogSection = () => {
-  const [blogs, setBlogs] = useState([]);
+const NewsMediaSection = () => {
+  const [news, setNews] = useState([]);
 
-  // Fetch blog posts on component mount
+  // Fetch news posts on component mount
   useEffect(() => {
     axios
-      .get("https://backend.aharadaedu.in/api/blogs")
+      .get("https://backend.aharadaedu.in/api/news-media") // New API endpoint
       .then((response) => {
-        setBlogs(response.data.blogPosts); // Set blog posts from the response
+        setNews(response.data.newsMedia); // Assuming the API returns 'newsMedia' instead of 'blogPosts'
       })
       .catch((error) => {
-        console.error("Error fetching blog posts:", error);
+        console.error("Error fetching news media:", error);
       });
   }, []);
 
@@ -43,21 +43,25 @@ const BlogSection = () => {
   };
 
   return (
-    <section className="homeblogsection overflow-hidden space" id="blog-sec">
+    <section
+      className="homeblogsection overflow-hidden space"
+      id="news-media-sec"
+      style={{ marginTop: "-120px" }}
+    >
       <div className="container">
         <div className="mb-35 text-center text-md-start">
           <div className="row align-items-center justify-content-between">
             <div className="col-md-8">
               <div className="title-area mb-md-0">
                 <span className="sub-title">
-                  <i className="fal fa-book me-2"></i> Our News & Blogs
+                  <i className="fal fa-newspaper me-2"></i> Latest News & Media
                 </span>
-                <h2 className="sec-title">Latest News & Blogs</h2>
+                <h2 className="sec-title">Recent News & Updates</h2>
               </div>
             </div>
             <div className="col-md-auto">
-              <a href="/blogs" className="th-btn">
-                View All Posts
+              <a href="/news-media" className="th-btn">
+                View All News
                 <i className="fa-solid fa-arrow-right ms-2"></i>
               </a>
             </div>
@@ -68,22 +72,9 @@ const BlogSection = () => {
           {...settings}
           className="slider-shadow th-carousel blog-slider-1"
         >
-          {blogs.slice(0, 5).map((blog) => (
-            <div className="col-md-6 col-xl-4" key={blog._id}>
+          {news.slice(0, 5).map((newsItem) => (
+            <div className="col-md-6 col-xl-4" key={newsItem._id}>
               <div className="th-blog blog-single style2">
-                <div className="blog-img">
-                  <Link to={`/blogDetails/${blog._id}`}>
-                    <img
-                      src={`https://backend.aharadaedu.in${blog.image}`}
-                      alt={blog.title}
-                      style={{
-                        width: "100%",
-                        height: "220px",
-                        objectFit: "cover",
-                      }}
-                    />
-                  </Link>
-                </div>
                 <div
                   className="blog-content"
                   style={{
@@ -93,12 +84,6 @@ const BlogSection = () => {
                     height: "100%",
                   }}
                 >
-                  <div className="blog-meta">
-                    <Link to={`/blogDetails/${blog._id}`}>
-                      <i className="fa-light fa-clock"></i>
-                      {new Date(blog.publishedDate).toLocaleDateString()}
-                    </Link>
-                  </div>
                   <h4
                     className="box-title"
                     style={{
@@ -111,11 +96,28 @@ const BlogSection = () => {
                       maxWidth: "100%",
                     }}
                   >
-                    <a href="#">{blog.title}</a>
+                    <Link to={`/news-media/${newsItem._id}`}>
+                      {newsItem.title}
+                    </Link>
                   </h4>
-                  <Link className="link-btn" to={`/blogDetails/${blog._id}`}>
-                    Read More Details
-                    <i className="fas fa-arrow-right ms-2"></i>
+                </div>
+                <div className="blog-meta">
+                  <Link to={`/news-media/${newsItem._id}`}>
+                    <i className="fa-light fa-clock"></i>
+                    {new Date(newsItem.createdAt).toLocaleDateString()}
+                  </Link>
+                </div>
+                <div className="blog-img">
+                  <Link to={`/news-media/${newsItem._id}`}>
+                    <img
+                      src={`https://backend.aharadaedu.in${newsItem.image}`}
+                      alt={newsItem.title}
+                      style={{
+                        width: "100%",
+                        height: "220px",
+                        objectFit: "cover",
+                      }}
+                    />
                   </Link>
                 </div>
               </div>
@@ -127,4 +129,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
+export default NewsMediaSection;

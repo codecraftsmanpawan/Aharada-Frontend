@@ -12,6 +12,7 @@ import Feedback from "./component/Feedback";
 import RecentBlog from "./component/RecentBlog";
 import ApplyNowButton from "../../components/ApplyNowButton/ApplyNowButton";
 import Head from "../../components/Head/Head";
+import NewsMediaSection from "./component/NewMedia";
 function Home() {
   useEffect(() => {
     document.title = "Home - Aharada Education";
@@ -34,6 +35,7 @@ function Home() {
 
         {/* <videoTestimonialsSection /> */}
         <RecentBlog />
+        <NewsMediaSection />
       </main>
     </div>
   );
