@@ -4,6 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import NoticeItem from "./NoticeItem";
 import NoticeDetail from "./NoticeDetail";
 import "./NoticeBoard.css";
+import { Link } from "react-router-dom";
 
 const NoticeBoard = () => {
   const [notices, setNotices] = useState([]); // State to store fetched notices
@@ -97,9 +98,9 @@ const NoticeBoard = () => {
                     <a href="tel:+91-7303381359" className="link">
                       +91-7303381359
                     </a>{" "}
-                    <a href="/contact" className="th-btn style7">
+                    <Link to="/apply-now" className="th-btn style7">
                       Apply Now <i className="far fa-arrow-right ms-1" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

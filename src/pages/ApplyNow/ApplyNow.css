@@ -1,0 +1,128 @@
+/* ApplyNow.css */
+
+/* Required Field Red Star */
+.required {
+    color: red;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+/* Your existing styles remain the same below... */
+
+.main-home-apply-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-home-apply-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0b1d30;
+    /* Using the darker navy shade */
+}
+
+.main-home-apply-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-home-apply-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* Ensures wrapping of columns */
+}
+
+.main-home-apply-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 48%;
+    /* Two columns on desktop */
+}
+
+.main-home-apply-col label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.main-home-apply-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.main-home-apply-input:focus {
+    border-color: #0b1d30;
+    outline: none;
+}
+
+.main-home-apply-submit-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #112d4a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main-home-apply-submit-btn:hover {
+    background-color: #0b1d30;
+}
+
+.main-home-error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.main-home-response-data {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e7f3ff;
+    border: 1px solid #b3d4fc;
+    border-radius: 4px;
+}
+
+.main-home-response-data h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #0b1d30;
+}
+
+.main-home-response-data pre {
+    font-size: 0.9rem;
+    color: #333;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .main-home-apply-row {
+        flex-direction: column;
+        /* Stack columns in mobile view */
+    }
+
+    .main-home-apply-col {
+        width: 100%;
+        /* Full width for each column */
+        margin-bottom: 15px;
+    }
+
+    .main-home-apply-submit-btn {
+        width: 100%;
+        /* Full width for submit button */
+    }
+}

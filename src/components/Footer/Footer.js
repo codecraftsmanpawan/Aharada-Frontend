@@ -146,7 +146,7 @@ function Footer() {
                           <a href="#">Time Schedule</a>
                         </li>
                         <li>
-                          <a href="#">Apply For Admissions</a>
+                          <Link to="/apply-now">Apply For Admissions</Link>
                         </li>
                       </ul>
                     </div>
@@ -188,7 +188,7 @@ function Footer() {
                     All Rights Reserved.
                   </p>
                 </div>
-                <div className="col-md-6 text-end d-none d-md-block">
+                {/* <div className="col-md-6 text-end d-none d-md-block">
                   <div className="footer-links">
                     <ul>
                       <li>
@@ -199,7 +199,7 @@ function Footer() {
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
