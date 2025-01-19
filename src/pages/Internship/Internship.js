@@ -53,7 +53,10 @@ function Internship() {
                       />
                     </div>
 
-                    <div className="team-social">
+                    <div
+                      className="team-social"
+                      style={{ marginBottom: "50px" }}
+                    >
                       <button className="icon-btn">
                         <i className="fa-solid fa-plus" />
                       </button>

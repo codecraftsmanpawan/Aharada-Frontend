@@ -107,12 +107,6 @@ const CampusCard = ({ university, baseUrl }) => {
           >
             {university.location}
           </Typography>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            className="ourcampus-university-description"
-            dangerouslySetInnerHTML={{ __html: sanitizedDescription }}
-          />
         </CardContent>
       </CardActionArea>
     </Card>

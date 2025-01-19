@@ -70,23 +70,48 @@ function Header() {
                   <ul>
                     <li>
                       <i className="far fa-phone" />
-                      <Link to="tel:+917303381359">IIMT University </Link>
+                      <Link
+                        to="tel:+917303381359"
+                        onMouseOver={(e) => (e.target.style.color = "#93b3e6")}
+                        onMouseOut={(e) => (e.target.style.color = "")}
+                      >
+                        IIMT University
+                      </Link>
                     </li>
                     <li>
                       <i className="far fa-phone" />
-                      <Link to="tel:+917303381359">SAGE University </Link>
+                      <Link
+                        to="tel:+917303381359"
+                        onMouseOver={(e) => (e.target.style.color = "#93b3e6")}
+                        onMouseOut={(e) => (e.target.style.color = "")}
+                      >
+                        SAGE University
+                      </Link>
                     </li>
                     <li>
                       <i className="far fa-phone" />
-                      <Link to="tel:+917303381359">Subharti University </Link>
+                      <Link
+                        to="tel:+917303381359"
+                        onMouseOver={(e) => (e.target.style.color = "#93b3e6")}
+                        onMouseOut={(e) => (e.target.style.color = "")}
+                      >
+                        Subharti University
+                      </Link>
                     </li>
                     <li>
                       <i className="far fa-phone" />
-                      <Link to="tel:+917303381359">DBUU </Link>
+                      <Link
+                        to="tel:+917303381359"
+                        onMouseOver={(e) => (e.target.style.color = "#93b3e6")}
+                        onMouseOut={(e) => (e.target.style.color = "")}
+                      >
+                        DBUU
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </div>
+
               <div className="col-auto">
                 <div className="header-links header-right">
                   <ul>
@@ -99,12 +124,10 @@ function Header() {
                         <Link
                           to="mailto:info@aharadaedu.in"
                           aria-label="Email"
-                          onMouseEnter={(e) =>
-                            (e.currentTarget.style.color = "#4B5563")
+                          onMouseOver={(e) =>
+                            (e.target.style.color = "#93b3e6")
                           }
-                          onMouseLeave={(e) =>
-                            (e.currentTarget.style.color = "#6B7280")
-                          }
+                          onMouseOut={(e) => (e.target.style.color = "")}
                           style={{
                             color: "#3b5998",
                             transition: "color 0.3s ease",
@@ -190,64 +213,230 @@ function Header() {
                       >
                         <ul className="menu-list">
                           <li className="active">
-                            <Link to="/">Home</Link>
+                            <Link
+                              to="/"
+                              onMouseOver={(e) =>
+                                (e.target.style.color = "#67676b")
+                              }
+                              onMouseOut={(e) => (e.target.style.color = "")}
+                            >
+                              Home
+                            </Link>
                           </li>
                           <li className="menu-item-has-children">
-                            <Link to="#">About us </Link>
+                            <Link
+                              to="#"
+                              onMouseOver={(e) =>
+                                (e.target.style.color = "#67676b")
+                              }
+                              onMouseOut={(e) => (e.target.style.color = "")}
+                            >
+                              About us
+                            </Link>
                             <ul className="sub-menu">
                               <li>
-                                <Link to="/about">About us</Link>
+                                <Link
+                                  to="/about"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  About us
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/team-members">Our Team</Link>
+                                <Link
+                                  to="/team-members"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  Our Team
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/faculty">Our Faculty</Link>
+                                <Link
+                                  to="/faculty"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  Our Faculty
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/placement-team">Placement Team</Link>
+                                <Link
+                                  to="/placement-team"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  Placement Team
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/events">Events</Link>
+                                <Link
+                                  to="/events"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  Events
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/gallery">Gallery</Link>
+                                <Link
+                                  to="/gallery"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  Gallery
+                                </Link>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <Link to="/programs">Programs </Link>
+                            <Link
+                              to="/programs"
+                              onMouseOver={(e) =>
+                                (e.target.style.color = "#67676b")
+                              }
+                              onMouseOut={(e) => (e.target.style.color = "")}
+                            >
+                              Programs
+                            </Link>
                           </li>
                           <li className="menu-item-has-children">
-                            <Link to="#">Students </Link>
+                            <Link
+                              to="#"
+                              onMouseOver={(e) =>
+                                (e.target.style.color = "#67676b")
+                              }
+                              onMouseOut={(e) => (e.target.style.color = "")}
+                            >
+                              Students
+                            </Link>
                             <ul className="sub-menu">
                               <li>
-                                <Link to="/noticeBoard">Notice</Link>
+                                <Link
+                                  to="/noticeBoard"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  Notice
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/internship">Internship</Link>
+                                <Link
+                                  to="/internship"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  Internship
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/placed-students">
+                                <Link
+                                  to="/placed-students"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
                                   Placed Students
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/alumni">Alumni</Link>
+                                <Link
+                                  to="/alumni"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  Alumni
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/grievance">Grievance</Link>
+                                <Link
+                                  to="/grievance"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  Grievance
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/technicalclub">Technical Club</Link>
+                                <Link
+                                  to="/technicalclub"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  Technical Club
+                                </Link>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <Link to="/blogs">Blog</Link>
+                            <Link
+                              to="/blogs"
+                              onMouseOver={(e) =>
+                                (e.target.style.color = "#67676b")
+                              }
+                              onMouseOut={(e) => (e.target.style.color = "")}
+                            >
+                              Blog
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/contact">Contact</Link>
+                            <Link
+                              to="/contact"
+                              onMouseOver={(e) =>
+                                (e.target.style.color = "#67676b")
+                              }
+                              onMouseOut={(e) => (e.target.style.color = "")}
+                            >
+                              Contact
+                            </Link>
                           </li>
                         </ul>
                       </nav>

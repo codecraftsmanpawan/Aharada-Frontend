@@ -33,7 +33,13 @@ function Footer() {
                 </div>
                 <div className="media-body">
                   <p className="footer-contact_text">Call us any time:</p>
-                  <a href="tel:+917303381359" className="footer-contact_link">
+                  <a
+                    href="tel:+917303381359"
+                    className="footer-contact_link"
+                    style={{ textDecoration: "none" }}
+                    onMouseOver={(e) => (e.target.style.color = "#93b3e6")}
+                    onMouseOut={(e) => (e.target.style.color = "")}
+                  >
                     +91-7303381359
                   </a>
                 </div>
@@ -48,6 +54,9 @@ function Footer() {
                   <a
                     href="mailto:info@aharadaedu.in"
                     className="footer-contact_link"
+                    style={{ textDecoration: "none" }}
+                    onMouseOver={(e) => (e.target.style.color = "#93b3e6")}
+                    onMouseOut={(e) => (e.target.style.color = "")}
                   >
                     info@aharadaedu.in
                   </a>
@@ -65,6 +74,9 @@ function Footer() {
                   <a
                     href="https://www.google.com/maps"
                     className="footer-contact_link"
+                    style={{ textDecoration: "none" }}
+                    onMouseOver={(e) => (e.target.style.color = "#93b3e6")}
+                    onMouseOut={(e) => (e.target.style.color = "")}
                   >
                     Mawana-Kithaur-Hapur Marg, Atrara, Uttar Pradesh 245206
                   </a>
@@ -73,6 +85,7 @@ function Footer() {
             </div>
           </div>
         </div>
+
         <div className="footer-wrap" data-bg-src="assets/img/bg/jiji.png">
           <div className="widget-area">
             <div className="container">
@@ -86,9 +99,11 @@ function Footer() {
                         </a>
                       </div>
                       <p className="about-text">
-                        Continually optimize backward manufactured products
-                        whereas communities negotiate life compelling alignments
+                        Empower learners through innovative and accessible
+                        educational solutions, fostering a community where
+                        knowledge drives growth and opportunities.
                       </p>
+
                       <div className="th-social">
                         <h6 className="title text-white">FOLLOW US ON:</h6>
                         <a href="https://www.facebook.com/aharadaeducation/">
@@ -140,11 +155,12 @@ function Footer() {
                           <Link to="/ourcampus">Our Campus</Link>
                         </li>
                         <li>
-                          <a href="#">Library</a>
+                          <a href="#">Distance Course</a>
                         </li>
                         <li>
-                          <a href="#">Time Schedule</a>
+                          <a href="#">Student Ambassador</a>
                         </li>
+
                         <li>
                           <Link to="/apply-now">Apply For Admissions</Link>
                         </li>
@@ -214,7 +230,7 @@ function Footer() {
         rel="noopener noreferrer"
       >
         <i className="fab fa-whatsapp my-float" />
-        <div className="whatsapp-text">Talk to us?</div>
+        {/* <div className="whatsapp-text">Talk to us?</div> */}
       </a>
 
       <div className="scroll-top">
@@ -243,7 +259,7 @@ function Footer() {
             display: block;
             width: 60px !important;
             height: 60px;
-            bottom: 40px;
+            bottom: 20px;
             right: 20px;
             background-color: rgba(0, 200, 0, 1);
             color: white;

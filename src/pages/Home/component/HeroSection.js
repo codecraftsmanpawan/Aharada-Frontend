@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   useEffect(() => {
@@ -48,14 +49,19 @@ function HeroSection() {
               </div>
 
               <div className="btn-group">
-                <a href="#" className="th-btn">
+                <Link to="/programs" className="th-btn">
                   Explore Programs
                   <i className="fas fa-long-arrow-right ms-2" />
-                </a>
-                <a href="#" className="th-btn style5">
+                </Link>
+                <Link
+                  to="assets/img/Aharada Brochure.pdf"
+                  className="th-btn style5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Download Brochure
                   <i className="fas fa-long-arrow-right ms-2" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -159,15 +165,15 @@ function HeroSection() {
                   <i className="fal fa-landmark" />
                 </div>
                 <h3 className="feature-list_title">
-                  <a href="#">Campus Life</a>
+                  <Link to="/campus-life">Campus Life</Link>
                 </h3>
                 <p className="feature-list_text">
                   Experience a dynamic campus atmosphere that encourages growth,
                   collaboration, and diverse student engagement.
                 </p>
-                <a href="#" className="icon-btn">
+                <Link to="/campus-life" className="icon-btn">
                   <i className="fas fa-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -177,15 +183,15 @@ function HeroSection() {
                   <i className="fal fa-user-graduate" />
                 </div>
                 <h3 className="feature-list_title">
-                  <a href="#">Scholarships</a>
+                  <Link to="/scholarships">Scholarships</Link>
                 </h3>
                 <p className="feature-list_text">
                   Access various scholarships to make your academic journey more
                   affordable and stress-free.
                 </p>
-                <a href="#" className="icon-btn">
+                <Link to="/scholarships" className="icon-btn">
                   <i className="fas fa-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -195,15 +201,15 @@ function HeroSection() {
                   <i className="fal fa-book-open-cover" />
                 </div>
                 <h3 className="feature-list_title">
-                  <a href="#">Departments</a>
+                  <Link to="/programs">Departments</Link>
                 </h3>
                 <p className="feature-list_text">
                   Explore our diverse range of departments that offer
                   specialized programs for various fields of study.
                 </p>
-                <a href="#" className="icon-btn">
+                <Link to="/programs" className="icon-btn">
                   <i className="fas fa-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-xl-3 col-md-6">
@@ -212,15 +218,15 @@ function HeroSection() {
                   <i className="fal fa-graduation-cap" />
                 </div>
                 <h3 className="feature-list_title">
-                  <a href="#">Admission</a>
+                  <Link to="/apply-now">Admission</Link>
                 </h3>
                 <p className="feature-list_text">
                   Begin your journey with a seamless admission process, making
                   your transition to university smooth and easy.
                 </p>
-                <a href="#" className="icon-btn">
+                <Link to="/apply-now" className="icon-btn">
                   <i className="fas fa-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

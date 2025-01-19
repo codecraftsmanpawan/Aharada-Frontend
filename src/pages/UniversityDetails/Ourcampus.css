@@ -11,7 +11,8 @@
 
 /* Card styles */
 .ourcampus-card {
-    height: 100%;
+    height: 350px;
+    /* Set a fixed height for the card */
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -26,6 +27,10 @@
 /* Image styles inside the card */
 .ourcampus-card .MuiCardMedia-root {
     border-radius: 10px 10px 0 0;
+    height: 200px;
+    /* Set a fixed height for the image */
+    object-fit: cover;
+    /* Ensure the image covers the area without distortion */
 }
 
 /* University name styles */
@@ -51,10 +56,9 @@
     -webkit-line-clamp: 3;
     /* Limit to 3 lines */
     -webkit-box-orient: vertical;
-    height: 120px;
-    
+    height: 60px;
+    /* Adjust the height to match the line clamp */
     margin-top: 10px;
-   
 }
 
 /* Loading spinner styles */

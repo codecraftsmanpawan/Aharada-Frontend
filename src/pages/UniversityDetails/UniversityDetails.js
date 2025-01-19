@@ -57,25 +57,7 @@ const UniversityDetails = () => {
             <p>
               <strong>Location:</strong> {university.location}
             </p>
-            <p>
-              <strong>Established:</strong> {university.establishedYear}
-            </p>
-            <p>
-              <strong>Courses Offered:</strong> {courses}
-            </p>
-            <p>
-              <strong>Website:</strong>{" "}
-              <a
-                href={university.website}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {university.website}
-              </a>
-            </p>
-            <p>
-              <strong>Ranking:</strong> {university.ranking}
-            </p>
+
             <div
               className="university-description-text"
               dangerouslySetInnerHTML={{

@@ -43,89 +43,92 @@ const NewsMediaSection = () => {
   };
 
   return (
-    <section
-      className="homeblogsection overflow-hidden space"
-      id="news-media-sec"
-      style={{ marginTop: "-120px" }}
-    >
-      <div className="container">
-        <div className="mb-35 text-center text-md-start">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-md-8">
-              <div className="title-area mb-md-0">
-                <span className="sub-title">
-                  <i className="fal fa-newspaper me-2"></i> Latest News & Media
-                </span>
-                <h2 className="sec-title">Recent News & Updates</h2>
+    <>
+      <section
+        className="homeblogsection overflow-hidden space"
+        id="news-media-sec"
+        style={{ marginTop: "-120px" }}
+      >
+        <div className="container">
+          <div className="mb-35 text-center text-md-start">
+            <div className="row align-items-center justify-content-between">
+              <div className="col-md-8">
+                <div className="title-area mb-md-0">
+                  <span className="sub-title">
+                    <i className="fal fa-newspaper me-2"></i> Latest News &
+                    Media
+                  </span>
+                  <h2 className="sec-title">Recent News & Updates</h2>
+                </div>
               </div>
-            </div>
-            <div className="col-md-auto">
-              <a href="/news-media" className="th-btn">
-                View All News
-                <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
+              <div className="col-md-auto">
+                <a href="/news-media" className="th-btn">
+                  View All News
+                  <i className="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <Slider
-          {...settings}
-          className="slider-shadow th-carousel blog-slider-1"
-        >
-          {news.slice(0, 5).map((newsItem) => (
-            <div className="col-md-6 col-xl-4" key={newsItem._id}>
-              <div className="th-blog blog-single style2">
-                <div
-                  className="blog-content"
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "space-between",
-                    height: "100%",
-                  }}
-                >
-                  <h4
-                    className="box-title"
+          <Slider
+            {...settings}
+            className="slider-shadow th-carousel blog-slider-1"
+          >
+            {news.slice(0, 5).map((newsItem) => (
+              <div className="col-md-6 col-xl-4" key={newsItem._id}>
+                <div className="th-blog blog-single style2">
+                  <div
+                    className="blog-content"
                     style={{
-                      overflow: "hidden",
-                      textOverflow: "ellipsis",
-                      whiteSpace: "normal",
-                      display: "-webkit-box",
-                      WebkitLineClamp: 2,
-                      WebkitBoxOrient: "vertical",
-                      maxWidth: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "space-between",
+                      height: "100%",
                     }}
                   >
-                    <Link to={`/news-media/${newsItem._id}`}>
-                      {newsItem.title}
-                    </Link>
-                  </h4>
-                </div>
-                <div className="blog-meta">
-                  <Link to={`/news-media/${newsItem._id}`}>
-                    <i className="fa-light fa-clock"></i>
-                    {new Date(newsItem.createdAt).toLocaleDateString()}
-                  </Link>
-                </div>
-                <div className="blog-img">
-                  <Link to={`/news-media/${newsItem._id}`}>
-                    <img
-                      src={`https://backend.aharadaedu.in${newsItem.image}`}
-                      alt={newsItem.title}
+                    <h4
+                      className="box-title"
                       style={{
-                        width: "100%",
-                        height: "220px",
-                        objectFit: "cover",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                        whiteSpace: "normal",
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical",
+                        maxWidth: "100%",
                       }}
-                    />
-                  </Link>
+                    >
+                      <Link to={`/news-media/${newsItem._id}`}>
+                        {newsItem.title}
+                      </Link>
+                    </h4>
+                  </div>
+                  <div className="blog-meta">
+                    <Link to={`/news-media/${newsItem._id}`}>
+                      <i className="fa-light fa-clock"></i>
+                      {new Date(newsItem.createdAt).toLocaleDateString()}
+                    </Link>
+                  </div>
+                  <div className="blog-img">
+                    <Link to={`/news-media/${newsItem._id}`}>
+                      <img
+                        src={`https://backend.aharadaedu.in${newsItem.image}`}
+                        alt={newsItem.title}
+                        style={{
+                          width: "100%",
+                          height: "220px",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </section>
+            ))}
+          </Slider>
+        </div>
+      </section>
+    </>
   );
 };
 

@@ -149,14 +149,24 @@ function StudentComplaints() {
               </div>
 
               {/* Complaint Form Section */}
-              <div className="col-lg-4">
+              <div className="col-lg-4" style={{ padding: "0 15px" }}>
                 <form
                   onSubmit={handleSubmit}
                   method="POST"
                   className="th-team-form bg-smoke ajax-contact mt-50 mt-lg-0"
+                  style={{
+                    backgroundColor: "#f7f7f7",
+                    borderRadius: "8px",
+                    padding: "20px",
+                  }}
                 >
                   <div className="form-title mb-30 text-center">
-                    <h3 className="fw-semibold mt-n1">File a Complaint</h3>
+                    <h3
+                      className="fw-semibold mt-n1"
+                      style={{ fontSize: "1.5rem", color: "#333" }}
+                    >
+                      File a Complaint
+                    </h3>
                   </div>
                   <div className="row">
                     {/* Name Input */}
@@ -170,8 +180,8 @@ function StudentComplaints() {
                           required
                           value={studentName}
                           onChange={(e) => setStudentName(e.target.value)}
+                          style={{ paddingLeft: "35px" }}
                         />
-                        <i className="fa fa-user position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
                       </div>
                     </div>
 
@@ -184,6 +194,7 @@ function StudentComplaints() {
                         required
                         value={campus}
                         onChange={(e) => setCampus(e.target.value)}
+                        style={{ paddingLeft: "35px" }}
                       >
                         <option value="" disabled hidden>
                           Select Campus
@@ -214,8 +225,8 @@ function StudentComplaints() {
                           required
                           value={admissionNumber}
                           onChange={(e) => setAdmissionNumber(e.target.value)}
+                          style={{ paddingLeft: "35px" }}
                         />
-                        <i className="fa fa-id-card position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
                       </div>
                     </div>
 
@@ -228,6 +239,7 @@ function StudentComplaints() {
                         required
                         value={complaintType}
                         onChange={(e) => setComplaintType(e.target.value)}
+                        style={{ paddingLeft: "35px" }}
                       >
                         <option value="" disabled hidden>
                           Select Type of Complaint
@@ -239,7 +251,7 @@ function StudentComplaints() {
                         <option value="Campus Facilities">
                           Campus Facilities
                         </option>
-                        <option value=" Discrimination/Harassment">
+                        <option value="Discrimination/Harassment">
                           Discrimination/Harassment
                         </option>
                         <option value="other">Other</option>
@@ -257,8 +269,8 @@ function StudentComplaints() {
                           required
                           value={description}
                           onChange={(e) => setDescription(e.target.value)}
+                          style={{ paddingLeft: "35px" }}
                         ></textarea>
-                        <i className="fa fa-pencil-alt position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
                       </div>
                     </div>
 
@@ -271,8 +283,8 @@ function StudentComplaints() {
                           className="form-control style-white"
                           accept=".pdf, .doc, .docx, .jpg, .png"
                           onChange={handleFileChange}
+                          style={{ paddingLeft: "35px" }}
                         />
-                        <i className="fa fa-paperclip position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
                       </div>
                       <small className="form-text text-muted">
                         Optional: Attach any relevant documents or evidence.
@@ -281,7 +293,15 @@ function StudentComplaints() {
 
                     {/* Submit Button */}
                     <div className="col-12">
-                      <button type="submit" className="th-btn w-100">
+                      <button
+                        type="submit"
+                        className="th-btn w-100"
+                        style={{
+                          color: "#fff",
+                          padding: "10px",
+                          borderRadius: "5px",
+                        }}
+                      >
                         Submit Complaint{" "}
                         <i className="fa fa-paper-plane ms-2"></i>
                       </button>

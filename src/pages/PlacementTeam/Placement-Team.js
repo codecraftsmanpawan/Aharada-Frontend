@@ -1,10 +1,24 @@
 import React, { useEffect, useState } from "react";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import axios from "axios";
+import Slider from "react-slick"; // Import Slider from react-slick
 import "./PlacementTeam.css";
 
 function PlacementTeam() {
   const [placementTeam, setPlacementTeam] = useState([]);
+
+  // Hardcoded company partners logos
+  const companyPartners = [
+    {
+      id: 1,
+      logo: "assets/img/sch.jpg",
+      name: "Company 1",
+    },
+    { id: 2, logo: "assets/img/sch.jpg", name: "Company 2" },
+    { id: 3, logo: "assets/img/sch.jpg", name: "Company 3" },
+    { id: 4, logo: "assets/img/sch.jpg", name: "Company 4" },
+    { id: 5, logo: "assets/img/sch.jpg", name: "Company 5" },
+  ];
 
   // Define your base URL for images
   const baseURL = "https://backend.aharadaedu.in";
@@ -13,7 +27,7 @@ function PlacementTeam() {
   useEffect(() => {
     document.title = "Placement Team - Aharada Education";
 
-    // Replace with the actual API endpoint
+    // Fetch placement team data
     axios
       .get("https://backend.aharadaedu.in/api/placement-team")
       .then((response) => {
@@ -25,6 +39,32 @@ function PlacementTeam() {
         console.error("Error fetching placement team data:", error);
       });
   }, []);
+
+  // Slick Slider settings
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div className="placement-team">
@@ -86,9 +126,41 @@ function PlacementTeam() {
             </div>
           </div>
         </section>
+
+        {/* Placement Company Partners Logos with Slider */}
+        <section
+          className="partners-section py-5"
+          style={{
+            backgroundColor: "#f8f9fa",
+            overflow: "hidden",
+            position: "relative",
+          }}
+        >
+          <div className="container">
+            <h2 className="text-center " style={{ marginBottom: "90px" }}>
+              Our Placement Partners
+            </h2>
+            <Slider {...sliderSettings}>
+              {companyPartners.map((partner) => (
+                <div key={partner.id} className="partner-logo">
+                  <img
+                    src={partner.logo} // Hardcoded image path
+                    alt={partner.name}
+                    style={{
+                      height: "180px",
+                      objectFit: "contain",
+                      margin: "0 5px",
+                    }}
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </section>
+
         <section
           className="instructions-section py-5 bg-light"
-          style={{ marginTop: "-80px" }}
+          style={{ marginTop: "-30px" }}
         >
           <div className="container">
             <h2 className="mb-4">

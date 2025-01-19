@@ -27,6 +27,8 @@ import OurCampus from "./pages/UniversityDetails/OurCampus";
 import TechnicalClub from "./pages/TechnicalClub/TechnicalClub";
 import NewsMedia from "./pages/NewsMedia/NewsMedia";
 import NewsMediaDetails from "./pages/NewsMedia/NewsMediaDetails";
+import CampuesLife from "./pages/CampusLife/Campus-Life";
+import Scholarships from "./pages/Scholarships/Scholarships";
 import ApplyNow from "./pages/ApplyNow/Apply-Now";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
@@ -69,6 +71,8 @@ function App() {
         <Route path="/news-media" element={<NewsMedia />} />
         <Route path="/news-media/:id" element={<NewsMediaDetails />} />
         <Route path="/apply-now" element={<ApplyNow />} />
+        <Route path="/campus-life" element={<CampuesLife />} />
+        <Route path="/scholarships" element={<Scholarships />} />
       </Routes>
       <Footer />
     </Router>

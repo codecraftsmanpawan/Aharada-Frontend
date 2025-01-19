@@ -50,9 +50,9 @@ const BlogSection = () => {
             <div className="col-md-8">
               <div className="title-area mb-md-0">
                 <span className="sub-title">
-                  <i className="fal fa-book me-2"></i> Our News & Blogs
+                  <i className="fal fa-book me-2"></i> Our Blogs
                 </span>
-                <h2 className="sec-title">Latest News & Blogs</h2>
+                <h2 className="sec-title">Latest Blogs</h2>
               </div>
             </div>
             <div className="col-md-auto">
@@ -111,7 +111,7 @@ const BlogSection = () => {
                       maxWidth: "100%",
                     }}
                   >
-                    <a href="#">{blog.title}</a>
+                    <Link to={`/blogDetails/${blog._id}`}>{blog.title}</Link>
                   </h4>
                   <Link className="link-btn" to={`/blogDetails/${blog._id}`}>
                     Read More Details

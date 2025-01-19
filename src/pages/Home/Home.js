@@ -37,7 +37,7 @@ function Home() {
         {/* <videoTestimonialsSection /> */}
         <RecentBlog />
         <NewsMediaSection />
-        <BirthdayCard />
+        {/* <BirthdayCard /> */}
       </main>
     </div>
   );

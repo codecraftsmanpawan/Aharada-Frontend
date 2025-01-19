@@ -6,7 +6,6 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./ApplyNow.css";
 import config from "../../config";
-import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 
 const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
   const {
@@ -586,8 +585,29 @@ const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
 
   return (
     <>
-      <Breadcrumbs />
-
+      <section className="space position-relative">
+        <div
+          className="bg-img"
+          style={{
+            backgroundImage: "url('assets/img/update1/bg/bg_overlay_1.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <img src="assets/img/update1/bg/bg_overlay_1.png" alt="overlay" />
+        </div>
+        <div className="container text-center">
+          <div className="title-area text-center mb-40">
+            <span className="sub-title text-white">
+              <i className="fal fa-book me-2" />
+              Are You Ready For This Offer
+            </span>
+            <h2 className="sec-title text-white">
+              50% Offer For Very First 50
+            </h2>
+          </div>
+        </div>
+      </section>
       <div className="main-home-apply-form">
         <form
           className="main-home-apply-form-container"

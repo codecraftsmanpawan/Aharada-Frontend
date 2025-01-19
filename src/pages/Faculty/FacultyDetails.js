@@ -39,14 +39,22 @@ function FacultyDetails() {
             <div className="team-details-about-info mb-8">
               <div className="row gx-40">
                 <div className="col-lg-4 position-relative">
-                  <div className="team-details-thumb">
+                  <div
+                    className="team-details-thumb"
+                    style={{ maxHeight: "400px", overflow: "hidden" }}
+                  >
                     <img
                       src={`${config.apiBaseUrl}${facultyData.imageUrl}`}
                       alt="team image"
+                      style={{
+                        width: "100%",
+                        height: "400px",
+                        objectFit: "cover",
+                      }}
                     />
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-8">
                   <div className="about-box">
                     <div className="about-info">
                       <h2 className="title">{facultyData.facultyName}</h2>
@@ -93,12 +101,21 @@ function FacultyDetails() {
             <div className="mt-8" style={{ marginTop: "50px" }}>
               <div className="row">
                 <div className="col-lg-8">
-                  {facultyData.aboutResearchInterests && (
+                  {facultyData.qualifications && (
                     <>
                       <h3 className="title h4 fw-semibold mt-n1">
                         Education Qualification
                       </h3>
-                      <p>{facultyData.aboutResearchInterests}</p>
+
+                      <ul>
+                        {facultyData.qualifications.map(
+                          (qualification, index) => (
+                            <li key={index} style={{ marginBottom: "5px" }}>
+                              {qualification}
+                            </li>
+                          )
+                        )}
+                      </ul>
                     </>
                   )}
 
