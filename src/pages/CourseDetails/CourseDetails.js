@@ -33,6 +33,17 @@ function CourseDetails() {
         setLoading(false);
       });
   }, [title]);
+  const companyPartners = [
+    {
+      id: 1,
+      logo: "../assets/img/sch.jpg",
+      name: "Company 1",
+    },
+    { id: 2, logo: "../assets/img/sch.jpg", name: "Company 2" },
+    { id: 3, logo: "../assets/img/sch.jpg", name: "Company 3" },
+    { id: 4, logo: "../assets/img/sch.jpg", name: "Company 4" },
+    { id: 5, logo: "../assets/img/sch.jpg", name: "Company 5" },
+  ];
 
   const courseHighlights = [
     {
@@ -108,6 +119,7 @@ function CourseDetails() {
     dots: true,
     infinite: true,
     speed: 500,
+    arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -203,6 +215,7 @@ function CourseDetails() {
               ))}
             </div>
           </section>
+
           <section
             class="space overflow-hidden"
             style={{ backgroundColor: "#fff", marginTop: "50px" }}
@@ -316,6 +329,42 @@ function CourseDetails() {
               </div>
             </div>
           </section>
+          {/* Placement Company Partners Logos with Slider */}
+          <section
+            className="partners-section py-5"
+            style={{
+              overflow: "hidden",
+              position: "relative",
+            }}
+          >
+            <div className="container">
+              <h2
+                className="text-center "
+                style={{
+                  marginBottom: "30px",
+                  color: "#c88c32",
+                }}
+              >
+                Our Placement Partners
+              </h2>
+              <Slider {...sliderSettings}>
+                {companyPartners.map((partner) => (
+                  <div key={partner.id} className="partner-logo">
+                    <img
+                      src={partner.logo} // Hardcoded image path
+                      alt={partner.name}
+                      style={{
+                        height: "180px",
+                        objectFit: "contain",
+                        margin: "0 5px",
+                        borderRadius: "15%",
+                      }}
+                    />
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          </section>
           <section className="course-details__partner-campuses">
             <h2 className="course-details__heading">Partner Campuses</h2>
             <p className="course-details__intro">
@@ -336,17 +385,17 @@ function CourseDetails() {
                     className="course-details__campus-image"
                     style={{
                       backgroundImage: `url(${campus.image})`,
-                      height: "200px", // Set height for image area
-                      backgroundSize: "cover", // Make sure image covers the area
-                      backgroundPosition: "center", // Center the image
+                      height: "200px",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
                     }}
                   ></div>
                   <div
                     className="course-details__campus-content"
                     style={{
-                      padding: "15px", // Adjust padding inside the content area
-                      height: "calc(100% - 200px)", // To fill the remaining height after the image
-                      overflow: "hidden", // Hide overflow if text exceeds the container height
+                      padding: "15px",
+                      height: "calc(100% - 200px)",
+                      overflow: "hidden",
                     }}
                   >
                     <h3>{campus.name}</h3>
