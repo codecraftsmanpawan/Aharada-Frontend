@@ -1,32 +1,60 @@
-import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
-import Slider from "react-slick"; // Import Slider
-import "slick-carousel/slick/slick.css"; // Import Slick CSS
-import "slick-carousel/slick/slick-theme.css"; // Import Slick Theme CSS
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./CourseDetails.css";
 import Head from "../../components/Head/Head";
-
+import axios from "axios";
+import DOMPurify from "dompurify";
+// Importing images at the top
+import devImage from "../../assets/img/university/dev.webp";
+import iimtuImage from "../../assets/img/university/iimtu.jpg";
+import sageImage from "../../assets/img/university/sage.jpg";
+import subhartiImage from "../../assets/img/university/subharti.jpg";
+import Testimonials from "../../components/Testimonials/Testimonials";
 function CourseDetails() {
   const { title } = useParams();
+  const [courseData, setCourseData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     document.title = `${title} - Course Details - Aharada Education`;
+
+    // Fetch course data based on the title
+    axios
+      .get(`https://backend.aharadaedu.in/api/branches/${title}`)
+      .then((response) => {
+        setCourseData(response.data.data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching course data:", error);
+        setLoading(false);
+      });
   }, [title]);
 
-  const placementData = {
-    highestSalary: "₹25 LPA",
-    offers: "1350+ Offers",
-    opportunities: "1100+ Opportunities across top sectors",
-    roi: "71% Higher ROI",
-    multipleOffers: "15 Students with 2+ Offers",
-    companies: "7x More Companies",
-  };
-
   const courseHighlights = [
-    { label: "Year Full-Time Program", value: "2" },
-    { label: "Specialisations Offered*", value: "6+" },
-    { label: "Months of Internships*", value: "8+" },
-    { label: "Capstone Projects", value: "4" },
+    {
+      label: "Year Full-Time Program",
+      value: courseData?.program?.yearFullTimeProgram || "N/A",
+    },
+    {
+      label: "Specialisations Offered*",
+      value: Array.isArray(courseData?.program?.specialisationsOffered)
+        ? courseData?.program?.specialisationsOffered.length
+        : "N/A",
+    },
+    {
+      label: "Months of Internships*",
+      value: courseData?.program?.monthsOfInternships || "N/A",
+    },
+    {
+      label: "Capstone Projects",
+      value: Array.isArray(courseData?.program?.capstoneProjects)
+        ? courseData?.program?.capstoneProjects.length
+        : "N/A",
+    },
   ];
 
   const additionalDetails = {
@@ -49,7 +77,7 @@ function CourseDetails() {
       specializations: "4 Specialisations Offered",
       certifications: "10 Advanced Certifications",
       fees: "₹3.80 Lacs",
-      image: "../assets/img/university/dev.webp",
+      image: devImage,
     },
     {
       name: "IIMT University, Meerut",
@@ -57,7 +85,7 @@ function CourseDetails() {
       specializations: "6 Specialisations Offered",
       certifications: "10 Advanced Certifications",
       fees: "₹5.70 Lacs",
-      image: "../assets/img/university/iimtu.jpg",
+      image: iimtuImage,
     },
     {
       name: "SAGE University Indore",
@@ -65,7 +93,7 @@ function CourseDetails() {
       specializations: "10 Specialisations Offered",
       certifications: "10 Advanced Certifications",
       fees: "₹3.25 Lacs",
-      image: "../assets/img/university/sage.jpg",
+      image: sageImage,
     },
     {
       name: "Subharti University, Meerut",
@@ -73,11 +101,9 @@ function CourseDetails() {
       specializations: "10 Specialisations Offered",
       certifications: "10 Advanced Certifications",
       fees: "₹4.20 Lacs",
-      image: "../assets/img/university/subharti.jpg",
+      image: subhartiImage,
     },
   ];
-
-  // Slider Settings
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -102,11 +128,57 @@ function CourseDetails() {
         },
       },
     ],
+    // Additional setting to control gap between slides
+    centerMode: false,
+    focusOnSelect: true,
+    slidesToShow: 3,
   };
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
       <Head />
+      <section className="cta-area-4 position-relative overflow-hidden">
+        <div
+          className="cta-bg-img"
+          style={{ backgroundImage: "url(../assets/img/bg/cta-bg4.png)" }}
+        />
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="cta-wrap4 space">
+                <div className="title-area mb-35">
+                  <h2 className="sec-title text-white">
+                    Learn From the Best with In-Person Classes at Our Campus
+                  </h2>
+                  <p className="cta-text">
+                    Immerse yourself in a hands-on learning experience with our
+                    offline courses. Study <strong>{title}</strong> with top
+                    faculty members and gain practical knowledge in
+                    state-of-the-art facilities.
+                  </p>
+                </div>
+                <Link to="/apply-now" className="th-btn style2">
+                  Apply Now
+                  <i className="fas fa-arrow-right ms-2" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-6 align-self-end d-lg-block d-none">
+              <div className="cta-4-thumb">
+                <img
+                  src="../assets/img/normal/cta_4_1.png"
+                  alt="Offline University Courses"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div
         className="course-details"
         style={{
@@ -114,39 +186,14 @@ function CourseDetails() {
         }}
       >
         <main>
-          {/* Placement Section */}
-          <section className="course-details__placement">
-            <div className="course-details__sidebar">
-              <span>MBA/PGDM</span>
-            </div>
-            <div className="course-details__placement-content">
-              <h2 className="maincourse-details__heading">
-                Audited & Verified Placement Report
-              </h2>
-              <div className="course-details__placement-stats">
-                <div>{placementData.highestSalary}</div>
-                <div>{placementData.offers}</div>
-                <div>{placementData.opportunities}</div>
-                <div>{placementData.roi}</div>
-                <div>{placementData.multipleOffers}</div>
-                <div>{placementData.companies}</div>
-              </div>
-              <p className="course-details__note">
-                These placement statistics are audited and verified by B2K
-                Analytics.
-              </p>
-            </div>
-          </section>
-
-          {/* Course Highlights */}
           <section className="course-details__highlights">
-            <h2 className="course-details__heading">
-              {title} Course Highlights
-            </h2>
-            <p className="course-details__intro">
-              Develop leadership and managerial skills with a holistic view of
-              business in marketing, finance, or operations.
-            </p>
+            <h2>{courseData?.name} Course Highlights</h2>
+
+            <div
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(courseData?.description || ""),
+              }}
+            />
             <div className="course-details__grid">
               {courseHighlights.map((highlight, index) => (
                 <div key={index} className="course-details__highlight-card">
@@ -156,31 +203,119 @@ function CourseDetails() {
               ))}
             </div>
           </section>
+          <section
+            class="space overflow-hidden"
+            style={{ backgroundColor: "#fff", marginTop: "50px" }}
+          >
+            <div class="container">
+              <div class="title-area text-center">
+                <span class="sub-title">
+                  <i class="fal fa-book me-1" /> WHAT WE OFFER
+                </span>
+                <h2 class="sec-title">Aharada Education Process</h2>
+              </div>
 
-          {/* Additional Details */}
-          {/* <section className="course-details__additional">
-          <h2 className="course-details__heading">Additional Information</h2>
-          <div className="course-details__info">
-            <div className="course-details__info-block">
-              <h3>Eligibility</h3>
-              <p>{additionalDetails.eligibility}</p>
-            </div>
-            <div className="course-details__info-block">
-              <h3>Admission Process</h3>
-              <p>{additionalDetails.admissionProcess}</p>
-            </div>
-            <div className="course-details__info-block">
-              <h3>Career Options</h3>
-              <ul>
-                {additionalDetails.careerOptions.map((career, index) => (
-                  <li key={index}>{career}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section> */}
+              <div class="process-card-area">
+                <div class="row gy-5 gy-md-50 justify-content-center">
+                  <div class="col-md-6 col-lg-4 process-card-wrap">
+                    <article class="process-card">
+                      <figure class="process-card_img">
+                        <img
+                          src="../assets/img/process/process-1-1.png"
+                          alt="Image illustrating course exploration"
+                        />
+                      </figure>
+                      <div class="process-card_icon">
+                        <img
+                          src="../assets/img/icon/process-icon-1-1.svg"
+                          alt="Explore Courses Icon"
+                        />
+                      </div>
+                      <h2 class="box-title">Explore Courses</h2>
+                      <p class="process-card_text">
+                        We offer specialized courses in {title} to boost your
+                        career.
+                      </p>{" "}
+                      <Link to="/apply-now" className="th-btn style4 mt-4">
+                        Apply Now
+                        <i className="fas fa-arrow-right ms-2" />
+                      </Link>
+                    </article>
+                    <div class="process-arrow">
+                      <img
+                        src="../assets/img/icon/process-arrow.svg"
+                        alt="Arrow pointing to next step"
+                      />
+                    </div>
+                  </div>
 
-          {/* Partner Campuses Section */}
+                  <div class="col-md-6 col-lg-4 process-card-wrap">
+                    <article class="process-card">
+                      <figure class="process-card_img">
+                        <img
+                          src="../assets/img/process/process-1-2.png"
+                          alt="Image illustrating easy enrollment"
+                        />
+                      </figure>
+                      <div class="process-card_icon">
+                        <img
+                          src="../assets/img/icon/process-icon-1-2.svg"
+                          alt="Easy Enrollment Icon"
+                        />
+                      </div>
+                      <h2 class="box-title">Easy Enrollment</h2>
+                      <p class="process-card_text">
+                        Register online for your course and begin your learning
+                        path with ease.{" "}
+                      </p>
+                      <Link to="/apply-now" className="th-btn style4 mt-4">
+                        Apply Now
+                        <i className="fas fa-arrow-right ms-2" />
+                      </Link>
+                    </article>
+                    <div class="process-arrow">
+                      <img
+                        src="../assets/img/icon/process-arrow.svg"
+                        alt="Arrow pointing to next step"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 process-card-wrap">
+                    <article class="process-card">
+                      <figure class="process-card_img">
+                        <img
+                          src="../assets/img/process/process-1-3.png"
+                          alt="Image illustrating the start of learning"
+                        />
+                      </figure>
+                      <div class="process-card_icon">
+                        <img
+                          src="../assets/img/icon/process-icon-1-3.svg"
+                          alt="Start Learning Icon"
+                        />
+                      </div>
+                      <h2 class="box-title">Visit Campus</h2>
+                      <p class="process-card_text">
+                        Start your educational journey with us and gain the
+                        knowledge you need for success.
+                      </p>
+                      <Link to="/apply-now" className="th-btn style4 mt-4">
+                        Apply Now
+                        <i className="fas fa-arrow-right ms-2" />
+                      </Link>
+                    </article>
+                    <div class="process-arrow">
+                      <img
+                        src="../assets/img/icon/process-arrow.svg"
+                        alt="Arrow pointing to the next step"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <section className="course-details__partner-campuses">
             <h2 className="course-details__heading">Partner Campuses</h2>
             <p className="course-details__intro">
@@ -192,20 +327,38 @@ function CourseDetails() {
               className="course-details__campus-slider"
             >
               {partnerCampuses.map((campus, index) => (
-                <div key={index} className="course-details__campus-card">
+                <div
+                  key={index}
+                  className="course-details__campus-card"
+                  style={{ margin: "100px" }}
+                >
                   <div
                     className="course-details__campus-image"
-                    style={{ backgroundImage: `url(${campus.image})` }}
+                    style={{
+                      backgroundImage: `url(${campus.image})`,
+                      height: "200px", // Set height for image area
+                      backgroundSize: "cover", // Make sure image covers the area
+                      backgroundPosition: "center", // Center the image
+                    }}
                   ></div>
-                  <div className="course-details__campus-content">
+                  <div
+                    className="course-details__campus-content"
+                    style={{
+                      padding: "15px", // Adjust padding inside the content area
+                      height: "calc(100% - 200px)", // To fill the remaining height after the image
+                      overflow: "hidden", // Hide overflow if text exceeds the container height
+                    }}
+                  >
                     <h3>{campus.name}</h3>
                     <p>{campus.program}</p>
                     <p>{campus.specializations}</p>
                     <p>{campus.certifications}</p>
-                    <p className="course-details__fees">{campus.fees}</p>
-                    <button className="book-tour-button">
+                    {/* <p className="course-details__fees">{campus.fees}</p> */}
+
+                    <Link to="/contact" className="th-btn style3">
                       Book College Tour
-                    </button>
+                      <i className="fas fa-arrow-right ms-2" />
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -213,6 +366,8 @@ function CourseDetails() {
           </section>
         </main>
       </div>
+
+      <Testimonials />
     </>
   );
 }

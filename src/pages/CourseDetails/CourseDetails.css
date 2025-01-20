@@ -254,7 +254,8 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 300px;
-  
+  margin-right: 20px;
+  margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -275,9 +276,11 @@
 }
 
 .course-details__campus-content h3 {
-    font-size: 1.5rem;
-    color: #222;
-    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+        color: #222;
+        padding: auto;
+        margin-top: 0.2rem;
+        line-height: 1.5;
 }
 
 .course-details__campus-content p {
@@ -320,3 +323,4 @@
         gap: 2rem;
     }
 }
+
