@@ -1,0 +1,192 @@
+/* GuestLecturerDetails.css */
+
+/* Container for the guest lecturer details */
+.guest-lecturer-details-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f7fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading and error messages */
+.guest-lecturer-details-loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.guest-lecturer-details-error-message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #d9534f;
+}
+
+/* Header */
+.guest-lecturer-details-header {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Resume Container */
+.guest-lecturer-details-resume-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Header Section (Profile photo and information) */
+.guest-lecturer-details-header-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Profile Photo */
+.guest-lecturer-details-profile-photo {
+    flex: 0 0 150px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guest-lecturer-details-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.guest-lecturer-details-no-photo {
+    width: 100%;
+    height: 150px;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+/* Profile Info */
+.guest-lecturer-details-profile-info {
+    flex: 1;
+    max-width: 70%;
+}
+
+.guest-lecturer-details-name {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.guest-lecturer-details-contact-info {
+    font-size: 1rem;
+    color: #666;
+}
+
+.guest-lecturer-details-location {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.guest-lecturer-details-linkedin-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.guest-lecturer-details-linkedin-link:hover {
+    text-decoration: underline;
+}
+
+/* Section Titles */
+.guest-lecturer-details-subheading {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Detail Content */
+.guest-lecturer-details-summary,
+.guest-lecturer-details-education,
+.guest-lecturer-details-experience,
+.guest-lecturer-details-specializations,
+.guest-lecturer-details-publications,
+.guest-lecturer-details-patents,
+.guest-lecturer-details-certifications,
+.guest-lecturer-details-workshops,
+.guest-lecturer-details-travel-availability {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Lists */
+.guest-lecturer-details-specializations,
+.guest-lecturer-details-subjects,
+.guest-lecturer-details-publications,
+.guest-lecturer-details-patents,
+.guest-lecturer-details-certifications,
+.guest-lecturer-details-workshops {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.guest-lecturer-details-specialization-item,
+.guest-lecturer-details-subject-item,
+.guest-lecturer-details-publication-item,
+.guest-lecturer-details-patent-item,
+.guest-lecturer-details-certification-item,
+.guest-lecturer-details-workshop-item {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Travel Availability */
+.guest-lecturer-details-travel-availability {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Back Link and PDF Download Button */
+.guest-lecturer-details-back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.guest-lecturer-details-back-link:hover {
+    background-color: #218838;
+}
+
+.guest-lecturer-details-pdf-download {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.guest-lecturer-details-pdf-download:hover {
+    background-color: #0056b3;
+}

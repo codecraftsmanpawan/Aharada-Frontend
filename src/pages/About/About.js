@@ -22,6 +22,7 @@ function About() {
   return (
     <div>
       <Breadcrumbs />
+
       <main
         style={{
           background: "linear-gradient(to bottom, #fff, #fff)",
@@ -42,7 +43,7 @@ function About() {
                     <img
                       className="tilt-active"
                       src="assets/img/normal/about_1_1.png"
-                      alt="About"
+                      alt="About Aharada"
                     />
                   </div>
 
@@ -50,7 +51,7 @@ function About() {
                     <img
                       className="tilt-active"
                       src="assets/img/normal/about_1_2.png"
-                      alt="About"
+                      alt="Education"
                     />
                   </div>
                   <div
@@ -58,7 +59,10 @@ function About() {
                     data-left="-67px"
                     data-bottom={0}
                   >
-                    <img src="assets/img/normal/about_1_shape1.png" alt="img" />
+                    <img
+                      src="assets/img/normal/about_1_shape1.png"
+                      alt="Shape"
+                    />
                   </div>
                 </div>
               </div>
@@ -69,22 +73,23 @@ function About() {
               >
                 <div className="title-area mb-30">
                   <span className="sub-title">
-                    <i className="fal fa-book me-2" /> About Our University
+                    <i className="fal fa-book me-2" /> About Aharada Education
                   </span>
-                  <h2 className="sec-title">
-                    Welcome to Aharadaedu University.
-                  </h2>
+                  <h2 className="sec-title">Welcome to Aharada Education.</h2>
                 </div>
                 <p className="mt-n2 mb-25">
-                  Collaboratively simplify user friendly networks after
-                  principle centered coordinate effective methods of empowerment
-                  distributed niche markets pursue market positioning
-                  web-readiness after resource sucking applications.
+                  Aharada Education is a pioneer in providing high-quality
+                  education in fields like Aviation, Entrepreneurship, and
+                  Artificial Intelligence. With live training on real aircraft
+                  and innovative learning methods, we bridge the gap between
+                  theoretical knowledge and practical application.
                 </p>
                 <p className="mb-30">
-                  Online education, also known as e-learning, is a method of
-                  learning that takes place over the internet. It offers
-                  individuals the opportunity to acquire knowledge, skills.
+                  Our mission is to empower students with cutting-edge skills
+                  and knowledge through our unique programs. Whether you're
+                  aspiring for a career in aviation, data analytics, or business
+                  innovation, Aharada Education offers a learning experience
+                  tailored to your goals.
                 </p>
                 <div className="row align-items-center">
                   <div
@@ -94,9 +99,12 @@ function About() {
                   >
                     <div className="checklist">
                       <ul>
-                        <li>Get access to 4,000+ of our top courses</li>
-                        <li>Popular topics to learn now</li>
-                        <li>Find the right instructor for you</li>
+                        <li>
+                          Live training with Fokker F27-500 aircraft and
+                          helicopters
+                        </li>
+                        <li>Programs in Aviation, AI, and Innovation</li>
+                        <li>Personalized mentoring for career success</li>
                       </ul>
                     </div>
                   </div>
@@ -105,8 +113,156 @@ function About() {
             </div>
           </div>
         </div>
+        <section
+          className="space-top space-extra2-bottom"
+          style={{ marginTop: "-80px" }}
+        >
+          <div className="container">
+            <div className="title-area mb-30 text-center">
+              <span className="sub-title">
+                <i className="fal fa-book me-2" />
+                Aharada “Essence”
+              </span>
+              <h2 className="sec-title">Educate Empower Excel.</h2>
+            </div>
+            <div className="row">
+              <div className="col-xxl-12 col-lg-8">
+                <div className="course-single">
+                  <div className="course-single-bottom">
+                    <div className="tab-content">
+                      <div className="tab-pane fade show active">
+                        <div className="course-description">
+                          <h5 className="h5">Vision</h5>
+                          <p>
+                            To empower individuals and institutions globally by
+                            fostering innovation, building character, and
+                            nurturing leadership through cutting-edge
+                            educational technologies, driving societal progress
+                            and assisting in making India a beacon of
+                            excellence.
+                          </p>
 
-        <div className="why-area-1 space overflow-hidden">
+                          <h5 className="h5 mt-40 mb-10">Mission</h5>
+
+                          <div className="row mt-25">
+                            <div className="col-lg-6">
+                              <div className="checklist mb-4">
+                                <ul>
+                                  <li>
+                                    To cultivate a culture of research,
+                                    resilience, and entrepreneurship, guiding
+                                    startups toward meaningful success.{" "}
+                                  </li>
+                                  <li>
+                                    To instill human values, communication
+                                    skills, and professionalism, shaping global
+                                    leaders of tomorrow.
+                                  </li>
+                                  <li>
+                                    To uphold diplomacy and stability in all
+                                    endeavour’s, inspiring students to achieve
+                                    personal and national pride.{" "}
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div className="col-lg-6">
+                              <div className="checklist">
+                                <ul>
+                                  <li>
+                                    To foster holistic development through
+                                    innovative solutions that bridge tradition
+                                    with modernity, ensuring a sustainable and
+                                    Sacred foundation for lifelong learning.
+                                  </li>
+                                  <li>
+                                    To integrate modern technologies like AI and
+                                    advanced software to deliver transformative
+                                    education tailored to diverse learners.{" "}
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <h5 className="h5 mt-40">Core Values</h5>
+                          <div className="col-lg-12">
+                            <div className="checklist  mt-30 mb-8">
+                              <ul>
+                                <li>SACRED:</li>
+                                <p>
+                                  To integrate modern technologies like AI and
+                                  advanced software to deliver transformative
+                                  education tailored to diverse learners.
+                                </p>
+                              </ul>
+                            </div>
+                          </div>
+                          <div className="row mt-25">
+                            <div className="col-lg-6 ">
+                              <div className="checklist mb-4">
+                                <ul>
+                                  <li>Character Building:</li>
+                                  <p>
+                                    Embedding human values and ethics in every
+                                    learner.
+                                  </p>
+                                </ul>
+                                <ul>
+                                  <li>Communication Excellence:</li>
+                                  <p>
+                                    Equipping learners with skills to express,
+                                    connect, and inspire.
+                                  </p>
+                                </ul>
+                                <ul>
+                                  <li>Professionalism and Stability:</li>
+                                  <p>
+                                    Ensuring consistent quality and growth in
+                                    all initiatives.
+                                  </p>
+                                </ul>
+                              </div>
+                            </div>
+                            <div className="col-lg-6">
+                              <div className="checklist mb-4">
+                                <ul>
+                                  <li>Research and Innovation: </li>
+                                  <p>
+                                    Pioneering solutions and strategies to
+                                    address emerging educational challenges.
+                                  </p>
+                                </ul>
+                                <ul>
+                                  <li>Leadership Development: </li>
+                                  <p>
+                                    Preparing students to lead with empathy,
+                                    professionalism, and confidence.
+                                  </p>
+                                </ul>
+                                <ul>
+                                  <li>Pride in India:</li>
+                                  <p>
+                                    Advancing education to make India a global
+                                    leader in knowledge and innovation.
+                                  </p>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div
+          className="why-area-1 space overflow-hidden"
+          style={{ marginTop: "-50px" }}
+        >
           <div className="shape-mockup why-shape-1 jump">
             <img src="assets/img/normal/about_1_shape1.png" alt="img" />
           </div>

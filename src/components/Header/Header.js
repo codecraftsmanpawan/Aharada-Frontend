@@ -312,6 +312,19 @@ function Header() {
                                   Gallery
                                 </Link>
                               </li>
+                              <li>
+                                <Link
+                                  to="/guestLecturer"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  Guest Lecturer
+                                </Link>
+                              </li>
                             </ul>
                           </li>
                           <li>

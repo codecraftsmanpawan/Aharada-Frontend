@@ -94,7 +94,7 @@ function CollaboratorsSection() {
                     style={{ marginRight: "15px" }}
                   >
                     <a
-                      href="/"
+                      href={collaborator.website}
                       className="client-thumb"
                       target="_blank"
                       rel="noopener noreferrer"

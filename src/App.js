@@ -30,6 +30,9 @@ import NewsMediaDetails from "./pages/NewsMedia/NewsMediaDetails";
 import CampuesLife from "./pages/CampusLife/Campus-Life";
 import Scholarships from "./pages/Scholarships/Scholarships";
 import ApplyNow from "./pages/ApplyNow/Apply-Now";
+import AdmissionCard from "./components/AdmissionCard/AdmissionCard";
+import GuestLecturer from "./pages/GuestLecturer/Guest-Lecturer";
+import GuestLecturerDetails from "./pages/GuestLecturer/Guest-Lecturer-Details";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import "./App.css";
@@ -37,7 +40,7 @@ import "./assets/css/app.min.css";
 import "./assets/css/bootstrap.rtl.min.css";
 import "./assets/css/fontawesome.min.css";
 import "./assets/css/style.css";
-import AdmissionCard from "./components/AdmissionCard/AdmissionCard";
+
 function App() {
   return (
     <Router>
@@ -73,6 +76,8 @@ function App() {
         <Route path="/apply-now" element={<ApplyNow />} />
         <Route path="/campus-life" element={<CampuesLife />} />
         <Route path="/scholarships" element={<Scholarships />} />
+        <Route path="/guestLecturer" element={<GuestLecturer />} />
+        <Route path="/guest-lecturer/:id" element={<GuestLecturerDetails />} />
       </Routes>
       <Footer />
     </Router>
