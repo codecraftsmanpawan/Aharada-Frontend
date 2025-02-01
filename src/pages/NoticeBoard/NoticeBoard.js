@@ -69,7 +69,7 @@ const NoticeBoard = () => {
                 {filteredNotices.length > 0 ? (
                   filteredNotices.map((notice) => (
                     <NoticeItem
-                      key={notice._id} // Use _id from API
+                      key={notice._id}
                       notice={notice}
                       onSelect={setSelectedNotice}
                     />

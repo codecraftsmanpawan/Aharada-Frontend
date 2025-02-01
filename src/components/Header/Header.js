@@ -4,6 +4,7 @@ import Modal from "react-modal";
 import ApplyForm from "../ApplyForm/ApplyForm";
 import { Link } from "react-router-dom";
 import SocialIcon from "./SocialIcon";
+import Marquee from "../../components/Marquee/Marquee";
 // import "./Header.css";
 Modal.setAppElement("#root");
 
@@ -55,6 +56,7 @@ function Header() {
 
   return (
     <>
+      <Marquee message="🎉 Admission is Open! Apply Now! 🎉" />
       <header
         className="th-header header-layout1"
         style={{
@@ -81,7 +83,7 @@ function Header() {
                     <li>
                       <i className="far fa-phone" />
                       <Link
-                        to="tel:+917303381359"
+                        to="tel:+917303381347"
                         onMouseOver={(e) => (e.target.style.color = "#93b3e6")}
                         onMouseOut={(e) => (e.target.style.color = "")}
                       >
@@ -91,7 +93,7 @@ function Header() {
                     <li>
                       <i className="far fa-phone" />
                       <Link
-                        to="tel:+917303381359"
+                        to="tel:+917579811099"
                         onMouseOver={(e) => (e.target.style.color = "#93b3e6")}
                         onMouseOut={(e) => (e.target.style.color = "")}
                       >
@@ -101,7 +103,7 @@ function Header() {
                     <li>
                       <i className="far fa-phone" />
                       <Link
-                        to="tel:+917303381359"
+                        to="tel:+919520269895"
                         onMouseOver={(e) => (e.target.style.color = "#93b3e6")}
                         onMouseOut={(e) => (e.target.style.color = "")}
                       >

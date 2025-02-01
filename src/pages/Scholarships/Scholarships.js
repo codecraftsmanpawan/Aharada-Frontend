@@ -23,11 +23,11 @@ const Scholarships = () => {
               <i className="fal fa-book me-2" />
               Are You Ready For This Offer
             </span>
-            <h2 className="sec-title text-white">
+            {/* <h2 className="sec-title text-white">
               50% Offer For Very First 50
               <br />
               <span className="fw-light">Student’s</span>
-            </h2>
+            </h2> */}
           </div>
           <div className="btn-group justify-content-center">
             <Link to="/apply-now" className="th-btn style2">

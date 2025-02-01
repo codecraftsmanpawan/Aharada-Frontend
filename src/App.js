@@ -16,6 +16,7 @@ import Contact from "./pages/Contact/Contact";
 import Grievance from "./pages/Governance/Grievance";
 import PlacementTeam from "./pages/PlacementTeam/Placement-Team";
 import NoticeBoard from "./pages/NoticeBoard/NoticeBoard";
+import NoticeDetails from "./pages/NoticeBoard/NoticeDetails";
 import Gallery from "./pages/Gallery/Gallery";
 import CourseDetails from "./pages/CourseDetails/CourseDetails";
 import Programs from "./pages/Programs/Programs";
@@ -62,6 +63,7 @@ function App() {
         <Route path="/grievance" element={<Grievance />} />
         <Route path="/placement-team" element={<PlacementTeam />} />
         <Route path="/noticeBoard" element={<NoticeBoard />} />
+        <Route path="/notice/:id" element={<NoticeDetails />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/programs" element={<Programs />} />
         <Route path="/team-members" element={<TeamMembers />} />

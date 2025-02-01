@@ -1,26 +1,35 @@
+// src/components/NoticeItem.jsx
+
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./NoticeBoard.css";
+import { encodeId } from "../../utils/encodeDecode";
 
-const NoticeItem = ({ notice, onSelect }) => {
-  // Define the base URL for the notices
-  const BASE_URL = "https://backend.aharadaedu.in"; // Replace this with your actual base URL
+const NoticeItem = ({ notice }) => {
+  const navigate = useNavigate();
+
+  const BASE_URL = "https://backend.aharadaedu.in";
   const formattedDate = new Date(notice.date).toLocaleDateString();
-
-  // Ensure the file URL is correctly formed by appending the base URL
   const fileUrl = `${BASE_URL}${notice.content}`;
+
+  const handleTitleClick = () => {
+    const encodedId = encodeId(notice._id); // Encode the ID
+    navigate(`/notice/${encodedId}`); // Navigate using the encoded ID
+  };
 
   return (
     <div className="notice-card mb-4">
       <div className="card-body">
-        <h5 className="card-title">{notice.title}</h5>
+        <h5
+          className="card-title clickable-title"
+          onClick={handleTitleClick}
+          style={{ cursor: "pointer" }}
+        >
+          {notice.title}
+        </h5>
         <h6 className="card-subtitle mb-2">{formattedDate}</h6>
         <p className="card-text">{notice.description}</p>
-        {/* Replaced View Details button with Download button */}
-        <a
-          href={fileUrl} // Now using the correct file URL with base URL prepended
-          download // Triggers the download action
-          className="btn btn-download-notice"
-        >
+        <a href={fileUrl} download className="btn btn-download-notice">
           Download Notice <i className="fas fa-download ms-2"></i>
         </a>
       </div>
