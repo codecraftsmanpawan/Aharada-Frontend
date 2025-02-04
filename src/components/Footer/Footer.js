@@ -158,11 +158,16 @@ function Footer() {
                           <a href="#">Distance Course</a>
                         </li>
                         <li>
-                          <a href="#">Student Ambassador</a>
+                          <a href="/students-ambassador">Student Ambassador</a>
                         </li>
 
                         <li>
                           <Link to="/apply-now">Apply For Admissions</Link>
+                        </li>
+                        <li>
+                          <a href="/guestLecturer">
+                            Apply For Guest Lecturer or Mantor
+                          </a>
                         </li>
                       </ul>
                     </div>

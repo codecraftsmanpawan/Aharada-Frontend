@@ -1,9 +1,120 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "./ProfessionalProgramsPage.css";
 import Course from "../Home/component/CouseOffer";
-import { Link } from "react-router-dom";
-const Programs = () => {
+const programs = [
+  {
+    id: 1,
+    title: "BBA - Data Analytics and Artificial Intelligence",
+    duration: "3 YEARS",
+    type: "UG",
+    image: "assets/course/ai.jpg",
+  },
+  {
+    id: 2,
+    title: "BBA - Aviation & Travel",
+    duration: "3 YEARS",
+    type: "UG",
+    image: "assets/course/aviation.jpg",
+  },
+  {
+    id: 3,
+    title: "BBA - Entrepreneurship and Innovation",
+    duration: "3 YEARS",
+    type: "UG",
+    image: "assets/course/Innovation.jpg",
+  },
+
+  {
+    id: 5,
+    title: "B.Sc - Aeronautical",
+    duration: "3 YEARS",
+    type: "UG",
+    image: "assets/course/Aeronautical.jpg",
+  },
+  {
+    id: 6,
+    title: "MBA - Aviation Management",
+    duration: "2 YEARS",
+    type: "PG",
+    image: "assets/course/AviationManagement.jpg",
+  },
+  {
+    id: 7,
+    title: "BBA - Aviation & Airport Management",
+    duration: "3 YEARS",
+    type: "UG",
+    image: "assets/course/Airport.jpg",
+  },
+  {
+    id: 8,
+    title: "B.Tech - Aerospace Engineering",
+    duration: "4 YEARS",
+    type: "UG",
+    image: "assets/course/Aeronautical.jpg",
+  },
+  {
+    id: 9,
+    title: "M.Tech - Defence Technology",
+    duration: "2 YEARS",
+    type: "PG",
+    image: "assets/course/Technology.jpg",
+  },
+  {
+    id: 10,
+    title: "MBA - HR & Aviation",
+    duration: "2 YEARS",
+    type: "PG",
+    image: "assets/course/hr.jpg",
+  },
+  {
+    id: 11,
+    title: "Drone Pilot Training",
+    duration: "6 MONTHS",
+    type: "UG",
+    image: "assets/course/Drone.jpg",
+  },
+];
+
+function ProgramCard({ title, duration, type, image, onExploreClick }) {
   return (
-    <div>
+    <div className="program-card">
+      <div className="program-card-body">
+        <h3>{title}</h3>
+        <p>{duration}</p>
+        <div className="explore-btn-container">
+          <button className="explore-btn" onClick={onExploreClick}>
+            Explore
+          </button>
+        </div>
+      </div>
+      <img
+        src={image}
+        alt={title}
+        className="program-card-image"
+        style={{ height: "350px" }}
+      />
+    </div>
+  );
+}
+
+function ProgramPage() {
+  const [filter, setFilter] = useState("UG");
+  const navigate = useNavigate(); // Hook to navigate
+
+  // Filter programs based on the selected filter
+  const filteredPrograms =
+    filter === "All"
+      ? programs
+      : programs.filter((program) => program.type === filter);
+
+  const handleExploreClick = () => {
+    // Navigate to the Explore Page when clicked
+    navigate("/Data-Analytics-and-Artificial-Intelligence");
+  };
+
+  return (
+    <>
       <section
         className="bg-smoke-half"
         style={{
@@ -62,84 +173,53 @@ const Programs = () => {
           </div>
         </div>
       </section>
-      <section className="space bg-smoke" id="course-sec">
-        <div className="container">
-          <div className="title-area text-center">
-            <span className="sub-title">University Programs</span>
-            <h2 className="sec-title fw-semibold">
-              Excellence In Teaching And Learning
-            </h2>
-          </div>
-          <div className="row gy-4">
-            <div className="col-md-6 col-xl-4">
-              <div className="admission-card">
-                <div className="admission-card_img">
-                  <img
-                    src="assets/img/update1/normal/admission_1_1.jpg"
-                    alt=" image"
-                  />
-                </div>
-                <h3 className="admission-card_title box-title">Diploma</h3>
-                <p className="admission-card_text">
-                  Globally envisioneer seamless catalysts for change through
-                  standards compliant vortals. Quickly leverage existing
-                  transparent solutions.
-                </p>
-                <Link to="/apply-now" className="link-btn">
-                  Apply Now
-                  <i className="fas fa-arrow-right ms-2" />
-                </Link>
-              </div>
-            </div>
-            <div className="col-md-6 col-xl-4">
-              <div className="admission-card">
-                <div className="admission-card_img">
-                  <img
-                    src="assets/img/update1/normal/admission_1_2.jpg"
-                    alt=" image"
-                  />
-                </div>
-                <h3 className="admission-card_title box-title">
-                  {" "}
-                  Undergraduate
-                </h3>
-                <p className="admission-card_text">
-                  Globally envisioneer seamless catalysts for change through
-                  standards compliant vortals. Quickly leverage existing
-                  transparent solutions.
-                </p>
-                <Link to="/apply-now" className="link-btn">
-                  Apply Now
-                  <i className="fas fa-arrow-right ms-2" />
-                </Link>
-              </div>
-            </div>
-            <div className="col-md-6 col-xl-4">
-              <div className="admission-card">
-                <div className="admission-card_img">
-                  <img
-                    src="assets/img/update1/normal/admission_1_3.jpg"
-                    alt=" image"
-                  />
-                </div>
-                <h3 className="admission-card_title box-title">Postgraduate</h3>
-                <p className="admission-card_text">
-                  Globally envisioneer seamless catalysts for change through
-                  standards compliant vortals. Quickly leverage existing
-                  transparent solutions.
-                </p>
-                <Link to="/apply-now" className="link-btn">
-                  Apply Now
-                  <i className="fas fa-arrow-right ms-2" />
-                </Link>
-              </div>
-            </div>
+      <div className="program-page-container">
+        <div className="program-page-filter">
+          <h1 className="program-page-title">Explore Our Programs</h1>
+          <div className="program-page-filter-btn">
+            <button
+              onClick={() => setFilter("All")}
+              className={`program-page-filter-button ${
+                filter === "All" ? "active" : ""
+              }`}
+            >
+              ALL PROGRAMS
+            </button>
+            <button
+              onClick={() => setFilter("UG")}
+              className={`program-page-filter-button ${
+                filter === "UG" ? "active" : ""
+              }`}
+            >
+              UG PROGRAM
+            </button>
+            <button
+              onClick={() => setFilter("PG")}
+              className={`program-page-filter-button ${
+                filter === "PG" ? "active" : ""
+              }`}
+            >
+              PG PROGRAM
+            </button>
           </div>
         </div>
-      </section>
-      <Course />
-    </div>
-  );
-};
+        <div className="program-page-programs">
+          {filteredPrograms.map((program) => (
+            <ProgramCard
+              key={program.id}
+              title={program.title}
+              duration={program.duration}
+              type={program.type}
+              image={program.image}
+              onExploreClick={handleExploreClick}
+            />
+          ))}
+        </div>
+      </div>
 
-export default Programs;
+      <Course />
+    </>
+  );
+}
+
+export default ProgramPage;

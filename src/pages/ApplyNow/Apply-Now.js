@@ -599,11 +599,11 @@ const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
         <div className="container text-center">
           <div className="title-area text-center mb-40">
             <span className="sub-title text-white">
-              <i className="fal fa-book me-2" />
-              Are You Ready For This Offer
+              <i className="fal fa-graduation-cap me-2" />
+              Unlock Your Future with Aharada Education
             </span>
             <h2 className="sec-title text-white">
-              50% Offer For Very First 50
+              Apply Now for Admission and Shape Your Career
             </h2>
           </div>
         </div>

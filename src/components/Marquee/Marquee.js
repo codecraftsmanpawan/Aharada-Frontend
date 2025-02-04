@@ -1,64 +1,55 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios"; // Import axios
 import "./Marquee.css";
 
 const Marquee = () => {
+  const [marqueeMessages, setMarqueeMessages] = useState([]);
   const navigate = useNavigate();
 
-  const handleApplyClick = () => {
-    navigate("/apply-now");
+  useEffect(() => {
+    // Fetch marquee messages from API
+    axios
+      .get("https://backend.aharadaedu.in/api/marquee")
+      .then((response) => {
+        // Store the fetched data in state
+        setMarqueeMessages(response.data);
+      })
+      .catch((error) => {
+        // console.error(
+        //   "There was an error fetching the marquee messages:",
+        //   error
+        // );
+      });
+  }, []);
+
+  const handleApplyClick = (actionLeft) => {
+    navigate(actionLeft);
   };
 
-  const handleCallClick = () => {
-    window.location.href = "tel:7303381360";
+  const handleCallClick = (actionRight) => {
+    window.location.href = actionRight;
   };
-
-  const textLeft = "🎓 Admission Open for 2025 | 🚀 Apply Now |";
-  const textRight = "📞 Connect Us: +917303381360 🎉";
 
   return (
     <div className="marquee-container">
       <div className="marquee">
-        <span className="marquee-text">
-          <span className="clickable" onClick={handleApplyClick}>
-            {textLeft}
-          </span>{" "}
-          <span className="clickable" onClick={handleCallClick}>
-            {textRight}
+        {marqueeMessages.map((message) => (
+          <span key={message._id} className="marquee-text">
+            <span
+              className="clickable"
+              onClick={() => handleApplyClick(message.actionLeft)}
+            >
+              {message.textLeft}
+            </span>{" "}
+            <span
+              className="clickable"
+              onClick={() => handleCallClick(message.actionRight)}
+            >
+              {message.textRight}
+            </span>
           </span>
-        </span>
-        <span className="marquee-text">
-          <span className="clickable" onClick={handleApplyClick}>
-            {textLeft}
-          </span>{" "}
-          <span className="clickable" onClick={handleCallClick}>
-            {textRight}
-          </span>
-        </span>
-        <span className="marquee-text">
-          <span className="clickable" onClick={handleApplyClick}>
-            {textLeft}
-          </span>{" "}
-          <span className="clickable" onClick={handleCallClick}>
-            {textRight}
-          </span>
-        </span>
-        <span className="marquee-text">
-          <span className="clickable" onClick={handleApplyClick}>
-            {textLeft}
-          </span>{" "}
-          <span className="clickable" onClick={handleCallClick}>
-            {textRight}
-          </span>
-        </span>
-        <span className="marquee-text">
-          <span className="clickable" onClick={handleApplyClick}>
-            {textLeft}
-          </span>{" "}
-          <span className="clickable" onClick={handleCallClick}>
-            {textRight}
-          </span>
-        </span>
+        ))}
       </div>
     </div>
   );

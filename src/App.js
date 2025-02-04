@@ -34,6 +34,10 @@ import ApplyNow from "./pages/ApplyNow/Apply-Now";
 import AdmissionCard from "./components/AdmissionCard/AdmissionCard";
 import GuestLecturer from "./pages/GuestLecturer/Guest-Lecturer";
 import GuestLecturerDetails from "./pages/GuestLecturer/Guest-Lecturer-Details";
+import GuestLectureList from "./pages/GuestLecturer/GuestLectureList";
+import Mentors from "./pages/GuestLecturer/Mentors";
+import StudentAmbassador from "./pages/StudentAmbassador/StudentAmbassador";
+import ExploreAI from "./pages/Programs/Program-Explore/Data-Analytics-and-Artificial-Intelligence";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import "./App.css";
@@ -79,7 +83,14 @@ function App() {
         <Route path="/campus-life" element={<CampuesLife />} />
         <Route path="/scholarships" element={<Scholarships />} />
         <Route path="/guestLecturer" element={<GuestLecturer />} />
+        <Route path="/our-guest-Lecturer" element={<GuestLectureList />} />
+        <Route path="/our-mentors" element={<Mentors />} />
+        <Route path="/students-ambassador" element={<StudentAmbassador />} />
         <Route path="/guest-lecturer/:id" element={<GuestLecturerDetails />} />
+        <Route
+          path="Data-Analytics-and-Artificial-Intelligence"
+          element={<ExploreAI />}
+        />
       </Routes>
       <Footer />
     </Router>

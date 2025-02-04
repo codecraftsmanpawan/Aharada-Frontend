@@ -520,7 +520,9 @@ const GuestLecturerForm = () => {
           {/* Photo Upload */}
           <div className="form-group">
             <label htmlFor="photo" className="guest-lecturer-label">
-              Upload Photo <span className="required">*</span>
+              Upload Photo,{" "}
+              <span style={{ color: "red" }}>Upload image (under 1 MB)</span>{" "}
+              <span className="required">*</span>
             </label>
             <input
               type="file"

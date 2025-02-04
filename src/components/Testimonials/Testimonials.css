@@ -51,12 +51,77 @@
     transform: scale(1.1);
 }
 
-/* Responsive adjustments */
+/* Testimonials box */
+.testi-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 410px;
+    /* Set fixed height */
+    width: 100%;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 1200px) {
+    .testi-box {
+        height: 450px;
+       
+        padding: 15px;
+    }
+
+    .slick-dots li button:before {
+        width: 10px;
+        height: 10px;
+       
+    }
+}
+
+@media (max-width: 992px) {
+    .testi-box {
+        height: 450px;
+       
+        padding: 10px;
+    }
+
+    .slick-dots li button:before {
+        width: 9px;
+        height: 9px;
+        /* Smaller dots */
+    }
+}
+
+@media (max-width: 768px) {
+    .testi-box {
+        height: 450px;
+      
+        padding: 10px;
+    }
+
+    .slick-dots li button:before {
+        width: 8px;
+        height: 8px;
+       
+    }
+}
+
 @media (max-width: 576px) {
+    .testi-box {
+        height: 450px;
+       
+        padding: 8px;
+    }
+
     .slick-dots li button:before {
         width: 8px;
         height: 8px;
         background-color: #000;
+        /* Standard dot size for smaller screens */
     }
 
     .slick-dots li.slick-active button:before {

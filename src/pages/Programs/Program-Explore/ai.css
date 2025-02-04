@@ -1,0 +1,679 @@
+/* Main Container */
+.our-promise-container {
+    background: linear-gradient(to bottom, #f6f5f2, #f4ebdd);
+    padding: 50px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Content Wrapper */
+.our-promise-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Left Text Section with Background Image */
+.our-promise-text {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.promise-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1e1d1d;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main-heading {
+    font-size: 38px;
+    font-weight: bold;
+    color: #d89e37;
+    line-height: 1.2;
+}
+
+/* Add Background Image to the Text Section */
+.our-promise-text {
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+    border-radius: 10px;
+}
+
+.highlight {
+    color: #000;
+    /* Gold color */
+}
+
+/* Middle Graduate Image */
+.graduate-img img {
+    margin-top: -40px;
+    margin-left: 200px;
+    width: 250px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+
+/* Right Job Stats */
+.job-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stat-box {
+    background: #e5a435;
+    color: white;
+    display: flex;
+    gap: 10px;
+    padding: 30px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 340px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.stat-box strong {
+    font-size: 22px;
+}
+
+.stat-box p {
+    margin: 1px 0 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+/* MCA Highlights Container */
+.mca-highlights-container {
+    width: 100%;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #f6f5f2, #f4ebdd);
+}
+
+.mca-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f3a52c;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.mca-description {
+    font-size: 1rem;
+    margin-left: 20px;
+    font-weight: 400;
+    color: #0e0e0e;
+    margin-bottom: 40px;
+}
+
+.highlight-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.highlight-card {
+    background: linear-gradient(to bottom, #f6f5f2, #f4ebdd);
+    padding: 12px 20px;
+    border-radius: 12px;
+    width: 335px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-number {
+    font-size: 25px;
+    font-weight: 700;
+    color: #0d2b41;
+    margin-bottom: 2px;
+}
+
+.highlight-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0d2b41;
+}
+
+/* Container for Key Offerings and MCA Criteria */
+.key-offerings-container {
+    width: 100%;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #f6f5f2, #f4ebdd);
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Key Offerings Section */
+.key-offerings {
+    margin-bottom: 50px;
+    width: 100%;
+
+
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #f9f6f6;
+}
+
+/* Title for Key Offerings */
+.offerings-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 20px;
+
+}
+
+/* Container for the List of Offerings */
+.offerings-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Left Column for Offerings */
+.offerings-left,
+.offerings-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    text-align: left;
+}
+
+/* Styling for each offering item */
+.offering-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #2e2e2e;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #12416f;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.offering-item:hover {
+    background-color: #12416f;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #e0e0e0;
+}
+
+/* Icon style for each offering */
+.offering-icon {
+    color: #ffffff;
+    background-color: #12416f;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Text style for each offering */
+.offering-text {
+    flex: 1;
+}
+
+/* Who Can Do MCA Section */
+.who-can-do-mca {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1100px;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+
+    padding: 30px;
+    background-color: #fff;
+}
+
+/* Title for Who Can Do MCA */
+.who-can-do-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container for MCA Eligibility Criteria */
+.mca-criteria {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Left Column for MCA Eligibility Criteria */
+.criteria-left {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1;
+    padding: 10px;
+}
+
+/* Styling for each eligibility criteria item */
+.criteria-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #2e2e2e;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #003366;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.criteria-item:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon style for each eligibility criteria */
+.criteria-icon {
+    color: #f3a52c;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Text style for each eligibility criteria */
+.criteria-text {
+    flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+    /* Stack the sections vertically on medium screens */
+    .offerings-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mca-criteria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .criteria-left {
+        width: 100%;
+        gap: 15px;
+    }
+
+    /* Adjust Main Heading Size */
+    .offerings-title {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust padding for smaller screens */
+    .key-offerings,
+    .who-can-do-mca {
+        padding: 20px;
+    }
+
+    .stat-box {
+        width: 90%;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .stat-box strong {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Further adjustments for mobile screens */
+    .offerings-title {
+        font-size: 1.5rem;
+    }
+
+    .main-heading {
+        font-size: 24px;
+    }
+
+    .stat-box {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .stat-box strong {
+        font-size: 18px;
+    }
+
+    /* Adjusting padding for mobile */
+    .offerings-left,
+    .offerings-right {
+        padding: 0;
+    }
+}
+
+/* Ensure logos have the same height and fit properly */
+.partner-logo img {
+    height: 150px;
+    /* Same height for all logos */
+    object-fit: contain;
+    /* Ensures logos are scaled properly */
+    width: 100%;
+    /* Make sure they take up full container width */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Add transition for animation */
+}
+
+/* Partner Logo Hover Effect (Animation) */
+.partner-logo img:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+    opacity: 0.8;
+    /* Slight fade effect */
+}
+
+/* Adjust the grid layout to show 5 columns */
+.partners-section .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center align logos */
+    gap: 15px;
+    /* Adds spacing between logos */
+}
+
+/* For 5 logos per row */
+@media (max-width: 1024px) {
+    .partners-section .col-md-2 {
+        flex: 0 0 20%;
+    }
+}
+
+/* For 3 logos per row */
+@media (max-width: 768px) {
+    .partners-section .col-md-2 {
+        flex: 0 0 33.33%;
+    }
+}
+
+/* For 2 logos per row */
+@media (max-width: 576px) {
+    .partners-section .col-md-2 {
+        flex: 0 0 50%;
+    }
+}
+
+/* Add animation effect on page load */
+.partner-logo img {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    /* Animation for fade-in effect */
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Campus Section Styling */
+.campus-section {
+    padding: 40px;
+background: linear-gradient(to bottom, #151f38, #151f38);
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main-subtitle {
+    font-size: 1.2rem;
+    color: #dec8a0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Image Slider Container */
+.image-slider-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    /* Adjust the height as per your design */
+    overflow: hidden;
+    /* Ensures no overflow */
+    border-radius: 10px;
+    /* Optional: Add border-radius for rounded corners */
+}
+
+.image-slide {
+    width: 100%;
+    height: 100%;
+    /* Make each slide fill the container */
+}
+
+.campus-image-0-0,
+.campus-image-1-0,
+.campus-image-2-0 {
+    width: 100%;
+    height: 100%;
+    /* Ensure the image takes up the full container */
+    object-fit: cover;
+    /* Make sure the image covers the area without distortion */
+    border-radius: 10px;
+    /* Optional: Add border-radius to images */
+}
+
+/* Fix issue with partial images showing */
+.slick-slide {
+    padding: 0;
+    margin: 0;
+    /* Remove any unnecessary padding and margin */
+}
+
+.slick-slide img {
+    display: block;
+    /* Ensure images are block elements */
+    max-width: 100%;
+    /* Ensure image doesn't stretch */
+}
+
+/* Campus Card Layout */
+.campus-sliders .slick-slide {
+padding-right: 25px;
+}
+
+.campus-card {
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 350px;
+}
+
+.campus-card .campus-info {
+    flex-grow: 1;
+    margin-top: 15px;
+}
+
+.campus-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.main-program {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Hover Effect for the Campus Card */
+.campus-card:hover {
+    transform: translateY(-5px) rotateY(10deg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Responsive Design Adjustments */
+@media (max-width: 1024px) {
+    .campus-sliders .slick-slide {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .campus-sliders .slick-slide {
+        margin-right: 10px;
+    }
+
+    .campus-card {
+        padding: 15px;
+        min-height: 350px;
+    }
+}
+.mca-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.mca-summary {
+    background-color: #f5f3f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.mca-summary h1 {
+    font-size: 28px;
+    color: #2e2e2e;
+}
+
+.mca-summary ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.mca-summary li {
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    /* Align icon and text */
+}
+
+.summary-icon {
+    margin-right: 15px;
+    /* Space between icon and text */
+    font-size: 24px;
+    /* Adjust icon size */
+    color: #f37f12;
+    /* Icon color */
+}
+
+.faq-section h2 {
+    font-size: 24px;
+    margin: 30px 0;
+    font-weight: 700;
+    color: #f37f12;
+}
+
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    background-color: #fdf6e3;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3b3b3b;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-icon {
+    margin-right: 15px;
+    /* Space between icon and text */
+    font-size: 24px;
+}
+
+.accordion-header:hover {
+    background-color: #f1d3a1;
+}
+
+/* Styling for different header and icon variations */
+.accordion-header-1 {
+    background-color: #e7f7ff;
+}
+
+.accordion-header-2 {
+    background-color: #fffbcc;
+}
+
+.accordion-header-3 {
+    background-color: #ffebf0;
+}
+
+/* Icons styling for different colors */
+.icon-1 {
+    color: #4c8bf5;
+}
+
+.icon-2 {
+    color: #f2b830;
+}
+
+.icon-3 {
+    color: #f15f79;
+}
+
+.accordion-body {
+    background-color: #f9f9f9;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.accordion-body:first-child {
+    border-top: 1px solid #ddd;
+}
+
+.accordion-header:hover {
+    background-color: #f1d3a1;
+}

@@ -137,3 +137,68 @@
         /* Further reduce padding for very small screens */
     }
 }
+
+/* Ensure logos have the same height and fit properly */
+.partner-logo img {
+    height: 150px;
+    /* Same height for all logos */
+    object-fit: contain;
+    /* Ensures logos are scaled properly */
+    width: 100%;
+    /* Make sure they take up full container width */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Add transition for animation */
+}
+
+/* Partner Logo Hover Effect (Animation) */
+.partner-logo img:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+    opacity: 0.8;
+    /* Slight fade effect */
+}
+
+/* Adjust the grid layout to show 5 columns */
+.partners-section .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center align logos */
+    gap: 15px;
+    /* Adds spacing between logos */
+}
+
+/* For 5 logos per row */
+@media (max-width: 1024px) {
+    .partners-section .col-md-2 {
+        flex: 0 0 20%;
+    }
+}
+
+/* For 3 logos per row */
+@media (max-width: 768px) {
+    .partners-section .col-md-2 {
+        flex: 0 0 33.33%;
+    }
+}
+
+/* For 2 logos per row */
+@media (max-width: 576px) {
+    .partners-section .col-md-2 {
+        flex: 0 0 50%;
+    }
+}
+
+/* Add animation effect on page load */
+.partner-logo img {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    /* Animation for fade-in effect */
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

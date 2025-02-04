@@ -11,13 +11,70 @@ function PlacementTeam() {
   const companyPartners = [
     {
       id: 1,
-      logo: "assets/img/sch.jpg",
-      name: "Company 1",
+      logo: "assets/placement/American - Logo.png",
+      name: "American",
     },
-    { id: 2, logo: "assets/img/sch.jpg", name: "Company 2" },
-    { id: 3, logo: "assets/img/sch.jpg", name: "Company 3" },
-    { id: 4, logo: "assets/img/sch.jpg", name: "Company 4" },
-    { id: 5, logo: "assets/img/sch.jpg", name: "Company 5" },
+    { id: 2, logo: "assets/placement/AISATS - logo.png", name: "AISATS" },
+    {
+      id: 3,
+      logo: "assets/placement/Arabian Vibes Logo.jpeg",
+      name: "Arabian Vibes",
+    },
+    { id: 4, logo: "assets/placement/Celebi- Logo.jpeg", name: "Celebi" },
+    {
+      id: 5,
+      logo: "assets/placement/Delhi Duty Free - Logo.png",
+      name: "Delhi Duty",
+    },
+    {
+      id: 6,
+      logo: "assets/placement/Drone Stark Logo.png",
+      name: "American",
+    },
+    { id: 7, logo: "assets/placement/Eniva Logo.svg", name: "AISATS" },
+    {
+      id: 8,
+      logo: "assets/placement/GMR- logo.png",
+      name: "Arabian Vibes",
+    },
+    { id: 9, logo: "assets/placement/Indigo - Logo.png", name: "Celebi" },
+    {
+      id: 10,
+      logo: "assets/placement/IRSLogo.png",
+      name: "IRS Logo ",
+    },
+    {
+      id: 11,
+      logo: "assets/placement/Leela Travels Logo.png",
+      name: "American",
+    },
+    { id: 12, logo: "assets/placement/Ocube Logo.jpeg", name: "AISATS" },
+    {
+      id: 13,
+      logo: "assets/placement/OH! Puhleeez Logo.jpeg",
+      name: "Arabian Vibes",
+    },
+    { id: 14, logo: "assets/placement/Omullane - Logo.png", name: "Celebi" },
+    {
+      id: 15,
+      logo: "assets/placement/phs logo.png",
+      name: "Delhi Duty",
+    },
+    {
+      id: 16,
+      logo: "assets/placement/Qatar- Logo.jpeg",
+      name: "American",
+    },
+    {
+      id: 17,
+      logo: "assets/placement/Teleperformance Logo.png",
+      name: "AISATS",
+    },
+    {
+      id: 18,
+      logo: "assets/placement/Vimaana - Logo.jpeg",
+      name: "Arabian Vibes",
+    },
   ];
 
   // Define your base URL for images
@@ -131,54 +188,59 @@ function PlacementTeam() {
         <section
           className="partners-section py-5"
           style={{
-            backgroundColor: "#f8f9fa",
+            backgroundColor: "transparent", // Removed background
             overflow: "hidden",
             position: "relative",
           }}
         >
           <div className="container">
-            <h2 className="text-center " style={{ marginBottom: "90px" }}>
+            <h2 className="text-center" style={{ marginBottom: "90px" }}>
               Our Placement Partners
             </h2>
-            <Slider {...sliderSettings}>
+            <div className="row">
               {companyPartners.map((partner) => (
-                <div key={partner.id} className="partner-logo">
-                  <img
-                    src={partner.logo} // Hardcoded image path
-                    alt={partner.name}
-                    style={{
-                      height: "180px",
-                      objectFit: "contain",
-                      margin: "0 5px",
-                    }}
-                  />
+                <div key={partner.id} className="col-md-2 col-4 mb-4">
+                  {" "}
+                  {/* 5 columns */}
+                  <div className="partner-logo">
+                    <img
+                      src={partner.logo} // Hardcoded image path
+                      alt={partner.name}
+                      className="img-fluid"
+                      style={{
+                        height: "150px", // Ensures uniform size
+                        objectFit: "contain",
+                        margin: "0 5px",
+                      }}
+                    />
+                  </div>
                 </div>
               ))}
-            </Slider>
+            </div>
           </div>
         </section>
-
         <section
           className="instructions-section py-5 bg-light"
           style={{ marginTop: "-30px" }}
         >
           <div className="container">
             <h2 className="mb-4">
-              How to Connect with the Aharada Placement Department
+              How to Connect with the Aharada Education Placement Team
             </h2>
             <p>
-              Aharada Education's Placement Department is dedicated to helping
-              you launch your dream career. Follow these steps to get started:
+              The Placement Department at Aharada Education is committed to
+              helping you kickstart your dream career. Follow these steps to get
+              started:
             </p>
             <ol>
               <li>
                 <strong>Contact the Placement Team:</strong> Reach out to our
-                Placement Officer, <strong>Dr. Neha Sharma</strong>, via email
-                at{" "}
+                Placement Officer, <strong>Yogita Tyagi</strong>, via email at{" "}
                 <a href="mailto:placements@aharadaedu.in">
                   placements@aharadaedu.in
                 </a>{" "}
-                or call <a href="tel:+911234567890">+91 12345 67890</a>.
+                or call <a href="tel:+919528344096">+91 95283 44096</a>,{" "}
+                <a href="tel:+919105344408">+91 91053 44408</a>.
               </li>
               <li>
                 <strong>Participate in Training Programs:</strong> Join our
@@ -193,7 +255,7 @@ function PlacementTeam() {
                 documents.
               </li>
               <li>
-                <strong>Attend Placement Drives:</strong> Take part in campus
+                <strong>Attend Placement Drives:</strong> Participate in campus
                 recruitment drives, interact with top recruiters, and seize job
                 opportunities tailored to your skills and aspirations.
               </li>
@@ -203,8 +265,8 @@ function PlacementTeam() {
               How to Apply for Placement Opportunities
             </h2>
             <p>
-              Applying for placements at Aharada Education is simple and
-              structured. Here’s how you can proceed:
+              Applying for placements at Aharada Education is straightforward
+              and organized. Here’s how you can proceed:
             </p>
             <ul>
               <li>
@@ -218,13 +280,13 @@ function PlacementTeam() {
                 the portal.
               </li>
               <li>
-                <strong>Apply Directly:</strong> Click on the opportunity of
-                your choice, review the job description, and submit your
+                <strong>Apply Directly:</strong> Select the opportunity that
+                interests you, review the job description, and submit your
                 application through the portal.
               </li>
               <li>
-                <strong>Track Your Progress:</strong> Monitor application
-                statuses and stay informed about interview schedules and
+                <strong>Track Your Progress:</strong> Monitor your application
+                status and stay informed about interview schedules and
                 recruitment updates.
               </li>
               <li>
@@ -232,7 +294,7 @@ function PlacementTeam() {
                 connect with our Placement Coordinator,{" "}
                 <strong>Mr. Rahul Verma</strong>, at{" "}
                 <a href="mailto:support@aharadaedu.in">support@aharadaedu.in</a>{" "}
-                or <a href="tel:+918765432109">+91 87654 32109</a>.
+                or call <a href="tel:+918765432109">+91 87654 32109</a>.
               </li>
             </ul>
           </div>

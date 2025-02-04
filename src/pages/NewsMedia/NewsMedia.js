@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { format, isBefore, isSameDay } from "date-fns";
+import moment from "moment";
+
 const NewsMediaSection = () => {
   const [news, setNews] = useState([]);
   const [activeNews, setActiveNews] = useState([]);
@@ -21,23 +22,21 @@ const NewsMediaSection = () => {
         const allNews = response.data.newsMedia || [];
         setNews(allNews);
 
-        const currentDate = new Date();
+        const currentDate = moment();
 
-        // Separate active and scheduled news
+        // Separate active and scheduled news using Moment.js
         const active = allNews.filter((newsItem) => {
-          const newsDate = new Date(newsItem.publicDate);
-          // Include news items where publicDate is before today or same day
+          const newsDate = moment(newsItem.publicDate);
+          // Active if the news item's publicDate is today or before today
           return (
-            isBefore(newsDate, currentDate) || isSameDay(newsDate, currentDate)
+            newsDate.isValid() && newsDate.isSameOrBefore(currentDate, "day")
           );
         });
 
         const scheduled = allNews.filter((newsItem) => {
-          const newsDate = new Date(newsItem.publicDate);
-          // Include news items where publicDate is after today
-          return (
-            isBefore(currentDate, newsDate) && !isSameDay(newsDate, currentDate)
-          );
+          const newsDate = moment(newsItem.publicDate);
+          // Scheduled if the news item's publicDate is after today
+          return newsDate.isValid() && newsDate.isAfter(currentDate, "day");
         });
 
         setActiveNews(active);
@@ -109,7 +108,10 @@ const NewsMediaSection = () => {
                         <div className="blog-meta">
                           <Link to={`/news-media/${newsItem._id}`}>
                             <i className="fa-light fa-clock"></i>{" "}
-                            {format(new Date(newsItem.publicDate), "PPP")}
+                            {newsItem.publicDate &&
+                            moment(newsItem.publicDate).isValid()
+                              ? moment(newsItem.publicDate).format("LLL")
+                              : "Date not available"}
                           </Link>
                         </div>
                         <div className="blog-img">

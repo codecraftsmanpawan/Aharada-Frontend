@@ -316,7 +316,7 @@ function Header() {
                               </li>
                               <li>
                                 <Link
-                                  to="/guestLecturer"
+                                  to="/our-guest-Lecturer"
                                   onMouseOver={(e) =>
                                     (e.target.style.color = "#67676b")
                                   }
@@ -324,7 +324,20 @@ function Header() {
                                     (e.target.style.color = "")
                                   }
                                 >
-                                  Guest Lecturer
+                                  Our Guest Lecturers
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  to="/our-mentors"
+                                  onMouseOver={(e) =>
+                                    (e.target.style.color = "#67676b")
+                                  }
+                                  onMouseOut={(e) =>
+                                    (e.target.style.color = "")
+                                  }
+                                >
+                                  Our Mantors
                                 </Link>
                               </li>
                             </ul>
@@ -418,7 +431,7 @@ function Header() {
                               </li>
                               <li>
                                 <Link
-                                  to="/technicalclub"
+                                  to="https://aerospaceclub.org/"
                                   onMouseOver={(e) =>
                                     (e.target.style.color = "#67676b")
                                   }
@@ -426,7 +439,7 @@ function Header() {
                                     (e.target.style.color = "")
                                   }
                                 >
-                                  Technical Club
+                                  Our Clubs
                                 </Link>
                               </li>
                             </ul>
