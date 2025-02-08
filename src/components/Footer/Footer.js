@@ -40,7 +40,7 @@ function Footer() {
                     onMouseOver={(e) => (e.target.style.color = "#93b3e6")}
                     onMouseOut={(e) => (e.target.style.color = "")}
                   >
-                    +91-7303381359
+                    +91-7303381360
                   </a>
                 </div>
               </div>
@@ -229,7 +229,7 @@ function Footer() {
 
       {/* WhatsApp Icon with Pulse Animation */}
       <a
-        href="https://wa.me/917303381359"
+        href="https://wa.me/7303381360"
         className="pulse"
         target="_blank"
         rel="noopener noreferrer"

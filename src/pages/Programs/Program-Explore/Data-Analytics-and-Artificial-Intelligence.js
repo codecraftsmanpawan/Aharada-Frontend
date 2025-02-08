@@ -318,8 +318,8 @@ const OurPromise = () => {
             </div>
             <Link
               style={{ marginTop: "-120px" }}
-              to="assets/img/Aharada Brochure.pdf"
-              className="th-btn style3"
+              to="../../assets/img/Aharada Brochure.pdf"
+              className="th-btn style5"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -336,10 +336,6 @@ const OurPromise = () => {
             <div className="stat-box">
               <strong>1100+</strong>
               <p>Unique job opportunities</p>
-            </div>
-            <div className="stat-box">
-              <strong>28.5%</strong>
-              <p>Students with 2+ job offers</p>
             </div>
             <div className="stat-box">
               <strong>28.5%</strong>

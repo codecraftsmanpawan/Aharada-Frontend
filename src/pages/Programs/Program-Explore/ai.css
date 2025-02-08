@@ -634,33 +634,36 @@ padding-right: 25px;
 }
 
 .accordion-header:hover {
-    background-color: #f1d3a1;
+    background-color: #0d3041;
 }
 
 /* Styling for different header and icon variations */
 .accordion-header-1 {
-    background-color: #e7f7ff;
+    background: linear-gradient(to bottom, #f6f5f2, #f4ebdd);
 }
 
 .accordion-header-2 {
-    background-color: #fffbcc;
+    background: linear-gradient(to bottom, #f6f5f2, #f4ebdd);
 }
 
 .accordion-header-3 {
-    background-color: #ffebf0;
+    background: linear-gradient(to bottom, #f6f5f2, #f4ebdd);
 }
 
 /* Icons styling for different colors */
 .icon-1 {
-    color: #4c8bf5;
+    color: #122546;
+    margin-top: -20px;
 }
 
 .icon-2 {
-    color: #f2b830;
+    color: #122546;
+    margin-top: -20px;
 }
 
 .icon-3 {
-    color: #f15f79;
+    color: #122546;
+    margin-top: -20px;
 }
 
 .accordion-body {
@@ -675,5 +678,5 @@ padding-right: 25px;
 }
 
 .accordion-header:hover {
-    background-color: #f1d3a1;
+    background-color: #9a9183;
 }

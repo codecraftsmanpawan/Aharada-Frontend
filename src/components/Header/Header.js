@@ -46,7 +46,9 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  const handleMenuItemClick = () => {
+    setIsMobileMenuOpen(false);
+  };
   return (
     <>
       <Marquee message="🎉 Admission is Open! Apply Now! 🎉" />
@@ -304,68 +306,114 @@ function Header() {
           <div className="mobile-menu">
             <ul className="menu-list">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={handleMenuItemClick}>
+                  Home
+                </Link>
               </li>
               <li className="menu-item-has-children">
-                <Link to="#">About Us</Link>
+                <Link to="#" onClick={handleMenuItemClick}>
+                  About Us
+                </Link>
                 <ul className="sub-menu">
                   <li>
-                    <Link to="/about">About Us</Link>
+                    <Link to="/about" onClick={handleMenuItemClick}>
+                      About Us
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/team-members">Our Team</Link>
+                    <Link to="/team-members" onClick={handleMenuItemClick}>
+                      Our Team
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/faculty">Our Faculty</Link>
+                    <Link to="/faculty" onClick={handleMenuItemClick}>
+                      Our Faculty
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/placement-team">Placement Team</Link>
+                    <Link to="/placement-team" onClick={handleMenuItemClick}>
+                      Placement Team
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/events">Events</Link>
+                    <Link to="/events" onClick={handleMenuItemClick}>
+                      Events
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/gallery">Gallery</Link>
+                    <Link to="/gallery" onClick={handleMenuItemClick}>
+                      Gallery
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/our-guest-Lecturer">Our Guest Lecturers</Link>
+                    <Link
+                      to="/our-guest-Lecturer"
+                      onClick={handleMenuItemClick}
+                    >
+                      Our Guest Lecturers
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/our-mentors">Our Mentors</Link>
+                    <Link to="/our-mentors" onClick={handleMenuItemClick}>
+                      Our Mentors
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link to="/programs">Programs</Link>
+                <Link to="/programs" onClick={handleMenuItemClick}>
+                  Programs
+                </Link>
               </li>
               <li className="menu-item-has-children">
-                <Link to="#">Students</Link>
+                <Link to="#" onClick={handleMenuItemClick}>
+                  Students
+                </Link>
                 <ul className="sub-menu">
                   <li>
-                    <Link to="/noticeBoard">Notice</Link>
+                    <Link to="/noticeBoard" onClick={handleMenuItemClick}>
+                      Notice
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/internship">Internship</Link>
+                    <Link to="/internship" onClick={handleMenuItemClick}>
+                      Internship
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/placed-students">Placed Students</Link>
+                    <Link to="/placed-students" onClick={handleMenuItemClick}>
+                      Placed Students
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/alumni">Alumni</Link>
+                    <Link to="/alumni" onClick={handleMenuItemClick}>
+                      Alumni
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/grievance">Grievance</Link>
+                    <Link to="/grievance" onClick={handleMenuItemClick}>
+                      Grievance
+                    </Link>
                   </li>
                   <li>
-                    <Link to="https://aerospaceclub.org/">Our Clubs</Link>
+                    <Link
+                      to="https://aerospaceclub.org/"
+                      onClick={handleMenuItemClick}
+                    >
+                      Our Clubs
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link to="/blogs">Blog</Link>
+                <Link to="/blogs" onClick={handleMenuItemClick}>
+                  Blog
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" onClick={handleMenuItemClick}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>

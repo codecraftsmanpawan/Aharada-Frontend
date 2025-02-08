@@ -8,7 +8,7 @@
         flex-direction: column;
         background-color: #fff;
         position: absolute;
-        top: 90px;
+        top: 10px;
         left: 0;
         right: 0;
         z-index: 1000;
@@ -31,17 +31,28 @@
     }
 
     /* Mobile Menu */
-    .mobile-menu {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background-color: white;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        display: block;
-        z-index: 1000;
-    }
+.mobile-menu {
+    position: fixed;
+    top: 80;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    z-index: 1000;
+    height: 90vh;
+    
+overflow-y: scroll;
+    scrollbar-width: none;
 
+    -ms-overflow-style: none;
+
+   
+}
+.mobile-menu::-webkit-scrollbar {
+    display: none;
+   
+}
     /* Style for each menu item */
     .menu-list li {
         padding: 15px;

@@ -318,8 +318,8 @@ const AviationTravel = () => {
             </div>
             <Link
               style={{ marginTop: "-120px" }}
-              to="assets/img/Aharada Brochure.pdf"
-              className="th-btn style3"
+              to="../../assets/img/Aharada Brochure.pdf"
+              className="th-btn style5"
               target="_blank"
               rel="noopener noreferrer"
             >
