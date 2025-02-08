@@ -104,29 +104,29 @@ function Contact() {
                     <div className="media-body">
                       <p className="contact-feature_label">Phone Number</p>
                       <a
-                        href="tel:+011456586986"
+                        href="tel:+7303381359"
                         className="contact-feature_link"
                       >
-                        IIMT University, Meerut : <span>+91-7303381359</span>
+                        IIMT University, Meerut : <span>+91 7303381359</span>
                       </a>{" "}
                       <a
-                        href="tel:+011456586986"
+                        href="tel:+7303381347"
                         className="contact-feature_link"
                       >
-                        SAGE University Indore : <span>+91-7303381359</span>
+                        SAGE University Indore : <span>+91 7303381347</span>
                       </a>
                       <a
-                        href="tel:+011456586986"
+                        href="tel:+7579811099"
                         className="contact-feature_link"
                       >
                         Subharti University, Meerut :{" "}
-                        <span>+91-7303381359</span>
+                        <span>+91 7579811099</span>
                       </a>
                       <a
-                        href="tel:+011456586986"
+                        href="tel:+9520269895"
                         className="contact-feature_link"
                       >
-                        Dev Bhoomi University :<span>+91-7303381359</span>
+                        Dev Bhoomi University :<span>+91 9520269895</span>
                       </a>
                     </div>
                   </div>

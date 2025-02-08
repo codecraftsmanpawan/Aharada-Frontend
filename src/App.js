@@ -38,6 +38,15 @@ import GuestLectureList from "./pages/GuestLecturer/GuestLectureList";
 import Mentors from "./pages/GuestLecturer/Mentors";
 import StudentAmbassador from "./pages/StudentAmbassador/StudentAmbassador";
 import ExploreAI from "./pages/Programs/Program-Explore/Data-Analytics-and-Artificial-Intelligence";
+import AviationTravel from "./pages/Programs/Program-Explore/Aviation-&-Travel";
+import EntrepreneurshipInnovation from "./pages/Programs/Program-Explore/Entrepreneurship-and-Innovation";
+import BScAeronautical from "./pages/Programs/Program-Explore/B.Sc-Aeronautical";
+import AviationManagement from "./pages/Programs/Program-Explore/Aviation-Management";
+import AviationAirportmanagement from "./pages/Programs/Program-Explore/AviationAirportmanagement";
+import AerospaceEngineering from "./pages/Programs/Program-Explore/AerospaceEngineering";
+import DefenceTechnology from "./pages/Programs/Program-Explore/DefenceTechnology";
+import HRAviation from "./pages/Programs/Program-Explore/HRAviation";
+import DronePilotTraining from "./pages/Programs/Program-Explore/DronePilotTraining";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import "./App.css";
@@ -87,10 +96,31 @@ function App() {
         <Route path="/our-mentors" element={<Mentors />} />
         <Route path="/students-ambassador" element={<StudentAmbassador />} />
         <Route path="/guest-lecturer/:id" element={<GuestLecturerDetails />} />
+        <Route path="/data-analytics-and-ai" element={<ExploreAI />} />
+        <Route path="/aviation-and-travel" element={<AviationTravel />} />
         <Route
-          path="Data-Analytics-and-Artificial-Intelligence"
-          element={<ExploreAI />}
+          path="/entrepreneurship-and-innovation"
+          element={<EntrepreneurshipInnovation />}
         />
+        <Route path="/bsc-aeronautical" element={<BScAeronautical />} />
+        <Route
+          path="/mba-aviation-management"
+          element={<AviationManagement />}
+        />
+        <Route
+          path="/aviation-and-airport-management"
+          element={<AviationAirportmanagement />}
+        />
+        <Route
+          path="/btech-aerospace-engineering"
+          element={<AerospaceEngineering />}
+        />
+        <Route
+          path="/mtech-defence-technology"
+          element={<DefenceTechnology />}
+        />
+        <Route path="/mba-hr-aviation" element={<HRAviation />} />
+        <Route path="/drone-pilot-training" element={<DronePilotTraining />} />
       </Routes>
       <Footer />
     </Router>

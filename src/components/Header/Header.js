@@ -5,7 +5,7 @@ import ApplyForm from "../ApplyForm/ApplyForm";
 import { Link } from "react-router-dom";
 import SocialIcon from "./SocialIcon";
 import Marquee from "../../components/Marquee/Marquee";
-// import "./Header.css";
+import "./Header.css";
 Modal.setAppElement("#root");
 
 function Header() {
@@ -15,13 +15,6 @@ function Header() {
 
   // New state for ApplyForm visibility
   const [isFormVisible, setIsFormVisible] = useState(false);
-
-  // Function to open the Programs modal
-
-  // Function to close the Programs modal
-  const closeAcademicsModal = () => {
-    setIsAcademicsModalOpen(false);
-  };
 
   // Toggle mobile menu visibility
   const toggleMobileMenu = () => {
@@ -186,7 +179,6 @@ function Header() {
             </div>
           </div>
         </div>
-
         {/* Menu Area */}
         <div className={`sticky-wrapper ${isSticky ? "sticky" : ""}`}>
           <div className="menu-area">
@@ -206,268 +198,82 @@ function Header() {
                 <div className="col-auto">
                   <div className="row">
                     <div className="col-auto">
-                      <nav
-                        className={`main-menu ${
-                          isMobileMenuOpen
-                            ? "mobile-open"
-                            : "d-none d-lg-inline-block"
-                        }`}
-                      >
+                      <nav className={`main-menu d-none d-lg-inline-block`}>
                         <ul className="menu-list">
                           <li className="active">
-                            <Link
-                              to="/"
-                              onMouseOver={(e) =>
-                                (e.target.style.color = "#67676b")
-                              }
-                              onMouseOut={(e) => (e.target.style.color = "")}
-                            >
-                              Home
-                            </Link>
+                            <Link to="/">Home</Link>
                           </li>
                           <li className="menu-item-has-children">
-                            <Link
-                              to="#"
-                              onMouseOver={(e) =>
-                                (e.target.style.color = "#67676b")
-                              }
-                              onMouseOut={(e) => (e.target.style.color = "")}
-                            >
-                              About us
-                            </Link>
+                            <Link to="#">About Us</Link>
                             <ul className="sub-menu">
                               <li>
-                                <Link
-                                  to="/about"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
-                                  About us
-                                </Link>
+                                <Link to="/about">About Us</Link>
                               </li>
                               <li>
-                                <Link
-                                  to="/team-members"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
-                                  Our Team
-                                </Link>
+                                <Link to="/team-members">Our Team</Link>
                               </li>
                               <li>
-                                <Link
-                                  to="/faculty"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
-                                  Our Faculty
-                                </Link>
+                                <Link to="/faculty">Our Faculty</Link>
                               </li>
                               <li>
-                                <Link
-                                  to="/placement-team"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
-                                  Placement Team
-                                </Link>
+                                <Link to="/placement-team">Placement Team</Link>
                               </li>
                               <li>
-                                <Link
-                                  to="/events"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
-                                  Events
-                                </Link>
+                                <Link to="/events">Events</Link>
                               </li>
                               <li>
-                                <Link
-                                  to="/gallery"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
-                                  Gallery
-                                </Link>
+                                <Link to="/gallery">Gallery</Link>
                               </li>
                               <li>
-                                <Link
-                                  to="/our-guest-Lecturer"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
+                                <Link to="/our-guest-Lecturer">
                                   Our Guest Lecturers
                                 </Link>
                               </li>
                               <li>
-                                <Link
-                                  to="/our-mentors"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
-                                  Our Mantors
-                                </Link>
+                                <Link to="/our-mentors">Our Mentors</Link>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <Link
-                              to="/programs"
-                              onMouseOver={(e) =>
-                                (e.target.style.color = "#67676b")
-                              }
-                              onMouseOut={(e) => (e.target.style.color = "")}
-                            >
-                              Programs
-                            </Link>
+                            <Link to="/programs">Programs</Link>
                           </li>
                           <li className="menu-item-has-children">
-                            <Link
-                              to="#"
-                              onMouseOver={(e) =>
-                                (e.target.style.color = "#67676b")
-                              }
-                              onMouseOut={(e) => (e.target.style.color = "")}
-                            >
-                              Students
-                            </Link>
+                            <Link to="#">Students</Link>
                             <ul className="sub-menu">
                               <li>
-                                <Link
-                                  to="/noticeBoard"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
-                                  Notice
-                                </Link>
+                                <Link to="/noticeBoard">Notice</Link>
                               </li>
                               <li>
-                                <Link
-                                  to="/internship"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
-                                  Internship
-                                </Link>
+                                <Link to="/internship">Internship</Link>
                               </li>
                               <li>
-                                <Link
-                                  to="/placed-students"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
+                                <Link to="/placed-students">
                                   Placed Students
                                 </Link>
                               </li>
                               <li>
-                                <Link
-                                  to="/alumni"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
-                                  Alumni
-                                </Link>
+                                <Link to="/alumni">Alumni</Link>
                               </li>
                               <li>
-                                <Link
-                                  to="/grievance"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
-                                  Grievance
-                                </Link>
+                                <Link to="/grievance">Grievance</Link>
                               </li>
                               <li>
-                                <Link
-                                  to="https://aerospaceclub.org/"
-                                  onMouseOver={(e) =>
-                                    (e.target.style.color = "#67676b")
-                                  }
-                                  onMouseOut={(e) =>
-                                    (e.target.style.color = "")
-                                  }
-                                >
+                                <Link to="https://aerospaceclub.org/">
                                   Our Clubs
                                 </Link>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <Link
-                              to="/blogs"
-                              onMouseOver={(e) =>
-                                (e.target.style.color = "#67676b")
-                              }
-                              onMouseOut={(e) => (e.target.style.color = "")}
-                            >
-                              Blog
-                            </Link>
+                            <Link to="/blogs">Blog</Link>
                           </li>
                           <li>
-                            <Link
-                              to="/contact"
-                              onMouseOver={(e) =>
-                                (e.target.style.color = "#67676b")
-                              }
-                              onMouseOut={(e) => (e.target.style.color = "")}
-                            >
-                              Contact
-                            </Link>
+                            <Link to="/contact">Contact</Link>
                           </li>
                         </ul>
                       </nav>
+
+                      {/* Mobile Menu Toggle Button */}
                       <button
                         type="button"
                         className="th-menu-toggle d-block d-lg-none"
@@ -492,6 +298,78 @@ function Header() {
             </div>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="mobile-menu">
+            <ul className="menu-list">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li className="menu-item-has-children">
+                <Link to="#">About Us</Link>
+                <ul className="sub-menu">
+                  <li>
+                    <Link to="/about">About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/team-members">Our Team</Link>
+                  </li>
+                  <li>
+                    <Link to="/faculty">Our Faculty</Link>
+                  </li>
+                  <li>
+                    <Link to="/placement-team">Placement Team</Link>
+                  </li>
+                  <li>
+                    <Link to="/events">Events</Link>
+                  </li>
+                  <li>
+                    <Link to="/gallery">Gallery</Link>
+                  </li>
+                  <li>
+                    <Link to="/our-guest-Lecturer">Our Guest Lecturers</Link>
+                  </li>
+                  <li>
+                    <Link to="/our-mentors">Our Mentors</Link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <Link to="/programs">Programs</Link>
+              </li>
+              <li className="menu-item-has-children">
+                <Link to="#">Students</Link>
+                <ul className="sub-menu">
+                  <li>
+                    <Link to="/noticeBoard">Notice</Link>
+                  </li>
+                  <li>
+                    <Link to="/internship">Internship</Link>
+                  </li>
+                  <li>
+                    <Link to="/placed-students">Placed Students</Link>
+                  </li>
+                  <li>
+                    <Link to="/alumni">Alumni</Link>
+                  </li>
+                  <li>
+                    <Link to="/grievance">Grievance</Link>
+                  </li>
+                  <li>
+                    <Link to="https://aerospaceclub.org/">Our Clubs</Link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <Link to="/blogs">Blog</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
+        )}
 
         {/* Apply Now Button and ApplyForm */}
         <div

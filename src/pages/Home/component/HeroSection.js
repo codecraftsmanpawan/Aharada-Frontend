@@ -139,7 +139,7 @@ function HeroSection() {
               Get expert guidance for your career.
             </p>
           </div>
-          <a href="tel:+917303381359" className="th-btn">
+          <a href="tel:+7303381360" className="th-btn">
             <i className="fas fa-phone ms-2 mr-5" /> Connect Now
           </a>
         </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./ProfessionalProgramsPage.css";
 import Course from "../Home/component/CouseOffer";
+
 const programs = [
   {
     id: 1,
@@ -9,6 +10,7 @@ const programs = [
     duration: "3 YEARS",
     type: "UG",
     image: "assets/course/ai.jpg",
+    link: "/data-analytics-and-ai",
   },
   {
     id: 2,
@@ -16,6 +18,7 @@ const programs = [
     duration: "3 YEARS",
     type: "UG",
     image: "assets/course/aviation.jpg",
+    link: "/aviation-and-travel",
   },
   {
     id: 3,
@@ -23,14 +26,15 @@ const programs = [
     duration: "3 YEARS",
     type: "UG",
     image: "assets/course/Innovation.jpg",
+    link: "/entrepreneurship-and-innovation",
   },
-
   {
     id: 5,
     title: "B.Sc - Aeronautical",
     duration: "3 YEARS",
     type: "UG",
     image: "assets/course/Aeronautical.jpg",
+    link: "/bsc-aeronautical",
   },
   {
     id: 6,
@@ -38,6 +42,7 @@ const programs = [
     duration: "2 YEARS",
     type: "PG",
     image: "assets/course/AviationManagement.jpg",
+    link: "/mba-aviation-management",
   },
   {
     id: 7,
@@ -45,6 +50,7 @@ const programs = [
     duration: "3 YEARS",
     type: "UG",
     image: "assets/course/Airport.jpg",
+    link: "/aviation-and-airport-management",
   },
   {
     id: 8,
@@ -52,6 +58,7 @@ const programs = [
     duration: "4 YEARS",
     type: "UG",
     image: "assets/course/Aeronautical.jpg",
+    link: "/btech-aerospace-engineering",
   },
   {
     id: 9,
@@ -59,6 +66,7 @@ const programs = [
     duration: "2 YEARS",
     type: "PG",
     image: "assets/course/Technology.jpg",
+    link: "/mtech-defence-technology",
   },
   {
     id: 10,
@@ -66,6 +74,7 @@ const programs = [
     duration: "2 YEARS",
     type: "PG",
     image: "assets/course/hr.jpg",
+    link: "/mba-hr-aviation",
   },
   {
     id: 11,
@@ -73,10 +82,11 @@ const programs = [
     duration: "6 MONTHS",
     type: "UG",
     image: "assets/course/Drone.jpg",
+    link: "/drone-pilot-training",
   },
 ];
 
-function ProgramCard({ title, duration, type, image, onExploreClick }) {
+function ProgramCard({ title, duration, image, onExploreClick }) {
   return (
     <div className="program-card">
       <div className="program-card-body">
@@ -88,19 +98,13 @@ function ProgramCard({ title, duration, type, image, onExploreClick }) {
           </button>
         </div>
       </div>
-      <img
-        src={image}
-        alt={title}
-        className="program-card-image"
-        style={{ height: "350px" }}
-      />
     </div>
   );
 }
 
 function ProgramPage() {
-  const [filter, setFilter] = useState("UG");
-  const navigate = useNavigate(); // Hook to navigate
+  const [filter, setFilter] = useState("All");
+  const navigate = useNavigate();
 
   // Filter programs based on the selected filter
   const filteredPrograms =
@@ -108,71 +112,56 @@ function ProgramPage() {
       ? programs
       : programs.filter((program) => program.type === filter);
 
-  const handleExploreClick = () => {
-    // Navigate to the Explore Page when clicked
-    navigate("/Data-Analytics-and-Artificial-Intelligence");
+  const handleExploreClick = (link) => {
+    // Navigate to the respective static page
+    navigate(link);
   };
 
   return (
     <>
-      <section
-        className="bg-smoke-half"
-        style={{
-          background: "linear-gradient(to bottom, #fdfbf9, #f4ebdd)",
-          padding: "50px",
-        }}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-6 mb-30 mb-xl-0">
-              <div
-                className="cta-box"
-                style={{
-                  backgroundImage: `url('assets/img/update1/bg/cta_bg_5.jpg')`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                }}
-              >
-                <h3 className="cta-title">Apply for admission in 2025</h3>
-                <p className="cta-text">
-                  Completely predominate impactful products for front-end data.
-                  Distinctively reinvent high payoff value whereas one-to-one
-                  mindshare. Seamlessly exploit extensible content after
-                  market-driven.
-                </p>
-                <Link to="/apply-now" className="th-btn">
-                  Apply Now
-                  <i className="fas fa-arrow-right ms-2" />
-                </Link>
-              </div>
+      <div className="our-promise-container">
+        <div className="our-promise-content">
+          <div className="our-promise-text">
+            <p className="promise-title">OUR PROMISE</p>
+            <h2 className="main-heading">
+              Kickstart your career with{" "}
+              <span className="highlight">diverse job opportunities</span>
+            </h2>
+            <div className="graduate-img">
+              <img
+                src="https://png.pngtree.com/png-vector/20240414/ourmid/pngtree-3d-boy-graduate-student-png-image_12286971.png"
+                alt="Graduate"
+              />
             </div>
-            <div className="col-xl-6">
-              <div
-                className="cta-box"
-                style={{
-                  backgroundImage: `url('assets/img/update1/bg/cta_bg_6.jpg')`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                }}
-              >
-                <h3 className="cta-title">Apply for Scholarship</h3>
-                <p className="cta-text">
-                  Completely predominate impactful products for front-end data.
-                  Distinctively reinvent high payoff value whereas one-to-one
-                  mindshare. Seamlessly exploit extensible content after
-                  market-driven.
-                </p>
-                <Link to="/apply-now" className="th-btn">
-                  Apply Now
-                  <i className="fas fa-arrow-right ms-2" />
-                </Link>
-              </div>
+            <Link
+              style={{ marginTop: "-120px" }}
+              to="assets/img/Aharada Brochure.pdf"
+              className="th-btn style3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fas fa-long-arrow-down ms-2" />
+              Download Brochure
+            </Link>
+          </div>
+
+          <div className="job-stats">
+            <div className="stat-box">
+              <strong>150+</strong>
+              <p>Varied job profiles</p>
+            </div>
+            <div className="stat-box">
+              <strong>1100+</strong>
+              <p>Unique job opportunities</p>
+            </div>
+            <div className="stat-box">
+              <strong>28.5%</strong>
+              <p>Students with 2+ job offers</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
       <div className="program-page-container">
         <div className="program-page-filter">
           <h1 className="program-page-title">Explore Our Programs</h1>
@@ -203,15 +192,15 @@ function ProgramPage() {
             </button>
           </div>
         </div>
+
         <div className="program-page-programs">
           {filteredPrograms.map((program) => (
             <ProgramCard
               key={program.id}
               title={program.title}
               duration={program.duration}
-              type={program.type}
               image={program.image}
-              onExploreClick={handleExploreClick}
+              onExploreClick={() => handleExploreClick(program.link)}
             />
           ))}
         </div>

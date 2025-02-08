@@ -1,140 +1,61 @@
-/* Modal Overlay */
-.programs-modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    /* Ensure the modal is above all content */
-}
+/* Mobile View (Phone) */
+@media (max-width: 768px) {
 
-/* Modal Content */
-.programs-modal {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 500px;
-    width: 100%;
-    max-height: 80vh;
-    overflow-y: auto;
-    position: relative;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 10000;
-    /* Modal content above overlay */
-}
-
-/* Modal Close Button */
-.modal-close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    background: transparent;
-    border: none;
-    color: #333;
-    cursor: pointer;
-}
-
-.modal-close-button:hover {
-    color: #000;
-}
-
-/* Programs List Styling */
-.programs-modal h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-.programs-modal ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.programs-modal li {
-    padding: 10px;
-    font-size: 18px;
-    color: #555;
-    border-bottom: 1px solid #eee;
-}
-
-.programs-modal li:last-child {
-    border-bottom: none;
-}
-
-.programs-modal li:hover {
-    background-color: #f7f7f7;
-    cursor: pointer;
-}
-.header-top {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.header-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-social a {
-    margin-right: 10px;
-}
-
-.header-social span {
-    font-size: 14px;
-    margin-right: 10px;
-}
-/* Header.css */
-
-/* Hide the menu by default on mobile */
-.main-menu.desktop-menu {
-    display: none;
-}
-
-@media (min-width: 992px) {
-
-    /* Assuming lg breakpoint is 992px */
-    .main-menu.desktop-menu {
-        display: block !important;
+    /* Menu items in mobile are stacked vertically */
+    .menu-list {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 2px -2px gray;
+        margin: 0;
     }
-}
 
-/* Display the menu when mobile-open is active */
-.main-menu.mobile-open {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #145f8b;
-    /* Match header background or desired color */
-    z-index: 9999;
-}
+    /* Mobile Menu Toggle Button */
+    .th-menu-toggle {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+        /* Ensure it stays on top */
+        background: transparent;
+        border: none;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
 
-/* Style adjustments for mobile menu */
-.menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+    /* Mobile Menu */
+    .mobile-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: block;
+        z-index: 1000;
+    }
 
-.menu-list li {
-    padding: 10px 20px;
-}
+    /* Style for each menu item */
+    .menu-list li {
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+        font-size: 16px;
+        color: black;
+    }
 
-.menu-list li a {
-    color: #fff;
-    text-decoration: none;
-}
+    .menu-list a {
+        text-decoration: none;
+        color: black;
+    }
 
-.menu-list li a:hover {
-    color: #ddd;
+    .menu-list a:hover {
+        color: #67676b;
+    }
 }

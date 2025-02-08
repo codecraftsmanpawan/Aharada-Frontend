@@ -3,11 +3,12 @@ import "./ai.css";
 import { useNavigate } from "react-router-dom";
 
 import {
-  FaRegCheckCircle,
-  FaProjectDiagram,
   FaGraduationCap,
-  FaCertificate,
+  FaRegCheckCircle,
+  FaPlane,
+  FaBriefcase,
   FaGlobe,
+  FaGlobeAmericas,
   FaMoneyBillWave,
   FaUserTie,
   FaBuilding,
@@ -17,7 +18,13 @@ import {
   FaCheckCircle,
   FaUniversity,
   FaDollarSign,
+  FaCertificate,
+  FaBookOpen,
+  FaUsers,
+  FaChartLine,
+  FaShieldAlt,
 } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import Testimonials from "../../../components/Testimonials/Testimonials";
@@ -26,48 +33,51 @@ import Course from "../../Home/component/CouseOffer";
 
 const offerings = [
   {
-    text: "40+ industry-led sessions and workshops by experts in Data Analytics, AI, and Machine Learning",
-    icon: <FaUserTie />,
+    text: "Comprehensive training in military systems, missile technologies, cyber warfare, and defence communication",
+    icon: <FaShieldAlt />,
   },
   {
-    text: "Develop a professional portfolio showcasing data analysis projects, machine learning models, and AI applications to enhance employability",
-    icon: <FaProjectDiagram />,
+    text: "Career opportunities in defence research, missile defence systems, cyber security, and strategic defence analysis",
+    icon: <FaChartLine />,
   },
   {
-    text: "Access to seed funding up to 5 Cr through collaboration with industry partners and incubators for AI-driven startups",
-    icon: <FaMoneyBillWave />,
+    text: "Hands-on internships and live projects with defence agencies, military organizations, and research institutions",
+    icon: <FaBriefcase />,
   },
   {
-    text: "10 days of global immersion in top tech hubs like Silicon Valley or Bengaluru to experience cutting-edge data analytics and AI technologies",
-    icon: <FaGlobe />,
+    text: "Exposure to the latest defence technologies, cybersecurity protocols, and national security strategies",
+    icon: <FaLightbulb />,
   },
   {
-    text: "Capstone projects every semester focused on real-world data analysis and AI problem-solving",
-    icon: <FaProjectDiagram />,
+    text: "Industry-aligned curriculum with practical simulations, defense R&D, and real-world case studies",
+    icon: <FaBookOpen />,
   },
   {
-    text: "Choose from 8 specialized certifications in areas like Data Science, Machine Learning, AI Algorithms, and Data Visualization",
+    text: "Recognized certifications in Missile Technology, Cyber Warfare, Strategic Defence, and Defence Systems Engineering",
     icon: <FaCertificate />,
   },
   {
-    text: "14 days of student exchange programs with top global universities focused on Data Analytics and AI",
-    icon: <FaGraduationCap />,
+    text: "Development of leadership, analytical, and decision-making skills for defence professionals",
+    icon: <FaUsers />,
   },
 ];
 
 const whoCanDoMCA = [
   {
-    text: "Completed class 12th in any stream with a strong interest in data analytics and artificial intelligence",
-    icon: "⭐",
+    text: "Students who have completed a B.Tech or equivalent in Engineering, preferably with a background in Electronics, Mechanical, or Computer Science, and a passion for defence technology",
+    icon: "🚀",
   },
   {
-    text: "Graduates with a background in IT, Computer Science, Mathematics, or related fields",
-    icon: "⭐",
+    text: "Aspirants interested in careers in military systems, missile technologies, cyber security, and defence R&D",
+    icon: "🛡️",
   },
-  { text: "Minimum 50% marks in class 12th or equivalent", icon: "⭐" },
   {
-    text: "Passion for working with data, machine learning models, and AI technologies",
-    icon: "⭐",
+    text: "Minimum 60% marks in B.Tech (eligibility criteria may vary by institution)",
+    icon: "📚",
+  },
+  {
+    text: "Individuals aiming for roles in defence research, missile defence systems, strategic defence analysis, and military technology development",
+    icon: "🛠️",
   },
 ];
 
@@ -143,55 +153,55 @@ const companyPartners = [
 const mcaSummary = [
   {
     icon: <FaGraduationCap />,
-    text: "BBA in Data Analytics and Artificial Intelligence is an undergraduate program focused on data analysis, machine learning, and AI technology, preparing students for roles in the rapidly growing data science and AI fields.",
+    text: "M.Tech in Defence Technology is a postgraduate program focused on advanced defence technologies, military systems, missile systems, cyber security, and strategic defence.",
   },
   {
     icon: <FaUniversity />,
-    text: "This course is ideal for students who want to specialize in data analytics, artificial intelligence, and machine learning, regardless of their previous educational background.",
+    text: "This course is ideal for students aspiring to build careers in defence research, military systems, cyber warfare, missile defence, and national security.",
   },
   {
     icon: <FaCheckCircle />,
-    text: "The duration of the BBA - Data Analytics and AI program is 3 years, divided into 6 semesters, providing a comprehensive understanding of both business and technology.",
+    text: "The regular M.Tech in Defence Technology course duration is 2 years, divided into 4 semesters, including research work, live defence projects, and internships with defence agencies.",
   },
   {
     icon: <FaDollarSign />,
-    text: "The average starting salary for graduates in this field ranges from 4-8 Lakhs per year, depending on roles, skills, and industry experience in data analytics and AI.",
+    text: "The average starting salary for graduates in this field ranges from 8-15 Lakhs per year, depending on job roles, experience, and employer.",
   },
   {
     icon: <FaLightbulb />,
-    text: "Graduates can pursue careers in data analysis, AI development, machine learning, business intelligence, and data-driven decision-making across various industries.",
+    text: "Career opportunities include roles in defence technology research, missile systems engineering, cyber security, strategic defence analysis, and defence consulting.",
   },
   {
     icon: <FaBuilding />,
-    text: "Top companies hiring BBA - Data Analytics and AI graduates include tech giants like Google, Microsoft, Amazon, IBM, and various data-centric firms, offering excellent career prospects.",
+    text: "Top recruiters in this field include defence organizations like DRDO, ISRO, Indian Army, Indian Navy, private defence companies, and international military contractors.",
   },
 ];
 
 const campuses = [
-  {
-    name: "IIMT University, Meerut",
-    program: "MCA Program | UGC approved",
-    specialisations: 6,
-    certifications: 10,
-    fees: "₹ 3.40 Lacs",
-    images: [
-      "assets/placement/iimt1.jpg",
-      "assets/placement/iimt2.jpg",
-      "assets/placement/iimt3.jpg",
-    ],
-  },
-  {
-    name: "SAGE University Indore",
-    program: "MCA Program | UGC recognised",
-    specialisations: 3,
-    certifications: 10,
-    fees: "₹ 3.88 Lacs",
-    images: [
-      "assets/placement/sage1.jpg",
-      "assets/placement/sage2.jpg",
-      "assets/placement/sage3.webp",
-    ],
-  },
+  //   {
+  //     name: "IIMT University, Meerut",
+  //     program: "MCA Program | UGC approved",
+  //     specialisations: 6,
+  //     certifications: 10,
+  //     fees: "₹ 3.40 Lacs",
+  //     images: [
+  //       "assets/placement/iimt1.jpg",
+  //       "assets/placement/iimt2.jpg",
+  //       "assets/placement/iimt3.jpg",
+  //     ],
+  //   },
+  //   {
+  //     name: "SAGE University Indore",
+  //     program: "MCA Program | UGC recognised",
+  //     specialisations: 3,
+  //     certifications: 10,
+  //     fees: "₹ 3.88 Lacs",
+  //     images: [
+  //       "assets/placement/sage1.jpg",
+  //       "assets/placement/sage2.jpg",
+  //       "assets/placement/sage3.webp",
+  //     ],
+  //   },
   {
     name: "Subharti University, Meerut",
     program: "MCA Program | UGC recognised",
@@ -204,18 +214,18 @@ const campuses = [
       "assets/placement/Subharti3.png",
     ],
   },
-  {
-    name: "Dev Bhoomi Uttarakhand University",
-    program: "MCA Program | AICTE approved",
-    specialisations: 4,
-    certifications: 8,
-    fees: "₹ 4.00 Lacs",
-    images: [
-      "assets/placement/dev1.jpeg",
-      "assets/placement/dev1.jpeg",
-      "assets/placement/dev3.jpg",
-    ],
-  },
+  //   {
+  //     name: "Dev Bhoomi Uttarakhand University",
+  //     program: "MCA Program | AICTE approved",
+  //     specialisations: 4,
+  //     certifications: 8,
+  //     fees: "₹ 4.00 Lacs",
+  //     images: [
+  //       "assets/placement/dev1.jpeg",
+  //       "assets/placement/dev1.jpeg",
+  //       "assets/placement/dev3.jpg",
+  //     ],
+  //   },
 ];
 
 const campusSettings = {
@@ -257,7 +267,7 @@ const imageSettings = {
   arrows: false,
 };
 
-const OurPromise = () => {
+const DefenceTechnology = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
   const toggleAccordion = (index) => {
@@ -274,30 +284,30 @@ const OurPromise = () => {
   return (
     <>
       <div className="mca-highlights-container">
-        <h1 className="mca-title">
-          BBA - Data Analytics and Artificial Intelligence Highlights
-        </h1>
+        <h1 className="mca-title">M.Tech - Defence Technology Highlights</h1>
         <p className="mca-description">
-          Dive deep into data-driven decision-making, machine learning, and AI
-          technology, equipping yourself with the necessary tools and skills to
-          excel in the fields of data analytics and artificial intelligence.
+          Gain advanced knowledge in military systems, defence technologies,
+          cyber warfare, missile systems, and strategic defense, preparing you
+          for leadership roles in the defense sector.
         </p>
         <div className="highlight-cards">
           <div className="highlight-card">
-            <p className="highlight-number">3</p>
+            <p className="highlight-number">2</p>
             <p className="highlight-text">YEAR FULL-TIME PROGRAM</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">5+</p>
-            <p className="highlight-text">SPECIALISATIONS OFFERED*</p>
+            <p className="highlight-number">25+</p>
+            <p className="highlight-text">DEFENCE INDUSTRY PARTNERS</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">6+</p>
-            <p className="highlight-text">MONTHS OF INTERNSHIPS*</p>
+            <p className="highlight-number">10+</p>
+            <p className="highlight-text">SPECIALIZED CERTIFICATIONS</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">3</p>
-            <p className="highlight-text">CAPSTONE PROJECTS</p>
+            <p className="highlight-number">4</p>
+            <p className="highlight-text">
+              INTERNSHIPS & LIVE PROJECTS WITH DEFENCE AGENCIES
+            </p>
           </div>
         </div>
       </div>
@@ -341,10 +351,6 @@ const OurPromise = () => {
               <strong>28.5%</strong>
               <p>Students with 2+ job offers</p>
             </div>
-            <div className="stat-box">
-              <strong>28.5%</strong>
-              <p>Students with 2+ job offers</p>
-            </div>
           </div>
         </div>
       </div>
@@ -374,11 +380,11 @@ const OurPromise = () => {
 
         <div className="who-can-do-mca">
           <h1 className="who-can-do-title">
-            Who can do BBA - Data Analytics and Artificial Intelligence?
+            Who can do M.Tech - Defence Technology?
           </h1>
           <div className="mca-criteria">
             <div className="criteria-left">
-              {whoCanDoMCA.slice(0, 3).map((criteria, index) => (
+              {whoCanDoMCA.slice(0, 4).map((criteria, index) => (
                 <div className="criteria-item" key={index}>
                   <span className="criteria-icon">{criteria.icon}</span>
                   <span className="criteria-text">{criteria.text}</span>
@@ -416,7 +422,7 @@ const OurPromise = () => {
       <div className="mca-page">
         <div className="key-offerings">
           <h1 className="offerings-title">
-            BBA - Data Analytics and Artificial Intelligence Summary
+            M.Tech - Defence Technology Summary
           </h1>
           <div className="offerings-list">
             <div className="offerings-left">
@@ -437,7 +443,6 @@ const OurPromise = () => {
             </div>
           </div>
         </div>
-
         <div className="faq-section">
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
@@ -448,15 +453,14 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is BBA - Data Analytics and Artificial Intelligence?</p>
+                <p>What is M.Tech - Defence Technology?</p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  BBA in Data Analytics and Artificial Intelligence is an
-                  undergraduate program that focuses on data-driven
-                  decision-making, statistical analysis, machine learning, and
-                  AI technologies to prepare students for the rapidly growing
-                  field of data science and AI.
+                  M.Tech in Defence Technology is a postgraduate program that
+                  focuses on military systems, defence technologies, missile
+                  systems, cyber warfare, strategic defence, and advanced
+                  technologies in national security.
                 </div>
               )}
             </div>
@@ -467,18 +471,15 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>
-                  Why is BBA - Data Analytics and Artificial Intelligence
-                  important?
-                </p>
+                <p>Why should I choose M.Tech - Defence Technology?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program equips students with essential skills in **data
-                  analytics**, **machine learning**, and **artificial
-                  intelligence**, making them highly sought-after for roles in
-                  various industries such as finance, healthcare, and
-                  technology.
+                  This program equips students with in-depth knowledge of
+                  advanced defence technologies, cyber security, missile
+                  systems, and strategic defense, preparing them for leadership
+                  roles in the defense sector, including research and
+                  development.
                 </div>
               )}
             </div>
@@ -490,16 +491,15 @@ const OurPromise = () => {
               >
                 <FaLightbulb className="accordion-icon icon-3" />
                 <p>
-                  What are the specialisations in BBA - Data Analytics and
-                  Artificial Intelligence?
+                  What career opportunities are available after this course?
                 </p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  BBA in Data Analytics and AI specialisations include **Big
-                  Data Analytics**, **Machine Learning**, **Artificial
-                  Intelligence**, **Data Science**, and **Business
-                  Intelligence**.
+                  Graduates can work in defence technology research, missile
+                  systems, cyber security, defense consulting, strategic defence
+                  analysis, and defence R&D, with top defense agencies and
+                  organizations.
                 </div>
               )}
             </div>
@@ -510,17 +510,14 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>
-                  What career opportunities are available after completing BBA
-                  in Data Analytics and AI?
-                </p>
+                <p>Does this program include industry exposure?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Graduates can work in roles such as **Data Analyst**, **AI
-                  Specialist**, **Business Intelligence Analyst**, **Machine
-                  Learning Engineer**, and **Data Scientist** in sectors like
-                  technology, finance, and healthcare.
+                  Yes, students gain hands-on experience through internships
+                  with defence agencies, live projects, and exposure to
+                  real-world military systems and defence technology
+                  applications.
                 </div>
               )}
             </div>
@@ -531,13 +528,14 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Does this program include industry exposure?</p>
+                <p>What are the key skills gained from this course?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  Yes, students gain industry exposure through **internships**,
-                  **live projects**, and **collaborations** with tech companies,
-                  allowing them to apply their skills in real-world scenarios.
+                  The program develops expertise in military systems, defence
+                  technology, cyber warfare, missile defence systems, strategic
+                  analysis, and security management, alongside critical thinking
+                  and problem-solving skills.
                 </div>
               )}
             </div>
@@ -548,32 +546,14 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What are the key skills gained from this course?</p>
+                <p>What certifications can I earn during this program?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students will develop skills in **data analysis**, **machine
-                  learning**, **AI algorithms**, **data visualization**, and
-                  **statistical programming** using tools like **Python**,
-                  **R**, and **SQL**.
-                </div>
-              )}
-            </div>
-
-            <div className="accordion-item">
-              <div
-                className="accordion-header accordion-header-1"
-                onClick={() => toggleAccordion(6)}
-              >
-                <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What certifications can I earn during this program?</p>
-              </div>
-              {activeIndex === 6 && (
-                <div className="accordion-body">
-                  Students can earn certifications in **Data Analytics**,
-                  **Artificial Intelligence**, **Machine Learning**, **Business
-                  Intelligence**, and industry-recognized programs from
-                  platforms like **Microsoft**, **IBM**, and **Google**.
+                  Students can earn certifications in Cyber Warfare, Missile
+                  Technology, Defence Systems Engineering, and Strategic
+                  Defence, with potential certifications from defense
+                  organizations and industry bodies.
                 </div>
               )}
             </div>
@@ -623,4 +603,4 @@ const OurPromise = () => {
   );
 };
 
-export default OurPromise;
+export default DefenceTechnology;

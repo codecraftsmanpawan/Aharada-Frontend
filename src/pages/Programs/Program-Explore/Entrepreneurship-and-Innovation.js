@@ -3,11 +3,12 @@ import "./ai.css";
 import { useNavigate } from "react-router-dom";
 
 import {
-  FaRegCheckCircle,
-  FaProjectDiagram,
   FaGraduationCap,
-  FaCertificate,
+  FaRegCheckCircle,
+  FaPlane,
+  FaBriefcase,
   FaGlobe,
+  FaGlobeAmericas,
   FaMoneyBillWave,
   FaUserTie,
   FaBuilding,
@@ -17,7 +18,12 @@ import {
   FaCheckCircle,
   FaUniversity,
   FaDollarSign,
+  FaCertificate,
+  FaBookOpen,
+  FaUsers,
+  FaRocket,
 } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import Testimonials from "../../../components/Testimonials/Testimonials";
@@ -26,47 +32,43 @@ import Course from "../../Home/component/CouseOffer";
 
 const offerings = [
   {
-    text: "40+ industry-led sessions and workshops by experts in Data Analytics, AI, and Machine Learning",
-    icon: <FaUserTie />,
+    text: "Hands-on training in entrepreneurship and business innovation",
+    icon: <FaLightbulb />,
   },
   {
-    text: "Develop a professional portfolio showcasing data analysis projects, machine learning models, and AI applications to enhance employability",
-    icon: <FaProjectDiagram />,
+    text: "Opportunities to launch and scale your own startup",
+    icon: <FaRocket />,
   },
   {
-    text: "Access to seed funding up to 5 Cr through collaboration with industry partners and incubators for AI-driven startups",
-    icon: <FaMoneyBillWave />,
+    text: "Internships with startups, incubators, and venture capital firms",
+    icon: <FaBriefcase />,
   },
   {
-    text: "10 days of global immersion in top tech hubs like Silicon Valley or Bengaluru to experience cutting-edge data analytics and AI technologies",
-    icon: <FaGlobe />,
+    text: "Global exposure to startup ecosystems and business networking",
+    icon: <FaGlobeAmericas />,
   },
   {
-    text: "Capstone projects every semester focused on real-world data analysis and AI problem-solving",
-    icon: <FaProjectDiagram />,
+    text: "Industry-focused curriculum with real-world case studies",
+    icon: <FaBookOpen />,
   },
   {
-    text: "Choose from 8 specialized certifications in areas like Data Science, Machine Learning, AI Algorithms, and Data Visualization",
+    text: "Certifications in business strategy, financial planning, and digital marketing",
     icon: <FaCertificate />,
   },
   {
-    text: "14 days of student exchange programs with top global universities focused on Data Analytics and AI",
-    icon: <FaGraduationCap />,
+    text: "Soft skills and leadership training for future business leaders",
+    icon: <FaUsers />,
   },
 ];
 
 const whoCanDoMCA = [
+  { text: "Passed class 12th from a recognized board", icon: "⭐" },
   {
-    text: "Completed class 12th in any stream with a strong interest in data analytics and artificial intelligence",
+    text: "Aspiring entrepreneurs and business enthusiasts interested in startups and innovation",
     icon: "⭐",
   },
   {
-    text: "Graduates with a background in IT, Computer Science, Mathematics, or related fields",
-    icon: "⭐",
-  },
-  { text: "Minimum 50% marks in class 12th or equivalent", icon: "⭐" },
-  {
-    text: "Passion for working with data, machine learning models, and AI technologies",
+    text: "Minimum 50% marks in class 12th (may vary by institution)",
     icon: "⭐",
   },
 ];
@@ -143,27 +145,27 @@ const companyPartners = [
 const mcaSummary = [
   {
     icon: <FaGraduationCap />,
-    text: "BBA in Data Analytics and Artificial Intelligence is an undergraduate program focused on data analysis, machine learning, and AI technology, preparing students for roles in the rapidly growing data science and AI fields.",
+    text: "The full form of BBA - Entrepreneurship & Innovation is Bachelor of Business Administration in Entrepreneurship & Innovation, a specialized undergraduate course.",
   },
   {
     icon: <FaUniversity />,
-    text: "This course is ideal for students who want to specialize in data analytics, artificial intelligence, and machine learning, regardless of their previous educational background.",
+    text: "This course is designed for aspiring entrepreneurs, business leaders, and innovators who want to start their own ventures or drive innovation in organizations.",
   },
   {
     icon: <FaCheckCircle />,
-    text: "The duration of the BBA - Data Analytics and AI program is 3 years, divided into 6 semesters, providing a comprehensive understanding of both business and technology.",
+    text: "A regular BBA - Entrepreneurship & Innovation course duration is 3 years, divided into 6 semesters, including startup incubation and hands-on projects.",
   },
   {
     icon: <FaDollarSign />,
-    text: "The average starting salary for graduates in this field ranges from 4-8 Lakhs per year, depending on roles, skills, and industry experience in data analytics and AI.",
+    text: "The earning potential varies widely, with startup founders and business professionals earning based on their venture's success and market demand.",
   },
   {
     icon: <FaLightbulb />,
-    text: "Graduates can pursue careers in data analysis, AI development, machine learning, business intelligence, and data-driven decision-making across various industries.",
+    text: "Career opportunities include startup founder, business consultant, innovation manager, venture capitalist, and roles in business development.",
   },
   {
     icon: <FaBuilding />,
-    text: "Top companies hiring BBA - Data Analytics and AI graduates include tech giants like Google, Microsoft, Amazon, IBM, and various data-centric firms, offering excellent career prospects.",
+    text: "Graduates may start their own ventures or work with top firms like Deloitte, EY, McKinsey, and startup incubators that support innovative businesses.",
   },
 ];
 
@@ -180,42 +182,42 @@ const campuses = [
       "assets/placement/iimt3.jpg",
     ],
   },
-  {
-    name: "SAGE University Indore",
-    program: "MCA Program | UGC recognised",
-    specialisations: 3,
-    certifications: 10,
-    fees: "₹ 3.88 Lacs",
-    images: [
-      "assets/placement/sage1.jpg",
-      "assets/placement/sage2.jpg",
-      "assets/placement/sage3.webp",
-    ],
-  },
-  {
-    name: "Subharti University, Meerut",
-    program: "MCA Program | UGC recognised",
-    specialisations: 6,
-    certifications: 10,
-    fees: "₹ 3.10 Lacs",
-    images: [
-      "assets/placement/Subharti1.webp",
-      "assets/placement/Subharti1.webp",
-      "assets/placement/Subharti3.png",
-    ],
-  },
-  {
-    name: "Dev Bhoomi Uttarakhand University",
-    program: "MCA Program | AICTE approved",
-    specialisations: 4,
-    certifications: 8,
-    fees: "₹ 4.00 Lacs",
-    images: [
-      "assets/placement/dev1.jpeg",
-      "assets/placement/dev1.jpeg",
-      "assets/placement/dev3.jpg",
-    ],
-  },
+  //   {
+  //     name: "SAGE University Indore",
+  //     program: "MCA Program | UGC recognised",
+  //     specialisations: 3,
+  //     certifications: 10,
+  //     fees: "₹ 3.88 Lacs",
+  //     images: [
+  //       "assets/placement/sage1.jpg",
+  //       "assets/placement/sage2.jpg",
+  //       "assets/placement/sage3.webp",
+  //     ],
+  //   },
+  //   {
+  //     name: "Subharti University, Meerut",
+  //     program: "MCA Program | UGC recognised",
+  //     specialisations: 6,
+  //     certifications: 10,
+  //     fees: "₹ 3.10 Lacs",
+  //     images: [
+  //       "assets/placement/Subharti1.webp",
+  //       "assets/placement/Subharti1.webp",
+  //       "assets/placement/Subharti3.png",
+  //     ],
+  //   },
+  //   {
+  //     name: "Dev Bhoomi Uttarakhand University",
+  //     program: "MCA Program | AICTE approved",
+  //     specialisations: 4,
+  //     certifications: 8,
+  //     fees: "₹ 4.00 Lacs",
+  //     images: [
+  //       "assets/placement/dev1.jpeg",
+  //       "assets/placement/dev1.jpeg",
+  //       "assets/placement/dev3.jpg",
+  //     ],
+  //   },
 ];
 
 const campusSettings = {
@@ -257,7 +259,7 @@ const imageSettings = {
   arrows: false,
 };
 
-const OurPromise = () => {
+const EntrepreneurshipInnovation = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
   const toggleAccordion = (index) => {
@@ -275,12 +277,11 @@ const OurPromise = () => {
     <>
       <div className="mca-highlights-container">
         <h1 className="mca-title">
-          BBA - Data Analytics and Artificial Intelligence Highlights
+          BBA - Entrepreneurship & Innovation Highlights
         </h1>
         <p className="mca-description">
-          Dive deep into data-driven decision-making, machine learning, and AI
-          technology, equipping yourself with the necessary tools and skills to
-          excel in the fields of data analytics and artificial intelligence.
+          Unlock your entrepreneurial potential with a curriculum designed to
+          foster innovation, business acumen, and leadership skills.
         </p>
         <div className="highlight-cards">
           <div className="highlight-card">
@@ -288,16 +289,16 @@ const OurPromise = () => {
             <p className="highlight-text">YEAR FULL-TIME PROGRAM</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">5+</p>
-            <p className="highlight-text">SPECIALISATIONS OFFERED*</p>
+            <p className="highlight-number">50+</p>
+            <p className="highlight-text">STARTUP INCUBATION SUPPORT</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">6+</p>
-            <p className="highlight-text">MONTHS OF INTERNSHIPS*</p>
+            <p className="highlight-number">10+</p>
+            <p className="highlight-text">BUSINESS & LEADERSHIP WORKSHOPS</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">3</p>
-            <p className="highlight-text">CAPSTONE PROJECTS</p>
+            <p className="highlight-number">₹10 Cr</p>
+            <p className="highlight-text">SEED FUNDING OPPORTUNITIES</p>
           </div>
         </div>
       </div>
@@ -341,10 +342,6 @@ const OurPromise = () => {
               <strong>28.5%</strong>
               <p>Students with 2+ job offers</p>
             </div>
-            <div className="stat-box">
-              <strong>28.5%</strong>
-              <p>Students with 2+ job offers</p>
-            </div>
           </div>
         </div>
       </div>
@@ -374,7 +371,7 @@ const OurPromise = () => {
 
         <div className="who-can-do-mca">
           <h1 className="who-can-do-title">
-            Who can do BBA - Data Analytics and Artificial Intelligence?
+            Who can do BBA - Entrepreneurship & Innovation?
           </h1>
           <div className="mca-criteria">
             <div className="criteria-left">
@@ -416,7 +413,7 @@ const OurPromise = () => {
       <div className="mca-page">
         <div className="key-offerings">
           <h1 className="offerings-title">
-            BBA - Data Analytics and Artificial Intelligence Summary
+            BBA - Entrepreneurship & Innovation Summary
           </h1>
           <div className="offerings-list">
             <div className="offerings-left">
@@ -448,15 +445,13 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is BBA - Data Analytics and Artificial Intelligence?</p>
+                <p>What is BBA - Entrepreneurship & Innovation?</p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  BBA in Data Analytics and Artificial Intelligence is an
-                  undergraduate program that focuses on data-driven
-                  decision-making, statistical analysis, machine learning, and
-                  AI technologies to prepare students for the rapidly growing
-                  field of data science and AI.
+                  BBA - Entrepreneurship & Innovation is an undergraduate
+                  program designed to equip students with the skills needed to
+                  launch, manage, and scale businesses successfully.
                 </div>
               )}
             </div>
@@ -467,18 +462,13 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>
-                  Why is BBA - Data Analytics and Artificial Intelligence
-                  important?
-                </p>
+                <p>Why should I choose BBA - Entrepreneurship & Innovation?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program equips students with essential skills in **data
-                  analytics**, **machine learning**, and **artificial
-                  intelligence**, making them highly sought-after for roles in
-                  various industries such as finance, healthcare, and
-                  technology.
+                  This program provides a strong foundation in business
+                  strategy, financial management, marketing, and innovation,
+                  helping students become future-ready entrepreneurs.
                 </div>
               )}
             </div>
@@ -490,16 +480,14 @@ const OurPromise = () => {
               >
                 <FaLightbulb className="accordion-icon icon-3" />
                 <p>
-                  What are the specialisations in BBA - Data Analytics and
-                  Artificial Intelligence?
+                  What career opportunities are available after this course?
                 </p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  BBA in Data Analytics and AI specialisations include **Big
-                  Data Analytics**, **Machine Learning**, **Artificial
-                  Intelligence**, **Data Science**, and **Business
-                  Intelligence**.
+                  Graduates can start their own businesses, work in startup
+                  incubation, venture capital firms, business consulting, or
+                  take leadership roles in corporate innovation teams.
                 </div>
               )}
             </div>
@@ -510,17 +498,13 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>
-                  What career opportunities are available after completing BBA
-                  in Data Analytics and AI?
-                </p>
+                <p>Does this program include internships?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Graduates can work in roles such as **Data Analyst**, **AI
-                  Specialist**, **Business Intelligence Analyst**, **Machine
-                  Learning Engineer**, and **Data Scientist** in sectors like
-                  technology, finance, and healthcare.
+                  Yes, students get hands-on experience through startup
+                  internships, incubation center projects, and real-world
+                  business mentorship programs.
                 </div>
               )}
             </div>
@@ -531,13 +515,13 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Does this program include industry exposure?</p>
+                <p>What are the key skills gained from this course?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  Yes, students gain industry exposure through **internships**,
-                  **live projects**, and **collaborations** with tech companies,
-                  allowing them to apply their skills in real-world scenarios.
+                  The course focuses on entrepreneurial mindset, business
+                  planning, leadership, innovation management, financial
+                  literacy, and digital marketing.
                 </div>
               )}
             </div>
@@ -548,32 +532,13 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What are the key skills gained from this course?</p>
+                <p>What certifications can I earn during this program?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students will develop skills in **data analysis**, **machine
-                  learning**, **AI algorithms**, **data visualization**, and
-                  **statistical programming** using tools like **Python**,
-                  **R**, and **SQL**.
-                </div>
-              )}
-            </div>
-
-            <div className="accordion-item">
-              <div
-                className="accordion-header accordion-header-1"
-                onClick={() => toggleAccordion(6)}
-              >
-                <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What certifications can I earn during this program?</p>
-              </div>
-              {activeIndex === 6 && (
-                <div className="accordion-body">
-                  Students can earn certifications in **Data Analytics**,
-                  **Artificial Intelligence**, **Machine Learning**, **Business
-                  Intelligence**, and industry-recognized programs from
-                  platforms like **Microsoft**, **IBM**, and **Google**.
+                  Students can earn certifications in business strategy, startup
+                  management, financial planning, leadership, and digital
+                  marketing tools like Google Ads & SEO.
                 </div>
               )}
             </div>
@@ -623,4 +588,4 @@ const OurPromise = () => {
   );
 };
 
-export default OurPromise;
+export default EntrepreneurshipInnovation;

@@ -3,11 +3,12 @@ import "./ai.css";
 import { useNavigate } from "react-router-dom";
 
 import {
-  FaRegCheckCircle,
-  FaProjectDiagram,
   FaGraduationCap,
-  FaCertificate,
+  FaRegCheckCircle,
+  FaPlane,
+  FaBriefcase,
   FaGlobe,
+  FaGlobeAmericas,
   FaMoneyBillWave,
   FaUserTie,
   FaBuilding,
@@ -17,7 +18,12 @@ import {
   FaCheckCircle,
   FaUniversity,
   FaDollarSign,
+  FaCertificate,
+  FaBookOpen,
+  FaUsers,
+  FaChartLine,
 } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import Testimonials from "../../../components/Testimonials/Testimonials";
@@ -26,47 +32,50 @@ import Course from "../../Home/component/CouseOffer";
 
 const offerings = [
   {
-    text: "40+ industry-led sessions and workshops by experts in Data Analytics, AI, and Machine Learning",
-    icon: <FaUserTie />,
+    text: "In-depth training in airport management, airline operations, and aviation logistics",
+    icon: <FaPlane />,
   },
   {
-    text: "Develop a professional portfolio showcasing data analysis projects, machine learning models, and AI applications to enhance employability",
-    icon: <FaProjectDiagram />,
+    text: "Exciting career paths in airport operations, airline management, air cargo, and aviation consultancy",
+    icon: <FaChartLine />,
   },
   {
-    text: "Access to seed funding up to 5 Cr through collaboration with industry partners and incubators for AI-driven startups",
-    icon: <FaMoneyBillWave />,
+    text: "Hands-on internships and live projects with top airlines, airports, and aviation firms",
+    icon: <FaBriefcase />,
   },
   {
-    text: "10 days of global immersion in top tech hubs like Silicon Valley or Bengaluru to experience cutting-edge data analytics and AI technologies",
-    icon: <FaGlobe />,
+    text: "Exposure to the latest aviation industry trends, safety protocols, and regulatory policies",
+    icon: <FaLightbulb />,
   },
   {
-    text: "Capstone projects every semester focused on real-world data analysis and AI problem-solving",
-    icon: <FaProjectDiagram />,
+    text: "Industry-aligned curriculum with real-world case studies and practical simulations",
+    icon: <FaBookOpen />,
   },
   {
-    text: "Choose from 8 specialized certifications in areas like Data Science, Machine Learning, AI Algorithms, and Data Visualization",
+    text: "Recognized certifications in Airline Management, IATA programs, and Aviation Safety & Security",
     icon: <FaCertificate />,
   },
   {
-    text: "14 days of student exchange programs with top global universities focused on Data Analytics and AI",
-    icon: <FaGraduationCap />,
+    text: "Enhancement of leadership, soft skills, and strategic decision-making for aviation professionals",
+    icon: <FaUsers />,
   },
 ];
 
 const whoCanDoMCA = [
   {
-    text: "Completed class 12th in any stream with a strong interest in data analytics and artificial intelligence",
+    text: "Students who have completed 10+2 (any stream) with a passion for aviation and airport management",
     icon: "⭐",
   },
   {
-    text: "Graduates with a background in IT, Computer Science, Mathematics, or related fields",
+    text: "Aspirants interested in careers in airline operations, airport management, and aviation business strategy",
     icon: "⭐",
   },
-  { text: "Minimum 50% marks in class 12th or equivalent", icon: "⭐" },
   {
-    text: "Passion for working with data, machine learning models, and AI technologies",
+    text: "Minimum 50% marks in 10+2 (eligibility criteria may vary by institution)",
+    icon: "⭐",
+  },
+  {
+    text: "Individuals aiming for roles in aviation logistics, air transport management, and airline customer service",
     icon: "⭐",
   },
 ];
@@ -143,55 +152,55 @@ const companyPartners = [
 const mcaSummary = [
   {
     icon: <FaGraduationCap />,
-    text: "BBA in Data Analytics and Artificial Intelligence is an undergraduate program focused on data analysis, machine learning, and AI technology, preparing students for roles in the rapidly growing data science and AI fields.",
+    text: "The full form of BBA - Aviation & Airport Management is Bachelor of Business Administration in Aviation & Airport Management, an undergraduate program focused on airport operations, airline management, and aviation business strategies.",
   },
   {
     icon: <FaUniversity />,
-    text: "This course is ideal for students who want to specialize in data analytics, artificial intelligence, and machine learning, regardless of their previous educational background.",
+    text: "This course is ideal for students aspiring to build careers in airport management, airline operations, aviation logistics, and ground handling services.",
   },
   {
     icon: <FaCheckCircle />,
-    text: "The duration of the BBA - Data Analytics and AI program is 3 years, divided into 6 semesters, providing a comprehensive understanding of both business and technology.",
+    text: "A regular BBA - Aviation & Airport Management course duration is 3 years, divided into 6 semesters, including internships, industry projects, and case studies.",
   },
   {
     icon: <FaDollarSign />,
-    text: "The average starting salary for graduates in this field ranges from 4-8 Lakhs per year, depending on roles, skills, and industry experience in data analytics and AI.",
+    text: "The average starting salary for graduates in this field ranges from 3-8 Lakhs per year, depending on job roles, skills, and employer.",
   },
   {
     icon: <FaLightbulb />,
-    text: "Graduates can pursue careers in data analysis, AI development, machine learning, business intelligence, and data-driven decision-making across various industries.",
+    text: "Career opportunities include roles in airport management, airline customer service, air cargo operations, ground staff management, and aviation safety compliance.",
   },
   {
     icon: <FaBuilding />,
-    text: "Top companies hiring BBA - Data Analytics and AI graduates include tech giants like Google, Microsoft, Amazon, IBM, and various data-centric firms, offering excellent career prospects.",
+    text: "Top recruiters in this field include airlines like Indigo, Air India, SpiceJet, global airport operators, logistics companies, and aviation consultancy firms.",
   },
 ];
 
 const campuses = [
-  {
-    name: "IIMT University, Meerut",
-    program: "MCA Program | UGC approved",
-    specialisations: 6,
-    certifications: 10,
-    fees: "₹ 3.40 Lacs",
-    images: [
-      "assets/placement/iimt1.jpg",
-      "assets/placement/iimt2.jpg",
-      "assets/placement/iimt3.jpg",
-    ],
-  },
-  {
-    name: "SAGE University Indore",
-    program: "MCA Program | UGC recognised",
-    specialisations: 3,
-    certifications: 10,
-    fees: "₹ 3.88 Lacs",
-    images: [
-      "assets/placement/sage1.jpg",
-      "assets/placement/sage2.jpg",
-      "assets/placement/sage3.webp",
-    ],
-  },
+  //   {
+  //     name: "IIMT University, Meerut",
+  //     program: "MCA Program | UGC approved",
+  //     specialisations: 6,
+  //     certifications: 10,
+  //     fees: "₹ 3.40 Lacs",
+  //     images: [
+  //       "assets/placement/iimt1.jpg",
+  //       "assets/placement/iimt2.jpg",
+  //       "assets/placement/iimt3.jpg",
+  //     ],
+  //   },
+  //   {
+  //     name: "SAGE University Indore",
+  //     program: "MCA Program | UGC recognised",
+  //     specialisations: 3,
+  //     certifications: 10,
+  //     fees: "₹ 3.88 Lacs",
+  //     images: [
+  //       "assets/placement/sage1.jpg",
+  //       "assets/placement/sage2.jpg",
+  //       "assets/placement/sage3.webp",
+  //     ],
+  //   },
   {
     name: "Subharti University, Meerut",
     program: "MCA Program | UGC recognised",
@@ -257,7 +266,7 @@ const imageSettings = {
   arrows: false,
 };
 
-const OurPromise = () => {
+const AviationAirportmanagement = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
   const toggleAccordion = (index) => {
@@ -275,12 +284,12 @@ const OurPromise = () => {
     <>
       <div className="mca-highlights-container">
         <h1 className="mca-title">
-          BBA - Data Analytics and Artificial Intelligence Highlights
+          BBA - Aviation & Airport Management Highlights
         </h1>
         <p className="mca-description">
-          Dive deep into data-driven decision-making, machine learning, and AI
-          technology, equipping yourself with the necessary tools and skills to
-          excel in the fields of data analytics and artificial intelligence.
+          Gain in-depth knowledge of aviation business operations, airport
+          management, airline logistics, and customer service, preparing you for
+          leadership roles in the global aviation industry.
         </p>
         <div className="highlight-cards">
           <div className="highlight-card">
@@ -288,16 +297,16 @@ const OurPromise = () => {
             <p className="highlight-text">YEAR FULL-TIME PROGRAM</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">5+</p>
-            <p className="highlight-text">SPECIALISATIONS OFFERED*</p>
+            <p className="highlight-number">40+</p>
+            <p className="highlight-text">RECRUITMENT PARTNERS</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">6+</p>
-            <p className="highlight-text">MONTHS OF INTERNSHIPS*</p>
+            <p className="highlight-number">7+</p>
+            <p className="highlight-text">INDUSTRY CERTIFICATIONS</p>
           </div>
           <div className="highlight-card">
             <p className="highlight-number">3</p>
-            <p className="highlight-text">CAPSTONE PROJECTS</p>
+            <p className="highlight-text">INTERNSHIPS & LIVE PROJECTS</p>
           </div>
         </div>
       </div>
@@ -341,10 +350,6 @@ const OurPromise = () => {
               <strong>28.5%</strong>
               <p>Students with 2+ job offers</p>
             </div>
-            <div className="stat-box">
-              <strong>28.5%</strong>
-              <p>Students with 2+ job offers</p>
-            </div>
           </div>
         </div>
       </div>
@@ -374,11 +379,11 @@ const OurPromise = () => {
 
         <div className="who-can-do-mca">
           <h1 className="who-can-do-title">
-            Who can do BBA - Data Analytics and Artificial Intelligence?
+            Who can do BBA - Aviation & Airport Management?
           </h1>
           <div className="mca-criteria">
             <div className="criteria-left">
-              {whoCanDoMCA.slice(0, 3).map((criteria, index) => (
+              {whoCanDoMCA.slice(0, 4).map((criteria, index) => (
                 <div className="criteria-item" key={index}>
                   <span className="criteria-icon">{criteria.icon}</span>
                   <span className="criteria-text">{criteria.text}</span>
@@ -416,7 +421,7 @@ const OurPromise = () => {
       <div className="mca-page">
         <div className="key-offerings">
           <h1 className="offerings-title">
-            BBA - Data Analytics and Artificial Intelligence Summary
+            BBA - Aviation & Airport Management Summary
           </h1>
           <div className="offerings-list">
             <div className="offerings-left">
@@ -437,7 +442,6 @@ const OurPromise = () => {
             </div>
           </div>
         </div>
-
         <div className="faq-section">
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
@@ -448,15 +452,14 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is BBA - Data Analytics and Artificial Intelligence?</p>
+                <p>What is BBA - Aviation & Airport Management?</p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  BBA in Data Analytics and Artificial Intelligence is an
-                  undergraduate program that focuses on data-driven
-                  decision-making, statistical analysis, machine learning, and
-                  AI technologies to prepare students for the rapidly growing
-                  field of data science and AI.
+                  BBA - Aviation & Airport Management is an undergraduate
+                  program that focuses on airport operations, airline
+                  management, aviation safety, and customer service, preparing
+                  students for careers in the aviation industry.
                 </div>
               )}
             </div>
@@ -467,18 +470,14 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>
-                  Why is BBA - Data Analytics and Artificial Intelligence
-                  important?
-                </p>
+                <p>Why should I choose BBA - Aviation & Airport Management?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program equips students with essential skills in **data
-                  analytics**, **machine learning**, and **artificial
-                  intelligence**, making them highly sought-after for roles in
-                  various industries such as finance, healthcare, and
-                  technology.
+                  This program equips students with industry-relevant skills in
+                  aviation operations, airport management, airline finance, and
+                  customer service, opening doors to job opportunities in
+                  airports, airlines, and logistics companies.
                 </div>
               )}
             </div>
@@ -490,16 +489,14 @@ const OurPromise = () => {
               >
                 <FaLightbulb className="accordion-icon icon-3" />
                 <p>
-                  What are the specialisations in BBA - Data Analytics and
-                  Artificial Intelligence?
+                  What career opportunities are available after this course?
                 </p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  BBA in Data Analytics and AI specialisations include **Big
-                  Data Analytics**, **Machine Learning**, **Artificial
-                  Intelligence**, **Data Science**, and **Business
-                  Intelligence**.
+                  Graduates can work as airport managers, airline customer
+                  service executives, ground operations managers, air cargo
+                  coordinators, and aviation safety officers.
                 </div>
               )}
             </div>
@@ -510,17 +507,13 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>
-                  What career opportunities are available after completing BBA
-                  in Data Analytics and AI?
-                </p>
+                <p>Does this program include industry exposure?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Graduates can work in roles such as **Data Analyst**, **AI
-                  Specialist**, **Business Intelligence Analyst**, **Machine
-                  Learning Engineer**, and **Data Scientist** in sectors like
-                  technology, finance, and healthcare.
+                  Yes, students gain real-world experience through internships,
+                  airport visits, live projects, and training sessions with
+                  aviation professionals.
                 </div>
               )}
             </div>
@@ -531,13 +524,13 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Does this program include industry exposure?</p>
+                <p>What are the key skills gained from this course?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  Yes, students gain industry exposure through **internships**,
-                  **live projects**, and **collaborations** with tech companies,
-                  allowing them to apply their skills in real-world scenarios.
+                  The program develops leadership, communication, airport
+                  operations, airline marketing, safety regulations, and
+                  customer service skills in aviation.
                 </div>
               )}
             </div>
@@ -548,32 +541,13 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What are the key skills gained from this course?</p>
+                <p>What certifications can I earn during this program?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students will develop skills in **data analysis**, **machine
-                  learning**, **AI algorithms**, **data visualization**, and
-                  **statistical programming** using tools like **Python**,
-                  **R**, and **SQL**.
-                </div>
-              )}
-            </div>
-
-            <div className="accordion-item">
-              <div
-                className="accordion-header accordion-header-1"
-                onClick={() => toggleAccordion(6)}
-              >
-                <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What certifications can I earn during this program?</p>
-              </div>
-              {activeIndex === 6 && (
-                <div className="accordion-body">
-                  Students can earn certifications in **Data Analytics**,
-                  **Artificial Intelligence**, **Machine Learning**, **Business
-                  Intelligence**, and industry-recognized programs from
-                  platforms like **Microsoft**, **IBM**, and **Google**.
+                  Students can earn certifications in Airport Management,
+                  Airline Ticketing, Aviation Safety & Security, and
+                  IATA-certified programs.
                 </div>
               )}
             </div>
@@ -623,4 +597,4 @@ const OurPromise = () => {
   );
 };
 
-export default OurPromise;
+export default AviationAirportmanagement;

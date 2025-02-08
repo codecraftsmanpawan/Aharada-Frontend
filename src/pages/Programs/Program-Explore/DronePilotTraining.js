@@ -3,11 +3,12 @@ import "./ai.css";
 import { useNavigate } from "react-router-dom";
 
 import {
-  FaRegCheckCircle,
-  FaProjectDiagram,
   FaGraduationCap,
-  FaCertificate,
+  FaRegCheckCircle,
+  FaPlane,
+  FaBriefcase,
   FaGlobe,
+  FaGlobeAmericas,
   FaMoneyBillWave,
   FaUserTie,
   FaBuilding,
@@ -17,7 +18,13 @@ import {
   FaCheckCircle,
   FaUniversity,
   FaDollarSign,
+  FaCertificate,
+  FaBookOpen,
+  FaUsers,
+  FaChartLine,
+  FaBitcoin,
 } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import Testimonials from "../../../components/Testimonials/Testimonials";
@@ -26,48 +33,51 @@ import Course from "../../Home/component/CouseOffer";
 
 const offerings = [
   {
-    text: "40+ industry-led sessions and workshops by experts in Data Analytics, AI, and Machine Learning",
-    icon: <FaUserTie />,
+    text: "Comprehensive training in drone flight operations, including basic controls, advanced flight techniques, and aerial photography",
+    icon: <FaBitcoin />,
   },
   {
-    text: "Develop a professional portfolio showcasing data analysis projects, machine learning models, and AI applications to enhance employability",
-    icon: <FaProjectDiagram />,
+    text: "Exciting career opportunities in commercial drone piloting, drone mapping, aerial photography, surveying, and inspection services across various industries",
+    icon: <FaChartLine />,
   },
   {
-    text: "Access to seed funding up to 5 Cr through collaboration with industry partners and incubators for AI-driven startups",
-    icon: <FaMoneyBillWave />,
+    text: "Hands-on flight training and live projects with leading drone service providers, gaining real-world drone piloting experience",
+    icon: <FaBriefcase />,
   },
   {
-    text: "10 days of global immersion in top tech hubs like Silicon Valley or Bengaluru to experience cutting-edge data analytics and AI technologies",
-    icon: <FaGlobe />,
+    text: "Exposure to the latest drone technology, flight safety protocols, airspace regulations, and industry-specific drone applications",
+    icon: <FaLightbulb />,
   },
   {
-    text: "Capstone projects every semester focused on real-world data analysis and AI problem-solving",
-    icon: <FaProjectDiagram />,
+    text: "Industry-aligned curriculum with practical flight simulations, case studies, and regulations to prepare students for effective drone operations",
+    icon: <FaBookOpen />,
   },
   {
-    text: "Choose from 8 specialized certifications in areas like Data Science, Machine Learning, AI Algorithms, and Data Visualization",
+    text: "Recognized certifications in drone piloting, aerial photography, drone safety, and airspace regulations, including government-approved licenses for commercial drone operations",
     icon: <FaCertificate />,
   },
   {
-    text: "14 days of student exchange programs with top global universities focused on Data Analytics and AI",
-    icon: <FaGraduationCap />,
+    text: "Development of critical thinking, problem-solving, and strategic decision-making skills tailored for drone pilots working in diverse industries",
+    icon: <FaUsers />,
   },
 ];
 
 const whoCanDoMCA = [
   {
-    text: "Completed class 12th in any stream with a strong interest in data analytics and artificial intelligence",
-    icon: "⭐",
+    text: "Individuals who have completed at least 10+2 in any stream and are passionate about drone technology and flying",
+    icon: "🎓",
   },
   {
-    text: "Graduates with a background in IT, Computer Science, Mathematics, or related fields",
-    icon: "⭐",
+    text: "Aspirants interested in pursuing careers in commercial drone piloting, aerial photography, drone mapping, and inspections across various industries",
+    icon: "🚁",
   },
-  { text: "Minimum 50% marks in class 12th or equivalent", icon: "⭐" },
   {
-    text: "Passion for working with data, machine learning models, and AI technologies",
-    icon: "⭐",
+    text: "No prior experience required, but a basic understanding of technology and aviation will be beneficial",
+    icon: "📚",
+  },
+  {
+    text: "Individuals aiming for certification and commercial roles as drone pilots in sectors such as agriculture, real estate, media, and surveying",
+    icon: "👥",
   },
 ];
 
@@ -143,55 +153,55 @@ const companyPartners = [
 const mcaSummary = [
   {
     icon: <FaGraduationCap />,
-    text: "BBA in Data Analytics and Artificial Intelligence is an undergraduate program focused on data analysis, machine learning, and AI technology, preparing students for roles in the rapidly growing data science and AI fields.",
+    text: "Drone Pilot Training is a specialized program designed to teach students the essential skills for flying drones safely and effectively, covering flight operations, aerial photography, mapping, and safety protocols.",
   },
   {
     icon: <FaUniversity />,
-    text: "This course is ideal for students who want to specialize in data analytics, artificial intelligence, and machine learning, regardless of their previous educational background.",
+    text: "This course is ideal for individuals who want to become certified drone pilots and pursue careers in aerial photography, surveying, agriculture, real estate, and drone-based inspections.",
   },
   {
     icon: <FaCheckCircle />,
-    text: "The duration of the BBA - Data Analytics and AI program is 3 years, divided into 6 semesters, providing a comprehensive understanding of both business and technology.",
+    text: "A regular Drone Pilot Training program lasts for 6-8 weeks, offering hands-on flight training, live projects, and industry-specific scenarios to ensure students are ready for real-world drone operations.",
   },
   {
     icon: <FaDollarSign />,
-    text: "The average starting salary for graduates in this field ranges from 4-8 Lakhs per year, depending on roles, skills, and industry experience in data analytics and AI.",
+    text: "The average starting salary for certified drone pilots ranges from 4-8 Lakhs per year, depending on industry, location, and level of experience in drone operations.",
   },
   {
     icon: <FaLightbulb />,
-    text: "Graduates can pursue careers in data analysis, AI development, machine learning, business intelligence, and data-driven decision-making across various industries.",
+    text: "Career opportunities include roles as commercial drone pilots, drone photographers, aerial surveyors, mapping specialists, and inspection pilots across various industries like agriculture, construction, and media.",
   },
   {
     icon: <FaBuilding />,
-    text: "Top companies hiring BBA - Data Analytics and AI graduates include tech giants like Google, Microsoft, Amazon, IBM, and various data-centric firms, offering excellent career prospects.",
+    text: "Top recruiters in this field include companies in agriculture, construction, real estate, media, and technology, as well as government agencies and specialized drone service providers.",
   },
 ];
 
 const campuses = [
-  {
-    name: "IIMT University, Meerut",
-    program: "MCA Program | UGC approved",
-    specialisations: 6,
-    certifications: 10,
-    fees: "₹ 3.40 Lacs",
-    images: [
-      "assets/placement/iimt1.jpg",
-      "assets/placement/iimt2.jpg",
-      "assets/placement/iimt3.jpg",
-    ],
-  },
-  {
-    name: "SAGE University Indore",
-    program: "MCA Program | UGC recognised",
-    specialisations: 3,
-    certifications: 10,
-    fees: "₹ 3.88 Lacs",
-    images: [
-      "assets/placement/sage1.jpg",
-      "assets/placement/sage2.jpg",
-      "assets/placement/sage3.webp",
-    ],
-  },
+  //   {
+  //     name: "IIMT University, Meerut",
+  //     program: "MCA Program | UGC approved",
+  //     specialisations: 6,
+  //     certifications: 10,
+  //     fees: "₹ 3.40 Lacs",
+  //     images: [
+  //       "assets/placement/iimt1.jpg",
+  //       "assets/placement/iimt2.jpg",
+  //       "assets/placement/iimt3.jpg",
+  //     ],
+  //   },
+  //   {
+  //     name: "SAGE University Indore",
+  //     program: "MCA Program | UGC recognised",
+  //     specialisations: 3,
+  //     certifications: 10,
+  //     fees: "₹ 3.88 Lacs",
+  //     images: [
+  //       "assets/placement/sage1.jpg",
+  //       "assets/placement/sage2.jpg",
+  //       "assets/placement/sage3.webp",
+  //     ],
+  //   },
   {
     name: "Subharti University, Meerut",
     program: "MCA Program | UGC recognised",
@@ -204,18 +214,18 @@ const campuses = [
       "assets/placement/Subharti3.png",
     ],
   },
-  {
-    name: "Dev Bhoomi Uttarakhand University",
-    program: "MCA Program | AICTE approved",
-    specialisations: 4,
-    certifications: 8,
-    fees: "₹ 4.00 Lacs",
-    images: [
-      "assets/placement/dev1.jpeg",
-      "assets/placement/dev1.jpeg",
-      "assets/placement/dev3.jpg",
-    ],
-  },
+  //   {
+  //     name: "Dev Bhoomi Uttarakhand University",
+  //     program: "MCA Program | AICTE approved",
+  //     specialisations: 4,
+  //     certifications: 8,
+  //     fees: "₹ 4.00 Lacs",
+  //     images: [
+  //       "assets/placement/dev1.jpeg",
+  //       "assets/placement/dev1.jpeg",
+  //       "assets/placement/dev3.jpg",
+  //     ],
+  //   },
 ];
 
 const campusSettings = {
@@ -257,7 +267,7 @@ const imageSettings = {
   arrows: false,
 };
 
-const OurPromise = () => {
+const DronePilotTraining = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
   const toggleAccordion = (index) => {
@@ -274,30 +284,34 @@ const OurPromise = () => {
   return (
     <>
       <div className="mca-highlights-container">
-        <h1 className="mca-title">
-          BBA - Data Analytics and Artificial Intelligence Highlights
-        </h1>
+        <h1 className="mca-title">Drone Pilot Training Highlights</h1>
         <p className="mca-description">
-          Dive deep into data-driven decision-making, machine learning, and AI
-          technology, equipping yourself with the necessary tools and skills to
-          excel in the fields of data analytics and artificial intelligence.
+          Gain hands-on expertise in drone operations, flight techniques, safety
+          protocols, and the legal framework of drone usage, preparing you for
+          professional roles in drone piloting across various industries.
         </p>
         <div className="highlight-cards">
           <div className="highlight-card">
-            <p className="highlight-number">3</p>
-            <p className="highlight-text">YEAR FULL-TIME PROGRAM</p>
+            <p className="highlight-number">6</p>
+            <p className="highlight-text">MONTHS FULL-TIME PROGRAM</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">5+</p>
-            <p className="highlight-text">SPECIALISATIONS OFFERED*</p>
+            <p className="highlight-number">20+</p>
+            <p className="highlight-text">
+              RECRUITMENT PARTNERS IN THE DRONE INDUSTRY
+            </p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">6+</p>
-            <p className="highlight-text">MONTHS OF INTERNSHIPS*</p>
+            <p className="highlight-number">3+</p>
+            <p className="highlight-text">
+              CERTIFICATIONS IN DRONE PILOTING AND OPERATIONS
+            </p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">3</p>
-            <p className="highlight-text">CAPSTONE PROJECTS</p>
+            <p className="highlight-number">2</p>
+            <p className="highlight-text">
+              PRACTICAL FLIGHT SESSIONS & LIVE PROJECTS
+            </p>
           </div>
         </div>
       </div>
@@ -341,10 +355,6 @@ const OurPromise = () => {
               <strong>28.5%</strong>
               <p>Students with 2+ job offers</p>
             </div>
-            <div className="stat-box">
-              <strong>28.5%</strong>
-              <p>Students with 2+ job offers</p>
-            </div>
           </div>
         </div>
       </div>
@@ -373,12 +383,10 @@ const OurPromise = () => {
         </div>
 
         <div className="who-can-do-mca">
-          <h1 className="who-can-do-title">
-            Who can do BBA - Data Analytics and Artificial Intelligence?
-          </h1>
+          <h1 className="who-can-do-title">Who can do Drone Pilot Training?</h1>
           <div className="mca-criteria">
             <div className="criteria-left">
-              {whoCanDoMCA.slice(0, 3).map((criteria, index) => (
+              {whoCanDoMCA.slice(0, 4).map((criteria, index) => (
                 <div className="criteria-item" key={index}>
                   <span className="criteria-icon">{criteria.icon}</span>
                   <span className="criteria-text">{criteria.text}</span>
@@ -415,9 +423,7 @@ const OurPromise = () => {
 
       <div className="mca-page">
         <div className="key-offerings">
-          <h1 className="offerings-title">
-            BBA - Data Analytics and Artificial Intelligence Summary
-          </h1>
+          <h1 className="offerings-title">Drone Pilot Training Summary</h1>
           <div className="offerings-list">
             <div className="offerings-left">
               {mcaSummary.slice(0, 3).map((mcaSummary, index) => (
@@ -437,7 +443,6 @@ const OurPromise = () => {
             </div>
           </div>
         </div>
-
         <div className="faq-section">
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
@@ -448,15 +453,14 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is BBA - Data Analytics and Artificial Intelligence?</p>
+                <p>What is Drone Pilot Training?</p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  BBA in Data Analytics and Artificial Intelligence is an
-                  undergraduate program that focuses on data-driven
-                  decision-making, statistical analysis, machine learning, and
-                  AI technologies to prepare students for the rapidly growing
-                  field of data science and AI.
+                  Drone Pilot Training is a specialized program designed to
+                  teach students how to operate drones safely and efficiently,
+                  covering flight techniques, safety regulations, and real-world
+                  applications of drone technology across industries.
                 </div>
               )}
             </div>
@@ -467,18 +471,14 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>
-                  Why is BBA - Data Analytics and Artificial Intelligence
-                  important?
-                </p>
+                <p>Why should I choose Drone Pilot Training?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program equips students with essential skills in **data
-                  analytics**, **machine learning**, and **artificial
-                  intelligence**, making them highly sought-after for roles in
-                  various industries such as finance, healthcare, and
-                  technology.
+                  This program provides hands-on experience with the latest
+                  drones, covering everything from basic flight control to
+                  advanced aerial photography and surveying techniques,
+                  preparing you for a growing career in drone piloting.
                 </div>
               )}
             </div>
@@ -490,16 +490,14 @@ const OurPromise = () => {
               >
                 <FaLightbulb className="accordion-icon icon-3" />
                 <p>
-                  What are the specialisations in BBA - Data Analytics and
-                  Artificial Intelligence?
+                  What career opportunities are available after this training?
                 </p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  BBA in Data Analytics and AI specialisations include **Big
-                  Data Analytics**, **Machine Learning**, **Artificial
-                  Intelligence**, **Data Science**, and **Business
-                  Intelligence**.
+                  Graduates can work as commercial drone pilots for industries
+                  like agriculture, real estate, construction, film production,
+                  environmental monitoring, and drone mapping services.
                 </div>
               )}
             </div>
@@ -510,17 +508,14 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>
-                  What career opportunities are available after completing BBA
-                  in Data Analytics and AI?
-                </p>
+                <p>Does this program include industry exposure?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Graduates can work in roles such as **Data Analyst**, **AI
-                  Specialist**, **Business Intelligence Analyst**, **Machine
-                  Learning Engineer**, and **Data Scientist** in sectors like
-                  technology, finance, and healthcare.
+                  Yes, students gain practical exposure through hands-on flight
+                  sessions, internships with drone-related companies, and live
+                  projects that allow them to operate drones in real-world
+                  scenarios.
                 </div>
               )}
             </div>
@@ -531,13 +526,14 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Does this program include industry exposure?</p>
+                <p>What are the key skills gained from this training?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  Yes, students gain industry exposure through **internships**,
-                  **live projects**, and **collaborations** with tech companies,
-                  allowing them to apply their skills in real-world scenarios.
+                  The training develops essential skills in drone flight
+                  control, aerial photography, surveying, drone safety
+                  protocols, and understanding regulations in drone operations
+                  across various industries.
                 </div>
               )}
             </div>
@@ -548,32 +544,14 @@ const OurPromise = () => {
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What are the key skills gained from this course?</p>
+                <p>What certifications can I earn during this program?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students will develop skills in **data analysis**, **machine
-                  learning**, **AI algorithms**, **data visualization**, and
-                  **statistical programming** using tools like **Python**,
-                  **R**, and **SQL**.
-                </div>
-              )}
-            </div>
-
-            <div className="accordion-item">
-              <div
-                className="accordion-header accordion-header-1"
-                onClick={() => toggleAccordion(6)}
-              >
-                <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What certifications can I earn during this program?</p>
-              </div>
-              {activeIndex === 6 && (
-                <div className="accordion-body">
-                  Students can earn certifications in **Data Analytics**,
-                  **Artificial Intelligence**, **Machine Learning**, **Business
-                  Intelligence**, and industry-recognized programs from
-                  platforms like **Microsoft**, **IBM**, and **Google**.
+                  Students can earn certifications in Drone Pilot Safety, Aerial
+                  Photography, and Drone Operations from recognized
+                  organizations, including government-approved certifications
+                  for commercial drone use.
                 </div>
               )}
             </div>
@@ -623,4 +601,4 @@ const OurPromise = () => {
   );
 };
 
-export default OurPromise;
+export default DronePilotTraining;
