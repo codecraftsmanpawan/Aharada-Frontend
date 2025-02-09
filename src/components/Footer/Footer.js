@@ -94,9 +94,9 @@ function Footer() {
                   <div className="widget footer-widget">
                     <div className="th-widget-about">
                       <div className="about-logo">
-                        <a href="index.html">
+                        <Link to="/">
                           <img src="assets/WHITE-LOGO-1.png" alt="Aharadaedu" />
-                        </a>
+                        </Link>
                       </div>
                       <p className="about-text">
                         Empower learners through innovative and accessible
@@ -209,18 +209,20 @@ function Footer() {
                     All Rights Reserved.
                   </p>
                 </div>
-                {/* <div className="col-md-6 text-end d-none d-md-block">
-                  <div className="footer-links">
+                <div className="col-md-6 text-end d-none d-md-block">
+                  <div className="footer-links ">
                     <ul>
                       <li>
-                        <a href="#">Privacy Policy</a>
+                        <Link to="/privacy/policy">Privacy Policy</Link>
                       </li>
                       <li>
-                        <a href="#">Terms &amp; Condition</a>
+                        <Link to="/termsand/conditions">
+                          Terms &amp; Condition
+                        </Link>
                       </li>
                     </ul>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>

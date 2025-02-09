@@ -47,6 +47,8 @@ import AerospaceEngineering from "./pages/Programs/Program-Explore/AerospaceEngi
 import DefenceTechnology from "./pages/Programs/Program-Explore/DefenceTechnology";
 import HRAviation from "./pages/Programs/Program-Explore/HRAviation";
 import DronePilotTraining from "./pages/Programs/Program-Explore/DronePilotTraining";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import TermsandConditions from "./pages/PrivacyPolicy/TermsandConditions";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import "./App.css";
@@ -121,6 +123,8 @@ function App() {
         />
         <Route path="/mba-hr-aviation" element={<HRAviation />} />
         <Route path="/drone-pilot-training" element={<DronePilotTraining />} />
+        <Route path="/privacy/policy" element={<PrivacyPolicy />} />
+        <Route path="/termsand/conditions" element={<TermsandConditions />} />
       </Routes>
       <Footer />
     </Router>
