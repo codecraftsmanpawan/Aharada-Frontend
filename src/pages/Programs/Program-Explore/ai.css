@@ -680,3 +680,58 @@ padding-right: 25px;
 .accordion-header:hover {
     background-color: #9a9183;
 }
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .our-promise-content {
+        flex-direction: column;
+        /* Stack the sections vertically */
+        align-items: center;
+    }
+
+    .our-promise-text,
+    .job-stats {
+        flex: 1 1 100%;
+        /* Make each section take full width */
+        margin-bottom: 20px;
+        /* Add space between sections */
+    }
+
+    .main-heading {
+        font-size: 24px;
+        /* Adjust heading size for mobile */
+    }
+
+    .highlight {
+        font-size: 22px;
+        /* Adjust highlight font size for mobile */
+    }
+
+    .th-btn {
+        width: 100%;
+        /* Make buttons take full width on mobile */
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .job-stats {
+        flex-direction: column;
+        /* Stack stats vertically */
+        gap: 10px;
+    }
+
+    .stat-box {
+        width: 100%;
+        /* Make each stat box take full width */
+        text-align: center;
+    }
+
+    .stat-box strong {
+        font-size: 20px;
+        /* Adjust font size for mobile */
+    }
+
+    .stat-box p {
+        font-size: 14px;
+        /* Adjust paragraph font size for mobile */
+    }
+}

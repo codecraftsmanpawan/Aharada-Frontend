@@ -326,14 +326,11 @@ const BScAeronautical = () => {
               />
             </div>
             <Link
-              style={{ marginTop: "-120px" }}
-              to="../../assets/img/Aharada Brochure.pdf"
+              style={{ marginTop: "-110px", marginLeft: "40px" }}
+              to="/contact"
               className="th-btn style5"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              <i className="fas fa-long-arrow-down ms-2" />
-              Download Brochure
+              Get in Touch <i className="fas fa-long-arrow-right ms-2" />
             </Link>
           </div>
 
@@ -350,6 +347,16 @@ const BScAeronautical = () => {
               <strong>28.5%</strong>
               <p>Students with 2+ job offers</p>
             </div>
+            <Link
+              style={{ marginLeft: "40px" }}
+              to="../../assets/img/Aharada Brochure.pdf"
+              className="th-btn style4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fas fa-long-arrow-down ms-2" />
+              Download Brochure
+            </Link>
           </div>
         </div>
       </div>

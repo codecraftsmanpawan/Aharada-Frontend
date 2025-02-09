@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import axios from "axios";
@@ -14,6 +14,9 @@ function Contact() {
     reset,
   } = useForm();
 
+  // Create a reference for the 'Get in Touch' form section
+  const formSectionRef = useRef(null);
+
   const onSubmit = async (data) => {
     try {
       const response = await axios.post(
@@ -25,7 +28,6 @@ function Contact() {
           },
         }
       );
-      // console.log("API Response:", response.data);
       toast.success("Your message has been sent successfully!", {
         position: "top-right",
         autoClose: 3000,
@@ -37,18 +39,28 @@ function Contact() {
       });
       reset(); // Reset the form after successful submission
     } catch (error) {
-      // console.error("API Error:", error);
-      // toast.error("Failed to send your message. Please try again.", {
-      //   position: "top-right",
-      //   autoClose: 3000,
-      //   hideProgressBar: true,
-      //   closeOnClick: true,
-      //   pauseOnHover: true,
-      //   draggable: true,
-      //   progress: undefined,
-      // });
+      toast.error("Failed to send your message. Please try again.", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
   };
+
+  // Scroll to the form section when the component mounts
+  useEffect(() => {
+    // Scroll smoothly to the form section
+    if (formSectionRef.current) {
+      window.scrollTo({
+        top: formSectionRef.current.offsetTop,
+        behavior: "smooth", // Smooth scroll effect
+      });
+    }
+  }, []); // Empty dependency array means this runs once when the component mounts
 
   useEffect(() => {
     document.title = "Contact - Aharada Education";
@@ -77,7 +89,7 @@ function Contact() {
                     <h2 className="border-title h3">Have Any Questions?</h2>
                   </div>
                   <p className="mt-n2 mb-25">
-                    Have a inquiry or some feedback for us? Fill out the form
+                    Have an inquiry or some feedback for us? Fill out the form
                     <br />
                     below to contact our team.
                   </p>
@@ -149,7 +161,10 @@ function Contact() {
                 </div>
               </div>
               <div className="col-xl-7">
-                <div className="contact-form-wrap">
+                <div
+                  className="contact-form-wrap"
+                  ref={formSectionRef} // Attach ref to the form section
+                >
                   <span className="sub-title">Contact With Us!</span>
                   <h2 className="border-title">Get in Touch</h2>
                   <form
