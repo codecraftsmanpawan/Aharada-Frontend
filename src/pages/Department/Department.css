@@ -1,0 +1,184 @@
+/* Section Styling */
+.department-section {
+    background-color: #f4ebdd;
+    /* Light Gray */
+    padding: 60px 0;
+}
+
+.department-section .sec-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #d89e37;
+    /* Dark Gray */
+    margin-bottom: 30px;
+}
+
+.department-section .sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #5f6368;
+    /* Medium Gray */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.department-section .department-card {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(180, 179, 179, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.department-section .department-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.department-card_icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.department-card_title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.department-card_text {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.department-card .link-btn {
+    color: #072e46;
+    /* Primary Blue */
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.department-card .link-btn i {
+    margin-left: 5px;
+}
+
+/* New Section Styling */
+.engineering-courses-section {
+    background-color: #f1f1f1;
+    /* Light Gray */
+    padding: 60px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.engineering-courses-section .sec-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.engineering-courses-section .sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #d89e37;
+    /* Bright Blue */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.course-card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.course-card_content {
+    flex-grow: 1;
+}
+
+.course-card_title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.course-card_text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.course-card .link-btn {
+    color: #072e46;
+    /* Bright Blue */
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.course-card .link-btn:hover {
+    text-decoration: underline;
+}
+
+.course-card .link-btn i {
+    margin-left: 5px;
+}
+
+.engineering-courses-section .row .col-sm-6,
+.engineering-courses-section .row .col-md-4,
+.engineering-courses-section .row .col-lg-3 {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .engineering-courses-section .sec-title {
+        font-size: 28px;
+    }
+
+    .course-card {
+        padding: 15px;
+    }
+
+    .course-card_title {
+        font-size: 20px;
+    }
+
+    .course-card_text {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .engineering-courses-section .sec-title {
+        font-size: 32px;
+    }
+}

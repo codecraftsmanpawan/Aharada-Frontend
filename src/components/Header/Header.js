@@ -108,7 +108,6 @@ function Header() {
                   </ul>
                 </div>
               </div>
-
               <div className="col-auto">
                 <div className="header-links header-right">
                   <ul>
@@ -118,8 +117,8 @@ function Header() {
                         style={{ display: "flex", alignItems: "center" }}
                       >
                         {/* Email Icon */}
-                        <Link
-                          to="mailto:info@aharadaedu.in"
+                        <a
+                          href="mailto:info@aharadaedu.in"
                           aria-label="Email"
                           onMouseOver={(e) =>
                             (e.target.style.color = "#93b3e6")
@@ -135,7 +134,7 @@ function Header() {
                           }}
                         >
                           <i className="far fa-envelope"></i>
-                        </Link>
+                        </a>
 
                         {/* Follow Us Text */}
                         <span className="social-title inline mr-4 text-gray-700">
@@ -143,36 +142,66 @@ function Header() {
                         </span>
 
                         {/* Social Icons */}
-                        <SocialIcon
-                          to="https://www.facebook.com/aharadaeducation/"
-                          iconClass="fab fa-facebook-f"
-                          hoverColor="#3b5998" // Facebook Blue
-                          label="Facebook"
-                        />
-                        <SocialIcon
-                          to="https://www.instagram.com/aharadaeducation/"
-                          iconClass="fab fa-instagram"
-                          hoverColor="#E1306C" // Instagram Pink
-                          label="Instagram"
-                        />
-                        <SocialIcon
-                          to="https://www.twitter.com/"
-                          iconClass="fab fa-twitter"
-                          hoverColor="#1DA1F2" // Twitter Blue
-                          label="Twitter"
-                        />
-                        <SocialIcon
-                          to="https://www.linkedin.com/in/aharadaeducation/"
-                          iconClass="fab fa-linkedin-in"
-                          hoverColor="#0077B5" // LinkedIn Blue
-                          label="LinkedIn"
-                        />
-                        <SocialIcon
-                          to="https://www.youtube.com/@aharadaeducation498"
-                          iconClass="fab fa-youtube"
-                          hoverColor="#FF0000" // YouTube Red
-                          label="YouTube"
-                        />
+                        <a
+                          href="https://www.facebook.com/aharadaeducation/"
+                          className="social-icon"
+                          aria-label="Facebook"
+                          style={{ color: "#3b5998", marginRight: "1rem" }}
+                          onMouseOver={(e) =>
+                            (e.target.style.color = "#3b5998")
+                          }
+                          onMouseOut={(e) => (e.target.style.color = "")}
+                        >
+                          <i className="fab fa-facebook-f"></i>
+                        </a>
+                        <a
+                          href="https://www.instagram.com/aharadaeducation/"
+                          className="social-icon"
+                          aria-label="Instagram"
+                          style={{ color: "#E1306C", marginRight: "1rem" }}
+                          onMouseOver={(e) =>
+                            (e.target.style.color = "#E1306C")
+                          }
+                          onMouseOut={(e) => (e.target.style.color = "")}
+                        >
+                          <i className="fab fa-instagram"></i>
+                        </a>
+                        <a
+                          href="https://www.twitter.com/"
+                          className="social-icon"
+                          aria-label="Twitter"
+                          style={{ color: "#1DA1F2", marginRight: "1rem" }}
+                          onMouseOver={(e) =>
+                            (e.target.style.color = "#1DA1F2")
+                          }
+                          onMouseOut={(e) => (e.target.style.color = "")}
+                        >
+                          <i className="fab fa-twitter"></i>
+                        </a>
+                        <a
+                          href="https://www.linkedin.com/in/aharadaeducation/"
+                          className="social-icon"
+                          aria-label="LinkedIn"
+                          style={{ color: "#0077B5", marginRight: "1rem" }}
+                          onMouseOver={(e) =>
+                            (e.target.style.color = "#0077B5")
+                          }
+                          onMouseOut={(e) => (e.target.style.color = "")}
+                        >
+                          <i className="fab fa-linkedin-in"></i>
+                        </a>
+                        <a
+                          href="https://www.youtube.com/@aharadaeducation498"
+                          className="social-icon"
+                          aria-label="YouTube"
+                          style={{ color: "#FF0000", marginRight: "1rem" }}
+                          onMouseOver={(e) =>
+                            (e.target.style.color = "#FF0000")
+                          }
+                          onMouseOut={(e) => (e.target.style.color = "")}
+                        >
+                          <i className="fab fa-youtube"></i>
+                        </a>
                       </div>
                     </li>
                   </ul>
@@ -210,6 +239,9 @@ function Header() {
                             <ul className="sub-menu">
                               <li>
                                 <Link to="/about">About Us</Link>
+                              </li>
+                              <li>
+                                <Link to="/department">Departments</Link>
                               </li>
                               <li>
                                 <Link to="/team-members">Our Team</Link>
@@ -318,6 +350,11 @@ function Header() {
                   <li>
                     <Link to="/about" onClick={handleMenuItemClick}>
                       About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/department" onClick={handleMenuItemClick}>
+                      Departments
                     </Link>
                   </li>
                   <li>

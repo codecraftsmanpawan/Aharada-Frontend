@@ -289,13 +289,6 @@ function PlacementTeam() {
                 status and stay informed about interview schedules and
                 recruitment updates.
               </li>
-              <li>
-                <strong>Get Support:</strong> For any queries or assistance,
-                connect with our Placement Coordinator,{" "}
-                <strong>Mr. Rahul Verma</strong>, at{" "}
-                <a href="mailto:support@aharadaedu.in">support@aharadaedu.in</a>{" "}
-                or call <a href="tel:+918765432109">+91 87654 32109</a>.
-              </li>
             </ul>
           </div>
         </section>

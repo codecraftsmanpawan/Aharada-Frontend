@@ -201,7 +201,7 @@ function HeroSection() {
                   <i className="fal fa-book-open-cover" />
                 </div>
                 <h3 className="feature-list_title">
-                  <Link to="/programs">Departments</Link>
+                  <Link to="/department">Departments</Link>
                 </h3>
                 <p className="feature-list_text">
                   Explore our diverse range of departments that offer
