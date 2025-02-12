@@ -38,6 +38,7 @@ function Internship() {
                 <div
                   className="col-md-6 col-lg-4 col-xxl-3"
                   key={internship._id}
+                  style={{ marginBottom: "25px" }}
                 >
                   <div className="team-card2">
                     <div className="team-img">
