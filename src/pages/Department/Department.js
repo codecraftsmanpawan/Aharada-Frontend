@@ -83,14 +83,14 @@ const Department = () => {
                 title: "School of Basic Science",
                 description:
                   "This department focuses on the fundamental scientific principles that are essential for many advanced fields of study.",
-                link: "#",
+                link: "#bsc",
               },
               {
                 icon: "assets/img/update1/icon/category_1_4.svg",
                 title: "School of Arts & Humanities",
                 description:
                   "Offering courses in literature, history, and more, the department emphasizes critical thinking and creativity.",
-                link: "#",
+                link: "#ash",
               },
             ].map((dept, index) => (
               <div className="col-sm-6 col-xl-6" key={index}>
@@ -162,8 +162,9 @@ const Department = () => {
           </div>
         </div>
       </section>
+
       <section className="space engineering-courses-section" id="scm">
-        <div className="container">
+        <div className="container" style={{ marginTop: "-100px" }}>
           <div className="title-area text-center">
             <span className="sub-title">Management Courses</span>
             <h2>School of Commerce & Management</h2>
@@ -208,6 +209,87 @@ const Department = () => {
               },
             ].map((course, index) => (
               <div className="col-sm-6 col-md-4 col-lg-4" key={index}>
+                <article
+                  className="course-card"
+                  style={{
+                    background: "linear-gradient(to bottom, #fdfbf9, #f4ebdd)",
+                  }}
+                >
+                  <div className="course-card_content">
+                    <h3 className="course-card_title">
+                      <Link to={course.link}>{course.title}</Link>
+                    </h3>
+                    <p className="course-card_text">{course.description}</p>
+                    <Link to={course.link} className="link-btn">
+                      Learn More <i className="fas fa-arrow-right" />
+                    </Link>
+                  </div>
+                </article>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="space engineering-courses-section" id="bsc">
+        <div className="container" style={{ marginTop: "-100px" }}>
+          <div className="title-area text-center">
+            <span className="sub-title">Science Courses</span>
+            <h3>Explore Courses in School of Basic Science</h3>
+          </div>
+          <div className="row gy-50 justify-content-center">
+            {[
+              {
+                title: "BSC - Aeronautical Science",
+                description:
+                  "The B.SC in Aeronautical Science covers core topics such as aircraft design, flight mechanics, propulsion systems, and aerospace technologies. Students gain comprehensive knowledge to excel in the aviation and aerospace industries, preparing them for roles in both commercial and defense sectors.",
+                link: "/bsc-aeronautical",
+              },
+            ].map((course, index) => (
+              <div className="col-sm-6 col-md-6 col-lg-6" key={index}>
+                <article
+                  className="course-card"
+                  style={{
+                    background: "linear-gradient(to bottom, #fdfbf9, #f4ebdd)",
+                  }}
+                >
+                  <div className="course-card_content">
+                    <h3 className="course-card_title">
+                      <Link to={course.link}>{course.title}</Link>
+                    </h3>
+                    <p className="course-card_text">{course.description}</p>
+                    <Link to={course.link} className="link-btn">
+                      Learn More <i className="fas fa-arrow-right" />
+                    </Link>
+                  </div>
+                </article>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="space engineering-courses-section" id="ash">
+        <div className="container" style={{ marginTop: "-100px" }}>
+          <div className="title-area text-center">
+            <span className="sub-title">Arts & Humanities Courses</span>
+            <h2>School of Arts & Humanities</h2>
+          </div>
+          <div className="row gy-50 justify-content-center">
+            {[
+              {
+                title: "BFA - Fine Arts",
+                description:
+                  "A four-year program designed to provide students with the skills and knowledge in various art forms including painting, sculpture, digital art, and photography, preparing them for a successful career in the creative industry.",
+                link: "/fine-arts",
+              },
+              {
+                title: "BFA - Fashion Design",
+                description:
+                  "A comprehensive program that trains students in the art of fashion design, from sketching to garment creation, and fashion marketing, preparing them to pursue careers in the fashion industry, including design, styling, and brand management.",
+                link: "/fashion-design",
+              },
+            ].map((course, index) => (
+              <div className="col-sm-6 col-md-5 col-lg-6" key={index}>
                 <article
                   className="course-card"
                   style={{
