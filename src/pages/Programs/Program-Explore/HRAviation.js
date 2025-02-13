@@ -311,6 +311,17 @@ const HRAviation = () => {
         </div>
       </div>
 
+      <div className="course-Overview-container">
+        <h1 className="mca-title">Course Overview</h1>
+        <p className="mca-description">
+          The MBA in HR & Aviation Management is a specialized program designed
+          for students aspiring to take leadership roles in the aviation
+          industry with a strong focus on human resource management. This
+          program combines aviation operations, airline business management, and
+          strategic HR skills to prepare professionals for dynamic careers in
+          airline and airport management.
+        </p>
+      </div>
       <div className="our-promise-container">
         <div className="our-promise-content">
           <div className="our-promise-text">
@@ -397,6 +408,102 @@ const HRAviation = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="course-curriculum-container">
+        <h1 className="mca-title">Course Curriculum</h1>
+
+        <div className="curriculum-section">
+          <h4>Year 1: Core Business & Aviation Management</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Principles of Aviation Management & Airline Operations</li>
+                <li>Business Communication & Leadership Skills</li>
+                <li>Organizational Behavior & HR Management Fundamentals</li>
+                <li>Aviation Safety & Security Regulations</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Airport Operations & Infrastructure Management</li>
+                <li>Financial Management in Aviation Industry</li>
+                <li>Human Resource Planning & Talent Acquisition</li>
+                <li>Airline Marketing & Customer Relationship Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 2: Advanced HR & Strategic Aviation Management</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Compensation & Performance Management in Aviation</li>
+                <li>Employee Relations & Labor Laws (Aviation Sector)</li>
+                <li>Strategic Airport & Airline Management</li>
+                <li>Crisis Management & Emergency Planning in Aviation</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Aviation Law & Regulatory Compliance (DGCA, IATA, ICAO)</li>
+                <li>Corporate Social Responsibility & Ethics in Aviation</li>
+                <li>Research Project / Thesis in Aviation & HR Management</li>
+                <li>Internship & Industry Exposure with Airlines / Airports</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 3: Advanced Aviation Management & Strategy</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Strategic Airline & Airport Management</li>
+                <li>Human Resource Management in Aviation</li>
+                <li>Crisis Management & Emergency Planning in Airports</li>
+                <li>Airport Planning & Infrastructure Management</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Aviation IT & Digital Transformation</li>
+                <li>Environmental Sustainability in Aviation</li>
+                <li>Research Project / Capstone Project</li>
+                <li>Internship & Industrial Training</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="key-highlights-container">
+        <h1 className="mca-title">Key Highlights</h1>
+        <ul>
+          <li>Training on Aviation Management & HR Leadership ✈️</li>
+          <li>Industry Exposure with Leading Airlines & Airports</li>
+          <li>HR & Aviation-Specific Case Studies & Workshops</li>
+          <li>Practical Learning with Aviation Management Software</li>
+          <li>Internship & Placement Assistance with Top Aviation Companies</li>
+        </ul>
+      </div>
+
+      <div className="career-opportunities-container">
+        <h1 className="mca-title">Career Opportunities</h1>
+        <ul>
+          <li>HR Manager in Airlines & Airports</li>
+          <li>Aviation Operations Manager</li>
+          <li>Recruitment & Training Manager (Aviation Sector)</li>
+          <li>Airline Business Development Manager</li>
+          <li>Talent Acquisition & Workforce Planning Specialist</li>
+          <li>Aviation Safety & Compliance Officer</li>
+        </ul>
+        <p>
+          Top Recruiters: Airlines, Airports, Ground Handling Companies,
+          Aviation HR Consulting Firms, Government Aviation Departments
+        </p>
       </div>
 
       <section className="partners-section py-5">

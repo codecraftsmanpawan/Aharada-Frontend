@@ -310,6 +310,17 @@ const AerospaceEngineering = () => {
         </div>
       </div>
 
+      <div className="course-Overview-container">
+        <h1 className="mca-title">Course Overview</h1>
+        <p className="mca-description">
+          The BBA in Aviation & Airport Management is a professional degree
+          designed for students aiming to build a career in the aviation and
+          airline industry. The program focuses on airport operations, airline
+          management, aviation safety, customer service, and regulatory
+          compliance. It prepares students for managerial and operational roles
+          in airports, airlines, and aviation service providers.
+        </p>
+      </div>
       <div className="our-promise-container">
         <div className="our-promise-content">
           <div className="our-promise-text">
@@ -398,6 +409,125 @@ const AerospaceEngineering = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="course-curriculum-container">
+        <h1 className="mca-title">Course Curriculum</h1>
+
+        <div className="curriculum-section">
+          <h4>Year 1: Foundation in Engineering & Physics</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Engineering Mathematics & Physics</li>
+                <li>Introduction to Aerospace Engineering</li>
+                <li>Chemistry & Environmental Science</li>
+                <li>Engineering Mechanics</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Basic Electrical & Electronics Engineering</li>
+                <li>Computer Programming & CAD</li>
+                <li>Communication & Soft Skills</li>
+                <li>Workshop & Manufacturing Processes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 2: Core Aerospace Subjects</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Aerodynamics & Fluid Mechanics</li>
+                <li>Thermodynamics & Propulsion Systems</li>
+                <li>Aircraft Structures & Materials Science</li>
+                <li>Avionics & Aircraft Electrical Systems</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Strength of Materials & Structural Analysis</li>
+                <li>Numerical Methods & Simulation</li>
+                <li>Instrumentation & Control Engineering</li>
+                <li>Flight Mechanics & Performance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 3: Advanced Aerospace Technologies</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Rocket & Spacecraft Propulsion</li>
+                <li>Computational Fluid Dynamics (CFD)</li>
+                <li>Aircraft & Spacecraft Design</li>
+                <li>Aerospace Vehicle Dynamics & Control</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Aerospace Manufacturing & Robotics</li>
+                <li>UAV (Unmanned Aerial Vehicle) Design & Applications</li>
+                <li>Aerospace Materials & Composites</li>
+                <li>Research Methodology & Technical Writing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 4: Specialization & Industry Exposure</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Satellite Technology & Space Systems</li>
+                <li>Hypersonic & Supersonic Aerodynamics</li>
+                <li>AI & Machine Learning in Aerospace</li>
+                <li>Aerospace Safety & Quality Management</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Aircraft Maintenance, Repair & Overhaul (MRO)</li>
+                <li>Capstone Project & Research Work</li>
+                <li>Industrial Training / Internship</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="key-highlights-container">
+        <h1 className="mca-title">Key Highlights</h1>
+        <ul>
+          <li>
+            Hands-on Training with Aerospace Software (ANSYS, MATLAB, CATIA) ✈️
+          </li>
+          <li>Flight Simulations & Wind Tunnel Testing</li>
+          <li>Industrial Exposure with ISRO, DRDO, NASA Internships 🌍</li>
+          <li>Expert Faculty from Aerospace & Defense Industries</li>
+          <li>Focus on Space Exploration & Advanced Propulsion Systems</li>
+        </ul>
+      </div>
+
+      <div className="career-opportunities-container">
+        <h1 className="mca-title">Career Opportunities</h1>
+        <ul>
+          <li>Aerospace Engineer (Aircraft & Spacecraft Design)</li>
+          <li>Avionics & Control Systems Engineer</li>
+          <li>Satellite & Space Systems Engineer</li>
+          <li>Research Scientist in Aerodynamics & Propulsion</li>
+          <li>UAV & Drone Technology Specialist</li>
+          <li>Maintenance & Quality Control Engineer</li>
+        </ul>
+        <p>
+          Top Recruiters: ISRO, DRDO, NASA, Boeing, Airbus, HAL, SpaceX, Private
+          Aerospace Firms
+        </p>
       </div>
 
       <section className="partners-section py-5">

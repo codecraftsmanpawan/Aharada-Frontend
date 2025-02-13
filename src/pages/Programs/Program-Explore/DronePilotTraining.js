@@ -316,6 +316,17 @@ const DronePilotTraining = () => {
         </div>
       </div>
 
+      <div className="course-Overview-container">
+        <h1 className="mca-title">Course Overview</h1>
+        <p className="mca-description">
+          The Drone Pilot Training Program is designed for individuals who want
+          to become professional drone operators. This course covers the
+          fundamental and advanced aspects of drone technology, regulations,
+          flight operations, and aerial applications across industries like
+          aerial photography, agriculture, defense, logistics, and surveying.
+        </p>
+      </div>
+
       <div className="our-promise-container">
         <div className="our-promise-content">
           <div className="our-promise-text">
@@ -402,6 +413,144 @@ const DronePilotTraining = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="course-curriculum-container">
+        <h1 className="mca-title">Course Curriculum</h1>
+
+        <div className="curriculum-section">
+          <h4>Module 1: Introduction to Drones & Regulations</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Basics of Drone Technology & Types of Drones</li>
+                <li>Drone Laws & Regulations (DGCA, FAA, EASA Compliance)</li>
+                <li>Drone Pilot Licensing & Certification Requirements</li>
+                <li>Airspace Classification & Aviation Terminology</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Pre-Flight Planning & Safety Guidelines</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Module 2: Drone Hardware & Flight Mechanics</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>
+                  Understanding Drone Components (Motors, Batteries, Sensors)
+                </li>
+                <li>Aerodynamics & Flight Control Principles</li>
+                <li>GPS Navigation & Autonomous Flight Systems</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Troubleshooting & Drone Maintenance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Module 3: Practical Flight Training</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Hands-On Training with Different Drone Models</li>
+                <li>Manual & Autonomous Flying Techniques</li>
+                <li>Takeoff, Hovering, Landing, and Maneuvers</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Emergency Procedures & Crash Recovery</li>
+                <li>
+                  Night Flying & Beyond Visual Line of Sight (BVLOS) Operations
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Module 4: Industry-Specific Drone Applications</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Aerial Photography & Videography Techniques</li>
+                <li>Drone Mapping & Surveying (GIS & LiDAR)</li>
+                <li>
+                  Agricultural Drone Applications (Crop Monitoring, Spraying)
+                </li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Drones in Logistics & Delivery Services</li>
+                <li>Surveillance & Security Operations with Drones</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Module 5: Certification & Career Guidance</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>DGCA/FAA Certification Exam Preparation</li>
+                <li>Career Opportunities as a Certified Drone Pilot</li>
+                <li>Business Opportunities in the Drone Industry</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Starting a Drone-Based Service Business</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="key-highlights-container">
+        <h1 className="mca-title">Key Highlights</h1>
+        <ul>
+          <li>Hands-On Flight Training with Latest Drone Models 🚁</li>
+          <li>DGCA/FAA-Compliant Certification Training 📜</li>
+          <li>Learn from Industry Experts & Experienced Drone Pilots</li>
+          <li>
+            Practical Projects in Aerial Photography, Mapping & Surveillance
+          </li>
+          <li>
+            Internship & Placement Assistance in Drone-Based Companies &
+            Startups
+          </li>
+        </ul>
+      </div>
+
+      <div className="career-opportunities-container">
+        <h1 className="mca-title">Career Opportunities</h1>
+        <ul>
+          <li>Certified Drone Pilot (Commercial & Government)</li>
+          <li>Aerial Survey & Mapping Specialist</li>
+          <li>Drone Photographer & Videographer</li>
+          <li>Agricultural Drone Operator</li>
+          <li>Drone Inspector for Security & Infrastructure</li>
+          <li>UAV Engineer & Drone Technician</li>
+        </ul>
+        <p>
+          Top Recruiters: Film & Media, Agriculture, Surveying & Mapping
+          Companies, Logistics Firms, Defense & Law Enforcement Agencies
+        </p>
+      </div>
+
+      <div className="course-curriculum-footer">
+        <p>Apply Now & Take Your Drone Skills to the Next Level!</p>
       </div>
 
       <section className="partners-section py-5">

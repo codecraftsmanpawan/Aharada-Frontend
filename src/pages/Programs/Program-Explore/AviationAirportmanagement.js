@@ -311,6 +311,18 @@ const AviationAirportmanagement = () => {
         </div>
       </div>
 
+      <div className="course-Overview-container">
+        <h1 className="mca-title">Course Overview</h1>
+        <p className="mca-description">
+          The BBA in Aviation & Airport Management is a professional degree
+          designed for students aiming to build a career in the aviation and
+          airline industry. The program focuses on airport operations, airline
+          management, aviation safety, customer service, and regulatory
+          compliance. It prepares students for managerial and operational roles
+          in airports, airlines, and aviation service providers.
+        </p>
+      </div>
+
       <div className="our-promise-container">
         <div className="our-promise-content">
           <div className="our-promise-text">
@@ -399,6 +411,104 @@ const AviationAirportmanagement = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="course-curriculum-container">
+        <h1 className="mca-title">Course Curriculum</h1>
+
+        <div className="curriculum-section">
+          <h4>Year 1: Fundamentals of Aviation & Management</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Introduction to Aviation Industry</li>
+                <li>Principles of Management & Organizational Behavior</li>
+                <li>Basics of Airport & Airline Operations</li>
+                <li>Aviation Safety & Security Regulations</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Business Communication & Soft Skills</li>
+                <li>Fundamentals of Accounting & Economics</li>
+                <li>Customer Service in Aviation</li>
+                <li>Air Traffic Control & Navigation Systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 2: Core Aviation & Airport Operations</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Airport Terminal & Ground Handling Management</li>
+                <li>Airline Operations & Revenue Management</li>
+                <li>Aviation Law & Regulatory Compliance (DGCA, IATA, ICAO)</li>
+                <li>Aircraft Maintenance & Safety Procedures</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Logistics & Cargo Management in Aviation</li>
+                <li>Airport Security & Risk Management</li>
+                <li>Marketing & Branding in Aviation</li>
+                <li>Practical Training at Airports / Airlines</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 3: Advanced Aviation Management & Strategy</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Strategic Airline & Airport Management</li>
+                <li>Human Resource Management in Aviation</li>
+                <li>Crisis Management & Emergency Planning in Airports</li>
+                <li>Airport Planning & Infrastructure Management</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Aviation IT & Digital Transformation</li>
+                <li>Environmental Sustainability in Aviation</li>
+                <li>Research Project / Capstone Project</li>
+                <li>Internship & Industrial Training</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="key-highlights-container">
+        <h1 className="mca-title">Key Highlights</h1>
+        <ul>
+          <li>Practical Training at Airports & Airlines ✈️</li>
+          <li>Industry Exposure through Aviation Experts & Seminars</li>
+          <li>Hands-on Experience in Aviation Management Software</li>
+          <li>Internship Opportunities with Leading Airlines & Airports 🌍</li>
+          <li>Placement Assistance with Aviation Companies</li>
+        </ul>
+      </div>
+
+      <div className="career-opportunities-container">
+        <h1 className="mca-title">Career Opportunities</h1>
+        <ul>
+          <li>Airline & Airport Manager</li>
+          <li>Air Traffic Controller</li>
+          <li>Flight Operations Manager</li>
+          <li>Airport Ground Services & Cargo Manager</li>
+          <li>Aviation Safety & Security Officer</li>
+          <li>Aviation Consultant & Airline Customer Service Manager</li>
+        </ul>
+        <p>
+          Top Recruiters: Airports, Airlines, Cargo Companies, Aviation
+          Consulting Firms, Ground Handling Agencies, Government Aviation
+          Departments
+        </p>
       </div>
 
       <section className="partners-section py-5">

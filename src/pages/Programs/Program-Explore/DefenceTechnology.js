@@ -312,6 +312,17 @@ const DefenceTechnology = () => {
         </div>
       </div>
 
+      <div className="course-Overview-container">
+        <h1 className="mca-title">Course Overview</h1>
+        <p className="mca-description">
+          The M.Tech in Defence Technology is a specialized program that focuses
+          on the research, development, and implementation of advanced defence
+          systems and military technology. The curriculum integrates mechanical,
+          electronics, computer science, and strategic defence management to
+          prepare professionals for careers in defence research, military
+          engineering, and government defence projects.
+        </p>
+      </div>
       <div className="our-promise-container">
         <div className="our-promise-content">
           <div className="our-promise-text">
@@ -400,6 +411,129 @@ const DefenceTechnology = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="course-curriculum-container">
+        <h1 className="mca-title">Course Curriculum</h1>
+
+        <div className="curriculum-section">
+          <h4>Year 1: Core Defence & Technology Fundamentals</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Fundamentals of Defence Science & Technology</li>
+                <li>Military Weapon Systems & Ammunition Technology</li>
+                <li>Radar, Sonar & Electronic Warfare Systems</li>
+                <li>Robotics & Artificial Intelligence in Defence</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Cybersecurity & Information Warfare</li>
+                <li>Guided Missile Technology & Ballistics</li>
+                <li>Advanced Materials & Composite Structures</li>
+                <li>Research Methodology & Defence Data Analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 2: Advanced Defence Engineering & Applications</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>UAVs, Drones & Autonomous Defence Systems</li>
+                <li>Defence Communication & Satellite Technology</li>
+                <li>Thermal & Fluid Dynamics in Defence Applications</li>
+                <li>Military Vehicles & Aerospace Propulsion Systems</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Defence Strategy, Policy & National Security</li>
+                <li>Simulation & Virtual Reality for Defence Training</li>
+                <li>Dissertation/Thesis in Defence Research</li>
+                <li>
+                  Industrial Training / Internship with Defence Organizations
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 3: Advanced Defence Technologies</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Rocket & Spacecraft Propulsion</li>
+                <li>Computational Fluid Dynamics (CFD)</li>
+                <li>Aircraft & Spacecraft Design</li>
+                <li>Aerospace Vehicle Dynamics & Control</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Aerospace Manufacturing & Robotics</li>
+                <li>UAV (Unmanned Aerial Vehicle) Design & Applications</li>
+                <li>Aerospace Materials & Composites</li>
+                <li>Research Methodology & Technical Writing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 4: Specialization & Industry Exposure</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Satellite Technology & Space Systems</li>
+                <li>Hypersonic & Supersonic Aerodynamics</li>
+                <li>AI & Machine Learning in Aerospace</li>
+                <li>Aerospace Safety & Quality Management</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Aircraft Maintenance, Repair & Overhaul (MRO)</li>
+                <li>Capstone Project & Research Work</li>
+                <li>Industrial Training / Internship</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="key-highlights-container">
+        <h1 className="mca-title">Key Highlights</h1>
+        <ul>
+          <li>Hands-on Training in Defence R&D Labs & Facilities ⚙️</li>
+          <li>Exposure to DRDO, ISRO, and Government Defence Agencies 🚀</li>
+          <li>Practical Learning on Military Weapon Systems & AI in Defence</li>
+          <li>
+            Live Projects with Defence Manufacturing & Cybersecurity Firms
+          </li>
+          <li>
+            Internship & Placement Assistance in Defence & Aerospace Sectors
+          </li>
+        </ul>
+      </div>
+
+      <div className="career-opportunities-container">
+        <h1 className="mca-title">Career Opportunities</h1>
+        <ul>
+          <li>Defence Research Scientist (DRDO, ISRO, BARC)</li>
+          <li>Aerospace Engineer (Military Aviation & Space)</li>
+          <li>Cybersecurity & Warfare Specialist</li>
+          <li>Ballistics & Missile Technology Engineer</li>
+          <li>Military Vehicle & Naval System Engineer</li>
+          <li>Robotics & AI Specialist in Defence</li>
+        </ul>
+        <p>
+          Top Recruiters: DRDO, ISRO, HAL, BEL, BARC, Indian Armed Forces,
+          Private Defence Contractors, Space & Aviation Companies
+        </p>
       </div>
 
       <section className="partners-section py-5">
