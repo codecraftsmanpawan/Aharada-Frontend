@@ -98,7 +98,7 @@ const Awards = () => {
                       style={{ height: "100%" }}
                     >
                       <img
-                        src="./assets/img/Certificate.JPG"
+                        src="./assets/img/Certificate1.JPG"
                         alt="icon"
                         style={{
                           width: "100%",
