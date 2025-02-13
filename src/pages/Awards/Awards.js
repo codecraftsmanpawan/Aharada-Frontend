@@ -52,7 +52,7 @@ const Awards = () => {
                       style={{ height: "100%", width: "100%" }}
                     >
                       <img
-                        src="assets/img/Certificate1.jpg"
+                        src="assets/Certificate1.jpg"
                         alt="icon"
                         style={{
                           width: "100%",
@@ -75,7 +75,7 @@ const Awards = () => {
                       style={{ height: "100%" }}
                     >
                       <img
-                        src="assets/img/Certificate2.jpg"
+                        src="assets/Certificate2.jpg"
                         alt="icon"
                         style={{
                           width: "100%",
@@ -98,7 +98,7 @@ const Awards = () => {
                       style={{ height: "100%" }}
                     >
                       <img
-                        src="assets/img/Certificate3.jpg"
+                        src="assets/Certificate3.jpg"
                         alt="icon"
                         style={{
                           width: "100%",
