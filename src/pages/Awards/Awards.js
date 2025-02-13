@@ -41,6 +41,7 @@ const Awards = () => {
                   gap: "1rem",
                 }}
               >
+                {/* Card 1 */}
                 <div className="col-md-4" style={{ padding: "0" }}>
                   <div
                     className="feature-card"
@@ -51,7 +52,7 @@ const Awards = () => {
                       style={{ height: "100%", width: "100%" }}
                     >
                       <img
-                        src="/assets/img/Certificate1.jpg"
+                        src="assets/img/Certificate1.jpg"
                         alt="icon"
                         style={{
                           width: "100%",
@@ -63,6 +64,7 @@ const Awards = () => {
                   </div>
                 </div>
 
+                {/* Card 2 */}
                 <div className="col-md-4" style={{ padding: "0" }}>
                   <div
                     className="feature-card style2"
@@ -73,7 +75,7 @@ const Awards = () => {
                       style={{ height: "100%" }}
                     >
                       <img
-                        src="/assets/img/Certificate2.jpg"
+                        src="assets/img/Certificate2.jpg"
                         alt="icon"
                         style={{
                           width: "100%",
@@ -85,6 +87,7 @@ const Awards = () => {
                   </div>
                 </div>
 
+                {/* Card 3 */}
                 <div className="col-md-4" style={{ padding: "0" }}>
                   <div
                     className="feature-card style2"
@@ -95,7 +98,7 @@ const Awards = () => {
                       style={{ height: "100%" }}
                     >
                       <img
-                        src="/assets/img/Certificate3.jpg"
+                        src="assets/img/Certificate3.jpg"
                         alt="icon"
                         style={{
                           width: "100%",
