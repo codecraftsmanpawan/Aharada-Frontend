@@ -301,7 +301,17 @@ const OurPromise = () => {
           </div>
         </div>
       </div>
-
+      <div className="course-Overview-container">
+        <h1 className="mca-title">Course Overview</h1>
+        <p className="mca-description">
+          The BBA in Data Analytics & Artificial Intelligence is designed to
+          equip students with cutting-edge skills in data-driven
+          decision-making, AI-powered business solutions, and strategic
+          analytics. This program integrates business management fundamentals
+          with data science, machine learning, and artificial intelligence,
+          preparing students for careers in tech-driven industries.
+        </p>
+      </div>
       <div className="our-promise-container">
         <div className="our-promise-content">
           <div className="our-promise-text">
@@ -390,6 +400,110 @@ const OurPromise = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="course-curriculum-container">
+        <h1 className="mca-title">Course Curriculum</h1>
+
+        <div className="curriculum-section">
+          <h4>Year 1: Business & Analytics Fundamentals</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Introduction to Business & Management</li>
+                <li>Principles of Marketing & Digital Strategies</li>
+                <li>Financial Accounting & Business Mathematics</li>
+                <li>Business Communication & Soft Skills</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Fundamentals of Data Analytics & Big Data</li>
+                <li>
+                  Introduction to Artificial Intelligence & Machine Learning
+                </li>
+                <li>Basics of Python & R for Business Analytics</li>
+                <li>Statistics for Business Decision-Making</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 2: Advanced Data Science & AI Applications</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>
+                  Data Visualization & Business Intelligence Tools (Power BI,
+                  Tableau)
+                </li>
+                <li>Predictive Analytics & Machine Learning Algorithms</li>
+                <li>AI in Business & Process Automation</li>
+                <li>SQL & Database Management for Business Analytics</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>E-Commerce & AI-driven Consumer Behavior Analysis</li>
+                <li>Operations & Supply Chain Analytics</li>
+                <li>HR Analytics & Workforce Optimization</li>
+                <li>Cloud Computing & AI Deployment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 3: AI & Data-Driven Business Strategy</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Advanced AI Techniques (Deep Learning, NLP, Chatbots)</li>
+                <li>Financial Analytics & Investment Strategies</li>
+                <li>Cybersecurity & Ethical AI Practices</li>
+                <li>Blockchain & AI Integration in Business</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Entrepreneurship & Innovation in Data-Driven Businesses</li>
+                <li>
+                  Capstone Project: AI & Data Analytics for Business Growth
+                </li>
+                <li>Internship / Industry Training</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="key-highlights-container">
+        <h1 className="mca-title">Key Highlights</h1>
+        <ul>
+          <li>Hands-on Learning with Real-World Data Sets 📊</li>
+          <li>
+            Training on AI & Analytics Tools (Python, R, SQL, Power BI, Tableau)
+          </li>
+          <li>Industry Mentorship & Expert-Led Workshops 🎓</li>
+          <li>Internship & Placement Assistance 🚀</li>
+          <li>Capstone Project on AI-driven Business Solutions</li>
+        </ul>
+      </div>
+
+      <div className="career-opportunities-container">
+        <h1 className="mca-title">Career Opportunities</h1>
+        <ul>
+          <li>Data Analyst / Business Intelligence Analyst</li>
+          <li>AI Consultant / AI Product Manager</li>
+          <li>Data Scientist & Machine Learning Engineer</li>
+          <li>Financial & Risk Analyst</li>
+          <li>Digital Marketing & Consumer Analytics Expert</li>
+          <li>Operations & Supply Chain Data Strategist</li>
+        </ul>
+        <p>
+          Top Recruiters: Tech Companies, Financial Institutions, Consulting
+          Firms, E-Commerce Giants
+        </p>
       </div>
 
       <section className="partners-section py-5">

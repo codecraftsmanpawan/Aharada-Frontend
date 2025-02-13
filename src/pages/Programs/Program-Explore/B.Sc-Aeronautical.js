@@ -310,7 +310,16 @@ const BScAeronautical = () => {
           </div>
         </div>
       </div>
-
+      <div className="course-Overview-container">
+        <h1 className="mca-title">Course Overview</h1>
+        <p className="mca-description">
+          The B.Sc. in Aeronautical Science program provides a strong foundation
+          in aerodynamics, aircraft systems, aviation safety, and aerospace
+          technology. It prepares students for careers in aviation operations,
+          aircraft maintenance, research, and development, as well as higher
+          studies in aeronautical and aerospace sciences.
+        </p>
+      </div>
       <div className="our-promise-container">
         <div className="our-promise-content">
           <div className="our-promise-text">
@@ -397,6 +406,107 @@ const BScAeronautical = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="course-curriculum-container">
+        <h1 className="mca-title">Course Curriculum</h1>
+
+        <div className="curriculum-section">
+          <h4>Year 1: Fundamentals of Aeronautical Science</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Introduction to Aeronautical Science</li>
+                <li>Mathematics for Aeronautics</li>
+                <li>Physics of Flight & Fluid Mechanics</li>
+                <li>Engineering Mechanics</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Aircraft Materials & Manufacturing Processes</li>
+                <li>Basics of Electrical & Electronics Systems in Aviation</li>
+                <li>Technical Writing & Communication Skills</li>
+                <li>Computer-Aided Design (CAD) for Aeronautics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 2: Core Aviation & Aircraft Systems</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Aerodynamics & Flight Mechanics</li>
+                <li>Aircraft Propulsion & Jet Engine Fundamentals</li>
+                <li>Avionics & Navigation Systems</li>
+                <li>Aircraft Structures & Materials Science</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Meteorology & Environmental Science for Aviation</li>
+                <li>Air Traffic Control & Aviation Operations</li>
+                <li>Aircraft Maintenance & Safety Regulations</li>
+                <li>Practical Lab Sessions (Wind Tunnel, Simulation)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 3: Advanced Aeronautical Applications & Research</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Aerospace Instrumentation & Control Systems</li>
+                <li>Unmanned Aerial Vehicles (UAVs) & Drone Technology</li>
+                <li>Space Science & Satellite Technology</li>
+                <li>Human Factors & Aviation Psychology</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Aviation Law & Air Traffic Management</li>
+                <li>AI & Machine Learning in Aviation</li>
+                <li>Research Project / Capstone Project</li>
+                <li>Internship / Industrial Training</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="key-highlights-container">
+        <h1 className="mca-title">Key Highlights</h1>
+        <ul>
+          <li>
+            Hands-on Training with Aircraft Systems & Flight Simulators ✈️
+          </li>
+          <li>Exposure to Real-World Aviation Operations</li>
+          <li>
+            Internship & Industrial Training with Airlines & Aviation Companies
+            🌍
+          </li>
+          <li>Expert-Led Workshops on Aerospace Innovations</li>
+          <li>Research Opportunities in Aerodynamics & Space Science</li>
+        </ul>
+      </div>
+
+      <div className="career-opportunities-container">
+        <h1 className="mca-title">Career Opportunities</h1>
+        <ul>
+          <li>Aeronautical Engineer</li>
+          <li>Aircraft Maintenance & Safety Officer</li>
+          <li>Air Traffic Controller</li>
+          <li>Aerospace Research Scientist</li>
+          <li>UAV & Drone Specialist</li>
+          <li>Flight Operations & Airline Management</li>
+        </ul>
+        <p>
+          Top Recruiters: Airlines, Aerospace Companies, Research Organizations,
+          Space Agencies, Air Traffic Control Centers
+        </p>
       </div>
 
       <section className="partners-section py-5">

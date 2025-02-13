@@ -302,7 +302,16 @@ const EntrepreneurshipInnovation = () => {
           </div>
         </div>
       </div>
-
+      <div className="course-Overview-container">
+        <h1 className="mca-title">Course Overview</h1>
+        <p className="mca-description">
+          The BBA in Entrepreneurship & Innovation is a dynamic program designed
+          to develop entrepreneurial mindset, business acumen, and leadership
+          skills. This course equips students with the knowledge of startup
+          development, business strategy, innovation, and financial management,
+          preparing them to launch and manage successful businesses.
+        </p>
+      </div>
       <div className="our-promise-container">
         <div className="our-promise-content">
           <div className="our-promise-text">
@@ -391,6 +400,102 @@ const EntrepreneurshipInnovation = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="course-curriculum-container">
+        <h1 className="mca-title">Course Curriculum</h1>
+
+        <div className="curriculum-section">
+          <h4>Year 1: Business Fundamentals & Entrepreneurial Mindset</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Introduction to Business & Management</li>
+                <li>Principles of Marketing & Sales Strategies</li>
+                <li>Business Communication & Negotiation Skills</li>
+                <li>Basics of Accounting & Financial Management</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Entrepreneurship & Startup Ecosystem</li>
+                <li>Microeconomics & Business Environment</li>
+                <li>Legal Aspects of Business & Company Laws</li>
+                <li>Digital & Social Media Marketing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 2: Startup Development & Business Growth</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Business Model Development & Lean Startup Methodology</li>
+                <li>Design Thinking & Innovation Management</li>
+                <li>Human Resource Management for Startups</li>
+                <li>E-Commerce & Online Business Strategies</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Venture Capital & Funding Strategies</li>
+                <li>Risk Management & Business Ethics</li>
+                <li>Operations & Supply Chain Management</li>
+                <li>Market Research & Consumer Behavior</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 3: Scaling & Leadership in Business</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Growth Hacking & Scaling Strategies</li>
+                <li>Leadership & Team Management</li>
+                <li>Financial Planning & Investment Strategies</li>
+                <li>Global Entrepreneurship & International Business</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Technology & AI in Business Innovation</li>
+                <li>Sustainability & Social Entrepreneurship</li>
+                <li>Final Year Project: Business Plan Development</li>
+                <li>Internship / Industry Training</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="key-highlights-container">
+        <h1 className="mca-title">Key Highlights</h1>
+        <ul>
+          <li>Hands-on Learning with Startup Case Studies 🚀</li>
+          <li>Business Plan Development & Pitching Sessions</li>
+          <li>Industry Experts & Entrepreneur Mentors 🎓</li>
+          <li>Internship & Funding Assistance 💰</li>
+          <li>Access to Startup Incubators & Accelerators</li>
+        </ul>
+      </div>
+
+      <div className="career-opportunities-container">
+        <h1 className="mca-title">Career Opportunities</h1>
+        <ul>
+          <li>Startup Founder / Entrepreneur</li>
+          <li>Business Consultant / Growth Strategist</li>
+          <li>Digital Marketing & E-Commerce Specialist</li>
+          <li>Innovation Manager in Corporates</li>
+          <li>Product Manager & Business Analyst</li>
+          <li>Venture Capital & Investment Consultant</li>
+        </ul>
+        <p>
+          Top Recruiters: Startups, Venture Capital Firms, Incubators, Business
+          Consultancies
+        </p>
       </div>
 
       <section className="partners-section py-5">
