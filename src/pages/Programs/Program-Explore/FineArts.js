@@ -310,7 +310,16 @@ const FineArts = () => {
           </div>
         </div>
       </div>
-
+      <div className="course-Overview-container">
+        <h1 className="mca-title">Course Overview</h1>
+        <p className="mca-description">
+          The Bachelor of Fine Arts (BFA) is a specialized program designed for
+          students passionate about visual arts, design, and creative
+          expression. The course provides hands-on training in painting,
+          sculpture, digital art, photography, and more, allowing students to
+          develop artistic skills and a strong portfolio.
+        </p>
+      </div>
       <div className="our-promise-container">
         <div className="our-promise-content">
           <div className="our-promise-text">
@@ -397,6 +406,126 @@ const FineArts = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="course-curriculum-container">
+        <h1 className="mca-title">Course Curriculum</h1>
+
+        <div className="curriculum-section">
+          <h4>Year 1: Foundation in Fine Arts</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Introduction to Fine Arts & Art History</li>
+                <li>Fundamentals of Drawing & Sketching</li>
+                <li>Color Theory & Composition</li>
+                <li>Basics of Painting (Oil, Watercolor, Acrylic)</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Sculpture & 3D Art Techniques</li>
+                <li>Digital Art & Graphic Design Basics</li>
+                <li>Visual Communication & Aesthetics</li>
+                <li>Perspective & Anatomy Drawing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 2: Core Artistic Techniques</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Advanced Drawing & Illustration</li>
+                <li>Portrait & Figure Painting</li>
+                <li>Printmaking & Mixed Media Art</li>
+                <li>Calligraphy & Typography</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Introduction to Photography & Cinematography</li>
+                <li>Digital Painting & Animation Basics</li>
+                <li>Art Criticism & Aesthetic Theories</li>
+                <li>Murals & Installation Art</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 3: Specialization & Experimental Art</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Abstract & Contemporary Art Forms</li>
+                <li>Conceptual Art & Storytelling through Visuals</li>
+                <li>Digital Media & Motion Graphics</li>
+                <li>Fashion Illustration & Textile Art</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Film & Video Art Direction</li>
+                <li>Environmental & Public Art Projects</li>
+                <li>Art Therapy & Psychology of Art</li>
+                <li>Internship & Art Exhibitions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 4: Professional Development & Portfolio Building</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Advanced Digital & 3D Art</li>
+                <li>Photography & Cinematic Composition</li>
+                <li>Art Business & Marketing Strategies</li>
+                <li>Visual Identity & Branding Design</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Freelancing & Entrepreneurship in Art</li>
+                <li>Major Art Project / Thesis</li>
+                <li>Internship & Live Industry Projects</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="key-highlights-container">
+        <h1 className="mca-title">Key Highlights</h1>
+        <ul>
+          <li>Hands-on Studio Work & Digital Art Training 🎨</li>
+          <li>Exposure to National & International Art Exhibitions</li>
+          <li>
+            Industry-Standard Tools: Adobe Suite, Procreate, Blender, etc.
+          </li>
+          <li>Internships & Live Projects with Creative Agencies 🌍</li>
+          <li>Expert-Led Workshops on Art, Design, & Aesthetic Trends</li>
+        </ul>
+      </div>
+
+      <div className="career-opportunities-container">
+        <h1 className="mca-title">Career Opportunities</h1>
+        <ul>
+          <li>Professional Artist / Painter</li>
+          <li>Graphic Designer / Digital Illustrator</li>
+          <li>Animator & Concept Artist</li>
+          <li>Art Director in Media & Advertising</li>
+          <li>Fashion & Textile Designer</li>
+          <li>Curator in Art Galleries & Museums</li>
+          <li>Photographer & Cinematic Artist</li>
+        </ul>
+        <p>
+          Top Recruiters: Design Studios, Art Galleries, Fashion Brands, Film &
+          Animation Studios, Publishing Houses, Advertising Agencies
+        </p>
       </div>
 
       <section className="partners-section py-5">

@@ -549,10 +549,6 @@ const DronePilotTraining = () => {
         </p>
       </div>
 
-      <div className="course-curriculum-footer">
-        <p>Apply Now & Take Your Drone Skills to the Next Level!</p>
-      </div>
-
       <section className="partners-section py-5">
         <div className="container">
           <h3 className="text-left">Our Placement Partners</h3>

@@ -308,6 +308,17 @@ const AviationManagement = () => {
           </div>
         </div>
       </div>
+      <div className="course-Overview-container">
+        <h1 className="mca-title">Course Overview</h1>
+        <p className="mca-description">
+          The MBA in Aviation Management is a specialized program designed to
+          develop leadership, managerial, and operational skills required in the
+          aviation and airline industry. This program equips students with
+          knowledge of airline operations, airport management, aviation finance,
+          logistics, and regulatory frameworks to prepare them for senior roles
+          in the aviation sector.
+        </p>
+      </div>
 
       <div className="our-promise-container">
         <div className="our-promise-content">
@@ -397,6 +408,99 @@ const AviationManagement = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="course-curriculum-container">
+        <h1 className="mca-title">Course Curriculum</h1>
+
+        <div className="curriculum-section">
+          <h4>Year 1: Core Business & Aviation Fundamentals</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Principles of Management & Leadership</li>
+                <li>Financial & Managerial Accounting</li>
+                <li>Marketing Strategies in Aviation</li>
+                <li>Aviation Industry Overview & Economics</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Airport & Airline Operations Management</li>
+                <li>Air Transport Safety & Security Regulations</li>
+                <li>Human Resource Management in Aviation</li>
+                <li>Business Analytics & Decision-Making</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 2: Advanced Aviation Strategies & Specialization</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Aviation Law & International Regulations</li>
+                <li>Airline Revenue & Pricing Management</li>
+                <li>Digital Transformation & AI in Aviation</li>
+                <li>Airport Planning & Infrastructure Development</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Logistics & Supply Chain Management in Aviation</li>
+                <li>Sustainability & Green Aviation Initiatives</li>
+                <li>Crisis & Risk Management in Aviation Industry</li>
+                <li>Final Year Project / Dissertation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Internship & Industry Training</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>
+                  Real-world exposure through internships with leading airlines,
+                  airports, and aviation firms
+                </li>
+                <li>
+                  Case studies and hands-on learning from industry leaders
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="key-highlights-container">
+        <h1 className="mca-title">Key Highlights</h1>
+        <ul>
+          <li>
+            Industry-Centric Curriculum Tailored for Aviation Professionals ✈️
+          </li>
+          <li>Training on Aviation Management Software & Technologies</li>
+          <li>Internship & Placement Assistance with Leading Airlines 🌍</li>
+          <li>Expert Faculty & Aviation Industry Mentors 👨‍🏫</li>
+          <li>Global Networking Opportunities & Industrial Visits</li>
+        </ul>
+      </div>
+
+      <div className="career-opportunities-container">
+        <h1 className="mca-title">Career Opportunities</h1>
+        <ul>
+          <li>Airline Operations Manager</li>
+          <li>Airport Manager</li>
+          <li>Aviation Safety & Compliance Officer</li>
+          <li>Air Cargo & Freight Management Specialist</li>
+          <li>Revenue & Pricing Analyst for Airlines</li>
+          <li>Aviation Logistics & Supply Chain Manager</li>
+        </ul>
+        <p>
+          Top Recruiters: Airlines, Airports, Aviation Consultancies, Logistics
+          Firms, Government Aviation Authorities
+        </p>
       </div>
 
       <section className="partners-section py-5">

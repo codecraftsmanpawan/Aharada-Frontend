@@ -33,42 +33,42 @@ import Course from "../../Home/component/CouseOffer";
 
 const offerings = [
   {
-    text: "Practical training in aircraft design, aerodynamics, and avionics",
+    text: "Hands-on training in fashion design, pattern making, and garment construction",
     icon: <FaWrench />,
   },
   {
-    text: "Career opportunities in aerospace engineering, aviation, and defense",
-    icon: <FaRocket />,
-  },
-  {
-    text: "Internships with aerospace companies and aviation firms",
-    icon: <FaBriefcase />,
-  },
-  {
-    text: "Exposure to the latest innovations in aeronautical technology",
+    text: "Career opportunities in fashion design, styling, and merchandising",
     icon: <FaLightbulb />,
   },
   {
-    text: "Industry-focused curriculum with hands-on lab sessions and projects",
+    text: "Internships with leading fashion designers and apparel companies",
+    icon: <FaBriefcase />,
+  },
+  {
+    text: "Exposure to the latest trends, textiles, and fashion technologies",
+    icon: <FaLightbulb />,
+  },
+  {
+    text: "Industry-focused curriculum with creative workshops and live projects",
     icon: <FaBookOpen />,
   },
   {
-    text: "Certifications in Aircraft Maintenance Engineering (AME) and DGCA-approved courses",
+    text: "Certifications in Fashion Design, Textile Technology, and Fashion Marketing",
     icon: <FaCertificate />,
   },
   {
-    text: "Soft skills and leadership training for aeronautical professionals",
+    text: "Soft skills and leadership training for future fashion industry leaders",
     icon: <FaUsers />,
   },
 ];
 
 const whoCanDoMCA = [
   {
-    text: "Passed class 12th with Physics, Chemistry, and Mathematics (PCM) from a recognized board",
+    text: "Passed class 12th with a background in Arts, Commerce, or Science from a recognized board",
     icon: "⭐",
   },
   {
-    text: "Aspirants passionate about aircraft design, aerodynamics, and aviation technology",
+    text: "Aspirants passionate about fashion design, creativity, and garment styling",
     icon: "⭐",
   },
   {
@@ -76,7 +76,7 @@ const whoCanDoMCA = [
     icon: "⭐",
   },
   {
-    text: "Students aiming for careers in aerospace engineering, aircraft maintenance, and defense technology",
+    text: "Students aiming for careers in fashion design, styling, merchandising, and textile innovation",
     icon: "⭐",
   },
 ];
@@ -153,27 +153,27 @@ const companyPartners = [
 const mcaSummary = [
   {
     icon: <FaGraduationCap />,
-    text: "The full form of B.Sc - Aeronautical is Bachelor of Science in Aeronautical Engineering, a specialized undergraduate course in aerospace and aviation technology.",
+    text: "The full form of B.Sc - Fashion Design is Bachelor of Science in Fashion Design, a specialized undergraduate course focusing on fashion, garment construction, and textile technology.",
   },
   {
     icon: <FaUniversity />,
-    text: "This course is ideal for students passionate about aircraft design, aerodynamics, propulsion, and aviation technology.",
+    text: "This course is ideal for students passionate about creativity, fashion trends, garment styling, and fabric technology.",
   },
   {
     icon: <FaCheckCircle />,
-    text: "A regular B.Sc - Aeronautical course duration is 3-4 years, divided into multiple semesters, with hands-on training and research opportunities.",
+    text: "A regular B.Sc - Fashion Design course duration is 3-4 years, divided into multiple semesters, with practical workshops, design projects, and industry internships.",
   },
   {
     icon: <FaDollarSign />,
-    text: "The average starting salary for graduates in this field ranges from 4-8 Lakhs per year, depending on job roles, expertise, and industry demand.",
+    text: "The average starting salary for graduates in this field ranges from 3-6 Lakhs per year, depending on job roles, expertise, and industry demand.",
   },
   {
     icon: <FaLightbulb />,
-    text: "Career opportunities include roles in aircraft manufacturing, maintenance engineering, aerodynamics research, defense, and space technology.",
+    text: "Career opportunities include roles in fashion design, styling, merchandising, fashion marketing, textile research, and costume design.",
   },
   {
     icon: <FaBuilding />,
-    text: "Top recruiters in this field include ISRO, DRDO, HAL, Boeing, Airbus, and leading aerospace research organizations.",
+    text: "Top recruiters in this field include renowned fashion houses, apparel brands, retail chains, and textile manufacturers such as Zara, H&M, Louis Vuitton, and Calvin Klein.",
   },
 ];
 
@@ -286,9 +286,11 @@ const FashionDesign = () => {
       <div className="mca-highlights-container">
         <h1 className="mca-title">BFD - Fashion Design Highlights</h1>
         <p className="mca-description">
-          Explore the dynamic world of aviation and travel management with a
-          curriculum designed to equip you with industry-relevant skills.
+          Delve into the exciting realm of aviation and travel management, where
+          a comprehensive curriculum is crafted to empower you with the skills
+          and knowledge needed for success in this thriving industry.
         </p>
+
         <div className="highlight-cards">
           <div className="highlight-card">
             <p className="highlight-number">3</p>
@@ -309,6 +311,18 @@ const FashionDesign = () => {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="course-Overview-container">
+        <h1 className="mca-title">Course Overview</h1>
+        <p className="mca-description">
+          The Bachelor of Fashion Design (BFD) is a professional degree that
+          equips students with the knowledge and skills required for the fashion
+          industry. Covering everything from design principles to textile
+          science, garment construction, fashion business, and digital fashion
+          technology, this program prepares students for a dynamic career in
+          fashion design and entrepreneurship.
+        </p>
       </div>
 
       <div className="our-promise-container">
@@ -397,6 +411,125 @@ const FashionDesign = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="course-curriculum-container">
+        <h1 className="mca-title">Course Curriculum</h1>
+
+        <div className="curriculum-section">
+          <h4>Year 1: Foundation in Fashion & Design</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Introduction to Fashion Design & History</li>
+                <li>Elements & Principles of Design</li>
+                <li>Fashion Illustration & Sketching Techniques</li>
+                <li>Textile Science & Fabric Studies</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Pattern Making & Garment Construction Basics</li>
+                <li>Computer-Aided Fashion Design (CAD)</li>
+                <li>Color Theory & Fashion Aesthetics</li>
+                <li>Fashion Communication & Presentation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 2: Core Fashion Design & Development</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Advanced Fashion Illustration & Digital Design</li>
+                <li>Draping Techniques & Advanced Pattern Making</li>
+                <li>Surface Ornamentation & Embroidery Techniques</li>
+                <li>Sustainable & Eco-Friendly Fashion Design</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Fashion Styling & Trend Forecasting</li>
+                <li>Retail Merchandising & Fashion Marketing</li>
+                <li>Photography & Visual Communication in Fashion</li>
+                <li>Fashion Sociology & Cultural Influences</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 3: Specialization & Industry Applications</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Haute Couture & Luxury Fashion Design</li>
+                <li>Knitwear & Sportswear Design</li>
+                <li>Costume & Ethnic Wear Designing</li>
+                <li>Fashion Accessories & Footwear Design</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Fashion Entrepreneurship & Brand Management</li>
+                <li>Digital Fashion & 3D Modeling</li>
+                <li>Fashion Show Production & Event Management</li>
+                <li>Internship with Fashion Brands / Designers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 4: Professional Development & Portfolio Building</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Portfolio Development & Collection Design</li>
+                <li>Fashion Business & E-commerce Strategies</li>
+                <li>Advanced Textile Manipulation & Dyeing Techniques</li>
+                <li>Celebrity & Editorial Styling</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Fashion Technology & Smart Wearables</li>
+                <li>Final Capstone Project – Fashion Showcase</li>
+                <li>Internship & Industry Networking</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="key-highlights-container">
+        <h1 className="mca-title">Key Highlights</h1>
+        <ul>
+          <li>Hands-on Training with Fashion Studios & Workshops 👗</li>
+          <li>Exposure to Fashion Weeks & Industry Events</li>
+          <li>
+            Mastering Digital Tools (Adobe Illustrator, CLO 3D, Procreate)
+          </li>
+          <li>Internship & Collaboration with Leading Fashion Brands 🌍</li>
+          <li>Expert-Led Workshops on Fashion Forecasting & Design Trends</li>
+        </ul>
+      </div>
+
+      <div className="career-opportunities-container">
+        <h1 className="mca-title">Career Opportunities</h1>
+        <ul>
+          <li>Certified Fashion Designer</li>
+          <li>Aerial Survey & Mapping Specialist</li>
+          <li>Fashion Stylist & Consultant</li>
+          <li>Fashion Marketing Manager</li>
+          <li>Textile Designer & Consultant</li>
+          <li>Fashion Entrepreneur & Brand Manager</li>
+        </ul>
+        <p>
+          Top Recruiters: Fashion Brands, Retail Chains, Media & Entertainment,
+          Textile Companies, E-commerce Firms
+        </p>
       </div>
 
       <section className="partners-section py-5">
