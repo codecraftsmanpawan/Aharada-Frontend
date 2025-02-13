@@ -98,7 +98,11 @@
     padding: 50px 20px;
     background: linear-gradient(to bottom, #f6f5f2, #f4ebdd);
 }
-
+.course-Overview-container {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #f4ebdd;
+}
 .mca-title {
     font-size: 2rem;
     font-weight: 700;

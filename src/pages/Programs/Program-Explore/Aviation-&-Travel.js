@@ -274,7 +274,7 @@ const AviationTravel = () => {
 
   return (
     <>
-      <div className="Course Overview-container">
+      <div className="mca-highlights-container">
         <h1 className="mca-title">BBA in Aviation & Travel Highlights</h1>
         <p className="mca-description">
           Transform Your Career in the Aviation & Travel Industry
@@ -300,10 +300,16 @@ const AviationTravel = () => {
           </div>
         </div>
       </div>
-      <div className="mca-highlights-container">
-        <h1 className="mca-title">BBA in Aviation & Travel Highlights</h1>
+
+      <div className="course-Overview-container">
+        <h1 className="mca-title">Course Overview</h1>
         <p className="mca-description">
-          Transform Your Career in the Aviation & Travel Industry
+          The BBA in Aviation & Travel is a dynamic undergraduate program
+          designed to equip students with in-depth knowledge of airline
+          management, airport operations, travel & tourism , and business
+          administration. This program blends academic knowledge with practical
+          industry exposure , preparing students for high-demand careers in
+          aviation, hospitality, and tourism sectors.
         </p>
       </div>
 
