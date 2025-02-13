@@ -29,7 +29,7 @@ const AwardsSection = () => {
                     className="feature-card style2"
                     style={{ height: "300px", width: "330px" }}
                   >
-                    <div className="feature-card_icon">
+                    <div>
                       <img src="./assets/img/Certificate3.JPG" alt="icon" />
                     </div>
                   </div>
@@ -40,7 +40,7 @@ const AwardsSection = () => {
                     className="feature-card style2"
                     style={{ height: "300px", width: "330px" }}
                   >
-                    <div className="feature-card_icon">
+                    <div>
                       <img src="./assets/img/Certificate1.JPG" alt="icon" />
                     </div>
                   </div>

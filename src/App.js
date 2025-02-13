@@ -51,6 +51,8 @@ import FineArts from "./pages/Programs/Program-Explore/FineArts";
 import FashionDesign from "./pages/Programs/Program-Explore/FashionDesign";
 import Department from "./pages/Department/Department";
 import Awards from "./pages/Awards/Awards";
+import HRRegistration from "./pages/HR/HRRegistration";
+import StudentRegistration from "./pages/HR/StudentRegistration";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import TermsandConditions from "./pages/PrivacyPolicy/TermsandConditions";
 import Footer from "./components/Footer/Footer";
@@ -133,6 +135,8 @@ function App() {
         <Route path="/termsand/conditions" element={<TermsandConditions />} />
         <Route path="/department" element={<Department />} />
         <Route path="/awards" element={<Awards />} />
+        <Route path="/hr-registration" element={<HRRegistration />} />
+        <Route path="/student-registration" element={<StudentRegistration />} />
       </Routes>
       <Footer />
     </Router>

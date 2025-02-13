@@ -1,0 +1,90 @@
+.hr-registration-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7fafc;
+}
+
+.hr-registration-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 99%;
+}
+
+.hr-registration-form-title {
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.hr-registration-form-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .hr-registration-form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.hr-registration-form-field {
+    margin-bottom: 1rem;
+}
+
+.hr-registration-form-label-email,
+.hr-registration-form-label-name,
+.hr-registration-form-label-companyName,
+.hr-registration-form-label-linkedinId,
+.hr-registration-form-label-designation,
+.hr-registration-form-label-mobileNo {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+}
+
+.hr-registration-form-required {
+    color: red;
+    font-weight: bold;
+    margin-left: 0.25rem;
+}
+
+.hr-registration-form-input-field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #4a5568;
+    transition: all 0.2s ease-in-out;
+}
+
+.hr-registration-form-input-field:focus {
+    outline: none;
+    border-color: #0f3146;
+    box-shadow: 0 0 0 1px rgb(9, 42, 72);
+}
+
+.hr-registration-form-submit-button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0f3f5e;
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.hr-registration-form-submit-button:hover {
+    background-color: #2b6cb0;
+}

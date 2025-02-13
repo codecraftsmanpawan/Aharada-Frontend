@@ -47,10 +47,7 @@ const Awards = () => {
                     className="feature-card"
                     style={{ height: "350px", width: "380px" }}
                   >
-                    <div
-                      className="feature-card_icon"
-                      style={{ height: "100%", width: "100%" }}
-                    >
+                    <div style={{ height: "100%", width: "100%" }}>
                       <img
                         src="./assets/img/Certificate3.JPG"
                         alt="icon"
@@ -70,10 +67,7 @@ const Awards = () => {
                     className="feature-card style2"
                     style={{ height: "350px", width: "380px" }}
                   >
-                    <div
-                      className="feature-card_icon"
-                      style={{ height: "100%" }}
-                    >
+                    <div style={{ height: "100%" }}>
                       <img
                         src="./assets/img/Certificate2.JPG"
                         alt="icon"
@@ -93,10 +87,7 @@ const Awards = () => {
                     className="feature-card style2"
                     style={{ height: "350px", width: "380px" }}
                   >
-                    <div
-                      className="feature-card_icon"
-                      style={{ height: "100%" }}
-                    >
+                    <div style={{ height: "100%" }}>
                       <img
                         src="./assets/img/Certificate1.JPG"
                         alt="icon"
