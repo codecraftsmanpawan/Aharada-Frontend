@@ -402,6 +402,101 @@ const AviationTravel = () => {
           </div>
         </div>
       </div>
+      <div className="course-curriculum-container">
+        <h1 className="mca-title">Course Curriculum</h1>
+
+        <div className="curriculum-section">
+          <h4>Year 1: Fundamentals of Business & Aviation</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Introduction to Business Management</li>
+                <li>Principles of Marketing</li>
+                <li>Business Communication & Soft Skills</li>
+                <li>Basics of Accounting & Finance</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Introduction to Aviation Industry</li>
+                <li>Travel & Tourism Industry Overview</li>
+                <li>Airport & Airline Operations</li>
+                <li>Business Mathematics & Statistics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 2: Advanced Aviation & Travel Management</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Airline & Airport Management</li>
+                <li>Travel Agency & Tour Operations</li>
+                <li>Aviation Safety & Security Management</li>
+                <li>Hospitality & Customer Service Excellence</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Digital Marketing in Aviation & Tourism</li>
+                <li>Air Ticketing & Reservation System</li>
+                <li>Aviation Logistics & Supply Chain Management</li>
+                <li>Global Travel & Tourism Trends</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 3: Specialization & Career Development</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Aviation Law & Regulations</li>
+                <li>Entrepreneurship in Aviation & Travel</li>
+                <li>Sustainable Tourism & Eco-Travel</li>
+                <li>Revenue & Pricing Strategies in Airlines</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Risk & Crisis Management in Aviation</li>
+                <li>Internship / Industry Training</li>
+                <li>Final Year Project / Research</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="key-highlights-container">
+        <h1 className="mca-title">Key Highlights</h1>
+        <ul>
+          <li>Hands-on Training with Airlines & Airports ✈️</li>
+          <li>Industry-Recognized Certifications (IATA, Amadeus, Galileo)</li>
+          <li>Internship & Placement Assistance 🎯</li>
+          <li>Expert Faculty & Industry Mentors 👨‍🏫</li>
+          <li>Study Tours & Industrial Visits 🏝️</li>
+        </ul>
+      </div>
+
+      <div className="career-opportunities-container">
+        <h1 className="mca-title">Career Opportunities</h1>
+        <ul>
+          <li>Airline & Airport Management</li>
+          <li>Travel & Tourism Industry (Tour Operators, Travel Agencies)</li>
+          <li>Hospitality & Hotel Management</li>
+          <li>Air Cargo & Freight Services</li>
+          <li>Digital Marketing & E-Tourism</li>
+          <li>Entrepreneurship in Aviation & Travel</li>
+        </ul>
+        <p>
+          Top Recruiters: Airlines, Airports, Travel Agencies, Hotels,
+          Hospitality Chains
+        </p>
+      </div>
 
       <section className="partners-section py-5">
         <div className="container">

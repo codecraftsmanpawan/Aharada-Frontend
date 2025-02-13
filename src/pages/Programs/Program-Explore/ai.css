@@ -104,7 +104,7 @@
     background-color: #f4ebdd;
 }
 .mca-title {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #f3a52c;
     margin-left: 20px;
@@ -303,6 +303,215 @@
 /* Text style for each eligibility criteria */
 .criteria-text {
     flex: 1;
+}
+/* Main container */
+.course-curriculum-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mca-title {
+    font-size: 30px;
+    font-weight: 600;
+   
+    margin-bottom: 15px;
+}
+
+.mca-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Curriculum Section */
+.curriculum-section {
+    margin-bottom: 40px;
+}
+
+.curriculum-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.curriculum-col {
+    width: 48%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.curriculum-col ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.curriculum-col li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.curriculum-col li::before {
+    content: "✔️";
+    margin-right: 8px;
+    color: #4caf50;
+}
+
+/* Key Highlights Section */
+.key-highlights-container {
+    margin-top: 50px;
+    background-color: #eaf0f3;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.key-highlights-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.key-highlights-container li {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.key-highlights-container li::before {
+    content: "✔️";
+    margin-right: 8px;
+    color: #4caf50;
+}
+
+/* Career Opportunities Section */
+.career-opportunities-container {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.career-opportunities-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.career-opportunities-container li {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.career-opportunities-container li::before {
+    content: "✔️";
+    margin-right: 8px;
+    color: #4caf50;
+}
+
+/* Flexbox Layout for Items */
+.key-highlights-container .offerings-list,
+.career-opportunities-container .offerings-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.key-highlights-container .offerings-item,
+.career-opportunities-container .offerings-item {
+    flex: 1 1 30%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.key-highlights-container .offerings-item h3,
+.career-opportunities-container .offerings-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .curriculum-row {
+        flex-direction: column;
+    }
+
+    .curriculum-col {
+        width: 100%;
+    }
+
+    .key-highlights-container .offerings-list,
+    .career-opportunities-container .offerings-list {
+        flex-direction: column;
+    }
+
+    .key-highlights-container .offerings-item,
+    .career-opportunities-container .offerings-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* Button Styling */
+.th-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.th-btn:hover {
+    background-color: #45a049;
+}
+
+/* Custom Accordion Styling */
+.accordion-item {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.accordion-icon {
+    margin-right: 10px;
+}
+
+.accordion-body {
+    padding-left: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.accordion-body ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.accordion-body ul li {
+    margin-bottom: 5px;
 }
 
 /* Responsive Design */
