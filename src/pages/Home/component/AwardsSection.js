@@ -30,16 +30,8 @@ const AwardsSection = () => {
                     style={{ height: "300px", width: "330px" }}
                   >
                     <div className="feature-card_icon">
-                      <img
-                        src="./assets/img/certificate/Certificate1.jpg"
-                        alt="icon"
-                      />
+                      <img src="./assets/img/Certificate1.jpg" alt="icon" />
                     </div>
-                    {/* <h3 className="feature-card_title"> Certificate</h3> */}
-                    {/* <p className="feature-card_text">
-                      Innovative markets without extensive coordinate stand
-                      alone catalysts for change before bricks
-                    </p> */}
                   </div>
                 </div>
 
@@ -49,16 +41,8 @@ const AwardsSection = () => {
                     style={{ height: "300px", width: "330px" }}
                   >
                     <div className="feature-card_icon">
-                      <img
-                        src="./assets/img/certificate/Certificate3.jpg"
-                        alt="icon"
-                      />
+                      <img src="./assets/img/Certificate3.jpg" alt="icon" />
                     </div>
-                    {/* <h3 className="feature-card_title">Educational Support</h3> */}
-                    {/* <p className="feature-card_text">
-                    Innovative markets without extensive coordinate stand alone
-                    catalysts for change before bricks
-                  </p> */}
                   </div>
                 </div>
                 <Link to="/awards">
