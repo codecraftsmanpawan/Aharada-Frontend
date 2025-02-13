@@ -207,7 +207,7 @@ function HeroSection() {
                   Explore our diverse range of departments that offer
                   specialized programs for various fields of study.
                 </p>
-                <Link to="/programs" className="icon-btn">
+                <Link to="/department" className="icon-btn">
                   <i className="fas fa-arrow-right" />
                 </Link>
               </div>

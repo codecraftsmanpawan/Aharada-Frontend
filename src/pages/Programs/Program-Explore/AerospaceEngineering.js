@@ -452,111 +452,174 @@ const AerospaceEngineering = () => {
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
           <div className="accordion">
+            {/* What is the scope of aerospace engineering? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is B.Tech in Aerospace Engineering?</p>
+                <p>1. What is the scope of aerospace engineering?</p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  B.Tech in Aerospace Engineering is an undergraduate program
-                  that covers the study of aerodynamics, propulsion, avionics,
-                  aerospace materials, flight mechanics, and space systems,
-                  preparing students for careers in the aerospace industry.
+                  Aerospace engineering has a vast scope in both aviation and
+                  space exploration, covering areas like:
+                  <ul>
+                    <li>
+                      Aircraft Design & Development (Commercial & Military
+                      Aircraft)
+                    </li>
+                    <li>
+                      Spacecraft & Satellite Engineering (ISRO, NASA, SpaceX)
+                    </li>
+                    <li>
+                      Drone & UAV Technology (Surveillance, Delivery Systems)
+                    </li>
+                    <li>Aviation Safety & Maintenance</li>
+                    <li>Propulsion Systems & Rocket Technology</li>
+                    <li>Aerodynamics & Computational Fluid Dynamics (CFD)</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What are the major subjects in this course? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Why should I choose B.Tech in Aerospace Engineering?</p>
+                <p>2. What are the major subjects in this course?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program provides hands-on learning in aircraft and
-                  spacecraft design, flight testing, and propulsion systems,
-                  opening doors to careers in aviation, space research, and
-                  aerospace engineering.
+                  The key subjects include:
+                  <ul>
+                    <li>Aerodynamics & Fluid Mechanics</li>
+                    <li>Aircraft & Spacecraft Structures</li>
+                    <li>Propulsion & Jet Engine Technology</li>
+                    <li>Avionics & Control Systems</li>
+                    <li>Flight Mechanics & Navigation</li>
+                    <li>Satellite & Rocketry Engineering</li>
+                    <li>Computational Methods & AI in Aerospace</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Are there any research opportunities? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>
-                  What career opportunities are available after this course?
-                </p>
+                <p>3. Are there any research opportunities?</p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  Graduates can work in aircraft design, propulsion systems,
-                  flight testing, avionics, aerospace research, and space
-                  exploration with top aerospace companies and organizations.
+                  Yes! Many universities offer research projects in
+                  collaboration with ISRO, NASA, DRDO, and private aerospace
+                  firms. Areas of research include:
+                  <ul>
+                    <li>Hypersonic & Supersonic Aircraft Development</li>
+                    <li>Advanced Materials for Spacecraft</li>
+                    <li>AI & Machine Learning in Aerospace</li>
+                    <li>Autonomous Drones & UAVs</li>
+                    <li>Electric & Hybrid Propulsion Systems</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What companies hire aerospace engineers? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>Does this program include industry exposure?</p>
+                <p>4. What companies hire aerospace engineers?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Yes, students gain valuable industry exposure through
-                  internships with leading aerospace companies, participation in
-                  live projects, and hands-on training with aircraft and
-                  spacecraft systems.
+                  Top recruiters include:
+                  <ul>
+                    <li>
+                      Government Space & Defense Agencies: ISRO, DRDO, NASA,
+                      ESA, HAL
+                    </li>
+                    <li>
+                      Aerospace Manufacturers: Boeing, Airbus, Lockheed Martin,
+                      Dassault Aviation
+                    </li>
+                    <li>
+                      Private Space Companies: SpaceX, Blue Origin, Rocket Lab
+                    </li>
+                    <li>
+                      Airlines & MRO Companies: Indigo, Emirates, Lufthansa, GE
+                      Aviation
+                    </li>
+                    <li>Drone & UAV Companies: DJI, Aerodyne, AeroVironment</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Does the course include practical training? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>What are the key skills gained from this course?</p>
+                <p>5. Does the course include practical training?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  The program equips students with skills in aircraft and
-                  spacecraft design, propulsion, aerodynamics, aerospace
-                  materials, avionics, and flight control systems, along with
-                  problem-solving, critical thinking, and project management.
+                  Yes, aerospace engineering programs include:
+                  <ul>
+                    <li>Wind Tunnel Testing & Aerodynamics Labs</li>
+                    <li>Flight Simulators & Avionics Training</li>
+                    <li>Aircraft & Rocket Engine Design Projects</li>
+                    <li>Internships at Aerospace Companies & Space Agencies</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What are the career options after graduation? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What certifications can I earn during this program?</p>
+                <p>6. What are the career options after graduation?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students can earn certifications in Aircraft Design,
-                  Propulsion Systems, CAD Modeling, UAV Systems, and
-                  certifications in space systems engineering from recognized
-                  institutions.
+                  Aerospace engineering graduates can work as:
+                  <ul>
+                    <li>Aerospace Engineer (Aircraft & Spacecraft Design)</li>
+                    <li>
+                      Avionics Engineer (Navigation & Communication Systems)
+                    </li>
+                    <li>
+                      Flight Dynamics Analyst (Aircraft Stability & Performance)
+                    </li>
+                    <li>
+                      Rocket Propulsion Engineer (Missile & Space Launch
+                      Vehicles)
+                    </li>
+                    <li>Drone & UAV Engineer (Autonomous Aerial Systems)</li>
+                    <li>
+                      Aircraft Maintenance Engineer (MRO & Airline Operations)
+                    </li>
+                    <li>Research Scientist (Space & Defense Research)</li>
+                  </ul>
                 </div>
               )}
             </div>

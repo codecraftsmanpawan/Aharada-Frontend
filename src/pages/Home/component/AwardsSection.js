@@ -1,11 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AwardsSection = () => {
   return (
     <>
       <div
         className="space"
-        data-bg-src="assets/img/update1/bg/why_bg_2.png"
         style={{
           background: "linear-gradient(to bottom, #fdfbf9, #f4ebdd)",
           marginTop: "-40px",
@@ -25,21 +25,34 @@ const AwardsSection = () => {
               </div>
               <div className="row gy-4 mb-5">
                 <div className="col-md-6">
-                  <div className="feature-card style2">
+                  <div
+                    className="feature-card style2"
+                    style={{ height: "300px", width: "330px" }}
+                  >
                     <div className="feature-card_icon">
-                      <img src="./assets/img/Certificate.jpg" alt="icon" />
+                      <img
+                        src="./assets/img/certificate/Certificate1.jpg"
+                        alt="icon"
+                      />
                     </div>
                     {/* <h3 className="feature-card_title"> Certificate</h3> */}
                     {/* <p className="feature-card_text">
-                    Innovative markets without extensive coordinate stand alone
-                    catalysts for change before bricks
-                  </p> */}
+                      Innovative markets without extensive coordinate stand
+                      alone catalysts for change before bricks
+                    </p> */}
                   </div>
                 </div>
+
                 <div className="col-md-6">
-                  <div className="feature-card style2">
+                  <div
+                    className="feature-card style2"
+                    style={{ height: "300px", width: "330px" }}
+                  >
                     <div className="feature-card_icon">
-                      <img src="./assets/img/Certificate.jpg" alt="icon" />
+                      <img
+                        src="./assets/img/certificate/Certificate3.jpg"
+                        alt="icon"
+                      />
                     </div>
                     {/* <h3 className="feature-card_title">Educational Support</h3> */}
                     {/* <p className="feature-card_text">
@@ -48,8 +61,12 @@ const AwardsSection = () => {
                   </p> */}
                   </div>
                 </div>
+                <Link to="/awards">
+                  View More<i class="fas fa-arrow-right ms-2"></i>
+                </Link>
               </div>
             </div>
+
             <div className="col-xl-6">
               <div className="ps-xxl-5 ms-xl-2">
                 <div className="video-box2">

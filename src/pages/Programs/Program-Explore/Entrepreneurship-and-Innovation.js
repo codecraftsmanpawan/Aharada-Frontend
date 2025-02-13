@@ -446,106 +446,174 @@ const EntrepreneurshipInnovation = () => {
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
           <div className="accordion">
+            {/* What skills will I gain from this course? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is BBA - Entrepreneurship & Innovation?</p>
+                <p>1. What skills will I gain from this course?</p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  BBA - Entrepreneurship & Innovation is an undergraduate
-                  program designed to equip students with the skills needed to
-                  launch, manage, and scale businesses successfully.
+                  This program equips students with essential business and
+                  innovation skills, including:
+                  <ul>
+                    <li>Business Strategy & Planning</li>
+                    <li>Financial Management & Budgeting</li>
+                    <li>Market Research & Competitive Analysis</li>
+                    <li>Leadership & Team Management</li>
+                    <li>Creative Thinking & Problem-Solving</li>
+                    <li>Digital Marketing & Branding</li>
+                    <li>Negotiation & Networking Skills</li>
+                    <li>Innovation & Product Development</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Can I start my own business after completing this course? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Why should I choose BBA - Entrepreneurship & Innovation?</p>
+                <p>
+                  2. Can I start my own business after completing this course?
+                </p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program provides a strong foundation in business
-                  strategy, financial management, marketing, and innovation,
-                  helping students become future-ready entrepreneurs.
+                  Yes! The program is designed to prepare students for
+                  entrepreneurship by providing:
+                  <ul>
+                    <li>
+                      Knowledge on how to start, fund, and grow a business
+                    </li>
+                    <li>
+                      Exposure to real-world case studies of successful startups
+                    </li>
+                    <li>Guidance on business model creation and execution</li>
+                    <li>Support for building a minimum viable product (MVP)</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Are there networking opportunities with entrepreneurs? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>
-                  What career opportunities are available after this course?
-                </p>
+                <p>3. Are there networking opportunities with entrepreneurs?</p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  Graduates can start their own businesses, work in startup
-                  incubation, venture capital firms, business consulting, or
-                  take leadership roles in corporate innovation teams.
+                  Absolutely! Most universities offer:
+                  <ul>
+                    <li>
+                      Guest lectures & panel discussions with successful
+                      entrepreneurs
+                    </li>
+                    <li>Startup incubators & accelerator programs</li>
+                    <li>Mentorship programs with business leaders</li>
+                    <li>
+                      Entrepreneurial networking events & pitch competitions
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Does the course include real-world projects? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>Does this program include internships?</p>
+                <p>4. Does the course include real-world projects?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Yes, students get hands-on experience through startup
-                  internships, incubation center projects, and real-world
-                  business mentorship programs.
+                  Yes, practical learning is a key part of the curriculum,
+                  including:
+                  <ul>
+                    <li>Live business projects & case studies</li>
+                    <li>Developing & pitching a startup idea</li>
+                    <li>Internships in startups & venture capital firms</li>
+                    <li>
+                      Hands-on experience in digital marketing, sales, and
+                      branding
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What industries hire graduates from this program? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>What are the key skills gained from this course?</p>
+                <p>5. What industries hire graduates from this program?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  The course focuses on entrepreneurial mindset, business
-                  planning, leadership, innovation management, financial
-                  literacy, and digital marketing.
+                  Graduates can work in multiple industries, including:
+                  <ul>
+                    <li>
+                      Startups & New Ventures (Founder, Business Development
+                      Manager)
+                    </li>
+                    <li>
+                      E-commerce & Digital Marketing (Product Manager, Growth
+                      Strategist)
+                    </li>
+                    <li>
+                      Finance & Investment (Venture Capital Analyst, Business
+                      Consultant)
+                    </li>
+                    <li>
+                      Tech & Innovation (Startup Consultant, Innovation
+                      Strategist)
+                    </li>
+                    <li>
+                      Corporate Business Strategy (Management Analyst, Business
+                      Operations)
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What support is available for startups? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What certifications can I earn during this program?</p>
+                <p>6. What support is available for startups?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students can earn certifications in business strategy, startup
-                  management, financial planning, leadership, and digital
-                  marketing tools like Google Ads & SEO.
+                  We provide:
+                  <ul>
+                    <li>Startup incubators & seed funding opportunities</li>
+                    <li>
+                      Mentorship from experienced entrepreneurs & investors
+                    </li>
+                    <li>Co-working spaces & networking events</li>
+                    <li>Access to venture capital & angel investors</li>
+                    <li>Legal & financial advisory for startups</li>
+                  </ul>
                 </div>
               )}
             </div>

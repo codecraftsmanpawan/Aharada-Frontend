@@ -453,108 +453,168 @@ const AviationAirportmanagement = () => {
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
           <div className="accordion">
+            {/* What are the career opportunities in airport management? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is BBA - Aviation & Airport Management?</p>
+                <p>
+                  1. What are the career opportunities in airport management?
+                </p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  BBA - Aviation & Airport Management is an undergraduate
-                  program that focuses on airport operations, airline
-                  management, aviation safety, and customer service, preparing
-                  students for careers in the aviation industry.
+                  Graduates can explore career opportunities in:
+                  <ul>
+                    <li>Airport Operations & Management</li>
+                    <li>Airline Customer Service & Ground Handling</li>
+                    <li>Cargo & Logistics Management</li>
+                    <li>Air Traffic Control Coordination</li>
+                    <li>Aviation Safety & Security Management</li>
+                    <li>Airline Revenue & Ticketing Management</li>
+                    <li>Airport Retail & Hospitality Management</li>
+                    <li>Entrepreneurship in Aviation Services</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What are the subjects covered in this course? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Why should I choose BBA - Aviation & Airport Management?</p>
+                <p>2. What are the subjects covered in this course?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program equips students with industry-relevant skills in
-                  aviation operations, airport management, airline finance, and
-                  customer service, opening doors to job opportunities in
-                  airports, airlines, and logistics companies.
+                  The key subjects covered in this program include:
+                  <ul>
+                    <li>Aviation Industry Overview & Regulations</li>
+                    <li>Airport & Airline Operations Management</li>
+                    <li>Airline Marketing & Revenue Management</li>
+                    <li>Ground Handling & Passenger Services</li>
+                    <li>Logistics & Cargo Management</li>
+                    <li>Air Traffic Control & Safety Regulations</li>
+                    <li>Customer Service & Communication in Aviation</li>
+                    <li>Business & Financial Management in Aviation</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Are there practical training sessions? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>
-                  What career opportunities are available after this course?
-                </p>
+                <p>3. Are there practical training sessions?</p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  Graduates can work as airport managers, airline customer
-                  service executives, ground operations managers, air cargo
-                  coordinators, and aviation safety officers.
+                  Yes! Many programs include airport visits, simulations, and
+                  hands-on training. Students may also participate in case
+                  studies and aviation management workshops. Some universities
+                  have tie-ups with airlines, airports, and aviation service
+                  providers for practical exposure.
                 </div>
               )}
             </div>
 
+            {/* What skills will I gain from this program? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>Does this program include industry exposure?</p>
+                <p>4. What skills will I gain from this program?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Yes, students gain real-world experience through internships,
-                  airport visits, live projects, and training sessions with
-                  aviation professionals.
+                  This program develops essential skills such as:
+                  <ul>
+                    <li>
+                      Leadership & Decision-Making Skills (Airport Operations,
+                      Team Management)
+                    </li>
+                    <li>
+                      Customer Service & Communication Skills (Passenger
+                      Handling, Conflict Resolution)
+                    </li>
+                    <li>
+                      Technical Knowledge of Aviation Operations (Safety
+                      Regulations, Ground Handling)
+                    </li>
+                    <li>
+                      Logistics & Resource Management (Cargo & Baggage Handling)
+                    </li>
+                    <li>
+                      Crisis & Emergency Management (Security & Safety
+                      Procedures)
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What job roles can I pursue after graduation? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>What are the key skills gained from this course?</p>
+                <p>5. What job roles can I pursue after graduation?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  The program develops leadership, communication, airport
-                  operations, airline marketing, safety regulations, and
-                  customer service skills in aviation.
+                  Graduates can pursue the following job roles:
+                  <ul>
+                    <li>Airport Manager / Operations Manager</li>
+                    <li>Airline Customer Service Manager</li>
+                    <li>Ground Handling & Passenger Service Agent</li>
+                    <li>Cargo & Logistics Coordinator</li>
+                    <li>Airline Revenue & Ticketing Officer</li>
+                    <li>Aviation Safety & Security Officer</li>
+                    <li>Air Traffic Control Assistant</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What is the salary range after completing this course? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What certifications can I earn during this program?</p>
+                <p>6. What is the salary range after completing this course?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students can earn certifications in Airport Management,
-                  Airline Ticketing, Aviation Safety & Security, and
-                  IATA-certified programs.
+                  The starting salary varies based on job role and location:
+                  <ul>
+                    <li>
+                      Entry-level positions: ₹3-6 LPA (India) / $35,000-$50,000
+                      per year (International)
+                    </li>
+                    <li>
+                      Mid-level positions: ₹8-15 LPA (India) / $60,000-$80,000
+                      per year (International)
+                    </li>
+                    <li>
+                      With experience, professionals can earn higher salaries in
+                      managerial roles
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>

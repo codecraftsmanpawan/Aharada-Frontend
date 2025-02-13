@@ -445,138 +445,195 @@ const OurPromise = () => {
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
           <div className="accordion">
+            {/* What programming languages are taught in this course? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is BBA - Data Analytics and Artificial Intelligence?</p>
+                <p>1. What programming languages are taught in this course?</p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  BBA in Data Analytics and Artificial Intelligence is an
-                  undergraduate program that focuses on data-driven
-                  decision-making, statistical analysis, machine learning, and
-                  AI technologies to prepare students for the rapidly growing
-                  field of data science and AI.
+                  Most BBA programs in Data Analytics & AI cover:
+                  <ul>
+                    <li>Python (for data analysis, machine learning)</li>
+                    <li>R (for statistical computing and visualization)</li>
+                    <li>SQL (for database management and querying)</li>
+                    <li>
+                      JavaScript (for data visualization and AI applications)
+                    </li>
+                    <li>Scala (for big data processing in Apache Spark)</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What industries require data analytics professionals? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>
-                  Why is BBA - Data Analytics and Artificial Intelligence
-                  important?
-                </p>
+                <p>2. What industries require data analytics professionals?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program equips students with essential skills in **data
-                  analytics**, **machine learning**, and **artificial
-                  intelligence**, making them highly sought-after for roles in
-                  various industries such as finance, healthcare, and
-                  technology.
+                  Data analytics and AI professionals are in high demand across
+                  industries like:
+                  <ul>
+                    <li>Finance & Banking (Risk Analysis, Fraud Detection)</li>
+                    <li>Healthcare (Medical Imaging, Predictive Analytics)</li>
+                    <li>
+                      E-commerce & Retail (Customer Behavior Analysis,
+                      Recommendation Systems)
+                    </li>
+                    <li>
+                      Marketing & Advertising (AI-driven Campaigns, Sentiment
+                      Analysis)
+                    </li>
+                    <li>
+                      Manufacturing & Supply Chain (Predictive Maintenance,
+                      Demand Forecasting)
+                    </li>
+                    <li>
+                      IT & Cybersecurity (Threat Detection, AI-based Automation)
+                    </li>
+                    <li>
+                      Government & Policy Making (Public Data Analysis, Smart
+                      City Development)
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Are there hands-on AI projects? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>
-                  What are the specialisations in BBA - Data Analytics and
-                  Artificial Intelligence?
-                </p>
+                <p>3. Are there hands-on AI projects?</p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  BBA in Data Analytics and AI specialisations include **Big
-                  Data Analytics**, **Machine Learning**, **Artificial
-                  Intelligence**, **Data Science**, and **Business
-                  Intelligence**.
+                  Yes, it includes practical AI projects, such as:
+                  <ul>
+                    <li>
+                      Predictive Analytics Models (Stock Price Forecasting,
+                      Customer Churn Prediction)
+                    </li>
+                    <li>
+                      Machine Learning & Deep Learning Projects (Image
+                      Recognition, Chatbots)
+                    </li>
+                    <li>
+                      Big Data Processing (Handling large datasets with Hadoop &
+                      Spark)
+                    </li>
+                    <li>
+                      Business Intelligence Dashboards (Power BI, Tableau)
+                    </li>
+                    <li>AI-driven Marketing & Sales Analytics</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Is prior coding knowledge required? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>
-                  What career opportunities are available after completing BBA
-                  in Data Analytics and AI?
-                </p>
+                <p>4. Is prior coding knowledge required?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Graduates can work in roles such as **Data Analyst**, **AI
-                  Specialist**, **Business Intelligence Analyst**, **Machine
-                  Learning Engineer**, and **Data Scientist** in sectors like
-                  technology, finance, and healthcare.
+                  Not always required! Most programs start with
+                  beginner-friendly coding modules. However, having basic
+                  programming knowledge (Python, SQL) can be helpful.
                 </div>
               )}
             </div>
 
+            {/* What tools and software will I learn? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Does this program include industry exposure?</p>
+                <p>5. What tools and software will I learn?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  Yes, students gain industry exposure through **internships**,
-                  **live projects**, and **collaborations** with tech companies,
-                  allowing them to apply their skills in real-world scenarios.
+                  Students will learn tools and software for:
+                  <ul>
+                    <li>
+                      Data Analysis & Visualization: Python (Pandas,
+                      Matplotlib), R, Power BI, Tableau
+                    </li>
+                    <li>
+                      Machine Learning & AI: TensorFlow, Scikit-Learn, Keras
+                    </li>
+                    <li>
+                      Big Data & Cloud Platforms: Hadoop, Apache Spark, AWS,
+                      Google Cloud
+                    </li>
+                    <li>Database Management: MySQL, PostgreSQL, MongoDB</li>
+                    <li>
+                      Automation & AI Development: Chatbot Frameworks, NLP
+                      Libraries
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What job roles can I pursue after graduation? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What are the key skills gained from this course?</p>
+                <p>6. What job roles can I pursue after graduation?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students will develop skills in **data analysis**, **machine
-                  learning**, **AI algorithms**, **data visualization**, and
-                  **statistical programming** using tools like **Python**,
-                  **R**, and **SQL**.
-                </div>
-              )}
-            </div>
-
-            <div className="accordion-item">
-              <div
-                className="accordion-header accordion-header-1"
-                onClick={() => toggleAccordion(6)}
-              >
-                <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What certifications can I earn during this program?</p>
-              </div>
-              {activeIndex === 6 && (
-                <div className="accordion-body">
-                  Students can earn certifications in **Data Analytics**,
-                  **Artificial Intelligence**, **Machine Learning**, **Business
-                  Intelligence**, and industry-recognized programs from
-                  platforms like **Microsoft**, **IBM**, and **Google**.
+                  Graduates can apply for roles such as:
+                  <ul>
+                    <li>
+                      Data Analyst (Analyzing business data to provide insights)
+                    </li>
+                    <li>
+                      Business Intelligence Analyst (Developing dashboards &
+                      reports)
+                    </li>
+                    <li>
+                      AI Specialist (Building AI-driven solutions for
+                      businesses)
+                    </li>
+                    <li>
+                      Machine Learning Engineer (Developing predictive models)
+                    </li>
+                    <li>
+                      Big Data Analyst (Processing and analyzing large datasets)
+                    </li>
+                    <li>
+                      Marketing Data Analyst (Optimizing campaigns using AI
+                      insights)
+                    </li>
+                    <li>
+                      Risk Analyst (Using AI to detect fraud & financial risks)
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>

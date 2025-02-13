@@ -21,7 +21,8 @@ import {
   FaCertificate,
   FaBookOpen,
   FaUsers,
-  FaChartLine,
+  FaWrench,
+  FaRocket,
 } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
@@ -32,50 +33,50 @@ import Course from "../../Home/component/CouseOffer";
 
 const offerings = [
   {
-    text: "Comprehensive training in airline operations, airport management, and aviation logistics",
-    icon: <FaPlane />,
+    text: "Practical training in aircraft design, aerodynamics, and avionics",
+    icon: <FaWrench />,
   },
   {
-    text: "Career opportunities in airline management, airport operations, and aviation consultancy",
-    icon: <FaChartLine />,
+    text: "Career opportunities in aerospace engineering, aviation, and defense",
+    icon: <FaRocket />,
   },
   {
-    text: "Internships and live projects with leading airlines and aviation firms",
+    text: "Internships with aerospace companies and aviation firms",
     icon: <FaBriefcase />,
   },
   {
-    text: "Insights into the latest trends in aviation business and regulatory policies",
+    text: "Exposure to the latest innovations in aeronautical technology",
     icon: <FaLightbulb />,
   },
   {
-    text: "Industry-focused curriculum with case studies and real-world simulations",
+    text: "Industry-focused curriculum with hands-on lab sessions and projects",
     icon: <FaBookOpen />,
   },
   {
-    text: "Certifications in Airline Management, IATA courses, and Aviation Safety & Security",
+    text: "Certifications in Aircraft Maintenance Engineering (AME) and DGCA-approved courses",
     icon: <FaCertificate />,
   },
   {
-    text: "Soft skills, leadership, and strategic decision-making training for aviation professionals",
+    text: "Soft skills and leadership training for aeronautical professionals",
     icon: <FaUsers />,
   },
 ];
 
 const whoCanDoMCA = [
   {
-    text: "Graduates from any discipline (preferably aviation, management, or engineering background)",
+    text: "Passed class 12th with Physics, Chemistry, and Mathematics (PCM) from a recognized board",
     icon: "⭐",
   },
   {
-    text: "Aspirants interested in airline operations, airport management, and aviation business strategy",
+    text: "Aspirants passionate about aircraft design, aerodynamics, and aviation technology",
     icon: "⭐",
   },
   {
-    text: "Minimum 50% marks in graduation (may vary by institution)",
+    text: "Minimum 50% marks in class 12th (may vary by institution)",
     icon: "⭐",
   },
   {
-    text: "Professionals looking to advance their careers in aviation, logistics, and air transport management",
+    text: "Students aiming for careers in aerospace engineering, aircraft maintenance, and defense technology",
     icon: "⭐",
   },
 ];
@@ -152,27 +153,27 @@ const companyPartners = [
 const mcaSummary = [
   {
     icon: <FaGraduationCap />,
-    text: "The full form of MBA - Aviation Management is Master of Business Administration in Aviation Management, a specialized postgraduate course focused on the business and management aspects of the aviation industry.",
+    text: "The full form of B.Sc - Aeronautical is Bachelor of Science in Aeronautical Engineering, a specialized undergraduate course in aerospace and aviation technology.",
   },
   {
     icon: <FaUniversity />,
-    text: "This course is ideal for students and professionals interested in airline management, airport operations, aviation logistics, and air transport strategy.",
+    text: "This course is ideal for students passionate about aircraft design, aerodynamics, propulsion, and aviation technology.",
   },
   {
     icon: <FaCheckCircle />,
-    text: "A regular MBA - Aviation Management course duration is 2 years, divided into 4 semesters, including industry training, case studies, and live projects.",
+    text: "A regular B.Sc - Aeronautical course duration is 3-4 years, divided into multiple semesters, with hands-on training and research opportunities.",
   },
   {
     icon: <FaDollarSign />,
-    text: "The average starting salary for graduates in this field ranges from 6-12 Lakhs per year, depending on job roles, experience, and employer.",
+    text: "The average starting salary for graduates in this field ranges from 4-8 Lakhs per year, depending on job roles, expertise, and industry demand.",
   },
   {
     icon: <FaLightbulb />,
-    text: "Career opportunities include roles in airport management, airline operations, aviation consultancy, cargo management, and aviation finance.",
+    text: "Career opportunities include roles in aircraft manufacturing, maintenance engineering, aerodynamics research, defense, and space technology.",
   },
   {
     icon: <FaBuilding />,
-    text: "Top recruiters in this field include airlines like Indigo, Air India, Emirates, global logistics companies, airport authorities, and aviation consulting firms.",
+    text: "Top recruiters in this field include ISRO, DRDO, HAL, Boeing, Airbus, and leading aerospace research organizations.",
   },
 ];
 
@@ -189,30 +190,30 @@ const campuses = [
       "assets/placement/iimt3.jpg",
     ],
   },
-  {
-    name: "SAGE University Indore",
-    program: "MCA Program | UGC recognised",
-    specialisations: 3,
-    certifications: 10,
-    fees: "₹ 3.88 Lacs",
-    images: [
-      "assets/placement/sage1.jpg",
-      "assets/placement/sage2.jpg",
-      "assets/placement/sage3.webp",
-    ],
-  },
   //   {
-  //     name: "Subharti University, Meerut",
+  //     name: "SAGE University Indore",
   //     program: "MCA Program | UGC recognised",
-  //     specialisations: 6,
+  //     specialisations: 3,
   //     certifications: 10,
-  //     fees: "₹ 3.10 Lacs",
+  //     fees: "₹ 3.88 Lacs",
   //     images: [
-  //       "assets/placement/Subharti1.webp",
-  //       "assets/placement/Subharti1.webp",
-  //       "assets/placement/Subharti3.png",
+  //       "assets/placement/sage1.jpg",
+  //       "assets/placement/sage2.jpg",
+  //       "assets/placement/sage3.webp",
   //     ],
   //   },
+  {
+    name: "Subharti University, Meerut",
+    program: "MCA Program | UGC recognised",
+    specialisations: 6,
+    certifications: 10,
+    fees: "₹ 3.10 Lacs",
+    images: [
+      "assets/placement/Subharti1.webp",
+      "assets/placement/Subharti1.webp",
+      "assets/placement/Subharti3.png",
+    ],
+  },
   //   {
   //     name: "Dev Bhoomi Uttarakhand University",
   //     program: "MCA Program | AICTE approved",
@@ -266,7 +267,7 @@ const imageSettings = {
   arrows: false,
 };
 
-const AviationManagement = () => {
+const FineArts = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
   const toggleAccordion = (index) => {
@@ -283,28 +284,29 @@ const AviationManagement = () => {
   return (
     <>
       <div className="mca-highlights-container">
-        <h1 className="mca-title">MBA - Aviation Management Highlights</h1>
+        <h1 className="mca-title">BFA - Fine Arts Highlights</h1>
         <p className="mca-description">
-          Gain expertise in aviation business operations, airport management,
-          and airline strategies with a curriculum tailored for the evolving
-          aviation industry.
+          Explore the dynamic world of aviation and travel management with a
+          curriculum designed to equip you with industry-relevant skills.
         </p>
         <div className="highlight-cards">
           <div className="highlight-card">
-            <p className="highlight-number">2</p>
+            <p className="highlight-number">3</p>
             <p className="highlight-text">YEAR FULL-TIME PROGRAM</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">35+</p>
+            <p className="highlight-number">30+</p>
             <p className="highlight-text">RECRUITMENT PARTNERS</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">8+</p>
+            <p className="highlight-number">6+</p>
             <p className="highlight-text">INDUSTRY CERTIFICATIONS</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">2</p>
-            <p className="highlight-text">INTERNSHIPS & LIVE PROJECTS</p>
+            <p className="highlight-number">4</p>
+            <p className="highlight-text">
+              INTERNSHIP & TRAINING OPPORTUNITIES
+            </p>
           </div>
         </div>
       </div>
@@ -383,9 +385,7 @@ const AviationManagement = () => {
         </div>
 
         <div className="who-can-do-mca">
-          <h1 className="who-can-do-title">
-            Who can do MBA - Aviation Management?
-          </h1>
+          <h1 className="who-can-do-title">Who can do BFA - Fine Arts?</h1>
           <div className="mca-criteria">
             <div className="criteria-left">
               {whoCanDoMCA.slice(0, 4).map((criteria, index) => (
@@ -425,7 +425,7 @@ const AviationManagement = () => {
 
       <div className="mca-page">
         <div className="key-offerings">
-          <h1 className="offerings-title">MBA - Aviation Management Summary</h1>
+          <h1 className="offerings-title">BFA - Fine Arts Summary</h1>
           <div className="offerings-list">
             <div className="offerings-left">
               {mcaSummary.slice(0, 3).map((mcaSummary, index) => (
@@ -450,174 +450,152 @@ const AviationManagement = () => {
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
           <div className="accordion">
-            {/* What career opportunities exist in aviation management? */}
+            {/* What are the career opportunities in fine arts? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>
-                  1. What career opportunities exist in aviation management?
-                </p>
+                <p>1. What are the career opportunities in fine arts?</p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  Graduates of an MBA in Aviation Management can pursue roles
-                  such as:
+                  Graduates can work in various creative industries, such as:
                   <ul>
                     <li>
-                      Airport Operations Manager (Managing daily airport
-                      functions)
+                      Graphic Design & Digital Art (Advertising, Branding, UI/UX
+                      Design)
                     </li>
                     <li>
-                      Airline Manager (Overseeing airline operations, customer
-                      service)
+                      Illustration & Concept Art (Comics, Animation, Gaming)
                     </li>
                     <li>
-                      Aviation Safety & Security Manager (Ensuring compliance
-                      with regulations)
+                      Fine Arts & Painting (Galleries, Museums, Freelancing)
                     </li>
-                    <li>
-                      Cargo & Logistics Manager (Handling freight and supply
-                      chain management)
-                    </li>
-                    <li>
-                      Air Traffic Control Manager (Supervising air traffic
-                      operations)
-                    </li>
-                    <li>
-                      Aviation Consultant (Providing business strategies for
-                      airlines & airports)
-                    </li>
-                    <li>
-                      Revenue & Route Planning Analyst (Optimizing airline
-                      profitability)
-                    </li>
+                    <li>Sculpting & Installation Art</li>
+                    <li>Photography & Visual Storytelling</li>
+                    <li>Art Direction & Creative Consulting</li>
+                    <li>Film & Theatre Set Design</li>
+                    <li>Teaching & Academia (Art Schools, Universities)</li>
                   </ul>
                 </div>
               )}
             </div>
 
-            {/* What are the key subjects covered in this MBA? */}
+            {/* What specializations are available in this course? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>2. What are the key subjects covered in this MBA?</p>
+                <p>2. What specializations are available in this course?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  The curriculum includes:
+                  BFA programs offer various specializations, including:
                   <ul>
-                    <li>Aviation Operations & Safety Management</li>
-                    <li>Airport & Airline Business Management</li>
-                    <li>Aviation Law & Regulations</li>
-                    <li>Financial Management in Aviation</li>
-                    <li>Marketing & Branding in Aviation</li>
-                    <li>Air Cargo & Logistics Management</li>
-                    <li>Aircraft Maintenance & Fleet Management</li>
-                    <li>Data Analytics & AI in Aviation</li>
+                    <li>Painting & Drawing</li>
+                    <li>Sculpture & Ceramics</li>
+                    <li>Graphic Design & Digital Arts</li>
+                    <li>Animation & Visual Effects (VFX)</li>
+                    <li>Photography & Cinematography</li>
+                    <li>Fashion & Textile Design</li>
+                    <li>Printmaking & Calligraphy</li>
+                    <li>Performing Arts (Dance, Theatre, Music)</li>
                   </ul>
                 </div>
               )}
             </div>
 
-            {/* Are internships mandatory in this course? */}
+            {/* What qualifications are required for admission? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>3. Are internships mandatory in this course?</p>
+                <p>3. What qualifications are required for admission?</p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  Yes, it requires an internship as part of the program.
-                  Internships are typically offered with airlines, airports,
-                  aviation authorities, and logistics firms. Some programs offer
-                  industry projects instead of traditional internships.
+                  A BFA program typically requires a completion of 10+2 from a
+                  recognized board.
                 </div>
               )}
             </div>
 
-            {/* What is the average salary package? */}
+            {/* What are the job opportunities after graduation? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>4. What is the average salary package?</p>
+                <p>4. What are the job opportunities after graduation?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Entry-level salaries range from ₹6-10 LPA (INR) or $50,000 -
-                  $80,000 (USD) internationally. Mid-level managers can earn
-                  ₹12-20 LPA ($80,000 - $120,000 USD). Senior aviation
-                  executives & consultants can earn ₹25+ LPA ($150,000+ USD).
+                  A BFA degree opens doors to careers such as:
+                  <ul>
+                    <li>
+                      Professional Artist (Painter, Sculptor, Illustrator)
+                    </li>
+                    <li>Graphic Designer / UX Designer</li>
+                    <li>Art Director in Advertising & Media</li>
+                    <li>Animator & Visual Effects (VFX) Artist</li>
+                    <li>Photographer / Cinematographer</li>
+                    <li>Fashion or Textile Designer</li>
+                    <li>Tattoo Artist / Muralist</li>
+                    <li>Gallery Curator / Museum Coordinator</li>
+                    <li>Freelance or Commissioned Artist</li>
+                  </ul>
                 </div>
               )}
             </div>
 
-            {/* What are the prerequisites for admission? */}
+            {/* Are students encouraged to participate in art competitions? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>5. What are the prerequisites for admission?</p>
+                <p>
+                  5. Are students encouraged to participate in art competitions?
+                </p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  A bachelor’s degree in any discipline (preferably business,
-                  engineering, or aviation). Minimum 50-60% marks (or equivalent
-                  GPA) in undergraduate studies.
+                  Yes! Many universities encourage students to participate in
+                  national and international art competitions. Students also get
+                  opportunities to display their work in galleries, online art
+                  platforms, and exhibitions.
                 </div>
               )}
             </div>
 
-            {/* What are the future trends in aviation management? */}
+            {/* What software or tools are taught in this program? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>6. What are the future trends in aviation management?</p>
+                <p>6. What software or tools are taught in this program?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  The aviation industry is evolving with emerging trends such
-                  as:
+                  Students learn industry-standard tools, such as:
                   <ul>
+                    <li>Adobe Suite (Photoshop, Illustrator, InDesign)</li>
+                    <li>CorelDRAW & Procreate (Digital Art & Illustration)</li>
+                    <li>Blender & Maya (3D Modeling & Animation)</li>
+                    <li>AutoCAD & Rhino (Sculpture & Product Design)</li>
                     <li>
-                      Sustainable Aviation – Focus on eco-friendly fuels &
-                      carbon neutrality.
-                    </li>
-                    <li>
-                      AI & Automation – AI-driven air traffic control, smart
-                      airports, and predictive maintenance.
-                    </li>
-                    <li>
-                      Rise of Low-Cost Carriers (LCCs) – Expanding affordable
-                      air travel worldwide.
-                    </li>
-                    <li>
-                      Drones & Urban Air Mobility – Growth in drone logistics
-                      and air taxis.
-                    </li>
-                    <li>
-                      Enhanced Passenger Experience – Biometric check-ins,
-                      AI-based customer service, and personalized travel.
-                    </li>
-                    <li>
-                      Space Tourism & Advanced Air Mobility – Companies like
-                      SpaceX and Blue Origin innovating the industry.
+                      Final Cut Pro & Premiere Pro (Video Editing &
+                      Cinematography)
                     </li>
                   </ul>
                 </div>
@@ -669,4 +647,4 @@ const AviationManagement = () => {
   );
 };
 
-export default AviationManagement;
+export default FineArts;

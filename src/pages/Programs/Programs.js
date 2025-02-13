@@ -84,6 +84,22 @@ const programs = [
     image: "assets/course/Drone.jpg",
     link: "/drone-pilot-training",
   },
+  {
+    id: 12,
+    title: "BFD - Fashion Design",
+    duration: "3 YEARS",
+    type: "UG",
+    image: "assets/course/Drone.jpg",
+    link: "/fashion-design",
+  },
+  {
+    id: 13,
+    title: "BFA - Fine Arts",
+    duration: "3 YEARS",
+    type: "UG",
+    image: "assets/course/Drone.jpg",
+    link: "/fine-arts",
+  },
 ];
 
 function ProgramCard({ title, duration, image, onExploreClick }) {

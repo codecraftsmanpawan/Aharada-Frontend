@@ -13,20 +13,27 @@ import {
 } from "react-share";
 import "./BlogDetails.css";
 import Head from "../../components/Head/Head";
+import { decodeId } from "../../utils/encodeDecode"; // Import decodeId function
+
 function BlogDetails() {
-  const { id } = useParams();
+  const { id } = useParams(); // Get the encoded ID from URL
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-    // Fetch the blog post using the ID from the URL
-    axios
-      .get(`https://backend.aharadaedu.in/api/blogs/${id}`)
-      .then((response) => {
-        setBlog(response.data.blogPost);
-      })
-      .catch((error) => {
-        console.error("Error fetching blog details:", error);
-      });
+    // Decode the blog ID
+    const decodedId = decodeId(id);
+
+    if (decodedId) {
+      // Fetch the blog post using the decoded ID
+      axios
+        .get(`https://backend.aharadaedu.in/api/blogs/${decodedId}`)
+        .then((response) => {
+          setBlog(response.data.blogPost);
+        })
+        .catch((error) => {
+          console.error("Error fetching blog details:", error);
+        });
+    }
   }, [id]);
 
   if (!blog) {

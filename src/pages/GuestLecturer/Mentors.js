@@ -95,9 +95,9 @@ const Mentors = () => {
                           <div className="team-content">
                             <h3 className="team-title">
                               <Link
-                                to={`/guestLecturerDetails/${encodeURIComponent(
-                                  mentor._id.toString()
-                                )}`}
+                              // to={`/guestLecturerDetails/${encodeURIComponent(
+                              //   mentor._id.toString()
+                              // )}`}
                               >
                                 {mentor.fullName}
                               </Link>

@@ -167,7 +167,7 @@ function Header() {
                           <i className="fab fa-instagram"></i>
                         </a>
                         <a
-                          href="https://www.twitter.com/"
+                          href="https://x.com/Aharadaedu"
                           className="social-icon"
                           aria-label="Twitter"
                           style={{ color: "#1DA1F2", marginRight: "1rem" }}
@@ -191,7 +191,7 @@ function Header() {
                           <i className="fab fa-linkedin-in"></i>
                         </a>
                         <a
-                          href="https://www.youtube.com/@aharadaeducation498"
+                          href="https://www.youtube.com/@aharadaeducation"
                           className="social-icon"
                           aria-label="YouTube"
                           style={{ color: "#FF0000", marginRight: "1rem" }}

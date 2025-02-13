@@ -274,11 +274,10 @@ const AviationTravel = () => {
 
   return (
     <>
-      <div className="mca-highlights-container">
-        <h1 className="mca-title">BBA - Aviation & Travel Highlights</h1>
+      <div className="Course Overview-container">
+        <h1 className="mca-title">BBA in Aviation & Travel Highlights</h1>
         <p className="mca-description">
-          Explore the dynamic world of aviation and travel management with a
-          curriculum designed to equip you with industry-relevant skills.
+          Transform Your Career in the Aviation & Travel Industry
         </p>
         <div className="highlight-cards">
           <div className="highlight-card">
@@ -300,6 +299,12 @@ const AviationTravel = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="mca-highlights-container">
+        <h1 className="mca-title">BBA in Aviation & Travel Highlights</h1>
+        <p className="mca-description">
+          Transform Your Career in the Aviation & Travel Industry
+        </p>
       </div>
 
       <div className="our-promise-container">
@@ -328,7 +333,7 @@ const AviationTravel = () => {
           <div className="job-stats">
             <div className="stat-box">
               <strong>150+</strong>
-              <p>Varied job profiles</p>
+              <p>Verifed job profiles</p>
             </div>
             <div className="stat-box">
               <strong>1100+</strong>
@@ -443,105 +448,156 @@ const AviationTravel = () => {
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
           <div className="accordion">
+            {/* Career Opportunities Accordion Item */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is BBA - Aviation & Travel?</p>
+                <p>
+                  1. What career opportunities are available after completing
+                  this course?
+                </p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  BBA - Aviation & Travel is a specialized undergraduate program
-                  that prepares students for careers in the aviation, airline,
-                  and travel industries.
+                  After completing a BBA in Aviation & Travel, graduates can
+                  pursue careers in:
+                  <ul>
+                    <li>
+                      Airline Management (Airport Operations Manager, Airline
+                      Customer Service Manager)
+                    </li>
+                    <li>
+                      Airport Operations (Airport Ground Staff, Security
+                      Manager)
+                    </li>
+                    <li>
+                      Travel & Tourism Management (Travel Consultant, Tour
+                      Operator, Hospitality Manager)
+                    </li>
+                    <li>
+                      Air Cargo & Logistics (Cargo Supervisor, Logistics
+                      Coordinator)
+                    </li>
+                    <li>
+                      Aviation Safety & Compliance (Aviation Safety Officer,
+                      Flight Operations Manager)
+                    </li>
+                    <li>
+                      Airline Ticketing & Reservations (Ticketing Executive,
+                      Reservations Manager)
+                    </li>
+                    <li>
+                      Sales & Marketing in Aviation (Sales Manager for
+                      Airlines/Travel Agencies)
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Eligibility Criteria Accordion Item */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Why should I choose BBA - Aviation & Travel?</p>
+                <p>2. What are the eligibility criteria for admission?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program offers in-depth knowledge of airline management,
-                  airport operations, tourism, and hospitality, opening doors to
-                  global career opportunities.
+                  <p>
+                    Must have completed 10+2 (high school) from a recognized
+                    board.
+                  </p>
+                  <p>Minimum required marks: 50% or higher.</p>
                 </div>
               )}
             </div>
 
+            {/* Practical Training Accordion Item */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>
-                  What career opportunities are available after this course?
-                </p>
+                <p>3. Does the course include practical training?</p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  Graduates can explore careers as airline managers, airport
-                  operations executives, travel consultants, tourism managers,
-                  and hospitality professionals.
+                  Yes, it includes:
+                  <ul>
+                    <li>Airport & Airline Simulations</li>
+                    <li>Guest Lectures & Industry Visits</li>
+                    <li>Workshops on Airline Management & Travel Operations</li>
+                    <li>
+                      Software Training (Amadeus, Galileo, Sabre for ticketing &
+                      reservations)
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Program Duration Accordion Item */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>Does this program include internships?</p>
+                <p>4. What is the duration of the program?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Yes, the program includes hands-on internships and industry
-                  training with leading airlines, travel agencies, and airports.
+                  The program typically lasts 3 years (6 semesters). We also
+                  offer 4-year programs with additional industry training.
                 </div>
               )}
             </div>
 
+            {/* Internship Opportunities Accordion Item */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>What are the key skills gained from this course?</p>
+                <p>5. Are there internship opportunities?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  The course focuses on leadership, communication, customer
-                  service, logistics, tourism planning, and aviation safety
-                  management.
+                  Yes, internships are commonly included in the final year.
+                  Students can intern at airports, airlines, travel agencies,
+                  hotels, and logistics firms. Many universities have tie-ups
+                  with aviation companies to provide hands-on experience.
                 </div>
               )}
             </div>
 
+            {/* Average Salary Accordion Item */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What certifications can I earn during this program?</p>
+                <p>6. What is the average salary after graduation?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students can earn certifications in airline management, IATA
-                  (International Air Transport Association) courses, and travel
-                  consultancy.
+                  The starting salary varies based on job role and location:
+                  <ul>
+                    <li>Airline Ground Staff: ₹3-5 LPA (INR)</li>
+                    <li>Airport Operations Manager: ₹5-8 LPA</li>
+                    <li>Travel Consultant: ₹3-6 LPA</li>
+                    <li>Air Cargo Executive: ₹4-7 LPA</li>
+                    <li>Flight Operations Manager: ₹6-10 LPA</li>
+                  </ul>
                 </div>
               )}
             </div>

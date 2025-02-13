@@ -450,106 +450,160 @@ const BScAeronautical = () => {
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
           <div className="accordion">
+            {/* What is the difference between aeronautical and aerospace engineering? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is B.Sc - Aeronautical?</p>
+                <p>
+                  1. What is the difference between aeronautical and aerospace
+                  engineering?
+                </p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  B.Sc - Aeronautical is an undergraduate program focused on
-                  aircraft design, development, maintenance, and aviation
-                  technology.
+                  Aeronautical Engineering focuses on aircraft that operate
+                  within Earth’s atmosphere (commercial planes, military jets,
+                  drones). Aerospace Engineering covers both aeronautics
+                  (aircraft) and astronautics (spacecraft, satellites, rockets).
+                  Aeronautical Engineering is more about aircraft design,
+                  aerodynamics, propulsion, and aviation technology, while
+                  Aerospace Engineering includes space exploration and advanced
+                  propulsion systems.
                 </div>
               )}
             </div>
 
+            {/* What are the job prospects in the aviation sector? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Why should I choose B.Sc - Aeronautical?</p>
+                <p>2. What are the job prospects in the aviation sector?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program provides in-depth knowledge of aerodynamics,
-                  propulsion, avionics, and aerospace engineering, leading to
-                  careers in the aviation and aerospace industries.
+                  Graduates can work in:
+                  <ul>
+                    <li>
+                      Airlines (IndiGo, Air India, Emirates, Qatar Airways)
+                    </li>
+                    <li>
+                      Aircraft Manufacturing Companies (Boeing, Airbus, Dassault
+                      Aviation)
+                    </li>
+                    <li>
+                      Maintenance, Repair & Overhaul (MRO) Firms (Lufthansa
+                      Technik, GE Aviation)
+                    </li>
+                    <li>Government Aviation Authorities (DGCA, FAA, EASA)</li>
+                    <li>Defence & Research Organizations (HAL, DRDO, ISRO)</li>
+                    <li>Unmanned Aerial Vehicles (UAVs) & Drones Sector</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Are there laboratory sessions in this course? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>
-                  What career opportunities are available after this course?
-                </p>
+                <p>3. Are there laboratory sessions in this course?</p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  Graduates can work as aerospace engineers, aircraft
-                  maintenance engineers, avionics specialists, flight safety
-                  officers, and researchers in the aviation and defense sectors.
+                  Yes! The program includes practical lab sessions in:
+                  <ul>
+                    <li>Aerodynamics & Wind Tunnel Testing</li>
+                    <li>Aircraft Structures & Materials Lab</li>
+                    <li>Propulsion & Jet Engine Testing</li>
+                    <li>Avionics & Flight Simulation Labs</li>
+                    <li>Aircraft Maintenance & Repair Training</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Does this program require physics and mathematics knowledge? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>Does this program include practical training?</p>
+                <p>
+                  4. Does this program require physics and mathematics
+                  knowledge?
+                </p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Yes, students get hands-on experience through lab work,
-                  simulation training, industrial visits, and internships in
-                  aerospace companies.
+                  Yes, a strong foundation in Physics and Mathematics is
+                  essential. Topics like fluid dynamics, thermodynamics,
+                  propulsion, and structural mechanics require calculus and
+                  physics applications.
                 </div>
               )}
             </div>
 
+            {/* What skills are developed in this course? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>What are the key skills gained from this course?</p>
+                <p>5. What skills are developed in this course?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  The program enhances skills in aircraft mechanics, structural
-                  analysis, aerodynamics, avionics systems, and problem-solving
-                  in aeronautical engineering.
+                  Students gain expertise in:
+                  <ul>
+                    <li>Aerodynamics & Aircraft Performance Analysis</li>
+                    <li>Flight Mechanics & Navigation Systems</li>
+                    <li>Aircraft Design & Manufacturing Techniques</li>
+                    <li>
+                      Problem-Solving & Critical Thinking for Aviation
+                      Challenges
+                    </li>
+                    <li>
+                      Technical Software Skills (MATLAB, CATIA, ANSYS, CFD)
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What further studies can be pursued after this degree? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What certifications can I earn during this program?</p>
+                <p>6. What further studies can be pursued after this degree?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students can obtain certifications in Aircraft Maintenance
-                  Engineering (AME), DGCA-approved courses, and specialized
-                  aeronautical training programs.
+                  Graduates can opt for:
+                  <ul>
+                    <li>
+                      M.Sc. or M.Tech in Aeronautical or Aerospace Engineering
+                    </li>
+                    <li>MBA in Aviation Management or Airport Operations</li>
+                    <li>Pilot Training (Commercial Pilot License - CPL)</li>
+                    <li>
+                      Certifications in Aircraft Maintenance Engineering (AME)
+                    </li>
+                    <li>Research & PhD in Aerospace Sciences</li>
+                  </ul>
                 </div>
               )}
             </div>

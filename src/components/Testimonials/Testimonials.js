@@ -105,13 +105,16 @@ const Testimonials = () => {
               <div className="testi-box bg-smoke shadow-none">
                 <div className="testi-box_content">
                   <div className="testi-box_img">
-                    <img
-                      src={`${config.apiBaseUrl}/uploads/${testimonial.img}`}
-                      alt="Avatar"
-                      width={100}
-                      className="img-fluid rounded-circle"
-                    />
+                    {testimonial.img && (
+                      <img
+                        src={`${config.apiBaseUrl}/uploads/${testimonial.img}`}
+                        alt="Avatar"
+                        width={100}
+                        className="img-fluid rounded-circle"
+                      />
+                    )}
                   </div>
+
                   <p className="testi-box_text">{testimonial.text}</p>
                 </div>
                 <div className="testi-box_bottom d-flex justify-content-between align-items-center">

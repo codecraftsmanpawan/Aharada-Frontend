@@ -449,110 +449,149 @@ const HRAviation = () => {
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
           <div className="accordion">
+            {/* What job roles are available in HR & Aviation Management? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is MBA - HR & Aviation?</p>
+                <p>
+                  1. What job roles are available in HR & Aviation Management?
+                </p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  MBA in HR & Aviation is a postgraduate program focusing on
-                  human resource management within the aviation industry,
-                  equipping students with skills in recruitment, organizational
-                  development, and leadership in aviation management.
+                  Graduates can pursue careers in both the aviation and human
+                  resources sectors, including:
+                  <ul>
+                    <li>Aviation HR Manager</li>
+                    <li>
+                      Recruitment & Talent Acquisition Specialist (Airlines &
+                      Airports)
+                    </li>
+                    <li>Training & Development Manager</li>
+                    <li>Airport Operations & HR Coordinator</li>
+                    <li>
+                      Employee Relations Manager (Airlines & Aviation Companies)
+                    </li>
+                    <li>Compensation & Benefits Specialist</li>
+                    <li>Crew Resource Manager</li>
+                    <li>
+                      Organizational Development Consultant (Aviation Sector)
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What industries hire graduates from this program? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Why should I choose MBA - HR & Aviation?</p>
+                <p>2. What industries hire graduates from this program?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program offers a unique combination of human resource
-                  management and aviation industry expertise, preparing students
-                  for leadership roles in HR within aviation firms, airports,
-                  airlines, and logistics companies.
+                  Graduates from this program are in demand in the following
+                  industries:
+                  <ul>
+                    <li>Airlines (Domestic & International)</li>
+                    <li>Airports (Public & Private)</li>
+                    <li>Aviation Consulting Firms</li>
+                    <li>Ground Handling & Cargo Companies</li>
+                    <li>Aerospace & Aviation Technology Firms</li>
+                    <li>Hospitality & Travel Industry</li>
+                    <li>Government Aviation Authorities</li>
+                    <li>HR Consultancy Firms specializing in Aviation</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Are there internship opportunities? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>
-                  What career opportunities are available after this course?
-                </p>
+                <p>3. Are there internship opportunities?</p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  Graduates can work as HR managers, recruitment specialists,
-                  organizational development consultants, talent acquisition
-                  managers, and HR professionals in the aviation sector.
+                  Yes, most universities include internship programs with
+                  aviation companies, airlines, and airports. Students may work
+                  with HR departments of airlines to gain hands-on experience in
+                  aviation workforce management. Internships provide exposure to
+                  talent acquisition, employee training, and labor regulations
+                  in the aviation industry.
                 </div>
               )}
             </div>
 
+            {/* What is the course duration? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>Does this program include industry exposure?</p>
+                <p>4. What is the course duration?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Yes, students gain real-world experience through internships
-                  with airlines, airports, and aviation-related companies, along
-                  with industry visits and live HR projects in the aviation
-                  field.
+                  The program typically lasts 2 years (4 semesters).
                 </div>
               )}
             </div>
 
+            {/* What are the eligibility criteria? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>What are the key skills gained from this course?</p>
+                <p>5. What are the eligibility criteria?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  The program develops skills in aviation HR management, talent
-                  acquisition, employee relations, leadership development,
-                  strategic decision-making, and effective communication in
-                  aviation organizations.
+                  To be eligible for this program, you must have:
+                  <ul>
+                    <li>
+                      A bachelor’s degree in any discipline from a recognized
+                      university
+                    </li>
+                    <li>
+                      A minimum percentage (usually 50%) in undergraduate
+                      studies
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Does this program include leadership training? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What certifications can I earn during this program?</p>
+                <p>6. Does this program include leadership training?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students can earn certifications in HR Management, Airline HR
-                  Processes, Aviation Management, and specialized aviation HR
-                  programs, including IATA-certified courses.
+                  Yes! The program focuses on developing leadership and
+                  managerial skills for aviation HR professionals. Courses cover
+                  strategic HR management, conflict resolution, workforce
+                  planning, and employee engagement. Leadership training often
+                  includes case studies, workshops, and industry mentorship
+                  programs.
                 </div>
               )}
             </div>

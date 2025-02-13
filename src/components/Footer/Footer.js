@@ -112,13 +112,13 @@ function Footer() {
                         <a href="https://www.instagram.com/aharadaeducation/">
                           <i className="fab fa-instagram" />
                         </a>
-                        <a href="https://www.twitter.com/">
+                        <a href="https://x.com/Aharadaedu">
                           <i className="fab fa-twitter" />
                         </a>{" "}
                         <a href="https://www.linkedin.com/in/aharadaeducation/">
                           <i className="fab fa-linkedin-in" />
                         </a>{" "}
-                        <a href="https://www.youtube.com/@aharadaeducation498">
+                        <a href="https://www.youtube.com/@aharadaeducation">
                           <i className="fab fa-youtube" />
                         </a>
                       </div>
@@ -158,16 +158,18 @@ function Footer() {
                           <a href="#">Distance Course</a>
                         </li>
                         <li>
-                          <a href="/students-ambassador">Student Ambassador</a>
+                          <Link to="/students-ambassador">
+                            Student Ambassador
+                          </Link>
                         </li>
 
                         <li>
                           <Link to="/apply-now">Apply For Admissions</Link>
                         </li>
                         <li>
-                          <a href="/guestLecturer">
+                          <Link to="/guestLecturer">
                             Apply For Guest Lecturer or Mantor
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>

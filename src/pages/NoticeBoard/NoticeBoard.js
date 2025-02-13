@@ -95,8 +95,8 @@ const NoticeBoard = () => {
                       <img src="../assets/img/university/02.jpg" alt="img" />
                     </div>
                     <h5 className="subtitle mt-4">You Get Admission</h5>
-                    <a href="tel:+91-7303381359" className="link">
-                      +91-7303381359
+                    <a href="tel:+91-7303381360" className="link">
+                      +91-7303381360
                     </a>{" "}
                     <Link to="/apply-now" className="th-btn style7">
                       Apply Now <i className="far fa-arrow-right ms-1" />

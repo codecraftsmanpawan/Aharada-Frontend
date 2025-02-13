@@ -454,113 +454,168 @@ const DefenceTechnology = () => {
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
           <div className="accordion">
+            {/* What career opportunities exist in defense technology? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is M.Tech - Defence Technology?</p>
+                <p>1. What career opportunities exist in defense technology?</p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  M.Tech in Defence Technology is a postgraduate program that
-                  focuses on military systems, defence technologies, missile
-                  systems, cyber warfare, strategic defence, and advanced
-                  technologies in national security.
+                  Graduates can work in various defense-related fields,
+                  including:
+                  <ul>
+                    <li>
+                      Defense Research & Development (DRDO, ISRO, BDL, HAL,
+                      etc.)
+                    </li>
+                    <li>Aerospace & Missile Systems Engineering</li>
+                    <li>Cybersecurity & Defense Intelligence</li>
+                    <li>Military Equipment Design & Manufacturing</li>
+                    <li>Artificial Intelligence & Robotics in Defense</li>
+                    <li>Naval, Land, and Air Weaponry Development</li>
+                    <li>Electronic Warfare & Communication Systems</li>
+                    <li>Private Defense & Aerospace Companies</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What are the core subjects covered? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Why should I choose M.Tech - Defence Technology?</p>
+                <p>2. What are the core subjects covered?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program equips students with in-depth knowledge of
-                  advanced defence technologies, cyber security, missile
-                  systems, and strategic defense, preparing them for leadership
-                  roles in the defense sector, including research and
-                  development.
+                  The key subjects covered in this program include:
+                  <ul>
+                    <li>Advanced Weapon Systems & Missile Technology</li>
+                    <li>Combat Vehicle Technology & Armament Engineering</li>
+                    <li>Radar & Electronic Warfare Systems</li>
+                    <li>
+                      Unmanned Aerial Vehicles (UAVs) & Robotics in Defense
+                    </li>
+                    <li>Cybersecurity & Military Communication Networks</li>
+                    <li>Aerospace Propulsion & Ballistic Science</li>
+                    <li>
+                      Artificial Intelligence & Machine Learning in Defense
+                    </li>
+                    <li>
+                      Materials Science & Composite Technologies for Defense
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Are there research opportunities in defense projects? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>
-                  What career opportunities are available after this course?
-                </p>
+                <p>3. Are there research opportunities in defense projects?</p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  Graduates can work in defence technology research, missile
-                  systems, cyber security, defense consulting, strategic defence
-                  analysis, and defence R&D, with top defense agencies and
-                  organizations.
+                  Yes! Many universities collaborate with government defense
+                  organizations like DRDO, ISRO, and BARC for research projects.
+                  Students can work on classified and high-tech defense research
+                  initiatives. Some programs also offer funded research
+                  fellowships and internships in defense R&D labs.
                 </div>
               )}
             </div>
 
+            {/* Does the program include collaboration with defense organizations? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>Does this program include industry exposure?</p>
+                <p>
+                  4. Does the program include collaboration with defense
+                  organizations?
+                </p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Yes, students gain hands-on experience through internships
-                  with defence agencies, live projects, and exposure to
-                  real-world military systems and defence technology
-                  applications.
+                  We partner with organizations like:
+                  <ul>
+                    <li>Defense Research & Development Organization (DRDO)</li>
+                    <li>Indian Space Research Organization (ISRO)</li>
+                    <li>Hindustan Aeronautics Limited (HAL)</li>
+                    <li>Bharat Dynamics Limited (BDL)</li>
+                    <li>Ordnance Factories Board (OFB)</li>
+                    <li>Indian Armed Forces (Army, Navy, Air Force)</li>
+                  </ul>
+                  Collaborations may include internships, research projects, and
+                  guest lectures from defense experts.
                 </div>
               )}
             </div>
 
+            {/* What are the job opportunities after graduation? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>What are the key skills gained from this course?</p>
+                <p>5. What are the job opportunities after graduation?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  The program develops expertise in military systems, defence
-                  technology, cyber warfare, missile defence systems, strategic
-                  analysis, and security management, alongside critical thinking
-                  and problem-solving skills.
+                  Graduates can pursue roles such as:
+                  <ul>
+                    <li>Defense Research Scientist (DRDO, ISRO, BARC)</li>
+                    <li>Weapons & Missile Systems Engineer</li>
+                    <li>Aerospace Engineer (Aircraft, UAVs, and Drones)</li>
+                    <li>
+                      Cybersecurity & Network Security Specialist (Defense IT
+                      Systems)
+                    </li>
+                    <li>Naval & Marine Technology Specialist</li>
+                    <li>Military Communication & Electronics Engineer</li>
+                    <li>Project Manager in Defense Manufacturing</li>
+                    <li>
+                      Private Aerospace & Defense Firms (Tata Advanced Systems,
+                      L&T Defence, BEL, etc.)
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What is the future scope of this field? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What certifications can I earn during this program?</p>
+                <p>6. What is the future scope of this field?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students can earn certifications in Cyber Warfare, Missile
-                  Technology, Defence Systems Engineering, and Strategic
-                  Defence, with potential certifications from defense
-                  organizations and industry bodies.
+                  Rapid advancements in defense technology, including AI,
+                  quantum computing, and drone warfare, have increased demand
+                  for skilled engineers. Government investments in defense R&D
+                  create job opportunities in both public and private sectors.
+                  Global defense collaborations open doors for international
+                  careers in aerospace and military technology. Startups in
+                  defense innovation provide opportunities for entrepreneurship
+                  and research-based careers.
                 </div>
               )}
             </div>

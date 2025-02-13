@@ -454,111 +454,179 @@ const DronePilotTraining = () => {
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
           <div className="accordion">
+            {/* What certifications are provided in this course? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>What is Drone Pilot Training?</p>
+                <p>1. What certifications are provided in this course?</p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  Drone Pilot Training is a specialized program designed to
-                  teach students how to operate drones safely and efficiently,
-                  covering flight techniques, safety regulations, and real-world
-                  applications of drone technology across industries.
+                  Most drone pilot training programs offer certifications such
+                  as:
+                  <ul>
+                    <li>
+                      DGCA (Directorate General of Civil Aviation) Certified
+                      Drone Pilot License (India)
+                    </li>
+                    <li>FAA Part 107 Certification (USA)</li>
+                    <li>EASA Drone Pilot Certification (Europe)</li>
+                    <li>
+                      Remote Pilot Certificate (RPC) for commercial drone
+                      operations
+                    </li>
+                    <li>
+                      BVLOS (Beyond Visual Line of Sight) Certification for
+                      advanced drone operations
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What types of drones are covered in training? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>Why should I choose Drone Pilot Training?</p>
+                <p>2. What types of drones are covered in training?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  This program provides hands-on experience with the latest
-                  drones, covering everything from basic flight control to
-                  advanced aerial photography and surveying techniques,
-                  preparing you for a growing career in drone piloting.
+                  The course typically covers various types of drones,
+                  including:
+                  <ul>
+                    <li>
+                      Multi-Rotor Drones (Quadcopters, Hexacopters, Octocopters)
+                    </li>
+                    <li>
+                      Fixed-Wing Drones (Long-range surveillance and mapping)
+                    </li>
+                    <li>Hybrid VTOL Drones (Vertical Take-Off and Landing)</li>
+                    <li>
+                      FPV Racing Drones (Used in drone racing competitions)
+                    </li>
+                    <li>
+                      Industrial & Agricultural Drones (Used for spraying,
+                      surveying, and monitoring)
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* Are there practical flying sessions? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>
-                  What career opportunities are available after this training?
-                </p>
+                <p>3. Are there practical flying sessions?</p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  Graduates can work as commercial drone pilots for industries
-                  like agriculture, real estate, construction, film production,
-                  environmental monitoring, and drone mapping services.
+                  Yes, most programs include hands-on flight training, covering:
+                  <ul>
+                    <li>Basic and Advanced Flight Maneuvers</li>
+                    <li>Emergency Handling & Safety Procedures</li>
+                    <li>Autonomous Drone Programming & Navigation</li>
+                    <li>Aerial Photography & Videography Techniques</li>
+                    <li>Simulated and Real-World Flying Environments</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What industries require drone pilots? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>Does this program include industry exposure?</p>
+                <p>4. What industries require drone pilots?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  Yes, students gain practical exposure through hands-on flight
-                  sessions, internships with drone-related companies, and live
-                  projects that allow them to operate drones in real-world
-                  scenarios.
+                  Drone pilots are in high demand across multiple industries,
+                  including:
+                  <ul>
+                    <li>Aerial Photography & Cinematography (Film & TV)</li>
+                    <li>Agriculture & Crop Monitoring</li>
+                    <li>
+                      Construction & Real Estate (Aerial Surveys, 3D Mapping)
+                    </li>
+                    <li>Disaster Management & Search & Rescue Operations</li>
+                    <li>Defense & Security Surveillance</li>
+                    <li>
+                      Logistics & Delivery Services (Drone-based delivery
+                      systems)
+                    </li>
+                    <li>Environmental & Wildlife Conservation Monitoring</li>
+                    <li>Oil, Gas & Infrastructure Inspection</li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What is the duration of the training program? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>What are the key skills gained from this training?</p>
+                <p>5. What is the duration of the training program?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  The training develops essential skills in drone flight
-                  control, aerial photography, surveying, drone safety
-                  protocols, and understanding regulations in drone operations
-                  across various industries.
+                  The training duration varies:
+                  <ul>
+                    <li>Basic Drone Training: 5–7 days</li>
+                    <li>Advanced Commercial Pilot Training: 2–4 weeks</li>
+                    <li>
+                      Specialized Training (BVLOS, AI-based Drone Operations,
+                      etc.): 1–3 months
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>
 
+            {/* What are the job prospects after completing this training? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>What certifications can I earn during this program?</p>
+                <p>
+                  6. What are the job prospects after completing this training?
+                </p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  Students can earn certifications in Drone Pilot Safety, Aerial
-                  Photography, and Drone Operations from recognized
-                  organizations, including government-approved certifications
-                  for commercial drone use.
+                  After completing drone pilot training, you can work as:
+                  <ul>
+                    <li>Certified Drone Operator for Commercial Projects</li>
+                    <li>Aerial Surveyor & Mapping Specialist</li>
+                    <li>Cinematographer & Drone Photographer</li>
+                    <li>Agricultural Drone Operator</li>
+                    <li>Security & Surveillance Drone Pilot</li>
+                    <li>Drone Instructor or Consultant</li>
+                    <li>
+                      Drone Fleet Manager in Delivery & Logistics Companies
+                    </li>
+                    <li>
+                      Entrepreneur (Starting a Drone-Based Service Business)
+                    </li>
+                  </ul>
                 </div>
               )}
             </div>

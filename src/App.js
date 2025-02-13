@@ -47,7 +47,10 @@ import AerospaceEngineering from "./pages/Programs/Program-Explore/AerospaceEngi
 import DefenceTechnology from "./pages/Programs/Program-Explore/DefenceTechnology";
 import HRAviation from "./pages/Programs/Program-Explore/HRAviation";
 import DronePilotTraining from "./pages/Programs/Program-Explore/DronePilotTraining";
+import FineArts from "./pages/Programs/Program-Explore/FineArts";
+import FashionDesign from "./pages/Programs/Program-Explore/FashionDesign";
 import Department from "./pages/Department/Department";
+import Awards from "./pages/Awards/Awards";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import TermsandConditions from "./pages/PrivacyPolicy/TermsandConditions";
 import Footer from "./components/Footer/Footer";
@@ -124,9 +127,12 @@ function App() {
         />
         <Route path="/mba-hr-aviation" element={<HRAviation />} />
         <Route path="/drone-pilot-training" element={<DronePilotTraining />} />
+        <Route path="/fine-arts" element={<FineArts />} />
+        <Route path="/fashion-design" element={<FashionDesign />} />
         <Route path="/privacy/policy" element={<PrivacyPolicy />} />
         <Route path="/termsand/conditions" element={<TermsandConditions />} />
         <Route path="/department" element={<Department />} />
+        <Route path="/awards" element={<Awards />} />
       </Routes>
       <Footer />
     </Router>

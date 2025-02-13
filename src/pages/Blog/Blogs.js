@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link, useNavigate } from "react-router-dom";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
+import { encodeId } from "../../utils/encodeDecode";
 
 function Blogs() {
   const [blogs, setBlogs] = useState([]);
   const [filteredBlogs, setFilteredBlogs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [blogsPerPage] = useState(4);
-  const [searchQuery, setSearchQuery] = useState(""); // For search filter
+  const [blogsPerPage] = useState(20);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const navigate = useNavigate();
 
   // Fetch blog posts on component mount
   useEffect(() => {
@@ -60,7 +63,13 @@ function Blogs() {
         shuffledBlogs[i],
       ];
     }
-    return shuffledBlogs.slice(0, 5);
+    return shuffledBlogs.slice(0, 10);
+  };
+
+  // Handle navigation on blog click using encoded blog ID
+  const handleBlogClick = (blogId) => {
+    const encodedId = encodeId(blogId); // Encode the blog ID
+    navigate(`/blogDetails/${encodedId}`); // Navigate to blog details page with encoded ID
   };
 
   return (
@@ -87,18 +96,18 @@ function Blogs() {
                           </a>
                         </div>
                         <h2 className="blog-title">
-                          {/* Use Link to navigate with the blog's ID */}
-                          <Link to={`/blogDetails/${blog._id}`}>
+                          {/* Use handleBlogClick for navigation */}
+                          <span onClick={() => handleBlogClick(blog._id)}>
                             {blog.title}
-                          </Link>
+                          </span>
                         </h2>
                         <div className="blog-img">
-                          <Link to={`/blogDetails/${blog._id}`}>
+                          <span onClick={() => handleBlogClick(blog._id)}>
                             <img
                               src={`https://backend.aharadaedu.in${blog.image}`}
                               alt={blog.title}
                             />
-                          </Link>
+                          </span>
                         </div>
                         <p
                           className="blog-text"
@@ -113,13 +122,13 @@ function Blogs() {
                           }}
                         ></p>
                         {blog.content.length > 100 && (
-                          <Link
-                            to={`/blogDetails/${blog._id}`}
+                          <span
+                            onClick={() => handleBlogClick(blog._id)}
                             className="link-btn"
                           >
                             Read More Details
                             <i className="fas fa-arrow-right ms-2" />
-                          </Link>
+                          </span>
                         )}
                       </div>
                     </div>
@@ -154,7 +163,7 @@ function Blogs() {
                         type="text"
                         placeholder="Search Blogs..."
                         value={searchQuery}
-                        onChange={handleSearchChange} // Update search filter
+                        onChange={handleSearchChange}
                       />
                       <button type="submit">
                         <i className="far fa-search" />
@@ -166,7 +175,6 @@ function Blogs() {
                     className="widget widget_banner"
                     data-overlay="theme"
                     data-opacity={9}
-                    // data-bg-src="../assets/img/university/2025.png"
                   >
                     <div className="widget-banner">
                       <h4 className="title text-white">
@@ -176,9 +184,9 @@ function Blogs() {
                         <img src="../assets/img/university/02.jpg" alt="img" />
                       </div>
                       <h5 className="subtitle mt-4">You Get Admission</h5>
-                      <a href="tel:+91-7303381359" className="link">
-                        +91-7303381359
-                      </a>{" "}
+                      <a href="tel:+91-7303381360" className="link">
+                        +91-7303381360
+                      </a>
                       <Link to="/apply-now" className="th-btn style7">
                         Apply Now <i className="far fa-arrow-right ms-1" />
                       </Link>
@@ -191,14 +199,14 @@ function Blogs() {
                     <div className="recent-post-wrap">
                       {getRandomBlogs().map((blog) => (
                         <div className="recent-post" key={blog._id}>
-                          <Link to={`/blogDetails/${blog._id}`}>
+                          <span onClick={() => handleBlogClick(blog._id)}>
                             <img
                               src={`https://backend.aharadaedu.in${blog.image}`}
                               alt={blog.title}
                               className="recent-post-img"
                             />
                             <h4 className="recent-post-title">{blog.title}</h4>
-                          </Link>
+                          </span>
                         </div>
                       ))}
                     </div>
