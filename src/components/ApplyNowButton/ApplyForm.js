@@ -526,32 +526,33 @@ const ApplyForm = ({ onSubmit, closeApplyForm, className }) => {
   }, []);
 
   const onFormSubmit = async (data) => {
-    // try {
-    //   await axios.post(
-    //     `${config.apiBaseUrl}/api/admission-leads/apply`,
-    //     {
-    //       name: data.name,
-    //       phone: data.phone,
-    //       email: data.email,
-    //       state: data.state,
-    //       district: data.district,
-    //       university: data.university,
-    //       program: data.program,
-    //       branch: data.branch,
-    //     },
-    //     {
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //     }
-    //   );
-    //   reset();
-    //   setInProp(false);
-    //   toast.success("Form submitted successfully!");
-    // } catch (error) {
-    //   console.error("Submission error:", error);
-    //   toast.error("Submission failed. Please try again.");
-    // }
+    try {
+      await axios.post(
+        `${config.apiBaseUrl}/api/admission-leads/apply`,
+        {
+          name: data.name,
+          phone: data.phone,
+          email: data.email,
+          state: data.state,
+          district: data.district,
+          university: data.university,
+          program: data.program,
+          branch: data.branch,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      reset();
+      setInProp(false);
+      toast.success("Form submitted successfully!");
+    } catch (error) {
+      console.error("Submission error:", error);
+      toast.error("Submission failed. Please try again.");
+    }
   };
 
   const handleUniversityChange = (e) => {
