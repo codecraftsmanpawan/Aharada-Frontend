@@ -336,10 +336,7 @@ const DronePilotTraining = () => {
               <span className="highlight">diverse job opportunities</span>
             </h2>
             <div className="graduate-img">
-              <img
-                src="https://png.pngtree.com/png-vector/20240414/ourmid/pngtree-3d-boy-graduate-student-png-image_12286971.png"
-                alt="Graduate"
-              />
+              <img src="../assets/img/g.PNG" alt="Graduate" />
             </div>
             <Link
               style={{ marginTop: "-110px", marginLeft: "40px" }}
