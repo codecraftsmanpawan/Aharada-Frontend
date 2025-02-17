@@ -332,7 +332,7 @@ const AviationAirportmanagement = () => {
               <span className="highlight">diverse job opportunities</span>
             </h2>
             <div className="graduate-img">
-              <img src="../assets/img/g.PNG" alt="Graduate" />
+              <img src="../assets/img/g.png" alt="Graduate" />
             </div>
             <Link
               style={{ marginTop: "-110px", marginLeft: "40px" }}
