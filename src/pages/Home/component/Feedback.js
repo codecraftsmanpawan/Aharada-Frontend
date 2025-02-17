@@ -7,21 +7,21 @@ import config from "../../../config";
 const VideoTestimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
 
-  useEffect(() => {
-    // Fetch testimonials from the API
-    const fetchTestimonials = async () => {
-      try {
-        const response = await axios.get(
-          `${config.apiBaseUrl}/api/videofeedbacks`
-        );
-        setTestimonials(response.data);
-      } catch (error) {
-        // console.error("Error fetching testimonials:", error);
-      }
-    };
+  // useEffect(() => {
 
-    fetchTestimonials();
-  }, []);
+  //   const fetchTestimonials = async () => {
+  //     try {
+  //       const response = await axios.get(
+  //         `${config.apiBaseUrl}/api/videofeedbacks`
+  //       );
+  //       setTestimonials(response.data);
+  //     } catch (error) {
+
+  //     }
+  //   };
+
+  //   fetchTestimonials();
+  // }, []);
 
   // Slider settings
   const sliderSettings = {
@@ -49,7 +49,7 @@ const VideoTestimonials = () => {
 
   return (
     <div className="video-testimonials-container">
-      {testimonials.length > 0 && (
+      {/* {testimonials.length > 0 && (
         <>
           <h2 className="section-title">Student Parent Feedback</h2>
           <Slider {...sliderSettings}>
@@ -66,14 +66,14 @@ const VideoTestimonials = () => {
                     url={testimonial.videoUrl}
                     controls={true}
                     width="100%"
-                    height="250px" // Fixed height for videos
+                    height="250px"
                   />
                 </div>
               </div>
             ))}
           </Slider>
         </>
-      )}
+      )} */}
     </div>
   );
 };

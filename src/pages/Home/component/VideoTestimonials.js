@@ -4,29 +4,7 @@ import "./VideoTestimonials.css"; // Custom styles for the component
 
 const VideoTestimonials = () => {
   // Array of testimonials with video URLs
-  const testimonials = [
-    {
-      id: 1,
-      name: "Aerospace Engineering - Student Feedback - Aharada Education",
-      videoUrl: "https://youtu.be/zSdtQw75hek?si=FwPEez8w5dqdBCTM",
-      testimonial:
-        "Aerospace Engineering - Student Feedback - Aharada Education..",
-    },
-    {
-      id: 2,
-      name: "Aerospace Engineering - Student Feedback - Aharada Education",
-      videoUrl: "https://youtu.be/zSdtQw75hek?si=FwPEez8w5dqdBCTM",
-      testimonial:
-        "Aerospace Engineering - Student Feedback - Aharada Education..",
-    },
-    {
-      id: 3,
-      name: "Aerospace Engineering - Student Feedback - Aharada Education",
-      videoUrl: "https://youtu.be/zSdtQw75hek?si=FwPEez8w5dqdBCTM",
-      testimonial:
-        "Aerospace Engineering - Student Feedback - Aharada Education.",
-    },
-  ];
+  const testimonials = [];
 
   return (
     <div className="video-testimonials-container">
