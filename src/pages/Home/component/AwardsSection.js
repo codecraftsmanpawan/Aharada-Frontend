@@ -55,10 +55,7 @@ const AwardsSection = () => {
               <div className="ps-xxl-5 ms-xl-2">
                 <div className="video-box2">
                   <img src="./assets/img/about-us.webp" alt="video" />{" "}
-                  <a
-                    href="https://youtu.be/AYVMWDkMyxY?si=HD0kFjuoZTW4_IbZ"
-                    className="play-btn style3 popup-video"
-                  >
+                  <a href="" className="play-btn style3 popup-video">
                     <i className="fas fa-play" />
                   </a>
                 </div>
