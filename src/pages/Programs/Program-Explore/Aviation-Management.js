@@ -179,7 +179,7 @@ const mcaSummary = [
 const campuses = [
   {
     name: "IIMT University, Meerut",
-    program: "BBA Program | UGC approved",
+    program: "MBA Program | UGC approved",
     specialisations: 6,
     certifications: 10,
     fees: "₹ 3.40 Lacs",
@@ -191,7 +191,7 @@ const campuses = [
   },
   {
     name: "SAGE University Indore",
-    program: "BBA Program | UGC recognised",
+    program: "MBA Program | UGC recognised",
     specialisations: 3,
     certifications: 10,
     fees: "₹ 3.88 Lacs",
