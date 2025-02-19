@@ -180,7 +180,7 @@ const mcaSummary = [
 const campuses = [
   {
     name: "IIMT University, Meerut",
-    program: "MCA Program | UGC approved",
+    program: "B.Tech Program | UGC approved",
     specialisations: 6,
     certifications: 10,
     fees: "₹ 3.40 Lacs",
@@ -192,7 +192,7 @@ const campuses = [
   },
   //   {
   //     name: "SAGE University Indore",
-  //     program: "MCA Program | UGC recognised",
+  //     program: "B.Tech Program | UGC recognised",
   //     specialisations: 3,
   //     certifications: 10,
   //     fees: "₹ 3.88 Lacs",
@@ -204,7 +204,7 @@ const campuses = [
   //   },
   {
     name: "Subharti University, Meerut",
-    program: "MCA Program | UGC recognised",
+    program: "B.Tech Program | UGC recognised",
     specialisations: 6,
     certifications: 10,
     fees: "₹ 3.10 Lacs",
@@ -216,7 +216,7 @@ const campuses = [
   },
   {
     name: "Dev Bhoomi Uttarakhand University",
-    program: "MCA Program | AICTE approved",
+    program: "B.Tech Program | AICTE approved",
     specialisations: 4,
     certifications: 8,
     fees: "₹ 4.00 Lacs",

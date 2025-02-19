@@ -180,7 +180,7 @@ const mcaSummary = [
 const campuses = [
   {
     name: "IIMT University, Meerut",
-    program: "MCA Program | UGC approved",
+    program: "BFA Program | UGC approved",
     specialisations: 6,
     certifications: 10,
     fees: "₹ 3.40 Lacs",
@@ -204,7 +204,7 @@ const campuses = [
   //   },
   {
     name: "Subharti University, Meerut",
-    program: "MCA Program | UGC recognised",
+    program: "BFA Program | UGC recognised",
     specialisations: 6,
     certifications: 10,
     fees: "₹ 3.10 Lacs",

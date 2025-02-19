@@ -204,7 +204,7 @@ const campuses = [
   //   },
   {
     name: "Subharti University, Meerut",
-    program: "MCA Program | UGC recognised",
+    program: "M.Tech Program | UGC recognised",
     specialisations: 6,
     certifications: 10,
     fees: "₹ 3.10 Lacs",

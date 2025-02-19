@@ -203,7 +203,7 @@ const campuses = [
   //   },
   {
     name: "Subharti University, Meerut",
-    program: "MCA Program | UGC recognised",
+    program: "BBA Program | UGC recognised",
     specialisations: 6,
     certifications: 10,
     fees: "₹ 3.10 Lacs",
@@ -215,7 +215,7 @@ const campuses = [
   },
   {
     name: "Dev Bhoomi Uttarakhand University",
-    program: "MCA Program | AICTE approved",
+    program: "BBA Program | AICTE approved",
     specialisations: 4,
     certifications: 8,
     fees: "₹ 4.00 Lacs",

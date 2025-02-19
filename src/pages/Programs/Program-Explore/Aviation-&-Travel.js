@@ -171,7 +171,7 @@ const mcaSummary = [
 const campuses = [
   {
     name: "IIMT University, Meerut",
-    program: "MCA Program | UGC approved",
+    program: "BBA Program | UGC approved",
     specialisations: 6,
     certifications: 10,
     fees: "₹ 3.40 Lacs",
