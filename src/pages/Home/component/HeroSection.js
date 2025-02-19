@@ -35,9 +35,9 @@ function HeroSection() {
               <span className="hero-subtitle">Educate, Empower, Excel</span>
 
               <h1 className="hero-title text-theme">Aharada Education</h1>
-              <h1 className="hero-title">
+              <h2 className="hero-title">
                 Soar High with World-Class Learning
-              </h1>
+              </h2>
               <div className="checklist">
                 <ul>
                   <li>Global Placement Support</li>
