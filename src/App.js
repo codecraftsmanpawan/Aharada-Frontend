@@ -31,7 +31,7 @@ import NewsMediaDetails from "./pages/NewsMedia/NewsMediaDetails";
 import CampuesLife from "./pages/CampusLife/Campus-Life";
 import Scholarships from "./pages/Scholarships/Scholarships";
 import ApplyNow from "./pages/ApplyNow/Apply-Now";
-import AdmissionCard from "./components/AdmissionCard/AdmissionCard";
+// import AdmissionCard from "./components/AdmissionCard/AdmissionCard";
 import GuestLecturer from "./pages/GuestLecturer/Guest-Lecturer";
 import GuestLecturerDetails from "./pages/GuestLecturer/Guest-Lecturer-Details";
 import GuestLectureList from "./pages/GuestLecturer/GuestLectureList";
@@ -68,7 +68,6 @@ function App() {
     <Router>
       <ScrollToTop /> {/* Include the component here */}
       <Header />
-      <AdmissionCard />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
