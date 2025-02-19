@@ -291,11 +291,6 @@ function Header() {
                               <li>
                                 <Link to="/grievance">Grievance</Link>
                               </li>
-                              <li>
-                                <Link to="https://aerospaceclub.org/">
-                                  Our Clubs
-                                </Link>
-                              </li>
                             </ul>
                           </li>
                           <li>
@@ -430,14 +425,6 @@ function Header() {
                   <li>
                     <Link to="/grievance" onClick={handleMenuItemClick}>
                       Grievance
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="https://aerospaceclub.org/"
-                      onClick={handleMenuItemClick}
-                    >
-                      Our Clubs
                     </Link>
                   </li>
                 </ul>
