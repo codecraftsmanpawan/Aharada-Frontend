@@ -16,7 +16,7 @@ import NewsMediaSection from "./component/NewMedia";
 import BirthdayCard from "./component/BirthdayCard";
 function Home() {
   useEffect(() => {
-    document.title = "Home - Aharada Education";
+    document.title = "Aharadaedu - Empowering Education for a Brighter Future";
   }, []);
   return (
     <div>
