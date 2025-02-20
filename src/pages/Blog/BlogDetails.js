@@ -13,15 +13,19 @@ import {
 } from "react-share";
 import "./BlogDetails.css";
 import Head from "../../components/Head/Head";
-import { decodeId } from "../../utils/encodeDecode"; // Import decodeId function
+import { decodeId } from "../../utils/encodeDecode";
 
 function BlogDetails() {
-  const { id } = useParams(); // Get the encoded ID from URL
+  const { id } = useParams();
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-    // Decode the blog ID
-    const decodedId = decodeId(id);
+    let decodedId = id;
+
+    // Check if the id is encoded, if it is, decode it
+    if (id && id.length !== 24) {
+      decodedId = decodeId(id);
+    }
 
     if (decodedId) {
       // Fetch the blog post using the decoded ID
