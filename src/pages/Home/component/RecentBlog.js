@@ -11,7 +11,11 @@ const BlogSection = () => {
     axios
       .get("https://backend.aharadaedu.in/api/blogs")
       .then((response) => {
-        setBlogs(response.data.blogPosts); // Set blog posts from the response
+        // Sort blog posts by publishedDate in descending order
+        const sortedBlogs = response.data.blogPosts.sort(
+          (a, b) => new Date(b.publishedDate) - new Date(a.publishedDate)
+        );
+        setBlogs(sortedBlogs); // Set sorted blog posts
       })
       .catch((error) => {
         console.error("Error fetching blog posts:", error);
@@ -24,7 +28,7 @@ const BlogSection = () => {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 3000,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
       {
