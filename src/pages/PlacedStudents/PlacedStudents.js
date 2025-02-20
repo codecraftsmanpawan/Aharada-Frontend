@@ -4,7 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 
 function PlacedStudents() {
   const [alumniData, setAlumniData] = useState([]);
-  const BASE_URL = "https://backend.aharadaedu.in"; // Define your base URL for images
+  const BASE_URL = "https://backend.aharadaedu.in";
 
   // Function to fetch alumni data
   const fetchAlumniData = async () => {
@@ -92,12 +92,7 @@ function PlacedStudents() {
                         </div>
                         <div className="team-content">
                           <h3 className="team-title">
-                            <a
-                              href="/facultyDetails"
-                              style={{ fontSize: "18px" }}
-                            >
-                              {alumni.name}
-                            </a>
+                            <a style={{ fontSize: "18px" }}>{alumni.name}</a>
                           </h3>
                           <span className="team-desig">{alumni.jobTitle}</span>
                         </div>
