@@ -62,10 +62,18 @@ function Internship() {
                         <i className="fa-solid fa-plus" />
                       </button>
                       <div className="th-social">
-                        <a target="_blank" href={internship.linkedin}>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={internship.linkedin}
+                        >
                           <i className="fab fa-linkedin-in" />
                         </a>
-                        <a target="_blank" href={`mailto:${internship.email}`}>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={`mailto:${internship.email}`}
+                        >
                           <i className="fa-solid fa-envelope" />
                         </a>
                       </div>

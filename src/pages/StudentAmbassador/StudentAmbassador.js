@@ -78,15 +78,24 @@ const StudentAmbassador = () => {
                       </button>
 
                       <div className="th-social">
-                        <a target="_blank" href={ambassador.facebook}>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={ambassador.facebook}
+                        >
                           <i className="fab fa-facebook" />
                         </a>
-                        <a target="_blank" href={`mailto:${ambassador.email}`}>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={`mailto:${ambassador.email}`}
+                        >
                           <i className="fa-solid fa-envelope" />
                         </a>
                         {ambassador.socialMediaLinks.facebook && (
                           <a
                             target="_blank"
+                            rel="noopener noreferrer"
                             href={ambassador.socialMediaLinks.facebook}
                           >
                             <i className="fab fa-facebook" />
@@ -95,6 +104,7 @@ const StudentAmbassador = () => {
                         {ambassador.socialMediaLinks.twitter && (
                           <a
                             target="_blank"
+                            rel="noopener noreferrer"
                             href={ambassador.socialMediaLinks.twitter}
                           >
                             <i className="fab fa-twitter" />
@@ -103,6 +113,7 @@ const StudentAmbassador = () => {
                         {ambassador.socialMediaLinks.instagram && (
                           <a
                             target="_blank"
+                            rel="noopener noreferrer"
                             href={ambassador.socialMediaLinks.instagram}
                           >
                             <i className="fab fa-instagram" />
