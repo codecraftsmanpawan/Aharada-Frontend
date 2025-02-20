@@ -7,21 +7,18 @@ import config from "../../../config";
 const VideoTestimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
 
-  // useEffect(() => {
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      try {
+        const response = await axios.get(
+          `${config.apiBaseUrl}/api/videofeedbacks`
+        );
+        setTestimonials(response.data);
+      } catch (error) {}
+    };
 
-  //   const fetchTestimonials = async () => {
-  //     try {
-  //       const response = await axios.get(
-  //         `${config.apiBaseUrl}/api/videofeedbacks`
-  //       );
-  //       setTestimonials(response.data);
-  //     } catch (error) {
-
-  //     }
-  //   };
-
-  //   fetchTestimonials();
-  // }, []);
+    fetchTestimonials();
+  }, []);
 
   // Slider settings
   const sliderSettings = {
@@ -49,7 +46,7 @@ const VideoTestimonials = () => {
 
   return (
     <div className="video-testimonials-container">
-      {/* {testimonials.length > 0 && (
+      {testimonials.length > 0 && (
         <>
           <h2 className="section-title">Student Parent Feedback</h2>
           <Slider {...sliderSettings}>
@@ -73,7 +70,7 @@ const VideoTestimonials = () => {
             ))}
           </Slider>
         </>
-      )} */}
+      )}
     </div>
   );
 };
