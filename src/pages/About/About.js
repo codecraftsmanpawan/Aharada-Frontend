@@ -301,11 +301,6 @@ function About() {
                       alt="img"
                     />
                   </div>
-                  <div className="text-end">
-                    <a className="th-btn mt-30" href="#">
-                      Get Started <i className="far fa-arrow-right ms-1" />
-                    </a>
-                  </div>
                 </div>
               </div>
               <div
