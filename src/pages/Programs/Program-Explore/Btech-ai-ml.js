@@ -183,39 +183,15 @@ const summary = [
 // Campus Details for B.Tech AI & ML
 const campuses = [
   {
-    name: "Tech Institute of AI, Silicon Valley",
-    program: "B.Tech AI & ML Program | Accredited",
-    specialisations: 6,
+    name: "Vidya Knowledge Park",
+    program: "B.Tech Program | UGC recognised",
+    specialisations: 3,
     certifications: 10,
-    fees: "$40,000 per year",
+    fees: "₹ 3.88 Lacs",
     images: [
-      "assets/placement/siliconvalley1.jpg",
-      "assets/placement/siliconvalley2.jpg",
-      "assets/placement/siliconvalley3.jpg",
-    ],
-  },
-  {
-    name: "Global University of Technology, Boston",
-    program: "B.Tech AI & ML Program | Recognized",
-    specialisations: 5,
-    certifications: 8,
-    fees: "$38,000 per year",
-    images: [
-      "assets/placement/boston1.jpg",
-      "assets/placement/boston2.jpg",
-      "assets/placement/boston3.jpg",
-    ],
-  },
-  {
-    name: "Innovation Tech College, Austin",
-    program: "B.Tech AI & ML Program | National Accredited",
-    specialisations: 7,
-    certifications: 9,
-    fees: "$35,000 per year",
-    images: [
-      "assets/placement/austin1.jpg",
-      "assets/placement/austin2.jpg",
-      "assets/placement/austin3.jpg",
+      "assets/placement/vidya1.jpg",
+      "assets/placement/vidya1.jpg",
+      "assets/placement/vidya1.jpg",
     ],
   },
 ];
@@ -679,7 +655,40 @@ const Btechaiml = () => {
           </div>
         </div>
       </div>
+      <div className="campus-section">
+        <h2 className="main-title">Partner Campuses</h2>
+        <h3 className="main-subtitle">
+          Choose from 3+ premier campuses nationally
+        </h3>
+        <Slider {...campusSettings} className="campus-sliders">
+          {campuses.map((campus, index) => (
+            <div key={index} className={`campus-card campus-card-${index}`}>
+              <div className="image-slider-container">
+                <Slider {...imageSettings} className={`image-slider-${index}`}>
+                  {campus.images.map((image, idx) => (
+                    <div key={idx} className="image-slide">
+                      <img
+                        src={image}
+                        alt={`${campus.name} image ${idx + 1}`}
+                        className={`campus-image-${index}-${idx}`}
+                      />
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+              <div className="campus-info">
+                <h4 className="campus-name">{campus.name}</h4>
+                <p className="main-program">{campus.program}</p>
 
+                <button className="th-btn style3" onClick={handleBookingClick}>
+                  Book College Tour{" "}
+                  <i className="fas fa-long-arrow-right ms-2" />
+                </button>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
       <Course />
       <div style={{ marginTop: "50px" }}>
         <Feedback />

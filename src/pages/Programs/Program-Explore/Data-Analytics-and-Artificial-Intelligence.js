@@ -216,6 +216,18 @@ const campuses = [
       "assets/placement/dev3.jpg",
     ],
   },
+  {
+    name: "Vidya Knowledge Park",
+    program: "BBA Program | UGC recognised",
+    specialisations: 3,
+    certifications: 10,
+    fees: "₹ 3.88 Lacs",
+    images: [
+      "assets/placement/vidya1.jpg",
+      "assets/placement/vidya1.jpg",
+      "assets/placement/vidya1.jpg",
+    ],
+  },
 ];
 
 const campusSettings = {

@@ -185,7 +185,7 @@ const iotSummary = [
 const campuses = [
   {
     name: "Vidya Knowledge Park",
-    program: "BCA - Internet of Things (IoT)",
+    program: "BCA Program | UGC recognised",
     specialisations: 3,
     certifications: 10,
     fees: "₹ 3.88 Lacs",

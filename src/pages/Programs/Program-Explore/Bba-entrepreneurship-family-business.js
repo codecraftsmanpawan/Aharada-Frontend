@@ -182,7 +182,7 @@ const summary = [
 const campuses = [
   {
     name: "Vidya Knowledge Park",
-    program: "BBA - Entrepreneurship and Family Business",
+    program: "BBA Program | UGC recognised",
     specialisations: 3,
     certifications: 10,
     fees: "₹ 3.88 Lacs",

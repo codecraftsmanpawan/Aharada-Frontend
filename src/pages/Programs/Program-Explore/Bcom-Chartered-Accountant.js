@@ -181,7 +181,7 @@ const mcaSummary = [
 const campuses = [
   {
     name: "Vidya Knowledge Park",
-    program: "B.Com - Chartered Accountant | UGC recognised",
+    program: "B.Com - CA | UGC recognised",
     specialisations: 3,
     certifications: 10,
     fees: "₹ 3.88 Lacs",
