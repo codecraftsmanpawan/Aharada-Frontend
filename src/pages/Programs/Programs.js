@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./ProfessionalProgramsPage.css";
 import Course from "../Home/component/CouseOffer";
-
 const programs = [
   {
     id: 1,
@@ -29,7 +28,7 @@ const programs = [
     link: "/entrepreneurship-and-innovation",
   },
   {
-    id: 5,
+    id: 4,
     title: "B.Sc - Aeronautical",
     duration: "3 YEARS",
     type: "UG",
@@ -37,7 +36,7 @@ const programs = [
     link: "/bsc-aeronautical",
   },
   {
-    id: 6,
+    id: 5,
     title: "MBA - Aviation Management",
     duration: "2 YEARS",
     type: "PG",
@@ -45,7 +44,7 @@ const programs = [
     link: "/mba-aviation-management",
   },
   {
-    id: 7,
+    id: 6,
     title: "BBA - Aviation & Airport Management",
     duration: "3 YEARS",
     type: "UG",
@@ -53,7 +52,7 @@ const programs = [
     link: "/aviation-and-airport-management",
   },
   {
-    id: 8,
+    id: 7,
     title: "B.Tech - Aerospace Engineering",
     duration: "4 YEARS",
     type: "UG",
@@ -61,7 +60,7 @@ const programs = [
     link: "/btech-aerospace-engineering",
   },
   {
-    id: 9,
+    id: 8,
     title: "M.Tech - Defence Technology",
     duration: "2 YEARS",
     type: "PG",
@@ -69,7 +68,7 @@ const programs = [
     link: "/mtech-defence-technology",
   },
   {
-    id: 10,
+    id: 9,
     title: "MBA - HR & Aviation",
     duration: "2 YEARS",
     type: "PG",
@@ -77,7 +76,7 @@ const programs = [
     link: "/mba-hr-aviation",
   },
   {
-    id: 11,
+    id: 10,
     title: "Drone Pilot Training",
     duration: "6 MONTHS",
     type: "UG",
@@ -85,20 +84,60 @@ const programs = [
     link: "/drone-pilot-training",
   },
   {
-    id: 12,
+    id: 11,
     title: "BFD - Fashion Design",
     duration: "3 YEARS",
     type: "UG",
-    image: "assets/course/Drone.jpg",
+    image: "assets/course/fashion.jpg",
     link: "/fashion-design",
   },
   {
-    id: 13,
+    id: 12,
     title: "BFA - Fine Arts",
     duration: "3 YEARS",
     type: "UG",
-    image: "assets/course/Drone.jpg",
+    image: "assets/course/finearts.jpg",
     link: "/fine-arts",
+  },
+  {
+    id: 13,
+    title: "BBA - FinTech",
+    duration: "3 YEARS",
+    type: "UG",
+    image: "assets/course/fintech.jpg",
+    link: "/bba-fintech",
+  },
+  {
+    id: 14,
+    title: "B.Com - Chartered Accountant",
+    duration: "3 YEARS",
+    type: "UG",
+    image: "assets/course/chartered.jpg",
+    link: "/bcom-chartered-accountant",
+  },
+  {
+    id: 15,
+    title: "BCA - Internet of Things (IoT)",
+    duration: "3 YEARS",
+    type: "UG",
+    image: "assets/course/iot.jpg",
+    link: "/bca-iot",
+  },
+  {
+    id: 16,
+    title: "BBA - Entrepreneurship and Family Business",
+    duration: "3 YEARS",
+    type: "UG",
+    image: "assets/course/familybusiness.jpg",
+    link: "/bba-entrepreneurship-family-business",
+  },
+  {
+    id: 17,
+    title: "B.Tech - AI & ML",
+    duration: "4 YEARS",
+    type: "UG",
+    image: "assets/course/ai-ml.jpg",
+    link: "/btech-ai-ml",
   },
 ];
 

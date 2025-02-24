@@ -21,6 +21,9 @@ import {
   FaCertificate,
   FaBookOpen,
   FaUsers,
+  FaRocket,
+  FaCogs,
+  FaSatellite,
 } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
@@ -31,44 +34,51 @@ import Course from "../../Home/component/CouseOffer";
 
 const offerings = [
   {
-    text: "Hands-on training in aviation and travel management",
-    icon: <FaPlane />,
-  },
-  {
-    text: "Global career opportunities in airlines, airports, and tourism",
-    icon: <FaGlobe />,
-  },
-  {
-    text: "Internships with leading airlines and travel agencies",
-    icon: <FaBriefcase />,
-  },
-  {
-    text: "Global aviation & travel industry exposure ",
-    icon: <FaGlobeAmericas />,
-  },
-  {
-    text: "Industry-focused curriculum with real-world case studies",
+    text: "Comprehensive understanding of accounting principles, auditing, and taxation",
     icon: <FaBookOpen />,
   },
   {
-    text: "Certifications in airline management, IATA, and travel consultancy",
+    text: "Practical training with real-world financial reporting and analysis",
+    icon: <FaDollarSign />,
+  },
+  {
+    text: "Hands-on internships at reputed accounting and finance firms",
+    icon: <FaBriefcase />,
+  },
+  {
+    text: "Exposure to regulatory frameworks and compliance standards",
+    icon: <FaGlobeAmericas />,
+  },
+  {
+    text: "Industry-aligned curriculum with recognized professional certifications",
     icon: <FaCertificate />,
   },
   {
-    text: "Soft skills and leadership training for aviation professionals",
-    icon: <FaUsers />,
+    text: "Development of analytical, problem-solving, and leadership skills",
+    icon: <FaUserTie />,
+  },
+  {
+    text: "Preparation for professional exams in chartered accountancy",
+    icon: <FaUniversity />,
   },
 ];
 
-const whoCanDoMCA = [
-  { text: "Passed class 12th from a recognized board", icon: "⭐" },
+const whoCanDo = [
   {
-    text: "Aspirants interested in aviation, travel, and tourism management",
-    icon: "⭐",
+    text: "Students with a background in commerce, economics, or business studies",
+    icon: "📊",
   },
   {
-    text: "Minimum 50% marks in class 12th (may vary by institution)",
-    icon: "⭐",
+    text: "Aspirants with strong numerical, analytical, and communication skills",
+    icon: "💡",
+  },
+  {
+    text: "Individuals aiming for careers in auditing, taxation, and financial management",
+    icon: "📈",
+  },
+  {
+    text: "Candidates committed to pursuing professional certification in chartered accountancy",
+    icon: "🏆",
   },
 ];
 
@@ -143,47 +153,35 @@ const companyPartners = [
 
 const mcaSummary = [
   {
-    icon: <FaGraduationCap />,
-    text: "The full form of BBA - Aviation & Travel is Bachelor of Business Administration in Aviation & Travel Management, a specialized undergraduate course.",
+    icon: <FaBookOpen />,
+    text: "BCom in Chartered Accountancy equips students with a robust foundation in accounting, auditing, and taxation.",
   },
   {
     icon: <FaUniversity />,
-    text: "This course is ideal for students interested in aviation, airlines, tourism, and hospitality management.",
+    text: "The program integrates academic excellence with professional training, preparing graduates for chartered accountancy exams.",
   },
   {
     icon: <FaCheckCircle />,
-    text: "A regular BBA - Aviation & Travel course duration is 3 years, divided into 6 semesters, with practical training and industry exposure.",
+    text: "Typically a 3-year program featuring live projects, internships, and rigorous training sessions.",
   },
   {
     icon: <FaDollarSign />,
-    text: "The average starting salary for graduates in this field ranges from 3-5 Lakhs per year, depending on job roles and experience.",
+    text: "Graduates can expect competitive salaries and diverse career opportunities in top accounting firms.",
   },
   {
     icon: <FaLightbulb />,
-    text: "Career opportunities include roles in airline management, airport operations, travel agencies, tourism boards, and hospitality firms.",
+    text: "Career roles include Auditor, Tax Consultant, Financial Analyst, and Management Accountant.",
   },
   {
     icon: <FaBuilding />,
-    text: "Top recruiters in this field include airlines like Indigo, Air India, SpiceJet, and global travel companies like Thomas Cook and MakeMyTrip.",
+    text: "Top recruiters include multinational accounting firms and corporate finance departments.",
   },
 ];
 
 const campuses = [
   {
-    name: "IIMT University, Meerut",
-    program: "BBA Program | UGC approved",
-    specialisations: 6,
-    certifications: 10,
-    fees: "₹ 3.40 Lacs",
-    images: [
-      "assets/placement/iimt1.jpg",
-      "assets/placement/iimt2.jpg",
-      "assets/placement/iimt3.jpg",
-    ],
-  },
-  {
     name: "Vidya Knowledge Park",
-    program: "BBA Program | UGC recognised",
+    program: "B.Com - Chartered Accountant | UGC recognised",
     specialisations: 3,
     certifications: 10,
     fees: "₹ 3.88 Lacs",
@@ -193,31 +191,6 @@ const campuses = [
       "assets/placement/vidya1.jpg",
     ],
   },
-
-  //   {
-  //     name: "Subharti University, Meerut",
-  //     program: "MCA Program | UGC recognised",
-  //     specialisations: 6,
-  //     certifications: 10,
-  //     fees: "₹ 3.10 Lacs",
-  //     images: [
-  //       "assets/placement/Subharti1.webp",
-  //       "assets/placement/Subharti1.webp",
-  //       "assets/placement/Subharti3.png",
-  //     ],
-  //   },
-  //   {
-  //     name: "Dev Bhoomi Uttarakhand University",
-  //     program: "MCA Program | AICTE approved",
-  //     specialisations: 4,
-  //     certifications: 8,
-  //     fees: "₹ 4.00 Lacs",
-  //     images: [
-  //       "assets/placement/dev1.jpeg",
-  //       "assets/placement/dev1.jpeg",
-  //       "assets/placement/dev3.jpg",
-  //     ],
-  //   },
 ];
 
 const campusSettings = {
@@ -259,16 +232,14 @@ const imageSettings = {
   arrows: false,
 };
 
-const AviationTravel = () => {
+const BcomCharteredAccountant = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
+
   const toggleAccordion = (index) => {
-    if (activeIndex === index) {
-      setActiveIndex(null);
-    } else {
-      setActiveIndex(index);
-    }
+    setActiveIndex(activeIndex === index ? null : index);
   };
+
   const handleBookingClick = () => {
     navigate("/contact");
   };
@@ -276,9 +247,11 @@ const AviationTravel = () => {
   return (
     <>
       <div className="mca-highlights-container">
-        <h1 className="mca-title">BBA in Aviation & Travel Highlights</h1>
+        <h1 className="mca-title">B.Com Chartered Accountant Highlights</h1>
         <p className="mca-description">
-          Transform Your Career in the Aviation & Travel Industry
+          Gain a comprehensive understanding of accounting, auditing, taxation,
+          and financial management with our integrated B.Com Chartered
+          Accountant program.
         </p>
         <div className="highlight-cards">
           <div className="highlight-card">
@@ -286,18 +259,16 @@ const AviationTravel = () => {
             <p className="highlight-text">YEAR FULL-TIME PROGRAM</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">30+</p>
-            <p className="highlight-text">RECRUITMENT PARTNERS</p>
+            <p className="highlight-number">50+</p>
+            <p className="highlight-text">INDUSTRY PARTNERS</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">6+</p>
-            <p className="highlight-text">INDUSTRY CERTIFICATIONS</p>
+            <p className="highlight-number">8+</p>
+            <p className="highlight-text">SPECIALIZED CERTIFICATIONS</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">4</p>
-            <p className="highlight-text">
-              INTERNSHIP & TRAINING OPPORTUNITIES
-            </p>
+            <p className="highlight-number">10</p>
+            <p className="highlight-text">INTERNSHIPS & LIVE PROJECTS</p>
           </div>
         </div>
       </div>
@@ -305,15 +276,12 @@ const AviationTravel = () => {
       <div className="course-Overview-container">
         <h1 className="mca-title">Course Overview</h1>
         <p className="mca-description">
-          The BBA in Aviation & Travel is a dynamic undergraduate program
-          designed to equip students with in-depth knowledge of airline
-          management, airport operations, travel & tourism , and business
-          administration. This program blends academic knowledge with practical
-          industry exposure , preparing students for high-demand careers in
-          aviation, hospitality, and tourism sectors.
+          The B.Com Chartered Accountant program is designed for students
+          aspiring to excel in the fields of accounting, auditing, and taxation.
+          It combines academic rigor with practical training to prepare you for
+          professional certification and a successful career in finance.
         </p>
       </div>
-
       <div className="our-promise-container">
         <div className="our-promise-content">
           <div className="our-promise-text">
@@ -336,20 +304,20 @@ const AviationTravel = () => {
 
           <div className="job-stats">
             <div className="stat-box">
-              <strong>150+</strong>
-              <p>Verifed job profiles</p>
+              <strong>120+</strong>
+              <p>Varied job profiles</p>
             </div>
             <div className="stat-box">
-              <strong>1100+</strong>
+              <strong>1000+</strong>
               <p>Unique job opportunities</p>
             </div>
             <div className="stat-box">
-              <strong>28.5%</strong>
-              <p>Students with 2+ job offers</p>
+              <strong>35%</strong>
+              <p>Students with multiple job offers</p>
             </div>
             <Link
               style={{ marginLeft: "40px" }}
-              to="../../assets/img/bbaab.pdf"
+              to="../../assets/img/CA.pdf"
               className="th-btn style4"
               target="_blank"
               rel="noopener noreferrer"
@@ -386,11 +354,11 @@ const AviationTravel = () => {
 
         <div className="who-can-do-mca">
           <h1 className="who-can-do-title">
-            Who can do BBA - Aviation & Travel?
+            Who can pursue B.Com in Chartered Accountancy?
           </h1>
           <div className="mca-criteria">
             <div className="criteria-left">
-              {whoCanDoMCA.slice(0, 3).map((criteria, index) => (
+              {whoCanDo.slice(0, 4).map((criteria, index) => (
                 <div className="criteria-item" key={index}>
                   <span className="criteria-icon">{criteria.icon}</span>
                   <span className="criteria-text">{criteria.text}</span>
@@ -400,69 +368,71 @@ const AviationTravel = () => {
           </div>
         </div>
       </div>
+
+      {/* Course Curriculum for BCom Chartered Accountant */}
       <div className="course-curriculum-container">
         <h1 className="mca-title">Course Curriculum</h1>
 
         <div className="curriculum-section">
-          <h4>Year 1: Fundamentals of Business & Aviation</h4>
+          <h4>Year 1: Fundamentals of Accounting & Business</h4>
           <div className="curriculum-row">
             <div className="curriculum-col">
               <ul>
-                <li>Introduction to Business Management</li>
-                <li>Principles of Marketing</li>
-                <li>Business Communication & Soft Skills</li>
-                <li>Basics of Accounting & Finance</li>
-              </ul>
-            </div>
-            <div className="curriculum-col">
-              <ul>
-                <li>Introduction to Aviation Industry</li>
-                <li>Travel & Tourism Industry Overview</li>
-                <li>Airport & Airline Operations</li>
+                <li>Principles of Financial Accounting</li>
                 <li>Business Mathematics & Statistics</li>
+                <li>Introduction to Business Law</li>
+                <li>Economics for Commerce</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>Fundamentals of Management</li>
+                <li>Business Communication</li>
+                <li>Computer Applications in Accounting</li>
+                <li>Basics of Taxation</li>
               </ul>
             </div>
           </div>
         </div>
 
         <div className="curriculum-section">
-          <h4>Year 2: Advanced Aviation & Travel Management</h4>
+          <h4>Year 2: Core Chartered Accountancy Subjects</h4>
           <div className="curriculum-row">
             <div className="curriculum-col">
               <ul>
-                <li>Airline & Airport Management</li>
-                <li>Travel Agency & Tour Operations</li>
-                <li>Aviation Safety & Security Management</li>
-                <li>Hospitality & Customer Service Excellence</li>
+                <li>Advanced Financial Accounting</li>
+                <li>Auditing and Assurance</li>
+                <li>Cost Accounting & Management</li>
+                <li>Corporate Law & Governance</li>
               </ul>
             </div>
             <div className="curriculum-col">
               <ul>
-                <li>Digital Marketing in Aviation & Tourism</li>
-                <li>Air Ticketing & Reservation System</li>
-                <li>Aviation Logistics & Supply Chain Management</li>
-                <li>Global Travel & Tourism Trends</li>
+                <li>Taxation Laws & Practice</li>
+                <li>Financial Management</li>
+                <li>Business Ethics & Corporate Social Responsibility</li>
+                <li>Information Systems in Accounting</li>
               </ul>
             </div>
           </div>
         </div>
 
         <div className="curriculum-section">
-          <h4>Year 3: Specialization & Career Development</h4>
+          <h4>Year 3: Advanced Applications & Professional Practice</h4>
           <div className="curriculum-row">
             <div className="curriculum-col">
               <ul>
-                <li>Aviation Law & Regulations</li>
-                <li>Entrepreneurship in Aviation & Travel</li>
-                <li>Sustainable Tourism & Eco-Travel</li>
-                <li>Revenue & Pricing Strategies in Airlines</li>
+                <li>Advanced Auditing Techniques</li>
+                <li>Strategic Financial Management</li>
+                <li>Forensic Accounting</li>
+                <li>International Accounting Standards</li>
               </ul>
             </div>
             <div className="curriculum-col">
               <ul>
-                <li>Risk & Crisis Management in Aviation</li>
-                <li>Internship / Industry Training</li>
-                <li>Final Year Project / Research</li>
+                <li>Integrated Case Studies & Live Projects</li>
+                <li>Professional Ethics & Risk Management</li>
+                <li>Preparation for CA Certification Exams</li>
               </ul>
             </div>
           </div>
@@ -472,27 +442,26 @@ const AviationTravel = () => {
       <div className="key-highlights-container">
         <h1 className="mca-title">Key Highlights</h1>
         <ul>
-          <li>Hands-on Training with Airlines & Airports ✈️</li>
-          <li>Industry-Recognized Certifications (IATA, Amadeus, Galileo)</li>
-          <li>Internship & Placement Assistance 🎯</li>
-          <li>Expert Faculty & Industry Mentors 👨‍🏫</li>
-          <li>Study Tours & Industrial Visits 🏝️</li>
+          <li>Practical training with industry-standard accounting software</li>
+          <li>Internships at top accounting and finance firms</li>
+          <li>Live projects and case studies to bridge theory and practice</li>
+          <li>Expert faculty with extensive industry experience</li>
+          <li>Focus on professional certification and career readiness</li>
         </ul>
       </div>
 
       <div className="career-opportunities-container">
         <h1 className="mca-title">Career Opportunities</h1>
         <ul>
-          <li>Airline & Airport Management</li>
-          <li>Travel & Tourism Industry (Tour Operators, Travel Agencies)</li>
-          <li>Hospitality & Hotel Management</li>
-          <li>Air Cargo & Freight Services</li>
-          <li>Digital Marketing & E-Tourism</li>
-          <li>Entrepreneurship in Aviation & Travel</li>
+          <li>Auditor</li>
+          <li>Tax Consultant</li>
+          <li>Financial Analyst</li>
+          <li>Management Accountant</li>
+          <li>Corporate Finance Advisor</li>
         </ul>
         <p>
-          Top Recruiters: Airlines, Airports, Travel Agencies, Hotels,
-          Hospitality Chains
+          Top Recruiters: Deloitte, KPMG, EY, PwC, Grant Thornton, and leading
+          corporate finance departments.
         </p>
       </div>
 
@@ -522,181 +491,140 @@ const AviationTravel = () => {
 
       <div className="mca-page">
         <div className="key-offerings">
-          <h1 className="offerings-title">BBA - Aviation & Travel Summary</h1>
+          <h1 className="offerings-title">
+            B.Com Chartered Accountant Summary
+          </h1>
           <div className="offerings-list">
             <div className="offerings-left">
-              {mcaSummary.slice(0, 3).map((mcaSummary, index) => (
+              {mcaSummary.slice(0, 3).map((item, index) => (
                 <div className="offering-item" key={index}>
-                  <span className="offering-icon">{mcaSummary.icon}</span>
-                  <span className="offering-text">{mcaSummary.text}</span>
+                  <span className="offering-icon">{item.icon}</span>
+                  <span className="offering-text">{item.text}</span>
                 </div>
               ))}
             </div>
             <div className="offerings-right">
-              {mcaSummary.slice(3, 6).map((mcaSummary, index) => (
+              {mcaSummary.slice(3, 6).map((item, index) => (
                 <div className="offering-item" key={index + 3}>
-                  <span className="offering-icon">{mcaSummary.icon}</span>
-                  <span className="offering-text">{mcaSummary.text}</span>
+                  <span className="offering-icon">{item.icon}</span>
+                  <span className="offering-text">{item.text}</span>
                 </div>
               ))}
             </div>
           </div>
         </div>
-
         <div className="faq-section">
           <h1 className="offerings-title">Frequently Asked Questions</h1>
 
           <div className="accordion">
-            {/* Career Opportunities Accordion Item */}
+            {/* 1. What is the scope of chartered accountancy? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>
-                  1. What career opportunities are available after completing
-                  this course?
-                </p>
+                <p>1. What is the scope of chartered accountancy?</p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  After completing a BBA in Aviation & Travel, graduates can
-                  pursue careers in:
-                  <ul>
-                    <li>
-                      Airline Management (Airport Operations Manager, Airline
-                      Customer Service Manager)
-                    </li>
-                    <li>
-                      Airport Operations (Airport Ground Staff, Security
-                      Manager)
-                    </li>
-                    <li>
-                      Travel & Tourism Management (Travel Consultant, Tour
-                      Operator, Hospitality Manager)
-                    </li>
-                    <li>
-                      Air Cargo & Logistics (Cargo Supervisor, Logistics
-                      Coordinator)
-                    </li>
-                    <li>
-                      Aviation Safety & Compliance (Aviation Safety Officer,
-                      Flight Operations Manager)
-                    </li>
-                    <li>
-                      Airline Ticketing & Reservations (Ticketing Executive,
-                      Reservations Manager)
-                    </li>
-                    <li>
-                      Sales & Marketing in Aviation (Sales Manager for
-                      Airlines/Travel Agencies)
-                    </li>
-                  </ul>
+                  Chartered Accountancy offers diverse opportunities in
+                  auditing, taxation, financial analysis, and consultancy.
+                  Professionals can work in public practice, corporate sectors,
+                  or government roles.
                 </div>
               )}
             </div>
 
-            {/* Eligibility Criteria Accordion Item */}
+            {/* 2. What are the key subjects in this course? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>2. What are the eligibility criteria for admission?</p>
+                <p>2. What are the key subjects in this course?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  <p>
-                    Must have completed 10+2 (high school) from a recognized
-                    board.
-                  </p>
-                  <p>Minimum required marks: 50% or higher.</p>
+                  Key subjects include Financial Accounting, Auditing, Taxation,
+                  Business Law, and Management Accounting.
                 </div>
               )}
             </div>
 
-            {/* Practical Training Accordion Item */}
+            {/* 3. Are there opportunities for internships and practical training? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>3. Does the course include practical training?</p>
+                <p>
+                  3. Are there opportunities for internships and practical
+                  training?
+                </p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  Yes, it includes:
-                  <ul>
-                    <li>Airport & Airline Simulations</li>
-                    <li>Guest Lectures & Industry Visits</li>
-                    <li>Workshops on Airline Management & Travel Operations</li>
-                    <li>
-                      Software Training (Amadeus, Galileo, Sabre for ticketing &
-                      reservations)
-                    </li>
-                  </ul>
+                  Yes, the program offers internships with reputed accounting
+                  firms and practical workshops on financial reporting and
+                  analysis.
                 </div>
               )}
             </div>
 
-            {/* Program Duration Accordion Item */}
+            {/* 4. Which companies hire Chartered Accountants? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>4. What is the duration of the program?</p>
+                <p>4. Which companies hire Chartered Accountants?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  The program typically lasts 3 years (6 semesters). We also
-                  offer 4-year programs with additional industry training.
+                  Top employers include Deloitte, KPMG, EY, PwC, and major
+                  corporations across various industries.
                 </div>
               )}
             </div>
 
-            {/* Internship Opportunities Accordion Item */}
+            {/* 5. Does the course prepare students for professional certification? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>5. Are there internship opportunities?</p>
+                <p>
+                  5. Does the course prepare students for professional
+                  certification?
+                </p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  Yes, internships are commonly included in the final year.
-                  Students can intern at airports, airlines, travel agencies,
-                  hotels, and logistics firms. Many universities have tie-ups
-                  with aviation companies to provide hands-on experience.
+                  Yes, the curriculum is designed to align with the requirements
+                  of professional certification in chartered accountancy.
                 </div>
               )}
             </div>
 
-            {/* Average Salary Accordion Item */}
+            {/* 6. What are the career prospects after graduation? */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>6. What is the average salary after graduation?</p>
+                <p>6. What are the career prospects after graduation?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  The starting salary varies based on job role and location:
-                  <ul>
-                    <li>Airline Ground Staff: ₹3-5 LPA (INR)</li>
-                    <li>Airport Operations Manager: ₹5-8 LPA</li>
-                    <li>Travel Consultant: ₹3-6 LPA</li>
-                    <li>Air Cargo Executive: ₹4-7 LPA</li>
-                    <li>Flight Operations Manager: ₹6-10 LPA</li>
-                  </ul>
+                  Graduates can pursue careers as Auditors, Tax Consultants,
+                  Financial Analysts, Management Accountants, and Corporate
+                  Finance Advisors.
                 </div>
               )}
             </div>
@@ -706,7 +634,9 @@ const AviationTravel = () => {
 
       <div className="campus-section">
         <h2 className="main-title">Partner Campuses</h2>
-        <h3 className="main-subtitle">Choose from 4+ campuses across India</h3>
+        <h3 className="main-subtitle">
+          Choose from 3+ premier campuses nationally
+        </h3>
         <Slider {...campusSettings} className="campus-sliders">
           {campuses.map((campus, index) => (
             <div key={index} className={`campus-card campus-card-${index}`}>
@@ -746,4 +676,4 @@ const AviationTravel = () => {
   );
 };
 
-export default AviationTravel;
+export default BcomCharteredAccountant;

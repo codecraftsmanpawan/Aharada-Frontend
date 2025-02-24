@@ -31,7 +31,7 @@ import NewsMediaDetails from "./pages/NewsMedia/NewsMediaDetails";
 import CampuesLife from "./pages/CampusLife/Campus-Life";
 import Scholarships from "./pages/Scholarships/Scholarships";
 import ApplyNow from "./pages/ApplyNow/Apply-Now";
-// import AdmissionCard from "./components/AdmissionCard/AdmissionCard";
+import AdmissionCard from "./components/AdmissionCard/AdmissionCard";
 import GuestLecturer from "./pages/GuestLecturer/Guest-Lecturer";
 import GuestLecturerDetails from "./pages/GuestLecturer/Guest-Lecturer-Details";
 import GuestLectureList from "./pages/GuestLecturer/GuestLectureList";
@@ -53,6 +53,12 @@ import Department from "./pages/Department/Department";
 import Awards from "./pages/Awards/Awards";
 import HRRegistration from "./pages/HR/HRRegistration";
 import StudentRegistration from "./pages/HR/StudentRegistration";
+import BBAFinTech from "./pages/Programs/Program-Explore/BBA-FinTech";
+import BcaIot from "./pages/Programs/Program-Explore/Bca-Iot";
+import BcomCharteredAccountant from "./pages/Programs/Program-Explore/Bcom-Chartered-Accountant";
+import Btechaiml from "./pages/Programs/Program-Explore/Btech-ai-ml";
+import Bbaentrepreneurshipfamilybusiness from "./pages/Programs/Program-Explore/Bba-entrepreneurship-family-business";
+
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import TermsandConditions from "./pages/PrivacyPolicy/TermsandConditions";
 import Footer from "./components/Footer/Footer";
@@ -68,6 +74,7 @@ function App() {
     <Router>
       <ScrollToTop /> {/* Include the component here */}
       <Header />
+      <AdmissionCard />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -136,6 +143,18 @@ function App() {
         <Route path="/awards" element={<Awards />} />
         <Route path="/hr-registration" element={<HRRegistration />} />
         <Route path="/student-registration" element={<StudentRegistration />} />
+
+        <Route path="/bba-fintech" element={<BBAFinTech />} />
+        <Route path="/bca-iot" element={<BcaIot />} />
+        <Route
+          path="/bcom-chartered-accountant"
+          element={<BcomCharteredAccountant />}
+        />
+        <Route path="/btech-ai-ml" element={<Btechaiml />} />
+        <Route
+          path="/bba-entrepreneurship-family-business"
+          element={<Bbaentrepreneurshipfamilybusiness />}
+        />
       </Routes>
       <Footer />
     </Router>

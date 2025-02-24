@@ -21,6 +21,9 @@ import {
   FaCertificate,
   FaBookOpen,
   FaUsers,
+  FaRocket,
+  FaCogs,
+  FaSatellite,
 } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
@@ -29,46 +32,55 @@ import Testimonials from "../../../components/Testimonials/Testimonials";
 import Feedback from "../../Home/component/Feedback";
 import Course from "../../Home/component/CouseOffer";
 
+// Key Offerings for BCA - IoT
 const offerings = [
   {
-    text: "Hands-on training in aviation and travel management",
-    icon: <FaPlane />,
-  },
-  {
-    text: "Global career opportunities in airlines, airports, and tourism",
-    icon: <FaGlobe />,
-  },
-  {
-    text: "Internships with leading airlines and travel agencies",
-    icon: <FaBriefcase />,
-  },
-  {
-    text: "Global aviation & travel industry exposure ",
-    icon: <FaGlobeAmericas />,
-  },
-  {
-    text: "Industry-focused curriculum with real-world case studies",
+    text: "Comprehensive understanding of IoT fundamentals, sensor networks, and embedded systems",
     icon: <FaBookOpen />,
   },
   {
-    text: "Certifications in airline management, IATA, and travel consultancy",
+    text: "Hands-on training with IoT devices, microcontrollers, and programming",
+    icon: <FaRocket />,
+  },
+  {
+    text: "Practical projects integrating hardware, software, and cloud platforms",
+    icon: <FaCogs />,
+  },
+  {
+    text: "Exposure to IoT communication protocols and network security",
+    icon: <FaGlobeAmericas />,
+  },
+  {
+    text: "Industry-aligned curriculum with the latest IoT tools and technologies",
     icon: <FaCertificate />,
   },
   {
-    text: "Soft skills and leadership training for aviation professionals",
-    icon: <FaUsers />,
+    text: "Development of problem-solving, analytical, and project management skills",
+    icon: <FaUserTie />,
+  },
+  {
+    text: "Preparation for industry-recognized IoT certifications",
+    icon: <FaUniversity />,
   },
 ];
 
-const whoCanDoMCA = [
-  { text: "Passed class 12th from a recognized board", icon: "⭐" },
+// Who can pursue BCA in IoT?
+const whoCanDo = [
   {
-    text: "Aspirants interested in aviation, travel, and tourism management",
-    icon: "⭐",
+    text: "Students with a passion for technology, computing, and electronics",
+    icon: "💻",
   },
   {
-    text: "Minimum 50% marks in class 12th (may vary by institution)",
-    icon: "⭐",
+    text: "Aspirants interested in developing smart, connected devices and systems",
+    icon: "🔗",
+  },
+  {
+    text: "Individuals with strong problem-solving and programming skills",
+    icon: "🖥️",
+  },
+  {
+    text: "Candidates eager to explore emerging technologies in IoT and automation",
+    icon: "🤖",
   },
 ];
 
@@ -141,49 +153,39 @@ const companyPartners = [
   },
 ];
 
-const mcaSummary = [
+// Program Summary for BCA - IoT
+const iotSummary = [
   {
-    icon: <FaGraduationCap />,
-    text: "The full form of BBA - Aviation & Travel is Bachelor of Business Administration in Aviation & Travel Management, a specialized undergraduate course.",
+    icon: <FaBookOpen />,
+    text: "BCA in IoT provides a strong foundation in computer applications with a specialized focus on IoT systems and network integration.",
   },
   {
     icon: <FaUniversity />,
-    text: "This course is ideal for students interested in aviation, airlines, tourism, and hospitality management.",
+    text: "The program integrates core computer science with advanced IoT training, preparing students for modern tech challenges.",
   },
   {
     icon: <FaCheckCircle />,
-    text: "A regular BBA - Aviation & Travel course duration is 3 years, divided into 6 semesters, with practical training and industry exposure.",
+    text: "A 3-year full-time program featuring hands-on projects, internships, and live case studies in IoT.",
   },
   {
     icon: <FaDollarSign />,
-    text: "The average starting salary for graduates in this field ranges from 3-5 Lakhs per year, depending on job roles and experience.",
+    text: "Graduates can expect competitive starting salaries in tech industries and IoT-focused roles.",
   },
   {
     icon: <FaLightbulb />,
-    text: "Career opportunities include roles in airline management, airport operations, travel agencies, tourism boards, and hospitality firms.",
+    text: "Career roles include IoT Developer, Systems Analyst, Network Engineer, and Smart Device Manager.",
   },
   {
     icon: <FaBuilding />,
-    text: "Top recruiters in this field include airlines like Indigo, Air India, SpiceJet, and global travel companies like Thomas Cook and MakeMyTrip.",
+    text: "Top recruiters include leading tech companies, startups, and organizations investing in smart technology solutions.",
   },
 ];
 
+// Campus Details for BCA - IoT
 const campuses = [
   {
-    name: "IIMT University, Meerut",
-    program: "BBA Program | UGC approved",
-    specialisations: 6,
-    certifications: 10,
-    fees: "₹ 3.40 Lacs",
-    images: [
-      "assets/placement/iimt1.jpg",
-      "assets/placement/iimt2.jpg",
-      "assets/placement/iimt3.jpg",
-    ],
-  },
-  {
     name: "Vidya Knowledge Park",
-    program: "BBA Program | UGC recognised",
+    program: "BCA - Internet of Things (IoT)",
     specialisations: 3,
     certifications: 10,
     fees: "₹ 3.88 Lacs",
@@ -193,31 +195,6 @@ const campuses = [
       "assets/placement/vidya1.jpg",
     ],
   },
-
-  //   {
-  //     name: "Subharti University, Meerut",
-  //     program: "MCA Program | UGC recognised",
-  //     specialisations: 6,
-  //     certifications: 10,
-  //     fees: "₹ 3.10 Lacs",
-  //     images: [
-  //       "assets/placement/Subharti1.webp",
-  //       "assets/placement/Subharti1.webp",
-  //       "assets/placement/Subharti3.png",
-  //     ],
-  //   },
-  //   {
-  //     name: "Dev Bhoomi Uttarakhand University",
-  //     program: "MCA Program | AICTE approved",
-  //     specialisations: 4,
-  //     certifications: 8,
-  //     fees: "₹ 4.00 Lacs",
-  //     images: [
-  //       "assets/placement/dev1.jpeg",
-  //       "assets/placement/dev1.jpeg",
-  //       "assets/placement/dev3.jpg",
-  //     ],
-  //   },
 ];
 
 const campusSettings = {
@@ -259,26 +236,27 @@ const imageSettings = {
   arrows: false,
 };
 
-const AviationTravel = () => {
+const BcaIot = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
+
   const toggleAccordion = (index) => {
-    if (activeIndex === index) {
-      setActiveIndex(null);
-    } else {
-      setActiveIndex(index);
-    }
+    setActiveIndex(activeIndex === index ? null : index);
   };
+
   const handleBookingClick = () => {
     navigate("/contact");
   };
 
   return (
     <>
+      {/* Highlights Section */}
       <div className="mca-highlights-container">
-        <h1 className="mca-title">BBA in Aviation & Travel Highlights</h1>
+        <h1 className="mca-title">BCA - IoT Highlights</h1>
         <p className="mca-description">
-          Transform Your Career in the Aviation & Travel Industry
+          Build a robust foundation in computer applications with a specialized
+          focus on the Internet of Things, smart systems, and network
+          integration.
         </p>
         <div className="highlight-cards">
           <div className="highlight-card">
@@ -287,42 +265,40 @@ const AviationTravel = () => {
           </div>
           <div className="highlight-card">
             <p className="highlight-number">30+</p>
-            <p className="highlight-text">RECRUITMENT PARTNERS</p>
+            <p className="highlight-text">INDUSTRY PARTNERS</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">6+</p>
-            <p className="highlight-text">INDUSTRY CERTIFICATIONS</p>
+            <p className="highlight-number">5+</p>
+            <p className="highlight-text">SPECIALIZED CERTIFICATIONS</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">4</p>
-            <p className="highlight-text">
-              INTERNSHIP & TRAINING OPPORTUNITIES
-            </p>
+            <p className="highlight-number">8</p>
+            <p className="highlight-text">INTERNSHIPS & LIVE PROJECTS</p>
           </div>
         </div>
       </div>
 
+      {/* Course Overview Section */}
       <div className="course-Overview-container">
         <h1 className="mca-title">Course Overview</h1>
         <p className="mca-description">
-          The BBA in Aviation & Travel is a dynamic undergraduate program
-          designed to equip students with in-depth knowledge of airline
-          management, airport operations, travel & tourism , and business
-          administration. This program blends academic knowledge with practical
-          industry exposure , preparing students for high-demand careers in
-          aviation, hospitality, and tourism sectors.
+          The BCA in IoT is designed to provide students with a deep
+          understanding of computer applications combined with the latest trends
+          in Internet of Things technology, including sensor networks, cloud
+          integration, and smart device management.
         </p>
       </div>
 
+      {/* Our Promise Section */}
       <div className="our-promise-container">
         <div className="our-promise-content">
           <div className="our-promise-text">
             <p className="promise-title">OUR PROMISE</p>
             <h2 className="main-heading">
-              Kickstart your career with{" "}
-              <span className="highlight">diverse job opportunities</span>
+              Launch your tech career with{" "}
+              <span className="highlight">innovative IoT solutions</span>
             </h2>
-            <div className="graduate-img">
+            <div className="graduate-img" style={{ marginTop: "60px" }}>
               <img src="../assets/img/g.png" alt="Graduate" />
             </div>
             <Link
@@ -336,20 +312,20 @@ const AviationTravel = () => {
 
           <div className="job-stats">
             <div className="stat-box">
-              <strong>150+</strong>
-              <p>Verifed job profiles</p>
+              <strong>45+</strong>
+              <p>Innovative projects</p>
             </div>
             <div className="stat-box">
-              <strong>1100+</strong>
-              <p>Unique job opportunities</p>
+              <strong>1200+</strong>
+              <p>Job opportunities</p>
             </div>
             <div className="stat-box">
-              <strong>28.5%</strong>
-              <p>Students with 2+ job offers</p>
+              <strong>40%</strong>
+              <p>Students with multiple offers</p>
             </div>
             <Link
               style={{ marginLeft: "40px" }}
-              to="../../assets/img/bbaab.pdf"
+              to="../../assets/img/IOT.pdf"
               className="th-btn style4"
               target="_blank"
               rel="noopener noreferrer"
@@ -361,6 +337,7 @@ const AviationTravel = () => {
         </div>
       </div>
 
+      {/* Key Offerings & Who Can Do Sections */}
       <div className="key-offerings-container">
         <div className="key-offerings">
           <h1 className="offerings-title">Key Offerings</h1>
@@ -385,12 +362,10 @@ const AviationTravel = () => {
         </div>
 
         <div className="who-can-do-mca">
-          <h1 className="who-can-do-title">
-            Who can do BBA - Aviation & Travel?
-          </h1>
+          <h1 className="who-can-do-title">Who can pursue BCA in IoT?</h1>
           <div className="mca-criteria">
             <div className="criteria-left">
-              {whoCanDoMCA.slice(0, 3).map((criteria, index) => (
+              {whoCanDo.slice(0, 4).map((criteria, index) => (
                 <div className="criteria-item" key={index}>
                   <span className="criteria-icon">{criteria.icon}</span>
                   <span className="criteria-text">{criteria.text}</span>
@@ -400,102 +375,109 @@ const AviationTravel = () => {
           </div>
         </div>
       </div>
+
+      {/* Course Curriculum Section */}
       <div className="course-curriculum-container">
         <h1 className="mca-title">Course Curriculum</h1>
 
         <div className="curriculum-section">
-          <h4>Year 1: Fundamentals of Business & Aviation</h4>
+          <h4>Year 1: Fundamentals of Computer Applications & IoT Basics</h4>
           <div className="curriculum-row">
             <div className="curriculum-col">
               <ul>
-                <li>Introduction to Business Management</li>
-                <li>Principles of Marketing</li>
-                <li>Business Communication & Soft Skills</li>
-                <li>Basics of Accounting & Finance</li>
+                <li>Introduction to Computer Science</li>
+                <li>Programming Fundamentals (C/C++/Python)</li>
+                <li>Basics of Web Development</li>
+                <li>Mathematics for Computing</li>
               </ul>
             </div>
             <div className="curriculum-col">
               <ul>
-                <li>Introduction to Aviation Industry</li>
-                <li>Travel & Tourism Industry Overview</li>
-                <li>Airport & Airline Operations</li>
-                <li>Business Mathematics & Statistics</li>
+                <li>Introduction to IoT and Embedded Systems</li>
+                <li>Fundamentals of Networking</li>
+                <li>Digital Electronics</li>
+                <li>Data Structures & Algorithms</li>
               </ul>
             </div>
           </div>
         </div>
 
         <div className="curriculum-section">
-          <h4>Year 2: Advanced Aviation & Travel Management</h4>
+          <h4>Year 2: Intermediate IoT Technologies & Applications</h4>
           <div className="curriculum-row">
             <div className="curriculum-col">
               <ul>
-                <li>Airline & Airport Management</li>
-                <li>Travel Agency & Tour Operations</li>
-                <li>Aviation Safety & Security Management</li>
-                <li>Hospitality & Customer Service Excellence</li>
+                <li>IoT Communication Protocols (MQTT, CoAP)</li>
+                <li>Sensor Networks & Data Acquisition</li>
+                <li>Embedded System Programming</li>
+                <li>Database Management Systems</li>
               </ul>
             </div>
             <div className="curriculum-col">
               <ul>
-                <li>Digital Marketing in Aviation & Tourism</li>
-                <li>Air Ticketing & Reservation System</li>
-                <li>Aviation Logistics & Supply Chain Management</li>
-                <li>Global Travel & Tourism Trends</li>
+                <li>Cloud Computing for IoT</li>
+                <li>Mobile Application Development</li>
+                <li>Data Analytics & Visualization</li>
+                <li>Cybersecurity in IoT</li>
               </ul>
             </div>
           </div>
         </div>
 
         <div className="curriculum-section">
-          <h4>Year 3: Specialization & Career Development</h4>
+          <h4>Year 3: Advanced IoT Solutions & Industry Applications</h4>
           <div className="curriculum-row">
             <div className="curriculum-col">
               <ul>
-                <li>Aviation Law & Regulations</li>
-                <li>Entrepreneurship in Aviation & Travel</li>
-                <li>Sustainable Tourism & Eco-Travel</li>
-                <li>Revenue & Pricing Strategies in Airlines</li>
+                <li>Advanced IoT System Design</li>
+                <li>Machine Learning & AI for IoT</li>
+                <li>Edge Computing & Real-Time Analytics</li>
+                <li>IoT Project Management</li>
               </ul>
             </div>
             <div className="curriculum-col">
               <ul>
-                <li>Risk & Crisis Management in Aviation</li>
-                <li>Internship / Industry Training</li>
-                <li>Final Year Project / Research</li>
+                <li>Capstone Project: End-to-End IoT Solution</li>
+                <li>Industry Internship & Live Projects</li>
+                <li>Advanced Topics in Network Security</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
 
+      {/* Key Highlights Section */}
       <div className="key-highlights-container">
         <h1 className="mca-title">Key Highlights</h1>
         <ul>
-          <li>Hands-on Training with Airlines & Airports ✈️</li>
-          <li>Industry-Recognized Certifications (IATA, Amadeus, Galileo)</li>
-          <li>Internship & Placement Assistance 🎯</li>
-          <li>Expert Faculty & Industry Mentors 👨‍🏫</li>
-          <li>Study Tours & Industrial Visits 🏝️</li>
+          <li>Hands-on training with the latest IoT devices and platforms</li>
+          <li>Live projects integrating hardware and software solutions</li>
+          <li>Internships with leading tech companies and startups</li>
+          <li>
+            Expert faculty with industry experience in IoT and emerging
+            technologies
+          </li>
+          <li>Focus on practical learning and real-world applications</li>
         </ul>
       </div>
 
+      {/* Career Opportunities Section */}
       <div className="career-opportunities-container">
         <h1 className="mca-title">Career Opportunities</h1>
         <ul>
-          <li>Airline & Airport Management</li>
-          <li>Travel & Tourism Industry (Tour Operators, Travel Agencies)</li>
-          <li>Hospitality & Hotel Management</li>
-          <li>Air Cargo & Freight Services</li>
-          <li>Digital Marketing & E-Tourism</li>
-          <li>Entrepreneurship in Aviation & Travel</li>
+          <li>IoT Developer</li>
+          <li>Embedded Systems Engineer</li>
+          <li>Network Administrator</li>
+          <li>Data Analyst</li>
+          <li>Smart Device Manager</li>
         </ul>
         <p>
-          Top Recruiters: Airlines, Airports, Travel Agencies, Hotels,
-          Hospitality Chains
+          Top Recruiters: Leading tech companies, startups, and organizations
+          investing in IoT solutions.
         </p>
       </div>
 
+      {/* Placement Partners Section */}
       <section className="partners-section py-5">
         <div className="container">
           <h3 className="text-left">Our Placement Partners</h3>
@@ -520,183 +502,141 @@ const AviationTravel = () => {
         </div>
       </section>
 
+      {/* Summary & FAQ Section */}
       <div className="mca-page">
         <div className="key-offerings">
-          <h1 className="offerings-title">BBA - Aviation & Travel Summary</h1>
+          <h1 className="offerings-title">BCA - IoT Summary</h1>
           <div className="offerings-list">
             <div className="offerings-left">
-              {mcaSummary.slice(0, 3).map((mcaSummary, index) => (
+              {iotSummary.slice(0, 3).map((item, index) => (
                 <div className="offering-item" key={index}>
-                  <span className="offering-icon">{mcaSummary.icon}</span>
-                  <span className="offering-text">{mcaSummary.text}</span>
+                  <span className="offering-icon">{item.icon}</span>
+                  <span className="offering-text">{item.text}</span>
                 </div>
               ))}
             </div>
             <div className="offerings-right">
-              {mcaSummary.slice(3, 6).map((mcaSummary, index) => (
+              {iotSummary.slice(3, 6).map((item, index) => (
                 <div className="offering-item" key={index + 3}>
-                  <span className="offering-icon">{mcaSummary.icon}</span>
-                  <span className="offering-text">{mcaSummary.text}</span>
+                  <span className="offering-icon">{item.icon}</span>
+                  <span className="offering-text">{item.text}</span>
                 </div>
               ))}
             </div>
           </div>
         </div>
-
         <div className="faq-section">
           <h1 className="offerings-title">Frequently Asked Questions</h1>
-
           <div className="accordion">
-            {/* Career Opportunities Accordion Item */}
+            {/* FAQ 1 */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(0)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>
-                  1. What career opportunities are available after completing
-                  this course?
-                </p>
+                <p>1. What is the scope of IoT in BCA?</p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  After completing a BBA in Aviation & Travel, graduates can
-                  pursue careers in:
-                  <ul>
-                    <li>
-                      Airline Management (Airport Operations Manager, Airline
-                      Customer Service Manager)
-                    </li>
-                    <li>
-                      Airport Operations (Airport Ground Staff, Security
-                      Manager)
-                    </li>
-                    <li>
-                      Travel & Tourism Management (Travel Consultant, Tour
-                      Operator, Hospitality Manager)
-                    </li>
-                    <li>
-                      Air Cargo & Logistics (Cargo Supervisor, Logistics
-                      Coordinator)
-                    </li>
-                    <li>
-                      Aviation Safety & Compliance (Aviation Safety Officer,
-                      Flight Operations Manager)
-                    </li>
-                    <li>
-                      Airline Ticketing & Reservations (Ticketing Executive,
-                      Reservations Manager)
-                    </li>
-                    <li>
-                      Sales & Marketing in Aviation (Sales Manager for
-                      Airlines/Travel Agencies)
-                    </li>
-                  </ul>
+                  The BCA in IoT opens up diverse career paths in software
+                  development, network management, and smart device innovation
+                  by integrating core computing with emerging IoT technologies.
                 </div>
               )}
             </div>
 
-            {/* Eligibility Criteria Accordion Item */}
+            {/* FAQ 2 */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>2. What are the eligibility criteria for admission?</p>
+                <p>2. What are the key subjects in this course?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  <p>
-                    Must have completed 10+2 (high school) from a recognized
-                    board.
-                  </p>
-                  <p>Minimum required marks: 50% or higher.</p>
+                  Key subjects include Programming, IoT Architecture, Embedded
+                  Systems, Network Security, and Cloud Integration.
                 </div>
               )}
             </div>
 
-            {/* Practical Training Accordion Item */}
+            {/* FAQ 3 */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>3. Does the course include practical training?</p>
+                <p>
+                  3. Are there opportunities for hands-on training and
+                  internships?
+                </p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  Yes, it includes:
-                  <ul>
-                    <li>Airport & Airline Simulations</li>
-                    <li>Guest Lectures & Industry Visits</li>
-                    <li>Workshops on Airline Management & Travel Operations</li>
-                    <li>
-                      Software Training (Amadeus, Galileo, Sabre for ticketing &
-                      reservations)
-                    </li>
-                  </ul>
+                  Yes, the program includes extensive hands-on projects,
+                  laboratory sessions, and internships with tech companies
+                  specializing in IoT.
                 </div>
               )}
             </div>
 
-            {/* Program Duration Accordion Item */}
+            {/* FAQ 4 */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>4. What is the duration of the program?</p>
+                <p>4. Which companies recruit BCA - IoT graduates?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  The program typically lasts 3 years (6 semesters). We also
-                  offer 4-year programs with additional industry training.
+                  Top recruiters include leading tech firms, startups, and
+                  multinational corporations focused on smart technology and IoT
+                  solutions.
                 </div>
               )}
             </div>
 
-            {/* Internship Opportunities Accordion Item */}
+            {/* FAQ 5 */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>5. Are there internship opportunities?</p>
+                <p>
+                  5. Does the course offer certifications or industry
+                  recognition?
+                </p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  Yes, internships are commonly included in the final year.
-                  Students can intern at airports, airlines, travel agencies,
-                  hotels, and logistics firms. Many universities have tie-ups
-                  with aviation companies to provide hands-on experience.
+                  Yes, the curriculum is designed to prepare students for
+                  industry-recognized IoT certifications and professional
+                  credentials.
                 </div>
               )}
             </div>
 
-            {/* Average Salary Accordion Item */}
+            {/* FAQ 6 */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>6. What is the average salary after graduation?</p>
+                <p>6. What are the career prospects after graduation?</p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  The starting salary varies based on job role and location:
-                  <ul>
-                    <li>Airline Ground Staff: ₹3-5 LPA (INR)</li>
-                    <li>Airport Operations Manager: ₹5-8 LPA</li>
-                    <li>Travel Consultant: ₹3-6 LPA</li>
-                    <li>Air Cargo Executive: ₹4-7 LPA</li>
-                    <li>Flight Operations Manager: ₹6-10 LPA</li>
-                  </ul>
+                  Graduates can pursue roles as IoT Developers, Embedded Systems
+                  Engineers, Network Administrators, Data Analysts, and Smart
+                  Solutions Architects.
                 </div>
               )}
             </div>
@@ -704,9 +644,12 @@ const AviationTravel = () => {
         </div>
       </div>
 
+      {/* Partner Campuses Section */}
       <div className="campus-section">
         <h2 className="main-title">Partner Campuses</h2>
-        <h3 className="main-subtitle">Choose from 4+ campuses across India</h3>
+        <h3 className="main-subtitle">
+          Choose from 3+ premier tech campuses nationally
+        </h3>
         <Slider {...campusSettings} className="campus-sliders">
           {campuses.map((campus, index) => (
             <div key={index} className={`campus-card campus-card-${index}`}>
@@ -726,7 +669,6 @@ const AviationTravel = () => {
               <div className="campus-info">
                 <h4 className="campus-name">{campus.name}</h4>
                 <p className="main-program">{campus.program}</p>
-
                 <button className="th-btn style3" onClick={handleBookingClick}>
                   Book College Tour{" "}
                   <i className="fas fa-long-arrow-right ms-2" />
@@ -740,10 +682,9 @@ const AviationTravel = () => {
       <div style={{ marginTop: "50px" }}>
         <Feedback />
       </div>
-
       <Testimonials />
     </>
   );
 };
 
-export default AviationTravel;
+export default BcaIot;

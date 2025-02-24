@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import {
   FaGraduationCap,
   FaRegCheckCircle,
-  FaPlane,
   FaBriefcase,
   FaGlobe,
   FaGlobeAmericas,
@@ -21,6 +20,9 @@ import {
   FaCertificate,
   FaBookOpen,
   FaUsers,
+  FaRocket,
+  FaCogs,
+  FaSatellite,
 } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
@@ -29,46 +31,55 @@ import Testimonials from "../../../components/Testimonials/Testimonials";
 import Feedback from "../../Home/component/Feedback";
 import Course from "../../Home/component/CouseOffer";
 
+// Key Offerings for BBA - Entrepreneurship & Family Business
 const offerings = [
   {
-    text: "Hands-on training in aviation and travel management",
-    icon: <FaPlane />,
-  },
-  {
-    text: "Global career opportunities in airlines, airports, and tourism",
-    icon: <FaGlobe />,
-  },
-  {
-    text: "Internships with leading airlines and travel agencies",
-    icon: <FaBriefcase />,
-  },
-  {
-    text: "Global aviation & travel industry exposure ",
-    icon: <FaGlobeAmericas />,
-  },
-  {
-    text: "Industry-focused curriculum with real-world case studies",
+    text: "In-depth study of entrepreneurship, innovation, and business strategy",
     icon: <FaBookOpen />,
   },
   {
-    text: "Certifications in airline management, IATA, and travel consultancy",
+    text: "Practical training in business planning, startup management, and venture capital",
+    icon: <FaRocket />,
+  },
+  {
+    text: "Hands-on projects and case studies focusing on family business dynamics",
+    icon: <FaBriefcase />,
+  },
+  {
+    text: "Exposure to real-world entrepreneurial challenges and business simulations",
+    icon: <FaGlobeAmericas />,
+  },
+  {
+    text: "Industry-aligned curriculum with expert mentorship and networking opportunities",
     icon: <FaCertificate />,
   },
   {
-    text: "Soft skills and leadership training for aviation professionals",
-    icon: <FaUsers />,
+    text: "Development of leadership, strategic thinking, and management skills",
+    icon: <FaUserTie />,
+  },
+  {
+    text: "Preparation for launching new ventures or managing family businesses",
+    icon: <FaUniversity />,
   },
 ];
 
-const whoCanDoMCA = [
-  { text: "Passed class 12th from a recognized board", icon: "⭐" },
+// Who can pursue BBA in Entrepreneurship & Family Business?
+const whoCanDo = [
   {
-    text: "Aspirants interested in aviation, travel, and tourism management",
-    icon: "⭐",
+    text: "Students with a background in commerce, business studies, or management",
+    icon: "📊",
   },
   {
-    text: "Minimum 50% marks in class 12th (may vary by institution)",
-    icon: "⭐",
+    text: "Aspirants with an entrepreneurial spirit and innovative mindset",
+    icon: "💡",
+  },
+  {
+    text: "Individuals aspiring to manage or start family-run businesses",
+    icon: "🏠",
+  },
+  {
+    text: "Candidates with strong leadership, communication, and problem-solving skills",
+    icon: "🗣️",
   },
 ];
 
@@ -141,49 +152,37 @@ const companyPartners = [
   },
 ];
 
-const mcaSummary = [
+const summary = [
   {
-    icon: <FaGraduationCap />,
-    text: "The full form of BBA - Aviation & Travel is Bachelor of Business Administration in Aviation & Travel Management, a specialized undergraduate course.",
+    icon: <FaBookOpen />,
+    text: "BBA in Entrepreneurship & Family Business integrates robust business management principles with hands-on entrepreneurial skills.",
   },
   {
     icon: <FaUniversity />,
-    text: "This course is ideal for students interested in aviation, airlines, tourism, and hospitality management.",
+    text: "The program blends academic theory with practical training, preparing graduates for leadership roles in startups and family enterprises.",
   },
   {
     icon: <FaCheckCircle />,
-    text: "A regular BBA - Aviation & Travel course duration is 3 years, divided into 6 semesters, with practical training and industry exposure.",
+    text: "A comprehensive 3-year full-time program featuring interactive projects, internships, and live case studies.",
   },
   {
     icon: <FaDollarSign />,
-    text: "The average starting salary for graduates in this field ranges from 3-5 Lakhs per year, depending on job roles and experience.",
+    text: "Graduates can expect competitive salaries and diverse career opportunities in the business world.",
   },
   {
     icon: <FaLightbulb />,
-    text: "Career opportunities include roles in airline management, airport operations, travel agencies, tourism boards, and hospitality firms.",
+    text: "Career roles include Business Strategist, Entrepreneur, Family Business Consultant, and Operations Manager.",
   },
   {
     icon: <FaBuilding />,
-    text: "Top recruiters in this field include airlines like Indigo, Air India, SpiceJet, and global travel companies like Thomas Cook and MakeMyTrip.",
+    text: "Top recruiters include major corporate houses, venture capital firms, startup incubators, and family business conglomerates.",
   },
 ];
 
 const campuses = [
   {
-    name: "IIMT University, Meerut",
-    program: "BBA Program | UGC approved",
-    specialisations: 6,
-    certifications: 10,
-    fees: "₹ 3.40 Lacs",
-    images: [
-      "assets/placement/iimt1.jpg",
-      "assets/placement/iimt2.jpg",
-      "assets/placement/iimt3.jpg",
-    ],
-  },
-  {
     name: "Vidya Knowledge Park",
-    program: "BBA Program | UGC recognised",
+    program: "BBA - Entrepreneurship and Family Business",
     specialisations: 3,
     certifications: 10,
     fees: "₹ 3.88 Lacs",
@@ -193,31 +192,6 @@ const campuses = [
       "assets/placement/vidya1.jpg",
     ],
   },
-
-  //   {
-  //     name: "Subharti University, Meerut",
-  //     program: "MCA Program | UGC recognised",
-  //     specialisations: 6,
-  //     certifications: 10,
-  //     fees: "₹ 3.10 Lacs",
-  //     images: [
-  //       "assets/placement/Subharti1.webp",
-  //       "assets/placement/Subharti1.webp",
-  //       "assets/placement/Subharti3.png",
-  //     ],
-  //   },
-  //   {
-  //     name: "Dev Bhoomi Uttarakhand University",
-  //     program: "MCA Program | AICTE approved",
-  //     specialisations: 4,
-  //     certifications: 8,
-  //     fees: "₹ 4.00 Lacs",
-  //     images: [
-  //       "assets/placement/dev1.jpeg",
-  //       "assets/placement/dev1.jpeg",
-  //       "assets/placement/dev3.jpg",
-  //     ],
-  //   },
 ];
 
 const campusSettings = {
@@ -259,26 +233,29 @@ const imageSettings = {
   arrows: false,
 };
 
-const AviationTravel = () => {
+const Bbaentrepreneurshipfamilybusiness = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
+
   const toggleAccordion = (index) => {
-    if (activeIndex === index) {
-      setActiveIndex(null);
-    } else {
-      setActiveIndex(index);
-    }
+    setActiveIndex(activeIndex === index ? null : index);
   };
+
   const handleBookingClick = () => {
     navigate("/contact");
   };
 
   return (
     <>
+      {/* Highlights Section */}
       <div className="mca-highlights-container">
-        <h1 className="mca-title">BBA in Aviation & Travel Highlights</h1>
+        <h1 className="mca-title">
+          BBA - Entrepreneurship & Family Business Highlights
+        </h1>
         <p className="mca-description">
-          Transform Your Career in the Aviation & Travel Industry
+          Empower your business acumen and entrepreneurial spirit with our
+          comprehensive BBA program, designed to nurture innovative leaders in
+          both startup ventures and family-run enterprises.
         </p>
         <div className="highlight-cards">
           <div className="highlight-card">
@@ -286,43 +263,41 @@ const AviationTravel = () => {
             <p className="highlight-text">YEAR FULL-TIME PROGRAM</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">30+</p>
-            <p className="highlight-text">RECRUITMENT PARTNERS</p>
+            <p className="highlight-number">35+</p>
+            <p className="highlight-text">INDUSTRY PARTNERS</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">6+</p>
-            <p className="highlight-text">INDUSTRY CERTIFICATIONS</p>
+            <p className="highlight-number">10+</p>
+            <p className="highlight-text">SPECIALIZED CERTIFICATIONS</p>
           </div>
           <div className="highlight-card">
-            <p className="highlight-number">4</p>
-            <p className="highlight-text">
-              INTERNSHIP & TRAINING OPPORTUNITIES
-            </p>
+            <p className="highlight-number">7</p>
+            <p className="highlight-text">INTERNSHIPS & LIVE PROJECTS</p>
           </div>
         </div>
       </div>
 
+      {/* Course Overview Section */}
       <div className="course-Overview-container">
         <h1 className="mca-title">Course Overview</h1>
         <p className="mca-description">
-          The BBA in Aviation & Travel is a dynamic undergraduate program
-          designed to equip students with in-depth knowledge of airline
-          management, airport operations, travel & tourism , and business
-          administration. This program blends academic knowledge with practical
-          industry exposure , preparing students for high-demand careers in
-          aviation, hospitality, and tourism sectors.
+          The BBA in Entrepreneurship & Family Business is designed to blend
+          rigorous academic theory with practical insights, equipping students
+          with the skills to launch new ventures or manage and grow existing
+          family businesses.
         </p>
       </div>
 
+      {/* Our Promise Section */}
       <div className="our-promise-container">
         <div className="our-promise-content">
           <div className="our-promise-text">
             <p className="promise-title">OUR PROMISE</p>
             <h2 className="main-heading">
-              Kickstart your career with{" "}
-              <span className="highlight">diverse job opportunities</span>
+              Transform your future with{" "}
+              <span className="highlight">innovative business strategies</span>
             </h2>
-            <div className="graduate-img">
+            <div className="graduate-img" style={{ marginTop: "60px" }}>
               <img src="../assets/img/g.png" alt="Graduate" />
             </div>
             <Link
@@ -336,20 +311,20 @@ const AviationTravel = () => {
 
           <div className="job-stats">
             <div className="stat-box">
-              <strong>150+</strong>
-              <p>Verifed job profiles</p>
+              <strong>50+</strong>
+              <p>Business cases solved</p>
             </div>
             <div className="stat-box">
-              <strong>1100+</strong>
-              <p>Unique job opportunities</p>
+              <strong>1500+</strong>
+              <p>Career opportunities</p>
             </div>
             <div className="stat-box">
-              <strong>28.5%</strong>
-              <p>Students with 2+ job offers</p>
+              <strong>40%</strong>
+              <p>Students with entrepreneurial offers</p>
             </div>
             <Link
               style={{ marginLeft: "40px" }}
-              to="../../assets/img/bbaab.pdf"
+              to="../../assets/img/ENTREPRENEURSHIP.pdf"
               className="th-btn style4"
               target="_blank"
               rel="noopener noreferrer"
@@ -361,6 +336,7 @@ const AviationTravel = () => {
         </div>
       </div>
 
+      {/* Key Offerings & Who Can Pursue Sections */}
       <div className="key-offerings-container">
         <div className="key-offerings">
           <h1 className="offerings-title">Key Offerings</h1>
@@ -386,11 +362,11 @@ const AviationTravel = () => {
 
         <div className="who-can-do-mca">
           <h1 className="who-can-do-title">
-            Who can do BBA - Aviation & Travel?
+            Who can pursue BBA in Entrepreneurship & Family Business?
           </h1>
           <div className="mca-criteria">
             <div className="criteria-left">
-              {whoCanDoMCA.slice(0, 3).map((criteria, index) => (
+              {whoCanDo.slice(0, 4).map((criteria, index) => (
                 <div className="criteria-item" key={index}>
                   <span className="criteria-icon">{criteria.icon}</span>
                   <span className="criteria-text">{criteria.text}</span>
@@ -400,102 +376,117 @@ const AviationTravel = () => {
           </div>
         </div>
       </div>
+
+      {/* Course Curriculum Section */}
       <div className="course-curriculum-container">
         <h1 className="mca-title">Course Curriculum</h1>
 
         <div className="curriculum-section">
-          <h4>Year 1: Fundamentals of Business & Aviation</h4>
+          <h4>Year 1: Fundamentals of Business & Entrepreneurship</h4>
           <div className="curriculum-row">
             <div className="curriculum-col">
               <ul>
-                <li>Introduction to Business Management</li>
-                <li>Principles of Marketing</li>
+                <li>Principles of Management & Organizational Behavior</li>
                 <li>Business Communication & Soft Skills</li>
-                <li>Basics of Accounting & Finance</li>
+                <li>Financial Accounting & Business Mathematics</li>
+                <li>Basics of Marketing & Economics</li>
               </ul>
             </div>
             <div className="curriculum-col">
               <ul>
-                <li>Introduction to Aviation Industry</li>
-                <li>Travel & Tourism Industry Overview</li>
-                <li>Airport & Airline Operations</li>
-                <li>Business Mathematics & Statistics</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="curriculum-section">
-          <h4>Year 2: Advanced Aviation & Travel Management</h4>
-          <div className="curriculum-row">
-            <div className="curriculum-col">
-              <ul>
-                <li>Airline & Airport Management</li>
-                <li>Travel Agency & Tour Operations</li>
-                <li>Aviation Safety & Security Management</li>
-                <li>Hospitality & Customer Service Excellence</li>
-              </ul>
-            </div>
-            <div className="curriculum-col">
-              <ul>
-                <li>Digital Marketing in Aviation & Tourism</li>
-                <li>Air Ticketing & Reservation System</li>
-                <li>Aviation Logistics & Supply Chain Management</li>
-                <li>Global Travel & Tourism Trends</li>
+                <li>Introduction to Entrepreneurship & Innovation</li>
+                <li>Family Business Dynamics</li>
+                <li>Business Law & Ethics</li>
+                <li>Information Technology in Business</li>
               </ul>
             </div>
           </div>
         </div>
 
         <div className="curriculum-section">
-          <h4>Year 3: Specialization & Career Development</h4>
+          <h4>Year 2: Core Business & Entrepreneurial Strategies</h4>
           <div className="curriculum-row">
             <div className="curriculum-col">
               <ul>
-                <li>Aviation Law & Regulations</li>
-                <li>Entrepreneurship in Aviation & Travel</li>
-                <li>Sustainable Tourism & Eco-Travel</li>
-                <li>Revenue & Pricing Strategies in Airlines</li>
+                <li>Business Planning & Venture Creation</li>
+                <li>Strategic Management & Leadership</li>
+                <li>Financial Management & Investment Analysis</li>
+                <li>Marketing Strategies for Startups</li>
               </ul>
             </div>
             <div className="curriculum-col">
               <ul>
-                <li>Risk & Crisis Management in Aviation</li>
-                <li>Internship / Industry Training</li>
-                <li>Final Year Project / Research</li>
+                <li>Family Business Governance & Succession Planning</li>
+                <li>Innovation Management & Product Development</li>
+                <li>Operations Management & Supply Chain</li>
+                <li>Digital Business & E-Commerce</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="curriculum-section">
+          <h4>Year 3: Advanced Business Applications & Capstone Projects</h4>
+          <div className="curriculum-row">
+            <div className="curriculum-col">
+              <ul>
+                <li>Advanced Entrepreneurship & Startup Ecosystems</li>
+                <li>Family Business Strategy & International Business</li>
+                <li>Business Analytics & Decision Making</li>
+                <li>Risk Management & Corporate Governance</li>
+              </ul>
+            </div>
+            <div className="curriculum-col">
+              <ul>
+                <li>
+                  Capstone Project: Launching a Startup or Transforming a Family
+                  Business
+                </li>
+                <li>Industry Internship & Live Case Studies</li>
+                <li>Advanced Topics in Innovation & Business Development</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
 
+      {/* Key Highlights Section */}
       <div className="key-highlights-container">
         <h1 className="mca-title">Key Highlights</h1>
         <ul>
-          <li>Hands-on Training with Airlines & Airports ✈️</li>
-          <li>Industry-Recognized Certifications (IATA, Amadeus, Galileo)</li>
-          <li>Internship & Placement Assistance 🎯</li>
-          <li>Expert Faculty & Industry Mentors 👨‍🏫</li>
-          <li>Study Tours & Industrial Visits 🏝️</li>
+          <li>Real-world case studies and entrepreneurial projects</li>
+          <li>Internships with startups and established family businesses</li>
+          <li>
+            Mentorship programs and networking opportunities with industry
+            leaders
+          </li>
+          <li>
+            Expert faculty with hands-on experience in entrepreneurship and
+            business management
+          </li>
+          <li>
+            Focus on innovation, strategic thinking, and leadership development
+          </li>
         </ul>
       </div>
 
+      {/* Career Opportunities Section */}
       <div className="career-opportunities-container">
         <h1 className="mca-title">Career Opportunities</h1>
         <ul>
-          <li>Airline & Airport Management</li>
-          <li>Travel & Tourism Industry (Tour Operators, Travel Agencies)</li>
-          <li>Hospitality & Hotel Management</li>
-          <li>Air Cargo & Freight Services</li>
-          <li>Digital Marketing & E-Tourism</li>
-          <li>Entrepreneurship in Aviation & Travel</li>
+          <li>Entrepreneur / Startup Founder</li>
+          <li>Business Strategist / Consultant</li>
+          <li>Family Business Manager</li>
+          <li>Operations Manager</li>
+          <li>Marketing & Business Development Executive</li>
         </ul>
         <p>
-          Top Recruiters: Airlines, Airports, Travel Agencies, Hotels,
-          Hospitality Chains
+          Top Recruiters: Leading corporate houses, startup incubators, venture
+          capital firms, and family business conglomerates.
         </p>
       </div>
 
+      {/* Placement Partners Section */}
       <section className="partners-section py-5">
         <div className="container">
           <h3 className="text-left">Our Placement Partners</h3>
@@ -520,34 +511,34 @@ const AviationTravel = () => {
         </div>
       </section>
 
+      {/* Summary & FAQ Section */}
       <div className="mca-page">
         <div className="key-offerings">
-          <h1 className="offerings-title">BBA - Aviation & Travel Summary</h1>
+          <h1 className="offerings-title">
+            BBA - Entrepreneurship & Family Business Summary
+          </h1>
           <div className="offerings-list">
             <div className="offerings-left">
-              {mcaSummary.slice(0, 3).map((mcaSummary, index) => (
+              {summary.slice(0, 3).map((item, index) => (
                 <div className="offering-item" key={index}>
-                  <span className="offering-icon">{mcaSummary.icon}</span>
-                  <span className="offering-text">{mcaSummary.text}</span>
+                  <span className="offering-icon">{item.icon}</span>
+                  <span className="offering-text">{item.text}</span>
                 </div>
               ))}
             </div>
             <div className="offerings-right">
-              {mcaSummary.slice(3, 6).map((mcaSummary, index) => (
+              {summary.slice(3, 6).map((item, index) => (
                 <div className="offering-item" key={index + 3}>
-                  <span className="offering-icon">{mcaSummary.icon}</span>
-                  <span className="offering-text">{mcaSummary.text}</span>
+                  <span className="offering-icon">{item.icon}</span>
+                  <span className="offering-text">{item.text}</span>
                 </div>
               ))}
             </div>
           </div>
         </div>
-
         <div className="faq-section">
           <h1 className="offerings-title">Frequently Asked Questions</h1>
-
           <div className="accordion">
-            {/* Career Opportunities Accordion Item */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
@@ -555,158 +546,109 @@ const AviationTravel = () => {
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
                 <p>
-                  1. What career opportunities are available after completing
-                  this course?
+                  1. What is the scope of entrepreneurship and family business
+                  studies?
                 </p>
               </div>
               {activeIndex === 0 && (
                 <div className="accordion-body">
-                  After completing a BBA in Aviation & Travel, graduates can
-                  pursue careers in:
-                  <ul>
-                    <li>
-                      Airline Management (Airport Operations Manager, Airline
-                      Customer Service Manager)
-                    </li>
-                    <li>
-                      Airport Operations (Airport Ground Staff, Security
-                      Manager)
-                    </li>
-                    <li>
-                      Travel & Tourism Management (Travel Consultant, Tour
-                      Operator, Hospitality Manager)
-                    </li>
-                    <li>
-                      Air Cargo & Logistics (Cargo Supervisor, Logistics
-                      Coordinator)
-                    </li>
-                    <li>
-                      Aviation Safety & Compliance (Aviation Safety Officer,
-                      Flight Operations Manager)
-                    </li>
-                    <li>
-                      Airline Ticketing & Reservations (Ticketing Executive,
-                      Reservations Manager)
-                    </li>
-                    <li>
-                      Sales & Marketing in Aviation (Sales Manager for
-                      Airlines/Travel Agencies)
-                    </li>
-                  </ul>
+                  The program prepares students for diverse roles in launching
+                  startups and managing family-run enterprises, blending
+                  theoretical insights with practical experience.
                 </div>
               )}
             </div>
-
-            {/* Eligibility Criteria Accordion Item */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(1)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>2. What are the eligibility criteria for admission?</p>
+                <p>2. What are the key subjects covered in this course?</p>
               </div>
               {activeIndex === 1 && (
                 <div className="accordion-body">
-                  <p>
-                    Must have completed 10+2 (high school) from a recognized
-                    board.
-                  </p>
-                  <p>Minimum required marks: 50% or higher.</p>
+                  Key subjects include Business Management, Entrepreneurship,
+                  Financial Accounting, Marketing, Family Business Governance,
+                  and Innovation Management.
                 </div>
               )}
             </div>
-
-            {/* Practical Training Accordion Item */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(2)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>3. Does the course include practical training?</p>
+                <p>
+                  3. Are there opportunities for practical training and
+                  internships?
+                </p>
               </div>
               {activeIndex === 2 && (
                 <div className="accordion-body">
-                  Yes, it includes:
-                  <ul>
-                    <li>Airport & Airline Simulations</li>
-                    <li>Guest Lectures & Industry Visits</li>
-                    <li>Workshops on Airline Management & Travel Operations</li>
-                    <li>
-                      Software Training (Amadeus, Galileo, Sabre for ticketing &
-                      reservations)
-                    </li>
-                  </ul>
+                  Yes, the program includes live projects, internships, and case
+                  studies with leading businesses and family enterprises.
                 </div>
               )}
             </div>
-
-            {/* Program Duration Accordion Item */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-1"
                 onClick={() => toggleAccordion(3)}
               >
                 <FaQuestionCircle className="accordion-icon icon-1" />
-                <p>4. What is the duration of the program?</p>
+                <p>4. Which companies recruit graduates from this program?</p>
               </div>
               {activeIndex === 3 && (
                 <div className="accordion-body">
-                  The program typically lasts 3 years (6 semesters). We also
-                  offer 4-year programs with additional industry training.
+                  Graduates are recruited by startups, established corporations,
+                  venture capital firms, and family business conglomerates.
                 </div>
               )}
             </div>
-
-            {/* Internship Opportunities Accordion Item */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-2"
                 onClick={() => toggleAccordion(4)}
               >
                 <FaInfoCircle className="accordion-icon icon-2" />
-                <p>5. Are there internship opportunities?</p>
+                <p>5. Does the course offer professional certifications?</p>
               </div>
               {activeIndex === 4 && (
                 <div className="accordion-body">
-                  Yes, internships are commonly included in the final year.
-                  Students can intern at airports, airlines, travel agencies,
-                  hotels, and logistics firms. Many universities have tie-ups
-                  with aviation companies to provide hands-on experience.
+                  Yes, the curriculum is designed to prepare students for
+                  industry-recognized certifications in business management and
+                  entrepreneurship.
                 </div>
               )}
             </div>
-
-            {/* Average Salary Accordion Item */}
             <div className="accordion-item">
               <div
                 className="accordion-header accordion-header-3"
                 onClick={() => toggleAccordion(5)}
               >
                 <FaLightbulb className="accordion-icon icon-3" />
-                <p>6. What is the average salary after graduation?</p>
+                <p>
+                  6. What career opportunities are available after graduation?
+                </p>
               </div>
               {activeIndex === 5 && (
                 <div className="accordion-body">
-                  The starting salary varies based on job role and location:
-                  <ul>
-                    <li>Airline Ground Staff: ₹3-5 LPA (INR)</li>
-                    <li>Airport Operations Manager: ₹5-8 LPA</li>
-                    <li>Travel Consultant: ₹3-6 LPA</li>
-                    <li>Air Cargo Executive: ₹4-7 LPA</li>
-                    <li>Flight Operations Manager: ₹6-10 LPA</li>
-                  </ul>
+                  Graduates can pursue careers as entrepreneurs, business
+                  consultants, family business managers, marketing executives,
+                  and operations managers.
                 </div>
               )}
             </div>
           </div>
         </div>
       </div>
-
       <div className="campus-section">
         <h2 className="main-title">Partner Campuses</h2>
-        <h3 className="main-subtitle">Choose from 4+ campuses across India</h3>
+        <h3 className="main-subtitle">
+          Choose from 3+ premier campuses globally
+        </h3>
         <Slider {...campusSettings} className="campus-sliders">
           {campuses.map((campus, index) => (
             <div key={index} className={`campus-card campus-card-${index}`}>
@@ -740,10 +682,9 @@ const AviationTravel = () => {
       <div style={{ marginTop: "50px" }}>
         <Feedback />
       </div>
-
       <Testimonials />
     </>
   );
 };
 
-export default AviationTravel;
+export default Bbaentrepreneurshipfamilybusiness;
