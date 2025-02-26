@@ -30,7 +30,7 @@ const AwardsSection = () => {
                     style={{ height: "300px", width: "330px" }}
                   >
                     <div>
-                      <img src="./assets/img/Certificate3.JPG" alt="icon" />
+                      <img src="/assets/img/Certificate3.JPG" alt="icon" />
                     </div>
                   </div>
                 </div>
@@ -41,12 +41,12 @@ const AwardsSection = () => {
                     style={{ height: "300px", width: "330px" }}
                   >
                     <div>
-                      <img src="./assets/img/Certificate1.JPG" alt="icon" />
+                      <img src="/assets/img/Certificate1.JPG" alt="icon" />
                     </div>
                   </div>
                 </div>
                 <Link to="/awards">
-                  View More<i class="fas fa-arrow-right ms-2"></i>
+                  View More<i className="fas fa-arrow-right ms-2"></i>
                 </Link>
               </div>
             </div>
@@ -54,7 +54,7 @@ const AwardsSection = () => {
             <div className="col-xl-6">
               <div className="ps-xxl-5 ms-xl-2">
                 <div className="video-box2">
-                  <img src="./assets/img/about-us.webp" alt="video" />{" "}
+                  <img src="/assets/img/about-us.webp" alt="video" />
                   <a href="" className="play-btn style3 popup-video">
                     <i className="fas fa-play" />
                   </a>
@@ -77,7 +77,7 @@ const AwardsSection = () => {
             <div className="col-lg-8">
               <div className="cta-wrap title-area mb-0">
                 <div className="cta-icon">
-                  <img src="assets/img/normal/cta-icon1.png" alt="icon" />
+                  <img src="/assets/img/normal/cta-icon1.png" alt="icon" />
                 </div>
                 <div className="cta-content">
                   <h2 className="cta-title sec-title">
@@ -94,7 +94,7 @@ const AwardsSection = () => {
         </div>
         <div className="cta-img-1" data-overlay="title" data-opacity={8}>
           <img
-            src="assets/img/normal/cta_1_1.png"
+            src="/assets/img/normal/cta_1_1.png"
             alt="Distance Learning Image"
           />
           <a href="" className="play-btn style2 ">
