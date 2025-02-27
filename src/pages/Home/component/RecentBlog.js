@@ -60,10 +60,10 @@ const BlogSection = () => {
               </div>
             </div>
             <div className="col-md-auto">
-              <a href="/blogs" className="th-btn">
+              <Link to="/blogs" className="th-btn">
                 View All Posts
                 <i className="fa-solid fa-arrow-right ms-2"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
