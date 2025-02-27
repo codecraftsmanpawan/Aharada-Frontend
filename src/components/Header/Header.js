@@ -12,7 +12,7 @@ function Header() {
   const [isAcademicsModalOpen, setIsAcademicsModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-
+  const [isHovered, setIsHovered] = useState(false);
   // New state for ApplyForm visibility
   const [isFormVisible, setIsFormVisible] = useState(false);
 
@@ -232,72 +232,282 @@ function Header() {
                       <nav className={`main-menu d-none d-lg-inline-block`}>
                         <ul className="menu-list">
                           <li className="active">
-                            <Link to="/">Home</Link>
+                            <Link
+                              style={{
+                                fontWeight: "bold",
+                                color: isHovered ? "#064771" : "",
+                              }}
+                              onMouseEnter={() => setIsHovered(true)}
+                              onMouseLeave={() => setIsHovered(false)}
+                              to="/"
+                            >
+                              Home
+                            </Link>
                           </li>
+
                           <li className="menu-item-has-children">
-                            <Link to="#">About Us</Link>
+                            <Link
+                              style={{
+                                fontWeight: "bold",
+                                color: isHovered ? "#064771" : "",
+                              }}
+                              onMouseEnter={() => setIsHovered(true)}
+                              onMouseLeave={() => setIsHovered(false)}
+                              to="#"
+                            >
+                              About Us
+                            </Link>
                             <ul className="sub-menu">
                               <li>
-                                <Link to="/about">About Us</Link>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/about"
+                                >
+                                  About Us
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/department">Departments</Link>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/department"
+                                >
+                                  Departments
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/team-members">Our Team</Link>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/team-members"
+                                >
+                                  Our Team
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/faculty">Our Faculty</Link>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/faculty"
+                                >
+                                  Our Faculty
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/placement-team">Placement Team</Link>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/placement-team"
+                                >
+                                  Placement Team
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/events">Events</Link>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/events"
+                                >
+                                  Events
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/gallery">Gallery</Link>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/gallery"
+                                >
+                                  Gallery
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/our-guest-Lecturer">
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/our-guest-Lecturer"
+                                >
                                   Our Guest Lecturers
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/our-mentors">Our Mentors</Link>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/our-mentors"
+                                >
+                                  Our Mentors
+                                </Link>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <Link to="/programs">Programs</Link>
+                            <Link
+                              style={{
+                                fontWeight: "bold",
+                                color: isHovered ? "#064771" : "",
+                              }}
+                              onMouseEnter={() => setIsHovered(true)}
+                              onMouseLeave={() => setIsHovered(false)}
+                              to="/programs"
+                            >
+                              Programs
+                            </Link>
                           </li>
                           <li className="menu-item-has-children">
-                            <Link to="#">Students</Link>
+                            <Link
+                              style={{
+                                fontWeight: "bold",
+                                color: isHovered ? "#064771" : "",
+                              }}
+                              onMouseEnter={() => setIsHovered(true)}
+                              onMouseLeave={() => setIsHovered(false)}
+                              to="#"
+                            >
+                              Students
+                            </Link>
                             <ul className="sub-menu">
                               <li>
-                                <Link to="/noticeBoard">Notice</Link>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/noticeBoard"
+                                >
+                                  Notice
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/internship">Internship</Link>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/internship"
+                                >
+                                  Internship
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/placed-students">
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/placed-students"
+                                >
                                   Placed Students
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/alumni">Alumni</Link>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/alumni"
+                                >
+                                  Alumni
+                                </Link>
                               </li>
                               <li>
-                                <Link to="/grievance">Grievance</Link>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="/grievance"
+                                >
+                                  Grievance
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  style={{
+                                    fontWeight: "bold",
+                                    color: isHovered ? "#064771" : "",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                  to="https://aerospaceclub.org/"
+                                >
+                                  Our Clubs
+                                </Link>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <Link to="/blogs">Blog</Link>
+                            <Link
+                              style={{
+                                fontWeight: "bold",
+                                color: isHovered ? "#064771" : "",
+                              }}
+                              onMouseEnter={() => setIsHovered(true)}
+                              onMouseLeave={() => setIsHovered(false)}
+                              to="/blogs"
+                            >
+                              Blog
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/contact">Contact</Link>
+                            <Link
+                              style={{
+                                fontWeight: "bold",
+                                color: isHovered ? "#064771" : "",
+                              }}
+                              onMouseEnter={() => setIsHovered(true)}
+                              onMouseLeave={() => setIsHovered(false)}
+                              to="/contact"
+                            >
+                              Contact
+                            </Link>
                           </li>
                         </ul>
                       </nav>
@@ -425,6 +635,14 @@ function Header() {
                   <li>
                     <Link to="/grievance" onClick={handleMenuItemClick}>
                       Grievance
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="https://aerospaceclub.org/"
+                      onClick={handleMenuItemClick}
+                    >
+                      Our Clubs
                     </Link>
                   </li>
                 </ul>

@@ -28,23 +28,20 @@ function HeroSection() {
         <div className="row">
           <div
             className="col-lg-6"
-            style={{ marginTop: "-100px" }}
+            style={{ marginTop: "-70px" }}
             data-aos="fade-right"
           >
             <div className="hero-style2">
               <span className="hero-subtitle">Educate, Empower, Excel</span>
 
               <h1 className="hero-title text-theme">Aharada Education</h1>
-              <h2 className="hero-title">
+              <h1 className="hero-title">
                 Soar High with World-Class Learning
-              </h2>
+              </h1>
               <div className="checklist">
                 <ul>
                   <li>Global Placement Support</li>
                   <li>Practical, Real-World Training</li>
-                  <li>Networking with Industry Leaders</li>
-                  <li>Scholarships &amp; Financial Aid</li>
-                  <li>Certified Programs Across Industries</li>
                 </ul>
               </div>
 
@@ -67,10 +64,19 @@ function HeroSection() {
           </div>
           <div className="col-xl-6" data-aos="fade-left">
             <div className="hero-img2">
-              <img src="assets/01.png" alt="Aharada Hero" width="100%" />
-              <div
+              <img
+                src="assets/hero.png"
+                alt="Aharada Hero"
+                style={{
+                  width: "100%",
+                  borderBottom: "15px solid #072e46",
+                  borderRadius: "32%",
+                }}
+              />
+              {/* <div
+                style={{ marginTop: "500px" }}
                 className="hero-counter-wrap hero-counter2 "
-                style={{ marginRight: "210px" }}
+                // style={{ marginRight: "110px" }}
               >
                 <div className="hero-counter_icon">
                   <img
@@ -86,7 +92,7 @@ function HeroSection() {
                     Graduates in Leading Roles
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
