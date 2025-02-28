@@ -58,6 +58,7 @@ import BcaIot from "./pages/Programs/Program-Explore/Bca-Iot";
 import BcomCharteredAccountant from "./pages/Programs/Program-Explore/Bcom-Chartered-Accountant";
 import Btechaiml from "./pages/Programs/Program-Explore/Btech-ai-ml";
 import Bbaentrepreneurshipfamilybusiness from "./pages/Programs/Program-Explore/Bba-entrepreneurship-family-business";
+import Testpage from "./pages/Programs/Program-Explore/Testpage";
 
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import TermsandConditions from "./pages/PrivacyPolicy/TermsandConditions";
@@ -155,6 +156,7 @@ function App() {
           path="/bba-entrepreneurship-family-business"
           element={<Bbaentrepreneurshipfamilybusiness />}
         />
+        <Route path="/test" element={<Testpage />} />
       </Routes>
       <Footer />
     </Router>
