@@ -102,7 +102,7 @@ function Header() {
                         onMouseOver={(e) => (e.target.style.color = "#93b3e6")}
                         onMouseOut={(e) => (e.target.style.color = "")}
                       >
-                        DBUU
+                        Vidya University
                       </Link>
                     </li>
                   </ul>

@@ -1,109 +1,308 @@
-import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
-import "./courseoffer.css";
-import config from "../../../config";
 
-function CoursebyUniversity() {
-  const [selectedCategory, setSelectedCategory] = useState("*");
-  const [courses, setCourses] = useState([]);
-  const [categories, setCategories] = useState([]);
+const ProgramsOffered = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [activeProgram, setActiveProgram] = useState("All Programs");
   const navigate = useNavigate();
+  const programs = [
+    "All Programs",
+    "MBA",
+    "BBA",
+    "M.Tech",
+    "BFA",
+    "BFD",
+    "B.Tech",
+    "B.Com",
+    "BCA",
+    "B.Sc",
+  ];
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
+  const allPrograms = [
+    {
+      title: "Aviation Management",
+      type: "MBA",
+      description:
+        "Specialized program focusing on aviation industry management, operations, and strategic planning.",
+      duration: "2 Years",
+      campus: "Main",
+      seats: 60,
+    },
+    {
+      title: "FinTech",
+      type: "MBA",
+      description:
+        "Advanced program combining finance and technology to prepare leaders for the digital finance ecosystem.",
+      duration: "2 Years",
+      campus: "Main",
+      seats: 45,
+    },
+    {
+      title: "Data Analytics & Airtificial Intelligence",
+      type: "BBA",
+      description:
+        "Program focusing on business applications of data science, analytics, and artificial intelligence.",
+      duration: "2 Years",
+      campus: "Tech",
+      seats: 40,
+    },
+    {
+      title: "Aviation Management",
+      type: "BBA",
+      description:
+        "Specialized program focusing on aviation industry management, operations, and strategic planning.",
+      duration: "2 Years",
+      campus: "Main",
+      seats: 60,
+    },
+    {
+      title: "Aviation & Travel",
+      type: "BBA",
+      description:
+        "Program designed to prepare students for careers in the aviation and travel industries.",
+      duration: "3 Years",
+      campus: "Main",
+      seats: 80,
+    },
+    {
+      title: "Entrepreneurship & Innovation",
+      type: "BBA",
+      description:
+        "Program focusing on business innovation, entrepreneurship, and startup development.",
+      duration: "3 Years",
+      campus: "Main",
+      seats: 60,
+    },
+    {
+      title: "FinTech",
+      type: "BBA",
+      description:
+        "Program focused on financial technologies and their applications in modern banking and finance.",
+      duration: "3 Years",
+      campus: "Main",
+      seats: 50,
+    },
 
-    // Fetch data from the API
-    const fetchCourses = async () => {
-      try {
-        const response = await axios.get(
-          `${config.apiBaseUrl}/api/programs-branches`
-        );
-        setCourses(response.data.data);
+    {
+      title: "Aerospace Engineering",
+      type: "B.Tech",
+      description:
+        "Program covering aerodynamics, propulsion, and aircraft systems design.",
+      duration: "4 Years",
+      campus: "Tech",
+      seats: 100,
+    },
+    {
+      title: "CS with AI & ML",
+      type: "B.Tech",
+      description:
+        "Program focusing on artificial intelligence, machine learning, and data science applications.",
+      duration: "4 Years",
+      campus: "Tech",
+      seats: 90,
+    },
+    {
+      title: "Chartered Accountant",
+      type: "B.Com",
+      description:
+        "Program designed for students pursuing a career in accountancy, auditing, and finance.",
+      duration: "3 Years",
+      campus: "Main",
+      seats: 70,
+    },
+    {
+      title: "Internet of Things (IoT)",
+      type: "BCA",
+      description:
+        "Specialized program covering IoT technologies, networking, and smart system integration.",
+      duration: "3 Years",
+      campus: "Tech",
+      seats: 60,
+    },
 
-        // Extract unique categories from the fetched courses
-        const uniqueCategories = [
-          ...new Set(response.data.data.flatMap((course) => course.categories)),
-        ];
-        setCategories(uniqueCategories);
-      } catch (error) {
-        // console.error("Error fetching courses:", error);
-      }
-    };
+    {
+      title: "Fashion Designing",
+      type: "BFD",
+      description:
+        "Program specializing in apparel design, textiles, and fashion industry trends.",
+      duration: "3 Years",
+      campus: "Main",
+      seats: 55,
+    },
+    {
+      title: "Fine Arts",
+      type: "BFA",
+      description:
+        "Comprehensive program covering painting, sculpture, and artistic expression.",
+      duration: "3 Years",
+      campus: "Main",
+      seats: 40,
+    },
+    {
+      title: "Journalism & Mass Communication",
+      type: "BA",
+      description:
+        "Program focusing on media studies, journalism, and communication strategies.",
+      duration: "3 Years",
+      campus: "Main",
+      seats: 75,
+    },
+    {
+      title: "Acting for Film, TV, and Web Series",
+      type: "BA",
+      description:
+        "Program providing training in acting techniques for film, television, and digital media.",
+      duration: "3 Years",
+      campus: "Main",
+      seats: 50,
+    },
+    {
+      title: "Music Production and Composition",
+      type: "BA",
+      description:
+        "Program covering music theory, production techniques, and composition for media.",
+      duration: "3 Years",
+      campus: "Main",
+      seats: 40,
+    },
+    {
+      title: "Aviation & Airport Management",
+      type: "BBA",
+      description:
+        "Program focused on aviation operations, airport management, and airline business strategies.",
+      duration: "3 Years",
+      campus: "Meerut",
+      university: "Subharti University",
+      seats: 60,
+    },
+    {
+      title: "Aeronautical Science",
+      type: "B.Sc",
+      description:
+        "Comprehensive program covering aerodynamics, aircraft structures, and flight mechanics.",
+      duration: "3 Years",
+      campus: "Meerut",
+      university: "Subharti University",
+      seats: 50,
+    },
+    {
+      title: "Defence Technology",
+      type: "M.Tech",
+      description:
+        "Specialized program in defense technologies, weapons systems, and military engineering.",
+      duration: "2 Years",
+      campus: "Meerut",
+      university: "Subharti University",
+      seats: 40,
+    },
+    {
+      title: "HR & Aviation Management",
+      type: "MBA",
+      description:
+        "Program focusing on human resource management and aviation industry leadership.",
+      duration: "2 Years",
+      campus: "Meerut",
+      university: "Subharti University",
+      seats: 45,
+    },
+  ];
 
-    fetchCourses();
-  }, []);
-
-  const handleCategoryChange = (category) => {
-    setSelectedCategory(category);
+  const handleExploreProgram = () => {
+    navigate("/apply-now");
+  };
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
   };
 
-  const filteredCourses =
-    selectedCategory === "*"
-      ? courses
-      : courses.filter((course) =>
-          course.categories.includes(selectedCategory)
-        );
-
-  const handleCourseClick = (title) => {
-    // Encode the title to make it URL-safe
-    const encodedTitle = encodeURIComponent(title);
-    navigate(`/course-details/${encodedTitle}`);
-  };
+  // Filter programs based on active program filter and search term
+  const filteredPrograms = allPrograms.filter((program) => {
+    const matchesProgram =
+      activeProgram === "All Programs" || program.type === activeProgram;
+    const matchesSearch =
+      program.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      program.description.toLowerCase().includes(searchTerm.toLowerCase());
+    return matchesProgram && matchesSearch;
+  });
 
   return (
-    <section className="courseoffer">
-      <div className="courseoffer-container">
-        <div className="courseoffer-header">
-          <div className="courseoffer-title">
-            <span>Kickstart your career with diverse job opportunities</span>
-            <h2>Programs Offered</h2>
-          </div>
-        </div>
-        <div className="courseoffer-filter">
-          <button
-            className={`filter-btn ${selectedCategory === "*" ? "active" : ""}`}
-            onClick={() => handleCategoryChange("*")}
-          >
-            All Program
-          </button>
-          {categories.map((category) => (
+    <div className="ahrda-programs-container">
+      <h1 className="ahrda-programs-title">Programs Offered</h1>
+      <div className="ahrda-title-underline"></div>
+
+      <div className="ahrda-search-container">
+        <input
+          type="text"
+          placeholder="Search programs..."
+          value={searchTerm}
+          onChange={handleSearch}
+          className="ahrda-search-input"
+        />
+      </div>
+
+      <div className="ahrda-program-filters-wrapper">
+        <div className="ahrda-program-filters">
+          {programs.map((program) => (
             <button
-              key={category}
-              className={`filter-btn ${
-                selectedCategory === category ? "active" : ""
+              key={program}
+              className={`ahrda-program-filter-btn ${
+                activeProgram === program ? "ahrda-active" : ""
               }`}
-              onClick={() => handleCategoryChange(category)}
+              onClick={() => setActiveProgram(program)}
             >
-              {category}
+              {program}
             </button>
           ))}
         </div>
-        <div className="courseoffer-list">
-          {filteredCourses.map((course) => (
-            <div key={course.id} className="courseoffer-item">
-              <div className="courseoffer-item-content">
-                <h4
-                  className="courseoffer-item-title"
-                  onClick={() => handleCourseClick(course.title)}
-                >
-                  {course.title}
-                </h4>
-                {/* <span className="courseoffer-item-categories">
-                  {course.categories.join(", ")}
-                </span> */}
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
-    </section>
-  );
-}
 
-export default CoursebyUniversity;
+      <div className="ahrda-featured-programs">
+        {filteredPrograms.length > 0 ? (
+          filteredPrograms.map((program, index) => (
+            <div key={index} className="ahrda-program-card">
+              <div className="ahrda-program-header">
+                <h2>{program.title}</h2>
+                <span className="ahrda-program-type">{program.type}</span>
+              </div>
+              <p className="ahrda-program-description">{program.description}</p>
+              {/* <div className="ahrda-program-details">
+                <div className="ahrda-detail">
+                  <h3>Duration</h3>
+                  <p>{program.duration}</p>
+                </div>
+                <div className="ahrda-detail">
+                  <h3>Campus</h3>
+                  <p>{program.campus}</p>
+                </div>
+                <div className="ahrda-detail">
+                  <h3>Seats</h3>
+                  <p>{program.seats}</p>
+                </div>
+              </div> */}
+              <button
+                className="ahrda-explore-btn"
+                onClick={handleExploreProgram}
+              >
+                Explore Program
+              </button>
+            </div>
+          ))
+        ) : (
+          <div className="ahrda-no-results">
+            <p>No programs found matching your criteria.</p>
+            <button
+              className="ahrda-reset-btn"
+              onClick={() => {
+                setActiveProgram("All Programs");
+                setSearchTerm("");
+              }}
+            >
+              Reset Filters
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default ProgramsOffered;

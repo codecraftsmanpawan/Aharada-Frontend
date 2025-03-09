@@ -13,16 +13,19 @@ const NewsMediaSection = () => {
   const [activeNews, setActiveNews] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // Fetch news posts on component mount
   useEffect(() => {
     const fetchNews = async () => {
       try {
         const response = await axios.get(
           "https://backend.aharadaedu.in/api/news-media"
-        );
+        ); // API endpoint
         const allNews = response.data.newsMedia || [];
         setNews(allNews);
 
         const currentDate = new Date();
+
+        // Filter news where publicDate is on or before today
         const active = allNews.filter((newsItem) => {
           const newsDate = new Date(newsItem.publicDate);
           return (
@@ -31,10 +34,10 @@ const NewsMediaSection = () => {
         });
 
         setActiveNews(active);
+        setLoading(false);
       } catch (error) {
         console.error("Error fetching news media:", error);
         toast.error("Failed to fetch news media!");
-      } finally {
         setLoading(false);
       }
     };
@@ -44,11 +47,11 @@ const NewsMediaSection = () => {
 
   const settings = {
     dots: true,
-    infinite: activeNews.length > 3,
+    infinite: activeNews.length > 3, // Make infinite true only if more than slidesToShow
     speed: 500,
     autoplay: true,
     autoplaySpeed: 3000,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
       {
@@ -89,17 +92,18 @@ const NewsMediaSection = () => {
               </div>
               <div className="col-md-auto">
                 <Link to="/news-media" className="th-btn">
-                  View All News <i className="fa-solid fa-arrow-right ms-2"></i>
+                  View All News
+                  <i className="fa-solid fa-arrow-right ms-2"></i>
                 </Link>
               </div>
             </div>
           </div>
 
-          {/* Loading State */}
+          {/* Loading Indicator */}
           {loading ? (
-            <div className="text-center py-5">
-              <div className="spinner-border text-primary" role="status">
-                <span className="visually-hidden">Loading...</span>
+            <div className="text-center py-10">
+              <div className="spinner-border text-blue-500" role="status">
+                <span className="sr-only">Loading...</span>
               </div>
             </div>
           ) : activeNews.length > 0 ? (
@@ -110,7 +114,15 @@ const NewsMediaSection = () => {
               {activeNews.slice(0, 5).map((newsItem) => (
                 <div className="px-2" key={newsItem._id}>
                   <div className="th-blog blog-single style2">
-                    <div className="blog-content" style={{ height: "100%" }}>
+                    <div
+                      className="blog-content"
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
+                        height: "100%",
+                      }}
+                    >
                       <h4
                         className="box-title"
                         style={{
@@ -159,7 +171,7 @@ const NewsMediaSection = () => {
         </div>
       </section>
 
-      {/* Toast Notification */}
+      {/* Toast Notification Container */}
       <ToastContainer />
     </>
   );

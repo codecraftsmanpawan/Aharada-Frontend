@@ -154,8 +154,8 @@ function HeroSection() {
       <section
         style={{
           background: "linear-gradient(to bottom, #072e46, #145f8b)",
-          marginTop: "-180px",
-          paddingBottom: "20px",
+          marginTop: "-140px",
+          paddingBottom: "60px",
         }}
       >
         <div

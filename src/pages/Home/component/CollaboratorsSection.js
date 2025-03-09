@@ -61,7 +61,6 @@ function CollaboratorsSection() {
     <div
       className="space-top mb-16"
       style={{
-        marginTop: "-50px",
         paddingBottom: "50px",
         background: "linear-gradient(to right, #f5f6fa, #eaf2fd)",
       }}

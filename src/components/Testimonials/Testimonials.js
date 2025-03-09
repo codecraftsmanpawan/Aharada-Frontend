@@ -5,8 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Testimonials.css";
 import axios from "axios";
 import config from "../../config";
-
-// Custom Arrow Components
 const NextArrow = (props) => {
   const { onClick } = props;
   return (
@@ -52,9 +50,7 @@ const Testimonials = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
+    arrows: false,
     appendDots: (dots) => (
       <div>
         <ul style={{ margin: "0px" }}> {dots} </ul>
@@ -104,8 +100,8 @@ const Testimonials = () => {
           <h2 className="sec-title fw-medium">People Who Already Love Us</h2>
         </div>
         <Slider {...sliderSettings}>
-          {testimonialsData.map((testimonial) => (
-            <div key={testimonial.id} className="px-3">
+          {testimonialsData.map((testimonial, index) => (
+            <div key={index} className="px-3">
               <div className="testi-box bg-smoke shadow-none">
                 <div className="testi-box_content">
                   <div className="testi-box_img">
@@ -132,7 +128,7 @@ const Testimonials = () => {
                     {[...Array(5)].map((_, idx) => (
                       <i
                         key={idx}
-                        className={`fa-solid fa-star ${
+                        className={`fa-solid fa-star-sharp ${
                           idx < testimonial.rating ? "text-warning" : ""
                         }`}
                       ></i>
