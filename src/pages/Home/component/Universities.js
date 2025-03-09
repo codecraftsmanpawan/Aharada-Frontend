@@ -346,7 +346,10 @@ const PlacementsCareer = () => {
                 Interested in recruiting from our talented pool of students?
                 Connect with our placement cell.
               </p>
-              <button className="ardaeplacement-contact-btn">
+              <button
+                className="ardaeplacement-contact-btn"
+                onClick={() => (window.location.href = "tel:+9105344408")}
+              >
                 Contact Placement Cell
               </button>
             </div>
