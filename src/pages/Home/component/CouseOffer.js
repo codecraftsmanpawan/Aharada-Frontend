@@ -138,33 +138,7 @@ const ProgramsOffered = () => {
       campus: "Main",
       seats: 40,
     },
-    {
-      title: "Journalism & Mass Communication",
-      type: "BA",
-      description:
-        "Program focusing on media studies, journalism, and communication strategies.",
-      duration: "3 Years",
-      campus: "Main",
-      seats: 75,
-    },
-    {
-      title: "Acting for Film, TV, and Web Series",
-      type: "BA",
-      description:
-        "Program providing training in acting techniques for film, television, and digital media.",
-      duration: "3 Years",
-      campus: "Main",
-      seats: 50,
-    },
-    {
-      title: "Music Production and Composition",
-      type: "BA",
-      description:
-        "Program covering music theory, production techniques, and composition for media.",
-      duration: "3 Years",
-      campus: "Main",
-      seats: 40,
-    },
+
     {
       title: "Aviation & Airport Management",
       type: "BBA",
