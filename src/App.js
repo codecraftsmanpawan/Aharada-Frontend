@@ -157,6 +157,7 @@ function App() {
           path="/bba-entrepreneurship-family-business"
           element={<Bbaentrepreneurshipfamilybusiness />}
         />
+
         <Route path="/test" element={<Testpage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
