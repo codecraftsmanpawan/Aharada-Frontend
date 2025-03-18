@@ -3,106 +3,8 @@ import { Accordion, Button, Card } from "react-bootstrap";
 import "./Test.css"; // Importing the external CSS
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import Slider from "react-slick";
-import Testimonials from "../../../components/Testimonials/Testimonials";
-import Feedback from "../../Home/component/Feedback";
-import Course from "../../Home/component/CouseOffer";
+
 const Landingpage = () => {
-  const navigate = useNavigate();
-  const campuses = [
-    {
-      name: "IIMT University, Meerut",
-      program: "BBA Program | UGC approved",
-      specialisations: 6,
-      certifications: 10,
-      fees: "₹ 3.40 Lacs",
-      images: [
-        "assets/placement/iimt1.jpg",
-        "assets/placement/iimt2.jpg",
-        "assets/placement/iimt3.jpg",
-      ],
-    },
-    {
-      name: "Vidya Knowledge Park",
-      program: "BBA Program | UGC recognised",
-      specialisations: 3,
-      certifications: 10,
-      fees: "₹ 3.88 Lacs",
-      images: [
-        "assets/placement/vidya1.jpg",
-        "assets/placement/vidya1.jpg",
-        "assets/placement/vidya1.jpg",
-      ],
-    },
-  ];
-  const companyPartners = [
-    {
-      id: 1,
-      logo: "assets/placement/American - Logo.png",
-      name: "American",
-    },
-    { id: 2, logo: "assets/placement/AISATS - logo.png", name: "AISATS" },
-    {
-      id: 3,
-      logo: "assets/placement/Arabian Vibes Logo.jpeg",
-      name: "Arabian Vibes",
-    },
-    { id: 4, logo: "assets/placement/Celebi- Logo.jpeg", name: "Celebi" },
-    {
-      id: 5,
-      logo: "assets/placement/Delhi Duty Free - Logo.png",
-      name: "Delhi Duty",
-    },
-    {
-      id: 6,
-      logo: "assets/placement/Drone Stark Logo.png",
-      name: "American",
-    },
-    { id: 7, logo: "assets/placement/Eniva Logo.svg", name: "AISATS" },
-    {
-      id: 8,
-      logo: "assets/placement/GMR- logo.png",
-      name: "Arabian Vibes",
-    },
-    { id: 9, logo: "assets/placement/Indigo - Logo.png", name: "Celebi" },
-    {
-      id: 10,
-      logo: "assets/placement/IRSLogo.png",
-      name: "IRS Logo ",
-    },
-    {
-      id: 11,
-      logo: "assets/placement/Leela Travels Logo.png",
-      name: "American",
-    },
-    { id: 12, logo: "assets/placement/Ocube Logo.jpeg", name: "AISATS" },
-    {
-      id: 13,
-      logo: "assets/placement/OH! Puhleeez Logo.jpeg",
-      name: "Arabian Vibes",
-    },
-    { id: 14, logo: "assets/placement/Omullane - Logo.png", name: "Celebi" },
-    {
-      id: 15,
-      logo: "assets/placement/phs logo.png",
-      name: "Delhi Duty",
-    },
-    {
-      id: 16,
-      logo: "assets/placement/Qatar- Logo.jpeg",
-      name: "American",
-    },
-    {
-      id: 17,
-      logo: "assets/placement/Teleperformance Logo.png",
-      name: "AISATS",
-    },
-    {
-      id: 18,
-      logo: "assets/placement/Vimaana - Logo.jpeg",
-      name: "Arabian Vibes",
-    },
-  ];
   const [lead, setLead] = useState({
     name: "",
     number: "",
@@ -119,48 +21,6 @@ const Landingpage = () => {
     e.preventDefault();
     console.log("Lead Submitted:", lead);
     alert("Lead added successfully!");
-  };
-  const campusSettings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
-  const imageSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnHover: true,
-    arrows: false,
-  };
-
-  const handleBookingClick = () => {
-    navigate("/contact");
   };
 
   return (
@@ -850,32 +710,6 @@ const Landingpage = () => {
         </div>
       </div>
 
-      <section
-        className="partners-section py-5"
-        style={{ background: "#f7f7f7", marginBottom: "30px" }}
-      >
-        <div className="container">
-          <h3 className="text-left">Our Placement Partners</h3>
-          <div className="row">
-            {companyPartners.map((partner) => (
-              <div key={partner.id} className="col-md-2 col-4 mb-4">
-                <div className="partner-logo">
-                  <img
-                    src={partner.logo}
-                    alt={partner.name}
-                    className="img-fluid"
-                    style={{
-                      height: "150px",
-                      objectFit: "contain",
-                      margin: "0 5px",
-                    }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
       <div>
         {/* How to Apply Section */}
         <div>
@@ -1137,38 +971,6 @@ const Landingpage = () => {
         </div>
       </div>
 
-      <div className="campus-section">
-        <h2 className="main-title">Partner Campuses</h2>
-        <h3 className="main-subtitle">Choose from 4+ campuses across India</h3>
-        <Slider {...campusSettings} className="campus-sliders">
-          {campuses.map((campus, index) => (
-            <div key={index} className={`campus-card campus-card-${index}`}>
-              <div className="image-slider-container">
-                <Slider {...imageSettings} className={`image-slider-${index}`}>
-                  {campus.images.map((image, idx) => (
-                    <div key={idx} className="image-slide">
-                      <img
-                        src={image}
-                        alt={`${campus.name} image ${idx + 1}`}
-                        className={`campus-image-${index}-${idx}`}
-                      />
-                    </div>
-                  ))}
-                </Slider>
-              </div>
-              <div className="campus-info">
-                <h4 className="campus-name">{campus.name}</h4>
-                <p className="main-program">{campus.program}</p>
-
-                <button className="th-btn style3" onClick={handleBookingClick}>
-                  Book College Tour{" "}
-                  <i className="fas fa-long-arrow-right ms-2" />
-                </button>
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
       <div className="container">
         <div className="tuition-wrap">
           <div style={{ marginBottom: "20px", marginTop: "40px" }}>
@@ -1658,7 +1460,6 @@ const Landingpage = () => {
         </div>
       </div>
 
-      <Course />
       <div className="container">
         <div className="scholarship-content">
           <div className="scholarship-img">
@@ -1832,7 +1633,7 @@ const Landingpage = () => {
           </div>
         </div>
       </div>
-      <Feedback />
+
       <div className="programfaq-faq-area">
         <div className="container">
           <div className="row">
@@ -1942,7 +1743,6 @@ const Landingpage = () => {
           </div>
         </div>
       </div>
-      <Testimonials />
     </div>
   );
 };

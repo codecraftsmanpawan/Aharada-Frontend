@@ -1,13 +1,32 @@
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+/* src/pages/NotFound/NotFound.css */
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
+.not-found-container h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-main {
-  max-width: 100%;
-  overflow-x: hidden;
+.not-found-container p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.not-found-container a {
+  font-size: 1.1rem;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.not-found-container a:hover {
+  text-decoration: underline;
 }

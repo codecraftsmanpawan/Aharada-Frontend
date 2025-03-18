@@ -26,11 +26,7 @@ const AboutSection = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-6">
-            <div
-              className="img-box1 mb-40 mb-xl-0"
-              data-aos="fade-right"
-              data-aos-delay="200"
-            >
+            <div className="img-box1 mb-40 mb-xl-0">
               <div className="img1">
                 <img
                   className="tilt-active"
@@ -55,7 +51,7 @@ const AboutSection = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-6" data-aos="fade-left" data-aos-delay="400">
+          <div className="col-xl-6">
             <div className="title-area mb-30">
               <span className="sub-title">
                 <i className="fal fa-book me-2" /> About Our University
@@ -74,16 +70,12 @@ const AboutSection = () => {
               the opportunity to acquire knowledge, skills.
             </p>
             <div className="row align-items-center">
-              <div
-                className="col-md-auto"
-                data-aos="zoom-in"
-                data-aos-delay="600"
-              >
+              <div className="col-md-auto">
                 <div className="about-grid_img mb-30 mb-md-0">
                   <img src="assets/img/normal/about_1_4.png" alt="img" />
                 </div>
               </div>
-              <div className="col-md-7" data-aos="fade-up" data-aos-delay="800">
+              <div className="col-md-7">
                 <div className="checklist">
                   <ul>
                     <li>Get access to 4,000+ of our top courses</li>
@@ -93,7 +85,7 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-            <div className="btn-group mt-40" data-aos="flip-up">
+            <div className="btn-group mt-40">
               <a href="/about" className="th-btn">
                 About More
                 <i className="fa-regular fa-arrow-right ms-2" />

@@ -26,11 +26,7 @@ function HeroSection() {
       />
       <div className="container z-index-common">
         <div className="row">
-          <div
-            className="col-lg-6"
-            style={{ marginTop: "-70px" }}
-            data-aos="fade-right"
-          >
+          <div className="col-lg-6" style={{ marginTop: "-70px" }}>
             <div className="hero-style2">
               <span className="hero-subtitle">Educate, Empower, Excel</span>
 
@@ -62,7 +58,7 @@ function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="col-xl-6" data-aos="fade-left">
+          <div className="col-xl-6">
             <div className="hero-img2">
               <img
                 src="assets/hero.png"
@@ -100,16 +96,14 @@ function HeroSection() {
 
       {/* <div
         className="hero-shape shape1"
-        data-aos="fade-up"
-        data-aos-delay="200"
+
       >
         <img src="assets/img/hero/shape_2_1.png" alt="shape" />
       </div> */}
       {/* 
       <div
         className="hero-shape shape3 d-sm-block d-none"
-        data-aos="fade-down"
-        data-aos-delay="600"
+       
       >
         <img src="assets/img/hero/shape_2_3.png" alt="shape" />
       </div> */}

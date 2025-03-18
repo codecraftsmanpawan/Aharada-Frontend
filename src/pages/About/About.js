@@ -66,11 +66,7 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div
-                className="col-xl-6"
-                data-aos="fade-left"
-                data-aos-delay="400"
-              >
+              <div className="col-xl-6">
                 <div className="title-area mb-30">
                   <span className="sub-title">
                     <i className="fal fa-book me-2" /> About Aharada Education
@@ -92,11 +88,7 @@ function About() {
                   tailored to your goals.
                 </p>
                 <div className="row align-items-center">
-                  <div
-                    className="col-md-7"
-                    data-aos="fade-up"
-                    data-aos-delay="800"
-                  >
+                  <div className="col-md-7">
                     <div className="checklist">
                       <ul>
                         <li>
@@ -284,7 +276,7 @@ function About() {
             }}
           >
             <div className="row align-items-center">
-              <div className="col-xl-6" data-aos="fade-right">
+              <div className="col-xl-6">
                 <div className="wcu-img-1">
                   <div className="img1">
                     <img src="assets/img/normal/wcu_1_1.png" alt="img" />
@@ -303,11 +295,7 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div
-                className="col-xl-6"
-                data-aos="fade-left"
-                data-aos-delay="400"
-              >
+              <div className="col-xl-6">
                 <div className="wcu-wrap1">
                   <div className="title-area mb-25">
                     <span className="sub-title">
@@ -326,11 +314,7 @@ function About() {
                     </p>
                   </div>
                   <div className="row gy-4">
-                    <div
-                      className="col-md-6"
-                      data-aos="fade-up"
-                      data-aos-delay="200"
-                    >
+                    <div className="col-md-6">
                       <div className="wcu-box">
                         <div className="wcu-box_icon">
                           <i className="fas fa-check-circle" />
@@ -345,11 +329,7 @@ function About() {
                         </div>
                       </div>
                     </div>
-                    <div
-                      className="col-md-6"
-                      data-aos="fade-up"
-                      data-aos-delay="400"
-                    >
+                    <div className="col-md-6">
                       <div className="wcu-box">
                         <div className="wcu-box_icon">
                           <i className="fas fa-check-circle" />
@@ -364,11 +344,7 @@ function About() {
                         </div>
                       </div>
                     </div>
-                    <div
-                      className="col-md-6"
-                      data-aos="fade-up"
-                      data-aos-delay="600"
-                    >
+                    <div className="col-md-6">
                       <div className="wcu-box">
                         <div className="wcu-box_icon">
                           <i className="fas fa-check-circle" />
@@ -382,11 +358,7 @@ function About() {
                         </div>
                       </div>
                     </div>
-                    <div
-                      className="col-md-6"
-                      data-aos="fade-up"
-                      data-aos-delay="800"
-                    >
+                    <div className="col-md-6">
                       <div className="wcu-box">
                         <div className="wcu-box_icon">
                           <i className="fas fa-check-circle" />

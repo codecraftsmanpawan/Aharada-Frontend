@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./ProfessionalProgramsPage.css";
 import Course from "../Home/component/CouseOffer";
+import { Accordion, Button, Card } from "react-bootstrap";
 const programs = [
   {
     id: 1,
@@ -264,7 +265,6 @@ function ProgramPage() {
           ))}
         </div>
       </div>
-
       <Course />
     </>
   );

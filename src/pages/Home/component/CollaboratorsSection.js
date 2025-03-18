@@ -64,11 +64,10 @@ function CollaboratorsSection() {
         paddingBottom: "50px",
         background: "linear-gradient(to right, #f5f6fa, #eaf2fd)",
       }}
-      data-aos="fade-up"
     >
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+          <div className="col-lg-6">
             <div className="title-area mb-lg-0 text-lg-start text-center">
               <span className="sub-title">
                 <i className="fal fa-book me-2" /> Our Esteemed Collaborators
@@ -83,7 +82,7 @@ function CollaboratorsSection() {
               </h2>
             </div>
           </div>
-          <div className="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+          <div className="col-lg-6">
             <div className="client-wrap text-lg-end text-center">
               <Slider {...sliderSettings}>
                 {collaborators.map((collaborator, index) => (

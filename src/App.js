@@ -59,6 +59,7 @@ import BcomCharteredAccountant from "./pages/Programs/Program-Explore/Bcom-Chart
 import Btechaiml from "./pages/Programs/Program-Explore/Btech-ai-ml";
 import Bbaentrepreneurshipfamilybusiness from "./pages/Programs/Program-Explore/Bba-entrepreneurship-family-business";
 import Testpage from "./pages/Programs/Program-Explore/Testpage";
+import NotFound from "./NotFound/NotFound";
 
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import TermsandConditions from "./pages/PrivacyPolicy/TermsandConditions";
@@ -75,7 +76,7 @@ function App() {
     <Router>
       <ScrollToTop /> {/* Include the component here */}
       <Header />
-      <AdmissionCard />
+      {/* <AdmissionCard /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -157,6 +158,7 @@ function App() {
           element={<Bbaentrepreneurshipfamilybusiness />}
         />
         <Route path="/test" element={<Testpage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>
