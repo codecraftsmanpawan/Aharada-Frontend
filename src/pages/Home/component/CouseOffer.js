@@ -182,7 +182,7 @@ const ProgramsOffered = () => {
   ];
 
   const handleExploreProgram = (programTitle, programType) => {
-    // Convert the title to a URL-friendly format
+    // Convert the title and type to URL-friendly format
     const programSlug = programTitle
       .toLowerCase()
       .replace(/\s+/g, "-")
@@ -193,8 +193,11 @@ const ProgramsOffered = () => {
       .replace(/\s+/g, "-")
       .replace(/[^\w-]+/g, "");
 
-    // Navigate to the program's detail page with both title and type in the URL
-    navigate(`/${programSlug}-${typeSlug}-program`);
+    // Construct the final URL (slug format) and navigate to the details page
+    const programUrl = `/${programSlug}-${typeSlug}-program`;
+
+    // Use navigate to go to the program detail page
+    navigate(programUrl);
   };
 
   const handleSearch = (e) => {
