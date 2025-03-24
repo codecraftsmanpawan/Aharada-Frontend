@@ -181,24 +181,7 @@ const ProgramsOffered = () => {
     },
   ];
 
-  const handleExploreProgram = (programTitle, programType) => {
-    // Convert the title and type to URL-friendly format
-    const programSlug = programTitle
-      .toLowerCase()
-      .replace(/\s+/g, "-")
-      .replace(/[^\w-]+/g, "");
-
-    const typeSlug = programType
-      .toLowerCase()
-      .replace(/\s+/g, "-")
-      .replace(/[^\w-]+/g, "");
-
-    // Construct the final URL (slug format) and navigate to the details page
-    const programUrl = `/${programSlug}-${typeSlug}-program`;
-
-    // Use navigate to go to the program detail page
-    navigate(programUrl);
-  };
+  const handleExploreProgram = (programTitle, programType) => {};
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
