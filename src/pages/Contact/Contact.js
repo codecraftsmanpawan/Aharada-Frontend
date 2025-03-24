@@ -223,8 +223,8 @@ function Contact() {
                             <option value="Subharti University, Meerut">
                               Subharti University, Meerut
                             </option>
-                            <option value="Sanskrit University, Mathura">
-                              Sanskrit University, Mathura
+                            <option value="Vidya Knowledge Park">
+                              Vidya Knowledge Park
                             </option>
                             <option value="SAGE University Indore">
                               SAGE University Indore

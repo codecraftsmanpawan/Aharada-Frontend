@@ -37,6 +37,8 @@ import GuestLecturerDetails from "./pages/GuestLecturer/Guest-Lecturer-Details";
 import GuestLectureList from "./pages/GuestLecturer/GuestLectureList";
 import Mentors from "./pages/GuestLecturer/Mentors";
 import StudentAmbassador from "./pages/StudentAmbassador/StudentAmbassador";
+import MBAtionMnagement from "./pages/Programs/mba-aviation-management";
+
 import ExploreAI from "./pages/Programs/Program-Explore/Data-Analytics-and-Artificial-Intelligence";
 import AviationTravel from "./pages/Programs/Program-Explore/Aviation-&-Travel";
 import EntrepreneurshipInnovation from "./pages/Programs/Program-Explore/Entrepreneurship-and-Innovation";
@@ -157,7 +159,10 @@ function App() {
           path="/bba-entrepreneurship-family-business"
           element={<Bbaentrepreneurshipfamilybusiness />}
         />
-
+        <Route
+          path="/mba-aviation-management-program"
+          element={<MBAtionMnagement />}
+        />
         <Route path="/test" element={<Testpage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

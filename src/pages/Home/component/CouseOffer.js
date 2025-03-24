@@ -181,9 +181,22 @@ const ProgramsOffered = () => {
     },
   ];
 
-  const handleExploreProgram = () => {
-    navigate("/apply-now");
+  const handleExploreProgram = (programTitle, programType) => {
+    // Convert the title to a URL-friendly format
+    const programSlug = programTitle
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]+/g, "");
+
+    const typeSlug = programType
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]+/g, "");
+
+    // Navigate to the program's detail page with both title and type in the URL
+    navigate(`/${programSlug}-${typeSlug}-program`);
   };
+
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
   };
@@ -254,7 +267,9 @@ const ProgramsOffered = () => {
               </div> */}
               <button
                 className="ahrda-explore-btn"
-                onClick={handleExploreProgram}
+                onClick={() =>
+                  handleExploreProgram(program.type, program.title)
+                }
               >
                 Explore Program
               </button>
