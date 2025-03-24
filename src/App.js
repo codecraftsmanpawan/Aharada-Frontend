@@ -69,7 +69,7 @@ import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import "./App.css";
 import "./assets/css/app.min.css";
-// import "./assets/css/bootstrap.rtl.min.css";
+import "./assets/css/bootstrap.rtl.min.css";
 import "./assets/css/fontawesome.min.css";
 import "./assets/css/style.css";
 
