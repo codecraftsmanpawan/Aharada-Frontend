@@ -392,7 +392,7 @@ const Landingpage = () => {
                 <div className="department-details">
                   <div className="department-details-img mb-30">
                     <img
-                      src="../assets/program/aharadaedu3.JPG"
+                      src="../assets/program/aharadaedu1.JPG"
                       alt="img"
                       style={{
                         width: "100%",
