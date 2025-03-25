@@ -38,6 +38,7 @@ import GuestLectureList from "./pages/GuestLecturer/GuestLectureList";
 import Mentors from "./pages/GuestLecturer/Mentors";
 import StudentAmbassador from "./pages/StudentAmbassador/StudentAmbassador";
 import MBAtionMnagement from "./pages/Programs/mba-aviation-management";
+import MBAfintech from "./pages/Programs/mba-fintech-program";
 
 import ExploreAI from "./pages/Programs/Program-Explore/Data-Analytics-and-Artificial-Intelligence";
 import AviationTravel from "./pages/Programs/Program-Explore/Aviation-&-Travel";
@@ -163,6 +164,7 @@ function App() {
           path="/mba-aviation-management-program"
           element={<MBAtionMnagement />}
         />
+        <Route path="/mba-fintech-program" element={<MBAfintech />} />
         <Route path="/test" element={<Testpage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
