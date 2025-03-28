@@ -9,7 +9,7 @@ import LeadForm from "./component/LeadForm";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import Feedback from "../Home/component/Feedback";
 
-const Landingpage = () => {
+const MBAcoursedetail = () => {
   const page1Campuses = [
     {
       name: "SAGE University Indore",
@@ -415,7 +415,7 @@ const Landingpage = () => {
                 <div className="department-details">
                   <div className="department-details-img mb-30">
                     <img
-                      src="assets/program/aharadaedu2.PNG"
+                      src="../assets/program/aharadaedu3.JPG"
                       alt="img"
                       style={{
                         width: "100%",
@@ -1038,4 +1038,4 @@ const Landingpage = () => {
   );
 };
 
-export default Landingpage;
+export default MBAcoursedetail;

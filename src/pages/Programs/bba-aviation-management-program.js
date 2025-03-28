@@ -61,7 +61,7 @@ const MBAcoursedetail = () => {
                 textAlign: "center",
               }}
             >
-              MBA - FinTech
+              BBA - Aviation Management
             </h1>
             <ol
               style={{
@@ -134,7 +134,7 @@ const MBAcoursedetail = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  FinTech
+                  Aviation Management
                 </a>
               </li>
             </ol>
@@ -148,13 +148,16 @@ const MBAcoursedetail = () => {
             <p className="promise-title">OUR PROMISE</p>
             <h2 className="main-heading">
               Elevate your career in{" "}
-              <span className="highlight">MBA - FinTech</span>, mastering the
-              art of financial technology and shaping the future of global
-              finance.
+              <span className="highlight">BBA - Aviation Management</span>,
+              mastering aviation and shaping the future.
             </h2>
 
             <div className="graduate-img hide-on-mobile">
-              <img src="../assets/img/g.png" alt="Graduate" />
+              <img
+                src="../assets/img/g.png"
+                alt="Graduate"
+                style={{ marginTop: "10px" }}
+              />
             </div>
             <Link
               style={{ marginTop: "-110px", marginLeft: "40px" }}
@@ -167,19 +170,19 @@ const MBAcoursedetail = () => {
 
           <div className="job-stats">
             <div className="stat-box">
-              <strong>150+</strong>
-              <p>Top-tier financial institutions</p>
+              <strong>100+</strong>
+              <p>Top-tier aviation companies</p>
             </div>
             <div className="stat-box">
-              <strong>2000+</strong>
-              <p>Global career opportunities</p>
+              <strong>1500+</strong>
+              <p>Global career opportunities in aviation</p>
             </div>
             <div className="stat-box">
-              <strong>40%</strong>
-              <p>Transforming the FinTech landscape</p>
+              <strong>35%</strong>
+              <p>Transforming the aviation landscape</p>
             </div>
             <Link
-              to="../../assets/img/MBA_FinTech.pdf"
+              to="../../assets/img/BBA_Aviation_Management.pdf"
               className="th-btn style4"
               target="_blank"
               rel="noopener noreferrer"
@@ -208,25 +211,27 @@ const MBAcoursedetail = () => {
               <h3>Course Overview</h3>
               <div className="product-about">
                 <p className="text">
-                  Our MBA in FinTech is designed to provide students with a deep
-                  understanding of financial technology, blockchain, digital
-                  banking, and data-driven financial services. This program
-                  prepares graduates to take on leadership roles in the evolving
-                  FinTech industry.
+                  Our BBA in Aviation Management is designed to provide students
+                  with a comprehensive understanding of the aviation industry,
+                  including airport management, aviation safety, logistics, and
+                  airline operations. This program prepares graduates to take on
+                  leadership roles in the rapidly evolving aviation sector.
                 </p>
 
                 <p className="text">
-                  <strong>Duration of the Course:</strong> The MBA in FinTech is
-                  a 2-year full-time program that offers both theoretical
-                  knowledge and hands-on experience with the latest trends and
-                  technologies in the financial sector.
+                  <strong>Duration of the Course:</strong> The BBA in Aviation
+                  Management is a 3-year full-time program that combines
+                  theoretical knowledge with practical experience in the
+                  aviation industry, preparing students for various roles in
+                  aviation operations and management.
                 </p>
 
                 <p className="text">
                   <strong>Eligibility Requirements:</strong> To apply for this
-                  program, you must have completed a Bachelor's degree from a
-                  recognized institution. While prior experience in finance or
-                  technology is beneficial, it is not a mandatory requirement.
+                  program, you must have completed a higher secondary education
+                  (12th grade) from a recognized board. While prior experience
+                  in aviation or business management is beneficial, it is not
+                  mandatory.
                 </p>
               </div>
             </div>
@@ -251,7 +256,9 @@ const MBAcoursedetail = () => {
                   style={{ fontSize: "2rem", fontWeight: "600" }}
                 >
                   Why Choose{" "}
-                  <span style={{ color: "#d89e37" }}>MBA - FinTech</span>
+                  <span style={{ color: "#d89e37" }}>
+                    BBA - Aviation Management
+                  </span>
                 </h2>
                 <p
                   style={{
@@ -261,9 +268,9 @@ const MBAcoursedetail = () => {
                   }}
                 >
                   Gain specialized knowledge and leadership skills in the
-                  rapidly growing field of financial technology. This program
-                  prepares you for managerial roles in digital banking, fintech
-                  startups, and investment firms.
+                  dynamic aviation industry. This program prepares you for
+                  managerial roles in airport operations, airline management,
+                  and aviation safety.
                 </p>
               </div>
             </div>
@@ -272,27 +279,27 @@ const MBAcoursedetail = () => {
             {[
               {
                 id: "01",
-                title: "Cutting-Edge Curriculum",
+                title: "Comprehensive Aviation Curriculum",
                 description:
-                  "Develop a deep understanding of financial technology, blockchain, and digital payments.",
+                  "Develop a deep understanding of airport management, aviation safety, logistics, and airline operations.",
               },
               {
                 id: "02",
-                title: "Expert Faculty & Industry Leaders",
+                title: "Industry Expert Faculty",
                 description:
-                  "Learn from experienced professionals and thought leaders in the FinTech space.",
+                  "Learn from experienced professionals and industry leaders in the aviation field.",
               },
               {
                 id: "03",
-                title: "Hands-on Experience & Internships",
+                title: "Internship & Practical Experience",
                 description:
-                  "Participate in internships with leading FinTech companies to gain practical skills.",
+                  "Participate in internships with leading aviation companies to gain hands-on experience.",
               },
               {
                 id: "04",
-                title: "Global Career Opportunities",
+                title: "Global Aviation Career Opportunities",
                 description:
-                  "Unlock opportunities in the growing FinTech industry, with leadership roles in global firms.",
+                  "Unlock career opportunities with top airlines and aviation companies worldwide.",
               },
             ].map((item) => (
               <div className="col-md-6 col-lg-3 d-flex" key={item.id}>
@@ -393,7 +400,7 @@ const MBAcoursedetail = () => {
                   <div className="department-details-img mb-30">
                     <img
                       src="../assets/program/aharadaedu3.JPG"
-                      alt="img"
+                      alt="Aviation Management"
                       style={{
                         width: "100%",
                         height: "565px",
@@ -406,59 +413,43 @@ const MBAcoursedetail = () => {
                       className="mb-20"
                       style={{ fontSize: "2rem", fontWeight: "bold" }}
                     >
-                      MBA - FinTech
+                      BBA - Aviation Management
                     </h3>
                     <p
                       className="mb-20"
                       style={{ fontSize: "1rem", lineHeight: "1.6" }}
                     >
-                      The MBA in FinTech is designed to provide students with a
-                      deep understanding of financial technology, digital
-                      banking, blockchain, and financial services innovations.
-                      This program prepares graduates for leadership roles in
-                      the rapidly evolving FinTech sector.
+                      The BBA in Aviation Management provides students with a
+                      comprehensive understanding of the aviation industry,
+                      focusing on airport management, aviation safety,
+                      logistics, and airline operations. This program prepares
+                      graduates for managerial roles in the dynamic aviation
+                      sector.
                     </p>
                     <p
                       className="mb-20"
                       style={{ fontSize: "1rem", lineHeight: "1.6" }}
                     >
-                      The program focuses on finance, technology, blockchain,
-                      and digital transformation in the financial industry.
-                      Students will learn how technology is reshaping
-                      traditional financial services, preparing them to lead in
-                      the growing FinTech ecosystem.
+                      The program focuses on operations management, aviation
+                      safety, airline management, and the latest trends in the
+                      global aviation industry. Students will gain practical
+                      insights into managing airports, airlines, and aviation
+                      companies.
                     </p>
-                    <div className="row">
-                      <div className="col-md-6 mb-20">
-                        <img
-                          src="../assets/img/department/fintech1.jpg"
-                          alt=""
-                          style={{ width: "100%", height: "auto" }}
-                        />
-                      </div>
-                      <div className="col-md-6 mb-20">
-                        <img
-                          src="../assets/img/department/fintech2.jpg"
-                          alt=""
-                          style={{ width: "100%", height: "auto" }}
-                        />
-                      </div>
-                    </div>
 
-                    <div style={{ marginTop: "-30px" }}>
+                    <div style={{ marginTop: "30px" }}>
                       <div>
                         <h3
                           className="mb-3"
                           style={{ fontSize: "1.75rem", fontWeight: "bold" }}
                         >
-                          How To Succeed in MBA - FinTech
+                          How To Succeed in BBA - Aviation Management
                         </h3>
                         <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                          To excel in the MBA - FinTech program, you must focus
-                          on understanding the intersection of finance and
-                          technology, blockchain applications, and digital
-                          financial services. Here are some tips to guide your
-                          preparation:
+                          To excel in the BBA - Aviation Management program,
+                          focus on understanding the complexities of airport
+                          operations, airline management, and aviation safety.
+                          Here are some tips to guide your preparation:
                         </p>
                       </div>
                       <ul
@@ -476,8 +467,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Study emerging technologies like blockchain, digital
-                          currencies, and AI in financial services.
+                          Study the fundamentals of airport and airline
+                          operations, including logistics and customer service.
                         </li>
                         <li
                           style={{
@@ -490,8 +481,9 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Understand the dynamics of digital banking, mobile
-                          payments, and online lending platforms.
+                          Understand aviation safety regulations, including air
+                          traffic control, aircraft maintenance, and security
+                          protocols.
                         </li>
                         <li
                           style={{
@@ -504,8 +496,9 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Develop skills in data analysis, financial modeling,
-                          and algorithmic trading.
+                          Develop a strong understanding of aviation economics,
+                          environmental impacts, and sustainability in the
+                          industry.
                         </li>
                         <li
                           style={{
@@ -518,8 +511,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Keep up with the latest FinTech innovations, trends,
-                          and global financial regulations.
+                          Enhance leadership, problem-solving, and management
+                          skills to lead teams within aviation companies.
                         </li>
                         <li
                           style={{
@@ -532,9 +525,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Enhance leadership, financial analysis, and
-                          problem-solving skills to lead teams in FinTech
-                          companies.
+                          Stay updated with the latest trends, technologies, and
+                          regulations in the aviation industry.
                         </li>
                       </ul>
                     </div>
@@ -543,15 +535,16 @@ const MBAcoursedetail = () => {
                         className="mb-3"
                         style={{ fontSize: "1.75rem", fontWeight: "bold" }}
                       >
-                        Admission in MBA - FinTech
+                        Admission in BBA - Aviation Management
                       </h3>
                       <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                        The admission process for the MBA - FinTech program
-                        includes an entrance exam, followed by a personal
-                        interview. Be prepared to demonstrate your understanding
-                        of finance, technology, and business innovation. Make
-                        sure you meet the eligibility requirements and present
-                        your academic and professional accomplishments.
+                        The admission process for the BBA - Aviation Management
+                        program includes an entrance exam followed by a personal
+                        interview. Be prepared to showcase your passion for the
+                        aviation industry and demonstrate your academic
+                        potential. Ensure you meet the eligibility requirements
+                        and present your academic and extracurricular
+                        achievements.
                       </p>
                     </div>
                   </div>
@@ -587,28 +580,28 @@ const MBAcoursedetail = () => {
                       style={{ fontSize: "2rem", fontWeight: "600" }}
                     >
                       Details About{" "}
-                      <span style={{ color: "#d89e37" }}>How To Apply</span> MBA
-                      - FinTech.
+                      <span style={{ color: "#d89e37" }}>How To Apply</span> BBA
+                      - Aviation Management
                     </h2>
                   </div>
                   <p
                     className="content-text"
                     style={{ fontSize: "1rem", lineHeight: "1.6" }}
                   >
-                    Applying for the MBA in FinTech is a structured process
-                    designed to ensure that you have the necessary skills and
-                    qualifications to succeed in this rapidly growing field.
-                    Follow the steps below to submit your application correctly
-                    and on time.
+                    Applying for the BBA in Aviation Management is a structured
+                    process designed to ensure that you have the necessary
+                    skills and qualifications to thrive in the dynamic aviation
+                    industry. Follow the steps below to submit your application
+                    correctly and on time.
                   </p>
 
                   <p
                     className="content-text mt-2"
                     style={{ fontSize: "1rem", lineHeight: "1.6" }}
                   >
-                    The program focuses on financial technology, blockchain,
-                    digital banking, and investment strategies, preparing you
-                    for leadership roles in the FinTech industry. Below are the
+                    The program focuses on airport management, aviation safety,
+                    airline operations, and aviation logistics, preparing you
+                    for leadership roles in the aviation sector. Below are the
                     steps you need to follow to apply and ensure a smooth
                     application process.
                   </p>
@@ -624,10 +617,9 @@ const MBAcoursedetail = () => {
               >
                 <img
                   src="../assets/program/application.svg"
-                  alt=""
+                  alt="Aviation Application"
                   style={{
                     width: "100%",
-
                     borderRadius: "8px",
                   }}
                 />
@@ -761,7 +753,6 @@ const MBAcoursedetail = () => {
           </div>
         </div>
       </div>
-
       <div className="container">
         <Recruiters />
         <div className="scholarship-content">
@@ -777,12 +768,12 @@ const MBAcoursedetail = () => {
                 marginBottom: "30px",
               }}
             >
-              Our MBA in FinTech program offers unique opportunities for
-              students to interact with industry experts. Through the Mentor and
-              Guest Speaker program, students gain valuable insights into the
-              world of financial technology, network with professionals, and
-              receive guidance on their career journey in the rapidly evolving
-              FinTech sector.
+              Our BBA in Aviation Management program offers unique opportunities
+              for students to interact with industry experts. Through the Mentor
+              and Guest Speaker program, students gain valuable insights into
+              the aviation industry, network with professionals, and receive
+              guidance on their career journey in the ever-evolving aviation
+              sector.
             </p>
           </div>
           <div style={{ marginBottom: "30px" }}>
@@ -792,9 +783,9 @@ const MBAcoursedetail = () => {
                 <div className="scholarship-item">
                   <h4>Industry Mentors</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Our mentors include top executives from the FinTech and
-                    financial services sectors, offering one-on-one guidance to
-                    shape your career in the growing FinTech industry.
+                    Our mentors include top executives from the aviation and
+                    airline sectors, offering one-on-one guidance to help shape
+                    your career in aviation management.
                   </p>
                 </div>
               </div>
@@ -803,21 +794,19 @@ const MBAcoursedetail = () => {
                   <h4>Guest Lecturers</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
                     Learn from industry experts through guest lectures,
-                    workshops, and webinars, where leading professionals in the
-                    FinTech space share their knowledge, experiences, and
-                    emerging trends in financial technology.
+                    workshops, and webinars, where leading professionals in
+                    aviation share their knowledge and experiences.
                   </p>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="scholarship-item">
-                  <h4>FinTech Innovation Hub</h4>
+                  <h4>Aviation Innovation Hub</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Join our FinTech Innovation Hub, where students collaborate
-                    on projects focused on emerging technologies like
-                    blockchain, digital currencies, and AI in finance,
-                    developing solutions to transform the financial services
-                    industry.
+                    Join our Aviation Innovation Hub, where students collaborate
+                    on projects focused on emerging aviation technologies,
+                    airline operations, and airport management, developing
+                    solutions to transform the aviation sector.
                   </p>
                 </div>
               </div>
@@ -836,7 +825,7 @@ const MBAcoursedetail = () => {
                       Guidance and Support
                     </h3>
                     <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                      The MBA in Aviation Management provides students with
+                      The BBA in Aviation Management provides students with
                       personalized career guidance, mentorship from experienced
                       professionals, and hands-on learning opportunities. Our
                       team of mentors helps you identify the best career paths
@@ -873,11 +862,11 @@ const MBAcoursedetail = () => {
                       }}
                     >
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Bachelor's degree
-                        from a recognized institution.
+                        <i className="fas fa-check-circle" /> Higher Secondary
+                        (12th) education from a recognized board.
                       </li>
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Work experience in
+                        <i className="fas fa-check-circle" /> Experience in
                         aviation or a related field (preferred but not
                         mandatory).
                       </li>
@@ -902,6 +891,7 @@ const MBAcoursedetail = () => {
           </div>
         </div>
       </div>
+
       <CampusSlider campuses={page1Campuses} />
 
       <div className="programfaq-faq-area">
@@ -919,16 +909,15 @@ const MBAcoursedetail = () => {
                   </h2>
                 </div>
                 <p className="programfaq-faq-description">
-                  The MBA in FinTech program prepares students for key
-                  leadership roles in the rapidly evolving financial technology
+                  The BBA in Aviation Management program equips students with
+                  the necessary skills and knowledge to thrive in the aviation
                   industry. Learn everything you need to know about the
                   application process, eligibility, and program details here.
                 </p>
                 <p className="programfaq-faq-description">
-                  Our goal is to equip future leaders with the skills required
-                  for managing the complexities of modern financial systems,
-                  digital banking, blockchain, and data-driven financial
-                  services.
+                  Our goal is to provide future leaders with the skills to
+                  manage aviation operations, safety, and logistics effectively
+                  while keeping up with global aviation trends.
                 </p>
 
                 <Link to="/contact" className="mt-2 programfaq-faq-button">
@@ -954,12 +943,12 @@ const MBAcoursedetail = () => {
                       What Career Opportunities After Completing the Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      Graduates of the MBA in FinTech program can pursue careers
-                      in various roles such as digital banking, blockchain
-                      technology, FinTech consulting, data science in finance,
-                      cryptocurrency management, and financial analysis. You may
-                      also find opportunities in financial institutions, tech
-                      companies, and emerging startups.
+                      Graduates of the BBA in Aviation Management program can
+                      pursue careers in roles such as airport management,
+                      airline operations, aviation safety, logistics
+                      coordination, and air traffic control. You may also find
+                      opportunities in aviation consulting, airline management,
+                      and aviation regulatory bodies.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -972,14 +961,16 @@ const MBAcoursedetail = () => {
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      How Can I Apply for the MBA FinTech Program?
+                      How Can I Apply for the BBA in Aviation Management
+                      Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
                       You can apply online by filling out the application form
-                      available on our website. Make sure to submit the required
-                      documents, including your academic transcripts, resume,
-                      and Statement of Purpose (SOP), explaining why you are
-                      interested in the FinTech industry and your career goals.
+                      available on our website. Ensure that you submit all the
+                      required documents, including your academic transcripts,
+                      resume, and Statement of Purpose (SOP), which should
+                      outline your interest in the aviation industry and your
+                      future career goals.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -992,13 +983,14 @@ const MBAcoursedetail = () => {
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      What is the Duration of the MBA in FinTech Program?
+                      What is the Duration of the BBA in Aviation Management
+                      Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      The MBA in FinTech is a 2-year full-time program designed
-                      to provide both theoretical knowledge and practical
-                      experience in the financial technology industry, including
-                      blockchain, AI in finance, and digital payments.
+                      The BBA in Aviation Management is a 3-year full-time
+                      program designed to provide both theoretical knowledge and
+                      practical experience in aviation management, including
+                      airport operations, aviation safety, and logistics.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -1015,9 +1007,10 @@ const MBAcoursedetail = () => {
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
                       Yes, the program includes internship opportunities with
-                      leading FinTech companies, allowing you to gain hands-on
-                      experience with digital financial technologies and build
-                      connections within the industry.
+                      leading aviation companies, allowing you to gain hands-on
+                      experience with aviation operations, safety management,
+                      and air traffic control. These internships help build
+                      professional connections in the aviation industry.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -1026,6 +1019,7 @@ const MBAcoursedetail = () => {
           </div>
         </div>
       </div>
+
       <Feedback />
       <Testimonials />
     </div>

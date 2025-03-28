@@ -9,32 +9,8 @@ import LeadForm from "./component/LeadForm";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import Feedback from "../Home/component/Feedback";
 
-const Landingpage = () => {
+const AIcoursedetail = () => {
   const page1Campuses = [
-    // {
-    //   name: "SAGE University Indore",
-    //   program: "MCA Program | UGC recognised",
-    //   specialisations: 3,
-    //   certifications: 10,
-    //   fees: "₹ 3.88 Lacs",
-    //   images: [
-    //     "../assets/placement/sage1.jpg",
-    //     "../assets/placement/sage2.jpg",
-    //     "../assets/placement/sage3.webp",
-    //   ],
-    // },
-    // {
-    //   name: "Vidya Knowledge Park",
-    //   program: "BBA Program | UGC recognised",
-    //   specialisations: 3,
-    //   certifications: 10,
-    //   fees: "₹ 3.88 Lacs",
-    //   images: [
-    //     "../assets/placement/vidya1.jpg",
-    //     "../assets/placement/vidya1.jpg",
-    //     "../assets/placement/vidya1.jpg",
-    //   ],
-    // },
     {
       name: "IIMT University, Meerut",
       program: "BBA Program | UGC approved",
@@ -421,7 +397,7 @@ const Landingpage = () => {
                 <div className="department-details">
                   <div className="department-details-img mb-30">
                     <img
-                      src="assets/program/aharadaedu2.PNG"
+                      src="../assets/program/aharadaedu3.JPG"
                       alt="img"
                       style={{
                         width: "100%",
@@ -1041,4 +1017,4 @@ const Landingpage = () => {
   );
 };
 
-export default Landingpage;
+export default AIcoursedetail;
