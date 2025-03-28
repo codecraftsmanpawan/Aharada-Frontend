@@ -41,6 +41,7 @@ import MBAtionMnagement from "./pages/Programs/mba-aviation-management";
 import MBAfintech from "./pages/Programs/mba-fintech-program";
 import BBAdataanalyticsairtificiaintelligencel from "./pages/Programs/bba-data-analytics--airtificial-intelligence-program";
 import BBAaviationmanagementprogram from "./pages/Programs/bba-aviation-management-program";
+import BBAaviationtravelprogram from "./pages/Programs/bba-aviation--travel-program";
 
 import ExploreAI from "./pages/Programs/Program-Explore/Data-Analytics-and-Artificial-Intelligence";
 import AviationTravel from "./pages/Programs/Program-Explore/Aviation-&-Travel";
@@ -175,6 +176,10 @@ function App() {
         <Route
           path="/bba-aviation-management-program"
           element={<BBAaviationmanagementprogram />}
+        />
+        <Route
+          path="/bba-aviation--travel-program"
+          element={<BBAaviationtravelprogram />}
         />
         <Route path="/test" element={<Testpage />} />
         <Route path="*" element={<NotFound />} />
