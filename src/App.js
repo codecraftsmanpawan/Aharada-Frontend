@@ -47,6 +47,8 @@ import BBAfintechprogram from "./pages/Programs/bba-fintech-program";
 import BTECHaerospaceengineeringprogram from "./pages/Programs/btech-aerospace-engineering-program";
 import BTECHcswithaimlprogram from "./pages/Programs/btech-cs-with-ai--ml-program";
 import BCOMcharteredaccountantprogram from "./pages/Programs/bcom-chartered-accountant-program";
+import BCAinternetofthingsiotprogram from "./pages/Programs/bca-internet-of-things-iot-program";
+import BFDfashiondesigningprogram from "./pages/Programs/bfd-fashion-designing-program";
 
 import ExploreAI from "./pages/Programs/Program-Explore/Data-Analytics-and-Artificial-Intelligence";
 import AviationTravel from "./pages/Programs/Program-Explore/Aviation-&-Travel";
@@ -202,6 +204,14 @@ function App() {
         <Route
           path="/bcom-chartered-accountant-program"
           element={<BCOMcharteredaccountantprogram />}
+        />
+        <Route
+          path="/bca-internet-of-things-iot-program"
+          element={<BCAinternetofthingsiotprogram />}
+        />
+        <Route
+          path="/bfd-fashion-designing-program"
+          element={<BFDfashiondesigningprogram />}
         />
         <Route path="/test" element={<Testpage />} />
         <Route path="*" element={<NotFound />} />
