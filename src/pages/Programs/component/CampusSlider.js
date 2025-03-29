@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useNavigate } from "react-router-dom";
 
 const campusSettings = {
   dots: false,
@@ -31,6 +32,8 @@ const imageSettings = {
 };
 
 const CampusSlider = ({ campuses }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="campus-section">
       <h2 className="main-title">Partner Campuses</h2>
@@ -51,7 +54,12 @@ const CampusSlider = ({ campuses }) => {
             <div className="campus-info">
               <h4 className="campus-name">{campus.name}</h4>
               <p className="main-program">{campus.program}</p>
-              <button className="th-btn style3">Book College Tour</button>
+              <button
+                className="th-btn style3"
+                onClick={() => navigate(`/contact`)}
+              >
+                Book College Tour
+              </button>
             </div>
           </div>
         ))}
