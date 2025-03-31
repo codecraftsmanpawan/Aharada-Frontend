@@ -49,6 +49,11 @@ import BTECHcswithaimlprogram from "./pages/Programs/btech-cs-with-ai--ml-progra
 import BCOMcharteredaccountantprogram from "./pages/Programs/bcom-chartered-accountant-program";
 import BCAinternetofthingsiotprogram from "./pages/Programs/bca-internet-of-things-iot-program";
 import BFDfashiondesigningprogram from "./pages/Programs/bfd-fashion-designing-program";
+import BFAfineartsprogram from "./pages/Programs/bfa-fine-arts-program";
+import BBAaviationairportmanagementprogram from "./pages/Programs/bba-aviation--airport-management-program";
+import BSCaeronauticalscienceprogram from "./pages/Programs/bsc-aeronautical-science-program";
+import MTECHdefencetechnologyprogram from "./pages/Programs/mtech-defence-technology-program";
+import MBAhraviationmanagementprogram from "./pages/Programs/mba-hr--aviation-management-program";
 
 import ExploreAI from "./pages/Programs/Program-Explore/Data-Analytics-and-Artificial-Intelligence";
 import AviationTravel from "./pages/Programs/Program-Explore/Aviation-&-Travel";
@@ -212,6 +217,23 @@ function App() {
         <Route
           path="/bfd-fashion-designing-program"
           element={<BFDfashiondesigningprogram />}
+        />
+        <Route path="/bfa-fine-arts-program" element={<BFAfineartsprogram />} />
+        <Route
+          path="/bba-aviation--airport-management-program"
+          element={<BBAaviationairportmanagementprogram />}
+        />
+        <Route
+          path="/bsc-aeronautical-science-program"
+          element={<BSCaeronauticalscienceprogram />}
+        />
+        <Route
+          path="/mtech-defence-technology-program"
+          element={<MTECHdefencetechnologyprogram />}
+        />
+        <Route
+          path="/mba-hr--aviation-management-program"
+          element={<MBAhraviationmanagementprogram />}
         />
         <Route path="/test" element={<Testpage />} />
         <Route path="*" element={<NotFound />} />

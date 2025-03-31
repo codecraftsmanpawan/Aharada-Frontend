@@ -61,7 +61,7 @@ const MBAcoursedetail = () => {
                 textAlign: "center",
               }}
             >
-              BBA - Aviation & Travel Management
+              MBA – HR & Aviation Management
             </h1>
             <ol
               style={{
@@ -134,7 +134,7 @@ const MBAcoursedetail = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  Aviation & Travel Management
+                  HR & Aviation Management
                 </a>
               </li>
             </ol>
@@ -206,30 +206,31 @@ const MBAcoursedetail = () => {
               <h3>Course Overview</h3>
               <div className="product-about">
                 <p className="text">
-                  Our BBA in Aviation & Travel Management is designed to provide
-                  students with a comprehensive understanding of the aviation
-                  and travel industry, including airport management, aviation
-                  safety, logistics, airline operations, and the management of
-                  travel and tourism services. This program prepares graduates
-                  to take on leadership roles in the rapidly evolving aviation
-                  and travel sectors.
+                  Our MBA in HR & Aviation Management is designed to equip
+                  students with comprehensive knowledge and skills in managing
+                  human resources within the dynamic aviation industry. The
+                  program blends core management principles with specialized
+                  aviation training, addressing topics like organizational
+                  behavior, recruitment strategies, employee engagement, airport
+                  management, airline operations, and aviation safety.
                 </p>
 
                 <p className="text">
-                  <strong>Duration of the Course:</strong> The BBA in Aviation &
-                  Travel Management is a 3-year full-time program that combines
-                  theoretical knowledge with practical experience in both the
-                  aviation and travel industries, preparing students for various
-                  roles in aviation operations, travel management, and customer
-                  service.
+                  <strong>Duration of the Course:</strong> The MBA in HR &
+                  Aviation Management is a 2-year full-time program that
+                  combines theoretical knowledge with practical insights into
+                  the aviation sector. The curriculum is curated to develop
+                  strong managerial and leadership capabilities, preparing
+                  students for roles in HR departments of airlines, airports,
+                  and aviation-related businesses.
                 </p>
 
                 <p className="text">
-                  <strong>Eligibility Requirements:</strong> To apply for this
-                  program, you must have completed higher secondary education
-                  (12th grade) from a recognized board. While prior experience
-                  in aviation, travel, or business management is beneficial, it
-                  is not mandatory.
+                  <strong>Eligibility Requirements:</strong> Candidates must
+                  hold a Bachelor’s degree in any discipline from a recognized
+                  university. Those with prior experience or educational
+                  background in management, human resources, or aviation will be
+                  given preference during the selection process.
                 </p>
               </div>
             </div>
@@ -255,7 +256,7 @@ const MBAcoursedetail = () => {
                 >
                   Why Choose{" "}
                   <span style={{ color: "#d89e37" }}>
-                    BBA - Aviation & Travel Management
+                    MBA - HR & Aviation Management
                   </span>
                 </h2>
                 <p
@@ -265,10 +266,10 @@ const MBAcoursedetail = () => {
                     color: "#555",
                   }}
                 >
-                  Gain specialized knowledge and leadership skills in the
-                  dynamic aviation and travel industries. This program prepares
-                  you for managerial roles in airport operations, travel
-                  management, airline management, and tourism services.
+                  Elevate your career by mastering HR strategies and aviation
+                  operations. This program equips you with essential leadership
+                  and management skills tailored for the fast-paced aviation
+                  industry.
                 </p>
               </div>
             </div>
@@ -277,27 +278,27 @@ const MBAcoursedetail = () => {
             {[
               {
                 id: "01",
-                title: "Comprehensive Aviation & Travel Curriculum",
+                title: "Specialized HR Skills for Aviation",
                 description:
-                  "Develop a deep understanding of airport management, aviation safety, travel logistics, airline operations, and tourism management.",
+                  "Gain in-depth knowledge in recruitment, talent management, and organizational development tailored to aviation environments.",
               },
               {
                 id: "02",
-                title: "Industry Expert Faculty",
+                title: "Airport & Airline Operations",
                 description:
-                  "Learn from experienced professionals and leaders from both the aviation and travel sectors.",
+                  "Understand the complexities of airport and airline management, including logistics, ground operations, and passenger services.",
               },
               {
                 id: "03",
-                title: "Internship & Practical Experience",
+                title: "Leadership & Strategic Management",
                 description:
-                  "Participate in internships with top aviation companies and travel agencies to gain hands-on experience.",
+                  "Develop leadership and strategic decision-making skills to drive growth and efficiency within aviation businesses.",
               },
               {
                 id: "04",
-                title: "Global Career Opportunities in Aviation & Travel",
+                title: "Global Career in Aviation HR",
                 description:
-                  "Unlock career opportunities with top airlines, travel agencies, and tourism companies worldwide.",
+                  "Unlock career opportunities in airlines, airport authorities, ground handling companies, and aviation consultancies across the globe.",
               },
             ].map((item) => (
               <div className="col-md-6 col-lg-3 d-flex" key={item.id}>
@@ -411,30 +412,31 @@ const MBAcoursedetail = () => {
                       className="mb-20"
                       style={{ fontSize: "2rem", fontWeight: "bold" }}
                     >
-                      BBA - Aviation & Travel Management
+                      MBA - HR & Aviation Management
                     </h3>
                     <p
                       className="mb-20"
                       style={{ fontSize: "1rem", lineHeight: "1.6" }}
                     >
-                      The BBA in Aviation & Travel Management provides students
-                      with a comprehensive understanding of both the aviation
-                      and travel industries. The program covers airport
-                      management, travel and tourism services, aviation safety,
-                      logistics, and airline operations. Graduates are equipped
-                      to take on managerial roles in the dynamic aviation and
-                      travel sectors.
+                      The MBA in HR & Aviation Management is a specialized
+                      postgraduate program that prepares students for managerial
+                      and leadership roles in both human resource management and
+                      the aviation industry. It focuses on equipping learners
+                      with the knowledge and skills needed to navigate the
+                      complex HR landscape while understanding the unique
+                      operational challenges of the aviation sector.
                     </p>
                     <p
                       className="mb-20"
                       style={{ fontSize: "1rem", lineHeight: "1.6" }}
                     >
-                      The program focuses on operations management in both
-                      aviation and travel, emphasizing tourism services, airport
-                      and airline management, and the latest trends in global
-                      travel. Students will gain practical insights into
-                      managing airports, airlines, travel agencies, and tourism
-                      businesses.
+                      The curriculum emphasizes strategic HR practices, talent
+                      acquisition, organizational behavior, airline and airport
+                      operations, aviation safety, and regulatory compliance.
+                      Students will gain practical insights through industry
+                      exposure and case studies, preparing them to lead in HR
+                      departments within airlines, airports, and other
+                      aviation-related organizations.
                     </p>
 
                     <div style={{ marginTop: "30px" }}>
@@ -443,13 +445,13 @@ const MBAcoursedetail = () => {
                           className="mb-3"
                           style={{ fontSize: "1.75rem", fontWeight: "bold" }}
                         >
-                          How To Succeed in BBA - Aviation & Travel Management
+                          How To Succeed in MBA - HR & Aviation Management
                         </h3>
                         <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                          To excel in the BBA - Aviation & Travel Management
-                          program, focus on understanding the complexities of
-                          airport operations, travel management, and aviation
-                          safety. Here are some tips to guide your preparation:
+                          To excel in the MBA - HR & Aviation Management
+                          program, students should focus on both HR fundamentals
+                          and aviation sector dynamics. Here are some tips for
+                          success:
                         </p>
                       </div>
                       <ul
@@ -467,8 +469,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Study the fundamentals of airport operations, airline
-                          management, and travel logistics.
+                          Master HR concepts such as talent management, employee
+                          relations, and workforce planning.
                         </li>
                         <li
                           style={{
@@ -481,9 +483,9 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Understand aviation safety regulations, including air
-                          traffic control, aircraft maintenance, and travel
-                          security protocols.
+                          Understand aviation-specific practices like airport
+                          management, airline operations, and aviation safety
+                          regulations.
                         </li>
                         <li
                           style={{
@@ -496,9 +498,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Gain knowledge of the travel industry, including
-                          tourism trends, travel agency operations, and customer
-                          service in travel.
+                          Develop strong communication, leadership, and conflict
+                          resolution skills to manage diverse teams effectively.
                         </li>
                         <li
                           style={{
@@ -511,9 +512,9 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Enhance leadership, problem-solving, and management
-                          skills to lead teams within both aviation and travel
-                          companies.
+                          Stay updated with trends in aviation technology and
+                          global HR practices to stay competitive in the job
+                          market.
                         </li>
                         <li
                           style={{
@@ -526,27 +527,30 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Stay updated with the latest trends, technologies, and
-                          regulations in both the aviation and travel
-                          industries.
+                          Participate in internships and industry projects to
+                          gain practical experience and build a strong
+                          professional network.
                         </li>
                       </ul>
                     </div>
+
                     <div className="my-4">
                       <h3
                         className="mb-3"
                         style={{ fontSize: "1.75rem", fontWeight: "bold" }}
                       >
-                        Admission in BBA - Aviation & Travel Management
+                        Admission in MBA - HR & Aviation Management
                       </h3>
                       <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                        The admission process for the BBA - Aviation & Travel
-                        Management program includes an entrance exam followed by
-                        a personal interview. Be prepared to showcase your
-                        passion for both the aviation and travel industries and
-                        demonstrate your academic potential. Ensure you meet the
-                        eligibility requirements and present your academic and
-                        extracurricular achievements.
+                        Admission to the MBA - HR & Aviation Management program
+                        typically involves an entrance exam and/or personal
+                        interview. Candidates should have a Bachelor’s degree in
+                        any discipline from a recognized university. Preference
+                        may be given to applicants with experience or academic
+                        background in management, human resources, or aviation.
+                        Strong communication skills, analytical thinking, and a
+                        passion for the aviation sector will enhance your
+                        selection prospects.
                       </p>
                     </div>
                   </div>
@@ -582,30 +586,35 @@ const MBAcoursedetail = () => {
                       style={{ fontSize: "2rem", fontWeight: "600" }}
                     >
                       Details About{" "}
-                      <span style={{ color: "#d89e37" }}>How To Apply</span> BBA
-                      - Aviation & Travel Management
+                      <span style={{ color: "#d89e37" }}>How To Apply</span> MBA
+                      - HR & Aviation Management
                     </h2>
                   </div>
                   <p
                     className="content-text"
                     style={{ fontSize: "1rem", lineHeight: "1.6" }}
                   >
-                    Applying for the BBA in Aviation & Travel Management is a
-                    structured process designed to ensure you have the necessary
-                    skills and qualifications to thrive in both the aviation and
-                    travel industries. Follow the steps below to submit your
-                    application correctly and on time.
+                    Applying for the MBA in HR & Aviation Management is a
+                    streamlined process aimed at identifying aspiring
+                    professionals with a strong interest in leadership, HR
+                    strategy, and the aviation industry. Candidates are
+                    evaluated on their academic background, communication
+                    skills, and management potential. Follow the steps below to
+                    apply confidently and efficiently.
                   </p>
 
                   <p
                     className="content-text mt-2"
                     style={{ fontSize: "1rem", lineHeight: "1.6" }}
                   >
-                    The program covers airport management, travel and tourism
-                    services, aviation safety, airline operations, and
-                    logistics, preparing you for leadership roles in both the
-                    aviation and travel sectors. Below are the steps you need to
-                    follow to apply and ensure a smooth application process.
+                    This program provides a powerful blend of HR management
+                    practices and aviation-specific training, including topics
+                    like talent acquisition, employee relations, airline
+                    operations, airport management, and regulatory frameworks.
+                    Graduates are well-positioned for careers in aviation HR,
+                    airport administration, ground handling services, and
+                    airline corporate offices. Here's how to begin your
+                    admission journey.
                   </p>
                 </div>
               </div>
@@ -619,7 +628,7 @@ const MBAcoursedetail = () => {
               >
                 <img
                   src="../assets/program/application.svg"
-                  alt="Aviation Application"
+                  alt="HR & Aviation Management Application"
                   style={{
                     width: "100%",
                     borderRadius: "8px",
@@ -644,16 +653,16 @@ const MBAcoursedetail = () => {
                       className="mb-3"
                       style={{ fontSize: "1.75rem", fontWeight: "600" }}
                     >
-                      Career Prospects and Future Scope for BBA - Aviation &
-                      Travel Management
+                      Career Prospects and Future Scope for MBA - HR & Aviation
+                      Management
                     </h3>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      Completing a BBA in Aviation & Travel Management opens
-                      doors to a wide range of career opportunities in the
-                      rapidly growing aviation and travel sectors. Graduates can
-                      work in various roles within airlines, travel agencies,
-                      airport operations, tour management, and more. Below are
-                      some potential career paths:
+                      An MBA in HR & Aviation Management opens up diverse career
+                      opportunities in the rapidly growing aviation industry.
+                      Graduates are equipped with dual expertise in human
+                      resource management and aviation operations, making them
+                      valuable assets for aviation companies and related
+                      sectors.
                     </p>
                     <ul
                       style={{
@@ -663,90 +672,95 @@ const MBAcoursedetail = () => {
                       }}
                     >
                       <li style={{ marginBottom: "10px" }}>
-                        Airline Operations Manager
+                        HR Manager in Airlines or Airport Services
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Travel Agency Manager
+                        Talent Acquisition Specialist for Aviation Firms
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Airport Operations Coordinator
-                      </li>
-                      <li style={{ marginBottom: "10px" }}>Tour Manager</li>
-                      <li style={{ marginBottom: "10px" }}>
-                        Aviation Safety Manager
+                        Training and Development Officer in Ground Handling
+                        Services
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Hospitality and Tourism Consultant
+                        Airline Operations Executive
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Travel Technology Specialist
+                        Aviation Compliance and Safety Coordinator
+                      </li>
+                      <li style={{ marginBottom: "10px" }}>
+                        Airport HR Administrator or Personnel Manager
+                      </li>
+                      <li style={{ marginBottom: "10px" }}>
+                        HR Consultant for Aviation Startups or Agencies
                       </li>
                     </ul>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      The aviation and travel industries are expanding rapidly,
-                      with advancements in travel technology, digital tourism
-                      services, and global airline operations. Graduates with a
-                      BBA in Aviation & Travel Management will be prepared to
-                      drive innovation, manage travel operations, and lead
-                      organizations in these ever-evolving sectors.
+                      The aviation sector continues to grow globally with rising
+                      demand for skilled professionals. With this degree,
+                      graduates can pursue leadership roles in both domestic and
+                      international aviation markets where HR practices are key
+                      to organizational success.
                     </p>
                   </div>
                 </div>
+
                 <div className="col-lg-6">
                   <div className="details-right">
                     <h3
                       className="mb-3"
                       style={{ fontSize: "1.75rem", fontWeight: "600" }}
                     >
-                      Application Requirements and Support for BBA - Aviation &
-                      Travel Management
+                      Application Requirements and Support for MBA - HR &
+                      Aviation Management
                     </h3>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      To successfully apply for the BBA in Aviation & Travel
-                      Management, ensure that you have the following documents:
+                      To apply for the MBA in HR & Aviation Management, please
+                      ensure you meet the following eligibility criteria and
+                      have the required documents:
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
-                        1. Higher Secondary Education (12th):
-                      </span>
-                      From a recognized board, preferably with a background in
-                      travel, tourism, or related fields.
-                    </p>
-                    <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      <span style={{ fontWeight: "bold" }}>
-                        2. Work Experience (Optional):
-                      </span>
-                      Experience in aviation, travel, or a related field is
+                        1. Bachelor's Degree:
+                      </span>{" "}
+                      From a recognized university in any discipline. A
+                      background in business, management, or aviation is
                       preferred but not mandatory.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
+                        2. Entrance Exam Score (If Required):
+                      </span>{" "}
+                      Some institutions may require a valid score in exams like
+                      CAT, MAT, or institution-specific tests.
+                    </p>
+                    <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+                      <span style={{ fontWeight: "bold" }}>
                         3. Identification Proof:
-                      </span>
-                      A valid government-issued ID such as a passport or
-                      national ID card.
+                      </span>{" "}
+                      A valid government-issued ID such as Aadhar Card,
+                      Passport, or PAN Card.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         4. Statement of Purpose (SOP):
-                      </span>
-                      Explaining your motivation for pursuing the BBA in
-                      Aviation & Travel Management program and your long-term
-                      career goals.
+                      </span>{" "}
+                      Explaining your interest in HR and aviation, career goals,
+                      and reasons for choosing this program.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         5. Financial Support:
-                      </span>
-                      Available for eligible candidates, including need-based
-                      aid, scholarships, and loan programs to assist with
-                      tuition fees.
+                      </span>{" "}
+                      Scholarships, educational loans, and merit-based financial
+                      aid may be available for eligible students. Some
+                      institutions also offer industry-sponsored programs or
+                      internships.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      Please ensure that all documents are in order to avoid any
-                      delays in the application process. Explore the available
-                      financial support options to assist with your tuition fees
-                      and related expenses.
+                      Prepare and submit your documents before the application
+                      deadline. Seek guidance from admissions counselors if
+                      needed and explore financial aid options to support your
+                      academic journey in the aviation management field.
                     </p>
                   </div>
                 </div>
@@ -770,14 +784,15 @@ const MBAcoursedetail = () => {
                 marginBottom: "30px",
               }}
             >
-              Our BBA in Aviation & Travel Management program offers unique
-              opportunities for students to interact with industry experts.
-              Through the Mentor and Guest Speaker program, students gain
-              valuable insights into both the aviation and travel industries,
-              network with professionals, and receive guidance on their career
-              journey in these dynamic sectors.
+              Our MBA in HR & Aviation Management program connects students with
+              seasoned professionals from the HR and aviation industries.
+              Through our Mentor and Guest Speaker Program, students gain
+              exposure to real-world challenges in talent management, aviation
+              operations, and organizational leadership, while building valuable
+              industry connections.
             </p>
           </div>
+
           <div style={{ marginBottom: "30px" }}>
             <h3 style={{ marginBottom: "30px" }}>Our Program Highlights</h3>
             <div className="row">
@@ -785,31 +800,30 @@ const MBAcoursedetail = () => {
                 <div className="scholarship-item">
                   <h4>Industry Mentors</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Our mentors include top executives from both the aviation
-                    and travel sectors, offering one-on-one guidance to help
-                    shape your career in aviation & travel management.
+                    Learn from experienced HR leaders and aviation managers who
+                    guide students on career development, leadership strategies,
+                    and navigating the corporate aviation environment.
                   </p>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="scholarship-item">
-                  <h4>Guest Lecturers</h4>
+                  <h4>Guest Lectures & Workshops</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Learn from industry experts through guest lectures,
-                    workshops, and webinars, where leading professionals in
-                    aviation and travel share their knowledge and experiences.
+                    Participate in sessions hosted by professionals from leading
+                    airlines, airport authorities, and HR consulting firms to
+                    gain first-hand insights into industry trends and
+                    expectations.
                   </p>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="scholarship-item">
-                  <h4>Aviation & Travel Innovation Hub</h4>
+                  <h4>Live Projects & Simulations</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Join our Aviation & Travel Innovation Hub, where students
-                    collaborate on projects focused on emerging aviation
-                    technologies, travel management, airline operations, and
-                    airport management, developing solutions to transform both
-                    sectors.
+                    Engage in live HR and aviation management projects including
+                    case studies, mock airline simulations, airport HR audits,
+                    and talent acquisition campaigns to build real-world skills.
                   </p>
                 </div>
               </div>
@@ -828,12 +842,11 @@ const MBAcoursedetail = () => {
                       Guidance and Support
                     </h3>
                     <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                      The BBA in Aviation & Travel Management provides students
-                      with personalized career guidance, mentorship from
-                      experienced professionals, and hands-on learning
-                      opportunities. Our team of mentors helps you identify the
-                      best career paths and assists you with networking in both
-                      the aviation and travel industries.
+                      The MBA in HR & Aviation Management program offers
+                      personalized mentoring, career counseling, and academic
+                      guidance. Students benefit from networking opportunities,
+                      mock interviews, and access to internship and placement
+                      support tailored to HR and aviation industry demands.
                     </p>
                     <Link
                       to="/apply-now"
@@ -866,25 +879,25 @@ const MBAcoursedetail = () => {
                       }}
                     >
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Higher Secondary
-                        (12th) education from a recognized board.
+                        <i className="fas fa-check-circle" /> Bachelor’s degree
+                        in any discipline from a recognized university.
                       </li>
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Experience in
-                        aviation, travel, or a related field (preferred but not
-                        mandatory).
+                        <i className="fas fa-check-circle" /> Valid score in
+                        entrance exams like CAT, MAT, or equivalent (if
+                        required).
                       </li>
                       <li style={{ fontSize: "16px" }}>
                         <i className="fas fa-check-circle" /> Statement of
-                        Purpose (SOP) explaining your motivation and career
-                        goals.
+                        Purpose (SOP) explaining your goals in HR and aviation
+                        management.
                       </li>
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Valid
-                        government-issued ID proof.
+                        <i className="fas fa-check-circle" /> Government-issued
+                        ID proof (Aadhar, Passport, etc.).
                       </li>
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Recent
+                        <i className="fas fa-check-circle" /> Updated resume and
                         passport-sized photographs.
                       </li>
                     </ul>
@@ -913,17 +926,17 @@ const MBAcoursedetail = () => {
                   </h2>
                 </div>
                 <p className="programfaq-faq-description">
-                  The BBA in Aviation & Travel Management program equips
-                  students with the necessary skills and knowledge to thrive in
-                  both the aviation and travel industries. Learn everything you
-                  need to know about the application process, eligibility, and
-                  program details here.
+                  The MBA in HR & Aviation Management program blends core HR
+                  skills with specialized knowledge in aviation industry
+                  operations. It prepares students to lead and manage human
+                  capital in aviation and allied sectors.
                 </p>
                 <p className="programfaq-faq-description">
-                  Our goal is to provide future leaders with the skills to
-                  manage aviation operations, travel management, safety, and
-                  logistics effectively while keeping up with global trends in
-                  aviation and travel.
+                  This program is ideal for individuals seeking managerial roles
+                  in airlines, airports, ground handling, and aviation
+                  consultancy firms. You'll gain insights into workforce
+                  planning, labor laws, recruitment, and training specific to
+                  the aviation domain.
                 </p>
 
                 <Link to="/contact" className="mt-2 programfaq-faq-button">
@@ -936,89 +949,83 @@ const MBAcoursedetail = () => {
                 defaultActiveKey="0"
                 className="programfaq-faq-accordion"
               >
-                {/* New FAQ Added */}
-                <Card className="programfaq-faq-card">
-                  <Accordion.Item eventKey="4">
-                    <Accordion.Header className="programfaq-faq-header">
-                      <span>
-                        <i
-                          className="fas fa-graduation-cap"
-                          style={{ color: "#d89e37" }}
-                        />
-                      </span>
-                      What Career Opportunities After Completing the Program?
-                    </Accordion.Header>
-                    <Accordion.Body className="programfaq-faq-body">
-                      Graduates of the BBA in Aviation & Travel Management
-                      program can pursue careers in roles such as airline
-                      operations, travel agency management, airport operations,
-                      logistics coordination, tourism management, and customer
-                      service. You may also find opportunities in aviation
-                      consulting, tourism consulting, and hospitality
-                      management.
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </Card>
                 <Card className="programfaq-faq-card">
                   <Accordion.Item eventKey="0">
                     <Accordion.Header className="programfaq-faq-header">
                       <span>
                         <i
-                          className="fas fa-paper-plane"
+                          className="fas fa-user-tie"
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      How Can I Apply for the BBA in Aviation & Travel Program?
+                      What Career Opportunities Are Available After the Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      You can apply online by filling out the application form
-                      available on our website. Ensure that you submit all the
-                      required documents, including your academic transcripts,
-                      resume, and Statement of Purpose (SOP), which should
-                      outline your interest in both the aviation and travel
-                      industries and your future career goals.
+                      Graduates can work in HR roles within airlines, airports,
+                      aviation MRO companies, recruitment firms, and aviation
+                      training organizations. Roles include HR Manager, Training
+                      & Development Officer, Talent Acquisition Specialist, and
+                      Aviation HR Consultant.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
+
                 <Card className="programfaq-faq-card">
-                  <Accordion.Item eventKey="5">
+                  <Accordion.Item eventKey="1">
                     <Accordion.Header className="programfaq-faq-header">
                       <span>
                         <i
-                          className="fas fa-clock"
+                          className="fas fa-plane-departure"
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      What is the Duration of the BBA in Aviation & Travel
-                      Program?
+                      How Can I Apply for the MBA in HR & Aviation Management?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      The BBA in Aviation & Travel Management is a 3-year
-                      full-time program designed to provide both theoretical
-                      knowledge and practical experience in aviation operations,
-                      travel management, tourism, logistics, and customer
-                      service.
+                      You can apply online via our official website. The
+                      application requires academic transcripts, a resume, and a
+                      Statement of Purpose outlining your interest in HR and the
+                      aviation industry.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
+
                 <Card className="programfaq-faq-card">
-                  <Accordion.Item eventKey="6">
+                  <Accordion.Item eventKey="2">
                     <Accordion.Header className="programfaq-faq-header">
                       <span>
                         <i
-                          className="fas fa-users-cog"
+                          className="fas fa-hourglass-half"
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      Will I Get Internship Opportunities During the Program?
+                      What is the Duration of the MBA Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      Yes, the program includes internship opportunities with
-                      leading companies in both aviation and travel sectors,
-                      allowing you to gain hands-on experience in aviation
-                      operations, travel management, tourism services, and
-                      logistics coordination. These internships help build
-                      professional connections in the industry.
+                      The MBA in HR & Aviation Management is a 2-year full-time
+                      program that includes classroom training, industry
+                      projects, workshops, and internships in HR and aviation
+                      sectors.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Card>
+
+                <Card className="programfaq-faq-card">
+                  <Accordion.Item eventKey="3">
+                    <Accordion.Header className="programfaq-faq-header">
+                      <span>
+                        <i
+                          className="fas fa-briefcase"
+                          style={{ color: "#d89e37" }}
+                        />
+                      </span>
+                      Are Internships Part of the Program?
+                    </Accordion.Header>
+                    <Accordion.Body className="programfaq-faq-body">
+                      Yes, internships are a key component of the program.
+                      Students get the opportunity to intern at airlines, HR
+                      consultancies, airport HR departments, and aviation
+                      service firms to gain real-world industry exposure.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>

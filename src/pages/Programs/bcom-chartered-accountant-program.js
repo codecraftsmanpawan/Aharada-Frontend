@@ -147,22 +147,16 @@ const MBAcoursedetail = () => {
           <div className="our-promise-text">
             <p className="promise-title">OUR PROMISE</p>
             <h2 className="main-heading">
-              Elevate your career in{" "}
-              <span className="highlight">B.Com - Chartered Accountant</span>,
-              mastering accounting and finance to shape the industry’s future.
+              Kickstart your career with{" "}
+              <span className="highlight">diverse job opportunities</span>
             </h2>
-
-            <div className="graduate-img hide-on-mobile">
-              <img
-                src="../assets/img/g.png"
-                alt="Graduate"
-                style={{ marginTop: "10px" }}
-              />
+            <div className="graduate-img">
+              <img src="../assets/img/g.png" alt="Graduate" />
             </div>
             <Link
               style={{ marginTop: "-110px", marginLeft: "40px" }}
               to="/contact"
-              className="th-btn style5 hide-on-mobile"
+              className="th-btn style5"
             >
               Get in Touch <i className="fas fa-long-arrow-right ms-2" />
             </Link>
@@ -170,19 +164,20 @@ const MBAcoursedetail = () => {
 
           <div className="job-stats">
             <div className="stat-box">
-              <strong>100+</strong>
-              <p>Top-tier accounting and finance firms</p>
+              <strong>150+</strong>
+              <p>Varied job profiles</p>
             </div>
             <div className="stat-box">
-              <strong>1500+</strong>
-              <p>Global career opportunities in accounting & finance</p>
+              <strong>1100+</strong>
+              <p>Unique job opportunities</p>
             </div>
             <div className="stat-box">
-              <strong>35%</strong>
-              <p>Transforming the finance and accounting landscape</p>
+              <strong>28.5%</strong>
+              <p>Students with 2+ job offers</p>
             </div>
             <Link
-              to="../../assets/img/BCom_Chartered_Accountant.pdf"
+              style={{ marginLeft: "40px" }}
+              to="../../assets/img/AEROSPACE.pdf"
               className="th-btn style4"
               target="_blank"
               rel="noopener noreferrer"

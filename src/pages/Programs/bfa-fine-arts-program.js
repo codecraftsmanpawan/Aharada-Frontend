@@ -61,7 +61,7 @@ const MBAcoursedetail = () => {
                 textAlign: "center",
               }}
             >
-              BBA - Aviation & Travel Management
+              BBA - FinTech
             </h1>
             <ol
               style={{
@@ -134,7 +134,7 @@ const MBAcoursedetail = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  Aviation & Travel Management
+                  FinTech
                 </a>
               </li>
             </ol>
@@ -206,30 +206,30 @@ const MBAcoursedetail = () => {
               <h3>Course Overview</h3>
               <div className="product-about">
                 <p className="text">
-                  Our BBA in Aviation & Travel Management is designed to provide
-                  students with a comprehensive understanding of the aviation
-                  and travel industry, including airport management, aviation
-                  safety, logistics, airline operations, and the management of
-                  travel and tourism services. This program prepares graduates
-                  to take on leadership roles in the rapidly evolving aviation
-                  and travel sectors.
+                  Our BBA in FinTech is designed to provide students with a
+                  comprehensive understanding of financial technologies, digital
+                  finance, blockchain, and the necessary skills to innovate and
+                  manage financial services in a rapidly evolving industry. This
+                  program equips graduates with the expertise to lead and drive
+                  innovation in the global financial sector.
                 </p>
 
                 <p className="text">
-                  <strong>Duration of the Course:</strong> The BBA in Aviation &
-                  Travel Management is a 3-year full-time program that combines
-                  theoretical knowledge with practical experience in both the
-                  aviation and travel industries, preparing students for various
-                  roles in aviation operations, travel management, and customer
-                  service.
+                  <strong>Duration of the Course:</strong> The BBA in FinTech is
+                  a 3-year full-time program that combines theoretical learning
+                  with practical experience. Students will gain hands-on
+                  exposure to digital banking, blockchain technologies,
+                  financial data analytics, and investment management, preparing
+                  them for key roles in financial services, tech-driven finance,
+                  and digital banking.
                 </p>
 
                 <p className="text">
-                  <strong>Eligibility Requirements:</strong> To apply for this
-                  program, you must have completed higher secondary education
-                  (12th grade) from a recognized board. While prior experience
-                  in aviation, travel, or business management is beneficial, it
-                  is not mandatory.
+                  <strong>Eligibility Requirements:</strong> Applicants must
+                  have completed higher secondary education (12th grade) from a
+                  recognized board. While prior experience in finance,
+                  technology, or business is beneficial, it is not a mandatory
+                  requirement.
                 </p>
               </div>
             </div>
@@ -254,9 +254,7 @@ const MBAcoursedetail = () => {
                   style={{ fontSize: "2rem", fontWeight: "600" }}
                 >
                   Why Choose{" "}
-                  <span style={{ color: "#d89e37" }}>
-                    BBA - Aviation & Travel Management
-                  </span>
+                  <span style={{ color: "#d89e37" }}>BFA - Fine Arts</span>
                 </h2>
                 <p
                   style={{
@@ -265,10 +263,11 @@ const MBAcoursedetail = () => {
                     color: "#555",
                   }}
                 >
-                  Gain specialized knowledge and leadership skills in the
-                  dynamic aviation and travel industries. This program prepares
-                  you for managerial roles in airport operations, travel
-                  management, airline management, and tourism services.
+                  Explore your passion for creativity and art in the BFA
+                  program. This program prepares you for a successful career in
+                  visual arts, design, art history, and more, empowering you to
+                  express ideas and create innovative works that resonate
+                  globally.
                 </p>
               </div>
             </div>
@@ -277,27 +276,27 @@ const MBAcoursedetail = () => {
             {[
               {
                 id: "01",
-                title: "Comprehensive Aviation & Travel Curriculum",
+                title: "Comprehensive Fine Arts Curriculum",
                 description:
-                  "Develop a deep understanding of airport management, aviation safety, travel logistics, airline operations, and tourism management.",
+                  "Develop a strong foundation in visual arts, design, painting, sculpture, and digital arts, blending creativity with technical skills.",
               },
               {
                 id: "02",
                 title: "Industry Expert Faculty",
                 description:
-                  "Learn from experienced professionals and leaders from both the aviation and travel sectors.",
+                  "Learn from leading artists and professionals in the art world who provide guidance in various disciplines, including contemporary art and design.",
               },
               {
                 id: "03",
                 title: "Internship & Practical Experience",
                 description:
-                  "Participate in internships with top aviation companies and travel agencies to gain hands-on experience.",
+                  "Participate in internships and workshops with art galleries, museums, and design studios, gaining hands-on experience in the creative industry.",
               },
               {
                 id: "04",
-                title: "Global Career Opportunities in Aviation & Travel",
+                title: "Global Career Opportunities in Fine Arts",
                 description:
-                  "Unlock career opportunities with top airlines, travel agencies, and tourism companies worldwide.",
+                  "Unlock career opportunities with art institutions, galleries, museums, design agencies, and creative tech companies shaping the global art scene.",
               },
             ].map((item) => (
               <div className="col-md-6 col-lg-3 d-flex" key={item.id}>
@@ -398,7 +397,7 @@ const MBAcoursedetail = () => {
                   <div className="department-details-img mb-30">
                     <img
                       src="../assets/program/aharadaedu3.JPG"
-                      alt="Aviation Management"
+                      alt="Fine Arts"
                       style={{
                         width: "100%",
                         height: "565px",
@@ -411,30 +410,29 @@ const MBAcoursedetail = () => {
                       className="mb-20"
                       style={{ fontSize: "2rem", fontWeight: "bold" }}
                     >
-                      BBA - Aviation & Travel Management
+                      BFA - Fine Arts
                     </h3>
                     <p
                       className="mb-20"
                       style={{ fontSize: "1rem", lineHeight: "1.6" }}
                     >
-                      The BBA in Aviation & Travel Management provides students
-                      with a comprehensive understanding of both the aviation
-                      and travel industries. The program covers airport
-                      management, travel and tourism services, aviation safety,
-                      logistics, and airline operations. Graduates are equipped
-                      to take on managerial roles in the dynamic aviation and
-                      travel sectors.
+                      The BFA in Fine Arts program is designed to nurture and
+                      develop your creative talents, offering a deep dive into
+                      various forms of visual arts including painting,
+                      sculpture, digital arts, and design. The program prepares
+                      you for a successful career in the arts, providing you
+                      with the tools to excel in creative industries and
+                      contribute to the evolving landscape of visual expression.
                     </p>
                     <p
                       className="mb-20"
                       style={{ fontSize: "1rem", lineHeight: "1.6" }}
                     >
-                      The program focuses on operations management in both
-                      aviation and travel, emphasizing tourism services, airport
-                      and airline management, and the latest trends in global
-                      travel. Students will gain practical insights into
-                      managing airports, airlines, travel agencies, and tourism
-                      businesses.
+                      This program focuses on cultivating artistic skills,
+                      enhancing creativity, and helping you understand the
+                      broader context of the art world. Students will gain
+                      hands-on experience and learn from accomplished artists
+                      and industry professionals in the field of Fine Arts.
                     </p>
 
                     <div style={{ marginTop: "30px" }}>
@@ -443,13 +441,13 @@ const MBAcoursedetail = () => {
                           className="mb-3"
                           style={{ fontSize: "1.75rem", fontWeight: "bold" }}
                         >
-                          How To Succeed in BBA - Aviation & Travel Management
+                          How To Succeed in BFA - Fine Arts
                         </h3>
                         <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                          To excel in the BBA - Aviation & Travel Management
-                          program, focus on understanding the complexities of
-                          airport operations, travel management, and aviation
-                          safety. Here are some tips to guide your preparation:
+                          To excel in the BFA - Fine Arts program, focus on
+                          developing your creative expression, technical skills,
+                          and understanding of art history. Here are some tips
+                          to guide your preparation:
                         </p>
                       </div>
                       <ul
@@ -467,8 +465,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Study the fundamentals of airport operations, airline
-                          management, and travel logistics.
+                          Experiment with various forms of art like painting,
+                          sculpture, digital art, and graphic design.
                         </li>
                         <li
                           style={{
@@ -481,9 +479,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Understand aviation safety regulations, including air
-                          traffic control, aircraft maintenance, and travel
-                          security protocols.
+                          Develop a strong understanding of art history and
+                          contemporary art movements.
                         </li>
                         <li
                           style={{
@@ -496,9 +493,9 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Gain knowledge of the travel industry, including
-                          tourism trends, travel agency operations, and customer
-                          service in travel.
+                          Participate in art exhibitions, galleries, and
+                          community art events to build your portfolio and
+                          visibility.
                         </li>
                         <li
                           style={{
@@ -511,9 +508,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Enhance leadership, problem-solving, and management
-                          skills to lead teams within both aviation and travel
-                          companies.
+                          Collaborate with fellow artists and mentors to refine
+                          your craft.
                         </li>
                         <li
                           style={{
@@ -526,9 +522,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Stay updated with the latest trends, technologies, and
-                          regulations in both the aviation and travel
-                          industries.
+                          Stay updated with the latest art trends, techniques,
+                          and technologies in the Fine Arts industry.
                         </li>
                       </ul>
                     </div>
@@ -537,16 +532,15 @@ const MBAcoursedetail = () => {
                         className="mb-3"
                         style={{ fontSize: "1.75rem", fontWeight: "bold" }}
                       >
-                        Admission in BBA - Aviation & Travel Management
+                        Admission in BFA - Fine Arts
                       </h3>
                       <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                        The admission process for the BBA - Aviation & Travel
-                        Management program includes an entrance exam followed by
-                        a personal interview. Be prepared to showcase your
-                        passion for both the aviation and travel industries and
-                        demonstrate your academic potential. Ensure you meet the
-                        eligibility requirements and present your academic and
-                        extracurricular achievements.
+                        The admission process for the BFA - Fine Arts program
+                        includes a portfolio review, an entrance exam, and an
+                        interview. Showcase your artistic works, passion for
+                        creativity, and academic potential. Be sure to meet the
+                        eligibility requirements and present your artistic
+                        achievements during the selection process.
                       </p>
                     </div>
                   </div>
@@ -582,30 +576,32 @@ const MBAcoursedetail = () => {
                       style={{ fontSize: "2rem", fontWeight: "600" }}
                     >
                       Details About{" "}
-                      <span style={{ color: "#d89e37" }}>How To Apply</span> BBA
-                      - Aviation & Travel Management
+                      <span style={{ color: "#d89e37" }}>How To Apply</span> BFA
+                      - Fine Arts
                     </h2>
                   </div>
                   <p
                     className="content-text"
                     style={{ fontSize: "1rem", lineHeight: "1.6" }}
                   >
-                    Applying for the BBA in Aviation & Travel Management is a
-                    structured process designed to ensure you have the necessary
-                    skills and qualifications to thrive in both the aviation and
-                    travel industries. Follow the steps below to submit your
-                    application correctly and on time.
+                    Applying for the BFA in Fine Arts is a creative and artistic
+                    process that allows you to showcase your passion and skills
+                    in visual arts, design, and artistic expression. Follow the
+                    steps below to submit your application correctly and ensure
+                    you’re prepared for an exciting journey in the world of Fine
+                    Arts.
                   </p>
 
                   <p
                     className="content-text mt-2"
                     style={{ fontSize: "1rem", lineHeight: "1.6" }}
                   >
-                    The program covers airport management, travel and tourism
-                    services, aviation safety, airline operations, and
-                    logistics, preparing you for leadership roles in both the
-                    aviation and travel sectors. Below are the steps you need to
-                    follow to apply and ensure a smooth application process.
+                    The program covers various artistic disciplines such as
+                    painting, sculpture, digital arts, design, and art history.
+                    It prepares you for creative roles in art galleries,
+                    museums, design agencies, and other artistic industries.
+                    Below are the steps you need to follow to apply and ensure a
+                    seamless application process.
                   </p>
                 </div>
               </div>
@@ -619,7 +615,7 @@ const MBAcoursedetail = () => {
               >
                 <img
                   src="../assets/program/application.svg"
-                  alt="Aviation Application"
+                  alt="Fine Arts Application"
                   style={{
                     width: "100%",
                     borderRadius: "8px",
@@ -644,16 +640,14 @@ const MBAcoursedetail = () => {
                       className="mb-3"
                       style={{ fontSize: "1.75rem", fontWeight: "600" }}
                     >
-                      Career Prospects and Future Scope for BBA - Aviation &
-                      Travel Management
+                      Career Prospects and Future Scope for BFA - Fine Arts
                     </h3>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      Completing a BBA in Aviation & Travel Management opens
-                      doors to a wide range of career opportunities in the
-                      rapidly growing aviation and travel sectors. Graduates can
-                      work in various roles within airlines, travel agencies,
-                      airport operations, tour management, and more. Below are
-                      some potential career paths:
+                      Completing a BFA in Fine Arts opens doors to a wide range
+                      of career opportunities in the creative and artistic
+                      industries. Graduates can pursue careers in visual arts,
+                      design, art direction, curating, and more. Below are some
+                      potential career paths:
                     </p>
                     <ul
                       style={{
@@ -663,32 +657,24 @@ const MBAcoursedetail = () => {
                       }}
                     >
                       <li style={{ marginBottom: "10px" }}>
-                        Airline Operations Manager
+                        Fine Artist (Painter, Sculptor)
                       </li>
+                      <li style={{ marginBottom: "10px" }}>Art Director</li>
+                      <li style={{ marginBottom: "10px" }}>Gallery Curator</li>
+                      <li style={{ marginBottom: "10px" }}>Graphic Designer</li>
+                      <li style={{ marginBottom: "10px" }}>Art Educator</li>
                       <li style={{ marginBottom: "10px" }}>
-                        Travel Agency Manager
+                        Museum/Gallery Assistant
                       </li>
-                      <li style={{ marginBottom: "10px" }}>
-                        Airport Operations Coordinator
-                      </li>
-                      <li style={{ marginBottom: "10px" }}>Tour Manager</li>
-                      <li style={{ marginBottom: "10px" }}>
-                        Aviation Safety Manager
-                      </li>
-                      <li style={{ marginBottom: "10px" }}>
-                        Hospitality and Tourism Consultant
-                      </li>
-                      <li style={{ marginBottom: "10px" }}>
-                        Travel Technology Specialist
-                      </li>
+                      <li style={{ marginBottom: "10px" }}>Art Therapist</li>
                     </ul>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      The aviation and travel industries are expanding rapidly,
-                      with advancements in travel technology, digital tourism
-                      services, and global airline operations. Graduates with a
-                      BBA in Aviation & Travel Management will be prepared to
-                      drive innovation, manage travel operations, and lead
-                      organizations in these ever-evolving sectors.
+                      The Fine Arts sector continues to expand, with increasing
+                      opportunities in fields such as graphic design, museum and
+                      gallery management, art education, and more. Graduates
+                      with a BFA in Fine Arts will be prepared to lead in the
+                      creative sector, express ideas through art, and contribute
+                      to the cultural and visual landscape.
                     </p>
                   </div>
                 </div>
@@ -698,46 +684,46 @@ const MBAcoursedetail = () => {
                       className="mb-3"
                       style={{ fontSize: "1.75rem", fontWeight: "600" }}
                     >
-                      Application Requirements and Support for BBA - Aviation &
-                      Travel Management
+                      Application Requirements and Support for BFA - Fine Arts
                     </h3>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      To successfully apply for the BBA in Aviation & Travel
-                      Management, ensure that you have the following documents:
+                      To successfully apply for the BFA in Fine Arts, ensure
+                      that you have the following documents:
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         1. Higher Secondary Education (12th):
-                      </span>
+                      </span>{" "}
                       From a recognized board, preferably with a background in
-                      travel, tourism, or related fields.
+                      arts, humanities, or design-related fields.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
-                        2. Work Experience (Optional):
-                      </span>
-                      Experience in aviation, travel, or a related field is
-                      preferred but not mandatory.
+                        2. Portfolio (Essential):
+                      </span>{" "}
+                      A portfolio showcasing your creative works, such as
+                      paintings, sculptures, digital art, or any other form of
+                      artwork you have created.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         3. Identification Proof:
-                      </span>
+                      </span>{" "}
                       A valid government-issued ID such as a passport or
                       national ID card.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         4. Statement of Purpose (SOP):
-                      </span>
-                      Explaining your motivation for pursuing the BBA in
-                      Aviation & Travel Management program and your long-term
-                      career goals.
+                      </span>{" "}
+                      Explaining your motivation for pursuing the BFA in Fine
+                      Arts program and your long-term career goals in the
+                      creative sector.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         5. Financial Support:
-                      </span>
+                      </span>{" "}
                       Available for eligible candidates, including need-based
                       aid, scholarships, and loan programs to assist with
                       tuition fees.
@@ -770,12 +756,13 @@ const MBAcoursedetail = () => {
                 marginBottom: "30px",
               }}
             >
-              Our BBA in Aviation & Travel Management program offers unique
-              opportunities for students to interact with industry experts.
-              Through the Mentor and Guest Speaker program, students gain
-              valuable insights into both the aviation and travel industries,
-              network with professionals, and receive guidance on their career
-              journey in these dynamic sectors.
+              Our BFA in Fine Arts program offers unique opportunities for
+              students to interact with industry experts. Through the Mentor and
+              Guest Speaker program, students gain valuable insights into the
+              art and creative industries, network with successful artists,
+              curators, and professionals, and receive guidance on their journey
+              in visual arts, design, art history, and innovation in creative
+              industries.
             </p>
           </div>
           <div style={{ marginBottom: "30px" }}>
@@ -785,9 +772,9 @@ const MBAcoursedetail = () => {
                 <div className="scholarship-item">
                   <h4>Industry Mentors</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Our mentors include top executives from both the aviation
-                    and travel sectors, offering one-on-one guidance to help
-                    shape your career in aviation & travel management.
+                    Our mentors include leading artists, designers, and curators
+                    who offer one-on-one guidance to help shape your creative
+                    career in the rapidly evolving art and design industries.
                   </p>
                 </div>
               </div>
@@ -795,21 +782,21 @@ const MBAcoursedetail = () => {
                 <div className="scholarship-item">
                   <h4>Guest Lecturers</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Learn from industry experts through guest lectures,
-                    workshops, and webinars, where leading professionals in
-                    aviation and travel share their knowledge and experiences.
+                    Learn from industry leaders through guest lectures,
+                    workshops, and webinars, where professionals in Fine Arts,
+                    design, and visual arts share their knowledge, insights, and
+                    experiences.
                   </p>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="scholarship-item">
-                  <h4>Aviation & Travel Innovation Hub</h4>
+                  <h4>Creative Hub</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Join our Aviation & Travel Innovation Hub, where students
-                    collaborate on projects focused on emerging aviation
-                    technologies, travel management, airline operations, and
-                    airport management, developing solutions to transform both
-                    sectors.
+                    Join our Creative Hub, where students collaborate on art and
+                    design projects, explore new artistic methods, and develop
+                    innovative solutions to challenges in the creative
+                    industries.
                   </p>
                 </div>
               </div>
@@ -828,12 +815,13 @@ const MBAcoursedetail = () => {
                       Guidance and Support
                     </h3>
                     <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                      The BBA in Aviation & Travel Management provides students
-                      with personalized career guidance, mentorship from
-                      experienced professionals, and hands-on learning
-                      opportunities. Our team of mentors helps you identify the
-                      best career paths and assists you with networking in both
-                      the aviation and travel industries.
+                      The BFA in Fine Arts provides students with personalized
+                      career guidance, mentorship from experienced artists,
+                      curators, and industry professionals, as well as hands-on
+                      learning opportunities. Our team of mentors helps you
+                      identify the best career paths in the evolving world of
+                      art, design, and visual arts, and assists you with
+                      networking in the creative industries.
                     </p>
                     <Link
                       to="/apply-now"
@@ -867,17 +855,20 @@ const MBAcoursedetail = () => {
                     >
                       <li style={{ fontSize: "16px" }}>
                         <i className="fas fa-check-circle" /> Higher Secondary
-                        (12th) education from a recognized board.
+                        (12th) education from a recognized board, preferably
+                        with a background in arts, humanities, or design-related
+                        fields.
                       </li>
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Experience in
-                        aviation, travel, or a related field (preferred but not
-                        mandatory).
+                        <i className="fas fa-check-circle" /> A portfolio
+                        showcasing your creative works, such as paintings,
+                        drawings, sculptures, or digital artwork.
                       </li>
                       <li style={{ fontSize: "16px" }}>
                         <i className="fas fa-check-circle" /> Statement of
-                        Purpose (SOP) explaining your motivation and career
-                        goals.
+                        Purpose (SOP) explaining your motivation for pursuing
+                        the BFA in Fine Arts and your long-term career goals in
+                        the creative sector.
                       </li>
                       <li style={{ fontSize: "16px" }}>
                         <i className="fas fa-check-circle" /> Valid
@@ -913,17 +904,18 @@ const MBAcoursedetail = () => {
                   </h2>
                 </div>
                 <p className="programfaq-faq-description">
-                  The BBA in Aviation & Travel Management program equips
-                  students with the necessary skills and knowledge to thrive in
-                  both the aviation and travel industries. Learn everything you
-                  need to know about the application process, eligibility, and
-                  program details here.
+                  The BFA in Fine Arts program prepares students to explore and
+                  develop their creative skills in various artistic disciplines,
+                  such as painting, sculpture, digital arts, and design. Learn
+                  everything you need to know about the application process,
+                  eligibility, and program details here.
                 </p>
                 <p className="programfaq-faq-description">
-                  Our goal is to provide future leaders with the skills to
-                  manage aviation operations, travel management, safety, and
-                  logistics effectively while keeping up with global trends in
-                  aviation and travel.
+                  Our goal is to equip future artists with the knowledge,
+                  techniques, and creativity needed to express ideas and
+                  contribute to the evolving art world. The program encourages
+                  artistic experimentation, critical thinking, and
+                  collaboration.
                 </p>
 
                 <Link to="/contact" className="mt-2 programfaq-faq-button">
@@ -936,26 +928,24 @@ const MBAcoursedetail = () => {
                 defaultActiveKey="0"
                 className="programfaq-faq-accordion"
               >
-                {/* New FAQ Added */}
                 <Card className="programfaq-faq-card">
                   <Accordion.Item eventKey="4">
                     <Accordion.Header className="programfaq-faq-header">
                       <span>
                         <i
-                          className="fas fa-graduation-cap"
+                          className="fas fa-paint-brush"
                           style={{ color: "#d89e37" }}
                         />
                       </span>
                       What Career Opportunities After Completing the Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      Graduates of the BBA in Aviation & Travel Management
-                      program can pursue careers in roles such as airline
-                      operations, travel agency management, airport operations,
-                      logistics coordination, tourism management, and customer
-                      service. You may also find opportunities in aviation
-                      consulting, tourism consulting, and hospitality
-                      management.
+                      Graduates of the BFA in Fine Arts program can pursue
+                      careers in roles such as fine artist (painter, sculptor),
+                      art director, gallery curator, graphic designer, museum
+                      assistant, art educator, and more. You may also explore
+                      opportunities in digital art, art therapy, and art
+                      consulting.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -968,15 +958,15 @@ const MBAcoursedetail = () => {
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      How Can I Apply for the BBA in Aviation & Travel Program?
+                      How Can I Apply for the BFA in Fine Arts Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
                       You can apply online by filling out the application form
                       available on our website. Ensure that you submit all the
-                      required documents, including your academic transcripts,
-                      resume, and Statement of Purpose (SOP), which should
-                      outline your interest in both the aviation and travel
-                      industries and your future career goals.
+                      required documents, including your portfolio, academic
+                      transcripts, and a Statement of Purpose (SOP), which
+                      should outline your artistic journey and long-term career
+                      goals in the art world.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -989,15 +979,13 @@ const MBAcoursedetail = () => {
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      What is the Duration of the BBA in Aviation & Travel
-                      Program?
+                      What is the Duration of the BFA in Fine Arts Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      The BBA in Aviation & Travel Management is a 3-year
-                      full-time program designed to provide both theoretical
-                      knowledge and practical experience in aviation operations,
-                      travel management, tourism, logistics, and customer
-                      service.
+                      The BFA in Fine Arts is a 3-year full-time program
+                      designed to provide both practical and theoretical
+                      knowledge in the fields of painting, sculpture, digital
+                      art, design, and art history.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -1014,11 +1002,10 @@ const MBAcoursedetail = () => {
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
                       Yes, the program includes internship opportunities with
-                      leading companies in both aviation and travel sectors,
-                      allowing you to gain hands-on experience in aviation
-                      operations, travel management, tourism services, and
-                      logistics coordination. These internships help build
-                      professional connections in the industry.
+                      leading art galleries, design agencies, museums, and
+                      digital art studios. These internships provide hands-on
+                      experience in the creative sector, including art curation,
+                      design work, and digital arts.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>

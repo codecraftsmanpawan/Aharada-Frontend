@@ -61,7 +61,7 @@ const MBAcoursedetail = () => {
                 textAlign: "center",
               }}
             >
-              BBA - Aviation & Travel Management
+              M.Tech - Defence Technology
             </h1>
             <ol
               style={{
@@ -134,7 +134,7 @@ const MBAcoursedetail = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  Aviation & Travel Management
+                  Defence Technology
                 </a>
               </li>
             </ol>
@@ -206,30 +206,32 @@ const MBAcoursedetail = () => {
               <h3>Course Overview</h3>
               <div className="product-about">
                 <p className="text">
-                  Our BBA in Aviation & Travel Management is designed to provide
-                  students with a comprehensive understanding of the aviation
-                  and travel industry, including airport management, aviation
-                  safety, logistics, airline operations, and the management of
-                  travel and tourism services. This program prepares graduates
-                  to take on leadership roles in the rapidly evolving aviation
-                  and travel sectors.
+                  Our M.Tech in Defence Technology is designed to provide
+                  students with an in-depth understanding of advanced
+                  technologies used in the defense sector. The program covers
+                  areas such as defense systems engineering, military
+                  technology, cybersecurity, unmanned systems, missile
+                  technology, and strategic defense management. This program
+                  prepares graduates to take on critical roles in defense
+                  research, development, and innovation.
                 </p>
 
                 <p className="text">
-                  <strong>Duration of the Course:</strong> The BBA in Aviation &
-                  Travel Management is a 3-year full-time program that combines
-                  theoretical knowledge with practical experience in both the
-                  aviation and travel industries, preparing students for various
-                  roles in aviation operations, travel management, and customer
-                  service.
+                  <strong>Duration of the Course:</strong> The M.Tech in Defence
+                  Technology is a 2-year full-time program that combines
+                  advanced theoretical knowledge with practical applications in
+                  the defense and security sectors. It is tailored to equip
+                  students with the skills needed for engineering, designing,
+                  and managing state-of-the-art defense technologies.
                 </p>
 
                 <p className="text">
                   <strong>Eligibility Requirements:</strong> To apply for this
-                  program, you must have completed higher secondary education
-                  (12th grade) from a recognized board. While prior experience
-                  in aviation, travel, or business management is beneficial, it
-                  is not mandatory.
+                  program, candidates must have a Bachelor’s degree in
+                  Engineering or Technology (B.Tech/B.E.) from a recognized
+                  university. Candidates with prior experience or specialization
+                  in defense, electronics, mechanical engineering, or related
+                  fields will have an added advantage.
                 </p>
               </div>
             </div>
@@ -255,7 +257,7 @@ const MBAcoursedetail = () => {
                 >
                   Why Choose{" "}
                   <span style={{ color: "#d89e37" }}>
-                    BBA - Aviation & Travel Management
+                    M.Tech - Defence Technology
                   </span>
                 </h2>
                 <p
@@ -265,10 +267,9 @@ const MBAcoursedetail = () => {
                     color: "#555",
                   }}
                 >
-                  Gain specialized knowledge and leadership skills in the
-                  dynamic aviation and travel industries. This program prepares
-                  you for managerial roles in airport operations, travel
-                  management, airline management, and tourism services.
+                  Gain advanced knowledge in defence systems, cybersecurity, and
+                  military technology. This program prepares you for leadership
+                  roles in defense research, development, and innovation.
                 </p>
               </div>
             </div>
@@ -277,27 +278,27 @@ const MBAcoursedetail = () => {
             {[
               {
                 id: "01",
-                title: "Comprehensive Aviation & Travel Curriculum",
+                title: "Advanced Defence Systems Engineering",
                 description:
-                  "Develop a deep understanding of airport management, aviation safety, travel logistics, airline operations, and tourism management.",
+                  "Master the design and operation of state-of-the-art defence systems including military technologies, unmanned systems, and missile technologies.",
               },
               {
                 id: "02",
-                title: "Industry Expert Faculty",
+                title: "Cybersecurity and Strategic Defence",
                 description:
-                  "Learn from experienced professionals and leaders from both the aviation and travel sectors.",
+                  "Learn cutting-edge strategies to secure defence networks, systems, and critical infrastructures from cyber threats and attacks.",
               },
               {
                 id: "03",
-                title: "Internship & Practical Experience",
+                title: "Research & Development Focus",
                 description:
-                  "Participate in internships with top aviation companies and travel agencies to gain hands-on experience.",
+                  "Engage in defense technology research, development, and practical projects that address the latest challenges in the defense sector.",
               },
               {
                 id: "04",
-                title: "Global Career Opportunities in Aviation & Travel",
+                title: "Global Career Opportunities in Defence Technology",
                 description:
-                  "Unlock career opportunities with top airlines, travel agencies, and tourism companies worldwide.",
+                  "Open doors to high-impact careers in government defense agencies, military contractors, and technology companies involved in national security.",
               },
             ].map((item) => (
               <div className="col-md-6 col-lg-3 d-flex" key={item.id}>
@@ -411,30 +412,32 @@ const MBAcoursedetail = () => {
                       className="mb-20"
                       style={{ fontSize: "2rem", fontWeight: "bold" }}
                     >
-                      BBA - Aviation & Travel Management
+                      M.Tech - Defence Technology
                     </h3>
                     <p
                       className="mb-20"
                       style={{ fontSize: "1rem", lineHeight: "1.6" }}
                     >
-                      The BBA in Aviation & Travel Management provides students
-                      with a comprehensive understanding of both the aviation
-                      and travel industries. The program covers airport
-                      management, travel and tourism services, aviation safety,
-                      logistics, and airline operations. Graduates are equipped
-                      to take on managerial roles in the dynamic aviation and
-                      travel sectors.
+                      The M.Tech in Defence Technology offers a specialized
+                      education focused on advanced technologies and systems
+                      used in national defense and security. This program covers
+                      military engineering, weapon systems, cybersecurity,
+                      defence electronics, and defence manufacturing
+                      technologies. Graduates will be equipped to contribute to
+                      defense research and development, national security, and
+                      innovation in military technologies.
                     </p>
                     <p
                       className="mb-20"
                       style={{ fontSize: "1rem", lineHeight: "1.6" }}
                     >
-                      The program focuses on operations management in both
-                      aviation and travel, emphasizing tourism services, airport
-                      and airline management, and the latest trends in global
-                      travel. Students will gain practical insights into
-                      managing airports, airlines, travel agencies, and tourism
-                      businesses.
+                      The program focuses on enhancing technical expertise in
+                      areas like aerospace engineering, weaponry, cybersecurity
+                      protocols, and autonomous defense systems. Students will
+                      gain practical knowledge about military applications of
+                      cutting-edge technologies, and will also develop critical
+                      problem-solving and research skills applicable to defense
+                      sectors.
                     </p>
 
                     <div style={{ marginTop: "30px" }}>
@@ -443,13 +446,13 @@ const MBAcoursedetail = () => {
                           className="mb-3"
                           style={{ fontSize: "1.75rem", fontWeight: "bold" }}
                         >
-                          How To Succeed in BBA - Aviation & Travel Management
+                          How To Succeed in M.Tech - Defence Technology
                         </h3>
                         <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                          To excel in the BBA - Aviation & Travel Management
-                          program, focus on understanding the complexities of
-                          airport operations, travel management, and aviation
-                          safety. Here are some tips to guide your preparation:
+                          To excel in the M.Tech - Defence Technology program,
+                          focus on mastering defense-specific technologies and
+                          innovations. Here are some tips to guide your
+                          preparation:
                         </p>
                       </div>
                       <ul
@@ -467,8 +470,9 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Study the fundamentals of airport operations, airline
-                          management, and travel logistics.
+                          Study the fundamentals of defense technologies
+                          including military engineering, weaponry, and
+                          aerospace systems.
                         </li>
                         <li
                           style={{
@@ -481,9 +485,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Understand aviation safety regulations, including air
-                          traffic control, aircraft maintenance, and travel
-                          security protocols.
+                          Understand the latest developments in cybersecurity,
+                          defense electronics, and autonomous defense systems.
                         </li>
                         <li
                           style={{
@@ -496,9 +499,9 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Gain knowledge of the travel industry, including
-                          tourism trends, travel agency operations, and customer
-                          service in travel.
+                          Gain expertise in defense manufacturing processes and
+                          the integration of advanced technologies in defense
+                          systems.
                         </li>
                         <li
                           style={{
@@ -511,9 +514,9 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Enhance leadership, problem-solving, and management
-                          skills to lead teams within both aviation and travel
-                          companies.
+                          Develop skills in project management, research, and
+                          development to contribute effectively to defense
+                          innovations.
                         </li>
                         <li
                           style={{
@@ -526,9 +529,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Stay updated with the latest trends, technologies, and
-                          regulations in both the aviation and travel
-                          industries.
+                          Stay updated with advancements in military
+                          technologies and the global defense landscape.
                         </li>
                       </ul>
                     </div>
@@ -537,16 +539,18 @@ const MBAcoursedetail = () => {
                         className="mb-3"
                         style={{ fontSize: "1.75rem", fontWeight: "bold" }}
                       >
-                        Admission in BBA - Aviation & Travel Management
+                        Admission in M.Tech - Defence Technology
                       </h3>
                       <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                        The admission process for the BBA - Aviation & Travel
-                        Management program includes an entrance exam followed by
-                        a personal interview. Be prepared to showcase your
-                        passion for both the aviation and travel industries and
-                        demonstrate your academic potential. Ensure you meet the
-                        eligibility requirements and present your academic and
-                        extracurricular achievements.
+                        The admission process for the M.Tech - Defence
+                        Technology program involves a written entrance
+                        examination followed by an interview. Be prepared to
+                        demonstrate your passion for defense technologies, your
+                        academic background, and your interest in contributing
+                        to the defense sector. Ensure that you meet the
+                        eligibility criteria and present your academic
+                        credentials, technical skills, and any related
+                        experience.
                       </p>
                     </div>
                   </div>
@@ -582,30 +586,32 @@ const MBAcoursedetail = () => {
                       style={{ fontSize: "2rem", fontWeight: "600" }}
                     >
                       Details About{" "}
-                      <span style={{ color: "#d89e37" }}>How To Apply</span> BBA
-                      - Aviation & Travel Management
+                      <span style={{ color: "#d89e37" }}>How To Apply</span>{" "}
+                      M.Tech - Defence Technology
                     </h2>
                   </div>
                   <p
                     className="content-text"
                     style={{ fontSize: "1rem", lineHeight: "1.6" }}
                   >
-                    Applying for the BBA in Aviation & Travel Management is a
-                    structured process designed to ensure you have the necessary
-                    skills and qualifications to thrive in both the aviation and
-                    travel industries. Follow the steps below to submit your
-                    application correctly and on time.
+                    Applying for the M.Tech in Defence Technology is a
+                    systematic process designed to assess your academic
+                    background, technical skills, and passion for contributing
+                    to national defense innovation. Follow the steps outlined
+                    below to complete your application successfully.
                   </p>
 
                   <p
                     className="content-text mt-2"
                     style={{ fontSize: "1rem", lineHeight: "1.6" }}
                   >
-                    The program covers airport management, travel and tourism
-                    services, aviation safety, airline operations, and
-                    logistics, preparing you for leadership roles in both the
-                    aviation and travel sectors. Below are the steps you need to
-                    follow to apply and ensure a smooth application process.
+                    The program offers in-depth knowledge in areas such as
+                    defense systems design, military vehicle technology,
+                    aerospace engineering, radar and communication systems, and
+                    weapon systems development. It prepares you for impactful
+                    roles in defense research organizations, public sector
+                    undertakings, and defense manufacturing industries. Here are
+                    the steps to apply and ensure a seamless admission process.
                   </p>
                 </div>
               </div>
@@ -619,7 +625,7 @@ const MBAcoursedetail = () => {
               >
                 <img
                   src="../assets/program/application.svg"
-                  alt="Aviation Application"
+                  alt="Defence Technology Application"
                   style={{
                     width: "100%",
                     borderRadius: "8px",
@@ -644,16 +650,16 @@ const MBAcoursedetail = () => {
                       className="mb-3"
                       style={{ fontSize: "1.75rem", fontWeight: "600" }}
                     >
-                      Career Prospects and Future Scope for BBA - Aviation &
-                      Travel Management
+                      Career Prospects and Future Scope for M.Tech - Defence
+                      Technology
                     </h3>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      Completing a BBA in Aviation & Travel Management opens
-                      doors to a wide range of career opportunities in the
-                      rapidly growing aviation and travel sectors. Graduates can
-                      work in various roles within airlines, travel agencies,
-                      airport operations, tour management, and more. Below are
-                      some potential career paths:
+                      Completing an M.Tech in Defence Technology opens up a
+                      diverse range of career opportunities in India’s strategic
+                      and defense sectors. Graduates are equipped with the
+                      skills and technical expertise required for innovation in
+                      the design, development, and implementation of advanced
+                      defense systems and technologies.
                     </p>
                     <ul
                       style={{
@@ -663,32 +669,33 @@ const MBAcoursedetail = () => {
                       }}
                     >
                       <li style={{ marginBottom: "10px" }}>
-                        Airline Operations Manager
+                        Defence Research and Development Scientist
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Travel Agency Manager
+                        Systems Engineer in Defence Manufacturing
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Airport Operations Coordinator
-                      </li>
-                      <li style={{ marginBottom: "10px" }}>Tour Manager</li>
-                      <li style={{ marginBottom: "10px" }}>
-                        Aviation Safety Manager
+                        Missile and Weapon Systems Specialist
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Hospitality and Tourism Consultant
+                        Aerospace and Avionics Engineer
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Travel Technology Specialist
+                        Radar and Communication Systems Expert
+                      </li>
+                      <li style={{ marginBottom: "10px" }}>
+                        Technical Officer in DRDO or ISRO
+                      </li>
+                      <li style={{ marginBottom: "10px" }}>
+                        Defence Consultant for Public/Private Sector
                       </li>
                     </ul>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      The aviation and travel industries are expanding rapidly,
-                      with advancements in travel technology, digital tourism
-                      services, and global airline operations. Graduates with a
-                      BBA in Aviation & Travel Management will be prepared to
-                      drive innovation, manage travel operations, and lead
-                      organizations in these ever-evolving sectors.
+                      The defense industry is rapidly evolving with advancements
+                      in AI-driven warfare, unmanned systems, smart ammunition,
+                      and space technologies. M.Tech graduates will play a
+                      pivotal role in shaping the future of national defense and
+                      security infrastructure.
                     </p>
                   </div>
                 </div>
@@ -698,55 +705,56 @@ const MBAcoursedetail = () => {
                       className="mb-3"
                       style={{ fontSize: "1.75rem", fontWeight: "600" }}
                     >
-                      Application Requirements and Support for BBA - Aviation &
-                      Travel Management
+                      Application Requirements and Support for M.Tech - Defence
+                      Technology
                     </h3>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      To successfully apply for the BBA in Aviation & Travel
-                      Management, ensure that you have the following documents:
+                      To apply for the M.Tech in Defence Technology, please
+                      ensure that the following documents and prerequisites are
+                      met:
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
-                        1. Higher Secondary Education (12th):
-                      </span>
-                      From a recognized board, preferably with a background in
-                      travel, tourism, or related fields.
+                        1. Bachelor's Degree in Engineering/Technology:
+                      </span>{" "}
+                      From a recognized university in disciplines such as
+                      Mechanical, Electrical, Electronics, Aerospace, or related
+                      fields.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
-                        2. Work Experience (Optional):
-                      </span>
-                      Experience in aviation, travel, or a related field is
-                      preferred but not mandatory.
+                        2. GATE Score (Preferred):
+                      </span>{" "}
+                      A valid GATE score in relevant subjects may be required
+                      depending on the institution.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         3. Identification Proof:
-                      </span>
-                      A valid government-issued ID such as a passport or
-                      national ID card.
+                      </span>{" "}
+                      A valid government-issued ID such as Aadhar Card,
+                      Passport, or PAN Card.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         4. Statement of Purpose (SOP):
-                      </span>
-                      Explaining your motivation for pursuing the BBA in
-                      Aviation & Travel Management program and your long-term
-                      career goals.
+                      </span>{" "}
+                      Outlining your interest in defence technology and your
+                      career aspirations in the field.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         5. Financial Support:
-                      </span>
-                      Available for eligible candidates, including need-based
-                      aid, scholarships, and loan programs to assist with
-                      tuition fees.
+                      </span>{" "}
+                      Scholarships, fellowships, and government aid may be
+                      available for eligible candidates. Institutions may also
+                      offer fee waivers or assistantship programs.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      Please ensure that all documents are in order to avoid any
-                      delays in the application process. Explore the available
-                      financial support options to assist with your tuition fees
-                      and related expenses.
+                      Ensure all documents are accurate and submitted before the
+                      deadline to avoid processing delays. Explore available
+                      financial aid options to support your academic journey in
+                      defense innovation.
                     </p>
                   </div>
                 </div>
@@ -770,12 +778,12 @@ const MBAcoursedetail = () => {
                 marginBottom: "30px",
               }}
             >
-              Our BBA in Aviation & Travel Management program offers unique
-              opportunities for students to interact with industry experts.
-              Through the Mentor and Guest Speaker program, students gain
-              valuable insights into both the aviation and travel industries,
-              network with professionals, and receive guidance on their career
-              journey in these dynamic sectors.
+              Our M.Tech in Defence Technology program offers students a chance
+              to interact directly with experts from the defence and research
+              sectors. Through our Mentor and Guest Speaker Program, students
+              gain insights into cutting-edge defence technologies, national
+              security challenges, and R&D practices, while building connections
+              with leading professionals in the field.
             </p>
           </div>
           <div style={{ marginBottom: "30px" }}>
@@ -783,11 +791,12 @@ const MBAcoursedetail = () => {
             <div className="row">
               <div className="col-lg-4">
                 <div className="scholarship-item">
-                  <h4>Industry Mentors</h4>
+                  <h4>Defence Sector Mentors</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Our mentors include top executives from both the aviation
-                    and travel sectors, offering one-on-one guidance to help
-                    shape your career in aviation & travel management.
+                    Our mentors include senior scientists, engineers, and
+                    officers from organizations like DRDO, ISRO, and defence
+                    PSUs who offer valuable guidance to shape your career in
+                    defence technology.
                   </p>
                 </div>
               </div>
@@ -795,21 +804,21 @@ const MBAcoursedetail = () => {
                 <div className="scholarship-item">
                   <h4>Guest Lecturers</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Learn from industry experts through guest lectures,
-                    workshops, and webinars, where leading professionals in
-                    aviation and travel share their knowledge and experiences.
+                    Learn from real-world experts through guest lectures,
+                    technical webinars, and workshops led by professionals
+                    involved in defence R&D, systems engineering, and strategic
+                    planning.
                   </p>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="scholarship-item">
-                  <h4>Aviation & Travel Innovation Hub</h4>
+                  <h4>Innovation & R&D Hub</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Join our Aviation & Travel Innovation Hub, where students
-                    collaborate on projects focused on emerging aviation
-                    technologies, travel management, airline operations, and
-                    airport management, developing solutions to transform both
-                    sectors.
+                    Participate in the Defence Innovation Hub, where students
+                    work on practical research projects in smart weapons,
+                    missile systems, UAVs, AI in defence, and modern warfare
+                    simulations.
                   </p>
                 </div>
               </div>
@@ -828,12 +837,12 @@ const MBAcoursedetail = () => {
                       Guidance and Support
                     </h3>
                     <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                      The BBA in Aviation & Travel Management provides students
-                      with personalized career guidance, mentorship from
-                      experienced professionals, and hands-on learning
-                      opportunities. Our team of mentors helps you identify the
-                      best career paths and assists you with networking in both
-                      the aviation and travel industries.
+                      The M.Tech in Defence Technology program provides students
+                      with personalized career mentoring, exposure to defence
+                      labs and simulations, and academic support. Our faculty
+                      and mentors help you explore specializations and research
+                      pathways, enabling success in both industry and government
+                      R&D roles.
                     </p>
                     <Link
                       to="/apply-now"
@@ -866,25 +875,25 @@ const MBAcoursedetail = () => {
                       }}
                     >
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Higher Secondary
-                        (12th) education from a recognized board.
+                        <i className="fas fa-check-circle" /> Bachelor's degree
+                        in Engineering/Technology (BE/B.Tech) from a recognized
+                        university.
                       </li>
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Experience in
-                        aviation, travel, or a related field (preferred but not
-                        mandatory).
+                        <i className="fas fa-check-circle" /> Valid GATE score
+                        in relevant engineering disciplines (preferred).
                       </li>
                       <li style={{ fontSize: "16px" }}>
                         <i className="fas fa-check-circle" /> Statement of
-                        Purpose (SOP) explaining your motivation and career
-                        goals.
+                        Purpose (SOP) describing your interest in defence
+                        technology and research goals.
                       </li>
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Valid
-                        government-issued ID proof.
+                        <i className="fas fa-check-circle" /> Government-issued
+                        ID proof (Aadhar, Passport, etc.).
                       </li>
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Recent
+                        <i className="fas fa-check-circle" /> Updated resume and
                         passport-sized photographs.
                       </li>
                     </ul>
@@ -913,17 +922,17 @@ const MBAcoursedetail = () => {
                   </h2>
                 </div>
                 <p className="programfaq-faq-description">
-                  The BBA in Aviation & Travel Management program equips
-                  students with the necessary skills and knowledge to thrive in
-                  both the aviation and travel industries. Learn everything you
-                  need to know about the application process, eligibility, and
-                  program details here.
+                  The M.Tech in Defence Technology program equips students with
+                  the advanced technical skills and strategic knowledge required
+                  in the field of defense innovation and R&D. Learn everything
+                  you need to know about the application process, eligibility,
+                  and program structure here.
                 </p>
                 <p className="programfaq-faq-description">
-                  Our goal is to provide future leaders with the skills to
-                  manage aviation operations, travel management, safety, and
-                  logistics effectively while keeping up with global trends in
-                  aviation and travel.
+                  Our goal is to prepare future technocrats and researchers to
+                  contribute effectively to India’s defense ecosystem, with
+                  expertise in areas like weapon systems, electronics, naval
+                  systems, and combat vehicle engineering.
                 </p>
 
                 <Link to="/contact" className="mt-2 programfaq-faq-button">
@@ -936,29 +945,26 @@ const MBAcoursedetail = () => {
                 defaultActiveKey="0"
                 className="programfaq-faq-accordion"
               >
-                {/* New FAQ Added */}
                 <Card className="programfaq-faq-card">
                   <Accordion.Item eventKey="4">
                     <Accordion.Header className="programfaq-faq-header">
                       <span>
                         <i
-                          className="fas fa-graduation-cap"
+                          className="fas fa-shield-alt"
                           style={{ color: "#d89e37" }}
                         />
                       </span>
                       What Career Opportunities After Completing the Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      Graduates of the BBA in Aviation & Travel Management
-                      program can pursue careers in roles such as airline
-                      operations, travel agency management, airport operations,
-                      logistics coordination, tourism management, and customer
-                      service. You may also find opportunities in aviation
-                      consulting, tourism consulting, and hospitality
-                      management.
+                      Graduates of the M.Tech in Defence Technology program can
+                      pursue roles in DRDO labs, defense PSUs, private defense
+                      companies, R&D institutions, and the armed forces as
+                      defense technologists, researchers, and systems engineers.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
+
                 <Card className="programfaq-faq-card">
                   <Accordion.Item eventKey="0">
                     <Accordion.Header className="programfaq-faq-header">
@@ -968,18 +974,18 @@ const MBAcoursedetail = () => {
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      How Can I Apply for the BBA in Aviation & Travel Program?
+                      How Can I Apply for the M.Tech in Defence Technology
+                      Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      You can apply online by filling out the application form
-                      available on our website. Ensure that you submit all the
-                      required documents, including your academic transcripts,
-                      resume, and Statement of Purpose (SOP), which should
-                      outline your interest in both the aviation and travel
-                      industries and your future career goals.
+                      You can apply online through our official website. Submit
+                      your GATE scorecard, academic transcripts, resume, and a
+                      Statement of Purpose highlighting your interest in defense
+                      technologies and national security.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
+
                 <Card className="programfaq-faq-card">
                   <Accordion.Item eventKey="5">
                     <Accordion.Header className="programfaq-faq-header">
@@ -989,18 +995,18 @@ const MBAcoursedetail = () => {
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      What is the Duration of the BBA in Aviation & Travel
+                      What is the Duration of the M.Tech in Defence Technology
                       Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      The BBA in Aviation & Travel Management is a 3-year
-                      full-time program designed to provide both theoretical
-                      knowledge and practical experience in aviation operations,
-                      travel management, tourism, logistics, and customer
-                      service.
+                      The M.Tech in Defence Technology is a 2-year full-time
+                      program that includes theoretical coursework, lab work,
+                      project research, and industry exposure through defense
+                      internships and live projects.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
+
                 <Card className="programfaq-faq-card">
                   <Accordion.Item eventKey="6">
                     <Accordion.Header className="programfaq-faq-header">
@@ -1013,12 +1019,11 @@ const MBAcoursedetail = () => {
                       Will I Get Internship Opportunities During the Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      Yes, the program includes internship opportunities with
-                      leading companies in both aviation and travel sectors,
-                      allowing you to gain hands-on experience in aviation
-                      operations, travel management, tourism services, and
-                      logistics coordination. These internships help build
-                      professional connections in the industry.
+                      Yes, students will have opportunities to intern with
+                      organizations like DRDO, HAL, BEL, and other defense
+                      research or production units. These internships are
+                      essential for hands-on training in defense tech
+                      development.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>

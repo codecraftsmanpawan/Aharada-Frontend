@@ -148,12 +148,10 @@ const AIcoursedetail = () => {
           <div className="our-promise-text">
             <p className="promise-title">OUR PROMISE</p>
             <h2 className="main-heading">
-              Elevate your career in{" "}
-              <span className="highlight">
-                Data Analytics & Artificial Intelligence
-              </span>
+              Kickstart your career with{" "}
+              <span className="highlight">diverse job opportunities</span>
             </h2>
-            <div className="graduate-img" style={{ marginTop: "50px" }}>
+            <div className="graduate-img">
               <img src="../assets/img/g.png" alt="Graduate" />
             </div>
             <Link
@@ -167,20 +165,20 @@ const AIcoursedetail = () => {
 
           <div className="job-stats">
             <div className="stat-box">
-              <strong>200+</strong>
-              <p>Top tech & AI firms</p>
+              <strong>150+</strong>
+              <p>Varied job profiles</p>
             </div>
             <div className="stat-box">
-              <strong>3000+</strong>
-              <p>Global career paths</p>
+              <strong>1100+</strong>
+              <p>Unique job opportunities</p>
             </div>
             <div className="stat-box">
-              <strong>60%</strong>
-              <p>Shaping intelligent tech</p>
+              <strong>28.5%</strong>
+              <p>Students with 2+ job offers</p>
             </div>
             <Link
               style={{ marginLeft: "40px" }}
-              to="../../assets/img/Data_Analytics_AI_BBA.pdf"
+              to="../../assets/img/AEROSPACE.pdf"
               className="th-btn style4"
               target="_blank"
               rel="noopener noreferrer"

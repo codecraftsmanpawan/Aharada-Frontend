@@ -171,8 +171,8 @@ const MBAcoursedetail = () => {
           <div className="our-promise-text">
             <p className="promise-title">OUR PROMISE</p>
             <h2 className="main-heading">
-              Elevate your career in{" "}
-              <span className="highlight">Aviation Management</span>
+              Kickstart your career with{" "}
+              <span className="highlight">diverse job opportunities</span>
             </h2>
             <div className="graduate-img">
               <img src="../assets/img/g.png" alt="Graduate" />
@@ -188,20 +188,20 @@ const MBAcoursedetail = () => {
 
           <div className="job-stats">
             <div className="stat-box">
-              <strong>120+</strong>
-              <p>Top-tier aviation companies</p>
+              <strong>150+</strong>
+              <p>Varied job profiles</p>
             </div>
             <div className="stat-box">
-              <strong>1000+</strong>
-              <p>Global career opportunities</p>
+              <strong>1100+</strong>
+              <p>Unique job opportunities</p>
             </div>
             <div className="stat-box">
-              <strong>30%</strong>
-              <p>Leading the aviation industry</p>
+              <strong>28.5%</strong>
+              <p>Students with 2+ job offers</p>
             </div>
             <Link
               style={{ marginLeft: "40px" }}
-              to="../../assets/img/Aviation_Management.pdf"
+              to="../../assets/img/AEROSPACE.pdf"
               className="th-btn style4"
               target="_blank"
               rel="noopener noreferrer"

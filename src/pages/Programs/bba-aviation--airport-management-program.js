@@ -61,7 +61,7 @@ const MBAcoursedetail = () => {
                 textAlign: "center",
               }}
             >
-              BBA - Aviation & Travel Management
+              BBA - Aviation & Airport Management
             </h1>
             <ol
               style={{
@@ -134,7 +134,7 @@ const MBAcoursedetail = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  Aviation & Travel Management
+                  Aviation & Airport Management
                 </a>
               </li>
             </ol>
@@ -206,30 +206,30 @@ const MBAcoursedetail = () => {
               <h3>Course Overview</h3>
               <div className="product-about">
                 <p className="text">
-                  Our BBA in Aviation & Travel Management is designed to provide
-                  students with a comprehensive understanding of the aviation
-                  and travel industry, including airport management, aviation
-                  safety, logistics, airline operations, and the management of
-                  travel and tourism services. This program prepares graduates
-                  to take on leadership roles in the rapidly evolving aviation
-                  and travel sectors.
+                  Our BBA in Aviation & Airport Management is designed to
+                  provide students with a comprehensive understanding of airport
+                  operations, aviation management, and the skills required to
+                  excel in the dynamic aviation and travel industry. This
+                  program equips graduates with the expertise to manage airport
+                  functions, aviation logistics, and customer service, shaping
+                  them into leaders in the aviation sector.
                 </p>
 
                 <p className="text">
                   <strong>Duration of the Course:</strong> The BBA in Aviation &
-                  Travel Management is a 3-year full-time program that combines
-                  theoretical knowledge with practical experience in both the
-                  aviation and travel industries, preparing students for various
-                  roles in aviation operations, travel management, and customer
-                  service.
+                  Airport Management is a 3-year full-time program that combines
+                  theoretical learning with hands-on practical experience.
+                  Students will gain exposure to airport operations, aviation
+                  safety, customer service, aviation laws, and logistics,
+                  preparing them for leadership roles in airports, airlines, and
+                  the broader aviation industry.
                 </p>
 
                 <p className="text">
-                  <strong>Eligibility Requirements:</strong> To apply for this
-                  program, you must have completed higher secondary education
-                  (12th grade) from a recognized board. While prior experience
-                  in aviation, travel, or business management is beneficial, it
-                  is not mandatory.
+                  <strong>Eligibility Requirements:</strong> Applicants must
+                  have completed higher secondary education (12th grade) from a
+                  recognized board. While prior experience in aviation or
+                  business is beneficial, it is not a mandatory requirement.
                 </p>
               </div>
             </div>
@@ -255,7 +255,7 @@ const MBAcoursedetail = () => {
                 >
                   Why Choose{" "}
                   <span style={{ color: "#d89e37" }}>
-                    BBA - Aviation & Travel Management
+                    BBA - Aviation & Airport Management
                   </span>
                 </h2>
                 <p
@@ -265,10 +265,11 @@ const MBAcoursedetail = () => {
                     color: "#555",
                   }}
                 >
-                  Gain specialized knowledge and leadership skills in the
-                  dynamic aviation and travel industries. This program prepares
-                  you for managerial roles in airport operations, travel
-                  management, airline management, and tourism services.
+                  Discover a rewarding career in the aviation and airport
+                  management industry. The BBA program equips you with the
+                  skills to manage airport operations, aviation logistics,
+                  customer service, and more, preparing you to lead in this
+                  dynamic and fast-paced industry.
                 </p>
               </div>
             </div>
@@ -277,27 +278,27 @@ const MBAcoursedetail = () => {
             {[
               {
                 id: "01",
-                title: "Comprehensive Aviation & Travel Curriculum",
+                title: "Comprehensive Aviation Curriculum",
                 description:
-                  "Develop a deep understanding of airport management, aviation safety, travel logistics, airline operations, and tourism management.",
+                  "Gain a solid foundation in aviation operations, airport management, aviation laws, and customer service, equipping you to handle various challenges in the aviation industry.",
               },
               {
                 id: "02",
                 title: "Industry Expert Faculty",
                 description:
-                  "Learn from experienced professionals and leaders from both the aviation and travel sectors.",
+                  "Learn from experienced professionals and experts in the aviation and airport management industry, offering insights into the latest trends and best practices.",
               },
               {
                 id: "03",
-                title: "Internship & Practical Experience",
+                title: "Internships & Practical Experience",
                 description:
-                  "Participate in internships with top aviation companies and travel agencies to gain hands-on experience.",
+                  "Participate in internships at airports, airlines, and aviation-related organizations, providing hands-on experience in airport operations, safety protocols, and customer service.",
               },
               {
                 id: "04",
-                title: "Global Career Opportunities in Aviation & Travel",
+                title: "Global Career Opportunities in Aviation",
                 description:
-                  "Unlock career opportunities with top airlines, travel agencies, and tourism companies worldwide.",
+                  "Access career opportunities with international airports, airlines, aviation regulators, and aviation service providers, shaping the future of global aviation and travel.",
               },
             ].map((item) => (
               <div className="col-md-6 col-lg-3 d-flex" key={item.id}>
@@ -398,7 +399,7 @@ const MBAcoursedetail = () => {
                   <div className="department-details-img mb-30">
                     <img
                       src="../assets/program/aharadaedu3.JPG"
-                      alt="Aviation Management"
+                      alt="Fine Arts"
                       style={{
                         width: "100%",
                         height: "565px",
@@ -411,30 +412,30 @@ const MBAcoursedetail = () => {
                       className="mb-20"
                       style={{ fontSize: "2rem", fontWeight: "bold" }}
                     >
-                      BBA - Aviation & Travel Management
+                      BBA - Aviation & Airport Management
                     </h3>
                     <p
                       className="mb-20"
                       style={{ fontSize: "1rem", lineHeight: "1.6" }}
                     >
-                      The BBA in Aviation & Travel Management provides students
-                      with a comprehensive understanding of both the aviation
-                      and travel industries. The program covers airport
-                      management, travel and tourism services, aviation safety,
-                      logistics, and airline operations. Graduates are equipped
-                      to take on managerial roles in the dynamic aviation and
-                      travel sectors.
+                      The BBA in Aviation & Airport Management program is
+                      designed to equip students with the skills and knowledge
+                      necessary to manage airport operations, aviation safety,
+                      and customer service in the rapidly evolving aviation
+                      industry. This program prepares you for a dynamic career
+                      in airport management, aviation logistics, and airline
+                      operations.
                     </p>
                     <p
                       className="mb-20"
                       style={{ fontSize: "1rem", lineHeight: "1.6" }}
                     >
-                      The program focuses on operations management in both
-                      aviation and travel, emphasizing tourism services, airport
-                      and airline management, and the latest trends in global
-                      travel. Students will gain practical insights into
-                      managing airports, airlines, travel agencies, and tourism
-                      businesses.
+                      The program covers various aspects of airport management,
+                      including air traffic control, aviation regulations,
+                      operations management, and customer service excellence.
+                      Students will gain hands-on experience through
+                      internships, industry visits, and interaction with
+                      professionals in the field of aviation.
                     </p>
 
                     <div style={{ marginTop: "30px" }}>
@@ -443,13 +444,15 @@ const MBAcoursedetail = () => {
                           className="mb-3"
                           style={{ fontSize: "1.75rem", fontWeight: "bold" }}
                         >
-                          How To Succeed in BBA - Aviation & Travel Management
+                          How To Succeed in BBA - Aviation & Airport Management
                         </h3>
                         <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                          To excel in the BBA - Aviation & Travel Management
-                          program, focus on understanding the complexities of
-                          airport operations, travel management, and aviation
-                          safety. Here are some tips to guide your preparation:
+                          To excel in the BBA - Aviation & Airport Management
+                          program, focus on understanding aviation operations,
+                          enhancing customer service skills, and staying
+                          informed about the latest trends in the aviation
+                          industry. Here are some tips to guide your
+                          preparation:
                         </p>
                       </div>
                       <ul
@@ -467,8 +470,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Study the fundamentals of airport operations, airline
-                          management, and travel logistics.
+                          Gain a strong understanding of airport operations,
+                          airline management, and aviation safety.
                         </li>
                         <li
                           style={{
@@ -481,9 +484,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Understand aviation safety regulations, including air
-                          traffic control, aircraft maintenance, and travel
-                          security protocols.
+                          Develop customer service skills to provide exceptional
+                          service to passengers and airport staff.
                         </li>
                         <li
                           style={{
@@ -496,9 +498,9 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Gain knowledge of the travel industry, including
-                          tourism trends, travel agency operations, and customer
-                          service in travel.
+                          Participate in internships and practical training at
+                          airports, airlines, and aviation-related organizations
+                          to build real-world experience.
                         </li>
                         <li
                           style={{
@@ -511,9 +513,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Enhance leadership, problem-solving, and management
-                          skills to lead teams within both aviation and travel
-                          companies.
+                          Stay updated with the latest aviation technologies,
+                          airport management systems, and aviation regulations.
                         </li>
                         <li
                           style={{
@@ -526,9 +527,9 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Stay updated with the latest trends, technologies, and
-                          regulations in both the aviation and travel
-                          industries.
+                          Collaborate with industry professionals and
+                          participate in events that will enhance your learning
+                          and networking opportunities.
                         </li>
                       </ul>
                     </div>
@@ -537,16 +538,17 @@ const MBAcoursedetail = () => {
                         className="mb-3"
                         style={{ fontSize: "1.75rem", fontWeight: "bold" }}
                       >
-                        Admission in BBA - Aviation & Travel Management
+                        Admission in BBA - Aviation & Airport Management
                       </h3>
                       <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                        The admission process for the BBA - Aviation & Travel
-                        Management program includes an entrance exam followed by
-                        a personal interview. Be prepared to showcase your
-                        passion for both the aviation and travel industries and
-                        demonstrate your academic potential. Ensure you meet the
-                        eligibility requirements and present your academic and
-                        extracurricular achievements.
+                        The admission process for the BBA in Aviation & Airport
+                        Management includes an interview, an entrance exam, and
+                        an evaluation of your interest in the aviation field.
+                        Applicants should have completed higher secondary
+                        education (12th grade) and demonstrate a passion for
+                        aviation and airport management. During the selection
+                        process, highlight any relevant experience or
+                        internships in aviation or hospitality sectors.
                       </p>
                     </div>
                   </div>
@@ -583,29 +585,31 @@ const MBAcoursedetail = () => {
                     >
                       Details About{" "}
                       <span style={{ color: "#d89e37" }}>How To Apply</span> BBA
-                      - Aviation & Travel Management
+                      - Aviation & Airport Management
                     </h2>
                   </div>
                   <p
                     className="content-text"
                     style={{ fontSize: "1rem", lineHeight: "1.6" }}
                   >
-                    Applying for the BBA in Aviation & Travel Management is a
-                    structured process designed to ensure you have the necessary
-                    skills and qualifications to thrive in both the aviation and
-                    travel industries. Follow the steps below to submit your
-                    application correctly and on time.
+                    Applying for the BBA in Aviation & Airport Management
+                    involves a straightforward process that ensures you are
+                    well-prepared for a career in the dynamic aviation industry.
+                    Follow the steps below to submit your application and get
+                    ready for an exciting journey in airport management,
+                    aviation operations, and customer service.
                   </p>
 
                   <p
                     className="content-text mt-2"
                     style={{ fontSize: "1rem", lineHeight: "1.6" }}
                   >
-                    The program covers airport management, travel and tourism
-                    services, aviation safety, airline operations, and
-                    logistics, preparing you for leadership roles in both the
-                    aviation and travel sectors. Below are the steps you need to
-                    follow to apply and ensure a smooth application process.
+                    The program prepares you for key roles in airport
+                    operations, aviation safety, logistics, and airline
+                    management. Students will gain practical experience and
+                    industry knowledge through internships and fieldwork. Below
+                    are the steps to follow for applying to the BBA - Aviation &
+                    Airport Management program.
                   </p>
                 </div>
               </div>
@@ -619,7 +623,7 @@ const MBAcoursedetail = () => {
               >
                 <img
                   src="../assets/program/application.svg"
-                  alt="Aviation Application"
+                  alt="Aviation & Airport Management Application"
                   style={{
                     width: "100%",
                     borderRadius: "8px",
@@ -645,15 +649,15 @@ const MBAcoursedetail = () => {
                       style={{ fontSize: "1.75rem", fontWeight: "600" }}
                     >
                       Career Prospects and Future Scope for BBA - Aviation &
-                      Travel Management
+                      Airport Management
                     </h3>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      Completing a BBA in Aviation & Travel Management opens
-                      doors to a wide range of career opportunities in the
-                      rapidly growing aviation and travel sectors. Graduates can
-                      work in various roles within airlines, travel agencies,
-                      airport operations, tour management, and more. Below are
-                      some potential career paths:
+                      Completing a BBA in Aviation & Airport Management opens
+                      doors to various career opportunities in the aviation and
+                      travel industry. Graduates can pursue roles in airport
+                      operations, airline management, aviation safety,
+                      logistics, and customer service. Below are some potential
+                      career paths:
                     </p>
                     <ul
                       style={{
@@ -663,32 +667,34 @@ const MBAcoursedetail = () => {
                       }}
                     >
                       <li style={{ marginBottom: "10px" }}>
+                        Airport Operations Manager
+                      </li>
+                      <li style={{ marginBottom: "10px" }}>
+                        Aviation Safety Officer
+                      </li>
+                      <li style={{ marginBottom: "10px" }}>
                         Airline Operations Manager
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Travel Agency Manager
+                        Customer Service Manager (Airports)
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Airport Operations Coordinator
-                      </li>
-                      <li style={{ marginBottom: "10px" }}>Tour Manager</li>
-                      <li style={{ marginBottom: "10px" }}>
-                        Aviation Safety Manager
+                        Aviation Logistics Coordinator
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Hospitality and Tourism Consultant
+                        Airport Security Manager
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Travel Technology Specialist
+                        Airline Customer Service Representative
                       </li>
                     </ul>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      The aviation and travel industries are expanding rapidly,
-                      with advancements in travel technology, digital tourism
-                      services, and global airline operations. Graduates with a
-                      BBA in Aviation & Travel Management will be prepared to
-                      drive innovation, manage travel operations, and lead
-                      organizations in these ever-evolving sectors.
+                      The aviation industry continues to grow, offering
+                      opportunities in airport management, aviation safety,
+                      logistics, and more. Graduates of the BBA in Aviation &
+                      Airport Management will be prepared to lead and innovate
+                      in the aviation sector, ensuring smooth airport operations
+                      and exceptional customer service.
                     </p>
                   </div>
                 </div>
@@ -699,54 +705,54 @@ const MBAcoursedetail = () => {
                       style={{ fontSize: "1.75rem", fontWeight: "600" }}
                     >
                       Application Requirements and Support for BBA - Aviation &
-                      Travel Management
+                      Airport Management
                     </h3>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      To successfully apply for the BBA in Aviation & Travel
+                      To successfully apply for the BBA in Aviation & Airport
                       Management, ensure that you have the following documents:
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         1. Higher Secondary Education (12th):
-                      </span>
+                      </span>{" "}
                       From a recognized board, preferably with a background in
-                      travel, tourism, or related fields.
+                      commerce, management, or hospitality.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
-                        2. Work Experience (Optional):
-                      </span>
-                      Experience in aviation, travel, or a related field is
-                      preferred but not mandatory.
+                        2. Entrance Exam (if applicable):
+                      </span>{" "}
+                      Some institutions may require an entrance exam as part of
+                      the admission process.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         3. Identification Proof:
-                      </span>
+                      </span>{" "}
                       A valid government-issued ID such as a passport or
                       national ID card.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         4. Statement of Purpose (SOP):
-                      </span>
+                      </span>{" "}
                       Explaining your motivation for pursuing the BBA in
-                      Aviation & Travel Management program and your long-term
-                      career goals.
+                      Aviation & Airport Management and your long-term career
+                      goals in the aviation industry.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         5. Financial Support:
-                      </span>
-                      Available for eligible candidates, including need-based
-                      aid, scholarships, and loan programs to assist with
-                      tuition fees.
+                      </span>{" "}
+                      Financial assistance is available for eligible candidates,
+                      including scholarships, loans, and need-based aid to
+                      support tuition and related expenses.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       Please ensure that all documents are in order to avoid any
                       delays in the application process. Explore the available
                       financial support options to assist with your tuition fees
-                      and related expenses.
+                      and related costs.
                     </p>
                   </div>
                 </div>
@@ -770,12 +776,13 @@ const MBAcoursedetail = () => {
                 marginBottom: "30px",
               }}
             >
-              Our BBA in Aviation & Travel Management program offers unique
-              opportunities for students to interact with industry experts.
-              Through the Mentor and Guest Speaker program, students gain
-              valuable insights into both the aviation and travel industries,
-              network with professionals, and receive guidance on their career
-              journey in these dynamic sectors.
+              Our BBA in Aviation & Airport Management program offers students
+              the opportunity to interact with industry experts through our
+              Mentor and Guest Speaker program. Gain valuable insights into the
+              aviation industry, learn from experienced professionals, and
+              network with leaders in airport operations, aviation safety,
+              logistics, and more. This program is designed to help you succeed
+              in the dynamic world of aviation.
             </p>
           </div>
           <div style={{ marginBottom: "30px" }}>
@@ -785,9 +792,10 @@ const MBAcoursedetail = () => {
                 <div className="scholarship-item">
                   <h4>Industry Mentors</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Our mentors include top executives from both the aviation
-                    and travel sectors, offering one-on-one guidance to help
-                    shape your career in aviation & travel management.
+                    Our mentors include seasoned professionals from the aviation
+                    and airport management industries, offering one-on-one
+                    guidance to help shape your career and expertise in aviation
+                    operations, safety, and logistics.
                   </p>
                 </div>
               </div>
@@ -795,21 +803,21 @@ const MBAcoursedetail = () => {
                 <div className="scholarship-item">
                   <h4>Guest Lecturers</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Learn from industry experts through guest lectures,
-                    workshops, and webinars, where leading professionals in
-                    aviation and travel share their knowledge and experiences.
+                    Learn from leading experts in the aviation industry through
+                    guest lectures, workshops, and webinars, where professionals
+                    share their insights, experiences, and knowledge on the
+                    future of aviation and airport management.
                   </p>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="scholarship-item">
-                  <h4>Aviation & Travel Innovation Hub</h4>
+                  <h4>Industry Collaboration</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Join our Aviation & Travel Innovation Hub, where students
-                    collaborate on projects focused on emerging aviation
-                    technologies, travel management, airline operations, and
-                    airport management, developing solutions to transform both
-                    sectors.
+                    Join our collaborative environment where students work on
+                    real-world aviation and airport management projects, network
+                    with industry leaders, and develop innovative solutions for
+                    the aviation sector.
                   </p>
                 </div>
               </div>
@@ -828,12 +836,14 @@ const MBAcoursedetail = () => {
                       Guidance and Support
                     </h3>
                     <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                      The BBA in Aviation & Travel Management provides students
+                      The BBA in Aviation & Airport Management provides students
                       with personalized career guidance, mentorship from
-                      experienced professionals, and hands-on learning
-                      opportunities. Our team of mentors helps you identify the
-                      best career paths and assists you with networking in both
-                      the aviation and travel industries.
+                      industry professionals, and hands-on learning
+                      opportunities. Our mentors, including experienced aviation
+                      professionals, help students identify the best career
+                      paths in airport operations, airline management, and
+                      aviation logistics. Students will also gain valuable
+                      networking opportunities within the aviation industry.
                     </p>
                     <Link
                       to="/apply-now"
@@ -867,17 +877,20 @@ const MBAcoursedetail = () => {
                     >
                       <li style={{ fontSize: "16px" }}>
                         <i className="fas fa-check-circle" /> Higher Secondary
-                        (12th) education from a recognized board.
+                        (12th) education from a recognized board, preferably
+                        with a background in commerce, management, or
+                        hospitality.
                       </li>
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Experience in
-                        aviation, travel, or a related field (preferred but not
-                        mandatory).
+                        <i className="fas fa-check-circle" /> A strong interest
+                        in aviation, airport management, airline operations, and
+                        logistics.
                       </li>
                       <li style={{ fontSize: "16px" }}>
                         <i className="fas fa-check-circle" /> Statement of
-                        Purpose (SOP) explaining your motivation and career
-                        goals.
+                        Purpose (SOP) explaining your motivation for pursuing
+                        the BBA in Aviation & Airport Management and your
+                        long-term career goals in the aviation sector.
                       </li>
                       <li style={{ fontSize: "16px" }}>
                         <i className="fas fa-check-circle" /> Valid
@@ -913,17 +926,18 @@ const MBAcoursedetail = () => {
                   </h2>
                 </div>
                 <p className="programfaq-faq-description">
-                  The BBA in Aviation & Travel Management program equips
-                  students with the necessary skills and knowledge to thrive in
-                  both the aviation and travel industries. Learn everything you
-                  need to know about the application process, eligibility, and
-                  program details here.
+                  The BBA in Aviation & Airport Management program provides
+                  students with the essential skills and knowledge to excel in
+                  airport operations, aviation safety, logistics, and customer
+                  service. Learn everything you need to know about the
+                  application process, eligibility, and program details here.
                 </p>
                 <p className="programfaq-faq-description">
-                  Our goal is to provide future leaders with the skills to
-                  manage aviation operations, travel management, safety, and
-                  logistics effectively while keeping up with global trends in
-                  aviation and travel.
+                  Our goal is to equip students with the necessary skills to
+                  manage complex aviation operations and ensure smooth airport
+                  management. The program encourages a practical, hands-on
+                  approach to learning with internships and industry
+                  collaborations.
                 </p>
 
                 <Link to="/contact" className="mt-2 programfaq-faq-button">
@@ -936,26 +950,25 @@ const MBAcoursedetail = () => {
                 defaultActiveKey="0"
                 className="programfaq-faq-accordion"
               >
-                {/* New FAQ Added */}
                 <Card className="programfaq-faq-card">
                   <Accordion.Item eventKey="4">
                     <Accordion.Header className="programfaq-faq-header">
                       <span>
                         <i
-                          className="fas fa-graduation-cap"
+                          className="fas fa-plane"
                           style={{ color: "#d89e37" }}
                         />
                       </span>
                       What Career Opportunities After Completing the Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      Graduates of the BBA in Aviation & Travel Management
-                      program can pursue careers in roles such as airline
-                      operations, travel agency management, airport operations,
-                      logistics coordination, tourism management, and customer
-                      service. You may also find opportunities in aviation
-                      consulting, tourism consulting, and hospitality
-                      management.
+                      Graduates of the BBA in Aviation & Airport Management
+                      program can pursue careers in roles such as airport
+                      operations manager, aviation safety officer, airline
+                      operations manager, logistics coordinator, and customer
+                      service manager. You may also explore opportunities in
+                      airport security, cargo handling, and aviation
+                      consultancy.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -968,15 +981,16 @@ const MBAcoursedetail = () => {
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      How Can I Apply for the BBA in Aviation & Travel Program?
+                      How Can I Apply for the BBA in Aviation & Airport
+                      Management?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
                       You can apply online by filling out the application form
                       available on our website. Ensure that you submit all the
-                      required documents, including your academic transcripts,
-                      resume, and Statement of Purpose (SOP), which should
-                      outline your interest in both the aviation and travel
-                      industries and your future career goals.
+                      required documents, including academic transcripts, a
+                      Statement of Purpose (SOP) outlining your motivation for
+                      pursuing the BBA in Aviation & Airport Management, and any
+                      relevant work experience or internships.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -989,15 +1003,14 @@ const MBAcoursedetail = () => {
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      What is the Duration of the BBA in Aviation & Travel
-                      Program?
+                      What is the Duration of the BBA in Aviation & Airport
+                      Management?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      The BBA in Aviation & Travel Management is a 3-year
-                      full-time program designed to provide both theoretical
-                      knowledge and practical experience in aviation operations,
-                      travel management, tourism, logistics, and customer
-                      service.
+                      The BBA in Aviation & Airport Management is a 3-year
+                      full-time program designed to provide both theoretical and
+                      practical knowledge in aviation operations, airport
+                      management, logistics, and customer service.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -1014,11 +1027,10 @@ const MBAcoursedetail = () => {
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
                       Yes, the program includes internship opportunities with
-                      leading companies in both aviation and travel sectors,
-                      allowing you to gain hands-on experience in aviation
-                      operations, travel management, tourism services, and
-                      logistics coordination. These internships help build
-                      professional connections in the industry.
+                      leading airlines, airports, and aviation-related
+                      organizations. These internships provide hands-on
+                      experience in airport operations, aviation logistics,
+                      customer service, and safety protocols.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>

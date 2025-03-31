@@ -61,7 +61,7 @@ const MBAcoursedetail = () => {
                 textAlign: "center",
               }}
             >
-              BBA - Aviation & Travel Management
+              Aeronautical Science - B.Sc
             </h1>
             <ol
               style={{
@@ -134,7 +134,7 @@ const MBAcoursedetail = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  Aviation & Travel Management
+                  Aeronautical Science
                 </a>
               </li>
             </ol>
@@ -206,30 +206,31 @@ const MBAcoursedetail = () => {
               <h3>Course Overview</h3>
               <div className="product-about">
                 <p className="text">
-                  Our BBA in Aviation & Travel Management is designed to provide
-                  students with a comprehensive understanding of the aviation
-                  and travel industry, including airport management, aviation
-                  safety, logistics, airline operations, and the management of
-                  travel and tourism services. This program prepares graduates
-                  to take on leadership roles in the rapidly evolving aviation
-                  and travel sectors.
+                  Our B.Sc in Aeronautical Science is designed to provide
+                  students with a comprehensive understanding of aviation
+                  technologies, aerodynamics, aerospace engineering, and the
+                  necessary skills to innovate and manage advanced aviation
+                  systems. This program equips graduates with the expertise to
+                  lead and drive innovation in the global aviation and aerospace
+                  industries.
                 </p>
 
                 <p className="text">
-                  <strong>Duration of the Course:</strong> The BBA in Aviation &
-                  Travel Management is a 3-year full-time program that combines
-                  theoretical knowledge with practical experience in both the
-                  aviation and travel industries, preparing students for various
-                  roles in aviation operations, travel management, and customer
-                  service.
+                  <strong>Duration of the Course:</strong> The B.Sc in
+                  Aeronautical Science is a 3-year full-time program that
+                  combines theoretical learning with practical experience.
+                  Students will gain hands-on exposure to flight mechanics,
+                  aerodynamics, aerospace systems, and aviation safety,
+                  preparing them for key roles in aviation, aerospace
+                  engineering, and the aviation research sector.
                 </p>
 
                 <p className="text">
-                  <strong>Eligibility Requirements:</strong> To apply for this
-                  program, you must have completed higher secondary education
-                  (12th grade) from a recognized board. While prior experience
-                  in aviation, travel, or business management is beneficial, it
-                  is not mandatory.
+                  <strong>Eligibility Requirements:</strong> Applicants must
+                  have completed higher secondary education (12th grade) with a
+                  strong background in mathematics and physics from a recognized
+                  board. While prior experience in aviation or engineering is
+                  beneficial, it is not a mandatory requirement.
                 </p>
               </div>
             </div>
@@ -255,7 +256,7 @@ const MBAcoursedetail = () => {
                 >
                   Why Choose{" "}
                   <span style={{ color: "#d89e37" }}>
-                    BBA - Aviation & Travel Management
+                    Aeronautical Science - B.Sc
                   </span>
                 </h2>
                 <p
@@ -265,10 +266,11 @@ const MBAcoursedetail = () => {
                     color: "#555",
                   }}
                 >
-                  Gain specialized knowledge and leadership skills in the
-                  dynamic aviation and travel industries. This program prepares
-                  you for managerial roles in airport operations, travel
-                  management, airline management, and tourism services.
+                  Explore the fascinating world of aviation and aerospace in the
+                  B.Sc in Aeronautical Science program. This program prepares
+                  you for a successful career in aviation, aerospace
+                  engineering, and flight mechanics, empowering you to innovate
+                  and lead in the dynamic field of aviation.
                 </p>
               </div>
             </div>
@@ -277,27 +279,27 @@ const MBAcoursedetail = () => {
             {[
               {
                 id: "01",
-                title: "Comprehensive Aviation & Travel Curriculum",
+                title: "Comprehensive Aeronautical Science Curriculum",
                 description:
-                  "Develop a deep understanding of airport management, aviation safety, travel logistics, airline operations, and tourism management.",
+                  "Gain a strong foundation in aerodynamics, flight mechanics, aerospace systems, and aviation safety, combining theoretical knowledge with practical experience.",
               },
               {
                 id: "02",
                 title: "Industry Expert Faculty",
                 description:
-                  "Learn from experienced professionals and leaders from both the aviation and travel sectors.",
+                  "Learn from leading experts in aviation and aerospace engineering, who provide guidance in various disciplines, including aircraft design and aerodynamics.",
               },
               {
                 id: "03",
                 title: "Internship & Practical Experience",
                 description:
-                  "Participate in internships with top aviation companies and travel agencies to gain hands-on experience.",
+                  "Participate in internships with leading aviation companies, aerospace engineering firms, and aviation research organizations to gain hands-on experience in the aviation industry.",
               },
               {
                 id: "04",
-                title: "Global Career Opportunities in Aviation & Travel",
+                title: "Global Career Opportunities in Aeronautics",
                 description:
-                  "Unlock career opportunities with top airlines, travel agencies, and tourism companies worldwide.",
+                  "Unlock global career opportunities with aviation companies, aerospace research centers, and defense industries shaping the future of aviation and aerospace technology.",
               },
             ].map((item) => (
               <div className="col-md-6 col-lg-3 d-flex" key={item.id}>
@@ -398,7 +400,7 @@ const MBAcoursedetail = () => {
                   <div className="department-details-img mb-30">
                     <img
                       src="../assets/program/aharadaedu3.JPG"
-                      alt="Aviation Management"
+                      alt="Fine Arts"
                       style={{
                         width: "100%",
                         height: "565px",
@@ -411,30 +413,29 @@ const MBAcoursedetail = () => {
                       className="mb-20"
                       style={{ fontSize: "2rem", fontWeight: "bold" }}
                     >
-                      BBA - Aviation & Travel Management
+                      Aeronautical Science - B.Sc
                     </h3>
                     <p
                       className="mb-20"
                       style={{ fontSize: "1rem", lineHeight: "1.6" }}
                     >
-                      The BBA in Aviation & Travel Management provides students
-                      with a comprehensive understanding of both the aviation
-                      and travel industries. The program covers airport
-                      management, travel and tourism services, aviation safety,
-                      logistics, and airline operations. Graduates are equipped
-                      to take on managerial roles in the dynamic aviation and
-                      travel sectors.
+                      The B.Sc in Aeronautical Science program is designed to
+                      provide students with a comprehensive understanding of
+                      aviation technologies, flight mechanics, aerodynamics, and
+                      aerospace engineering. The program prepares you for a
+                      successful career in aviation, equipping you with the
+                      skills to innovate and lead in the aviation industry and
+                      aerospace research.
                     </p>
                     <p
                       className="mb-20"
                       style={{ fontSize: "1rem", lineHeight: "1.6" }}
                     >
-                      The program focuses on operations management in both
-                      aviation and travel, emphasizing tourism services, airport
-                      and airline management, and the latest trends in global
-                      travel. Students will gain practical insights into
-                      managing airports, airlines, travel agencies, and tourism
-                      businesses.
+                      This program focuses on developing technical skills in
+                      aircraft design, flight operations, aerodynamics, and
+                      aviation safety. Students will gain hands-on experience
+                      and learn from industry professionals in the field of
+                      Aeronautical Science.
                     </p>
 
                     <div style={{ marginTop: "30px" }}>
@@ -443,13 +444,14 @@ const MBAcoursedetail = () => {
                           className="mb-3"
                           style={{ fontSize: "1.75rem", fontWeight: "bold" }}
                         >
-                          How To Succeed in BBA - Aviation & Travel Management
+                          How To Succeed in Aeronautical Science - B.Sc
                         </h3>
                         <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                          To excel in the BBA - Aviation & Travel Management
-                          program, focus on understanding the complexities of
-                          airport operations, travel management, and aviation
-                          safety. Here are some tips to guide your preparation:
+                          To excel in the Aeronautical Science - B.Sc program,
+                          focus on developing a deep understanding of aviation
+                          technologies, flight principles, and aerospace
+                          engineering. Here are some tips to guide your
+                          preparation:
                         </p>
                       </div>
                       <ul
@@ -467,8 +469,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Study the fundamentals of airport operations, airline
-                          management, and travel logistics.
+                          Understand the fundamentals of aerodynamics, flight
+                          mechanics, and aircraft design.
                         </li>
                         <li
                           style={{
@@ -481,9 +483,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Understand aviation safety regulations, including air
-                          traffic control, aircraft maintenance, and travel
-                          security protocols.
+                          Develop strong technical and analytical skills to
+                          solve complex aviation problems.
                         </li>
                         <li
                           style={{
@@ -496,23 +497,8 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Gain knowledge of the travel industry, including
-                          tourism trends, travel agency operations, and customer
-                          service in travel.
-                        </li>
-                        <li
-                          style={{
-                            paddingLeft: "20px",
-                            marginBottom: "10px",
-                            fontSize: "1rem",
-                          }}
-                        >
-                          <i
-                            className="far fa-check"
-                            style={{ marginRight: "10px" }}
-                          />
-                          Enhance leadership, problem-solving, and management
-                          skills to lead teams within both aviation and travel
+                          Participate in aviation-related internships,
+                          workshops, and practical training with aviation
                           companies.
                         </li>
                         <li
@@ -526,9 +512,22 @@ const MBAcoursedetail = () => {
                             className="far fa-check"
                             style={{ marginRight: "10px" }}
                           />
-                          Stay updated with the latest trends, technologies, and
-                          regulations in both the aviation and travel
-                          industries.
+                          Collaborate with peers and mentors in aviation
+                          research projects and real-world applications.
+                        </li>
+                        <li
+                          style={{
+                            paddingLeft: "20px",
+                            marginBottom: "10px",
+                            fontSize: "1rem",
+                          }}
+                        >
+                          <i
+                            className="far fa-check"
+                            style={{ marginRight: "10px" }}
+                          />
+                          Stay updated with the latest trends in aerospace
+                          technologies and aviation safety regulations.
                         </li>
                       </ul>
                     </div>
@@ -537,16 +536,16 @@ const MBAcoursedetail = () => {
                         className="mb-3"
                         style={{ fontSize: "1.75rem", fontWeight: "bold" }}
                       >
-                        Admission in BBA - Aviation & Travel Management
+                        Admission in Aeronautical Science - B.Sc
                       </h3>
                       <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                        The admission process for the BBA - Aviation & Travel
-                        Management program includes an entrance exam followed by
-                        a personal interview. Be prepared to showcase your
-                        passion for both the aviation and travel industries and
-                        demonstrate your academic potential. Ensure you meet the
-                        eligibility requirements and present your academic and
-                        extracurricular achievements.
+                        The admission process for the B.Sc in Aeronautical
+                        Science includes an entrance exam, interview, and a
+                        review of academic qualifications. Candidates must
+                        demonstrate strong proficiency in physics and
+                        mathematics, along with a keen interest in aviation.
+                        Prepare to showcase your academic potential and passion
+                        for aerospace and aviation.
                       </p>
                     </div>
                   </div>
@@ -582,30 +581,35 @@ const MBAcoursedetail = () => {
                       style={{ fontSize: "2rem", fontWeight: "600" }}
                     >
                       Details About{" "}
-                      <span style={{ color: "#d89e37" }}>How To Apply</span> BBA
-                      - Aviation & Travel Management
+                      <span style={{ color: "#d89e37" }}>How To Apply</span>{" "}
+                      B.Sc - Aeronautical Science
                     </h2>
                   </div>
                   <p
                     className="content-text"
                     style={{ fontSize: "1rem", lineHeight: "1.6" }}
                   >
-                    Applying for the BBA in Aviation & Travel Management is a
-                    structured process designed to ensure you have the necessary
-                    skills and qualifications to thrive in both the aviation and
-                    travel industries. Follow the steps below to submit your
-                    application correctly and on time.
+                    Applying for the B.Sc in Aeronautical Science is an exciting
+                    and challenging opportunity to dive into the world of
+                    aviation and aerospace technology. This program will provide
+                    you with the knowledge and skills necessary to pursue a
+                    career in aviation, from aircraft design to flight
+                    operations and air traffic control. Follow the steps below
+                    to submit your application correctly and get ready to take
+                    flight in this dynamic field.
                   </p>
 
                   <p
                     className="content-text mt-2"
                     style={{ fontSize: "1rem", lineHeight: "1.6" }}
                   >
-                    The program covers airport management, travel and tourism
-                    services, aviation safety, airline operations, and
-                    logistics, preparing you for leadership roles in both the
-                    aviation and travel sectors. Below are the steps you need to
-                    follow to apply and ensure a smooth application process.
+                    The program encompasses various aspects of aeronautical
+                    science, including aircraft systems, flight dynamics,
+                    aerodynamics, aviation safety, and air traffic control. It
+                    prepares you for roles in aviation companies, air traffic
+                    management, aerospace engineering, and aviation safety
+                    organizations. Below are the steps you need to follow to
+                    apply and ensure a smooth application process.
                   </p>
                 </div>
               </div>
@@ -619,7 +623,7 @@ const MBAcoursedetail = () => {
               >
                 <img
                   src="../assets/program/application.svg"
-                  alt="Aviation Application"
+                  alt="Fine Arts Application"
                   style={{
                     width: "100%",
                     borderRadius: "8px",
@@ -644,16 +648,16 @@ const MBAcoursedetail = () => {
                       className="mb-3"
                       style={{ fontSize: "1.75rem", fontWeight: "600" }}
                     >
-                      Career Prospects and Future Scope for BBA - Aviation &
-                      Travel Management
+                      Career Prospects and Future Scope for B.Sc - Aeronautical
+                      Science
                     </h3>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      Completing a BBA in Aviation & Travel Management opens
-                      doors to a wide range of career opportunities in the
-                      rapidly growing aviation and travel sectors. Graduates can
-                      work in various roles within airlines, travel agencies,
-                      airport operations, tour management, and more. Below are
-                      some potential career paths:
+                      Completing a B.Sc in Aeronautical Science offers exciting
+                      career opportunities in the aviation and aerospace
+                      industries. This program prepares graduates for roles in
+                      aircraft design, aviation safety, air traffic control,
+                      flight operations, and more. Below are some potential
+                      career paths:
                     </p>
                     <ul
                       style={{
@@ -663,32 +667,35 @@ const MBAcoursedetail = () => {
                       }}
                     >
                       <li style={{ marginBottom: "10px" }}>
-                        Airline Operations Manager
+                        Aerospace Engineer
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Travel Agency Manager
+                        Flight Operations Officer
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Airport Operations Coordinator
-                      </li>
-                      <li style={{ marginBottom: "10px" }}>Tour Manager</li>
-                      <li style={{ marginBottom: "10px" }}>
-                        Aviation Safety Manager
+                        Air Traffic Controller
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Hospitality and Tourism Consultant
+                        Aircraft Maintenance Engineer
                       </li>
                       <li style={{ marginBottom: "10px" }}>
-                        Travel Technology Specialist
+                        Aviation Safety Expert
+                      </li>
+                      <li style={{ marginBottom: "10px" }}>
+                        Aerodynamics Specialist
+                      </li>
+                      <li style={{ marginBottom: "10px" }}>
+                        Aerospace Research Scientist
                       </li>
                     </ul>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      The aviation and travel industries are expanding rapidly,
-                      with advancements in travel technology, digital tourism
-                      services, and global airline operations. Graduates with a
-                      BBA in Aviation & Travel Management will be prepared to
-                      drive innovation, manage travel operations, and lead
-                      organizations in these ever-evolving sectors.
+                      The field of aeronautical science continues to grow, with
+                      increasing opportunities in aircraft design, aviation
+                      safety, aerospace engineering, and flight operations.
+                      Graduates with a B.Sc in Aeronautical Science will be
+                      prepared for key roles in the aviation and aerospace
+                      industries, contributing to advancements in aviation
+                      technology and safety.
                     </p>
                   </div>
                 </div>
@@ -698,46 +705,46 @@ const MBAcoursedetail = () => {
                       className="mb-3"
                       style={{ fontSize: "1.75rem", fontWeight: "600" }}
                     >
-                      Application Requirements and Support for BBA - Aviation &
-                      Travel Management
+                      Application Requirements and Support for B.Sc -
+                      Aeronautical Science
                     </h3>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-                      To successfully apply for the BBA in Aviation & Travel
-                      Management, ensure that you have the following documents:
+                      To successfully apply for the B.Sc in Aeronautical
+                      Science, ensure that you have the following documents:
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         1. Higher Secondary Education (12th):
-                      </span>
+                      </span>{" "}
                       From a recognized board, preferably with a background in
-                      travel, tourism, or related fields.
+                      science (Physics, Mathematics, Chemistry).
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
-                        2. Work Experience (Optional):
-                      </span>
-                      Experience in aviation, travel, or a related field is
-                      preferred but not mandatory.
+                        2. Statement of Purpose (SOP):
+                      </span>{" "}
+                      Explaining your motivation for pursuing the B.Sc in
+                      Aeronautical Science and your long-term goals in aviation
+                      and aerospace.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         3. Identification Proof:
-                      </span>
+                      </span>{" "}
                       A valid government-issued ID such as a passport or
                       national ID card.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
-                        4. Statement of Purpose (SOP):
-                      </span>
-                      Explaining your motivation for pursuing the BBA in
-                      Aviation & Travel Management program and your long-term
-                      career goals.
+                        4. Academic Transcripts:
+                      </span>{" "}
+                      Provide your high school (12th grade) marks or equivalent
+                      certification.
                     </p>
                     <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
                       <span style={{ fontWeight: "bold" }}>
                         5. Financial Support:
-                      </span>
+                      </span>{" "}
                       Available for eligible candidates, including need-based
                       aid, scholarships, and loan programs to assist with
                       tuition fees.
@@ -761,7 +768,7 @@ const MBAcoursedetail = () => {
           <div className="scholarship-img"></div>
           <div style={{ marginBottom: "20px" }}>
             <h3 style={{ marginBottom: "15px" }}>
-              Mentor and Guest Speaker Program
+              Aeronautical Science and Engineering Program
             </h3>
             <p
               style={{
@@ -770,12 +777,12 @@ const MBAcoursedetail = () => {
                 marginBottom: "30px",
               }}
             >
-              Our BBA in Aviation & Travel Management program offers unique
-              opportunities for students to interact with industry experts.
-              Through the Mentor and Guest Speaker program, students gain
-              valuable insights into both the aviation and travel industries,
-              network with professionals, and receive guidance on their career
-              journey in these dynamic sectors.
+              Our B.Sc. in Aeronautical Science program provides students with
+              in-depth knowledge and practical experience in the field of
+              aerospace engineering. The program covers everything from aircraft
+              design and propulsion systems to navigation, aviation safety, and
+              air traffic control, equipping students with the skills necessary
+              to thrive in the aerospace industry.
             </p>
           </div>
           <div style={{ marginBottom: "30px" }}>
@@ -783,33 +790,32 @@ const MBAcoursedetail = () => {
             <div className="row">
               <div className="col-lg-4">
                 <div className="scholarship-item">
-                  <h4>Industry Mentors</h4>
+                  <h4>Aerospace Engineering Fundamentals</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Our mentors include top executives from both the aviation
-                    and travel sectors, offering one-on-one guidance to help
-                    shape your career in aviation & travel management.
+                    Gain a solid foundation in aerodynamics, aircraft
+                    structures, materials science, and propulsion systems, which
+                    are essential for designing and analyzing aerospace systems.
                   </p>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="scholarship-item">
-                  <h4>Guest Lecturers</h4>
+                  <h4>Flight Simulation and Control</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Learn from industry experts through guest lectures,
-                    workshops, and webinars, where leading professionals in
-                    aviation and travel share their knowledge and experiences.
+                    Learn about flight dynamics, control systems, and the use of
+                    advanced flight simulators to study real-world aeronautical
+                    applications and aviation technology.
                   </p>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="scholarship-item">
-                  <h4>Aviation & Travel Innovation Hub</h4>
+                  <h4>Aviation Safety and Regulations</h4>
                   <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                    Join our Aviation & Travel Innovation Hub, where students
-                    collaborate on projects focused on emerging aviation
-                    technologies, travel management, airline operations, and
-                    airport management, developing solutions to transform both
-                    sectors.
+                    Understand the principles of aviation safety, air traffic
+                    control, and regulatory frameworks governing the aviation
+                    and aerospace industries to ensure safe and efficient
+                    operations.
                   </p>
                 </div>
               </div>
@@ -828,12 +834,13 @@ const MBAcoursedetail = () => {
                       Guidance and Support
                     </h3>
                     <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-                      The BBA in Aviation & Travel Management provides students
-                      with personalized career guidance, mentorship from
-                      experienced professionals, and hands-on learning
-                      opportunities. Our team of mentors helps you identify the
-                      best career paths and assists you with networking in both
-                      the aviation and travel industries.
+                      The B.Sc. in Aeronautical Science program provides
+                      students with personalized mentorship from industry
+                      experts, experienced engineers, and aerospace
+                      professionals. Our team of mentors will guide you through
+                      various aspects of the aeronautical field, helping you
+                      develop a successful career in aviation, aerospace
+                      engineering, or related industries.
                     </p>
                     <Link
                       to="/apply-now"
@@ -867,17 +874,18 @@ const MBAcoursedetail = () => {
                     >
                       <li style={{ fontSize: "16px" }}>
                         <i className="fas fa-check-circle" /> Higher Secondary
-                        (12th) education from a recognized board.
+                        (12th) education from a recognized board, preferably
+                        with a background in physics, mathematics, or
+                        engineering-related fields.
                       </li>
                       <li style={{ fontSize: "16px" }}>
-                        <i className="fas fa-check-circle" /> Experience in
-                        aviation, travel, or a related field (preferred but not
-                        mandatory).
+                        <i className="fas fa-check-circle" /> A strong
+                        understanding of mathematics and physics.
                       </li>
                       <li style={{ fontSize: "16px" }}>
                         <i className="fas fa-check-circle" /> Statement of
-                        Purpose (SOP) explaining your motivation and career
-                        goals.
+                        Purpose (SOP) outlining your passion for aerospace and
+                        your career goals in the field of aeronautical science.
                       </li>
                       <li style={{ fontSize: "16px" }}>
                         <i className="fas fa-check-circle" /> Valid
@@ -913,17 +921,18 @@ const MBAcoursedetail = () => {
                   </h2>
                 </div>
                 <p className="programfaq-faq-description">
-                  The BBA in Aviation & Travel Management program equips
-                  students with the necessary skills and knowledge to thrive in
-                  both the aviation and travel industries. Learn everything you
-                  need to know about the application process, eligibility, and
-                  program details here.
+                  The B.Sc. in Aeronautical Science program provides students
+                  with the essential skills and knowledge needed for a
+                  successful career in the aerospace industry. The program
+                  covers aerodynamics, aircraft design, aviation safety, and
+                  flight dynamics, among other topics. Learn more about the
+                  application process, eligibility, and program details here.
                 </p>
                 <p className="programfaq-faq-description">
-                  Our goal is to provide future leaders with the skills to
-                  manage aviation operations, travel management, safety, and
-                  logistics effectively while keeping up with global trends in
-                  aviation and travel.
+                  Our goal is to train the next generation of aerospace
+                  engineers and aviation professionals who will shape the future
+                  of aviation technology and contribute to the industry’s growth
+                  and safety standards.
                 </p>
 
                 <Link to="/contact" className="mt-2 programfaq-faq-button">
@@ -936,26 +945,24 @@ const MBAcoursedetail = () => {
                 defaultActiveKey="0"
                 className="programfaq-faq-accordion"
               >
-                {/* New FAQ Added */}
                 <Card className="programfaq-faq-card">
                   <Accordion.Item eventKey="4">
                     <Accordion.Header className="programfaq-faq-header">
                       <span>
                         <i
-                          className="fas fa-graduation-cap"
+                          className="fas fa-rocket"
                           style={{ color: "#d89e37" }}
                         />
                       </span>
                       What Career Opportunities After Completing the Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      Graduates of the BBA in Aviation & Travel Management
-                      program can pursue careers in roles such as airline
-                      operations, travel agency management, airport operations,
-                      logistics coordination, tourism management, and customer
-                      service. You may also find opportunities in aviation
-                      consulting, tourism consulting, and hospitality
-                      management.
+                      Graduates of the B.Sc. in Aeronautical Science program can
+                      pursue careers in aerospace engineering, aircraft
+                      maintenance, air traffic control, flight testing, aviation
+                      safety, and aircraft design. Career paths may also include
+                      working in aviation operations, drone technology, or in
+                      aviation regulatory bodies.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -968,15 +975,15 @@ const MBAcoursedetail = () => {
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      How Can I Apply for the BBA in Aviation & Travel Program?
+                      How Can I Apply for the B.Sc. in Aeronautical Science
+                      Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
                       You can apply online by filling out the application form
-                      available on our website. Ensure that you submit all the
-                      required documents, including your academic transcripts,
-                      resume, and Statement of Purpose (SOP), which should
-                      outline your interest in both the aviation and travel
-                      industries and your future career goals.
+                      available on our website. Make sure to submit all required
+                      documents, including your academic transcripts, a
+                      Statement of Purpose (SOP), and any additional
+                      documentation required by the program.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -989,15 +996,14 @@ const MBAcoursedetail = () => {
                           style={{ color: "#d89e37" }}
                         />
                       </span>
-                      What is the Duration of the BBA in Aviation & Travel
+                      What is the Duration of the B.Sc. in Aeronautical Science
                       Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      The BBA in Aviation & Travel Management is a 3-year
-                      full-time program designed to provide both theoretical
-                      knowledge and practical experience in aviation operations,
-                      travel management, tourism, logistics, and customer
-                      service.
+                      The B.Sc. in Aeronautical Science is a 3-year full-time
+                      program that combines theoretical learning with practical
+                      experience in aviation, aerospace technology, and flight
+                      dynamics.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
@@ -1013,12 +1019,11 @@ const MBAcoursedetail = () => {
                       Will I Get Internship Opportunities During the Program?
                     </Accordion.Header>
                     <Accordion.Body className="programfaq-faq-body">
-                      Yes, the program includes internship opportunities with
-                      leading companies in both aviation and travel sectors,
-                      allowing you to gain hands-on experience in aviation
-                      operations, travel management, tourism services, and
-                      logistics coordination. These internships help build
-                      professional connections in the industry.
+                      Yes, the program offers internship opportunities with
+                      leading aerospace companies, aviation agencies, and air
+                      traffic control services. These internships will provide
+                      hands-on experience in areas such as aircraft maintenance,
+                      aerospace engineering, and aviation safety.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Card>
