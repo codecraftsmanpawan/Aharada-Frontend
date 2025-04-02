@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./GalleryStyles.css";
 
 const CampusGallery = () => {
@@ -52,98 +54,98 @@ const CampusGallery = () => {
       {
         id: 7,
         type: "image",
-        src: " assets/lab/166A4163.JPG",
+        src: "assets/lab/166A4163.JPG",
         alt: "Campus Garden",
         caption: "The tranquil campus garden",
       },
       {
         id: 8,
         type: "image",
-        src: " assets/lab/166A4257.JPG",
+        src: "assets/lab/166A4257.JPG",
         alt: "Campus Garden",
         caption: "The tranquil campus garden",
       },
       {
         id: 9,
         type: "image",
-        src: " assets/lab/166A4271.JPG",
+        src: "assets/lab/166A4271.JPG",
         alt: "Main Campus Building",
         caption: "Our beautiful main campus building",
       },
       {
         id: 10,
         type: "image",
-        src: " assets/lab/166A4303.JPG",
+        src: "assets/lab/166A4303.JPG",
         alt: "Campus Library",
         caption: "State-of-the-art library facility",
       },
       {
         id: 11,
         type: "image",
-        src: " assets/lab/166A4306.JPG",
+        src: "assets/lab/166A4306.JPG",
         alt: "Campus Garden",
         caption: "The tranquil campus garden",
       },
       {
         id: 12,
         type: "image",
-        src: " assets/lab/166A4407.JPG",
+        src: "assets/lab/166A4407.JPG",
         alt: "Campus Garden",
         caption: "The tranquil campus garden",
       },
       {
         id: 13,
         type: "image",
-        src: " assets/lab/166A4428.JPG",
+        src: "assets/lab/166A4428.JPG",
         alt: "Campus Garden",
         caption: "The tranquil campus garden",
       },
       {
         id: 14,
         type: "image",
-        src: " assets/lab/166A4430.JPG",
+        src: "assets/lab/166A4430.JPG",
         alt: "Campus Garden",
         caption: "The tranquil campus garden",
       },
       {
         id: 15,
         type: "image",
-        src: " assets/lab/166A4640.JPG",
+        src: "assets/lab/166A4640.JPG",
         alt: "Campus Garden",
         caption: "The tranquil campus garden",
       },
       {
         id: 16,
         type: "image",
-        src: " assets/lab/166A4733.JPG",
+        src: "assets/lab/166A4733.JPG",
         alt: "Campus Garden",
         caption: "The tranquil campus garden",
       },
       {
         id: 17,
         type: "image",
-        src: " assets/lab/166A4802.JPG",
+        src: "assets/lab/166A4802.JPG",
         alt: "Campus Garden",
         caption: "The tranquil campus garden",
       },
       {
         id: 18,
         type: "image",
-        src: " assets/lab/166A4813.JPG",
+        src: "assets/lab/166A4813.JPG",
         alt: "Campus Garden",
         caption: "The tranquil campus garden",
       },
       {
         id: 19,
         type: "image",
-        src: " assets/lab/166A4831.JPG",
+        src: "assets/lab/166A4831.JPG",
         alt: "Campus Garden",
         caption: "The tranquil campus garden",
       },
       {
         id: 20,
         type: "image",
-        src: " assets/lab/166A4839.JPG",
+        src: "assets/lab/166A4839.JPG",
         alt: "Campus Garden",
         caption: "The tranquil campus garden",
       },
@@ -152,98 +154,98 @@ const CampusGallery = () => {
       {
         id: 4,
         type: "image",
-        src: " assets/activity/166A3266.JPG",
+        src: "assets/activity/166A3266.JPG",
         alt: "Volunteer Work",
         caption: "Students participating in community service",
       },
       {
         id: 4,
         type: "image",
-        src: " assets/activity/166A3382.JPG",
+        src: "assets/activity/166A3382.JPG",
         alt: "Volunteer Work",
         caption: "Students participating in community service",
       },
       {
         id: 4,
         type: "image",
-        src: " assets/activity/166A3494.JPG",
+        src: "assets/activity/166A3494.JPG",
         alt: "Volunteer Work",
         caption: "Students participating in community service",
       },
       {
         id: 4,
         type: "image",
-        src: " assets/activity/939A6076.jpg",
+        src: "assets/activity/939A6076.jpg",
         alt: "Volunteer Work",
         caption: "Students participating in community service",
       },
       {
         id: 4,
         type: "image",
-        src: " assets/activity/939A6238.jpg",
+        src: "assets/activity/939A6238.jpg",
         alt: "Volunteer Work",
         caption: "Students participating in community service",
       },
       {
         id: 4,
         type: "image",
-        src: " assets/activity/939A6254.jpg",
+        src: "assets/activity/939A6254.jpg",
         alt: "Volunteer Work",
         caption: "Students participating in community service",
       },
       {
         id: 4,
         type: "image",
-        src: " assets/activity/939A6301.jpg",
+        src: "assets/activity/939A6301.jpg",
         alt: "Volunteer Work",
         caption: "Students participating in community service",
       },
       {
         id: 4,
         type: "image",
-        src: " assets/activity/939A6321.jpg",
+        src: "assets/activity/939A6321.jpg",
         alt: "Volunteer Work",
         caption: "Students participating in community service",
       },
       {
         id: 1,
         type: "image",
-        src: " assets/activity/939A6321.jpg",
+        src: "assets/activity/939A6321.jpg",
         alt: "Student Debate",
         caption: "Inter-college debate competition",
       },
       {
         id: 2,
         type: "image",
-        src: " assets/activity/IMG_6099.JPG",
+        src: "assets/activity/IMG_6099.JPG",
         alt: "Cultural Dance",
         caption: "Traditional dance performance by students",
       },
       {
         id: 2,
         type: "image",
-        src: " assets/activity/IMG_6236.JPG",
+        src: "assets/activity/IMG_6236.JPG",
         alt: "Cultural Dance",
         caption: "Traditional dance performance by students",
       },
       {
         id: 2,
         type: "image",
-        src: " assets/activity/IMG_6285.JPG",
+        src: "assets/activity/IMG_6285.JPG",
         alt: "Cultural Dance",
         caption: "Traditional dance performance by students",
       },
       {
         id: 2,
         type: "image",
-        src: " assets/activity/IMG_6496.JPG",
+        src: "assets/activity/IMG_6496.JPG",
         alt: "Cultural Dance",
         caption: "Traditional dance performance by students",
       },
       {
         id: 2,
         type: "image",
-        src: " assets/activity/IMG_6542.JPG",
+        src: "assets/activity/IMG_6542.JPG",
         alt: "Cultural Dance",
         caption: "Traditional dance performance by students",
       },
@@ -336,31 +338,33 @@ const CampusGallery = () => {
         </div>
 
         <div className="uniqGalleryGrid">
-          {galleryData[activeTab].map((media) => (
+          {galleryData[activeTab].map((media, index) => (
             <div
-              key={media.id}
+              key={`${media.id}-${index}`}
               className="uniqGalleryItem"
               onClick={() => handleMediaClick(media)}
             >
               {media.type === "image" ? (
-                <img
-                  src={media.src}
+                <LazyLoadImage
+                  src={media.src.trim()}
                   alt={media.alt}
                   className="uniqGalleryImage"
+                  effect="blur"
+                  placeholderSrc="assets/img/placeholder.jpg" // Optional placeholder
                 />
               ) : (
                 <div className="uniqGalleryVideoThumbnail">
-                  <img
-                    src={media.poster}
+                  <LazyLoadImage
+                    src={media.poster.trim()}
                     alt="Video thumbnail"
                     className="uniqGalleryImage"
+                    effect="blur"
                   />
                   <div className="uniqGalleryPlayButton">
                     <i className="uniqGalleryPlayIcon">▶</i>
                   </div>
                 </div>
               )}
-              {/* <div className="uniqGalleryCaption">{media.caption}</div> */}
             </div>
           ))}
         </div>
@@ -377,14 +381,14 @@ const CampusGallery = () => {
             </span>
             {selectedMedia.type === "image" ? (
               <img
-                src={selectedMedia.src}
+                src={selectedMedia.src.trim()}
                 alt={selectedMedia.alt}
                 className="uniqGalleryModalImage"
               />
             ) : (
               <video
-                src={selectedMedia.src}
-                poster={selectedMedia.poster}
+                src={selectedMedia.src.trim()}
+                poster={selectedMedia.poster?.trim()}
                 controls
                 className="uniqGalleryModalVideo"
               />
