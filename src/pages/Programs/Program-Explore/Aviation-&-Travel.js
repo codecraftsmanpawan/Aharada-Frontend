@@ -182,7 +182,7 @@ const campuses = [
     ],
   },
   {
-    name: "Vidya Knowledge Park",
+    name: "Vidya University, Meerut",
     program: "BBA Program | UGC recognised",
     specialisations: 3,
     certifications: 10,

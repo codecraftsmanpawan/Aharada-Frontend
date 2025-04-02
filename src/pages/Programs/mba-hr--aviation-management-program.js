@@ -8,19 +8,20 @@ import CampusSlider from "./component/CampusSlider";
 import LeadForm from "./component/LeadForm";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import Feedback from "../Home/component/Feedback";
+import CampusGallery from "../Home/component/FetauredEventsSection";
 
 const MBAcoursedetail = () => {
   const page1Campuses = [
     {
-      name: "Vidya Knowledge Park",
-      program: "BBA Program | UGC recognised",
-      specialisations: 3,
+      name: "Subharti University, Meerut",
+      program: "MBA – HR & Aviation Management | UGC recognised",
+      specialisations: 6,
       certifications: 10,
-      fees: "₹ 3.88 Lacs",
+      fees: "₹ 3.10 Lacs",
       images: [
-        "../assets/placement/vidya1.jpg",
-        "../assets/placement/vidya1.jpg",
-        "../assets/placement/vidya1.jpg",
+        "assets/placement/Subharti1.webp",
+        "assets/placement/Subharti1.webp",
+        "assets/placement/Subharti3.png",
       ],
     },
   ];
@@ -908,7 +909,7 @@ const MBAcoursedetail = () => {
           </div>
         </div>
       </div>
-
+      <CampusGallery />
       <CampusSlider campuses={page1Campuses} />
 
       <div className="programfaq-faq-area">

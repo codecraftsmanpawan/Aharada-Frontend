@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -10,6 +10,18 @@ function HeroSection() {
       once: true,
       mirror: true,
     });
+  }, []);
+
+  // Auto image slider logic
+  const images = ["assets/hero.png", "assets/hero.png", "assets/hero.png"];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -29,7 +41,6 @@ function HeroSection() {
           <div className="col-lg-6" style={{ marginTop: "-70px" }}>
             <div className="hero-style2">
               <span className="hero-subtitle">Educate, Empower, Excel</span>
-
               <h1 className="hero-title text-theme">Aharada Education</h1>
               <h1 className="hero-title">
                 Soar High with World-Class Learning
@@ -40,7 +51,6 @@ function HeroSection() {
                   <li>Practical, Real-World Training</li>
                 </ul>
               </div>
-
               <div className="btn-group">
                 <Link to="/programs" className="th-btn">
                   Explore Programs
@@ -58,55 +68,24 @@ function HeroSection() {
               </div>
             </div>
           </div>
+
+          {/* Auto-changing image section */}
           <div className="col-xl-6">
             <div className="hero-img2">
               <img
-                src="assets/hero.png"
+                src={images[currentImage]}
                 alt="Aharada Hero"
                 style={{
                   width: "100%",
                   borderBottom: "15px solid #072e46",
                   borderRadius: "32%",
+                  transition: "opacity 0.5s ease-in-out",
                 }}
               />
-              {/* <div
-                style={{ marginTop: "500px" }}
-                className="hero-counter-wrap hero-counter2 "
-                // style={{ marginRight: "110px" }}
-              >
-                <div className="hero-counter_icon">
-                  <img
-                    src="assets/img/icon/hero2-counter-icon2.svg"
-                    alt="icon"
-                  />
-                </div>
-                <div className="details">
-                  <h3 className="hero-counter_number">
-                    <span className="counter-number">10,000</span>+
-                  </h3>
-                  <p className="hero-counter_text">
-                    Graduates in Leading Roles
-                  </p>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
       </div>
-
-      {/* <div
-        className="hero-shape shape1"
-
-      >
-        <img src="assets/img/hero/shape_2_1.png" alt="shape" />
-      </div> */}
-      {/* 
-      <div
-        className="hero-shape shape3 d-sm-block d-none"
-       
-      >
-        <img src="assets/img/hero/shape_2_3.png" alt="shape" />
-      </div> */}
 
       <div className="ripple-shape">
         <span className="ripple-1" />
@@ -212,6 +191,7 @@ function HeroSection() {
                 </Link>
               </div>
             </div>
+
             <div className="col-xl-3 col-md-6">
               <div className="feature-list">
                 <div className="feature-list_icon">

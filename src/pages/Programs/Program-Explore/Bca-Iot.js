@@ -184,7 +184,7 @@ const iotSummary = [
 // Campus Details for BCA - IoT
 const campuses = [
   {
-    name: "Vidya Knowledge Park",
+    name: "Vidya University, Meerut",
     program: "BCA Program | UGC recognised",
     specialisations: 3,
     certifications: 10,

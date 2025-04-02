@@ -138,7 +138,7 @@ function Contact() {
                         href="tel:+9520269895"
                         className="contact-feature_link"
                       >
-                        Dev Bhoomi University :<span>+91 9520269895</span>
+                        Vidya University, Meerut :<span>+91 9557680107</span>
                       </a>
                     </div>
                   </div>
@@ -223,8 +223,8 @@ function Contact() {
                             <option value="Subharti University, Meerut">
                               Subharti University, Meerut
                             </option>
-                            <option value="Vidya Knowledge Park">
-                              Vidya Knowledge Park
+                            <option value="Vidya University, Meerut">
+                              Vidya University, Meerut
                             </option>
                             <option value="SAGE University Indore">
                               SAGE University Indore

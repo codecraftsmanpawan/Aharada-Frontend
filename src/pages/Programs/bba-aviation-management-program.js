@@ -8,19 +8,20 @@ import CampusSlider from "./component/CampusSlider";
 import LeadForm from "./component/LeadForm";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import Feedback from "../Home/component/Feedback";
+import CampusGallery from "../Home/component/FetauredEventsSection";
 
 const MBAcoursedetail = () => {
   const page1Campuses = [
     {
-      name: "Vidya Knowledge Park",
-      program: "BBA Program | UGC recognised",
+      name: "SAGE University Indore",
+      program: "BBA - Aviation Management | UGC recognised",
       specialisations: 3,
       certifications: 10,
       fees: "₹ 3.88 Lacs",
       images: [
-        "../assets/placement/vidya1.jpg",
-        "../assets/placement/vidya1.jpg",
-        "../assets/placement/vidya1.jpg",
+        "assets/placement/sage1.jpg",
+        "assets/placement/sage2.jpg",
+        "assets/placement/sage3.webp",
       ],
     },
   ];
@@ -886,7 +887,7 @@ const MBAcoursedetail = () => {
           </div>
         </div>
       </div>
-
+      <CampusGallery />
       <CampusSlider campuses={page1Campuses} />
 
       <div className="programfaq-faq-area">

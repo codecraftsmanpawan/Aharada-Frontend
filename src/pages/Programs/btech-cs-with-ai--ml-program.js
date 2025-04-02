@@ -8,12 +8,13 @@ import CampusSlider from "./component/CampusSlider";
 import LeadForm from "./component/LeadForm";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import Feedback from "../Home/component/Feedback";
+import CampusGallery from "../Home/component/FetauredEventsSection";
 
 const MBAcoursedetail = () => {
   const page1Campuses = [
     {
-      name: "Vidya Knowledge Park",
-      program: "BBA Program | UGC recognised",
+      name: "Vidya University, Meerut",
+      program: "B.Tech - Computer Science with AI & ML | UGC recognised",
       specialisations: 3,
       certifications: 10,
       fees: "₹ 3.88 Lacs",
@@ -912,7 +913,7 @@ const MBAcoursedetail = () => {
           </div>
         </div>
       </div>
-
+      <CampusGallery />
       <CampusSlider campuses={page1Campuses} />
 
       <div className="programfaq-faq-area">

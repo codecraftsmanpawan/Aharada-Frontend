@@ -180,7 +180,7 @@ const mcaSummary = [
 
 const campuses = [
   {
-    name: "Vidya Knowledge Park",
+    name: "Vidya University, Meerut",
     program: "B.Com - CA | UGC recognised",
     specialisations: 3,
     certifications: 10,

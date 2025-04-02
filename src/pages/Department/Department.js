@@ -5,10 +5,10 @@ import "./Department.css"; // Ensure you have this CSS file in place
 const Department = () => {
   return (
     <div>
-      <div className="th-hero-wrapper hero-12" style={{ marginTop: "-150px" }}>
+      <div className="th-hero-wrapper hero-12" style={{ marginTop: "-250px" }}>
         <div className="container z-index-common">
           <div className="hero-style12">
-            <h1 className="hero-title">Discover Our Diverse Departments</h1>
+            <h2 className="hero-title">Discover Our Diverse Departments</h2>
             <p className="hero-text">
               At Aharada Education, we offer diverse academic disciplines to
               equip students with knowledge, skills, and hands-on experience for
@@ -26,7 +26,7 @@ const Department = () => {
                 </div>
                 <div>
                   <h2 className="hero-counter_number">
-                    <span className="counter-number">10</span>+
+                    <span className="counter-number">20</span>+
                   </h2>
                   <span className="hero-counter_text">COURSES</span>
                 </div>
@@ -49,10 +49,7 @@ const Department = () => {
           </div>
         </div>
         <div className="hero-img1">
-          <img
-            src="assets/img/update1/hero/hero_img_3_1.png"
-            alt="Hero Image"
-          />
+          <img src="assets/program/aharadaedu4.JPG" alt="Hero Image" />
         </div>
       </div>
 
@@ -167,7 +164,7 @@ const Department = () => {
         <div className="container" style={{ marginTop: "-100px" }}>
           <div className="title-area text-center">
             <span className="sub-title">Management Courses</span>
-            <h2>School of Commerce & Management</h2>
+            <h3>School of Commerce & Management</h3>
           </div>
           <div className="row gy-50 justify-content-center">
             {[
@@ -272,7 +269,7 @@ const Department = () => {
         <div className="container" style={{ marginTop: "-100px" }}>
           <div className="title-area text-center">
             <span className="sub-title">Arts & Humanities Courses</span>
-            <h2>School of Arts & Humanities</h2>
+            <h3>School of Arts & Humanities</h3>
           </div>
           <div className="row gy-50 justify-content-center">
             {[

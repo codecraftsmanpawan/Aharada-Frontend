@@ -183,7 +183,7 @@ const summary = [
 // Campus Details for B.Tech AI & ML
 const campuses = [
   {
-    name: "Vidya Knowledge Park",
+    name: "Vidya University, Meerut",
     program: "B.Tech Program | UGC recognised",
     specialisations: 3,
     certifications: 10,

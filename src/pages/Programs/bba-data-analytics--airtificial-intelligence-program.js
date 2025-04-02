@@ -8,12 +8,13 @@ import CampusSlider from "./component/CampusSlider";
 import LeadForm from "./component/LeadForm";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import Feedback from "../Home/component/Feedback";
+import CampusGallery from "../Home/component/FetauredEventsSection";
 
 const AIcoursedetail = () => {
   const page1Campuses = [
     {
       name: "IIMT University, Meerut",
-      program: "BBA Program | UGC approved",
+      program: "BBA - Data Analytics & Artificial Intelligence | UGC approved",
       specialisations: 6,
       certifications: 10,
       fees: "₹ 3.40 Lacs",
@@ -888,6 +889,7 @@ const AIcoursedetail = () => {
           </div>
         </div>
       </div>
+      <CampusGallery />
       <CampusSlider campuses={page1Campuses} />
 
       <div className="programfaq-faq-area">

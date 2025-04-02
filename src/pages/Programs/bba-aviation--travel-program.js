@@ -7,13 +7,26 @@ import Recruiters from "./component/Recruiters";
 import CampusSlider from "./component/CampusSlider";
 import LeadForm from "./component/LeadForm";
 import Testimonials from "../../components/Testimonials/Testimonials";
+import CampusGallery from "../Home/component/FetauredEventsSection";
 import Feedback from "../Home/component/Feedback";
 
 const MBAcoursedetail = () => {
   const page1Campuses = [
     {
-      name: "Vidya Knowledge Park",
-      program: "BBA Program | UGC recognised",
+      name: "IIMT University, Meerut",
+      program: "BBA - Aviation & Travel Management | UGC approved",
+      specialisations: 6,
+      certifications: 10,
+      fees: "₹ 3.40 Lacs",
+      images: [
+        "assets/placement/iimt1.jpg",
+        "assets/placement/iimt2.jpg",
+        "assets/placement/iimt3.jpg",
+      ],
+    },
+    {
+      name: "Vidya University, Meerut",
+      program: "BBA - Aviation & Travel Management | UGC recognised",
       specialisations: 3,
       certifications: 10,
       fees: "₹ 3.88 Lacs",
@@ -196,7 +209,7 @@ const MBAcoursedetail = () => {
               <div className="product-big-img">
                 <div className="img">
                   <img
-                    src="../assets/program/aharadaedu1.JPG"
+                    src="../assets/program/aharadaedu5.JPG"
                     alt="MBA in FinTech Image"
                   />
                 </div>
@@ -397,7 +410,7 @@ const MBAcoursedetail = () => {
                 <div className="department-details">
                   <div className="department-details-img mb-30">
                     <img
-                      src="../assets/program/aharadaedu3.JPG"
+                      src="../assets/program/aharadaedu6.JPG"
                       alt="Aviation Management"
                       style={{
                         width: "100%",
@@ -895,7 +908,7 @@ const MBAcoursedetail = () => {
           </div>
         </div>
       </div>
-
+      <CampusGallery />
       <CampusSlider campuses={page1Campuses} />
 
       <div className="programfaq-faq-area">

@@ -214,18 +214,6 @@ const campuses = [
       "assets/placement/Subharti3.png",
     ],
   },
-  {
-    name: "Dev Bhoomi Uttarakhand University",
-    program: "B.Tech Program | AICTE approved",
-    specialisations: 4,
-    certifications: 8,
-    fees: "₹ 4.00 Lacs",
-    images: [
-      "assets/placement/dev1.jpeg",
-      "assets/placement/dev1.jpeg",
-      "assets/placement/dev3.jpg",
-    ],
-  },
 ];
 
 const campusSettings = {

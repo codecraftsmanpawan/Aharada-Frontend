@@ -8,12 +8,13 @@ import CampusSlider from "./component/CampusSlider";
 import LeadForm from "./component/LeadForm";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import Feedback from "../Home/component/Feedback";
+import CampusGallery from "../Home/component/FetauredEventsSection";
 
 const MBAcoursedetail = () => {
   const page1Campuses = [
     {
       name: "IIMT University, Meerut",
-      program: "BBA Program | UGC approved",
+      program: "B.Tech - Aerospace Engineering | UGC approved",
       specialisations: 6,
       certifications: 10,
       fees: "₹ 3.40 Lacs",
@@ -21,6 +22,18 @@ const MBAcoursedetail = () => {
         "../assets/placement/iimt1.jpg",
         "../assets/placement/iimt2.jpg",
         "../assets/placement/iimt3.jpg",
+      ],
+    },
+    {
+      name: "Subharti University, Meerut",
+      program: "B.Tech - Aerospace Engineering | UGC approved",
+      specialisations: 6,
+      certifications: 10,
+      fees: "₹ 3.10 Lacs",
+      images: [
+        "assets/placement/Subharti1.webp",
+        "assets/placement/Subharti1.webp",
+        "assets/placement/Subharti3.png",
       ],
     },
   ];
@@ -914,7 +927,7 @@ const MBAcoursedetail = () => {
           </div>
         </div>
       </div>
-
+      <CampusGallery />
       <CampusSlider campuses={page1Campuses} />
 
       <div className="programfaq-faq-area">

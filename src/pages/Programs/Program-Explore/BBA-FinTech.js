@@ -182,7 +182,7 @@ const mcaSummary = [
 
 const campuses = [
   {
-    name: "Vidya Knowledge Park",
+    name: "Vidya University, Meerut",
     program: "BBA - FinTech | UGC recognised",
     specialisations: 3,
     certifications: 10,
