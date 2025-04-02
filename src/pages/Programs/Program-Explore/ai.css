@@ -81,7 +81,7 @@
         width: 90%;
     }
 
-    .graduate-img img {
+    .graduate-img hide-on-mobile img {
         width: 80%;
         /* Adjust image size for mobile */
     }
@@ -99,7 +99,7 @@
 }
 
 /* Middle Graduate Image */
-.graduate-img img {
+.graduate-img hide-on-mobile img {
     margin-top: -40px;
     margin-left: 200px;
     width: 250px;

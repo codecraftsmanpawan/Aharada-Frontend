@@ -151,7 +151,7 @@ const BFDcoursedetail = () => {
               Kickstart your career with{" "}
               <span className="highlight">diverse job opportunities</span>
             </h2>
-            <div className="graduate-img">
+            <div className="graduate-img hide-on-mobile">
               <img src="../assets/img/g.png" alt="Graduate" />
             </div>
             <Link

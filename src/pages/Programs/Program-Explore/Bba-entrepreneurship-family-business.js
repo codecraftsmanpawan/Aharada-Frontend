@@ -297,7 +297,10 @@ const Bbaentrepreneurshipfamilybusiness = () => {
               Transform your future with{" "}
               <span className="highlight">innovative business strategies</span>
             </h2>
-            <div className="graduate-img" style={{ marginTop: "60px" }}>
+            <div
+              className="graduate-img hide-on-mobile"
+              style={{ marginTop: "60px" }}
+            >
               <img src="../assets/img/g.png" alt="Graduate" />
             </div>
             <Link

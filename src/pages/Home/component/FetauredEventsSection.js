@@ -393,9 +393,6 @@ const CampusGallery = () => {
                 className="uniqGalleryModalVideo"
               />
             )}
-            <div className="uniqGalleryModalCaption">
-              {selectedMedia.caption}
-            </div>
           </div>
         </div>
       )}
