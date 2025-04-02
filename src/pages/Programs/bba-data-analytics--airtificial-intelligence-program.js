@@ -158,7 +158,7 @@ const AIcoursedetail = () => {
             <Link
               style={{ marginTop: "-110px", marginLeft: "40px" }}
               to="/contact"
-              className="th-btn style5"
+              className="th-btn style5 hide-on-mobile"
             >
               Get in Touch <i className="fas fa-long-arrow-right ms-2" />
             </Link>
@@ -178,7 +178,6 @@ const AIcoursedetail = () => {
               <p>Students with 2+ job offers</p>
             </div>
             <Link
-              style={{ marginLeft: "40px" }}
               to="../../assets/img/AEROSPACE.pdf"
               className="th-btn style4"
               target="_blank"

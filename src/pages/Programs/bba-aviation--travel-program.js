@@ -163,13 +163,13 @@ const MBAcoursedetail = () => {
               Kickstart your career with{" "}
               <span className="highlight">diverse job opportunities</span>
             </h2>
-            <div className="graduate-img  hide-on-mobile">
+            <div className="graduate-img hide-on-mobile">
               <img src="../assets/img/g.png" alt="Graduate" />
             </div>
             <Link
               style={{ marginTop: "-110px", marginLeft: "40px" }}
               to="/contact"
-              className="th-btn style5"
+              className="th-btn style5 hide-on-mobile"
             >
               Get in Touch <i className="fas fa-long-arrow-right ms-2" />
             </Link>
@@ -189,7 +189,6 @@ const MBAcoursedetail = () => {
               <p>Students with 2+ job offers</p>
             </div>
             <Link
-              style={{ marginLeft: "40px" }}
               to="../../assets/img/AEROSPACE.pdf"
               className="th-btn style4"
               target="_blank"
